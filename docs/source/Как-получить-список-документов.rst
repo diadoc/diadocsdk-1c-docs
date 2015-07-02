@@ -1,0 +1,37 @@
+﻿Как получить список документов
+==============================
+
+Список документов можно получить только в контексте
+:doc:`организации <Организация>`, без этого контекста получить список
+документов невозможно
+
+Для того чтобы получить список документов, нужно:
+
+1. Получить контекст организации
+2. Создать объект DocumentsTask
+3. Установить свойства DocumentsTask, которые задают условия выборки
+4. Выполнить метод GetDocumentsTask
+
+.. raw:: html
+
+   <!-- -->
+
+::
+
+          //Создаем объект DocumentsTask, заполняем свойства, выполняем метод и получаем список документов
+
+          Organization = Connection.GetOrganizationById(BoxID);
+
+          DocumentsTask = Organization.GetDocumentsTask();
+          DocumentsTask.FromSendDate = НачалоГода(ТекущаяДата());
+          DocumentsTask.ToSendDate = КонецГода(ТекущаяДата());
+          DocumentsTask.Category = "XmlTorg12.InboundWaitingForRecipientSignature";
+
+          DocumentList = DocumentsTask.GetDocuments();
+
+          Ц = 0;
+          Пока ц < DocumentList.Count Цикл
+            Document = DocumentList.GetItem(Ц);
+            Сообщить("Не подписан торг-12 №" + Document.Number + " от " + Document.Date);
+            Ц = Ц + 1;
+          КонецЦикла;

@@ -1,0 +1,103 @@
+﻿Организация
+===========
+
+Объект Organization предназначен для работы с организацией на сервере
+Диадок. Позволяет:
+
+-  Работать со списком контрагентов. С помощью метода
+   :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` можно
+   получить список контрагентов, с которыми установлены взаимоотношения
+   в Диадоке. С помощью методов
+   :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>`,
+   :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` можно
+   найти контрагента (контрагентов) по ИНН.
+-  Получать список документов организации с помощью метода
+   :doc:`GetDocumentsTask <GetDocumentsTask>`.
+-  Подписывать и отправлять документы через Диадок с помощью методов
+   :doc:`CreateSendTask <CreateSendTask>`,
+   :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>`.
+
+Свойства объекта
+----------------
+
+
+- **Id** (строка, чтение ) - идентификатор организации в Диадоке
+
+- **Name** (строка, чтение ) - наименование организации
+
+- **Inn** (строка, чтение ) - ИНН организации
+
+- **Kpp** (строка, чтение ) - КПП организации
+
+- **Departments** (:doc:`коллекция <Collection>` объектов :doc:`Department <Department>`, чтение ) - список подразделений организации. Возвращаются подразделения, не имеющие родительских подразделений. Список дочерних подразделений можно получить, используя свойство Subdepartments объекта Department
+
+- **AuthenticateType** (строка, чтение ) - тип авторизации
+
+- **Login** (строка, чтение ) - логин, по которому произошла авторизация к данной организации
+
+- **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение ) - сертификат, по которому произошла авторизация к данной организации
+
+- **FnsParticipantId** (строка, чтение ) - идентификатор организации-участника документооборота
+
+- **FnsRegistrationDate** (дата, чтение ) - дата подачи заявляения в ФНС на регистрацию данной организации в качестве участника документооборота ЭСФ. В случае, если организация не подавала заявления, возвращается пустая дата
+
+- **IsTest** (булево, чтение ) - признак того, что организация работает в тестовом режиме
+
+- **IsPilot** (булево, чтение ) - признак того, что организация работает в пилотном режиме
+
+
+Методы объекта
+--------------
+
+
+-  :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` - возвращает контрагентов, с которыми у организации установлены отношения
+
+-  :doc:`GetCounteragentListByStatusAsync <GetCounteragentListByStatusAsync>` - асинхронный запрос контрагентов, с которыми у организации установлены отношения
+
+-  :doc:`GetCounteragentById <GetCounteragentById>` - возвращает контрагента по его идентификатору
+
+-  :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>` - возвращает список контрагентов по ИНН/КПП
+
+-  :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` - инициирует асинхронную операцию получения списка контрагентов по списку ИНН
+
+-  :doc:`GetDocumentById <GetDocumentById>` - возвращает документ в ящике по его идентификатору
+
+-  :doc:`GetDocumentsTask <GetDocumentsTask>` - возвращает объект, который позволяет позволяет получить список документов, отправленных из выбранного ящика или пришедших в него
+
+-  :doc:`CreateSendTask <CreateSendTask>` - позволяет получить задание для отправки документа
+
+-  :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` - позволяет получить задание для отправки документа, загруженного из файла
+
+-  :doc:`GetUsers <GetUsers>` - вовзращает список всех пользователей организации
+
+-  :doc:`GetUserPermissions <GetUserPermissions>` - возвращает описание прав пользователя, в контексте которого произошла авторизация, для данной организации
+
+-  :doc:`GetDocumentEventList <GetDocumentEventList>` - возвращает список событий
+
+-  :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` - возвращает объект, с помощью которого можно запустить процесс автоматического формирования документов по регламентному документообороту счетов-фактур
+
+-  :doc:`AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>` - добавление в сообщение ФНС нового сертификата
+
+-  :doc:`SendDraftAsync <SendDraftAsync>` - инициирует асинхронную операцию отправки черновика по его уникальному идентификатору
+
+
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   GetCounteragentListByStatus <GetCounteragentListByStatus>
+   GetCounteragentListByStatusAsync <GetCounteragentListByStatusAsync>
+   GetCounteragentById <GetCounteragentById>
+   GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>
+   GetCounteragentListByInnList <GetCounteragentListByInnList>
+   GetDocumentById <GetDocumentById>
+   GetDocumentsTask <GetDocumentsTask>
+   CreateSendTask <CreateSendTask>
+   CreateSendTaskFromFile <CreateSendTaskFromFile>
+   GetUsers <GetUsers>
+   GetUserPermissions <GetUserPermissions>
+   GetDocumentEventList <GetDocumentEventList>
+   GetReceiptGenerationProcess <GetReceiptGenerationProcess>
+   AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>
+   SendDraftAsync <SendDraftAsync>
+
