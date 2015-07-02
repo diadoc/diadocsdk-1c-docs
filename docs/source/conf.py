@@ -49,7 +49,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Внешняя компонента для Диадок'
+project = u'AddIn Diadoc API'
 copyright = u'2015, Diadoc'
 author = u'Diadoc'
 
