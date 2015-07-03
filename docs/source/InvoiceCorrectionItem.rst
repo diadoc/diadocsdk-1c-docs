@@ -17,7 +17,12 @@
 
 - **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение, --- ) - суммы к уменьшению
 
-- **AdditionalInfo** (строка, чтение/запись, строка длиной не более 2000 символов ) - произвольная дополнительная информация
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>` , чтение/запись, --- ) - дополнительные сведения
 
 
-Методы отсутствуют
+Методы объекта
+--------------
+
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo (CorrectionContent)>` - добавляет строку дополнительных сведений
+
+

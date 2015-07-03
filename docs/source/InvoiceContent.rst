@@ -38,7 +38,7 @@
 
 - **Payment Documents** (:doc:`Коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, -- ) - список платежно-расчетных документов
 
-- **AdditionalInfo** (строка, чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>` , чтение/запись, --- ) - дополнительные сведения
 
 
 Методы объекта
@@ -48,6 +48,9 @@
 -  :doc:`AddItem <AddItem-(InvoiceContent)>` - добавляет строку в табличную часть счет-фактуры
 
 -  :doc:`AddPaymentDocument <AddPaymentDocument-(InvoiceContent)>` - добавляет сведения о платежно-расчетном документе
+
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo>` - добавляет строку дополнительных сведений
+
 
 
 .. toctree::
@@ -59,3 +62,5 @@
    InvoiceItem-(Invoice) <InvoiceItem-(Invoice)>
    PaymentDocument <PaymentDocument>
    InvoiceTotals <Итоги-InvoiceTotals>
+   addStructedAdditionalInfo <addStructedAdditionalInfo>
+   AdditionalInfoItem <AdditionalInfoItem>
