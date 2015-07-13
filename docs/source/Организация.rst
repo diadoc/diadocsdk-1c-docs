@@ -80,6 +80,8 @@
 
 -  :doc:`SendDraftAsync <SendDraftAsync>` - инициирует асинхронную операцию отправки черновика по его уникальному идентификатору
 
+-  :doc:`CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>` - создает запрос на приглашение контрагента к сотрудничеству
+
 
 .. toctree::
    :name: Auto
@@ -100,4 +102,5 @@
    GetReceiptGenerationProcess <GetReceiptGenerationProcess>
    AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>
    SendDraftAsync <SendDraftAsync>
+   CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>
 
