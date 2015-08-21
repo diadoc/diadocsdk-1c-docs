@@ -31,8 +31,6 @@ CreateSendTaskFromFile(<Path>, <Type>)
    оплату
 -  "XmlContent" - отправка произвольного формализованного документа в
    формате xml
--  "TrustConnectionRequest" - отправка запроса на добавление в список
-   активных контрагентов
 -  "Contract" - отправка договора
 -  "CertificateRegistry" - отправка реестра сертификатов
 -  "PriceListAgreement" - отправка протокола согласования цены
