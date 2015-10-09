@@ -1,5 +1,5 @@
 ﻿CreateAcquireCounteragentTask
-==============
+=============================
 
 Метод объекта :doc:`Organization <Организация>`.
 

@@ -62,5 +62,5 @@
    InvoiceItem-(Invoice) <InvoiceItem-(Invoice)>
    PaymentDocument <PaymentDocument>
    InvoiceTotals <Итоги-InvoiceTotals>
-   addStructedAdditionalInfo <addStructedAdditionalInfo>
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo>
    AdditionalInfoItem <AdditionalInfoItem>
