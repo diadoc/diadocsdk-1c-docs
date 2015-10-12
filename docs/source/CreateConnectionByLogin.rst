@@ -1,7 +1,7 @@
 ﻿CreateConnectionByLogin
 =======================
 
-Метод :doc:`объекта интерфейса "Диадок" <Объект-интерфейса-Диадок>`.
+Метод :doc:`объекта интерфейса "Диадок" <Root-method>`.
 
 **Синтаксис**
 
@@ -17,7 +17,7 @@ CreateConnectionByLogin(<Login>, <Password>)
 **Возвращаемое значение**
 
 
-Объект :doc:`DiadocConnection <Соединение>`.
+Объект :doc:`DiadocConnection <Connection>`.
 
 **Описание**
 

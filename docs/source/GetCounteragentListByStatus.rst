@@ -1,7 +1,7 @@
 ﻿GetCounteragentListByStatus
 ===========================
 
-Метод объекта :doc:`Organization <Организация>`
+Метод объекта :doc:`Organization <Organization>`
 
 **Синтаксис:**
 
@@ -29,7 +29,7 @@ GetCounteragentListByStatus(<Status>)
 
 
 Коллекция :doc:`Collection <Collection>` объектов
-:doc:`Counteragent <Контрагент>`.
+:doc:`Counteragent <Counteragent>`.
 
 **Описание**
 

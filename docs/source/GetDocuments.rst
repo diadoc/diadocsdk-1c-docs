@@ -12,7 +12,7 @@ GetDocuments()
 
 
 Коллекция :doc:`Collection <Collection>` объектов, производных от
-:doc:`Document <Документы>`
+:doc:`Document <Document>`
 
 **Описание**
 

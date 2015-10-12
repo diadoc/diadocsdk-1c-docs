@@ -1,7 +1,7 @@
 ﻿AcquireCounteragent
 ===================
 
-Метод объекта :doc:`Counteragent <Контрагент>`.
+Метод объекта :doc:`Counteragent <Counteragent>`.
 
 **Синтаксис**
 

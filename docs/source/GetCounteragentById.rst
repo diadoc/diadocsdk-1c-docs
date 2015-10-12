@@ -1,7 +1,7 @@
 ﻿GetCounteragentById
 ===================
 
-Метод объекта :doc:`Organization <Организация>`
+Метод объекта :doc:`Organization <Organization>`
 
 **Синтаксис**
 
@@ -16,7 +16,7 @@ GetCounteragentById(<Id>)
 **Возвращаемое значение**
 
 
-Объект :doc:`Counteragent <Контрагент>`.
+Объект :doc:`Counteragent <Counteragent>`.
 
 **Описание**
 

@@ -1,7 +1,7 @@
 ﻿GetOrganizationById
 ===================
 
-Метод объекта :doc:`DiadocConnection <Соединение>`.
+Метод объекта :doc:`DiadocConnection <Connection>`.
 
 **Синтаксис**
 
@@ -16,7 +16,7 @@ GetOrganizationById(<BoxId>)
 **Возвращаемое значение**
 
 
-Объект :doc:`Organization <Организация>`.
+Объект :doc:`Organization <Organization>`.
 
 **Описание**
 

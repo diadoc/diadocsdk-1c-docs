@@ -1,7 +1,7 @@
 ﻿CreateConnectionByCertificate
 =============================
 
-Метод :doc:`объекта интерфейса "Диадок" <Объект-интерфейса-Диадок>`.
+Метод :doc:`объекта интерфейса "Диадок" <Root-method>`.
 
 **Синтаксис**
 
@@ -16,7 +16,7 @@ CreateConnectionByCertificate(<Thumbprint>)
 **Возвращаемое значение**
 
 
-Объект :doc:`DiadocConnection <Соединение>`.
+Объект :doc:`DiadocConnection <Connection>`.
 
 **Описание**
 

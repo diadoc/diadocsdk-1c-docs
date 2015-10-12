@@ -30,7 +30,7 @@
 
 - **Signer** (объект :doc:`Signer <Signer>`, чтение, обязательно для заполнения ) - данные подписанта документа
 
-- **Totals** (:doc:`InvoiceTotals <Итоги-InvoiceTotals>`, чтение, --- ) - общие итоги по документу
+- **Totals** (:doc:`InvoiceTotals <Totals-InvoiceTotals>`, чтение, --- ) - общие итоги по документу
 
 - **Type** (строка, чтение, --- ) - тип документа
 
@@ -61,6 +61,6 @@
    AddPaymentDocument-(InvoiceContent) <AddPaymentDocument-(InvoiceContent)>
    InvoiceItem-(Invoice) <InvoiceItem-(Invoice)>
    PaymentDocument <PaymentDocument>
-   InvoiceTotals <Итоги-InvoiceTotals>
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo>
+   InvoiceTotals <Totals-InvoiceTotals>
+   addStructedAdditionalInfo <addStructedAdditionalInfo>
    AdditionalInfoItem <AdditionalInfoItem>
