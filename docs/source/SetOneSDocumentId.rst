@@ -1,7 +1,7 @@
 ﻿SetOneSDocumentId
 =================
 
-Метод объекта :doc:`Document <Документы>`
+Метод объекта :doc:`Document <Document>`
 
 **Синтаксис**
 

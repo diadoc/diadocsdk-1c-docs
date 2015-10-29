@@ -1,5 +1,5 @@
 ﻿AddStructedAdditionalInfo
-========================
+=========================
 
 Метод объекта :doc:`InvoiceContent <InvoiceContent>`
 

@@ -1,7 +1,7 @@
 ﻿GetDocumentById
 ===============
 
-Метод объекта :doc:`Organization <Организация>`
+Метод объекта :doc:`Organization <Organization>`
 
 **Синтаксис**
 
@@ -20,7 +20,7 @@ GetDocumentById(<Id>, <RequireOneSDocumentId>)
 **Возвращаемое значение**
 
 
-Объект производного от :doc:`Document <Документы>` типа.
+Объект производного от :doc:`Document <Document>` типа.
 
 **Описание**
 

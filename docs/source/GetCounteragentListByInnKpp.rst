@@ -1,7 +1,7 @@
 ﻿GetCounteragentListByInnKpp
 ===========================
 
-Метод объекта :doc:`Organization <Организация>`
+Метод объекта :doc:`Organization <Organization>`
 
 **Синтаксис**
 
@@ -18,7 +18,7 @@ GetCounteragentListByInnKpp(<Inn>, <Kpp>)
 
 
 Коллекция :doc:`Collection <Collection>` объектов
-:doc:`Counteragent <Контрагент>`.
+:doc:`Counteragent <Counteragent>`.
 
 **Описание**
 

@@ -16,4 +16,4 @@
 
 Объект можно получить, вызвав метод
 :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` объекта
-:doc:`Organization <Организация>`
+:doc:`Organization <Organization>`

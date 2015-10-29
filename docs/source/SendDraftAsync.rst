@@ -1,7 +1,7 @@
 ﻿SendDraftAsync
 ==============
 
-Метод объекта :doc:`Organization <Организация>`.
+Метод объекта :doc:`Organization <Organization>`.
 
 **Синтаксис**
 
@@ -25,4 +25,4 @@ SendDraftAsync(<MessageId>)
 Инициирует асинхронную операцию отправки черновика по его уникальному
 идентификатору. Результатом асинхронной операции является коллекция
 :doc:`Collection <Collection>` объектов, производных от
-:doc:`Document <Документы>`.
+:doc:`Document <Document>`.

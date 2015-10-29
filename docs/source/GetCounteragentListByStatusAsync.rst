@@ -1,7 +1,7 @@
 ﻿GetCounteragentListByStatusAsync
 ================================
 
-Метод объекта :doc:`Organization <Организация>`
+Метод объекта :doc:`Organization <Organization>`
 
 **Синтаксис:**
 

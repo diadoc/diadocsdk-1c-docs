@@ -1,7 +1,7 @@
 ﻿GetOrganizationList
 ===================
 
-Метод объекта :doc:`DiadocConnection <Соединение>`.
+Метод объекта :doc:`DiadocConnection <Connection>`.
 
 **Синтаксис**
 
@@ -12,7 +12,7 @@ GetOrganizationList()
 
 
 Коллекция :doc:`Collection <Collection>` объектов
-:doc:`Organization <Организация>`.
+:doc:`Organization <Organization>`.
 
 **Описание**
 
