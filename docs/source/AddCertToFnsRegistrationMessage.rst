@@ -6,7 +6,7 @@
 **Синтаксис**
 
 
-AddCertToFnsRegistrationMessage(<>)
+AddCertToFnsRegistrationMessage(<Thumbprint>)
 
 **Параметры**
 

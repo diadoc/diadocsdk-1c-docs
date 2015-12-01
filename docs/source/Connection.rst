@@ -14,6 +14,9 @@
 
 - **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение ) - сертификат, по которому произошла авторизация
 
+- **CloudCertificates** (массив объектов :doc:`CloudCertificateInfo <CloudCertificateInfo>, чтение) - облачные сертификаты, доступне
+  текущему пользователю. Доступны только в случае, если соединение выполнено по логину и паролю.
+
 
 Свойство AuthenticateType принимает одно из следующих значений:
 
@@ -30,6 +33,8 @@
 
 -  :doc:`GetOrganizationById <GetOrganizationById>` - возвращает организацию, к которой текущий пользователь имеет доступ, по идентификатору организации
 
+-  :doc:`CreateCloudSignTask <CreateCloudSignTask>` - возвращает объект задания на облачную подпись.
+
 
 Объект можно получить, вызвав метод
 :doc:`CreateConnectionByLogin <CreateConnectionByLogin>` (авторизация по
@@ -44,4 +49,5 @@
 
    GetOrganizationList <GetOrganizationList>
    GetOrganizationById <GetOrganizationById>
+   CreateCloudSignTask <CreateCloudSignTask>
 
