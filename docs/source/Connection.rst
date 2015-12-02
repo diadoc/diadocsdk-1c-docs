@@ -14,7 +14,7 @@
 
 - **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение ) - сертификат, по которому произошла авторизация
 
-- **CloudCertificates** (массив объектов :doc:`CloudCertificateInfo <CloudCertificateInfo>, чтение) - облачные сертификаты, доступне
+- **CloudCertificates** (массив объектов :doc:`CloudCertificateInfo <CloudCertificateInfo>`, чтение) - облачные сертификаты, доступне
   текущему пользователю. Доступны только в случае, если соединение выполнено по логину и паролю.
 
 
