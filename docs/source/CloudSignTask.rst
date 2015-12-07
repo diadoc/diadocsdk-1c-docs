@@ -25,5 +25,5 @@
    :hidden:
 
    AddContent <AddContent>
-   Sign <sign>
+   Sign <Sign>
    Confirm <Confirm>
