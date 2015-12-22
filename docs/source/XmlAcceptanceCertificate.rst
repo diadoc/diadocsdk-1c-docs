@@ -49,8 +49,6 @@
 
 -  :doc:`GetBuyerContent <GetBuyerContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул заказчика) в виде объектной модели
 
--  :doc:`CreateReplySendTask <CreateReplySendTask-(XmlAcceptanceCertificate)>` - формирует задание для отправки титула заказчика (для подписания документа со стороны заказчика)
-
 -  :doc:`SaveRecipientContent <SaveRecipientContent-(XmlAcceptanceCertificate)>` - сохраняет содержимое титула покупателя на локальный диск
 
 
@@ -62,6 +60,5 @@
    Reject-(XmlAcceptanceCertificate) <Reject-(XmlAcceptanceCertificate)>
    GetContent-(XmlAcceptanceCertificate) <GetContent-(XmlAcceptanceCertificate)>
    GetBuyerContent-(XmlAcceptanceCertificate) <GetBuyerContent-(XmlAcceptanceCertificate)>
-   CreateReplySendTask-(XmlAcceptanceCertificate) <CreateReplySendTask-(XmlAcceptanceCertificate)>
    SaveRecipientContent-(XmlAcceptanceCertificate) <SaveRecipientContent-(XmlAcceptanceCertificate)>
 

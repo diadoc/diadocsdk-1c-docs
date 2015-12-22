@@ -11,6 +11,7 @@
    CounteragentItem <CounteragentItem>
    Department <Department>
    DocumentEvent <DocumentEvent> 
+   DocumentPackage <DocumentPackage>
    DocumentsTask <DocumentsTask> 
    OrganizationUser<OrganizationUser>
    PersonalCertificate<PersonalCertificate>

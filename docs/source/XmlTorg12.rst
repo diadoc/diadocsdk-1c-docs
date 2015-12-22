@@ -49,8 +49,6 @@
 
 -  :doc:`GetBuyerContent <GetBuyerContent-(XmlTorg12)>` - возвращает содержание документа (титул получателя) в виде объектной модели
 
--  :doc:`CreateReplySendTask <CreateReplySendTask-(XmlTorg12)>` - формирует задание для отправки титула получателя (для подписания документа со стороны покупателя)
-
 -  :doc:`SaveRecipientContent <SaveRecipientContent-(XmlTorg12)>` - сохраняет содержимое титула получателя на локальный диск
 
 
@@ -62,6 +60,5 @@
    Reject-(XmlTorg12) <Reject-(XmlTorg12)>
    GetContent-(XmlTorg12) <GetContent-(XmlTorg12)>
    GetBuyerContent-(XmlTorg12) <GetBuyerContent-(XmlTorg12)>
-   CreateReplySendTask-(XmlTorg12) <CreateReplySendTask-(XmlTorg12)>
    SaveRecipientContent-(XmlTorg12) <SaveRecipientContent-(XmlTorg12)>
 
