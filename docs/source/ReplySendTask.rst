@@ -20,6 +20,8 @@
    -  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого 
       к формализованному документу
 
+   -  :doc:`PackageContent <PackageContent>` - для любых действий, применяемых к пакетам документов.
+
 Методы
 ------
 
