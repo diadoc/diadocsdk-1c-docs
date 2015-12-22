@@ -131,7 +131,7 @@
 
 -  :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает нередактируемый пакет, в котором находится документ
 
--  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>' - создает задание на выполнение ответного действия с документом
+-  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом
 
 .. toctree::
    :name: Auto

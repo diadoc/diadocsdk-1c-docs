@@ -6,6 +6,7 @@
    :maxdepth: 1
    :caption: Прочие объекты
 
+   BaseContent <BaseContent>
    CloudCertificateInfo <CloudCertificateInfo>
    CloudSignTask <CloudSignTask>
    CounteragentItem <CounteragentItem>

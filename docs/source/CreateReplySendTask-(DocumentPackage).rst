@@ -39,4 +39,4 @@ CreateReplySendTask(<Type>)
 -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
 
 -  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого 
-    к формализованному документу
+   к формализованному документу

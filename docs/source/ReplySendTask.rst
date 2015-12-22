@@ -6,7 +6,14 @@
 Свойства
 --------
 
--  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания (в зависимости от типа дейтсвия)
+-  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания в зависимости от типа дейтсвия:
+
+   -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument"
+
+   -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
+
+   -  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого 
+      к формализованному документу
 
 Методы
 ------
