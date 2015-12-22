@@ -8,7 +8,12 @@
 
 -  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания в зависимости от типа дейтсвия:
 
-   -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument"
+   -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа «ТОРГ-12 в формате ФНС»
+
+   -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для действия типа "AcceptDocument" 
+      документа «акт о выполнении работ в формате ФНС»
+
+   -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument" других документов
 
    -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
 
