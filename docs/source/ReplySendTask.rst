@@ -6,21 +6,27 @@
 Свойства
 --------
 
--  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания в зависимости от типа дейтсвия:
+-  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания. Зависит от объекта, из которого был создан ReplySendTask 
+   и от типа дейтсвия:
+  
+   - если ReplySendTask был создан методом :doc:`CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>` объекта :doc:`DocumentPackage <DocumentPackage>`, 
+     то Content будет являться объектом типа :doc:`PackageContent <PackageContent>`.
 
-   -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа «ТОРГ-12 в формате ФНС»
+   - если ReplySendTask был создан методом :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` объекта :doc:`Document <Document>`, 
+     то Content в зависимости от выбранного типа действия будет являться объектом:
 
-   -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для действия типа "AcceptDocument" 
-      документа «акт о выполнении работ в формате ФНС»
+     -  для действия "AcceptDocument":
 
-   -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument" других документов
+        - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа «ТОРГ-12 в формате ФНС»
+        - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа 
+          «акт о выполнении работ в формате ФНС»
+        - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
 
-   -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
+     -  для действия типа "RejectDocument":
 
-   -  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого 
-      к формализованному документу
+        - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для формализованных документов
+        - :doc:`RejectionContent <RejectionContent>` - для неформализованных документов
 
-   -  :doc:`PackageContent <PackageContent>` - для любых действий, применяемых к пакетам документов.
 
 Методы
 ------
