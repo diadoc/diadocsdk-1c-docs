@@ -32,15 +32,16 @@ CreateReplySendTask(<Type>)
 содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет объект, производный от 
 :doc:`BaseContent <BaseContent>`, соответствующий типу выполняемого действия:
 
--  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа «ТОРГ-12 в формате ФНС»
+  -  для действия "AcceptDocument":
 
--  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для действия типа "AcceptDocument" 
-   документа «акт о выполнении работ в формате ФНС»
+     - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа «ТОРГ-12 в формате ФНС»
+     - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа 
+       «акт о выполнении работ в формате ФНС»
+     - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
 
--  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument" других документов
+  -  для действия типа "RejectDocument":
 
--  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
+     - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для формализованных документов
+     - :doc:`RejectionContent <RejectionContent>` - для неформализованных документов
 
--  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого 
-   к формализованному документу
 
