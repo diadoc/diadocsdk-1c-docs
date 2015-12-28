@@ -67,6 +67,8 @@
 
 - **HasCustomPrintForm** (булево, чтение ) - признак того, что данный документ имеет нестандартную печатную форму
 
+- **IsLockedPackage** (булево, чтение) - признак того, что документ является частью нередактируемого пакета
+
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -127,6 +129,10 @@
 
 -  :doc:`GetPrintForm <GetPrintForm>` - получает печатную форму документа в формате pdf
 
+-  :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает нередактируемый пакет, в котором находится документ
+
+-  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -149,6 +155,8 @@
    AcceptRevocationRequest <AcceptRevocationRequest>
    RejectRevocationRequest <RejectRevocationRequest>
    GetPrintForm <GetPrintForm>
+   GetDocumentPackage <GetDocumentPackage>
+   CreateReplySendTask <CreateReplySendTask-(Document)>
 
 Производные объекты 
 ------------------------------------
