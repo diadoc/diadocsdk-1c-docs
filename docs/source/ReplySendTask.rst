@@ -27,6 +27,10 @@
         - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для формализованных документов
         - :doc:`RejectionContent <RejectionContent>` - для неформализованных документов
 
+     -  для действия типа "CorrectionRequest":
+
+        - :doc:`CorrectionRequestContent <CorrectionRequestContent>` - для любых документов
+
 
 Методы
 ------

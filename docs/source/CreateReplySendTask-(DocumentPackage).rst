@@ -19,6 +19,8 @@ CreateReplySendTask(<Type>)
 
 -  "RejectDocument" - отказ в подписи документа
 
+-  "CorrectionRequest" - запрос на коррекцию (только для незалоченных пакетов)
+
 
 **Возвращаемое значение**
 
@@ -45,3 +47,8 @@ CreateReplySendTask(<Type>)
 
      - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для формализованных документов
      - :doc:`RejectionContent <RejectionContent>` - для неформализованных документов
+
+
+  -  для действия типа "CorrectionRequest":
+
+     - :doc:`CorrectionRequestContent <CorrectionRequestContent>` - для любых документов
