@@ -33,7 +33,7 @@
 
 -  :doc:`GetOrganizationById <GetOrganizationById>` - возвращает организацию, к которой текущий пользователь имеет доступ, по идентификатору организации
 
--  :doc:`CreateCloudSignTask <CreateCloudSignTask>` - возвращает объект задания на облачную подпись.
+-  :doc:`CreateCloudSignTask <CreateCloudSignTask>` - возвращает объект, с помощью которого можно подписать документы облачной подписью
 
 
 Объект можно получить, вызвав метод
