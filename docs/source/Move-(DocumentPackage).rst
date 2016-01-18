@@ -1,7 +1,7 @@
 ﻿Move
 ====
 
-Метод объекта :doc:`DocumentPackage <DocumentPackage>` (только для незалоченных пакетов).
+Метод объекта :doc:`DocumentPackage <DocumentPackage>` (только для редактируемых пакетов).
 
 **Синтаксис**
 

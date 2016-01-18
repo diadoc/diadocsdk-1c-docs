@@ -19,7 +19,7 @@ CreateReplySendTask(<Type>)
 
 -  "RejectDocument" - отказ в подписи документа
 
--  "CorrectionRequest" - запрос на коррекцию
+-  "CorrectionRequest" - запроc на уточнение документов «счет-фактура» и «исправление счет-фактуры»
 
 
 **Возвращаемое значение**

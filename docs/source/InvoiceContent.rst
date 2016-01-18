@@ -32,7 +32,7 @@
 
 - **Totals** (:doc:`InvoiceTotals <Totals-InvoiceTotals>`, чтение, --- ) - общие итоги по документу
 
-- **Type** (строка, чтение, --- ) - тип документа
+- **Type** (строка, чтение, --- ) - тип документа (возвращает строку "InvoiceContent")
 
 - **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem-(Invoice)>`, чтение, обязательно для заполнения ) - табличная часть счет-фактуры
 

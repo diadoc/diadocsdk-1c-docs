@@ -129,7 +129,7 @@
 
 -  :doc:`GetPrintForm <GetPrintForm>` - получает печатную форму документа в формате pdf
 
--  :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает нередактируемый пакет, в котором находится документ
+-  :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает пакет, в котором находится документ
 
 -  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом
 
