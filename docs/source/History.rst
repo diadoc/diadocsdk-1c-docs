@@ -2,6 +2,14 @@
 ====================================
 
 
+v5.4.0 - 22.01.2016
+-----------------------
+
+- Добавлены инструменты для отслеживания роуминговых документов:
+    - в объекте :doc:`Document <Document>` добавлены свойства RoamingNotificationStatus и RoamingNotificationStatusDescription.
+    - в объекте :doc:`Counteragent <Counteragent>` добавлено свойство IsRoaming.
+
+
 v5.3.1 - 14.01.2016
 -----------------------
 
@@ -12,9 +20,9 @@ v5.3.0 - 21.12.2015
 -----------------------
 
 - Добавлена возможность работы с пакетами документов:
-    - В объекте :doc:`Document <Document>` добавлено свойство IsLockedPackage и метод :doc:`GetDocumentPackage <GetDocumentPackage>`
+    - в объекте :doc:`Document <Document>` добавлено свойство IsLockedPackage и метод :doc:`GetDocumentPackage <GetDocumentPackage>`
       для получаения пакета, в который включен документ.
-    - Добавлен объект :doc:`DocumentPackage <DocumentPackage>` для работы с пакетами документов.
+    - добавлен объект :doc:`DocumentPackage <DocumentPackage>` для работы с пакетами документов.
 
 
 v5.2.4 - 22.12.2015
@@ -45,8 +53,9 @@ v5.2.0 - 01.12.2015
 -----------------------
 
 - Добавлена возможность подписания документов облачной подписью:
-    - Добавлены свойства: объект :doc:`DiadocConnection <Connection>` - свойство CloudCertificates (для получения облачных сертификатов пользователя)
-    - Добавлены объекты: :doc:`CloudCertificateInfo <CloudCertificateInfo>` (для информации об облачном сертификате),
+    - добавлен метод :doc:`GetCloudCertificates <GetCloudCertificates>` в объект :doc:`DiadocConnection <Connection>` для 
+      получения облачных сертификатов пользователя
+    - добавлены объекты: :doc:`CloudCertificateInfo <CloudCertificateInfo>` (для информации об облачном сертификате),
       :doc:`CloudSignTask <CloudSignTask>` (для задание на подписание документов облачной подписью).
 
 
