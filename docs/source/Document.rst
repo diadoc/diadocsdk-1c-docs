@@ -94,6 +94,13 @@
 -  "UnknownRevocationStatus" - неизвестный статус аннулирования
    документа
 
+Свойство **RoamingNotificationStatus** принимает одно из следующих значений:
+
+-  "RoamingNotificationStatusNone" - документ не роуминговый или документ без подтверждения доставки в роуминг
+-  "RoamingNotificationStatusSuccess" - документ с подтверждением успешной доставки в роуминг
+-  "RoamingNotificationStatusError" - документ с ошибкой доставки в роуминг
+-  "UnknownRoamingNotificationStatus" - неизвестный роуминговый статус документа
+
 Методы объекта
 --------------
 
