@@ -189,7 +189,7 @@
    XmlAcceptanceCertificate <XmlAcceptanceCertificate>
    NonformalizedTorg12 <NonformalizedTorg12>
    NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
-   NonformalizedProformaInvoice <NonformalizedProformaInvoice>
+   NonformalizedProforma <NonformalizedProformaInvoice>
    Contract <Contract>
    Nonformalized <Nonformalized>
 
@@ -206,10 +206,11 @@
    неформализованном виде
 -  :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>` - акт о выполнении работ в
    неформализованном виде
--  :doc:`NonformalizedProformaInvoice <NonformalizedProformaInvoice>` -
+-  :doc:`NonformalizedProforma <NonformalizedProformaInvoice>` -
    счет на оплату
 -  :doc:`Contract <Contract>` - договор
--  :doc:`Nonformalized <Nonformalized>` - неформализованный документ
+-  :doc:`Nonformalized <Nonformalized>` - неформализованный документ (акт сверки, детализация, 
+   протокол согласования цены, реестр сертификатов)
 
 Структуры для работы с содержимым документов
 ---------------------------------------------
