@@ -8,6 +8,11 @@ v5.5.0 - 21.03.2016
 - Добавлена возможность для отправки пакета документов:
     - в объекте :doc:`Organization <Organization>` добавлен метод :doc:`CreatePackageSendTask <CreatePackageSendTask>`
       для создания задания на отправку пакета документов, который возвращает объект :doc:`PackageSendTask <PackageSendTask>`.
+    - добавлен объект :doc:`PackageSendTask <PackageSendTask>` для работы с заданием на отправку пакета документов.
+    - добавлен объект :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для
+      работы с документами на отправку, входящими в пакет.
+    - добавлен объект :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на облачную подпись содержимого 
+      всех документов из пакета на отправку.
 
 
 v5.4.2 - 17.03.2016
