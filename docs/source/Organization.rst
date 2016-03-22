@@ -82,6 +82,8 @@
 
 -  :doc:`CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>` - создает запрос на приглашение контрагента к сотрудничеству
 
+-  :doc:`CreatePackageSendTask <CreatePackageSendTask>` - создает задание на отправку пакета документов
+
 
 .. toctree::
    :name: Auto
@@ -103,4 +105,5 @@
    AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>
    SendDraftAsync <SendDraftAsync>
    CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>
+   CreatePackageSendTask <CreatePackageSendTask>
 
