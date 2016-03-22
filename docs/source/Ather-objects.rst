@@ -14,6 +14,7 @@
    DocumentEvent <DocumentEvent> 
    DocumentPackage <DocumentPackage>
    DocumentsTask <DocumentsTask> 
+   DocumentToSend <DocumentToSend>
    OrganizationUser<OrganizationUser>
    PersonalCertificate<PersonalCertificate>
    ProxySettings<ProxySettings>

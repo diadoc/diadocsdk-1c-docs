@@ -18,13 +18,13 @@
 - :doc:`AddInitialDocument <AddInitialDocument-(DocumentToSend)>` - добавляет идентификатор
    документа в коллекцию "родительских" документов
 
--  :doc:`AddSubordinateDocument <AddSubordinateDocument-(DocumentToSend)>` - добавляет
+- :doc:`AddSubordinateDocument <AddSubordinateDocument-(DocumentToSend)>` - добавляет
    идентификатор документа в коллекцию подчиненных документов
 
 - :doc:`AddInitialDocumentFromPackage <AddInitialDocumentFromPackage>` - добавляет идентификатор
    документа из пакета на отправку в коллекцию "родительских" документов
 
--  :doc:`AddSubordinateDocumentFromPackage <AddSubordinateDocumentFromPackage>` - добавляет
+- :doc:`AddSubordinateDocumentFromPackage <AddSubordinateDocumentFromPackage>` - добавляет
    идентификатор документа из пакета на отправку в коллекцию подчиненных документов
 
 
