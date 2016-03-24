@@ -38,6 +38,7 @@
    PackageContent <PackageContent>
    RejectionContent <RejectionContent>
    RevocationRequestContent <RevocationRequestContent>
+   SentPackageContent <SentPackageContent>
    Torg12BuyerContent <Torg12BuyerContent>
    Torg12SellerContent <Torg12SellerContent>
    
@@ -57,5 +58,6 @@
 -  :doc:`PackageContent <PackageContent>` - содержание пакета документов
 -  :doc:`RejectionContent <RejectionContent>` - метаданные неформализованного отказа в подписании документа
 -  :doc:`RevocationRequestContent <RevocationRequestContent>` - метаданные запроса на аннулирование документа
+-  :doc:`SentPackageContent <SentPackageContent>` - содержание пакета документов на отправку
 -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - содержание титула покупателя документа «ТОРГ-12 в формате ФНС»
 -  :doc:`Torg12SellerContent <Torg12SellerContent>` - содержание титула продавца документа типа «ТОРГ-12 в формате ФНС»
