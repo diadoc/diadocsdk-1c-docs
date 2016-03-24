@@ -16,6 +16,7 @@
    DocumentsTask <DocumentsTask> 
    DocumentToSend <DocumentToSend>
    OrganizationUser<OrganizationUser>
+   PackageSendTask <PackageSendTask>
    PersonalCertificate<PersonalCertificate>
    ProxySettings<ProxySettings>
    ReceiptGenerationProcess<ReceiptGenerationProcess>
