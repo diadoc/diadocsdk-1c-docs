@@ -27,6 +27,7 @@
    ReplySendTask<ReplySendTask>
    Signature<Signature>
    StructuredAttachment<StructuredAttachment>
+   User <User>
    UserPermissions<UserPermissions>
    ValidationError<ValidationError>
    Collection<Collection>

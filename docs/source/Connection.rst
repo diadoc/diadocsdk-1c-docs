@@ -35,6 +35,8 @@
 -  :doc:`GetCloudCertificates <GetCloudCertificates>` - возвращает список облачных сертификатов, которые доступны
   текущему пользователю. Доступны только в случае, если соединение выполнено по логину и паролю.
 
+-  :doc:`GetMyUser <GetMyUser>` - возвращает объект, содержащий информацию о текущем авторизованном пользователе
+
 
 Объект можно получить, вызвав метод
 :doc:`CreateConnectionByLogin <CreateConnectionByLogin>` (авторизация по
@@ -51,4 +53,5 @@
    GetOrganizationById <GetOrganizationById>
    CreateCloudSignTask <CreateCloudSignTask>
    GetCloudCertificates <GetCloudCertificates>
+   GetMyUser <GetMyUser>
 

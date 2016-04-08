@@ -84,6 +84,10 @@
 
 -  :doc:`CreatePackageSendTask <CreatePackageSendTask>` - создает задание на отправку пакета документов
 
+-  :doc:`SetData <SetData>` - добавляет пару "ключ-значение" в хранилище
+
+-  :doc:`GetData <GetData>` - извлекает пару "ключ-значение" из хранилища по ее ключу
+
 
 .. toctree::
    :name: Auto
@@ -106,4 +110,6 @@
    SendDraftAsync <SendDraftAsync>
    CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>
    CreatePackageSendTask <CreatePackageSendTask>
+   SetData <SetData>
+   GetData <GetData>
 
