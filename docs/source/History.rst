@@ -13,9 +13,9 @@ v5.5 - 08.04.2016
       работы с документами на отправку, входящими в пакет.
     - добавлен объект :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на облачную подпись содержимого 
       всех документов из пакета на отправку.
-- В объект :doc:`Organization <Organization>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
+- В объект :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
   авторизованном пользователе.
-- В объект :doc:`DiadocConnection <Connection>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
+- В объект :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
   добавлять и извлекать пары вида "ключ-значение" в хранилище.
 - :doc:`Исправлены ошибки <Bugs_5_5>`
 
