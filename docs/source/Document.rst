@@ -57,7 +57,7 @@
 
 - **OneSDocumentId** (строка, чтение ) - идентификатор документа в 1С
 
-- **ResolutionStatus** (строка, чтение ) - текущий статус согласования документа
+- **ResolutionStatus** (объект :doc:`Resolution <Resolution>`, чтение ) - текущий статус согласования документа
 
 - **Resolutions** (:doc:`Коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение ) - история согласованих документа
 
