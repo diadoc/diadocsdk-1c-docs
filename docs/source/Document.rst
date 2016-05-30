@@ -227,7 +227,7 @@
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
 - :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - для работы с формализованным :doc:`актом выполненных работ <XmlAcceptanceCertificate>`
 - :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
-- :doc:`NonformilizedContent <NonformilizedContent>` - для работы с :doc:`счетом на оплату <Nonformalized>`
+- :doc:`NonformilizedContent <NonformilizedContent>` - для работы с :doc:`неформализованным документом <Nonformalized>`
 - :doc:`ContractContent <ContractContent>` - для работы с документом :doc:`договор <Contract>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - для работы с неформализованным актом выполненных работ
