@@ -13,6 +13,7 @@ v5.6 - 18.04.2016
     - добавлен объект :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
       С помощью его методов :doc:`Send <Send-(OutDocumentSignTask)>` или :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` можно подписать
       и отправить исходящий документ, который прежде был отправлен с выставленным флагом **DelaySend**.
+- :doc:`Исправлены ошибки <Bugs_5_6>`
 
 
 v5.5 - 08.04.2016
