@@ -144,6 +144,8 @@
 
 -  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом
 
+-  :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` - создает задание на подписание и отправку исходящего документа с отложенной отправкой.
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -168,6 +170,7 @@
    GetPrintForm <GetPrintForm>
    GetDocumentPackage <GetDocumentPackage>
    CreateReplySendTask <CreateReplySendTask-(Document)>
+   CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
 
 Производные объекты 
 ------------------------------------

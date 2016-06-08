@@ -2,7 +2,20 @@
 ====================================
 
 
-v5.5 - 26.04.2016
+v5.6 - 18.04.2016
+-----------------------
+
+- Добавлена возможность подписания и отправки исходящих документов с отложенной отправкой:
+    - в объект :doc:`Document <Document>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` и
+      в объект :doc:`Document <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
+      для создания задания на подписание и отправку исходящего документа или пакета  документов соответственно. Эти методы возвращают объект
+      :doc:`OutDocumentSignTask <OutDocumentSignTask>`.
+    - добавлен объект :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
+      С помощью его методов :doc:`Send <Send-(OutDocumentSignTask)>` или :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` можно подписать
+      и отправить исходящий документ, который прежде был отправлен с выставленным флагом **DelaySend**.
+
+
+v5.5 - 08.04.2016
 -----------------------
 
 - Добавлена возможность для отправки пакета документов:
@@ -17,8 +30,8 @@ v5.5 - 26.04.2016
   авторизованном пользователе.
 - В объект :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
   добавлять и извлекать пары вида "ключ-значение" в хранилище.
-- В метод :doc:`GetPersonalCertificates <GetPersonalCertificates>` добавлен опциональный параметр UserStore, с помощью которого можно искать 
-  сертификаты не только в хранилище сертификатов текущего пользователя, но и в хранилище сертификатов машины.
+- В метод :doc:`GetPersonalCertificates <GetPersonalCertificates>` объекта :doc:`интерфейса "Диадок" <Root-method>` добавлен входной параметр UserStore,
+  позволяющий искать сертификаты не только в хранилище текущего пользователя, но и в хранилище машины.
 - :doc:`Исправлены ошибки <Bugs_5_5>`
 
 

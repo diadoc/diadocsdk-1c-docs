@@ -28,6 +28,9 @@
 
 -  :doc:`CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>` - формирует задание для ответного действия с документом
 
+-  :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` - создает задание на подписание и отправку исходящего документа с 
+   отложенной отправкой.
+
 
 .. toctree::
    :name: Auto_1
@@ -38,4 +41,5 @@
    Disapprove <Disapprove-(DocumentPackage)>
    CreateResolutionRequestTask <CreateResolutionRequestTask-(DocumentPackage)>
    CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>
+   CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>
 
