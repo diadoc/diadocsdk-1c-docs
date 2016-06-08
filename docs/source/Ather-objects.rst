@@ -16,6 +16,7 @@
    DocumentsTask <DocumentsTask> 
    DocumentToSend <DocumentToSend>
    OrganizationUser<OrganizationUser>
+   OutDocumentSignTask <OutDocumentSignTask>
    PackageSendTask <PackageSendTask>
    PersonalCertificate<PersonalCertificate>
    ProxySettings<ProxySettings>

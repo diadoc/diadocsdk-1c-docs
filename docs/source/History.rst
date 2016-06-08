@@ -7,7 +7,7 @@ v5.6 - 18.04.2016
 
 - Добавлена возможность подписания и отправки исходящих документов с отложенной отправкой:
     - в объект :doc:`Document <Document>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` и
-      в объект :doc:`Document <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
+      в объект :doc:`DocumentPackage <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
       для создания задания на подписание и отправку исходящего документа или пакета  документов соответственно. Эти методы возвращают объект
       :doc:`OutDocumentSignTask <OutDocumentSignTask>`.
     - добавлен объект :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
