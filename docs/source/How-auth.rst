@@ -99,8 +99,8 @@
 
    ::
 
-                   OrganizationId = "8fd0af8abe934c7091b5ccd476ef1cb5@diadoc.ru";
-                   ДиадокКонтекстОрганизации = ДиадокСоединение.GetOrganizationById(OrganizationId);
+                   BoxId = "8fd0af8abe934c7091b5ccd476ef1cb5@diadoc.ru";
+                   ДиадокКонтекстОрганизации = ДиадокСоединение.GetOrganizationById(BoxId);
 
 -  Получив массив всех объектов :doc:`Organization <Organization>` всех
    доступных ящиков. Пример:
