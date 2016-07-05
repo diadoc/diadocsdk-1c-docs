@@ -28,13 +28,13 @@
 
 - **Buyer** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения ) - данные покупателя
 
-- **Shipper** (объект :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение, --- ) - данные грузоотправителя
+- **Shipper** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, --- ) - данные грузоотправителя
 
 - **ShipperDepartment** (строка, чтение/запись, длина не более 1000 символов ) - структурное подразделение грузоотправителя
 
 - **ShipperOkdp** (строка, чтение/запись, длина не более 7 символов ) - код основного вида деятельности по ОКДП грузоотправителя
 
-- **Consignee** (объект :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение, --- ) - данные грузополучателя
+- **Consignee** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, --- ) - данные грузополучателя
 
 - **Items** (:doc:`Коллекция <Collection>` объектов :doc:`Torg12Item <Torg12Item>`, чтение, обязательно для заполнения ) - табличная часть Торг-12
 
