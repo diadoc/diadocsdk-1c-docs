@@ -93,7 +93,7 @@ v5.0.0 - 03.07.2015
 
 - для объекта  :doc:`InvoiceContent <InvoiceContent>`
    - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
-   - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem-(Invoice)>`
+   - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem>`
 
 - для объекта  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
    - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>`
