@@ -35,7 +35,7 @@
 --------------
 
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo>` - добавляет строку дополнительных сведений
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceItem)>` - добавляет строку дополнительных сведений
 
 
 Свойство TaxRate может принимать одно из следующих значений:
@@ -55,4 +55,4 @@
    :name: Auto
    :hidden:
 
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo>
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceItem)>
