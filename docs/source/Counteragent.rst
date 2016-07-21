@@ -47,9 +47,9 @@
 
 -  :doc:`GetStatus <GetStatus>` - возвращает текущий статус отношений с контрагентом
 
--  :doc:`AcquireCounteragent <AcquireCounteragent>` - отправляет контрагенту «приглашение» на обмен документами
+-  :doc:`AcquireCounteragent <AcquireCounteragent>` - отправляет контрагенту "приглашение" на обмен документами
 
--  :doc:`BreakWithCounteragent <BreakWithCounteragent>` - разрывает действующее «приглашение» об обмене документами
+-  :doc:`BreakWithCounteragent <BreakWithCounteragent>` - разрывает действующее "приглашение" об обмене документами
 
 
 .. toctree::

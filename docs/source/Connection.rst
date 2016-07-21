@@ -43,7 +43,7 @@
 логину и паролю пользователя), либо вызвав метод
 :doc:`CreateConnectionByCertificate <CreateConnectionByCertificate>`
 (авторизация по сертификату с указанным отпечатком) `объекта интерфейса
-:doc:«Диадок» <Root-method>`.
+:doc:"Диадок" <Root-method>`.
 
 .. toctree::
    :name: Auto
