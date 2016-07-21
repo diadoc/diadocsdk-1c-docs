@@ -6,10 +6,8 @@ v5.7 - 15.07.2016
 -----------------------
 
 - Реализована поддержка универсального передаточного документа:
-    - добавлены объекты :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>`, предназначенные для работы с УПД и 
-	  исправлением УПД.
-    - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца 
-	  в УПД.
+    - добавлены объекты :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>`, предназначенные для работы с УПД и исправлением УПД.
+    - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
     - в объекты :doc:`SendTask <SendTask>` и :doc:`PackageSendTask <PackageSendTask>` добавлена поддержка УПД.
 	
 
