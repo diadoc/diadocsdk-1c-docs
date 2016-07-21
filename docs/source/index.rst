@@ -21,7 +21,5 @@ AddIn Diadoc API - внешняя компонента, предназначен
 
    Сервер Диадок <Diadoc-server>
    Документы <Document>
-   Прочие объекты <Ather-objects>
-
-    
+   Прочие объекты <Other-objects>
    
