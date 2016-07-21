@@ -29,3 +29,4 @@
    :hidden:
 
    AddItem <AddItem-(InvoiceTable)>
+   ExtendedInvoiceItem <ExtendedInvoiceItem>

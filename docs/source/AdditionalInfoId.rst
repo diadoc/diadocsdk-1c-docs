@@ -9,17 +9,17 @@
 
 - **InfoFileId** (строка, чтение/запись, обязательно для заполнения, строка длиной не более 36 символов) - идентификатор файла информационного поля
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 
 Методы объекта
 --------------
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo (AdditionalInfoId)>` - добавляет строку дополнительных сведений
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(AdditionalInfoId)>` - добавляет строку дополнительных сведений
 
 
 .. toctree::
    :name: Auto
    :hidden:
 
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo (AdditionalInfoId)>
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(AdditionalInfoId)>

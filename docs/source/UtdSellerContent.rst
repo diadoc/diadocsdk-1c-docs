@@ -70,6 +70,5 @@
 
    AddSigner <AddSigner>
    AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>
-   Shipper <Shipper>
    InvoiceTable <InvoiceTable>
    TransferInfo <TransferInfo>

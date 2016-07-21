@@ -257,15 +257,17 @@
 
 Для работы с содержимым также используются следующие вспомогательные объекты:
 
-- :doc:`AddressInfo <AddressInfo>` - для работы данными об адресе
-- :doc:`Attorney <Attorney>` - для работы данными о доверенности
-- :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` - для работы данными об организации
-- :doc:`ExtendedSigner <ExtendedSigner>` - для работы данными о лице, подписавшем документ
-- :doc:`OrganizationInfo <OrganizationInfo>` - для работы данными об организации
-- :doc:`Signer <Signer>` - для работы данными о лице, подписавшем документ
-- :doc:`Shipper <Shipper>` - для работы данными об грузоотправителе
-- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы данными об грузоотправителе и грузополучателе
-- :doc:`Official <Official>` - для работы данными о должностном лице
+- :doc:`AddressInfo <AddressInfo>` - для работы с данными об адресе
+- :doc:`Attorney <Attorney>` - для работы с данными о доверенности
+- :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` - для работы с данными об организации
+- :doc:`ExtendedSigner <ExtendedSigner>` - для работы с данными о лице, подписавшем документ
+- :doc:`OrganizationInfo <OrganizationInfo>` - для работы с данными об организации
+- :doc:`PaymentDocument <PaymentDocument>` - для работы с данными о платежно-расчетных документах
+- :doc:`Signer <Signer>` - для работы с данными о лице, подписавшем документ
+- :doc:`Shipper <Shipper>` - для работы с данными об грузоотправителе
+- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы с данными об грузоотправителе и грузополучателе
+- :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` - для работы с дополнитльными полями документа
+- :doc:`Official <Official>` - для работы с данными о должностном лице
 
 
 .. toctree::
@@ -277,7 +279,9 @@
    ExtendedOrganizationInfo <ExtendedOrganizationInfo>
    ExtendedSigner <ExtendedSigner>
    OrganizationInfo <OrganizationInfo>
+   PaymentDocument <PaymentDocument>
    Signer <Signer>
    Shipper <Shipper>
    ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
+   StructedAdditionalInfo <StructedAdditionalInfo>
    Official <Official>
