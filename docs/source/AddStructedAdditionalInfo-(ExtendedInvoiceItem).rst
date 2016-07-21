@@ -1,7 +1,7 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
-Метод объекта :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`
+Метод объекта :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`.
 
 
 **Синтаксис**
@@ -16,4 +16,4 @@ AddStructedAdditionalInfo()
 
 **Описание**
 
-Добавляет новый элемент в список дополнительных сведений
+Добавляет новый элемент в список дополнительных сведений элемента табличной части счета-фактуры.

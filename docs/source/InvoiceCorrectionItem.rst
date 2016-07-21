@@ -17,12 +17,17 @@
 
 - **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение, --- ) - суммы к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>` , чтение/запись, --- ) - дополнительные сведения
 
 
 Методы объекта
 --------------
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo (CorrectionContent)>` - добавляет строку дополнительных сведений
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionItem)>` - добавляет строку дополнительных сведений
 
 
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionItem)>

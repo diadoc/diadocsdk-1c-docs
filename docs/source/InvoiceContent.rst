@@ -38,7 +38,7 @@
 
 - **Payment Documents** (:doc:`Коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, -- ) - список платежно-расчетных документов
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` , чтение/запись, --- ) - дополнительные сведения
 
 
 Методы объекта
@@ -61,5 +61,5 @@
    AddPaymentDocument-(InvoiceContent) <AddPaymentDocument-(InvoiceContent)>
    InvoiceItem-(Invoice) <InvoiceItem-(Invoice)>
    InvoiceTotals <Totals-InvoiceTotals>
-   addStructedAdditionalInfo <addStructedAdditionalInfo>
-   AdditionalInfoItem <AdditionalInfoItem>
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo>
+   StructedAdditionalInfo <StructedAdditionalInfo>

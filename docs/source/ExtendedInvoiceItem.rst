@@ -71,7 +71,7 @@
 
 -  :doc:`AddCustomDeclaration <AddCustomDeclaration>` - добавляет основание отгрузки
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(ExtendedInvoiceItem)>` - добавляет транспортную накладную
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(ExtendedInvoiceItem)>` - добавляет строку дополнительных сведений
 
 
 .. toctree::

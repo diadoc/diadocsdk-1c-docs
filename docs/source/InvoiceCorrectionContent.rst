@@ -37,7 +37,7 @@
 
 - **TotalsDesc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение, --- ) - итоговая сумма к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>` , чтение/запись, --- ) - дополнительные сведения
 
 
 Методы объекта
@@ -46,7 +46,7 @@
 
 -  :doc:`AddItem <AddItem-(InvoiceCorrectionContent)>` - добавляет строку в табличную часть корректировочного счет-фактуры
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo (CorrectionContent)>` - добавляет строку дополнительных сведений
+-  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>` - добавляет строку дополнительных сведений
 
 -  :doc:`AddOriginalInvoice <AddOriginalInvoice>` - добавляет строку c данными о счет-фактуре, на основании которого был выставлен корректировочный счет-фактура
 
@@ -61,7 +61,7 @@
    InvoiceTotalsDiff <InvoiceTotalsDiff> 
    InvoiceItemFields <InvoiceItemFields>
    AmountsDiff <AmountsDiff>  
-   AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo (CorrectionContent)>
+   StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>
    OriginalInvoice <OriginalInvoice>
    AddOriginalInvoice <AddOriginalInvoice>

@@ -1,7 +1,7 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
-Метод объекта :doc:`AdditionalInfoId <AdditionalInfoId>`
+Метод объекта :doc:`AdditionalInfoId <AdditionalInfoId>`.
 
 
 **Синтаксис**
@@ -16,4 +16,4 @@ AddStructedAdditionalInfo()
 
 **Описание**
 
-Добавляет новый элемент в список дополнительных сведений
+Добавляет новый элемент в список дополнительных сведений информационного поля документа.

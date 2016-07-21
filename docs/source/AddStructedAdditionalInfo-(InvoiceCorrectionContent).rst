@@ -1,7 +1,7 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
-Метод объекта :doc:`InvoiceContent <InvoiceContent>`.
+Метод объекта :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`.
 
 
 **Синтаксис**
@@ -16,4 +16,4 @@ AddStructedAdditionalInfo()
 
 **Описание**
 
-Добавляет новый элемент в список дополнительных сведений счета-фактуры.
+Добавляет новый элемент в список дополнительных сведений исправления счета-фактуры.

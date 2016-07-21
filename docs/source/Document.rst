@@ -275,6 +275,7 @@
    :name: Auto3
    :hidden:
 
+   AdditionalInfoId <AdditionalInfoId>
    AddressInfo <AddressInfo>
    Attorney <Attorney>
    ExtendedOrganizationInfo <ExtendedOrganizationInfo>

@@ -29,7 +29,7 @@
 
 - **CustomsDeclarationNumbers** (строка, чтение/запись, максимальная длина ГТД - 29 символов ) - номер ГТД. В случае несколькимх ГТД они перечисляются через запятую
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` , чтение/запись, --- ) - дополнительные сведения
 
 Методы объекта
 --------------
@@ -49,3 +49,10 @@
 -  "20" - ставка налога 20%
 
 Методы отсутствуют
+
+
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   AddStructedAdditionalInfo <AddStructedAdditionalInfo>

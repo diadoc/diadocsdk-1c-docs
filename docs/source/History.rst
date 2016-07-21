@@ -92,11 +92,11 @@ v5.0.0 - 03.07.2015
 Реализованы новые модели для работы с документами "счет-фактура", "корректировочный счет-фактура", учитывающие все особенности формата 5.02
 
 - для объекта  :doc:`InvoiceContent <InvoiceContent>`
-   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>`
+   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
    - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem-(Invoice)>`
 
 - для объекта  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
-   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>`
+   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>`
    - налогичные изменения произведены для :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`
    - свойства  **Date**, **Number**, **InvoiceRevision Date**, **InvoiceRevisionNumber** удалены из объекта. Вместо них добавлено свойство **OriginalInvoices**
  
