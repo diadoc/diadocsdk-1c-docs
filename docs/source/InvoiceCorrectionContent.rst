@@ -9,7 +9,7 @@
 ----------------
 
 
-- **InvoiceVersion** (строка, чтение/запись, --- ) - версия формата корректировочного счет-фактуры. Может принимать значения "5.01", "5.02"
+- **InvoiceVersion** (строка, чтение/запись, --- ) - версия формата корректировочного счета-фактуры. Может принимать значения "5.01", "5.02"
 
 - **OriginalInvoices** (:doc:`Коллекция <Collection>` объектов :doc:`OriginalInvoice <OriginalInvoice>`, чтение) - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
 
@@ -31,7 +31,7 @@
 
 - **Type** (строка, чтение, --- ) - тип документа (возвращает строку "InvoiceCorrectionContent")
 
-- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`, чтение, обязательно для заполнения ) - табличная часть корректировочного счет-фактуры
+- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`, чтение, обязательно для заполнения ) - табличная часть корректировочного счета-фактуры
 
 - **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение, --- ) - итоговая сумма к увеличению
 
@@ -44,7 +44,7 @@
 --------------
 
 
--  :doc:`AddItem <AddItem-(InvoiceCorrectionContent)>` - добавляет строку в табличную часть корректировочного счет-фактуры
+-  :doc:`AddItem <AddItem-(InvoiceCorrectionContent)>` - добавляет строку в табличную часть корректировочного счета-фактуры
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>` - добавляет строку дополнительных сведений
 

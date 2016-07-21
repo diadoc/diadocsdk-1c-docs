@@ -40,7 +40,7 @@
 --------------
 
 
--  :doc:`GetContent <GetContent-Invoice>` - возвращает содержание счет-фактуры в виде объектной модели
+-  :doc:`GetContent <GetContent-Invoice>` - возвращает содержание счета-фактуры в виде объектной модели
 
 -  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-Invoice>` - возвращает комментарий к уведомлению об уточнении
 

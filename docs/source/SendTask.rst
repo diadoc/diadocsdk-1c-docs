@@ -33,10 +33,10 @@
 Свойство **Content** имеет один из следующих типов
 
 -  :doc:`InvoiceContent <InvoiceContent>` - счет-фактура/исправление
-   счет-фактуры
+   счета-фактуры
 -  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` -
    корректировочный счет-фактура/исправление корректировочного
-   счет-фактуры
+   счета-фактуры
 -  :doc:`Torg12SellerContent <Torg12SellerContent>` - товарная накладная
    ТОРГ-12 титул продавца
 -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - товарная накладная
