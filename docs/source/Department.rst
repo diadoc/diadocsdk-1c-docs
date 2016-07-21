@@ -13,9 +13,9 @@
 -  Abbreviation (строка, чтение) - аббривеатура (сокращенное
    наименование) подразделения
 -  Kpp (строка, чтение) - КПП подразделения
--  ParentDepartment (объект Department , чтение) - ссылка на
+-  ParentDepartment (объект Department, чтение) - ссылка на
    родительское подразделение
--  Subdepartments (объект Collection , чтение) - коллекция дочерних
-   подразделений ( Department )
+-  Subdepartments (объект Collection, чтение) - коллекция дочерних
+   подразделений (Department)
 
 Методы отсутствуют

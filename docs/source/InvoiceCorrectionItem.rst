@@ -7,17 +7,17 @@
 ----------------
 
 
-- **Product** (строка, чтение/запись, обязательно для заполнения. Длина строка не более 1000 символов ) - наименование товара
+- **Product** (строка, чтение/запись, обязательно для заполнения. Длина строка не более 1000 символов) - наименование товара
 
-- **OriginalValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения ) - значения до корректировки
+- **OriginalValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения до корректировки
 
-- **CorrectedValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения ) - значения после корректировки
+- **CorrectedValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения после корректировки
 
-- **AmountsInc** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение, --- ) - суммы к увеличению
+- **AmountsInc** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к увеличению
 
-- **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение, --- ) - суммы к уменьшению
+- **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 
 Методы объекта

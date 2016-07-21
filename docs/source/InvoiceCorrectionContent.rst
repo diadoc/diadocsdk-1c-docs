@@ -9,35 +9,35 @@
 ----------------
 
 
-- **InvoiceVersion** (строка, чтение/запись, --- ) - версия формата корректировочного счета-фактуры. Может принимать значения "5.01", "5.02"
+- **InvoiceVersion** (строка, чтение/запись) - версия формата корректировочного счета-фактуры. Может принимать значения "5.01", "5.02"
 
 - **OriginalInvoices** (:doc:`Коллекция <Collection>` объектов :doc:`OriginalInvoice <OriginalInvoice>`, чтение) - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
 
-- **InvoiceCorrectionDate** (дата, чтение/запись, --- ) - дата КСФ
+- **InvoiceCorrectionDate** (дата, чтение/запись) - дата КСФ
 
-- **InvoiceCorrectionNumber** (строка, чтение/запись, длина не более 256 символов ) - номер КСФ
+- **InvoiceCorrectionNumber** (строка, чтение/запись, длина не более 256 символов) - номер КСФ
 
-- **InvoiceCorrectionRevisionDate** (дата, чтение/запись, --- ) - дата исправления КСФ
+- **InvoiceCorrectionRevisionDate** (дата, чтение/запись) - дата исправления КСФ
 
-- **InvoiceCorrectionRevisionNumber** (строка, чтение/запись, длина не более 3 символов ) - номер исправления КСФ
+- **InvoiceCorrectionRevisionNumber** (строка, чтение/запись, длина не более 3 символов) - номер исправления КСФ
 
-- **Currency** (строка, чтение/запись, обязательно для заполнения. Числовая строка длиной 3 символа. Код должен содержаться в общероссийском классификаторе валют. ) - код валюты
+- **Currency** (строка, чтение/запись, обязательно для заполнения. Числовая строка длиной 3 символа. Код должен содержаться в общероссийском классификаторе валют.) - код валюты
 
-- **Seller** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения ) - данные продавца
+- **Seller** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные продавца
 
-- **Buyer** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения ) - данные покупателя
+- **Buyer** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные покупателя
 
-- **Signer** (объект :doc:`Signer <Signer>`, чтение, обязательно для заполнения ) - данные подписанта документа
+- **Signer** (объект :doc:`Signer <Signer>`, чтение, обязательно для заполнения) - данные подписанта документа
 
-- **Type** (строка, чтение, --- ) - тип документа (возвращает строку "InvoiceCorrectionContent")
+- **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceCorrectionContent")
 
-- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`, чтение, обязательно для заполнения ) - табличная часть корректировочного счета-фактуры
+- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`, чтение, обязательно для заполнения) - табличная часть корректировочного счета-фактуры
 
-- **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение, --- ) - итоговая сумма к увеличению
+- **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к увеличению
 
-- **TotalsDesc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение, --- ) - итоговая сумма к уменьшению
+- **TotalsDesc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` , чтение/запись, --- ) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 
 Методы объекта
