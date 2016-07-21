@@ -17,7 +17,7 @@
 
 - **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 
 Методы объекта

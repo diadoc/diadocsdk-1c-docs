@@ -11,7 +11,7 @@
    (т.е. объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>`
    объекта :doc:`Document <Document>`)
 
--  InitialDocuments (:doc:`Коллекция <Collection>` объектов :doc:`Document <Document>`, чтение) - документы, для
+-  InitialDocuments (:doc:`коллекция <Collection>` объектов :doc:`Document <Document>`, чтение) - документы, для
    которых формируется запрос на согласование.
    
    -  если объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>`

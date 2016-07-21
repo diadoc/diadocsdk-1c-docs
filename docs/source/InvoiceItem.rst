@@ -29,7 +29,7 @@
 
 - **CustomsDeclarationNumbers** (строка, чтение/запись, максимальная длина ГТД - 29 символов) - номер ГТД. В случае несколькимх ГТД они перечисляются через запятую
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 Методы объекта
 --------------

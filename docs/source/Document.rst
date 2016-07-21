@@ -59,7 +59,7 @@
 
 - **ResolutionStatus** (объект :doc:`Resolution <Resolution>`, чтение) - текущий статус согласования документа
 
-- **Resolutions** (:doc:`Коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласованих документа
+- **Resolutions** (:doc:`коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласованих документа
 
 - **CustomDocumentId** (строка, чтение) - идентификатор документа, определяемый внешней системой
 

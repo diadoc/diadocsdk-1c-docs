@@ -36,7 +36,7 @@
 
 - **Consignee** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные грузополучателя
 
-- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`Torg12Item <Torg12Item>`, чтение, обязательно для заполнения) - табличная часть Торг-12
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`Torg12Item <Torg12Item>`, чтение, обязательно для заполнения) - табличная часть Торг-12
 
 - **Totals** (объект :doc:`Torg12Totals <Torg12Totals>`, чтение) - итоги по накладной
 

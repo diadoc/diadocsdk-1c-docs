@@ -18,7 +18,7 @@
 
 - **Seller** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - исполнитель (организация, выполнившая работы либо оказавшая услуги)
 
-- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>`, чтение, обязательно для заполнения) - табличная часть акта выполненных работ
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>`, чтение, обязательно для заполнения) - табличная часть акта выполненных работ
 
 - **Official** (объект :doc:`Official <Official>`, чтение, обязательно для заполнения) - лицо, подписывающее со стороны исполнителя
 

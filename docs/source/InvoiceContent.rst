@@ -34,11 +34,11 @@
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceContent")
 
-- **Items** (:doc:`Коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem>`, чтение, обязательно для заполнения) - табличная часть счета-фактуры
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem>`, чтение, обязательно для заполнения) - табличная часть счета-фактуры
 
-- **Payment Documents** (:doc:`Коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, --) - список платежно-расчетных документов
+- **Payment Documents** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, --) - список платежно-расчетных документов
 
-- **StructedAdditionalInfos** (:doc:`Коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
 
 Методы объекта
