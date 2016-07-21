@@ -42,7 +42,7 @@
 
 - **Commons** (объект :doc:`Torg12Commons <Torg12Commons>`, чтение, --- ) - общие сведения по накладной
 
-- **AttachmentSheets Quantity** (число, чтение/запись, --- ) - приложение, количество листов
+- **AttachmentSheetsQuantity** (число, чтение/запись, --- ) - приложение, количество листов
 
 - **SupplyAllowedBy** (объект :doc:`Official <Official>`, чтение, --- ) - отпуск груза разрешил
 
