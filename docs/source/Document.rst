@@ -172,9 +172,9 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
 
+   
 Производные объекты 
 ------------------------------------
-
 
 Следующие объекты являются производными от Document:
 
@@ -184,36 +184,34 @@
    :caption: Производные объекты
    :hidden:
 
+   Contract <Contract>
    Invoice <Invoice> 
    InvoiceRevision <InvoiceRevision>  
    InvoiceCorrection <InvoiceCorrection>
    InvoiceCorrectionRevision <InvoiceCorrectionRevision>
-   XmlTorg12 <XmlTorg12>
-   XmlAcceptanceCertificate <XmlAcceptanceCertificate>
-   NonformalizedTorg12 <NonformalizedTorg12>
-   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
-   NonformalizedProforma <NonformalizedProformaInvoice>
-   Contract <Contract>
    Nonformalized <Nonformalized>
+   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
+   NonformalizedTorg12 <NonformalizedTorg12>
+   NonformalizedProforma <NonformalizedProformaInvoice>
+   XmlAcceptanceCertificate <XmlAcceptanceCertificate>
+   XmlTorg12 <XmlTorg12>
+   Utd <Utd>
+   UtdRevision <UtdRevision>
 
+-  :doc:`Contract <Contract>` - договор
 -  :doc:`Invoice <Invoice>` - счет-фактура
 -  :doc:`InvoiceRevision <InvoiceRevision>` - исправление счета-фактуры
--  :doc:`InvoiceCorrection <InvoiceCorrection>` - корректировочный
-   счет-фактура
--  :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` -
-   исправление корректировочного счета-фактуры
+-  :doc:`InvoiceCorrection <InvoiceCorrection>` - корректировочный счет-фактура
+-  :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` - исправление корректировочного счета-фактуры
+-  :doc:`Nonformalized <Nonformalized>` - неформализованный документ (в том числе акт сверки, детализация, дополнительное соглашение к договору, протокол согласования цены, реестр сертификатов, ценовой лист)
+-  :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>` - акт о выполнении работ в неформализованном виде
+-  :doc:`NonformalizedTorg12 <NonformalizedTorg12>` - ТОРГ-12 в неформализованном виде
+-  :doc:`NonformalizedProforma <NonformalizedProformaInvoice>` - счет на оплату
+-  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о выполнении работ в формализованном виде
 -  :doc:`XmlTorg12 <XmlTorg12>` - ТОРГ-12 в формализованном виде
--  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о
-   выполнении работ в формализованном виде
--  :doc:`NonformalizedTorg12 <NonformalizedTorg12>` - ТОРГ-12 в
-   неформализованном виде
--  :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>` - акт о выполнении работ в
-   неформализованном виде
--  :doc:`NonformalizedProforma <NonformalizedProformaInvoice>` -
-   счет на оплату
--  :doc:`Contract <Contract>` - договор
--  :doc:`Nonformalized <Nonformalized>` - неформализованный документ (в том числе акт сверки, детализация, 
-   дополнительное соглашение к договору, протокол согласования цены, реестр сертификатов, ценовой лист)
+-  :doc:`Utd <Utd>` - универсальный передаточный документ
+-  :doc:`UtdRevision <UtdRevision>` - исправление универсального передаточного документа
+
 
 Структуры для работы с содержимым документов
 ---------------------------------------------
@@ -221,59 +219,65 @@
 Для работы с содержимым формализованных документов можно использовать специальные объекты, которые представляют данные xml-файла в виде объектной модели.
 
 Объектные модели документов
-"""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
 
 В компоненте реализованы следующие объекты:
 
+- :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - для работы с неформализованным актом выполненных работ
+- :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - для работы с формализованным :doc:`актом выполненных работ <XmlAcceptanceCertificate>`
+- :doc:`ContractContent <ContractContent>` - для работы с документом :doc:`договор <Contract>`
 - :doc:`InvoiceContent <InvoiceContent>` - для работы с документами :doc:`счет-фактура <Invoice>`, :doc:`исправление счета-фактуры <InvoiceRevision>`
 - :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` - для работы с документами :doc:`корректировочный счет-фактура <InvoiceCorrection>`, :doc:`исправление корректировочного счета-фактуры <InvoiceCorrectionRevision>`
-- :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
-- :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - для работы с формализованным :doc:`актом выполненных работ <XmlAcceptanceCertificate>`
-- :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`NonformilizedContent <NonformilizedContent>` - для работы с :doc:`неформализованным документом <Nonformalized>`
-- :doc:`ContractContent <ContractContent>` - для работы с документом :doc:`договор <Contract>`
+- :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
-- :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - для работы с неформализованным актом выполненных работ
+- :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
+- :doc:`UtdSellerContent <UtdSellerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`исправлением УПД <UtdRevision>`
 
 
 .. toctree::
    :name: Auto2
    :hidden:
 
-   InvoiceContent <InvoiceContent>
-   InvoiceCorrectionContent <InvoiceCorrectionContent>
-   Torg12SellerContent <Torg12SellerContent>
-   Torg12BuyerContent <Torg12BuyerContent>
+   AcceptanceCertificateContent <AcceptanceCertificateContent>
    AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>
    AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>
-   ProformaInvoiceContent <ProformaInvoiceContent> 
-   NonformilizedContent <NonformilizedContent>
    ContractContent <ContractContent>
+   InvoiceContent <InvoiceContent>
+   InvoiceCorrectionContent <InvoiceCorrectionContent>
+   NonformilizedContent <NonformilizedContent>
+   ProformaInvoiceContent <ProformaInvoiceContent> 
    Torg12Content <Torg12Content>
-   AcceptanceCertificateContent <AcceptanceCertificateContent>
+   Torg12SellerContent <Torg12SellerContent>
+   Torg12BuyerContent <Torg12BuyerContent>
 
+   
 Вспомогательные объекты
 """"""""""""""""""""""""""""""
 
 Для работы с содержимым также используются следующие вспомогательные объекты:
 
-- :doc:`OrganizationInfo <OrganizationInfo>` - для работы данными об организации
-- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы данными об грузоотправителе и грузополучателе
 - :doc:`AddressInfo <AddressInfo>` - для работы данными об адресе
-- :doc:`Signer <Signer>` - для работы данными о лице, подписавшем документ
-- :doc:`Official <Official>` - для работы данными о должностном лице
 - :doc:`Attorney <Attorney>` - для работы данными о доверенности
-
-
+- :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` - для работы данными об организации
+- :doc:`ExtendedSigner <ExtendedSigner>` - для работы данными о лице, подписавшем документ
+- :doc:`OrganizationInfo <OrganizationInfo>` - для работы данными об организации
+- :doc:`Signer <Signer>` - для работы данными о лице, подписавшем документ
+- :doc:`Shipper <Shipper>` - для работы данными об грузоотправителе
+- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы данными об грузоотправителе и грузополучателе
+- :doc:`Official <Official>` - для работы данными о должностном лице
 
 
 .. toctree::
    :name: Auto3
    :hidden:
 
-   OrganizationInfo <OrganizationInfo>
-   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
    AddressInfo <AddressInfo>
-   Signer <Signer>
-   Official <Official>
    Attorney <Attorney>
+   ExtendedOrganizationInfo <ExtendedOrganizationInfo>
+   ExtendedSigner <ExtendedSigner>
+   OrganizationInfo <OrganizationInfo>
+   Signer <Signer>
+   Shipper <Shipper>
+   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
+   Official <Official>

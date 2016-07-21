@@ -46,3 +46,7 @@
 
    AddTransferBase <AddTransferBase>
    AddWaybill <AddWaybill>
+   Employee <Employee>
+   OtherIssuer <OtherIssuer>
+   TransferBase <TransferBase>
+   Waybill <Waybill>

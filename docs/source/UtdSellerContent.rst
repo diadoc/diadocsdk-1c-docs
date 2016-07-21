@@ -70,8 +70,6 @@
 
    AddSigner <AddSigner>
    AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>
-   ExtendedOrganizationInfo <ExtendedOrganizationInfo>
    Shipper <Shipper>
    InvoiceTable <InvoiceTable>
-   AdditionalInfoId <AdditionalInfoId>
    TransferInfo <TransferInfo>
