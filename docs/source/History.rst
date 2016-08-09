@@ -9,6 +9,7 @@ v5.7 - 15.07.2016
     - добавлены объекты :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>`, предназначенные для работы с УПД и исправлением УПД.
     - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
     - в объекты :doc:`SendTask <SendTask>` и :doc:`PackageSendTask <PackageSendTask>` добавлена поддержка УПД.
+- :doc:`Исправлены ошибки <Bugs_5_7>`
 	
 
 v5.6 - 18.04.2016
