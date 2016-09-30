@@ -33,6 +33,8 @@ AddDocumentFromFile(<Type>, <Path>)
 - Torg12
 - XmlAcceptanceCertificate
 - XmlTorg12
+- UniversalTransferDocument
+- UniversalTransferDocumentRevision
 
 **Возвращаемое значение**
 
@@ -70,6 +72,10 @@ AddDocumentFromFile(<Type>, <Path>)
 
 -  :doc:`XmlTorg12ToSend <XmlTorg12ToSend>` - для типа XmlTorg12
 
+-  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
+
+-  :doc:`UtdRevisionToSend <UtdRevisionToSend>` - для типа UniversalTransferDocumentRevision
+
 
 **Описание**
 
@@ -100,3 +106,5 @@ AddDocumentFromFile(<Type>, <Path>)
    Torg12ToSend <Torg12ToSend>
    XmlActToSend <XmlActToSend>
    XmlTorg12ToSend <XmlTorg12ToSend>
+   UtdToSend <UtdToSend>
+   UtdRevisionToSend <UtdRevisionToSend>

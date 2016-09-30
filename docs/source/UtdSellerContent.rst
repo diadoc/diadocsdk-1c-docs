@@ -1,7 +1,7 @@
 ﻿UtdSellerContent
 ================
 
-Объект предназначен для работы с содержанием Универсального Передаточного Документа и является производным объектом от :doc:`BaseContent <BaseContent>`.
+Объект предназначен для работы с содержанием титула продавца универсального передаточного документа и является производным объектом от :doc:`BaseContent <BaseContent>`.
 
 
 Свойства объекта
@@ -59,7 +59,7 @@
 Методы объекта
 --------------
 
--  :doc:`AddSigner <AddSigner>` - добавляет подписанта
+-  :doc:`AddSigner <AddSigner-(UtdSellerContent)>` - добавляет подписанта
 
 -  :doc:`AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>` - добавляет сведения о платежно-расчетном документе
 
@@ -68,7 +68,8 @@
    :name: Auto
    :hidden:
 
-   AddSigner <AddSigner>
+   AddSigner <AddSigner-(UtdSellerContent)>
    AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>
    InvoiceTable <InvoiceTable>
    TransferInfo <TransferInfo>
+   

@@ -19,9 +19,10 @@ CreateSendTaskFromFile(<Path>, <Type>)
 -  "InvoiceContent" - отправка счета-фактуры, исправления счета-фактуры
 -  "InvoiceCorrectionContent" - отправка корректировочного
    счета-фактуры, исправления корректировочного счета-фактуры
--  "XmlTorg12Content" - отправка формализованной ТОРГ-12 в формате xml
 -  "XmlAcceptanceCertificateContent" - отправка формализованного акта о
    выполнении работ в формате xml
+-  "XmlTorg12Content" - отправка формализованной ТОРГ-12 в формате xml
+-  "UniversalTransferDocument" - отправка универсального передаточного документа
 -  "NonformilizedDocumentContent" - отправка произвольного
    неформализованного документа
 -  "AcceptanceCertificateContent" - отправка неформализованного акта о

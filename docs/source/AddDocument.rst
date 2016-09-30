@@ -21,6 +21,8 @@ AddDocument(<Type>)
 - InvoiceCorrectionRevision
 - XmlAcceptanceCertificate
 - XmlTorg12
+- UniversalTransferDocument
+- UniversalTransferDocumentRevision
 
 **Возвращаемое значение**
 
@@ -38,6 +40,10 @@ AddDocument(<Type>)
 -  :doc:`XmlActToSend <XmlActToSend>` - для типа XmlAcceptanceCertificate
 
 -  :doc:`XmlTorg12ToSend <XmlTorg12ToSend>` - для типа XmlTorg12
+
+-  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
+
+-  :doc:`UtdRevisionToSend <UtdRevisionToSend>` - для типа UniversalTransferDocumentRevision
 
 
 
@@ -59,4 +65,6 @@ AddDocument(<Type>)
    InvoiceCorrectionRevisionToSend <InvoiceCorrectionRevisionToSend>
    XmlActToSend <XmlActToSend>
    XmlTorg12ToSend <XmlTorg12ToSend>
+   UtdToSend <UtdToSend>
+   UtdRevisionToSend <UtdRevisionToSend>
 

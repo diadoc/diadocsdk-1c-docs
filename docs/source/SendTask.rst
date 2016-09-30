@@ -32,28 +32,26 @@
 
 Свойство **Content** имеет один из следующих типов
 
+-  :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - акт
+   о выполнении работ в неформализованном виде
+-  :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`
+   - акт о выполнении работ/оказании услуг, титул исполнителя
+-  :doc:`ContractContent <ContractContent>` - договор
 -  :doc:`InvoiceContent <InvoiceContent>` - счет-фактура/исправление
    счета-фактуры
 -  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` -
    корректировочный счет-фактура/исправление корректировочного
    счета-фактуры
--  :doc:`Torg12SellerContent <Torg12SellerContent>` - товарная накладная
-   ТОРГ-12 титул продавца
--  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - товарная накладная
-   ТОРГ-12 титул покупателя
--  :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`
-   - акт о выполнении работ/оказании услуг, титул исполнителя
--  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>`
-   - акт о выполнении работ/оказании услуг, титул заказчика
 -  :doc:`NonformilizedContent <NonformilizedContent>` -
    неформализованный документ/протокол согласования цены/реестр
    сертификатов/акт сверки/детализация
+-  :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - счет на оплату
 -  :doc:`Torg12Content <Torg12Content>` - товарная накладная ТОРГ-12 в
    неформализованном виде
--  :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - акт
-   о выполнении работ в неформализованном виде
--  :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - счет на оплату
--  :doc:`ContractContent <ContractContent>` - договор
+-  :doc:`Torg12SellerContent <Torg12SellerContent>` - товарная накладная
+   ТОРГ-12 титул продавца
+-  :doc:`UtdSellerContent <UtdSellerContent>` - титул продавца универсального передаточного документа
+   
 
 Методы
 ------
