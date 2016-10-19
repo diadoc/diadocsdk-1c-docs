@@ -124,6 +124,10 @@
 
 -  :doc:`ReSetOneSDocumentId <ReSetOneSDocumentId>` - сбрасывает идентификатор 1С для данного документа
 
+-  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(Document)>` - добавляет дополнительный идентификатор 1С для документа
+
+-  :doc:`RemoveSubordinateOneSDocumentId <RemoveSubordinateOneSDocumentId>` - удаляет дополнительный идентификатор 1С для документа
+
 -  :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>` - создает задание для отправки запроса на согласование
 
 -  :doc:`GetSenderSignature <GetSenderSignature>` - возвращает подпись отправителя, приложенную к документу
@@ -160,6 +164,8 @@
    Disapprove <Disapprove>
    SetOneSDocumentId <SetOneSDocumentId>
    ReSetOneSDocumentId <ReSetOneSDocumentId>
+   AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(Document)>
+   RemoveSubordinateOneSDocumentId <RemoveSubordinateOneSDocumentId>
    CreateResolutionRequestTask <CreateResolutionRequestTask>
    GetSenderSignature <GetSenderSignature>
    GetRecipientSignature <GetRecipientSignature>

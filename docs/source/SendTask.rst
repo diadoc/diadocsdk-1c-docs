@@ -56,18 +56,21 @@
 Методы
 ------
 
--  :doc:`AddInitialDocument <AddInitialDocument>` - добавляет идентификатор
-   документа в коллекцию "родительских" документов
--  :doc:`AddSubordinateDocument <AddSubordinateDocument>` - добавляет
-   идентификатор документа в коллекцию подчиненных документов
+-  :doc:`AddInitialDocument <AddInitialDocument>` - добавляет идентификатор документа в коллекцию "родительских" документов
+
+-  :doc:`AddSubordinateDocument <AddSubordinateDocument>` - добавляет идентификатор документа в коллекцию подчиненных документов
+
 -  :doc:`Send <Send-(Document)>` - отправляет документ на сервер
+
 -  :doc:`SendAsync <SendAsync>` - инициирует асинхронную отправку документа
--  :doc:`SaveContent <SaveContent-(SendTask)>` - на основании содержания
-   документа формирует файл документа и сохраняет его на диск
--  :doc:`ValidateContent <ValidateContent-(SendTask)>` - проверяет содержание
-   документа на корректность заполнения
--  :doc:`AddStructuredDataAttachment <AddStructuredDataAttachment>` -
-   добавляет файл со структурированными данными в отправляемый документ
+
+-  :doc:`SaveContent <SaveContent-(SendTask)>` - на основании содержания документа формирует файл документа и сохраняет его на диск
+
+-  :doc:`ValidateContent <ValidateContent-(SendTask)>` - проверяет содержание документа на корректность заполнения
+
+-  :doc:`AddStructuredDataAttachment <AddStructuredDataAttachment>` - добавляет файл со структурированными данными в отправляемый документ
+
+-  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>` - добавляет дополнительный идентификатор 1С для документа
 
 
 .. toctree::
@@ -81,3 +84,4 @@
    SaveContent <SaveContent-(SendTask)>
    ValidateContent <ValidateContent-(SendTask)>
    AddStructuredDataAttachment <AddStructuredDataAttachment>
+   AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>
