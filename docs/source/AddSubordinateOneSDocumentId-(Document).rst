@@ -1,7 +1,7 @@
 ﻿AddSubordinateOneSDocumentId
 ============================
 
-Метод объекта :doc:`Документ <Document>`.
+Метод объекта :doc:`Document <Document>`.
 
 
 **Синтаксис**
