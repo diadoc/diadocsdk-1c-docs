@@ -108,6 +108,10 @@
 
 -  :doc:`SaveAllContentAsync <SaveAllContentAsync>` - асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
+-  :doc:`SaveAllContentZip <SaveAllContentZip>` - формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+
+-  :doc:`SaveAllContentZipAsync <SaveAllContentZipAsync>` - асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+
 -  :doc:`GetComment <GetComment>` - возвращает комментарий к документу, заданный при отправке
 
 -  :doc:`Move <Move>` - перемещает документ в указанное подразделение
@@ -152,6 +156,8 @@
 
    SaveAllContent <SaveAllContent>
    SaveAllContentAsync <SaveAllContentAsync>
+   SaveAllContentZip <SaveAllContentZip>
+   SaveAllContentZipAsync <SaveAllContentZipAsync>
    GetComment <GetComment>
    Move <Move>
    Delete <Delete>
