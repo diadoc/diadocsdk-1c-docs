@@ -84,6 +84,10 @@
 
 -  :doc:`CreatePackageSendTask <CreatePackageSendTask>` - создает задание на отправку пакета документов
 
+-  :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` - создает задание на добавление или обновление данных подписанта в базе Диадок
+
+-  :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>` - возвращает данные подписанта из базы Диадок
+
 -  :doc:`SetData <SetData>` - добавляет пару "ключ-значение" в хранилище
 
 -  :doc:`GetData <GetData>` - извлекает пару "ключ-значение" из хранилища по ее ключу
@@ -110,6 +114,8 @@
    SendDraftAsync <SendDraftAsync>
    CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>
    CreatePackageSendTask <CreatePackageSendTask>
+   CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>
+   GetExtendedSignerDetails <GetExtendedSignerDetails>
    SetData <SetData>
    GetData <GetData>
 
