@@ -8,7 +8,7 @@ v5.9 - 24.11.2016
 - Реализована поддержка универсального передаточного документа:
     - добавлены объекты :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>`, предназначенные для работы с УПД и исправлением УПД.
     - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
-	- добавлен объект :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
+    - добавлен объект :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
     - в объекты :doc:`SendTask <SendTask>`, :doc:`PackageSendTask <PackageSendTask>` и :doc:`ReplySendTask <ReplySendTask>` добавлена поддержка УПД.
 - Реализованы методы для работы с базой подписантов Диадок:
     - в объект :doc:`Organization <Organization>` добавлены методы :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` и :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>`.
