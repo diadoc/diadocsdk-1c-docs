@@ -43,8 +43,6 @@ AddDocument(<Type>)
 
 -  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
 
--  :doc:`UtdRevisionToSend <UtdRevisionToSend>` - для типа UniversalTransferDocumentRevision
-
 
 
 **Описание**
@@ -66,5 +64,4 @@ AddDocument(<Type>)
    XmlActToSend <XmlActToSend>
    XmlTorg12ToSend <XmlTorg12ToSend>
    UtdToSend <UtdToSend>
-   UtdRevisionToSend <UtdRevisionToSend>
 
