@@ -8,11 +8,11 @@
 ----------------
 
 
-- **Login** (строка, чтение ) - имя пользователя, по которому произошла авторизация
+- **Login** (строка, чтение) - имя пользователя, по которому произошла авторизация
 
-- **AuthenticateType** (строка, чтение ) - способ аутентификации
+- **AuthenticateType** (строка, чтение) - способ аутентификации
 
-- **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение ) - сертификат, по которому произошла авторизация
+- **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение) - сертификат, по которому произошла авторизация
 
 
 Свойство AuthenticateType принимает одно из следующих значений:
@@ -43,7 +43,7 @@
 логину и паролю пользователя), либо вызвав метод
 :doc:`CreateConnectionByCertificate <CreateConnectionByCertificate>`
 (авторизация по сертификату с указанным отпечатком) `объекта интерфейса
-:doc:«Диадок» <Root-method>`.
+:doc:"Диадок" <Root-method>`.
 
 .. toctree::
    :name: Auto

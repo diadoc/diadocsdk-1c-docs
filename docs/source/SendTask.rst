@@ -32,44 +32,45 @@
 
 Свойство **Content** имеет один из следующих типов
 
--  :doc:`InvoiceContent <InvoiceContent>` - счет-фактура/исправление
-   счет-фактуры
--  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` -
-   корректировочный счет-фактура/исправление корректировочного
-   счет-фактуры
--  :doc:`Torg12SellerContent <Torg12SellerContent>` - товарная накладная
-   ТОРГ-12 титул продавца
--  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - товарная накладная
-   ТОРГ-12 титул покупателя
+-  :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - акт
+   о выполнении работ в неформализованном виде
 -  :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`
    - акт о выполнении работ/оказании услуг, титул исполнителя
--  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>`
-   - акт о выполнении работ/оказании услуг, титул заказчика
+-  :doc:`ContractContent <ContractContent>` - договор
+-  :doc:`InvoiceContent <InvoiceContent>` - счет-фактура/исправление
+   счета-фактуры
+-  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` -
+   корректировочный счет-фактура/исправление корректировочного
+   счета-фактуры
 -  :doc:`NonformilizedContent <NonformilizedContent>` -
    неформализованный документ/протокол согласования цены/реестр
    сертификатов/акт сверки/детализация
+-  :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - счет на оплату
 -  :doc:`Torg12Content <Torg12Content>` - товарная накладная ТОРГ-12 в
    неформализованном виде
--  :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - акт
-   о выполнении работ в неформализованном виде
--  :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - счет на оплату
--  :doc:`ContractContent <ContractContent>` - договор
+-  :doc:`Torg12SellerContent <Torg12SellerContent>` - товарная накладная
+   ТОРГ-12 титул продавца
+-  :doc:`UtdSellerContent <UtdSellerContent>` - титул продавца универсального передаточного документа
+   
 
 Методы
 ------
 
--  :doc:`AddInitialDocument <AddInitialDocument>` - добавляет идентификатор
-   документа в коллекцию "родительских" документов
--  :doc:`AddSubordinateDocument <AddSubordinateDocument>` - добавляет
-   идентификатор документа в коллекцию подчиненных документов
+-  :doc:`AddInitialDocument <AddInitialDocument>` - добавляет идентификатор документа в коллекцию "родительских" документов
+
+-  :doc:`AddSubordinateDocument <AddSubordinateDocument>` - добавляет идентификатор документа в коллекцию подчиненных документов
+
 -  :doc:`Send <Send-(Document)>` - отправляет документ на сервер
+
 -  :doc:`SendAsync <SendAsync>` - инициирует асинхронную отправку документа
--  :doc:`SaveContent <SaveContent-(SendTask)>` - на основании содержания
-   документа формирует файл документа и сохраняет его на диск
--  :doc:`ValidateContent <ValidateContent-(SendTask)>` - проверяет содержание
-   документа на корректность заполнения
--  :doc:`AddStructuredDataAttachment <AddStructuredDataAttachment>` -
-   добавляет файл со структурированными данными в отправляемый документ
+
+-  :doc:`SaveContent <SaveContent-(SendTask)>` - на основании содержания документа формирует файл документа и сохраняет его на диск
+
+-  :doc:`ValidateContent <ValidateContent-(SendTask)>` - проверяет содержание документа на корректность заполнения
+
+-  :doc:`AddStructuredDataAttachment <AddStructuredDataAttachment>` - добавляет файл со структурированными данными в отправляемый документ
+
+-  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>` - добавляет дополнительный идентификатор 1С для документа
 
 
 .. toctree::
@@ -83,3 +84,4 @@
    SaveContent <SaveContent-(SendTask)>
    ValidateContent <ValidateContent-(SendTask)>
    AddStructuredDataAttachment <AddStructuredDataAttachment>
+   AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>

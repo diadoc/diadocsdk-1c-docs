@@ -17,9 +17,10 @@
 
      -  для действия "AcceptDocument":
 
-        - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа «ТОРГ-12 в формате ФНС»
+        - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате ФНС"
         - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа 
-          «акт о выполнении работ в формате ФНС»
+          "акт о выполнении работ в формате ФНС"
+        - :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для универсального передаточного документа
         - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
 
      -  для действия типа "RejectDocument":

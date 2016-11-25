@@ -15,57 +15,57 @@
 ----------------
 
 
-- **Type** (строка, чтение ) - тип документа
+- **Type** (строка, чтение) - тип документа
 
-- **OrganizationId** (строка, чтение ) - идентификатор организации, которой принадлежит документ
+- **OrganizationId** (строка, чтение) - идентификатор организации, которой принадлежит документ
 
-- **DocumentId** (строка, чтение ) - идентификатор документа
+- **DocumentId** (строка, чтение) - идентификатор документа
 
-- **PathURL** (строка, чтение ) - URL документа, по которому он доступен в web-интерфейсе
+- **PathURL** (строка, чтение) - URL документа, по которому он доступен в web-интерфейсе
 
-- **Direction** (строка, чтение ) - направление документа
+- **Direction** (строка, чтение) - направление документа
 
-- **Organization** (объект :doc:`Organization <Organization>`, чтение ) - организация, которая отправила исходящий документ, либо получила входящий документ
+- **Organization** (объект :doc:`Organization <Organization>`, чтение) - организация, которая отправила исходящий документ, либо получила входящий документ
 
-- **Department** (объект :doc:`Department <Department>`, чтение ) - подразделение организации, к которому привязан документ
+- **Department** (объект :doc:`Department <Department>`, чтение) - подразделение организации, к которому привязан документ
 
-- **FromDepartment** (объект :doc:`Department <Department>`, чтение ) - подразделение организации, из которого был отправлен документ
+- **FromDepartment** (объект :doc:`Department <Department>`, чтение) - подразделение организации, из которого был отправлен документ
 
-- **ToDepartment** (объект :doc:`Department <Department>`, чтение ) - подразделение организации, в которое был отправлен документ
+- **ToDepartment** (объект :doc:`Department <Department>`, чтение) - подразделение организации, в которое был отправлен документ
 
-- **Counteragent** (объект :doc:`Counteragent <Counteragent>`, чтение ) - контрагент документа
+- **Counteragent** (объект :doc:`Counteragent <Counteragent>`, чтение) - контрагент документа
 
-- **Timestamp** (дата и время, чтение ) - дата и время отправки документа (в текущем часовом поясе)
+- **Timestamp** (дата и время, чтение) - дата и время отправки документа (в текущем часовом поясе)
 
-- **TimestampSeconds** (число, чтение ) - дата и время отправки документа в секундах
+- **TimestampSeconds** (число, чтение) - дата и время отправки документа в секундах
 
-- **FileName** (строка, чтение ) - имя документа в Диадоке
+- **FileName** (строка, чтение) - имя документа в Диадоке
 
-- **DocumentDate** (дата, чтение ) - дата документа
+- **DocumentDate** (дата, чтение) - дата документа
 
-- **DocumentNumber** (строка, чтение ) - номер документа
+- **DocumentNumber** (строка, чтение) - номер документа
 
-- **Status** (строка, чтение ) - текущий статус документа в Диадоке. Перечень возможных значений зависит от типа документа и описан в спецификации соответствующего производного объекта.
+- **Status** (строка, чтение) - текущий статус документа в Диадоке. Перечень возможных значений зависит от типа документа и описан в спецификации соответствующего производного объекта.
 
-- **InitialDocumentIds** (объект :doc:`Collection <Collection>`, чтение ) - коллекция идентификаторов документов, на который ссылается данный документ (т.е. документы, которые по отношению к данному документы являются "родительскими"
+- **InitialDocumentIds** (объект :doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, на который ссылается данный документ (т.е. документы, которые по отношению к данному документы являются "родительскими"
 
-- **SubordinateDocumentIds** (объект :doc:`Collection <Collection>`, чтение ) - коллекция идентификаторов документов, которые ссылаются на данный документ (т.е. документы, которые по отношению к данному документу являются "дочерними")
+- **SubordinateDocumentIds** (объект :doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, которые ссылаются на данный документ (т.е. документы, которые по отношению к данному документу являются "дочерними")
 
-- **IsDeleted** (булево, чтение ) - признак того, что данный документ был удален
+- **IsDeleted** (булево, чтение) - признак того, что данный документ был удален
 
-- **IsTest** (булево, чтение ) - признак того, что данный документ является тестовым и не имеет юридической силы
+- **IsTest** (булево, чтение) - признак того, что данный документ является тестовым и не имеет юридической силы
 
-- **OneSDocumentId** (строка, чтение ) - идентификатор документа в 1С
+- **OneSDocumentId** (строка, чтение) - идентификатор документа в 1С
 
-- **ResolutionStatus** (объект :doc:`Resolution <Resolution>`, чтение ) - текущий статус согласования документа
+- **ResolutionStatus** (объект :doc:`Resolution <Resolution>`, чтение) - текущий статус согласования документа
 
-- **Resolutions** (:doc:`Коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение ) - история согласованих документа
+- **Resolutions** (:doc:`коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласованих документа
 
-- **CustomDocumentId** (строка, чтение ) - идентификатор документа, определяемый внешней системой
+- **CustomDocumentId** (строка, чтение) - идентификатор документа, определяемый внешней системой
 
-- **RevocationStatus** (строка, чтение ) - статус аннулирования документа
+- **RevocationStatus** (строка, чтение) - статус аннулирования документа
 
-- **HasCustomPrintForm** (булево, чтение ) - признак того, что данный документ имеет нестандартную печатную форму
+- **HasCustomPrintForm** (булево, чтение) - признак того, что данный документ имеет нестандартную печатную форму
 
 - **IsLockedPackage** (булево, чтение) - признак того, что документ является частью нередактируемого пакета
 
@@ -128,6 +128,10 @@
 
 -  :doc:`ReSetOneSDocumentId <ReSetOneSDocumentId>` - сбрасывает идентификатор 1С для данного документа
 
+-  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(Document)>` - добавляет дополнительный идентификатор 1С для документа
+
+-  :doc:`RemoveSubordinateOneSDocumentId <RemoveSubordinateOneSDocumentId>` - удаляет дополнительный идентификатор 1С для документа
+
 -  :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>` - создает задание для отправки запроса на согласование
 
 -  :doc:`GetSenderSignature <GetSenderSignature>` - возвращает подпись отправителя, приложенную к документу
@@ -166,6 +170,8 @@
    Disapprove <Disapprove>
    SetOneSDocumentId <SetOneSDocumentId>
    ReSetOneSDocumentId <ReSetOneSDocumentId>
+   AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(Document)>
+   RemoveSubordinateOneSDocumentId <RemoveSubordinateOneSDocumentId>
    CreateResolutionRequestTask <CreateResolutionRequestTask>
    GetSenderSignature <GetSenderSignature>
    GetRecipientSignature <GetRecipientSignature>
@@ -178,9 +184,9 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
 
+   
 Производные объекты 
 ------------------------------------
-
 
 Следующие объекты являются производными от Document:
 
@@ -190,36 +196,34 @@
    :caption: Производные объекты
    :hidden:
 
+   Contract <Contract>
    Invoice <Invoice> 
    InvoiceRevision <InvoiceRevision>  
    InvoiceCorrection <InvoiceCorrection>
    InvoiceCorrectionRevision <InvoiceCorrectionRevision>
-   XmlTorg12 <XmlTorg12>
-   XmlAcceptanceCertificate <XmlAcceptanceCertificate>
-   NonformalizedTorg12 <NonformalizedTorg12>
-   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
-   NonformalizedProforma <NonformalizedProformaInvoice>
-   Contract <Contract>
    Nonformalized <Nonformalized>
+   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
+   NonformalizedTorg12 <NonformalizedTorg12>
+   NonformalizedProforma <NonformalizedProformaInvoice>
+   XmlAcceptanceCertificate <XmlAcceptanceCertificate>
+   XmlTorg12 <XmlTorg12>
+   Utd <Utd>
+   UtdRevision <UtdRevision>
 
+-  :doc:`Contract <Contract>` - договор
 -  :doc:`Invoice <Invoice>` - счет-фактура
 -  :doc:`InvoiceRevision <InvoiceRevision>` - исправление счета-фактуры
--  :doc:`InvoiceCorrection <InvoiceCorrection>` - корректировочный
-   счет-фактура
--  :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` -
-   исправление корректировочного счета-фактуры
+-  :doc:`InvoiceCorrection <InvoiceCorrection>` - корректировочный счет-фактура
+-  :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` - исправление корректировочного счета-фактуры
+-  :doc:`Nonformalized <Nonformalized>` - неформализованный документ (в том числе акт сверки, детализация, дополнительное соглашение к договору, протокол согласования цены, реестр сертификатов, ценовой лист)
+-  :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>` - акт о выполнении работ в неформализованном виде
+-  :doc:`NonformalizedTorg12 <NonformalizedTorg12>` - ТОРГ-12 в неформализованном виде
+-  :doc:`NonformalizedProforma <NonformalizedProformaInvoice>` - счет на оплату
+-  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о выполнении работ в формализованном виде
 -  :doc:`XmlTorg12 <XmlTorg12>` - ТОРГ-12 в формализованном виде
--  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о
-   выполнении работ в формализованном виде
--  :doc:`NonformalizedTorg12 <NonformalizedTorg12>` - ТОРГ-12 в
-   неформализованном виде
--  :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>` - акт о выполнении работ в
-   неформализованном виде
--  :doc:`NonformalizedProforma <NonformalizedProformaInvoice>` -
-   счет на оплату
--  :doc:`Contract <Contract>` - договор
--  :doc:`Nonformalized <Nonformalized>` - неформализованный документ (в том числе акт сверки, детализация, 
-   дополнительное соглашение к договору, протокол согласования цены, реестр сертификатов, ценовой лист)
+-  :doc:`Utd <Utd>` - универсальный передаточный документ
+-  :doc:`UtdRevision <UtdRevision>` - исправление универсального передаточного документа
+
 
 Структуры для работы с содержимым документов
 ---------------------------------------------
@@ -227,59 +231,71 @@
 Для работы с содержимым формализованных документов можно использовать специальные объекты, которые представляют данные xml-файла в виде объектной модели.
 
 Объектные модели документов
-"""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""
 
 В компоненте реализованы следующие объекты:
 
+- :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - для работы с неформализованным актом выполненных работ
+- :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - для работы с формализованным :doc:`актом выполненных работ <XmlAcceptanceCertificate>`
+- :doc:`ContractContent <ContractContent>` - для работы с документом :doc:`договор <Contract>`
 - :doc:`InvoiceContent <InvoiceContent>` - для работы с документами :doc:`счет-фактура <Invoice>`, :doc:`исправление счета-фактуры <InvoiceRevision>`
 - :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` - для работы с документами :doc:`корректировочный счет-фактура <InvoiceCorrection>`, :doc:`исправление корректировочного счета-фактуры <InvoiceCorrectionRevision>`
-- :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
-- :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - для работы с формализованным :doc:`актом выполненных работ <XmlAcceptanceCertificate>`
-- :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`NonformilizedContent <NonformilizedContent>` - для работы с :doc:`неформализованным документом <Nonformalized>`
-- :doc:`ContractContent <ContractContent>` - для работы с документом :doc:`договор <Contract>`
+- :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
-- :doc:`AcceptanceCertificateContent <AcceptanceCertificateContent>` - для работы с неформализованным актом выполненных работ
+- :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
+- :doc:`UtdSellerContent <UtdSellerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`исправлением УПД <UtdRevision>`
 
 
 .. toctree::
    :name: Auto2
    :hidden:
 
-   InvoiceContent <InvoiceContent>
-   InvoiceCorrectionContent <InvoiceCorrectionContent>
-   Torg12SellerContent <Torg12SellerContent>
-   Torg12BuyerContent <Torg12BuyerContent>
+   AcceptanceCertificateContent <AcceptanceCertificateContent>
    AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>
    AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>
-   ProformaInvoiceContent <ProformaInvoiceContent> 
-   NonformilizedContent <NonformilizedContent>
    ContractContent <ContractContent>
+   InvoiceContent <InvoiceContent>
+   InvoiceCorrectionContent <InvoiceCorrectionContent>
+   NonformilizedContent <NonformilizedContent>
+   ProformaInvoiceContent <ProformaInvoiceContent> 
    Torg12Content <Torg12Content>
-   AcceptanceCertificateContent <AcceptanceCertificateContent>
+   Torg12SellerContent <Torg12SellerContent>
+   Torg12BuyerContent <Torg12BuyerContent>
 
+   
 Вспомогательные объекты
 """"""""""""""""""""""""""""""
 
 Для работы с содержимым также используются следующие вспомогательные объекты:
 
-- :doc:`OrganizationInfo <OrganizationInfo>` - для работы данными об организации
-- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы данными об грузоотправителе и грузополучателе
-- :doc:`AddressInfo <AddressInfo>` - для работы данными об адресе
-- :doc:`Signer <Signer>` - для работы данными о лице, подписавшем документ
-- :doc:`Official <Official>` - для работы данными о должностном лице
-- :doc:`Attorney <Attorney>` - для работы данными о доверенности
-
-
+- :doc:`AdditionalInfoId <AdditionalInfoId>` - для работы с информационным полем документа
+- :doc:`AddressInfo <AddressInfo>` - для работы с данными об адресе
+- :doc:`Attorney <Attorney>` - для работы с данными о доверенности
+- :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` - для работы с данными об организации
+- :doc:`ExtendedSigner <ExtendedSigner>` - для работы с данными о лице, подписавшем документ
+- :doc:`OrganizationInfo <OrganizationInfo>` - для работы с данными об организации
+- :doc:`PaymentDocument <PaymentDocument>` - для работы с данными о платежно-расчетном документе
+- :doc:`Signer <Signer>` - для работы с данными о лице, подписавшем документ
+- :doc:`Shipper <Shipper>` - для работы с данными об грузоотправителе
+- :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы с данными об грузоотправителе и грузополучателе
+- :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` - для работы с дополнительными сведениями
+- :doc:`Official <Official>` - для работы с данными о должностном лице
 
 
 .. toctree::
    :name: Auto3
    :hidden:
 
-   OrganizationInfo <OrganizationInfo>
-   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
+   AdditionalInfoId <AdditionalInfoId>
    AddressInfo <AddressInfo>
-   Signer <Signer>
-   Official <Official>
    Attorney <Attorney>
+   ExtendedOrganizationInfo <ExtendedOrganizationInfo>
+   ExtendedSigner <ExtendedSigner>
+   OrganizationInfo <OrganizationInfo>
+   PaymentDocument <PaymentDocument>
+   Signer <Signer>
+   Shipper <Shipper>
+   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
+   StructedAdditionalInfo <StructedAdditionalInfo>
+   Official <Official>

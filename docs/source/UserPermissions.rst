@@ -17,9 +17,9 @@
    пользователь может отправлять запросы на согласование и подпись
    документов
 -  DocumentsAccessLevel (строка, чтение) - уровень доступа к документам
--  UserDepartment (объект :doc:`Department <Department>` , чтение) -
+-  UserDepartment (объект :doc:`Department <Department>`, чтение) -
    подразделение организации, в котором состоит пользователь
--  SelectedDepartments (объект :doc:`Collection <Collection>` , чтение) -
+-  SelectedDepartments (объект :doc:`Collection <Collection>`, чтение) -
    список подразделений, к которым имеет доступ пользователь
    (заполняется только в случае DocumentsAccessLevel =
    SelectedDepartments)

@@ -1,6 +1,17 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.10 - 25.11.2016
+-----------------------
+
+- Реализована поддержка универсального передаточного документа:
+    - добавлены объекты :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>`, предназначенные для работы с УПД и исправлением УПД.
+    - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
+    - добавлен объект :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
+    - в объекты :doc:`SendTask <SendTask>`, :doc:`PackageSendTask <PackageSendTask>` и :doc:`ReplySendTask <ReplySendTask>` добавлена поддержка УПД.
+- Реализованы методы для работы с базой подписантов Диадок:
+    - в объект :doc:`Organization <Organization>` добавлены методы :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` и :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>`.
+
 
 v5.9 - 17.11.2016
 -----------------------
@@ -10,7 +21,7 @@ v5.9 - 17.11.2016
 - Исправлена проблема при отправке счетов-фактур с участием агента.
 - Исправлена ошибка при отправке контрагенту приглашения к сотрудничеству с вложением файла.
 
-	
+
 v5.8 - 26.10.2016
 -----------------------
 
@@ -21,7 +32,8 @@ v5.8 - 26.10.2016
 v5.7 - 15.09.2016
 -----------------------
 
-- Исправлены ошибки при работе через прокси
+- Исправлены ошибки при работе через прокси	
+- Исправлена ошибка валидации номера ГТД в счете-фактуре.
 
 
 v5.6 - 18.04.2016
@@ -105,11 +117,11 @@ v5.0.0 - 03.07.2015
 Реализованы новые модели для работы с документами "счет-фактура", "корректировочный счет-фактура", учитывающие все особенности формата 5.02
 
 - для объекта  :doc:`InvoiceContent <InvoiceContent>`
-   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem>`
-   - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem-(Invoice)>`
+   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
+   - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem>`
 
 - для объекта  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
-   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`AdditionalInfoItem <AdditionalInfoItem (CorrectionContent)>`
+   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>`
    - налогичные изменения произведены для :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`
    - свойства  **Date**, **Number**, **InvoiceRevision Date**, **InvoiceRevisionNumber** удалены из объекта. Вместо них добавлено свойство **OriginalInvoices**
  
@@ -119,9 +131,9 @@ v4.2.0 - 13.04.2015
 
 Реализована работа с форматом 5.02 для документов "счет-фактура", "корректировочный счет-фактура":
 
-- Для объектов :doc:`InvoiceContent <InvoiceContent>`, :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` добавлено свойство **InvoiceVersion**, которое возвращает формат счет-фактуры.
+- Для объектов :doc:`InvoiceContent <InvoiceContent>`, :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>` добавлено свойство **InvoiceVersion**, которое возвращает формат счета-фактуры.
 
-- При отправке счет-фактуры, корректировочного счет-фактуры с помощью объекта :doc:`CreateSendTask <CreateSendTask>`, по умолчанию для отправляемого счет-фактуры устанавливается формат, актуальный на дату отправки. При необходимости отправки счет-фактуры в другом формате, необходимо его указывать в свойстве **InvoiceVersion**.
+- При отправке счета-фактуры, корректировочного счета-фактуры с помощью объекта :doc:`CreateSendTask <CreateSendTask>`, по умолчанию для отправляемого счета-фактуры устанавливается формат, актуальный на дату отправки. При необходимости отправки счета-фактуры в другом формате, необходимо его указывать в свойстве **InvoiceVersion**.
 
 
 v4.1.0 - 24.02.2014
