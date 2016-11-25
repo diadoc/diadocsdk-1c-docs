@@ -9,6 +9,7 @@ v5.10 - 25.11.2016
     - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
     - добавлен объект :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
     - в объекты :doc:`SendTask <SendTask>`, :doc:`PackageSendTask <PackageSendTask>` и :doc:`ReplySendTask <ReplySendTask>` добавлена поддержка УПД.
+    - в объект :doc:`OutDocumentSignTask <OutDocumentSignTask>` добавлен метод :doc:`AddExtendedSigner <AddExtendedSigner>` для поддержки подписания исходящих УПД.
 - Реализованы методы для работы с базой подписантов Диадок:
     - в объект :doc:`Organization <Organization>` добавлены методы :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` и :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>`.
 
