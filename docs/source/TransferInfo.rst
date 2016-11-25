@@ -25,7 +25,7 @@
 
 - **CreatedThingInfo** (строка, чтение/запись) - сведения о передаче вещи, изготовленной по договору
 
-- **AdditionalInfoId** (строка, чтение) - информационное поле документа
+- **AdditionalInfoId** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
 
 - **TransferBases** (:doc:`коллекция <Collection>` объектов :doc:`TransferBase <TransferBase>`, чтение) - основание отгрузки
 
