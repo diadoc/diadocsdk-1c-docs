@@ -242,7 +242,7 @@
 - :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
-- :doc:`UtdSellerContent <UtdSellerContent>` - для работы с :doc:`УПД <Utd>`
+- :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>`
 
 
 .. toctree::
@@ -260,6 +260,8 @@
    Torg12Content <Torg12Content>
    Torg12SellerContent <Torg12SellerContent>
    Torg12BuyerContent <Torg12BuyerContent>
+   UtdSellerContent <UtdSellerContent>
+   UtdBuyerContent <UtdBuyerContent>
 
    
 Вспомогательные объекты
