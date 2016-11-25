@@ -15,6 +15,7 @@
 Методы
 ------
 
+-  :doc:`Send <Send-(AcquireCounteragentTask)>` - отправляет приглашение контрагента к партнерству
 -  :doc:`SendAsync <SendAsync-(AcquireCounteragentTask)>` - инициирует асинхронную отправку
    приглашения контрагента к партнерству
 
@@ -23,4 +24,5 @@
    :name: Auto
    :hidden:
 
+   Send <Send-(AcquireCounteragentTask)>
    SendAsync <SendAsync-(AcquireCounteragentTask)>

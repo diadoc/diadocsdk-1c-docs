@@ -108,6 +108,10 @@
 
 -  :doc:`SaveAllContentAsync <SaveAllContentAsync>` - асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
+-  :doc:`SaveAllContentZip <SaveAllContentZip>` - формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+
+-  :doc:`SaveAllContentZipAsync <SaveAllContentZipAsync>` - асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+
 -  :doc:`GetComment <GetComment>` - возвращает комментарий к документу, заданный при отправке
 
 -  :doc:`Move <Move>` - перемещает документ в указанное подразделение
@@ -156,6 +160,8 @@
 
    SaveAllContent <SaveAllContent>
    SaveAllContentAsync <SaveAllContentAsync>
+   SaveAllContentZip <SaveAllContentZip>
+   SaveAllContentZipAsync <SaveAllContentZipAsync>
    GetComment <GetComment>
    Move <Move>
    Delete <Delete>
@@ -202,7 +208,6 @@
    XmlAcceptanceCertificate <XmlAcceptanceCertificate>
    XmlTorg12 <XmlTorg12>
    Utd <Utd>
-   UtdRevision <UtdRevision>
 
 -  :doc:`Contract <Contract>` - договор
 -  :doc:`Invoice <Invoice>` - счет-фактура
@@ -216,7 +221,6 @@
 -  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о выполнении работ в формализованном виде
 -  :doc:`XmlTorg12 <XmlTorg12>` - ТОРГ-12 в формализованном виде
 -  :doc:`Utd <Utd>` - универсальный передаточный документ
--  :doc:`UtdRevision <UtdRevision>` - исправление универсального передаточного документа
 
 
 Структуры для работы с содержимым документов
@@ -238,7 +242,7 @@
 - :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
-- :doc:`UtdSellerContent <UtdSellerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`исправлением УПД <UtdRevision>`
+- :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>`
 
 
 .. toctree::
@@ -256,6 +260,8 @@
    Torg12Content <Torg12Content>
    Torg12SellerContent <Torg12SellerContent>
    Torg12BuyerContent <Torg12BuyerContent>
+   UtdSellerContent <UtdSellerContent>
+   UtdBuyerContent <UtdBuyerContent>
 
    
 Вспомогательные объекты
