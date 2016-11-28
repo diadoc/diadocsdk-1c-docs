@@ -272,9 +272,11 @@
 - :doc:`AdditionalInfoId <AdditionalInfoId>` - для работы с информационным полем документа
 - :doc:`AddressInfo <AddressInfo>` - для работы с данными об адресе
 - :doc:`Attorney <Attorney>` - для работы с данными о доверенности
+- :doc:`Employee <Employee>` - для работы с данными о работнике организации продавца или покупателя
 - :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` - для работы с данными об организации
 - :doc:`ExtendedSigner <ExtendedSigner>` - для работы с данными о лице, подписавшем документ
 - :doc:`OrganizationInfo <OrganizationInfo>` - для работы с данными об организации
+- :doc:`OtherIssuer <OtherIssuer>` - для работы с данными о третьем лице
 - :doc:`PaymentDocument <PaymentDocument>` - для работы с данными о платежно-расчетном документе
 - :doc:`Signer <Signer>` - для работы с данными о лице, подписавшем документ
 - :doc:`Shipper <Shipper>` - для работы с данными об грузоотправителе
