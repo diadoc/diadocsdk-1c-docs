@@ -18,6 +18,7 @@
 
 
 Значения свойства **Status**
+
 - UnknownUnilateralDocumentStatus - неизвестное состояние документа 
 - Outbound - документ исходящий 
 - OutboundWaitingForSenderSignature - документ исходящий, документ не отправлен, поскольку не подписан отправителем 
