@@ -155,7 +155,7 @@
 
 -  :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` - создает задание на подписание и отправку исходящего документа с отложенной отправкой.
 
--  :doc:`MarkAsRead <MarkAsRead-(Document)>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
+-  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
 .. toctree::
    :name: Auto
@@ -186,6 +186,7 @@
    GetDocumentPackage <GetDocumentPackage>
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
+   MarkAsRead <MarkAsRead>
 
    
 Производные объекты 
