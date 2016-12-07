@@ -73,6 +73,7 @@
 
 - **RoamingNotificationStatusDescription** (строка, чтение) - описание статуса передачи документа через роуминг.
 
+- **IsRead** (булево, чтение) - флаг, указывающий на то, что документ был прочитан сотрудником организации
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -154,6 +155,8 @@
 
 -  :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` - создает задание на подписание и отправку исходящего документа с отложенной отправкой.
 
+-  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -183,6 +186,7 @@
    GetDocumentPackage <GetDocumentPackage>
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
+   MarkAsRead <MarkAsRead>
 
    
 Производные объекты 
