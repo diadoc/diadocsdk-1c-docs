@@ -5,3 +5,9 @@ v5.10.1 - 07.12.2016
 -----------------------
 
 - Исправлена ошибка связанная с получением подписи :doc:`GetRecipientSignature <GetRecipientSignature>` для УПД.
+
+v5.10.2 - 08.12.2016
+-----------------------
+
+- Исправлена валидация актов при вызове :doc:`ValidateContent <ValidateContent-(SendTask)>` в случае отрицательного количества позиций. 
+- Исправлена валидация точности поля **Quantity** :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`
