@@ -1,6 +1,8 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
+Метод объекта :doc:`InvoiceItem <InvoiceItem>`.
+
 
 **Синтаксис**
 
