@@ -34,7 +34,7 @@
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceContent")
 
-- **Items** (:doc:`коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem>`, чтение, обязательно для заполнения) - табличная часть счета-фактуры
+- **Items** (:doc:`коллекция <Collection>` объектов, чтение, обязательно для заполнения) - табличная часть счета-фактуры
 
 - **Payment Documents** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, --) - список платежно-расчетных документов
 
@@ -59,6 +59,5 @@
 
    AddItem-(InvoiceContent) <AddItem-(InvoiceContent)>
    AddPaymentDocument-(InvoiceContent) <AddPaymentDocument-(InvoiceContent)>
-   InvoiceItem <InvoiceItem>
    InvoiceTotals <Totals-InvoiceTotals>
    AddStructedAdditionalInfo <AddStructedAdditionalInfo>

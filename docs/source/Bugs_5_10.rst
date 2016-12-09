@@ -10,4 +10,4 @@ v5.10.2 - 08.12.2016
 -----------------------
 
 - Исправлена валидация актов при вызове :doc:`ValidateContent <ValidateContent-(SendTask)>` в случае отрицательного количества позиций. 
-- Исправлена валидация точности поля **Quantity** :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`
+- Исправлена валидация точности поля **Quantity** :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`.
