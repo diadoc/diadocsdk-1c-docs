@@ -94,6 +94,10 @@
 
 -  :doc:`GetSentDocuments <GetSentDocuments>` - возвращает список идентификаторов отправленных документов
 
+-  :doc:`GetAddressForCounteragent <GetAddressForCounteragent>` - возвращает адресную информацию :doc:`AddressInfo <AddressInfo>` из хранилища
+
+-  :doc:`SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>` - валидирует и загружает адресную информацию в хранилище
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -120,4 +124,6 @@
    SetData <SetData>
    GetData <GetData>
    GetSentDocuments <GetSentDocuments>
-
+   GetAddressForCounteragent <GetAddressForCounteragent>
+   SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
+   
