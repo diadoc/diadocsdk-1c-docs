@@ -92,6 +92,7 @@
 
 -  :doc:`GetData <GetData>` - извлекает пару "ключ-значение" из хранилища по ее ключу
 
+-  :doc:`GetSentDocuments <GetSentDocuments>` - возвращает список идентификаторов отправленных документов
 
 .. toctree::
    :name: Auto
@@ -118,4 +119,5 @@
    GetExtendedSignerDetails <GetExtendedSignerDetails>
    SetData <SetData>
    GetData <GetData>
+   GetSentDocuments <GetSentDocuments>
 
