@@ -157,6 +157,8 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
+-  :doc:`AddEncryptCertificate <AddEncryptCertificate>` - добавляет сертификат шифрования документа
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -187,6 +189,7 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
+   AddEncryptCertificate <AddEncryptCertificate>
 
    
 Производные объекты 
@@ -287,7 +290,6 @@
 - :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы с данными об грузоотправителе и грузополучателе
 - :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` - для работы с дополнительными сведениями
 - :doc:`Official <Official>` - для работы с данными о должностном лице
-
 
 .. toctree::
    :name: Auto3
