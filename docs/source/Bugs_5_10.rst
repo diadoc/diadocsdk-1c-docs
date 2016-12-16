@@ -17,3 +17,8 @@ v5.10.3 - 12.12.2016
 
 - Валидация акта :doc:`ValidateContent <ValidateContent-(SendTask)>` теперь допускает 5 знаков после запятой для количества - поле **Quantity** :doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>`.
 - Исправлено возвращаемое значение :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>` на :doc:`ExtendedSignerDetails <ExtendedSignerDetails>`.
+
+v5.10.4 - 16.12.2016
+-----------------------
+
+- Исправление ошибки, приводящей к сильному замедлению работы компоненты. 
