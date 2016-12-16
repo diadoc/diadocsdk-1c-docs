@@ -55,4 +55,4 @@
    :name: Auto
    :hidden:
 
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceItem)>
+    AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceItem)>
