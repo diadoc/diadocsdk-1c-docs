@@ -157,8 +157,6 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
--  :doc:`AddEncryptCertificate <AddEncryptCertificate>` - добавляет сертификат шифрования документа
-
 .. toctree::
    :name: Auto
    :hidden:
@@ -189,8 +187,6 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
-   AddEncryptCertificate <AddEncryptCertificate>
-
    
 Производные объекты 
 ------------------------------------
