@@ -54,5 +54,3 @@
 .. toctree::
    :name: Auto
    :hidden:
-
-    AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceItem)>
