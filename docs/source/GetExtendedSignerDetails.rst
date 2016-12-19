@@ -18,7 +18,7 @@ GetExtendedSignerDetails(<CertificateThumbprint>, <IsSeller>)
 
 **Возвращаемое значение**
 
-Объект :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`, содержащий данные подписанта из базы Диадок
+Объект :doc:`ExtendedSignerDetails <ExtendedSignerDetails>`, содержащий данные подписанта из базы Диадок
 
 
 **Описание**
