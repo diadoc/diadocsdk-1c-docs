@@ -60,5 +60,6 @@
    AddItem-(InvoiceContent) <AddItem-(InvoiceContent)>
    AddPaymentDocument-(InvoiceContent) <AddPaymentDocument-(InvoiceContent)>
    InvoiceItem <InvoiceItem-(Invoice)>
+   InvoiceItem <invoiceItem>
    InvoiceTotals <Totals-InvoiceTotals>
    AddStructedAdditionalInfo <AddStructedAdditionalInfo>
