@@ -1,7 +1,7 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-v5.11 - 26.12.2016
+v5.12 - 26.12.2016
 -----------------------
 
 - Поддержка УПД-содержимого для :doc:`XmlTorg12 <XmlTorg12>`, :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`, :doc:`Invoice <Invoice>`.
