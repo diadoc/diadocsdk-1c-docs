@@ -45,5 +45,6 @@
 
    AddDocument <AddDocument>
    AddDocumentFromFile <AddDocumentFromFile>
+   AddDocumentFromFileRaw <AddDocumentFromFileRaw>
    Send <Send-(PackageSendTask)>
    SendAsync <SendAsync-(PackageSendTask)

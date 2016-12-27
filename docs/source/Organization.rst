@@ -111,6 +111,7 @@
    GetDocumentsTask <GetDocumentsTask>
    CreateSendTask <CreateSendTask>
    CreateSendTaskFromFile <CreateSendTaskFromFile>
+   CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>
    GetUsers <GetUsers>
    GetUserPermissions <GetUserPermissions>
    GetDocumentEventList <GetDocumentEventList>

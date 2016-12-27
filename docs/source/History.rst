@@ -1,6 +1,12 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.11 - 26.12.2016
+-----------------------
+
+- Поддержка УПД-содержимого для :doc:`XmlTorg12 <XmlTorg12>`, :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`, :doc:`Invoice <Invoice>`.
+- Поддержка отправки XML-содержимого без обработки :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`, :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`. 
+
 v5.10 - 25.11.2016
 -----------------------
 
