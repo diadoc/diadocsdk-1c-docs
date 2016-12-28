@@ -68,6 +68,8 @@
 
 -  :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` - позволяет получить задание для отправки документа, загруженного из файла
 
+-  :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>` - позволяет получить задание для отправки документа, загруженного из файла (без парсинга)
+
 -  :doc:`GetUsers <GetUsers>` - вовзращает список всех пользователей организации
 
 -  :doc:`GetUserPermissions <GetUserPermissions>` - возвращает описание прав пользователя, в контексте которого произошла авторизация, для данной организации
