@@ -78,7 +78,7 @@
 
 -  :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` - возвращает объект, с помощью которого можно запустить процесс автоматического формирования документов по регламентному документообороту счетов-фактур
 
--  :doc:`AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>` - добавление в сообщение ФНС нового сертификата
+-  :doc:`SendFnsRegistrationMessage <SendFnsRegistrationMessage>` - добавление в сообщение ФНС нового сертификата
 
 -  :doc:`SendDraftAsync <SendDraftAsync>` - инициирует асинхронную операцию отправки черновика по его уникальному идентификатору
 
@@ -119,6 +119,7 @@
    GetDocumentEventList <GetDocumentEventList>
    GetReceiptGenerationProcess <GetReceiptGenerationProcess>
    AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>
+   SendFnsRegistrationMessage <SendFnsRegistrationMessage>
    SendDraftAsync <SendDraftAsync>
    CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>
    CreatePackageSendTask <CreatePackageSendTask>
