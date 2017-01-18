@@ -72,6 +72,7 @@
 
 -  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>` - добавляет дополнительный идентификатор 1С для документа
 
+-  :doc:`AddEncryptCertificate <AddEncryptCertificate-(SendTask)>` - добавляет сертификат шифрования документа
 
 .. toctree::
    :name: Auto
@@ -85,3 +86,4 @@
    ValidateContent <ValidateContent-(SendTask)>
    AddStructuredDataAttachment <AddStructuredDataAttachment>
    AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>
+   AddEncryptCertificate <AddEncryptCertificate-(SendTask)>

@@ -79,6 +79,8 @@
 
 - **ResolutionRequestDenials** (:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`, чтение) - коллекция объектов отмены запросов на согласование
 
+- **IsEncryptedContent** (булево, чтение) - флаг, указывающий на то, что содержимое документа зашифровано
+
 Свойство **Direction** принимает одно из следующих значений:
 
 -  "Inbound" - входящий документ
@@ -161,7 +163,6 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
--  :doc:`AddEncryptCertificate <AddEncryptCertificate>` - добавляет сертификат шифрования документа
 
 .. toctree::
    :name: Auto
@@ -193,7 +194,6 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
-   AddEncryptCertificate <AddEncryptCertificate>
 
    
 Производные объекты 

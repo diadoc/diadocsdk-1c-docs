@@ -1,7 +1,7 @@
 ﻿AddEncryptCertificate
 =====================
 
-Метод объекта :doc:`Document <Document>`
+Метод объекта :doc:`SendTask <SendTask>`
 
 **Синтаксис**
 

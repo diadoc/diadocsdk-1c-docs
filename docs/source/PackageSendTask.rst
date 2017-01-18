@@ -40,6 +40,7 @@
 -  :doc:`Send <Send-(PackageSendTask)>` - отправляет пакет документов на сервер
 -  :doc:`SendAsync <SendAsync-(PackageSendTask)>` - инициирует асинхронную отправку 
    пакета документов
+-  :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` - добавляет сертификат шифрования документа
 
 .. toctree::
    :name: Auto
@@ -50,3 +51,4 @@
    AddDocumentFromFileRaw <AddDocumentFromFileRaw>
    Send <Send-(PackageSendTask)>
    SendAsync <SendAsync-(PackageSendTask)
+   AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>
