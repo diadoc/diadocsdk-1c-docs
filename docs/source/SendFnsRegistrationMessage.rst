@@ -1,4 +1,4 @@
-﻿AddCertToFnsRegistrationMessage
+﻿SendFnsRegistrationMessage
 ===============================
 
 Метод объекта :doc:`Organization <Organization>`
