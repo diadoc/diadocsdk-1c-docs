@@ -1,5 +1,5 @@
-﻿AddDocumentFromFile
-===================
+﻿AddDocumentFromFileRaw
+======================
 
 Метод объекта :doc:`PackageSendTask <PackageSendTask>`
 
@@ -35,6 +35,9 @@ AddDocumentFromFileRaw(<Type>, <Path>)
 - XmlTorg12
 - UniversalTransferDocument
 - UniversalTransferDocumentRevision
+- UtdTorg12
+- UtdAcceptanceCertificate
+- UtdInvoice
 
 **Возвращаемое значение**
 

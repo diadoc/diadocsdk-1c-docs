@@ -1,5 +1,5 @@
-﻿CreateSendTaskFromFile
-======================
+﻿CreateSendTaskFromFileRaw
+=========================
 
 Метод объекта :doc:`Organization <Organization>`
 
@@ -37,6 +37,10 @@ CreateSendTaskFromFileRaw(<Path>, <Type>)
 -  "PriceListAgreement" - отправка протокола согласования цены
 -  "ReconciliationAct" - отправка акта сверки
 -  "ServiceDetails" - отправка детализации
+-  "UtdTorg12" - отправка формализованной ТОРГ-12 в формате УПД
+-  "UtdAcceptanceCertificate" -  отправка формализованного акта о
+   выполнении работ в формате УПД
+-  "UtdInvoice" -  отправка счета-фактуры в формате УПД
 
 **Возвращаемое значение**
 
