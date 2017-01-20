@@ -1,11 +1,28 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-v5.12 - 26.12.2016
------------------------
+v5.14 - 20.01.2017
+----------------------
 
-- Поддержка УПД-содержимого для :doc:`XmlTorg12 <XmlTorg12>`, :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`, :doc:`Invoice <Invoice>`.
-- Поддержка отправки XML-содержимого без обработки :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`, :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`. 
+- Поддержка УПД-содержимого для "старых" типов документов(Торг12, Акт, Счет-фактура):
+  - Новые типы документов для :doc:`SendTask <SendTask>` и :doc:`PackageSendTask <PackageSendTask>`: UtdTorg12, UtdAcceptanceCertificate, UtdInvoice.
+  - Содержимое типа UniversalTransferDocument в :doc:`Invoice <Invoice>`, :doc:`XmlTorg12 <XmlTorg12>` и :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`.
+- Поддержка УПД и УКД при скачивании файлов по документообороту - :doc:`SaveAllContent <SaveAllContent>` и :doc:`SaveAllContentAsync <SaveAllContentAsync>`.
+- Реализована поддержка шифрования для акта, торг12 и счета-фактуры:
+  - Список сертификатов контрагента :doc:`GetCertificates <GetCertificates>`.
+  - Возможность задать сертификаты шифрования :doc:`AddEncryptCertificate <AddEncryptCertificate-(SendTask)>` в :doc:`SendTask <SendTask>` и :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` в :doc:`PackageSendTask <PackageSendTask>`.
+  - Флаг шифрованного документа **IsEncryptedContent** в :doc:`Document <Document>`.
+- Возможность отказа от запроса подписи сотрудника:
+  - Объект :doc:`ResolutionRequest <ResolutionRequest>` - запрос на согласование, возможен отказ и отмена.
+  - Объект:doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможна отмена. 
+  - Свойство **ResolutionRequests** в :doc:`Document <Document>` - коллекция запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequest <ResolutionRequest>`).
+  - Свойство **ResolutionRequestDenials** в :doc:`Document <Document>` - коллекция объектов отмены запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`).
+- Возможность "сырой" отправки xml-файлов формализованных документов:
+  - Метод :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`.
+  - Метод :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`.
+- :doc:`AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>` переименован в :doc:`SendFnsRegistrationMessage <SendFnsRegistrationMessage>`.
+- Исправлен :doc:`MarkAsRead <MarkAsRead>`.
+- Сериализация счета-фактуры с учетом версии формата.
 
 v5.10 - 25.11.2016
 -----------------------
