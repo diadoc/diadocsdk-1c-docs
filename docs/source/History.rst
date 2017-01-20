@@ -14,7 +14,7 @@ v5.14 - 20.01.2017
     - Флаг шифрованного документа **IsEncryptedContent** в :doc:`Document <Document>`.
 - Возможность отказа от запроса подписи сотрудника:
     - Объект :doc:`ResolutionRequest <ResolutionRequest>` - запрос на согласование, возможен отказ и отмена.
-    - Объект:doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ. 
+    - Объект :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ. 
     - Свойство **ResolutionRequests** в :doc:`Document <Document>` - коллекция запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequest <ResolutionRequest>`).
     - Свойство **ResolutionRequestDenials** в :doc:`Document <Document>` - коллекция объектов отмены запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`).
 - Возможность "сырой" отправки xml-файлов формализованных документов:
