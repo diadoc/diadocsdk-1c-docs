@@ -4,7 +4,7 @@
 v5.14 - 20.01.2017
 ----------------------
 
-- Поддержка УПД-содержимого для "старых" типов документов(Торг12, Акт, Счет-фактура):
+- Поддержка УПД-содержимого для "старых" типов документов (Торг12, Акт, Счет-фактура):
     - Новые типы документов для :doc:`SendTask <SendTask>` и :doc:`PackageSendTask <PackageSendTask>`: UtdTorg12, UtdAcceptanceCertificate, UtdInvoice.
     - Содержимое типа UniversalTransferDocument в :doc:`Invoice <Invoice>`, :doc:`XmlTorg12 <XmlTorg12>` и :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`.
 - Поддержка УПД и УКД при скачивании файлов по документообороту - :doc:`SaveAllContent <SaveAllContent>` и :doc:`SaveAllContentAsync <SaveAllContentAsync>`.
