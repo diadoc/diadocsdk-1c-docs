@@ -48,6 +48,7 @@
 
 - **PaymentDocuments** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение) - платежно-расчетные документы
 
+- **Type** (строка, чтение) - тип документа
 
 Свойство **Function** принимает одно из следующих значений:
 

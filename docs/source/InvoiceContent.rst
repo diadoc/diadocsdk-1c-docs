@@ -40,6 +40,7 @@
 
 - **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
+- **Type** (строка, чтение) - тип документа
 
 Методы объекта
 --------------

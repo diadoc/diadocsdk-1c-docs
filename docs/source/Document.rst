@@ -59,7 +59,7 @@
 
 - **ResolutionStatus** (объект :doc:`Resolution <Resolution>`, чтение) - текущий статус согласования документа
 
-- **Resolutions** (:doc:`коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласованих документа
+- **Resolutions** (:doc:`коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласования документа
 
 - **CustomDocumentId** (строка, чтение) - идентификатор документа, определяемый внешней системой
 
@@ -74,6 +74,12 @@
 - **RoamingNotificationStatusDescription** (строка, чтение) - описание статуса передачи документа через роуминг.
 
 - **IsRead** (булево, чтение) - флаг, указывающий на то, что документ был прочитан сотрудником организации
+
+- **ResolutionRequests** (:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequest <ResolutionRequest>`, чтение) - коллекция запросов на согласование
+
+- **ResolutionRequestDenials** (:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`, чтение) - коллекция объектов отмены запросов на согласование
+
+- **IsEncryptedContent** (булево, чтение) - флаг, указывающий на то, что содержимое документа зашифровано
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -157,6 +163,7 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -187,6 +194,7 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
+
    
 Производные объекты 
 ------------------------------------
@@ -303,3 +311,5 @@
    ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
    StructedAdditionalInfo <StructedAdditionalInfo>
    Official <Official>
+   ResolutionRequest <ResolutionRequest>
+   ResolutionRequestDenial <resolutionRequestDenial>
