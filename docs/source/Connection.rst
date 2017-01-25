@@ -14,6 +14,7 @@
 
 - **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение) - сертификат, по которому произошла авторизация
 
+- **Token** (строка, чтение) - маркер авторизации в Диадок API
 
 Свойство AuthenticateType принимает одно из следующих значений:
 
