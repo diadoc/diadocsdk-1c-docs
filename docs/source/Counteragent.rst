@@ -51,8 +51,6 @@
 
 -  :doc:`BreakWithCounteragent <BreakWithCounteragent>` - разрывает действующее "приглашение" об обмене документами
 
--  :doc:`GetCertificates <GetCertificates>` - возвращает список сертификатов для контрагента
-
 .. toctree::
    :name: Auto
    :hidden:
@@ -60,4 +58,3 @@
    GetStatus <GetStatus>
    AcquireCounteragent <AcquireCounteragent>
    BreakWithCounteragent <BreakWithCounteragent>
-   GetCertificates <GetCertificates>
