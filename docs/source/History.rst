@@ -23,6 +23,7 @@ v5.14 - 20.01.2017
 - :doc:`AddCertToFnsRegistrationMessage <AddCertToFnsRegistrationMessage>` переименован в :doc:`SendFnsRegistrationMessage <SendFnsRegistrationMessage>`.
 - Исправлен :doc:`MarkAsRead <MarkAsRead>`.
 - Сериализация счета-фактуры с учетом версии формата.
+- :doc:`Исправлены ошибки <Bugs_5_14>`
 
 v5.10 - 25.11.2016
 -----------------------
