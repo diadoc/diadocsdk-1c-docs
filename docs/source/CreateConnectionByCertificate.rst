@@ -6,12 +6,14 @@
 **Синтаксис**
 
 
-CreateConnectionByCertificate(<Thumbprint>)
+CreateConnectionByCertificate(<Thumbprint>, <Pin>)
 
 **Параметры**
 
 
 -  <Thumbprint> (строка, обязательный) - отпечаток сертификата
+
+- <Pin> (стркоа) - Пинкод от сертификата/смарткарты
 
 **Возвращаемое значение**
 
