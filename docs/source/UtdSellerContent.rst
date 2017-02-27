@@ -48,7 +48,7 @@
 
 - **PaymentDocuments** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение) - платежно-расчетные документы
 
-- **Type** (строка, чтение) - тип документа
+- **Type** (строка, чтение) - тип документа (возвращает строку "UniversalTransferDocument")
 
 Свойство **Function** принимает одно из следующих значений:
 
