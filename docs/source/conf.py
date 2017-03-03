@@ -32,6 +32,7 @@ import shlex
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.newsfeed'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
