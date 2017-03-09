@@ -1,0 +1,11 @@
+Релиз 5.14.1
+============
+
+.. feed-entry::
+   :date: 2017-02-21
+
+Исправлена ошибка в COM-компоненте
+
+.. cut::
+
+При создании :doc:`SendTask <SendTask>` с помощью :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` или :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`, невозможно отправить документ, ошибка "Message has no attachments".
