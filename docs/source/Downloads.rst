@@ -1,5 +1,7 @@
-﻿Ссылки для скачивания `RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+﻿Ссылки для скачивания
 =====================
+
+`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
 
 Текущие версии внешней компоненты
 --------------------------------------
