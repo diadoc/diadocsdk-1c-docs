@@ -100,6 +100,8 @@
 
 -  :doc:`SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>` - валидирует и загружает адресную информацию в хранилище
 
+-  :doc:`CanSendInvoice <CanSendInvoice>` - определяет может ли указанный сертификат ЭП ипользоваться для подписания ЭСФ
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -130,4 +132,5 @@
    GetSentDocuments <GetSentDocuments>
    GetAddressForCounteragent <GetAddressForCounteragent>
    SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
+   CanSendInvoice <CanSendInvoice> 
    
