@@ -4,3 +4,4 @@
    :link: http://diadocsdk-1c.readthedocs.io/ru/dev/
 
    bugs_5_14_1
+   release_5_15_0
