@@ -21,7 +21,7 @@
 
 - **OtherIssuer** (объект :doc:`OtherIssuer <OtherIssuer>`, чтение) - иное лицо
 
-- **AdditionalInfoId** (строка, чтение) - информационное поле документа
+- **AdditionalInfoId** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
 
 - **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
 
