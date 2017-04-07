@@ -221,6 +221,7 @@
    XmlAcceptanceCertificate <XmlAcceptanceCertificate>
    XmlTorg12 <XmlTorg12>
    Utd <Utd>
+   Ucd <Ucd>
 
 -  :doc:`Contract <Contract>` - договор
 -  :doc:`Invoice <Invoice>` - счет-фактура
@@ -234,6 +235,7 @@
 -  :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>` - акт о выполнении работ в формализованном виде
 -  :doc:`XmlTorg12 <XmlTorg12>` - ТОРГ-12 в формализованном виде
 -  :doc:`Utd <Utd>` - универсальный передаточный документ
+-  :doc:`Ucd <Ucd>` - универсальный корректировочный документ
 
 
 Структуры для работы с содержимым документов
@@ -255,7 +257,7 @@
 - :doc:`ProformaInvoiceContent <ProformaInvoiceContent>` - для работы с :doc:`счетом на оплату <NonformalizedProformaInvoice>`
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
-- :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>`
+- :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UcdSellerContent <UcdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`УКД <Ucd>`
 
 
 .. toctree::
@@ -275,6 +277,7 @@
    Torg12BuyerContent <Torg12BuyerContent>
    UtdSellerContent <UtdSellerContent>
    UtdBuyerContent <UtdBuyerContent>
+   UcdSellerContent <UcdSellerContent>
 
    
 Вспомогательные объекты
