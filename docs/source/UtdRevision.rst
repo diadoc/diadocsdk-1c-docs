@@ -44,3 +44,4 @@
 
    GetContent <GetContent-(UtdRevision)>
    GetBuyerContent <GetBuyerContent-(UtdRevision)>
+   SendReceiptsAsync <SendReceiptsAsync-(UtdRevision)>
