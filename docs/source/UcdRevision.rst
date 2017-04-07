@@ -57,14 +57,14 @@
 Методы объекта
 --------------
 
--  :doc:`GetContent <GetContent-(Ucd)>` - возвращает объект титула продавца УКД
--  :doc:`GetBuyerContent <GetBuyerContent-(Ucd)>` - возвращает объект титула покупателя УКД
--  :doc:`SendReceiptsAsync <SendReceiptsAsync-(Ucd)>` - формирует и подписывает документы по регламентному документообороту УКД
+-  :doc:`GetContent <GetContent-(UcdRevision)>` - возвращает объект титула продавца УКД
+-  :doc:`GetBuyerContent <GetBuyerContent-(UcdRevision)>` - возвращает объект титула покупателя УКД
+-  :doc:`SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>` - формирует и подписывает документы по регламентному документообороту УКД
 
 .. toctree::
    :name: Auto
    :hidden:
 
-   GetContent <GetContent-(Ucd)>
-   GetBuyerContent <GetBuyerContent-(Ucd)>
-   SendReceiptsAsync <SendReceiptsAsync-(Ucd)>
+   GetContent <GetContent-(UcdRevision)>
+   GetBuyerContent <GetBuyerContent-(UcdRevision)>
+   SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>
