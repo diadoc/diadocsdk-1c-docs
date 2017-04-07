@@ -6,7 +6,7 @@
 
 **Синтаксис**
 
-GetExtendedSignerDetails(<CertificateThumbprint>, <IsSeller>)
+GetExtendedSignerDetails(<CertificateThumbprint>, <IsSeller>, <forCorrection>)
 
 
 **Параметры**
@@ -15,6 +15,7 @@ GetExtendedSignerDetails(<CertificateThumbprint>, <IsSeller>)
 
 -  <IsSeller> (булево, обязательный) - признак того, является ли подписант подписантом титула продавца или подписантом титула покупателя
 
+-  <forCorrection> (булево, обязательный) - признак того, является ли подписант подписантом корректировки
 
 **Возвращаемое значение**
 

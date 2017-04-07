@@ -36,7 +36,7 @@
 
 -  :doc:`GetContent <GetContent-(UtdRevision)>` - возвращает объект титула продавца УПД
 -  :doc:`GetBuyerContent <GetBuyerContent-(UtdRevision)>` - возвращает объект титула покупателя УПД
-
+-  :doc:`SendReceiptsAsync <SendReceiptsAsync-(UtdRevision)>` - формирует и подписывает документы по регламентному документообороту УПД
 
 .. toctree::
    :name: Auto

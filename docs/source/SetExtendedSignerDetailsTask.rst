@@ -8,8 +8,9 @@
 
 -  **IsSeller** (булево, чтение/запись) - признак того, является ли подписант подписантом титула продавца или подписантом титула покупателя
 
--  **ExtendedSignerDetailsToPost** (объект :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`, чтение/запись) - данные подписанта
+-  **ForCorrection** (булево, чтение/запись) - признак того, является ли подписант подписантом корректировки
 
+-  **ExtendedSignerDetailsToPost** (объект :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`, чтение/запись) - данные подписанта
 
 Методы
 ------

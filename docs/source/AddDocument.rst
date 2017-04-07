@@ -23,6 +23,8 @@ AddDocument(<Type>)
 - XmlTorg12
 - UniversalTransferDocument
 - UniversalTransferDocumentRevision
+- UniversalCorrectionDocument
+- UniversalCorrectionDocumentRevision
 - UtdTorg12
 - UtdAcceptanceCertificate
 - UtdInvoice
@@ -46,7 +48,7 @@ AddDocument(<Type>)
 
 -  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
 
-
+-  :doc:`UcdToSend <UcdToSend>` - для типа UniversalCorrectionDocument
 
 **Описание**
 
@@ -67,4 +69,5 @@ AddDocument(<Type>)
    XmlActToSend <XmlActToSend>
    XmlTorg12ToSend <XmlTorg12ToSend>
    UtdToSend <UtdToSend>
+   UcdToSend <UcdToSend>
 
