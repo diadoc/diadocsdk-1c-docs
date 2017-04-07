@@ -23,9 +23,9 @@
 
 - **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
 
-- **EventContent**(объект :doc:`EventContent <EventContent>`) - содержание события
+- **EventContent** (объект :doc:`EventContent <EventContent>`) - содержание события
 
-- **InvoiceCorrectionTable**(объект :doc:`InvoiceCorrectionTable <InvoiceCorrectionTable>`) - сведения таблицы корректировочного счета-фактуры
+- **InvoiceCorrectionTable** (объект :doc:`InvoiceCorrectionTable <InvoiceCorrectionTable>`) - сведения таблицы корректировочного счета-фактуры
 
 - **Currency** (строка, чтение/запись, обязательно для запонения) - код валюты по Общероссийскому классификатору валют
 
