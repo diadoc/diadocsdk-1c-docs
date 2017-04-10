@@ -35,6 +35,8 @@ AddDocumentFromFileRaw(<Type>, <Path>)
 - XmlTorg12
 - UniversalTransferDocument
 - UniversalTransferDocumentRevision
+- UniversalCorrectionDocument
+- UniversalCorrectionDocumentRevision
 - UtdTorg12
 - UtdAcceptanceCertificate
 - UtdInvoice
