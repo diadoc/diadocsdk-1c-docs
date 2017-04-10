@@ -1,7 +1,7 @@
 ﻿GetContent 
 ==========
 
-Метод объекта :doc:`Uсd <Uсd>`.
+Метод объекта :doc:`Ucd <Ucd>`.
 
 
 **Синтаксис**
@@ -11,7 +11,7 @@ GetContent()
 
 **Возвращаемое значение**
 
-Объект :doc:`UсdSellerContent <UсdSellerContent>`
+Объект :doc:`UcdSellerContent <UcdSellerContent>`
 
 
 **Описание**

@@ -1,5 +1,5 @@
 ﻿AddCorrectionBase
-===============
+=================
 
 Метод объекта :doc:`EventContent <EventContent>`
 

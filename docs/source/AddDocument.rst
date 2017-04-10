@@ -46,9 +46,9 @@ AddDocument(<Type>)
 
 -  :doc:`XmlTorg12ToSend <XmlTorg12ToSend>` - для типа XmlTorg12
 
--  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
+-  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument и UniversalTransferDocumentRevision
 
--  :doc:`UcdToSend <UcdToSend>` - для типа UniversalCorrectionDocument
+-  :doc:`UcdToSend <UcdToSend>` - для типа UniversalCorrectionDocument и UniversalCorrectionDocumentRevision
 
 **Описание**
 

@@ -321,4 +321,4 @@
    StructedAdditionalInfo <StructedAdditionalInfo>
    Official <Official>
    ResolutionRequest <ResolutionRequest>
-   ResolutionRequestDenial <resolutionRequestDenial>
+   ResolutionRequestDenial <ResolutionRequestDenial>
