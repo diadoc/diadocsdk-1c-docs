@@ -2,7 +2,7 @@
 ============
 
 .. feed-entry::
-   :date: 2017-04-07
+   :date: 2017-04-10
 
 - Поддержка УКД в компоненте:
     - Новый тип отправляемого документа для :doc:`CreateSendTask <CreateSendTask>`: **UniversalCorrectionDocument**
