@@ -15,11 +15,8 @@ v5.16 - 10.04.2017
 - Для :doc:`Utd <Utd>` и :doc:`UtdRevision <UtdRevision>` реализована отправка ИоП - методы: :doc:`SendReceiptsAsync <SendReceiptsAsync-(Utd)>` и :doc:`SendReceiptsAsync <SendReceiptsAsync-(UtdRevision)>`
 - Поддержка отправки "с полки" в :doc:`SendTask <SendTask>` и :doc:`PackageSendTask <PackageSendTask>` - свойство **UseShelf**
 - Методы :doc:`Send <Send-(AcquireCounteragentTask)>` и :doc:`SendAsync <SendAsync-(AcquireCounteragentTask)>` теперь возвращают идентификатор организации
-- Исправлены ошибки:
-    - В COM-компоненте, в :doc:`DocumentsTask <DocumentsTask>` не искались иУПД
-    - Пустая строка в свойстве **Type** объекта :doc:`Utd <Utd>` для иУПД
-    - Запись значений по-умолчанию в свойства **InvoiceRevisionDate** и **InvoiceRevisionNumber**, объекта :doc:`InvoiceContent <InvoiceContent>` приводила к измению типа документа на исправительный счет-фактура
-    - Свойство **EventType** объекта :doc:`DocumentEvent <DocumentEvent>` теперь принимает корректные значения для событий документов УПД и УКД
+- :doc:`Исправлены ошибки <Bugs_5_16>`
+
 
 v5.15 - 15.03.2017
 ----------------------
