@@ -65,7 +65,7 @@
               Item.Vat                   = 180;
               Item.Total                 = 1180;
 
-              CloudCerts = Connection.CloudCertificates();
+              CloudCerts = Connection.GetCloudCertificates();
               SignTask = Connection.CreateCloudSignTask(CloudCerts.GetItem(0).Thumbprint);
               SignTask.AddContent(InvoiceContent, CounteragentId);
               SignTask.Sign();
