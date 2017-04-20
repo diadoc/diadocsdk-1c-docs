@@ -21,6 +21,8 @@
 
 - **Status** (строка, чтение) - текущий статус документа в Диадоке
 
+- **AmendmentRequested** (булево, чтение) - признак, был ли запрос на уточнение
+
 Значения свойства **Function**
 
 - СЧФ
@@ -52,6 +54,7 @@
 -  :doc:`GetContent <GetContent-(Utd)>` - возвращает объект титула продавца УПД
 -  :doc:`GetBuyerContent <GetBuyerContent-(Utd)>` - возвращает объект титула покупателя УПД
 -  :doc:`SendReceiptsAsync <SendReceiptsAsync-(Utd)>` - формирует и подписывает документы по регламентному документообороту УПД
+-  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(Utd)>` - возвращает комментарий к уведомлению об уточнении
 
 .. toctree::
    :name: Auto

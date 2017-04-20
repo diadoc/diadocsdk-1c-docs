@@ -29,6 +29,8 @@
 
 - **OriginalDocumentNumber** (строка, чтение) - номер исходного УПД
 
+- **AmendmentRequested** (булево, чтение) - признак, был ли запрос на уточнение
+
 Значения свойства **Function**
 
 - КСЧФ 
@@ -60,6 +62,7 @@
 -  :doc:`GetContent <GetContent-(UcdRevision)>` - возвращает объект титула продавца УКД
 -  :doc:`GetBuyerContent <GetBuyerContent-(UcdRevision)>` - возвращает объект титула покупателя УКД
 -  :doc:`SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>` - формирует и подписывает документы по регламентному документообороту УКД
+-  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>` - возвращает комментарий к уведомлению об уточнении
 
 .. toctree::
    :name: Auto
@@ -68,3 +71,4 @@
    GetContent <GetContent-(UcdRevision)>
    GetBuyerContent <GetBuyerContent-(UcdRevision)>
    SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>
+   GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>
