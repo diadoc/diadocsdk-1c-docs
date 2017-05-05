@@ -14,10 +14,11 @@
 - Оптимизация работы объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>`
 
 Исправлены ошибки:
+
 - Ошибка времени исполнения в COM-компоненте при добавлении элементов в некоторые коллекции объектов поддержки УКД
 - Ошибка, связи с которой у объектов :doc:`Invoice <Invoice>` :doc:`InvoiceRevision <InvoiceRevision>`, :doc:`InvoiceCorrection <InvoiceCorrection>`, :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` не работал метод :doc:`SendReceiptsAsync <SendReceiptsAsync>`
 - Исправлена работа метода :doc:`GetRecipientSignature <GetRecipientSignature>` для УПД с функцией "СЧФ" и УКД с функцией "КСЧФ"
-- Объект :doc:`InvoiceRevision <InvoiceRevision>` таеперь поддерживает УПД-содержимое
+- Объект :doc:`InvoiceRevision <InvoiceRevision>` теперь поддерживает УПД-содержимое
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
