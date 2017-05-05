@@ -8,7 +8,7 @@
 - Расширена поддержка прокси: добавлена поддержка HTTP-ответа 407(Proxy Authentication Required) - запрос авторизации на прокси-сервере
 - Расширен метод :doc:`AddContent <AddContent>`, объекта :doc:`CloudSignTask <CloudSignTask>`
 - Автоматический расчет всех полей сумм в :doc:`Torg12Totals <Torg12Totals>` для :doc:`Torg12Content <Torg12Content>`
-- У объектов :doc:`Utd <Utd>`, :doc:`UtdRevision <UtdRevision>`, :doc:`Ucd <Ucd>`, :doc:`UcdRevision <UcdRevision>` расширена поддержка работы с запросами на уточнение: добавлено свойство **AmmendmentRequested** и метод :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(Utd)>`
+- У объектов :doc:`Utd <Utd>`, :doc:`UtdRevision <UtdRevision>`, :doc:`Ucd <Ucd>`, :doc:`UcdRevision <UcdRevision>` расширена поддержка работы с запросами на уточнение: добавлено свойство **AmendmentRequested** и метод :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(Utd)>`
 - Измененено поведение метода :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` - теперь для одного ИНН возвращаеться весь набор организаций
 - В базовый объект документа :doc:`Document <Document>` добавлено свойство **AttachmentVersion** - информация о версии XSD схемы, в соотвествии с которой сформирован документ
 - Оптимизация работы объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>`
