@@ -1,18 +1,18 @@
 ﻿Ссылки для скачивания
 =====================
 
-`RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
+`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
 
 Текущие версии внешней компоненты
 --------------------------------------
 
-:download:`Внешняя компонента для 1С <data/v50/AddInDiadocAPI.dll>` - версия 5.16.1.191
+:download:`Внешняя компонента для 1С <data/v50/AddInDiadocAPI.dll>` - версия 5.17.0.201
 
-:download:`Внешняя компонента для 1С, для 64-х битных приложений <data/v50/x64/AddInDiadocAPI.dll>` - версия 5.16.1.191
+:download:`Внешняя компонента для 1С, для 64-х битных приложений <data/v50/x64/AddInDiadocAPI.dll>` - версия 5.17.0.201
 
-:download:`COM-компонента для встраивания в произвольные системы <data/v50/DiadocComApi.dll>`- версия 5.16.1.191
+:download:`COM-компонента для встраивания в произвольные системы <data/v50/DiadocComApi.dll>`- версия 5.17.0.201
 
-:download:`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <data/v50/x64/DiadocComApi.dll>` - 5.16.1.191
+:download:`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <data/v50/x64/DiadocComApi.dll>` - 5.17.0.201
 
 
 Предыдущие редакции компоненты

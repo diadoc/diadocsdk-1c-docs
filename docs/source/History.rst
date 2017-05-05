@@ -1,6 +1,24 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.17 - 05.05.2017
+----------------------
+
+- Различные изменения COM-компоненты связанные с поддержкой многопоточности, поддержка режима MTA
+- Добавлена поддержка HTTP-ответа 407(Proxy Authentication Required) - запрос авторизации на прокси-сервере
+- Расширен метод :doc:`AddContent <AddContent>`, объекта :doc:`CloudSignTask <CloudSignTask>`
+- Автоматический расчет всех полей сумм в :doc:`Torg12Totals <Torg12Totals>` для :doc:`Torg12Content <Torg12Content>`
+- У объектов :doc:`Utd <Utd>`, :doc:`UtdRevision <UtdRevision>`, :doc:`Ucd <Ucd>`, :doc:`UcdRevision <UcdRevision>` расширена поддержка работы с запросами на уточнение: добавлено свойство **AmmendmentRequested** и метод :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(Utd)>`
+- Измененено поведение метода :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` - теперь для одного ИНН возвращаеться весь набор организаций
+- В базовый объект документа :doc:`Document <Document>` добавлено свойство **AttachmentVersion** - информация о версии XSD схемы, в соотвествии с которой сформирован документ
+- Оптимизация работы объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>`
+
+Исправлены ошибки:
+- Ошибка времени исполнения в COM-компоненте при добавлении элементов в некоторые коллекции объектов поддержки УКД
+- Ошибка, связи с которой у объектов :doc:`Invoice <Invoice>` :doc:`InvoiceRevision <InvoiceRevision>`, :doc:`InvoiceCorrection <InvoiceCorrection>`, :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` не работал метод :doc:`SendReceiptsAsync <SendReceiptsAsync>`
+- Исправлена работа метода :doc:`GetRecipientSignature <GetRecipientSignature>` для УПД с функцией "СЧФ" и УКД с функцией "КСЧФ"
+- Объект :doc:`InvoiceRevision <InvoiceRevision>` таеперь поддерживает УПД-содержимое
+
 v5.16 - 10.04.2017
 ----------------------
 

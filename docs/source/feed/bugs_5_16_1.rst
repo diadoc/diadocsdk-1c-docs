@@ -6,6 +6,6 @@
 
 Исправлена ошибка при вызове метода :doc:`CanSendInvoice <CanSendInvoice>`, связанная с несоотвствием определения метода в COM-интерфейсе и его реализацией. Пересобраны объявления COM-интерфейсов.
 
-`Исправлены ошибки <http://diadocsdk-1c.readthedocs.io/ru/latest/Bugs_5_16.html>`_
+`Исправлены ошибки <http://diadocsdk-1c.readthedocs.io/ru/dev/Bugs_5_16.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
