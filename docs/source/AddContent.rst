@@ -10,8 +10,7 @@ AddContent(<Content>, <CounteragentId>)
 
 **Параметры**
 
--  <Content> (объект, обязательный) - содержимое документа: объект, производный от 
-   :doc:`BaseContent <BaseContent>`
+-  <Content> (объект, обязательный) - объект, производный от :doc:`BaseContent <BaseContent>` или объект, производный от :doc:`DocumentToSend <DocumentToSend>` или объект :doc:`SendTask <SendTask>` или объект :doc:`PackageSendTask <PackageSendTask>`
 
 -  <CounteragentId> (строка, обязательный) - идентификатор контрагента
 
