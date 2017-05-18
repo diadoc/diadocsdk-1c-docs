@@ -2,7 +2,7 @@
 ====================================
 
 v5.17.1 - 18.05.2017
-====================
+----------------------
 
 - Поддержка документов старых типов с упд-контентом(UtdInvoice, UtdAcceptanceCertificate, UtdTorg12) в AddDocumentFromFileRaw
 - Поддержка шифрования для InvoiceCorrection и InvoiceCorrectionRevision
