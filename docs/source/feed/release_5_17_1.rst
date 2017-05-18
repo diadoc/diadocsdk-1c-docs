@@ -4,8 +4,8 @@
 .. feed-entry::
    :date: 2017-05-18
 
-- Поддержка документов старых типов с упд-контентом(UtdInvoice, UtdAcceptanceCertificate, UtdTorg12) в AddDocumentFromFileRaw
-- Поддержка шифрования для InvoiceCorrection и InvoiceCorrectionRevision
+- Поддержка документов старых типов с упд-контентом(UtdInvoice, UtdAcceptanceCertificate, UtdTorg12) в :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` и :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`
+- Поддержка шифрования InvoiceCorrection и InvoiceCorrectionRevision
 
 Исправлены ошибки:
 
