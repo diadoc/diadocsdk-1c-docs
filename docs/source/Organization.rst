@@ -102,6 +102,8 @@
 
 -  :doc:`CanSendInvoice <CanSendInvoice>` - определяет может ли указанный сертификат ЭП ипользоваться для подписания ЭСФ
 
+-  :doc:`CreateSendDraftTask <CreateSendDraftTask>` - создает задание на отправку черновика документа
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -132,5 +134,6 @@
    GetSentDocuments <GetSentDocuments>
    GetAddressForCounteragent <GetAddressForCounteragent>
    SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
-   CanSendInvoice <CanSendInvoice> 
+   CanSendInvoice <CanSendInvoice>
+   CreateSendDraftTask <CreateSendDraftTask>
    
