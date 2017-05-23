@@ -104,6 +104,8 @@ FromDocumentDate/ToDocumentDate одновременно нельзя. Филь�
     - **OutboundFinished**  Исходящий, документооборот завершен
     - **InboundNotFinished** Входящий, документооборот не завершен
     - **InboundFinished** Входящий, документооборот завершен
+    - **OutboundInvoiceAmendmentRequested** Исходящий документ, по которому было запрошено уточнение
+    - **InboundInvoiceAmendmentRequested** Входящий документ, по которому было запрошено уточнение
 - Для документов с типами Torg12, XmlTorg12, AcceptanceCertificate, XmlAcceptanceCertificate, Nonformalized, TrustConnectionRequest, PriceListAgreement, CertificateRegistry, ReconciliationAct, Contract, AnyBilateralDocumentType применимы следующие статусы
     - **OutboundWaitingForRecipientSignature** исходящий документ в ожидании ответной подписи
     - **OutboundWithRecipientSignature** исходящий документ с ответной подписью
