@@ -1,6 +1,13 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.18.0 - 29.05.2017
+----------------------
+
+- Поддержка корректировочных счетов-фактур(:doc:`InvoiceCorrection <InvoiceCorrection>` и :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>`) с УКД-контентом(:doc:`UcdSellerContent <UcdSellerContent>`)
+- К :doc:`OrganizationInfo <OrganizationInfo>` добавлено поле **FnsParticipantId** - идентификатор участника ЭДО
+- Появилась возможность задавать атрибуты подписантов при отправке черновиков сообщений: новый тип :doc:`SendDraftTask <SendDraftTask>`,а также метод-конструктор :doc:`CreateSendDraftTask <CreateSendDraftTask>`.
+
 v5.17.1 - 18.05.2017
 ----------------------
 
