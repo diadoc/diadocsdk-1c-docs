@@ -41,6 +41,7 @@ CreateSendTaskFromFileRaw(<Path>, <Type>)
 -  "UtdAcceptanceCertificate" -  отправка формализованного акта о
    выполнении работ в формате УПД
 -  "UtdInvoice" -  отправка счета-фактуры в формате УПД
+-  "UcdInvoiceCorrection" - корректировка счета-фактуры в формате УКД
 
 **Возвращаемое значение**
 
