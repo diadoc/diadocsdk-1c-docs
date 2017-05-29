@@ -40,6 +40,7 @@ AddDocumentFromFile(<Type>, <Path>)
 - UtdTorg12
 - UtdAcceptanceCertificate
 - UtdInvoice
+- UcdInvoiceCorrection
 
 **Возвращаемое значение**
 
@@ -77,7 +78,9 @@ AddDocumentFromFile(<Type>, <Path>)
 
 -  :doc:`XmlTorg12ToSend <XmlTorg12ToSend>` - для типа XmlTorg12
 
--  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument
+-  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument, UniversalTransferDocumentRevision, UtdInvoice, UtdAcceptanceCertificate и UtdTorg12
+
+-  :doc:`UcdToSend <UcdToSend>` - для типа UniversalCorrectionDocument, UniversalCorrectionDocumentRevision, UcdInvoiceCorrection
 
 
 **Описание**
