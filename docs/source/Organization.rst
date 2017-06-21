@@ -104,6 +104,8 @@
 
 -  :doc:`CreateSendDraftTask <CreateSendDraftTask>` - создает задание на отправку черновика документа
 
+-  :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает контрагента по идентификатору организации
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -136,4 +138,5 @@
    SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
    CanSendInvoice <CanSendInvoice>
    CreateSendDraftTask <CreateSendDraftTask>
+   GetCounteragentByOrgId <GetCounteragentByOrgId>
    

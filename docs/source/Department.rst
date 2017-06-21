@@ -17,5 +17,6 @@
    родительское подразделение
 -  Subdepartments (объект Collection, чтение) - коллекция дочерних
    подразделений (Department)
+-  Address (объект :doc:`AddressInfo <AddressInfo>`, чтение) - адрес подразделения
 
 Методы отсутствуют
