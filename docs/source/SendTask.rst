@@ -63,7 +63,7 @@
 
 -  :doc:`AddSubordinateDocument <AddSubordinateDocument>` - добавляет идентификатор документа в коллекцию подчиненных документов
 
--  :doc:`Send <Send-(Document)>` - отправляет документ на сервер
+-  :doc:`Send <Send-(SendTask)>` - отправляет документ на сервер
 
 -  :doc:`SendAsync <SendAsync>` - инициирует асинхронную отправку документа
 
@@ -83,7 +83,7 @@
 
    AddInitialDocument <AddInitialDocument>
    AddSubordinateDocument <AddSubordinateDocument>
-   Send <Send-(Document)>
+   Send <Send-(SendTask)>
    SendAsync <SendAsync>
    SaveContent <SaveContent-(SendTask)>
    ValidateContent <ValidateContent-(SendTask)>
