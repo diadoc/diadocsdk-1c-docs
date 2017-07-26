@@ -8,6 +8,6 @@
 - К :doc:`OrganizationInfo <OrganizationInfo>` добавлено поле **FnsParticipantId** - идентификатор участника ЭДО
 - Появилась возможность задавать атрибуты подписантов при отправке черновиков сообщений: новый тип :doc:`SendDraftTask <SendDraftTask>`,а также метод-конструктор :doc:`CreateSendDraftTask <CreateSendDraftTask>`.
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
