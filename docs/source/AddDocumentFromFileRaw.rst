@@ -37,9 +37,6 @@ AddDocumentFromFileRaw(<Type>, <Path>)
 - UniversalTransferDocumentRevision
 - UniversalCorrectionDocument
 - UniversalCorrectionDocumentRevision
-- UtdTorg12
-- UtdAcceptanceCertificate
-- UtdInvoice
 - UcdInvoiceCorrection
 
 **Возвращаемое значение**
