@@ -21,6 +21,6 @@
     - Запись значений по-умолчанию в свойства **InvoiceRevisionDate** и **InvoiceRevisionNumber**, объекта :doc:`InvoiceContent <InvoiceContent>` приводила к измению типа документа на исправительный счет-фактура
     - Свойство **EventType** объекта :doc:`DocumentEvent <DocumentEvent>` теперь принимает корректные значения для событий документов УПД и УКД
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
