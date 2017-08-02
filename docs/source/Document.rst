@@ -85,6 +85,8 @@
 
 - **AttachmentVersion** (строка, чтение) -  информация о версии XSD схемы, в соотвествии с которой сформирован документ
 
+- **SenderSignatureStatus** (строкаб чтение) - статус проверки ЭЦП отправителя
+
 Свойство **Direction** принимает одно из следующих значений:
 
 -  "Inbound" - входящий документ
@@ -111,6 +113,14 @@
 -  "RoamingNotificationStatusSuccess" - документ с подтверждением успешной доставки в роуминг
 -  "RoamingNotificationStatusError" - документ с ошибкой доставки в роуминг
 -  "UnknownRoamingNotificationStatus" - неизвестный роуминговый статус документа
+
+Свойство **SenderSignatureStatus** принимает одно из следующих значений:
+
+- "WaitingForSenderSignature" - ожидается подпись отправителя
+- "SenderSignatureUnchecked" - подпись отправителя еще не проверена
+- "SenderSignatureCheckedAndValid" - подпись отправителя проверена и валидна
+- "SenderSignatureCheckedAndInvalid" - подпись отправителя проверена и невалидна
+- "UnknownSenderSignatureStatus" - неизвестный статус проверки подписи
 
 Методы объекта
 --------------
