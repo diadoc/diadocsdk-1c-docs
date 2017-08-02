@@ -7,7 +7,7 @@
 Свойства объекта
 ----------------
 
-- **Type** (строка, чтение) - тип документа (возвращает значение "UniversalTrasnferDocument")
+- **Type** (строка, чтение) - тип документа (возвращает значение, зависимое от типа создаваемого документа: "UniversalTrasnferDocument", "UtdInvoice", "UtdTorg12" или "UtdAcceptanceCertificate")
 
 - **Content** (объект :doc:`UtdSellerContent <UtdSellerContent>`, чтение) - содержимое документа
 

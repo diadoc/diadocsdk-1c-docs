@@ -23,3 +23,10 @@ v5.18.2 - 18.07.2017
 - :doc:`DocumentsTask.GetDocuments <GetDocumentsAsync>` - если в результате поиска не было найдено документов, возвращалась не пустая коллекция, а неопределенное значение
 - при подписи документа дважды запрашивался ПИН закрытого ключа
 - :doc:`SendTask <SendTask>` - допускалось создание объекта для некорректного типа документа
+
+v5.18.3 - 02.08.2017
+--------------------
+
+- для УКД исправлена проблема, связанная с тем, что при заполнении контента :doc:`UcdSellerContent <UcdSellerContent>`, если суммы корректировок в строках :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>` равны 0, то заполняются значения и AmountsInc и AmountsDec, что приводило к ошибкам валидации такого вида: SubtotalWithVatExcluded should be specified in Info.InvoiceCorrectionTable.Items
+[0].AmountsInc and/or Info.InvoiceCorrectionTable.Items[0].AmountsDec
+- отправка формализованных отказов в подписи XmlSignatureRejection для роуминговых документов
