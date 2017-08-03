@@ -4,7 +4,7 @@
 v5.18.4 - 03.08.2017
 ----------------------
 
-Исправлена ошибка: попытка получения объекта :doc:`Counteragent <Counteragent>`, для удаленной организации, с помощью :doc:`GetCounteragentById <GetCounteragentById>` приводила к краху компоненты
+- Исправлена ошибка: попытка получения объекта :doc:`Counteragent <Counteragent>`, для удаленной организации, с помощью :doc:`GetCounteragentById <GetCounteragentById>` приводила к краху компоненты
 - :doc:`Исправлены ошибки <Bugs_5_18>`
 
 v5.18.3 - 02.08.2017
