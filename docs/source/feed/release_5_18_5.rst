@@ -14,6 +14,6 @@
 - метод :doc:`GetRecipientSignature <GetRecipientSignature>` не возвращал подпись для неформализованных документов
 - поле **Type** объекта :doc:`DocumentToSend <DocumentToSend>` и поле **Type** объекта :doc:`BaseContent <BaseContent>` для документов в формате 155 приказа возвращали соответствующие значения UtdInvoice, UtdAcceptanceCertificate и UtdTorg12, теперь поле **Type** объекта :doc:`BaseContent <BaseContent>` для таких документов возвращет значение UniversalTransferDocument
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
