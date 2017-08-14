@@ -6,7 +6,7 @@
 
 Исправлены ошибки:
 
-- невозможно задать и получить информацию о подписанте для УКД с помощью :doc:`GetExtendedSignerInfo <GetExtendedSignerInfo>` и :doc:`SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>`
+- невозможно задать и получить информацию о подписанте для УКД с помощью :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>` и :doc:`SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>`
 - корректные формализованные отказы в подписи для роуминговых ящиков
 - в COM-компоненте некорректно обращение к памяти при вызове :doc:`AddExtendedSigner <AddExtendedSigner>`
 - зависание при вызове методов, если заданы неверные реквизиты прокси
