@@ -45,3 +45,9 @@ v5.18.5 - 14.08.2017
 - обновление протобуферов, InvoiceCorrectionTable.Items[0].OriginalValues.SubtotalWithVatExcluded (поле **TotalWithVatExcluded** объекта :doc:`InvoiceItemFields <InvoiceItemFields>`) теперь не обязателен
 - метод :doc:`GetRecipientSignature <GetRecipientSignature>` не возвращал подпись для неформализованных документов
 - поле **Type** объекта :doc:`DocumentToSend <DocumentToSend>` и поле **Type** объекта :doc:`BaseContent <BaseContent>` для документов в формате 155 приказа возвращали соответствующие значения UtdInvoice, UtdAcceptanceCertificate и UtdTorg12, теперь поле **Type** объекта :doc:`BaseContent <BaseContent>` для таких документов возвращет значение UniversalTransferDocument
+
+v5.18.6 - 18.08.2017
+--------------------
+
+- объект :doc:`SendTask <SendTask>` не позволяет создавать документы в формате 155-го приказа
+- метод :doc:`Reject <Reject-(Nonformalized)>` для неформализованных документов не позволяет отказать документам из роуминговых ящиков
