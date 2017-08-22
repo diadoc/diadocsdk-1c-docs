@@ -15,3 +15,4 @@
    release_5_18_3
    release_5_18_4
    release_5_18_5
+   release_5_18_6
