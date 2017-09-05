@@ -56,4 +56,4 @@ v5.18.7 - 05.09.2017
 --------------------
 
 - исключение с описанием: "Unknown attachment type", при создании :doc:`CreateSendTask <CreateSendTask>` для документов в формате 155-го приказа
-- метод :doc:`ValidateContent <ValidateContent-(ЫутвЕфыл)>` теперь работает для документов в формате 155-го приказа
+- метод :doc:`ValidateContent <ValidateContent-(SendTask)>` теперь работает для документов в формате 155-го приказа
