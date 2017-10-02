@@ -274,7 +274,7 @@
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
 - :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UcdSellerContent <UcdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`УКД <Ucd>`
-
+- :doc:`TovTorgSellerContent <TovTorgSellerContent>` и :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - для работы с Торг-12 в формате 551 приказа
 
 .. toctree::
    :name: Auto2
@@ -294,6 +294,8 @@
    UtdSellerContent <UtdSellerContent>
    UtdBuyerContent <UtdBuyerContent>
    UcdSellerContent <UcdSellerContent>
+   TovTorgSellerContent <TovTorgSellerContent>
+   TovTorgBuyerContent <TovTorgBuyerContent>
 
    
 Вспомогательные объекты
