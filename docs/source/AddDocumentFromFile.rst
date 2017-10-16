@@ -41,6 +41,7 @@ AddDocumentFromFile(<Type>, <Path>)
 - UtdAcceptanceCertificate
 - UtdInvoice
 - UcdInvoiceCorrection
+- TovTorg
 
 **Возвращаемое значение**
 

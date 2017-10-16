@@ -29,6 +29,7 @@ AddDocument(<Type>)
 - UtdAcceptanceCertificate
 - UtdInvoice
 - UcdInvoiceCorrection
+- TovTorg
 
 **Возвращаемое значение**
 
