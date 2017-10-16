@@ -20,6 +20,6 @@
 - Исправлена работа метода :doc:`GetRecipientSignature <GetRecipientSignature>` для УПД с функцией "СЧФ" и УКД с функцией "КСЧФ"
 - Объект :doc:`InvoiceRevision <InvoiceRevision>` теперь поддерживает УПД-содержимое
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
