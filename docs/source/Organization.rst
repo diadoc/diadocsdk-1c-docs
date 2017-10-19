@@ -91,6 +91,8 @@
 
 -  :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>` - возвращает данные подписанта из базы Диадок
 
+-  :doc:`GetExtendedSignerDetails2 <GetExtendedSignerDetails2>` - возвращает данные подписанта из базы Диадок 
+
 -  :doc:`SetData <SetData>` - добавляет пару "ключ-значение" в хранилище
 
 -  :doc:`GetData <GetData>` - извлекает пару "ключ-значение" из хранилища по ее ключу
@@ -132,6 +134,7 @@
    CreatePackageSendTask <CreatePackageSendTask>
    CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>
    GetExtendedSignerDetails <GetExtendedSignerDetails>
+   GetExtendedSignerDetails2 <GetExtendedSignerDetails2>
    SetData <SetData>
    GetData <GetData>
    GetSentDocuments <GetSentDocuments>
