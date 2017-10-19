@@ -42,6 +42,8 @@ CreateSendTaskFromFileRaw(<Path>, <Type>)
    выполнении работ в формате УПД
 -  "UtdInvoice" -  отправка счета-фактуры в формате УПД
 -  "UcdInvoiceCorrection" - корректировка счета-фактуры в формате УКД
+-  "TovTorg" - Торг-12 в формате 551 приказа ФНС
+-  "XmlAcceptanceCertificate552" - акт в формате 552-го приказа ФНС
 
 **Возвращаемое значение**
 

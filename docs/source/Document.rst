@@ -274,7 +274,8 @@
 - :doc:`Torg12Content <Torg12Content>` - для работы с неформализованной Торг-12
 - :doc:`Torg12SellerContent <Torg12SellerContent>`, :doc:`Torg12BuyerContent <Torg12BuyerContent>` - для работы с формализованной :doc:`Торг-12 <XmlTorg12>`
 - :doc:`UtdSellerContent <UtdSellerContent>`, :doc:`UcdSellerContent <UcdSellerContent>`, :doc:`UtdBuyerContent <UtdBuyerContent>` - для работы с :doc:`УПД <Utd>` и :doc:`УКД <Ucd>`
-- :doc:`TovTorgSellerContent <TovTorgSellerContent>` и :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - для работы с Торг-12 в формате 551 приказа
+- :doc:`TovTorgSellerContent <TovTorgSellerContent>` и :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - для работы с Торг-12 в формате 551-го приказа
+- :doc:`Act552SellerContent <Act552SellerContent>` и :doc:`Act552BuyerContent <Act552BuyerContent>` - для работы с актами в формате 552-го приказа
 
 .. toctree::
    :name: Auto2
@@ -296,7 +297,8 @@
    UcdSellerContent <UcdSellerContent>
    TovTorgSellerContent <TovTorgSellerContent>
    TovTorgBuyerContent <TovTorgBuyerContent>
-
+   Act552SellerContent <Act552SellerContent>
+   Act552BuyerContent <Act552BuyerContent>
    
 Вспомогательные объекты
 """"""""""""""""""""""""""""""
@@ -317,6 +319,7 @@
 - :doc:`ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>` - для работы с данными об грузоотправителе и грузополучателе
 - :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` - для работы с дополнительными сведениями
 - :doc:`Official <Official>` - для работы с данными о должностном лице
+- :doc:`GroundInfo <GroundInfo>` - для работы с документом - основанием
 
 .. toctree::
    :name: Auto3
@@ -336,3 +339,4 @@
    Official <Official>
    ResolutionRequest <ResolutionRequest>
    ResolutionRequestDenial <ResolutionRequestDenial>
+   GroundInfo <GroundInfo>

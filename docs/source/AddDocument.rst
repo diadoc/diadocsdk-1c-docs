@@ -30,6 +30,7 @@ AddDocument(<Type>)
 - UtdInvoice
 - UcdInvoiceCorrection
 - TovTorg
+- XmlAcceptanceCertificate552
 
 **Возвращаемое значение**
 
@@ -51,6 +52,10 @@ AddDocument(<Type>)
 -  :doc:`UtdToSend <UtdToSend>` - для типа UniversalTransferDocument, UniversalTransferDocumentRevision, UtdInvoice, UtdAcceptanceCertificate и UtdTorg12
 
 -  :doc:`UcdToSend <UcdToSend>` - для типа UniversalCorrectionDocument, UniversalCorrectionDocumentRevision, UcdInvoiceCorrection
+
+-  :doc:`TovTorgToSend <TovTorgToSend>` - для типа TovTorg
+
+-  :doc:`XmlAct552ToSend <XmlAct552ToSend>` - для типа XmlAcceptanceCertificate552
 
 **Описание**
 

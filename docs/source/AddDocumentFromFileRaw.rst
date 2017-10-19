@@ -38,6 +38,8 @@ AddDocumentFromFileRaw(<Type>, <Path>)
 - UniversalCorrectionDocument
 - UniversalCorrectionDocumentRevision
 - UcdInvoiceCorrection
+- TovTorg
+- XmlAcceptanceCertificate552
 
 **Возвращаемое значение**
 

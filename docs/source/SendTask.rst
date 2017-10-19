@@ -55,6 +55,8 @@
    ТОРГ-12 титул продавца
 -  :doc:`UtdSellerContent <UtdSellerContent>` - титул продавца универсального передаточного документа
 -  :doc:`UcdSellerContent <UcdSellerContent>` - титул продавца универсального корректировочного документа
+-  :doc:`TovTorgSellerContent <TovTorgSellerContent>` - титул продавца торг-12 в формате 551-го приказа
+-  :doc:`Act552SellerContent <Act552SellerContent>` - титул продавца акта в формате 552-го приказа
 
 Методы
 ------

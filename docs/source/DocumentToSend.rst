@@ -58,6 +58,8 @@
    XmlTorg12ToSend <XmlTorg12ToSend>
    UtdToSend <UtdToSend>
    UcdToSend <UcdToSend>
+   TovTorgToSend <TovTorgToSend>
+   XmlAct552ToSend <XmlAct552ToSend>
 
 -  :doc:`ActToSend <ActToSend>` - акт о выполнении работ в неформализованном виде
 -  :doc:`CertificateRegistryToSend <CertificateRegistryToSend>` - реестр сертификатов
@@ -77,3 +79,5 @@
 -  :doc:`XmlTorg12ToSend <XmlTorg12ToSend>` - ТОРГ-12 в формализованном виде
 -  :doc:`UtdToSend <UtdToSend>` - универсальный передаточный документ
 -  :doc:`UcdToSend <UcdToSend>` - универсальный корректировочный документ
+-  :doc:`TovTorgToSend <TovTorgToSend>` - Торг-12 в формат 551-го приказа
+-  :doc:`XmlAct552ToSend <XmlAct552ToSend>` - Акт в формате 552-го приказа
