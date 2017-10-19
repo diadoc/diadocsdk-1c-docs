@@ -11,15 +11,15 @@
 
 - **Buyer** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - заказчик (покупатель услуг)
 
-- **Signers** (коллекция :doc:`ValueCollection <ValueCollection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты
+- **Signers** (коллекция :doc:`Collection <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты
 
-- **Grounds** (коллекция :doc:`ValueCollection <ValueCollection>` объектов :doc:`GroundInfo <GroundInfo>`, чтение) - основания
+- **Grounds** (коллекция :doc:`Collection <Collection>` объектов :doc:`GroundInfo <GroundInfo>`, чтение) - основания
 
 - **Currency** (строка, чтение/запись) - валюта (код)
 
 - **CurrencyRate** (строка, чтение/запись) - курс валюты
 
-- **Works** (коллекция :doc:`ValueCollection <ValueCollection>` объектов :doc:`Act552WorkDescription <Act552WorkDescription>`) - описание выполненных работ
+- **Works** (коллекция :doc:`Collection <Collection>` объектов :doc:`Act552WorkDescription <Act552WorkDescription>`) - описание выполненных работ
 
 - **DocumentDate** (дата, чтение/запись) - дата составления документа о передаче товара
 
@@ -48,18 +48,18 @@
 Методы
 ------
 
--  :doc:`AddSigner <AddSigner-(Act552SellerContent)>` - 
+-  :doc:`AddSigner <AddSigner-(Act552SellerContent)>` - добавляет новый элемент в коллекцию подписантов
 
--  :doc:`AddGround <AddGround-(Act552SelerContent)>` - 
+-  :doc:`AddGround <AddGround-(Act552SellerContent)>` - добавляет основание в список оснований
 
--  :doc:`AddWork <AddWork-(Act552SellerContent)>` - 
+-  :doc:`AddWork <AddWork-(Act552SellerContent)>` - добавляет элемент в коллекцию описаний выполненных работ
 
 .. toctree::
    :name: Auto
    :hidden:
 
     AddSigner <AddSigner-(Act552SellerContent)>
-    AddGround <AddGround-(Act552SelerContent)>
+    AddGround <AddGround-(Act552SellerContent)>
     AddWork <AddWork-(Act552SellerContent)>
     Act552WorkDescription <Act552WorkDescription>
     Act552TransferInfo <Act552TransferInfo>

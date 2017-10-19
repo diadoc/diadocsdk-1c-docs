@@ -1,7 +1,7 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
-Метод объекта :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>`.
+Метод объекта :doc:`Act552TransferInfo <Act552TransferInfo>`.
 
 
 **Синтаксис**

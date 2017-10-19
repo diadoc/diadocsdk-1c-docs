@@ -17,7 +17,7 @@
 
 - **Total** (число c плавающей точкой, чтение/запись) - сумма с учетом НДС - итого
 
-- **Items** (коллекция :doc:`ValueCollection <ValueCollection>` объектов :doc:`Act552WorkItem <Act552WorkItem>`) - сведения о произведенной работе
+- **Items** (коллекция :doc:`Collection <Collection>` объектов :doc:`Act552WorkItem <Act552WorkItem>`) - сведения о произведенной работе
 
 Методы
 ------

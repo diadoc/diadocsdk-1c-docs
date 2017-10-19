@@ -7,7 +7,7 @@
 Свойства
 --------
 
-- **Signers** (коллекция объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - данные подписантов
+- **Signers** (коллекция :doc:`Collection <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - данные подписантов
 
 - **DocumentCreator** (строка, чтение/запись) - cоставитель файла информации продавца
 

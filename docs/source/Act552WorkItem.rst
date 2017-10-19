@@ -25,7 +25,7 @@
 
 - **Subtotal** (число c плавающей точкой, чтение/запись) - сумма с учетом НДС
 
-- **StructedAdditionalInfos** (коллекция объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - информационное поле сведений о работе (услуге)
+- **StructedAdditionalInfos** (коллекция :doc:`Collection <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - информационное поле сведений о работе (услуге)
 
 - **TaxRate** (строка, чтение/запись) - ставка налога
 
