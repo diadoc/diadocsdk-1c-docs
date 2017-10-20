@@ -4,7 +4,7 @@
 .. feed-entry::
    :date: 2017-10-20
 
-- Новые типы :doc:`документов <Document>`: TovTorg(551-й формат ФНС для торг-12), XmlAcceptanceCertificate552(552-й формат ФНС для актов)
+- Новые типы :doc:`документов <Document>`: TovTorg (формат 551-го приказа ФНС для торг-12), XmlAcceptanceCertificate552 (формат 552-го приказа ФНС для актов)
 
 - "Ленивая" загрузка свойства **TargetUser** объекта :doc:`Resolution <Resolution>`
 
