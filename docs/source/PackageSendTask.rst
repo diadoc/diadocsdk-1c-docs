@@ -44,7 +44,8 @@
    пакета документов
 -  :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` - добавляет сертификат шифрования документа
 
-С помощью PackageSendTask можно отправлять не более 30 документов в одном сообщении (__ https://www.diadoc.ru/blog/7788).
+С помощью PackageSendTask можно отправлять не более 30 документов в одном сообщении (`https://www.diadoc.ru/blog/7788
+<https://www.diadoc.ru/blog/7788>`_).
 
 .. toctree::
    :name: Auto
