@@ -44,6 +44,9 @@
    XmlDocumentContent <XmlDocumentContent>
    UtdBuyerContent <UtdBuyerContent>
    UtdSellerContent <UtdSellerContent>
+   UcdSellerContent <UcdSellerContent>
+   TovTorgSellerContent <TovTorgSellerContent>
+   Act552SellerContent <Act552SellerContent>
    
 -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя документа "акт о выполнении работ в формате ФНС"
 -  :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>` - титул исполнителя документа "акт о выполнении работ в формате ФНС"
@@ -66,4 +69,6 @@
    "счет-фактура", "исправление счета-фактуры", "корректировочный счет-фактура" или "исправление корректировочного счета-фактуры" в формате XML
 -  :doc:`UtdBuyerContent <UtdBuyerContent>` - содержание титула покупателя универсального передаточного документа
 -  :doc:`UtdSellerContent <UtdSellerContent>` - содержание титула продавца универсального передаточного документа
-   
+-  :doc:`UcdSellerContent <UcdSellerContent>` - содержание титула продавца универсального корректировочного документа
+-  :doc:`TovTorgSellerContent <TovTorgSellerContent>` - содержание титула продавца Торг-12 в формате 551-го приказа ФНС
+-  :doc:`Act552SellerContent <Act552SellerContent>` - содержание титула продавца акта в формате 552-го приказа ФНС
