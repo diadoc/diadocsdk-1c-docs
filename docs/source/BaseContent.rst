@@ -47,6 +47,8 @@
    UcdSellerContent <UcdSellerContent>
    TovTorgSellerContent <TovTorgSellerContent>
    Act552SellerContent <Act552SellerContent>
+   TovTorgBuyerContent <TovTorgBuyerContent>
+   Act552BuyerContent <Act552BuyerContent>
    
 -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя документа "акт о выполнении работ в формате ФНС"
 -  :doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>` - титул исполнителя документа "акт о выполнении работ в формате ФНС"
@@ -71,4 +73,6 @@
 -  :doc:`UtdSellerContent <UtdSellerContent>` - содержание титула продавца универсального передаточного документа
 -  :doc:`UcdSellerContent <UcdSellerContent>` - содержание титула продавца универсального корректировочного документа
 -  :doc:`TovTorgSellerContent <TovTorgSellerContent>` - содержание титула продавца Торг-12 в формате 551-го приказа ФНС
+-  :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - содержание титула покупателя Торг-12 в формате 551-го приказа ФНС
 -  :doc:`Act552SellerContent <Act552SellerContent>` - содержание титула продавца акта в формате 552-го приказа ФНС
+-  :doc:`Act552BuyerContent <Act552BuyerContent>` - содержание титула покупателя акта в формате 552-го приказа ФНС
