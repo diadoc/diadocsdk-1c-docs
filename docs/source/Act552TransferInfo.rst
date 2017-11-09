@@ -12,7 +12,7 @@
 
 - **CreatedThingTransferDate** (дата, чтение/запись) - дата передачи вещи, изготовленной по договору подряда
 
-- **CreatedeThingInfo** (строка, чтение/запись) - сведения о передаче
+- **CreatedThingInfo** (строка, чтение/запись) - сведения о передаче
 
 - **StructedAdditionalInfos** (коллекция :doc:`Collection <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`) - информационное поле документа
 
