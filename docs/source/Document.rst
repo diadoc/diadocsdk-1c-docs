@@ -85,7 +85,9 @@
 
 - **AttachmentVersion** (строка, чтение) -  информация о версии XSD схемы, в соотвествии с которой сформирован документ
 
-- **SenderSignatureStatus** (строкаб чтение) - статус проверки ЭЦП отправителя
+- **SenderSignatureStatus** (строка, чтение) - статус проверки ЭЦП отправителя
+
+- **CustomData** (коллекция :doc:`Collection <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - коллекция элементов "ключ-значение"
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -177,6 +179,7 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
+-  :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` - создает объект :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию **CustomData**
 
 .. toctree::
    :name: Auto
@@ -208,6 +211,7 @@
    CreateReplySendTask <CreateReplySendTask-(Document)>
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
+   CreateCustomDataPatchTask <CreateCustomDataPatchTask>
 
    
 Производные объекты 
@@ -320,6 +324,7 @@
 - :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` - для работы с дополнительными сведениями
 - :doc:`Official <Official>` - для работы с данными о должностном лице
 - :doc:`GroundInfo <GroundInfo>` - для работы с документом - основанием
+- :doc:`CustomDataItem <CustomDataItem>` - запись "ключ-значение"
 
 .. toctree::
    :name: Auto3
@@ -340,3 +345,4 @@
    ResolutionRequest <ResolutionRequest>
    ResolutionRequestDenial <ResolutionRequestDenial>
    GroundInfo <GroundInfo>
+   CustomDataItem <CustomDataItem>
