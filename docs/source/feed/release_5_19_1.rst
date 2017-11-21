@@ -12,9 +12,9 @@
 
 - В объект :doc:`Ucd <Ucd>` добавлены свойства OriginalInvoiceNumber, OriginalInvoiceDate, OriginalInvoiceRevisionNumber, OriginalInvoiceRevisionDate
 
-- :doc:`Исправлены ошибки <Bugs_5_19_1>`
+- :doc:`Исправлены ошибки <Bugs_5_19>`
 
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
