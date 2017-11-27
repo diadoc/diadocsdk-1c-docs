@@ -1,6 +1,11 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.19.2 - 27.11.2017
+--------------------
+
+- исправлена ошибка: при отправке шифрованного счета-фактуры с помощью :doc:`PackageSendTask <PackageSendTask>` и :doc:`SendTask <SendTask>` не заполнялось свойство DocumentNumber, что приводило к исключению "Incorrect EncryptedInvoiceAttachment: Metadata.DocumentDateAndNumber.DocumentNumber should be filled"
+
 v5.19.1 - 20.11.2017
 --------------------
 
