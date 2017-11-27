@@ -19,3 +19,4 @@
    release_5_18_7
    release_5_19_0
    release_5_19_1
+   bugs_5_19_2
