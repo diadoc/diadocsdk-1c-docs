@@ -8,7 +8,8 @@
 
    -  Для формализованных документов требуется сначала сформировать т.н.
       титул покупателя :doc:`Torg12BuyerContent <Torg12BuyerContent>` или
-      :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>`,
+      :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` или
+      :doc:`UtdBuyerContent <UtdBuyerContent>`,
       и создать задание методом
       :doc:`CreateReplySendTask <CreateReplySendTask-(XmlTorg12)>`
 
