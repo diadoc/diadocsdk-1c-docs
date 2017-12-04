@@ -64,36 +64,68 @@
 
 ::
 
-            Процедура ОтправитьЭлектронныйCчетФактуру(Organization, CounteragentId)
-
-              SendTask = Organization.CreateSendTask("InvoiceContent");
-              SendTask.CounterаgentId   = CounteragentId;
-
-              InvoiceContent = SendTask.Content;
-              InvoiceContent.Date        = '20130101';
-              InvoiceContent.Number      = "1";
-              InvoiceContent.Currency    = "643";
-
-              InvoiceContent.Seller.Name = "ООО Продавец";
-              InvoiceContent.Seller.Inn  = "2012500001";
-              InvoiceContent.Seller.Kpp  = "111111111";
-              InvoiceContent.Seller.Address.RegionCode = "66";
-
-              InvoiceContent.Buyer.Name  = "ООО Покупатель";
-              InvoiceContent.Buyer.Inn   = "2012600006";
-              InvoiceContent.Buyer.Kpp   = "222222222 ID   ";
-              InvoiceContent.Buyer.Address.RegionCode = "66";
-
-              Item = InvoiceContent.AddItem();
-              Item.Product               = "Товар";
-              Item.UnitCode              = "166";
-              Item.Quantity              = 10;
-              Item.Price                 = 100;
-              Item.TotalWithVatExcluded  = 1000;
-              Item.TaxRate               = "18";
-              Item.Vat                   = 180;
-              Item.Total                 = 1180;
-
-              SendTask.Send();
-
-            КонецПроцедуры
+         Процедура ОтправитьУПД(Organization, CounterAgentId)
+            
+             PackageSendTask = Organization.CreatePackageSendTask();
+             
+             PackageSendTask.CounterAgentId  = CounterAgentId;
+             
+             DocumentToSend = PackageSendTask.AddDocument("UniversalTransferDocument");
+             
+             Content = DocumentToSend.Content;
+             
+             Content.Number = "1";
+             Content.Date   = ТекущаяДата();
+             
+             Content.Function = "InvoiceAndBasic";
+             Content.Creator  = "ООО Продавец, ИНН/КПП: 2012500001/111111111";
+             
+             Content.Currency     = "643";
+             Content.CurrencyRate = "1";
+             
+             Content.Seller.Name = "ООО Продавец";
+             Content.Seller.Inn  = "2012500001";
+             Content.Seller.Kpp  = "111111111";
+             Content.Seller.type = "LegalEntity";
+             Content.Seller.Address.RegionCode = "66";
+             
+             Content.Buyer.Name = "ООО Покупатель";
+             Content.Buyer.Inn  = "2012600006";
+             Content.Buyer.Kpp  = "222222222";
+             Content.Buyer.type = "LegalEntity";
+             Content.Buyer.Address.RegionCode = "66";
+             
+             Content.TransferInfo.OperationInfo = "Результаты работ переданы (услуги оказаны)";
+             Content.TransferInfo.TransferDate  = ТекущаяДата();
+             
+             Item = Content.InvoiceTable.AddItem();
+             
+             Item.Product  = "Товар №1";
+             Item.UnitName = "шт";
+             Item.UnitCode = "796";
+             Item.TaxRate  = "18";
+             
+             // Вместо числовых значений рекомендуется передавать их XML представление.
+             Item.Quantity = XMLСтрока(1); 
+             Item.Price    = XMLСтрока(100);
+             Item.Vat      = XMLСтрока(18);
+             Item.Subtotal = XMLСтрока(118);
+             Item.SubtotalWithVatExcluded = XMLСтрока(100);
+             
+             Content.InvoiceTable.TotalNet = XMLСтрока(1);
+             Content.InvoiceTable.Vat      = XMLСтрока(18);
+             Content.InvoiceTable.Total    = XMLСтрока(118);
+             Content.InvoiceTable.TotalWithVatExcluded = XMLСтрока(100);
+             
+             Signer = Content.AddSigner();
+             Signer.SignerDetails.Surname    = "Иванов";
+             Signer.SignerDetails.FirstName  = "Иван";
+             Signer.SignerDetails.Patronymic = "Иванович";
+             Signer.SignerDetails.JobTitle   = "Директор";
+             Signer.SignerDetails.SignerType = "LegalEntity";
+             Signer.SignerDetails.Inn        = "2012500001";
+             Signer.SignerDetails.Powers     = "MadeAndResponsibleForOperationAndSignedInvoice";
+             
+             DocumentPackage = PackageSendTask.Send();
+             
+         КонецПроцедуры
