@@ -23,12 +23,12 @@
 
 - **AdditionalInfo** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
 
-- **ExtendedSigners** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
+- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
 
 Методы объекта
 --------------
 
--  :doc:`AddExtendedSigner <AddSigner-(TovTorgBuyerContent)>` - добавляет подписанта
+-  :doc:`AddSigner <AddSigner-(TovTorgBuyerContent)>` - добавляет подписанта
 
 .. toctree::
    :name: Auto
