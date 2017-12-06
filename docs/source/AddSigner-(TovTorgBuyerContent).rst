@@ -1,4 +1,4 @@
-﻿AddExtendedSigner
+﻿AddSigner
 =================
 
 Метод объекта :doc:`TovTorgBuyerContent <TovTorgBuyerContent>`
@@ -6,7 +6,7 @@
 
 **Синтаксис**
 
-AddExtendedSigner()
+AddSigner()
 
 
 **Возвращаемое значение**
