@@ -1,0 +1,12 @@
+Релиз 5.19.3
+=============
+
+.. feed-entry::
+   :date: 2017-12-08
+
+- исправлена ошибка: при создании :doc:`SendTask <SendTask>` для неформализованных типов документов возникало исключение с комментарием "Неверный тип вложения" 
+
+
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
