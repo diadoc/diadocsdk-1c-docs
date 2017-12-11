@@ -2,7 +2,7 @@
 =============
 
 .. feed-entry::
-   :date: 2017-12-08
+   :date: 2017-12-11
 
 Исправлены ошибки:
 
@@ -11,6 +11,6 @@
 - поле **TaxRate** в :doc:`TovTorgItem <TovTorgItem>` и :doc:`Act552WorkItem <Act552WorkItem>` всегда десериализовалось со значением "без НДС"
 
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
