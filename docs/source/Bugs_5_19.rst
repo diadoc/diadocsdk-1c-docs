@@ -12,3 +12,9 @@ v5.19.2 - 27.11.2017
 --------------------
 
 - при отправке шифрованного счета-фактуры с помощью :doc:`PackageSendTask <PackageSendTask>` и :doc:`SendTask <SendTask>` не заполнялось свойство DocumentNumber, что приводило к исключению "Incorrect EncryptedInvoiceAttachment: Metadata.DocumentDateAndNumber.DocumentNumber should be filled"
+
+v5.19.3 - 11.12.2017
+--------------------
+
+- при создании :doc:`SendTask <SendTask>` для неформализованных типов документов возникало исключение с комментарием "Неверный тип вложения" 
+- поле **TaxRate** в :doc:`TovTorgItem <TovTorgItem>` и :doc:`Act552WorkItem <Act552WorkItem>` всегда десериализовалось со значением "без НДС"
