@@ -18,3 +18,9 @@ v5.19.3 - 11.12.2017
 
 - при создании :doc:`SendTask <SendTask>` для неформализованных типов документов возникало исключение с комментарием "Неверный тип вложения" 
 - поле **TaxRate** в :doc:`TovTorgItem <TovTorgItem>` и :doc:`Act552WorkItem <Act552WorkItem>` всегда десериализовалось со значением "без НДС"
+
+v5.19.4 - 12.12.2017
+--------------------
+
+- вместо :doc:`TovTorgTransferInfo.StructedAdditionalInfo <TovTorgTransferInfo>` заполнятеся :doc:`TovTorgTransferInfo.Waybills <TovTorgTransferInfo>`
+- :doc:`TovTorgItem.ItemToRelease <TovTorgItem>` принимал только строковые значения (BSTR), теперь принимает как строку, так и число
