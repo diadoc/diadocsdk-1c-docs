@@ -109,6 +109,8 @@
 
 -  :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает контрагента по идентификатору организации
 
+-  :doc:`GetDocumentTypes <GetDocumentTypes>` - возвращает описание типов документов, доступных в ящике.
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -143,4 +145,4 @@
    CanSendInvoice <CanSendInvoice>
    CreateSendDraftTask <CreateSendDraftTask>
    GetCounteragentByOrgId <GetCounteragentByOrgId>
-   
+   GetDocumentTypes <GetDocumentTypes>
