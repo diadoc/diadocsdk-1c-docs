@@ -1,6 +1,17 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.20.0 - 25.12.2017
+---------------------
+
+- добавлена поддержка работы с "документом любого типа":
+    
+    - поддержка типа документа "Document" для методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` и :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` объекта :doc:`PackageSendTask <PackageSendTask>`
+
+    - метод :doc:`GetDocumentTypes <GetDocumentTypes>` - возвращает описание типов документов, доступных в ящике
+
+- :doc:`Исправлены ошибки <Bugs_5_20>`
+
 v5.19.4 - 12.12.2017
 ---------------------
 

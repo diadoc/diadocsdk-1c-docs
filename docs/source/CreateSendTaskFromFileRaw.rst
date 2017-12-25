@@ -45,6 +45,8 @@ CreateSendTaskFromFileRaw(<Path>, <Type>)
 -  "TovTorg" - Торг-12 в формате 551 приказа ФНС
 -  "XmlAcceptanceCertificate552" - акт в формате 552-го приказа ФНС
 
+Универсальный тип документа - "Document" поддерживаеться только объектом :doc:`PackageSendTask <PackageSendTask>`.
+
 **Возвращаемое значение**
 
 
