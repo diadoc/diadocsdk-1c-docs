@@ -103,7 +103,7 @@
 
 -  :doc:`SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>` - валидирует и загружает адресную информацию в хранилище
 
--  :doc:`CanSendInvoice <CanSendInvoice>` - определяет может ли указанный сертификат ЭП ипользоваться для подписания ЭСФ
+-  :doc:`CanSendInvoice <CanSendInvoice>` - определяет может ли указанный сертификат ЭП использоваться для подписания ЭСФ
 
 -  :doc:`CreateSendDraftTask <CreateSendDraftTask>` - создает задание на отправку черновика документа
 
