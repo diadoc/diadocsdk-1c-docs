@@ -1,12 +1,12 @@
-﻿GetExtendedSignerDetails
-========================
+﻿GetExtendedSignerDetails2
+=========================
 
 Метод объекта :doc:`Organization <Organization>`.
 
 
 **Синтаксис**
 
-GetExtendedSignerDetails(<CertificateThumbprint>, <DocTitleType>)
+GetExtendedSignerDetails2(<CertificateThumbprint>, <DocTitleType>)
 
 
 **Параметры**
