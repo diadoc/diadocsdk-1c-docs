@@ -31,7 +31,7 @@
 
 -  :doc:`GetVersion <GetVersion>` - возвращает текущую версию внешней компоненты
 
--  :doc:`GetPersonalCertificates <GetPersonalCertificates>` - возвращает список личных серитифакатов пользователя
+-  :doc:`GetPersonalCertificates <GetPersonalCertificates>` - возвращает список личных сертификатов пользователя
 
 -  :doc:`VerifyThatUserHasAccessToAnyBox <VerifyThatUserHasAccessToAnyBox>` - проверяет, есть ли у пользователя с указанным сертификатом доступ в Диадок
 
@@ -43,7 +43,7 @@
 
 "Ключ разработчика" используется для идентификации интегратора,
 использующего внешнюю компоненту. Для получения ключа разработчика нужно
-написать запрос по адресу diadoc-api@skbkontur.ru. Интегратор не должен
+отправить запрос через форму https://www.diadoc.ru/integrations/api#order-api. Интегратор не должен
 передавать свой "ключ разработчика" третьим лицам.
 
 В качестве URL сервера Диадок необходимо передавать строку
