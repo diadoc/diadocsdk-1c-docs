@@ -24,3 +24,4 @@
    bugs_5_19_4
    release_5_20_0
    release_5_20_1
+   release_5_20_2
