@@ -181,6 +181,8 @@
 
 -  :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` - создает объект :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию **CustomData**
 
+-  :doc:`GetAnyComment <GetAnyComment>` - получает строку комментария запрошенного типа
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -212,7 +214,7 @@
    CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>
    MarkAsRead <MarkAsRead>
    CreateCustomDataPatchTask <CreateCustomDataPatchTask>
-
+   GetAnyComment <GetAnyComment>
    
 Производные объекты 
 ------------------------------------
