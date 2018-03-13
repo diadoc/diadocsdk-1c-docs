@@ -41,11 +41,11 @@ AddDocumentFromFileRaw(<Type>, <Path>)
 - TovTorg
 - XmlAcceptanceCertificate552
 - Document
+- значения AttachmentVersion Diadoc API
 
 **Возвращаемое значение**
 
-
-Объект документа на отправку :doc:`XmlDocumentToSend <XmlDocumentToSend>` производный от объекта :doc:`DocumentToSend <DocumentToSend>`.
+В случае если параметр Type принимает значение Document или одно из значений AttachmentVersion Diadoc API, метод возвращает объект :doc:`CustomDocumentToSend <CustomDocumentToSend>`. В ином случае метод возвращает объект документа на отправку :doc:`XmlDocumentToSend <XmlDocumentToSend>` производный от объекта :doc:`DocumentToSend <DocumentToSend>`.
 
 **Описание**
 
