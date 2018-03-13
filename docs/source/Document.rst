@@ -93,7 +93,7 @@
 
 - **DocumentFunction** (строка, чтение) - функция документа
 
-- **WorkflowId** (число, чтение) - идентификатор типа документооборота (`http://api-docs.diadoc.ru/ru/latest/proto/DocumentWorkflow.html`_)
+- **WorkflowId** (число, чтение) - идентификатор типа документооборота (`WorkflowId Diadoc API <http://api-docs.diadoc.ru/ru/latest/proto/DocumentWorkflow.html>`_)
 
 - **Title** (строка, чтение) - название документа, например, "Счет-фактура №123 от 20.02.18"
 
