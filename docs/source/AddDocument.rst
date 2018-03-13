@@ -31,6 +31,7 @@ AddDocument(<Type>)
 - UcdInvoiceCorrection
 - TovTorg
 - XmlAcceptanceCertificate552
+- значения AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02)
 
 **Возвращаемое значение**
 
@@ -57,6 +58,8 @@ AddDocument(<Type>)
 
 -  :doc:`XmlAct552ToSend <XmlAct552ToSend>` - для типа XmlAcceptanceCertificate552
 
+-  :doc:`CustomDocumentToSend <CustomDocumentToSend>` - "любой документ" на отправку 
+
 **Описание**
 
 
@@ -77,4 +80,7 @@ AddDocument(<Type>)
    XmlTorg12ToSend <XmlTorg12ToSend>
    UtdToSend <UtdToSend>
    UcdToSend <UcdToSend>
+   TovTorgToSend <TovTorgToSend>
+   XmlAct552ToSend <XmlAct552ToSend>
+   CustomDocumentToSend <CustomDocumentToSend>
 

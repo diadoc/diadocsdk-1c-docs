@@ -83,11 +83,29 @@
 
 - **PackageId** (строка, чтение) - идентификатор пакета
 
-- **AttachmentVersion** (строка, чтение) -  информация о версии XSD схемы, в соотвествии с которой сформирован документ
+- **AttachmentVersion** (строка, чтение) - информация о версии XSD схемы, в соотвествии с которой сформирован документ
 
 - **SenderSignatureStatus** (строка, чтение) - статус проверки ЭЦП отправителя
 
 - **CustomData** (коллекция :doc:`Collection <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - коллекция элементов "ключ-значение"
+
+- **TypeNamedId** (строка, чтение) - строковый идентификатор типа документа
+
+- **DocumentFunction** (строка, чтение) - функция документа
+
+- **WorkflowId** (число, чтение) - идентификатор типа документооборота (`http://api-docs.diadoc.ru/ru/latest/proto/DocumentWorkflow.html`_)
+
+- **Title** (строка, чтение) - название документа, например, "Счет-фактура №123 от 20.02.18"
+
+- **Metadata** (коллекция :doc:`Collection <Collection>` объектов :doc:`MetadataItem <MetadataItem>`) - коллекция метаданных
+
+- **RecipientReceiptMetadata** (объект :doc:`RecipientReceiptMetadata <RecipientReceiptMetadata>`, чтение) - метаданные - отвечает за ИОП на документ
+
+- **ConfirmationMetadata** (объект :doc:`ConfirmationMetadata <ConfirmationMetadata>`, чтение) - метаданные - отвечает за подтверждение оператором даты отправки/получения документа или служебного документа (ИОП)
+
+- **RecipientResponseStatus** (строка, чтение) - отвечает за состояние ответного действия со стороны получателя документа
+
+- **AmendmentRequestMetadata** (объект :doc:`AmendmentRequestMetadata`, чтение) - метаданные уведомления об уточнении (УОУ)
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -123,6 +141,15 @@
 - "SenderSignatureCheckedAndValid" - подпись отправителя проверена и валидна
 - "SenderSignatureCheckedAndInvalid" - подпись отправителя проверена и невалидна
 - "UnknownSenderSignatureStatus" - неизвестный статус проверки подписи
+
+Свойство **RecipientResponseStatus** принимает одно из следующих значений:
+
+- "RecipientResponseStatusUnknown" - неизвестный статус ответного действия
+- "RecipientResponseStatusNotAcceptable" - ответного действия не требуется
+- "WaitingForRecipientSignature" - ожидается ответное действие получателя
+- "WithRecipientSignature" - получатель подписал документ (ответный титул)
+- "RecipientSignatureRequestRejected" - получатель отказал в подписи
+- "InvalidRecipientSignature" - получатель подписал документ некорректной подписью
 
 Методы объекта
 --------------
@@ -242,6 +269,7 @@
    UtdRevision <UtdRevision>
    Ucd <Ucd>
    UcdRevision <UcdRevision>
+   BaseDocument <BaseDocument>
 
 -  :doc:`Contract <Contract>` - договор
 -  :doc:`Invoice <Invoice>` - счет-фактура
@@ -258,6 +286,7 @@
 -  :doc:`UtdRevision <UtdRevision>` - исправление универсального передаточного документа
 -  :doc:`Ucd <Ucd>` - универсальный корректировочный документ
 -  :doc:`UcdRevision <UcdRevision>` - исправление универсального корректировочного документа
+-  :doc:`BaseDocument <BaseDocument>` - документ "любого типа"
 
 
 Структуры для работы с содержимым документов
