@@ -15,6 +15,7 @@ GetAnyComment(<Type>)
 
 Может принимать значения:
     - AttachmentComment - комментарий к документу 
+    - RecipientAttachmentComment - комментарий к титулу покупателя
     - SignatureRejectionComment - комментарий к отказу в подписи
     - AmendmentComment - комментарий к запросу на уточнение
 
