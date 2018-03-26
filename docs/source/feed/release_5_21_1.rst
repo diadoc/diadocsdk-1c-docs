@@ -7,7 +7,7 @@
 - поддержка ставки НДС - "ИсчНалАг" - НДС исчисляется налоговым агентом
 - :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>` и методы SendReceiptsAsync у различных документов теперь поддерживают работу с неформализованными документами с запросом ИОП
 - метод :doc:`GetAnyComment <GetAnyComment>` теперь поддерживает получение комментария к титулу покупателя - "RecipientAttachmentComment"
-- поддержка версий содержимого AttachmentVersion Diadoc API: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02, act_05_01_01, act_05_01_02, invoice_05_01_01, invoice_05_01_03, invoice_05_02_01, invoicecor_05_01_03, invoicecor_05_02_01, torg12_05_01_01, torg12_05_01_02
+- поддержка версий содержимого для документов "любого типа": utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02, act_05_01_01, act_05_01_02, invoice_05_01_01, invoice_05_01_03, invoice_05_02_01, invoicecor_05_01_03, invoicecor_05_02_01, torg12_05_01_01, torg12_05_01_02
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
