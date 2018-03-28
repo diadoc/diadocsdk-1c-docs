@@ -35,7 +35,7 @@
 
 - **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к увеличению
 
-- **TotalsDesc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
+- **TotalsDec** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
 
 - **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
 
