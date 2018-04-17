@@ -14,3 +14,8 @@ v5.21.2 - 30.03.2018
 - происходил крах приложения при вызове :doc:`CreateReplySendTask.Send <CreateReplySendTask-(Document)>`, созданного для документа "TovTorg"
 
 - :doc:`GetContent <GetContent-(Utd)>` для УПД не учитывал версию содержимого
+
+v5.21.3 - 17.04.2018
+--------------------
+
+- некорректное заполнение массива :doc:`TovTorgTransferInfo.StructedAdditionalInfos <TovTorgTransferInfo>`

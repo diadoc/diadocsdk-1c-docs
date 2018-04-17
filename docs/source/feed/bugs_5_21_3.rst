@@ -1,0 +1,11 @@
+Релиз 5.21.3
+=============
+
+.. feed-entry::
+   :date: 2018-04-17
+
+- исправлена ошибка: некорректное заполнение массива :doc:`TovTorgTransferInfo.StructedAdditionalInfos <TovTorgTransferInfo>`
+
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
