@@ -5,7 +5,7 @@
    :date: 2018-05-18
 
 Исправлены ошибки:
-- Отправка заполненного `AmountsDiff`, даже если его не заполняли
+- Незаполненное значение :doc:`AmountsDiff <AmountsDiff>` больше не сериализуется
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
