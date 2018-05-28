@@ -4,8 +4,6 @@
 .. feed-entry::
    :date: 2018-05-21
 
-Исправлены ошибки:
-
 - возможность сохранения сгенерированных xml-файлов содержимого формализованных документов при отправке - свойства :doc:`PackageSendTask.SaveContentPath <PackageSendTask>` и :doc:`SendTask.SaveContentPath <SendTask>`
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
