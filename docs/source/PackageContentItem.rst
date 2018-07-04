@@ -16,6 +16,8 @@
    -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для действия типа "AcceptDocument" 
       документа "акт о выполнении работ в формате ФНС"
 
+   -  :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа УПД
+
    -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument" других документов
 
    -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
