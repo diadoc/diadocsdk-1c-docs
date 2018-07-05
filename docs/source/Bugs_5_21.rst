@@ -47,4 +47,3 @@ v5.21.10 - 06.07.2018
 - метод :doc:`Document.SaveAllContent <SaveAllContent>` не сохранял титул покупателя у двухтитульных документов кастомных типов
 - метод :doc:`Document.SaveAllContent <SaveAllContent>` сохранял печатныю форму поверх одного из титулов документа, заменяя его
 - метод :doc:`Document.SaveAllContent <SaveAllContent>` не мог сохранить файлы с длинным именем. Теперь имя файла обрезается до приемлемой длины
-- методы :doc:`Document.AcceptRevocationRequest <AcceptRevocationRequest>` и :doc:`Document.RejectRevocationRequest <RejectRevocationRequest>` не могли найти действующий запрос на аннулирование у документа
