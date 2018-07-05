@@ -46,3 +46,31 @@
 -  :doc:`TovTorgToSend <TovTorgToSend>` - ТОРГ-12 в формате приказа ММВ-7-10/551@
 -  :doc:`XmlAct552ToSend <XmlAct552ToSend>` - Акт в формате приказа ММВ-7-10/552@
 -  :doc:`CustomDocumentToSend <CustomDocumentToSend>` - документ произвольного типа
+
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   ActToSend
+   CertificateRegistryToSend
+   ContractToSend
+   InvoiceToSend
+   InvoiceCorrectionToSend
+   InvoiceRevisionToSend
+   InvoiceCorrectionRevisionToSend
+   NonformalizedDocumentToSend
+   ProformaInvoiceToSend
+   ReconciliationActToSend
+   ServiceDetailsToSend
+   Torg12ToSend
+   XmlActToSend
+   XmlTorg12ToSend
+   UtdToSend
+   UcdToSend
+   TovTorgToSend
+   XmlAct552ToSend
+   CustomDocumentToSend
+   AddInitialDocument-(DocumentToSend)
+   AddSubordinateDocument-(DocumentToSend)
+   AddInitialDocumentFromPackage
+   AddSubordinateDocumentFromPackage

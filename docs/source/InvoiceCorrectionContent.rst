@@ -37,7 +37,7 @@
 
 - **TotalsDec** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение) - дополнительные сведения
 
 
 Методы объекта
@@ -56,11 +56,13 @@
    :name: Auto
    :hidden:
 
-   AddItem-(InvoiceCorrectionContent) <AddItem-(InvoiceCorrectionContent)>
-   InvoiceCorrectionItem <InvoiceCorrectionItem>
-   InvoiceTotalsDiff <InvoiceTotalsDiff> 
-   InvoiceItemFields <InvoiceItemFields>
-   AmountsDiff <AmountsDiff>  
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>
-   OriginalInvoice <OriginalInvoice>
-   AddOriginalInvoice <AddOriginalInvoice>
+   AddItem-(InvoiceCorrectionContent)
+   InvoiceCorrectionItem
+   InvoiceTotalsDiff
+   InvoiceItemFields
+   AmountsDiff
+   AddStructedAdditionalInfo
+   OriginalInvoice
+   AddOriginalInvoice
+   AddStructedAdditionalInfo (CorrectionContent)
+   AdditionalInfoItem (CorrectionContent)

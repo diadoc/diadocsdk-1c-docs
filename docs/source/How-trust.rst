@@ -36,7 +36,7 @@
 -  Поиск по списку ИНН, для получения результата в асинхронном режиме,
    можно воспользоваться методом
    :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>`
-   объекта :doc:`Organization <Организация>`
+   объекта :doc:`Organization <Organization>`
 
    ::
 
@@ -95,7 +95,7 @@
 :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` объекта
 :doc:`Organization <Organization>`.
 
-Для получения объекта :doc:`Counteragent <Контрагент>` по идентификатору
+Для получения объекта :doc:`Counteragent <Counteragent>` по идентификатору
 ящика организации используется метод
 :doc:`GetCounteragentById <GetCounteragentById>` объекта
 :doc:`Organization <Organization>`.

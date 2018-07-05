@@ -38,3 +38,10 @@
 - :doc:`AddCustomData <AddCustomData-(CustomDocumentToSend)>` - добавляет элемент произвольных данных в коллекцию **CustomData**
 
 - :doc:`AddMetadata <AddMetadata-(CustomDocumentToSend)>` - добавляет элемент метаданных в коллекцию **Metadata**
+
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   AddCustomData-(CustomDocumentToSend)
+   AddMetadata-(CustomDocumentToSend)

@@ -48,3 +48,14 @@
 -  :doc:`GetBuyerContent <GetBuyerContent-(XmlTorg12)>` - возвращает содержание документа (титул получателя) в виде объектной модели
 
 -  :doc:`SaveRecipientContent <SaveRecipientContent-(XmlTorg12)>` - сохраняет содержимое титула получателя на локальный диск
+
+
+.. toctree::
+   :name: Auto
+   :hidden:
+
+   GetRejectionComment-(XmlTorg12)
+   Reject-(XmlTorg12)
+   GetContent-(XmlTorg12)
+   GetBuyerContent-(XmlTorg12)
+   SaveRecipientContent-(XmlTorg12)
