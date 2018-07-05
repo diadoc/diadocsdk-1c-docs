@@ -9,7 +9,7 @@
 
 - **Name** (строка, чтение) - строковой идентификатор функции, уникальное в рамках типа документов
 
-- **Versions** (коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentVersion <DocumentVersion>`) - описания версий документа
+- **Versions** (:doc:`коллекция <Collection>` объектов :doc:`DocumentVersion <DocumentVersion>`) - описания версий документа
 
 Методы отсутствуют
 

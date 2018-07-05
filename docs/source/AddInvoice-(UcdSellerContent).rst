@@ -11,7 +11,7 @@ AddInvoice()
 
 **Возвращаемое значение**
 
-Объект :doc:`InvoiceForCorrectionInfo <InvoiceForCorrectionInfo>`
+:doc:`InvoiceForCorrectionInfo <InvoiceForCorrectionInfo>`
 
 
 **Описание**

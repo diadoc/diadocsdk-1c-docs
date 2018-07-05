@@ -11,7 +11,7 @@ GetDocumentTypes()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов типа :doc:`DocumentTypeDescription <DocumentTypeDescription>`
+:doc:`коллекция <Collection>` объектов типа :doc:`DocumentTypeDescription <DocumentTypeDescription>`
 
 **Описание**
 

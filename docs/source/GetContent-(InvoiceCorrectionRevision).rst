@@ -11,7 +11,7 @@ GetContent()
 **Возвращаемое значение**
 
 
-Объект :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`.
+:doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`.
 
 **Описание**
 

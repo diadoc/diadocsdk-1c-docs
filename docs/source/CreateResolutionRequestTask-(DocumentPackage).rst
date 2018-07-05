@@ -11,7 +11,7 @@ CreateResolutionRequestTask()
 **Возвращаемое значение**
 
 
-Объект :doc:`ResolutionRequestTask <ResolutionRequestTask>`.
+:doc:`ResolutionRequestTask <ResolutionRequestTask>`.
 
 **Описание**
 

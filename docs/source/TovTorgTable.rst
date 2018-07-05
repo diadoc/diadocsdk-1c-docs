@@ -7,7 +7,7 @@
 ----------------
 
 
-- **Items** (коллекция :doc:`Collection <Collection>` объектов типа :doc:`TovTorgItem <TovTorgItem>`) - информация о товарах
+- **Items** (:doc:`коллекция <Collection>` объектов типа :doc:`TovTorgItem <TovTorgItem>`) - информация о товарах
 
 - **TotalQuantity** (число с плавающей точкой/строка, чтение/запись) - количество мест всего по документу
 

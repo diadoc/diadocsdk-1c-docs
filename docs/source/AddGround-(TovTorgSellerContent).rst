@@ -11,7 +11,7 @@ AddGround()
 **Возвращаемое значение**
 
 
-Объект :doc:`GroundInfo <GroundInfo>`.
+:doc:`GroundInfo <GroundInfo>`.
 
 **Описание**
 

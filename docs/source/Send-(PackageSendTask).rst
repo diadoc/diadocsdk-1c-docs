@@ -11,7 +11,7 @@ Send()
 **Возвращаемое значение**
 
 
-Объект :doc:`DocumentPackage <DocumentPackage>`.
+:doc:`DocumentPackage <DocumentPackage>`.
 
 **Описание**
 

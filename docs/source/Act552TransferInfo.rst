@@ -14,7 +14,7 @@
 
 - **CreatedThingInfo** (строка, чтение/запись) - сведения о передаче
 
-- **StructedAdditionalInfos** (коллекция :doc:`Collection <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`) - информационное поле документа
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`) - информационное поле документа
 
 Методы
 ------

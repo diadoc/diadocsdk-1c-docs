@@ -16,7 +16,7 @@ GetCounteragentById(<Id>)
 **Возвращаемое значение**
 
 
-Объект :doc:`Counteragent <Counteragent>`.
+:doc:`Counteragent <Counteragent>`.
 
 **Описание**
 

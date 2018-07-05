@@ -12,7 +12,7 @@
 
 - **AuthenticateType** (строка, чтение) - способ аутентификации
 
-- **Certificate** (объект :doc:`PersonalCertificate <PersonalCertificate>`, чтение) - сертификат, по которому произошла авторизация
+- **Certificate** (:doc:`PersonalCertificate <PersonalCertificate>`, чтение) - сертификат, по которому произошла авторизация
 
 - **Token** (строка, чтение) - маркер авторизации в Диадок API
 

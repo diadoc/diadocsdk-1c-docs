@@ -11,7 +11,7 @@ AddMetadata()
 **Возвращаемое значение**
 
 
-Объект :doc:`MetadataItem <MetadataItem>`.
+:doc:`MetadataItem <MetadataItem>`.
 
 **Описание**
 

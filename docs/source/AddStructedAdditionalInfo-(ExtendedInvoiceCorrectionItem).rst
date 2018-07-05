@@ -11,7 +11,7 @@ AddStructedAdditionalInfo()
 
 **Возвращаемое значение**
 
-Объект :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`.
+:doc:`StructedAdditionalInfo <StructedAdditionalInfo>`.
 
 
 **Описание**

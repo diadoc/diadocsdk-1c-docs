@@ -1,48 +1,46 @@
 ﻿InvoiceContent
 ==============
 
-Объект предназначен для работы с содержанием документов "счет-фактура" и
-"исправление счета-фактуры" и является производным объектом от :doc:`BaseContent <BaseContent>`.
-
-`Требования к формату передаваемого документа <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_
+Объект предназначен для работы с содержанием формализованного документа "Счет-фактура" и "Исправление счета-фактуры" в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
 
 Свойства объекта
 ----------------
 
 
+- **Type** (строка, чтение) - тип документа (возвращает значение "InvoiceContent")
+
 - **InvoiceVersion** (строка, чтение/запись) - версия формата счета-фактуры. Может принимать значения "5.01", "5.02"
 
-- **Date** (дата, чтение/запись, обязательно для заполнения) - дата счета-фактуры
+- **Date** (дата, чтение/запись) - дата счета-фактуры
 
-- **Number** (строка, чтение/запись, обязательно для заполнения, длина не более 256 символов) - номер счета-фактуры
+- **Number** (строка, чтение/запись) - номер счета-фактуры
 
-- **InvoiceRevisionDate** (дата, чтение/запись) - дата исправленния счета-фактуры (обязательно при формировании InvoiceRevision)
+- **InvoiceRevisionDate** (дата, чтение/запись) - дата исправленния счета-фактуры
 
-- **InvoiceRevisionNumber** (строка, чтение/запись, длина не более 3 символов) - номер исправления счета-фактуры (обязательно при формировании InvoiceRevision)
+- **InvoiceRevisionNumber** (строка, чтение/запись) - номер исправления счета-фактуры
 
-- **Currency** (строка, чтение/запись, обязательно для заполнения. Числовая строка длиной 3 символа. Код должен содержаться в общероссийском классификаторе валют.) - код валюты
+- **Currency** (строка, чтение/запись) - код валюты
 
-- **Seller** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные продавца
+- **Seller** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные продавца
 
-- **Buyer** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные покупателя
+- **Buyer** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные покупателя
 
-- **Shipper** (объект :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение) - данные грузоотправителя
+- **Shipper** (:doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение) - данные грузоотправителя
 
-- **Consignee** (объект :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение) - данные грузополучателя
+- **Consignee** (:doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>`, чтение) - данные грузополучателя
 
-- **Signer** (объект :doc:`Signer <Signer>`, чтение, обязательно для заполнения) - данные подписанта документа
+- **Signer** (:doc:`Signer <Signer>`, чтение) - данные подписанта документа
 
 - **Totals** (:doc:`InvoiceTotals <Totals-InvoiceTotals>`, чтение) - общие итоги по документу
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceContent")
 
-- **Items** (:doc:`коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem>`, чтение, обязательно для заполнения) - табличная часть счета-фактуры
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`InvoiceItem <InvoiceItem>`, чтение) - табличная часть счета-фактуры
 
-- **Payment Documents** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение, --) - список платежно-расчетных документов
+- **Payment Documents** (:doc:`коллекция <Collection>` объектов :doc:`PaymentDocument <PaymentDocument>`, чтение) - список платежно-расчетных документов
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение) - дополнительные сведения
 
-- **Type** (строка, чтение) - тип документа
 
 Методы объекта
 --------------

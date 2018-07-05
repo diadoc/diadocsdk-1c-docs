@@ -1,13 +1,14 @@
 ﻿Act552BuyerContent
 ==================
 
-Объект предназначен для работы с содержанием ответного титула документов типа "Акт в
-формате 552-го приказа ФНС"
+Объект предназначен для работы с содержанием титула покупателя формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
 
 Свойства
 --------
 
-- **Signers** (коллекция :doc:`Collection <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - данные подписантов
+- **Type** (строка, чтение) - тип документа (возвращает строку "XmlAcceptanceCertificate552BuyerTitle")
+
+- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - данные подписантов
 
 - **DocumentCreator** (строка, чтение/запись) - cоставитель файла информации продавца
 
@@ -23,10 +24,12 @@
 
 - **CreatedThingInfo** (строка, чтение/запись) - сведения о получении
 
-- **AdditionalInfoId** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`) - информационное поле документа
+- **AdditionalInfoId** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
+
 
 Методы
 ------
+
 
 -  :doc:`AddSigner <AddSigner-(Act552BuyerContent)>` - добавляет новый элемент в список подписантов
 
@@ -34,4 +37,4 @@
    :name: Auto
    :hidden:
 
-    AddSigner-(Act552BuyerContent)
+   AddSigner-(Act552BuyerContent)

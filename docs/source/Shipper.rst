@@ -9,7 +9,7 @@
 
 - **SameAsSeller** (булево, чтение/запись) - устанавливается равным "истина" в случае, когда в качестве грузоотправителя нужно указать "он же"
 
-- **OrganizationInfo** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - информация об организации грузоотправителя
+- **OrganizationInfo** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - информация об организации грузоотправителя
 
 
 Методы отсутствуют

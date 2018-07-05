@@ -12,7 +12,7 @@ CreateCustomDataPatchTask()
 **Возвращаемое значение**
 
 
-Объект :doc:`CustomDataPatchTask <CustomDataPatchTask>`.
+:doc:`CustomDataPatchTask <CustomDataPatchTask>`.
 
 **Описание**
 

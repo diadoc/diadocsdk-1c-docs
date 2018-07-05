@@ -14,7 +14,7 @@
 
 - **NotificationDate** (дата, чтение/запись) - дата направления на согласование
 
-- **CorrectionBases** (коллекция :doc:`Collection <Collection>` объектов :doc:`CorrectionBase <CorrectionBase>`, чтение) - основание корректировки
+- **CorrectionBases** (:doc:`коллекция <Collection>` объектов :doc:`CorrectionBase <CorrectionBase>`, чтение) - основание корректировки
 
 
 Методы

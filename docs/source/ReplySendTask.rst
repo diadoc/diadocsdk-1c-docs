@@ -6,7 +6,7 @@
 Свойства
 --------
 
--  Content (объект :doc:`BaseContent <BaseContent>`, чтение) - содержимое задания. Зависит от объекта, из которого был создан ReplySendTask 
+-  Content (:doc:`BaseContent <BaseContent>`, чтение) - содержимое задания. Зависит от объекта, из которого был создан ReplySendTask 
    и от типа дейтсвия:
   
    - если ReplySendTask был создан методом :doc:`CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>` объекта :doc:`DocumentPackage <DocumentPackage>`, 

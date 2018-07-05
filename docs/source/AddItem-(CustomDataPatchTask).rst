@@ -11,7 +11,7 @@ AddItem()
 **Возвращаемое значение**
 
 
-Объект :doc:`CustomDataPatchItem <CustomDataPatchItem>`.
+:doc:`CustomDataPatchItem <CustomDataPatchItem>`.
 
 **Описание**
 

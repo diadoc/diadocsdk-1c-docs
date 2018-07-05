@@ -18,7 +18,7 @@ CreateConnectionByCertificate(<Thumbprint>, <Pin>)
 **Возвращаемое значение**
 
 
-Объект :doc:`DiadocConnection <Connection>`.
+:doc:`DiadocConnection <Connection>`.
 
 **Описание**
 

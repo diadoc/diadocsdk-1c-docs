@@ -7,9 +7,9 @@
 ----------------
 
 
-- **Document** (объект :doc:`Document <Document>`, чтение) - документ, с которым связан хранимый в паре контент
+- **Document** (:doc:`Document <Document>`, чтение) - документ, с которым связан хранимый в паре контент
 
-- **Content** (объект :doc:`BaseContent <BaseContent>`, чтение) - контент. Может быть одним из следующих объектов:
+- **Content** (:doc:`BaseContent <BaseContent>`, чтение) - контент. Может быть одним из следующих объектов:
 
    -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа "ТОРГ-12 в формате ФНС"
 

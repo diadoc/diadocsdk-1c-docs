@@ -1,27 +1,26 @@
 ﻿TovTorgSellerContent
 ======================
 
-Объект предназначен для работы с содержанием документов типа "ТОРГ-12 в формате 551-го приказа ФНС" (титул продавца) и является производным объектом от :doc:`BaseContent <BaseContent>`.
-
-`Требования к формату передаваемого документа <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_
+Объект предназначен для работы с содержанием формализованного документа "ТОРГ-12" в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
 
 Свойства объекта
 ----------------
 
+- **Type** (строка, чтение) - тип документа (возвращает строку "TovTorg")
 
-- **Seller** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - продавец
+- **Seller** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - продавец
 
-- **Buyer** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - покупатель
+- **Buyer** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - покупатель
 
-- **Shipper** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузоотправитель
+- **Shipper** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузоотправитель
 
-- **Consignee** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузополучатель
+- **Consignee** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузополучатель
 
-- **Carrier** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - перевозчик
+- **Carrier** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - перевозчик
 
-- **Signers** (коллекция :doc:`Collection <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты
+- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты
 
-- **Grounds** (коллекция :doc:`Collection <Collection>` объектов :doc:`GroundInfo <GroundInfo>`, чтение) - основания
+- **Grounds** (:doc:`коллекция <Collection>` объектов :doc:`GroundInfo <GroundInfo>`, чтение) - основания
 
 - **Currency** (строка, чтение/запись) - валюта (код)
 
@@ -35,7 +34,7 @@
 
 - **RevisionNumber** (строка, чтение/запись) - номер исправления документа о передаче товара
 
-- **TransferInfo** (объект :doc:`TovTorgTransferInfo <TovTorgTransferInfo>`, чтение) - сведения о факте передачи (об отпуске груза)
+- **TransferInfo** (:doc:`TovTorgTransferInfo <TovTorgTransferInfo>`, чтение) - сведения о факте передачи (об отпуске груза)
 
 - **DocumentCreator** (строка, чтение/запись) - составитель файла информации продавца
 
@@ -45,9 +44,9 @@
 
 - **GovernmentContractInfo** (строка, чтение/запись) - идентификатор государственного контракта
 
-- **Table** (объект :doc:`TovTorgTable <TovTorgTable>`, чтение) - сведения об ассортименте, количестве, стоимости и другой информации о товарных позициях
+- **Table** (:doc:`TovTorgTable <TovTorgTable>`, чтение) - сведения об ассортименте, количестве, стоимости и другой информации о товарных позициях
 
-- **AdditionalInfoId** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
+- **AdditionalInfoId** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
 
 - **DocumentName** (строка, чтение/запись) - наименование первичного документа, определенное организацией
 

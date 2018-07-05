@@ -70,7 +70,7 @@ v5.21.0 - 13.03.2018
         - новые статусы и метаданные **RecipientReceiptMetadata**, **ConfirmationMetadata**, **RecipientResponseStatus**, **AmendmentRequestMetadata**
     - мапинг содержимого документов "любого типа" на объектную модель документов компоненты:
         - поддержка получения документов "любого типа" в представлении :doc:`BaseDocument <BaseDocument>`
-        - поддержка отправки документов "любого типа" в :doc:`PackageSendTask <PackageSendTask>` - возможность добавлять объект :doc:`CustomDocumentToSend <CustomDocumentToSend>` для конкретного типа содержимого AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02)
+        - поддержка отправки документов "любого типа" в :doc:`PackageSendTask <PackageSendTask>` - возможность добавлять :doc:`CustomDocumentToSend <CustomDocumentToSend>` для конкретного типа содержимого AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02)
 
 - новое свойство **Title** у объекта :doc:`Document <Document>` - название документа
 - :doc:`Исправлены ошибки <Bugs_5_21>`
@@ -135,9 +135,9 @@ v5.19.1 - 20.11.2017
     
     - свойство :doc:`Document.CustomData <Document>` - коллекция объектов :doc:`CustomDataItem <CustomDataItem>` содержащих записи "ключ-значение"
 
-    - метод :doc:`Document.CreateCustomDataPatchTask <Document>` - создает объект :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию :doc:`Document.CustomData <Document>`
+    - метод :doc:`Document.CreateCustomDataPatchTask <Document>` - создает :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию :doc:`Document.CustomData <Document>`
 
-- В объект :doc:`Ucd <Ucd>` добавлены свойства OriginalInvoiceNumber, OriginalInvoiceDate, OriginalInvoiceRevisionNumber, OriginalInvoiceRevisionDate
+- В :doc:`Ucd <Ucd>` добавлены свойства OriginalInvoiceNumber, OriginalInvoiceDate, OriginalInvoiceRevisionNumber, OriginalInvoiceRevisionDate
 
 - :doc:`Исправлены ошибки <Bugs_5_19>`
 
@@ -151,7 +151,7 @@ v5.19.0 - 20.10.2017
 v5.18.7 - 05.09.2017
 --------------------
 
-- в объект :doc:`PersonalCertificate <PersonalCertificate>` добавлено поле **JobTitle** - должность
+- в :doc:`PersonalCertificate <PersonalCertificate>` добавлено поле **JobTitle** - должность
 - в COM-компоненте добавлена поддержка типа UcdInvoiceCorrection для объекта :doc:`PackageSendTask <PackageSendTask>`
 - :doc:`Исправлены ошибки <Bugs_5_18>`
 
@@ -175,7 +175,7 @@ v5.18.4 - 03.08.2017
 v5.18.3 - 02.08.2017
 ----------------------
 
-- В объект :doc:`Document <Document>` добавлено свойство **SenderSignatureStatus** - статус проверки ЭЦП отправителя
+- В :doc:`Document <Document>` добавлено свойство **SenderSignatureStatus** - статус проверки ЭЦП отправителя
 - Тип объекта :doc:`UtdToSend <UtdToSend>` - свойство **Type**, теперь соответствует типу создаваемого документа UniversalTransferDocument, UtdInvoice, UtdTorg12 или UtdAcceptanceCertificate
 - :doc:`Исправлены ошибки <Bugs_5_18>`
 
@@ -189,7 +189,7 @@ v5.18.2 - 18.07.2017
 v5.18.1 - 21.06.2017
 ----------------------
 
-- В объект :doc:`Organization <Organization>` добавлен метод :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает контрагента, по указанному идентификатору организации
+- В :doc:`Organization <Organization>` добавлен метод :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает контрагента, по указанному идентификатору организации
 - В объекте :doc:`Department <Department>` появилось поле **Address** - адрес подразделения организации
 - :doc:`Исправлены ошибки <Bugs_5_18>`
 
@@ -228,7 +228,7 @@ v5.17 - 05.05.2017
 - Ошибка времени исполнения в COM-компоненте при добавлении элементов в некоторые коллекции объектов поддержки УКД
 - Ошибка, связи с которой у объектов :doc:`Invoice <Invoice>` :doc:`InvoiceRevision <InvoiceRevision>`, :doc:`InvoiceCorrection <InvoiceCorrection>`, :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>` не работал метод :doc:`SendReceiptsAsync <SendReceiptsAsync>`
 - Исправлена работа метода :doc:`GetRecipientSignature <GetRecipientSignature>` для УПД с функцией "СЧФ" и УКД с функцией "КСЧФ"
-- Объект :doc:`InvoiceRevision <InvoiceRevision>` теперь поддерживает УПД-содержимое
+- :doc:`InvoiceRevision <InvoiceRevision>` теперь поддерживает УПД-содержимое
 
 v5.16 - 10.04.2017
 ----------------------
@@ -270,8 +270,8 @@ v5.14 - 20.01.2017
     - Возможность задать сертификаты шифрования :doc:`AddEncryptCertificate <AddEncryptCertificate-(SendTask)>` в :doc:`SendTask <SendTask>` и :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` в :doc:`PackageSendTask <PackageSendTask>`.
     - Флаг шифрованного документа **IsEncryptedContent** в :doc:`Document <Document>`.
 - Возможность отказа от запроса подписи сотрудника:
-    - Объект :doc:`ResolutionRequest <ResolutionRequest>` - запрос на согласование, возможен отказ и отмена.
-    - Объект :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ. 
+    - :doc:`ResolutionRequest <ResolutionRequest>` - запрос на согласование, возможен отказ и отмена.
+    - :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ. 
     - Свойство **ResolutionRequests** в :doc:`Document <Document>` - коллекция запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequest <ResolutionRequest>`).
     - Свойство **ResolutionRequestDenials** в :doc:`Document <Document>` - коллекция объектов отмены запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`).
 - Возможность "сырой" отправки xml-файлов формализованных документов:
@@ -286,13 +286,13 @@ v5.10 - 25.11.2016
 -----------------------
 
 - Реализована поддержка универсального передаточного документа:
-    - добавлен объект :doc:`Utd <Utd>`, предназначенные для работы с УПД.
-    - добавлен объект :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
-    - добавлен объект :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
+    - добавлен :doc:`Utd <Utd>`, предназначенные для работы с УПД.
+    - добавлен :doc:`UtdSellerContent <UtdSellerContent>`, предназначенный для работы с титулом продавца в УПД.
+    - добавлен :doc:`UtdBuyerContent <UtdBuyerContent>`, предназначенный для работы с титулом покупателя в УПД.
     - в объекты :doc:`SendTask <SendTask>`, :doc:`PackageSendTask <PackageSendTask>` и :doc:`ReplySendTask <ReplySendTask>` добавлена поддержка УПД.
-    - в объект :doc:`OutDocumentSignTask <OutDocumentSignTask>` добавлен метод :doc:`AddExtendedSigner <AddExtendedSigner>` для поддержки подписания исходящих УПД.
+    - в :doc:`OutDocumentSignTask <OutDocumentSignTask>` добавлен метод :doc:`AddExtendedSigner <AddExtendedSigner>` для поддержки подписания исходящих УПД.
 - Реализованы методы для работы с базой подписантов Диадок:
-    - в объект :doc:`Organization <Organization>` добавлены методы :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` и :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>`.
+    - в :doc:`Organization <Organization>` добавлены методы :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` и :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>`.
 - В :doc:`Document <Document>` добавлен статус "прочтен":
     - свойство **IsRead**.
     - метод :doc:`MarkAsRead <MarkAsRead>`.
@@ -301,7 +301,7 @@ v5.10 - 25.11.2016
 v5.9 - 17.11.2016
 -----------------------
 
-- В объект :doc:`AcquireCounteragentTask <AcquireCounteragentTask>` добавлен метод :doc:`Send <Send-(AcquireCounteragentTask)>` для синхронной отправки приглашений.
+- В :doc:`AcquireCounteragentTask <AcquireCounteragentTask>` добавлен метод :doc:`Send <Send-(AcquireCounteragentTask)>` для синхронной отправки приглашений.
 - Исправлено поведение для неформализованных актов, накладных и счетов на оплату: налоговая ставка устанавливается в значение "без НДС", если не указывать ее значение в поле содержимого Vat.
 - Исправлена проблема при отправке счетов-фактур с участием агента.
 - Исправлена ошибка при отправке контрагенту приглашения к сотрудничеству с вложением файла.
@@ -311,7 +311,7 @@ v5.8 - 26.10.2016
 -----------------------
 
 - Добавлена возможность сохранять содержимое документа в ZIP-архив:
-    - в объект :doc:`Document <Document>` добавлен метод :doc:`SaveAllContentZip <SaveAllContentZip>` и :doc:`SaveAllContentZipAsync <SaveAllContentZipAsync>`.
+    - в :doc:`Document <Document>` добавлен метод :doc:`SaveAllContentZip <SaveAllContentZip>` и :doc:`SaveAllContentZipAsync <SaveAllContentZipAsync>`.
 
 
 v5.7 - 15.09.2016
@@ -325,11 +325,11 @@ v5.6 - 18.04.2016
 -----------------------
 
 - Добавлена возможность подписания и отправки исходящих документов с отложенной отправкой:
-    - в объект :doc:`Document <Document>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` и
-      в объект :doc:`DocumentPackage <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
+    - в :doc:`Document <Document>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` и
+      в :doc:`DocumentPackage <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
       для создания задания на подписание и отправку исходящего документа или пакета  документов соответственно. Эти методы возвращают объект
       :doc:`OutDocumentSignTask <OutDocumentSignTask>`.
-    - добавлен объект :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
+    - добавлен :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
       С помощью его методов :doc:`Send <Send-(OutDocumentSignTask)>` или :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` можно подписать
       и отправить исходящий документ, который прежде был отправлен с выставленным флагом **DelaySend**.
 - :doc:`Исправлены ошибки <Bugs_5_6>`
@@ -340,15 +340,15 @@ v5.5 - 08.04.2016
 
 - Добавлена возможность для отправки пакета документов:
     - в объекте :doc:`Organization <Organization>` добавлен метод :doc:`CreatePackageSendTask <CreatePackageSendTask>`
-      для создания задания на отправку пакета документов, который возвращает объект :doc:`PackageSendTask <PackageSendTask>`.
-    - добавлен объект :doc:`PackageSendTask <PackageSendTask>` для работы с заданием на отправку пакета документов.
-    - добавлен объект :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для
+      для создания задания на отправку пакета документов, который возвращает :doc:`PackageSendTask <PackageSendTask>`.
+    - добавлен :doc:`PackageSendTask <PackageSendTask>` для работы с заданием на отправку пакета документов.
+    - добавлен :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для
       работы с документами на отправку, входящими в пакет.
-    - добавлен объект :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на облачную подпись содержимого 
+    - добавлен :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на облачную подпись содержимого 
       всех документов из пакета на отправку.
-- В объект :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
+- В :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
   авторизованном пользователе.
-- В объект :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
+- В :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
   добавлять и извлекать пары вида "ключ-значение" в хранилище.
 - В метод :doc:`GetPersonalCertificates <GetPersonalCertificates>` объекта :doc:`интерфейса "Диадок" <Root-method>` добавлен входной параметр UserStore,
   позволяющий искать сертификаты не только в хранилище текущего пользователя, но и в хранилище машины.
@@ -371,7 +371,7 @@ v5.3 - 21.12.2015
 - Добавлена возможность работы с пакетами документов:
     - в объекте :doc:`Document <Document>` добавлено свойство IsLockedPackage и метод :doc:`GetDocumentPackage <GetDocumentPackage>`
       для получаения пакета, в который включен документ.
-    - добавлен объект :doc:`DocumentPackage <DocumentPackage>` для работы с пакетами документов.
+    - добавлен :doc:`DocumentPackage <DocumentPackage>` для работы с пакетами документов.
 - :doc:`Исправлены ошибки <Bugs_5_3>`
 
 
@@ -380,7 +380,7 @@ v5.2.0 - 01.12.2015
 -----------------------
 
 - Добавлена возможность подписания документов облачной подписью:
-    - добавлен метод :doc:`GetCloudCertificates <GetCloudCertificates>` в объект :doc:`DiadocConnection <Connection>` для 
+    - добавлен метод :doc:`GetCloudCertificates <GetCloudCertificates>` в :doc:`DiadocConnection <Connection>` для 
       получения облачных сертификатов пользователя
     - добавлены объекты: :doc:`CloudCertificateInfo <CloudCertificateInfo>` (для информации об облачном сертификате),
       :doc:`CloudSignTask <CloudSignTask>` (для задание на подписание документов облачной подписью).

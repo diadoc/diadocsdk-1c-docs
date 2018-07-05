@@ -16,7 +16,7 @@ GetDocumentEventList(<EventId>)
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentEvent <DocumentEvent>`.
+:doc:`коллекция <Collection>` объектов :doc:`DocumentEvent <DocumentEvent>`.
 
 **Описание**
 

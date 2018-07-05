@@ -16,7 +16,7 @@
 
 - **NeedRecipientSignature** (булево, чтение/запись) - флаг, обозначающий запрос подписи получателя под отправляемым документом
 
-- **CustomData** (коллекция :doc:`Collection <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - список пар вида «ключ-значение», содержащих произвольные данные по документу
+- **CustomData** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - список пар вида «ключ-значение», содержащих произвольные данные по документу
 
 - **TypeNamedId** (строка, чтение/запись) - строковой идентификатор типа документа. Доступные типы можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
 
@@ -24,7 +24,7 @@
 
 - **Version** (строка, чтение/запись) - идентификатор версии документа. Обязательно при отправке зашифрованных документов
 
-- **Metadata** (коллекция :doc:`Collection <Collection>` объектов :doc:`MetadataItem <MetadataItem>`, чтение) - список пар вида "ключ-значение", содержащих метаданные документа. Каждая пара задается структурой :doc:`MetadataItem <MetadataItem>`. Список доступных метаданных для типа можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`
+- **Metadata** (:doc:`коллекция <Collection>` объектов :doc:`MetadataItem <MetadataItem>`, чтение) - список пар вида "ключ-значение", содержащих метаданные документа. Каждая пара задается структурой :doc:`MetadataItem <MetadataItem>`. Список доступных метаданных для типа можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`
 
 - **WorkflowId** (строка, чтение/запись) - идентификатор вида документооборота. Список допустимых видов документооборота для типа можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`. Описание видов документооборота доступно на странице :doc:`DocumentWorkflow <DocumentWorkflow>`
 

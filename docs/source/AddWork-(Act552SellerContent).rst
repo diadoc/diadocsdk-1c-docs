@@ -11,7 +11,7 @@ AddWork()
 
 **Возвращаемое значение**
 
-Объект :doc:`Act552WorkDescription <Act552WorkDescription>`
+:doc:`Act552WorkDescription <Act552WorkDescription>`
 
 
 **Описание**

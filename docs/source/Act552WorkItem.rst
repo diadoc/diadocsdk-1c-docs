@@ -1,4 +1,5 @@
-﻿Act552WorkItem
+﻿
+Act552WorkItem
 ===============
 
 Сведения о произведенной работе в документе типа "Акт в
@@ -25,7 +26,7 @@
 
 - **Subtotal** (число c плавающей точкой/строка, чтение/запись) - сумма с учетом НДС
 
-- **StructedAdditionalInfos** (коллекция :doc:`Collection <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - информационное поле сведений о работе (услуге)
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - информационное поле сведений о работе (услуге)
 
 - **TaxRate** (строка, чтение/запись) - ставка налога
 

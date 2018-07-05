@@ -11,7 +11,7 @@ GetCloudCertificates()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов :doc:`CloudCertificateInfo <CloudCertificateInfo>`
+:doc:`коллекция <Collection>` объектов :doc:`CloudCertificateInfo <CloudCertificateInfo>`
 
 **Описание**
 

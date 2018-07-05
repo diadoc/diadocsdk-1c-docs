@@ -12,11 +12,11 @@
 
 - **SupportsEncrypting** (булево, чтение) - поддерживается отправка зашифрованных документов    
 
-- **Titles** (коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentTitle <DocumentTitle>`) - описания титулов документа
+- **Titles** (:doc:`коллекция <Collection>` объектов :doc:`DocumentTitle <DocumentTitle>`) - описания титулов документа
 
 - **IsActual** (булево, чтение) - версия актуальна
 
-- **Workflows** (коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentWorkflow <DocumentWorkflow>`) - виды документооборота
+- **Workflows** (:doc:`коллекция <Collection>` объектов :doc:`DocumentWorkflow <DocumentWorkflow>`) - виды документооборота
 
 Методы отсутствуют
 

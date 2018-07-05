@@ -11,7 +11,7 @@ GetContent()
 
 **Возвращаемое значение**
 
-Объект :doc:`UcdSellerContent <UcdSellerContent>`
+:doc:`UcdSellerContent <UcdSellerContent>`
 
 
 **Описание**

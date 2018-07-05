@@ -7,7 +7,7 @@
 Свойства
 --------
 
--  Certificate (объект :doc:`PersonalCertificate <PersonalCertificate>`,
+-  Certificate (:doc:`PersonalCertificate <PersonalCertificate>`,
    чтение) - сертификат, с помощью которого была создана подпись
 -  SignDate (дата, чтение) - дата подписи
 -  SignatureAuthenticityDate (дата, чтение) - дата проверки подлинности

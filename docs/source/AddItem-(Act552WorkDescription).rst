@@ -11,7 +11,7 @@ AddItem()
 **Возвращаемое значение**
 
 
-Объект :doc:`Act552WorkItem <Act552WorkItem>`.
+:doc:`Act552WorkItem <Act552WorkItem>`.
 
 **Описание**
 

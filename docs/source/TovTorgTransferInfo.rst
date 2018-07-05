@@ -13,13 +13,13 @@
 
 - **Attachment** (строка, чтение/запись) - приложение, сертификаты и прочее
 
-- **Waybills** (коллекция :doc:`Collection <Collection>` объектов :doc:`Waybill <Waybill>`) - транспортны накладные
+- **Waybills** (:doc:`коллекция <Collection>` объектов :doc:`Waybill <Waybill>`) - транспортны накладные
 
-- **Employee** (объект :doc:`Employee <Employee>`) - работник организации продавца
+- **Employee** (:doc:`Employee <Employee>`) - работник организации продавца
 
-- **OtherIssuer** (объект :doc:`OtherIssuer <OtherIssuer>`) - иное лицо
+- **OtherIssuer** (:doc:`OtherIssuer <OtherIssuer>`) - иное лицо
 
-- **StructedAdditionalInfos** (коллекция :doc:`Collection <Collection>` объектов :doc:`StructedAditionalInfo <StructedAdditionalInfo>`) - информационные поля документа
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAditionalInfo <StructedAdditionalInfo>`) - информационные поля документа
 
 Методы объекта
 --------------

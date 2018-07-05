@@ -11,7 +11,7 @@
 
 - **CertificateThumbprint** (строка, чтение/запись) - отпечаток сертификата подписанта
 
-- **SignerDetails** (объект :doc:`ExtendedSignerDetails <ExtendedSignerDetails>`, чтение) - информация о подписанте
+- **SignerDetails** (:doc:`ExtendedSignerDetails <ExtendedSignerDetails>`, чтение) - информация о подписанте
 
 Если заполнены поля BoxId и CertificateThumbprint, поле SignerDetails заполнять не нужно. В этом случае вся информация о подписанте будет взята с сервера Диадок.
 Если поля BoxId и CertificateThumbprint не заполнены, поле SignerDetails является обязательным для заполнения.

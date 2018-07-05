@@ -11,7 +11,7 @@ AddExtendedSigner()
 
 **Возвращаемое значение**
 
-Объект :doc:`ExtendedSigner <ExtendedSigner>`
+:doc:`ExtendedSigner <ExtendedSigner>`
 
 
 **Описание**

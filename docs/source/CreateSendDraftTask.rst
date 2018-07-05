@@ -16,7 +16,7 @@ CreateSendDraftTask(<messageId>)
 **Возвращаемое значение**
 
 
-Объект :doc:`SendDraftTask <SendDraftTask>`.
+:doc:`SendDraftTask <SendDraftTask>`.
 
 **Описание**
 

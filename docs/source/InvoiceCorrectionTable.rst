@@ -7,11 +7,11 @@
 ----------------
 
 
-- **Items** (коллекция :doc:`Collection <Collection>` объектов :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>`, чтение) - информация о товарах
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>`, чтение) - информация о товарах
 
-- **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к увеличению
+- **TotalsInc** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к увеличению
 
-- **TotalsDec** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к уменьшению
+- **TotalsDec** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к уменьшению
 
 Методы объекта
 --------------

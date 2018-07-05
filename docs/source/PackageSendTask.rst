@@ -45,10 +45,10 @@
    пакета документов
 -  :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` - добавляет сертификат шифрования документа
 
-Методы AddDocument... позволяют отправлять документы "любого типа". Для отправки такого документа необходимо получить объект :doc:`CustomDocumentToSend <CustomDocumentToSend>`. Это можно сделать двумя способами:
+Методы AddDocument... позволяют отправлять документы "любого типа". Для отправки такого документа необходимо получить :doc:`CustomDocumentToSend <CustomDocumentToSend>`. Это можно сделать двумя способами:
 
-- вызвав один из методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` или :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`  и указав в качестве параметра Type значение "Document". Будет создан объект :doc:`CustomDocumentToSend <CustomDocumentToSend>` с содержимым прикрепленным из файла. В этом случае компонента не будет анализировать содержимое документа и отправит его как есть. Соответственно свойство CustomDocumentToSend.Content будет пустым.
-- вызвав любой из методов AddDocument... и указав в качестве значение параметра Type одно из значений AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02). В этом случае будет создан объект :doc:`CustomDocumentToSend <CustomDocumentToSend>` в свойстве Content которого будет объект производный от :doc:`BaseContent <BaseContent>`, представляющий содержимое документа запрошенного типа.
+- вызвав один из методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` или :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`  и указав в качестве параметра Type значение "Document". Будет создан :doc:`CustomDocumentToSend <CustomDocumentToSend>` с содержимым прикрепленным из файла. В этом случае компонента не будет анализировать содержимое документа и отправит его как есть. Соответственно свойство CustomDocumentToSend.Content будет пустым.
+- вызвав любой из методов AddDocument... и указав в качестве значение параметра Type одно из значений AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02). В этом случае будет создан :doc:`CustomDocumentToSend <CustomDocumentToSend>` в свойстве Content которого будет объект производный от :doc:`BaseContent <BaseContent>`, представляющий содержимое документа запрошенного типа.
 
 .. toctree::
    :name: Auto

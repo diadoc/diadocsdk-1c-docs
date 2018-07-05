@@ -11,8 +11,7 @@ ValidateContent()
 **Возвращаемое значение**
 
 
-Объект :doc:`Collection <Collection>` - коллекция, объектов типа
-:doc:`ValidationError <ValidationError>`.
+:doc:`Коллекция <Collection>` объектов :doc:`ValidationError <ValidationError>`
 
 **Описание**
 

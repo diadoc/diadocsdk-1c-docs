@@ -11,7 +11,7 @@ SendAsync()
 **Возвращаемое значение**
 
 
-Объект :doc:`OutDocumentSignTaskAsyncResult <OutDocumentSignTaskAsyncResult>`.
+:doc:`OutDocumentSignTaskAsyncResult <OutDocumentSignTaskAsyncResult>`.
 
 **Описание**
 

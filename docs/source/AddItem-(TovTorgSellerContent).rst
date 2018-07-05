@@ -11,7 +11,7 @@ AddItem()
 **Возвращаемое значение**
 
 
-Объект :doc:`TovTorgItem <TovTorgItem>`.
+:doc:`TovTorgItem <TovTorgItem>`.
 
 **Описание**
 

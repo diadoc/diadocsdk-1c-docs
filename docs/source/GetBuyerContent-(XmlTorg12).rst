@@ -11,7 +11,7 @@ GetBuyerContent()
 **Возвращаемое значение**
 
 
-Объект :doc:`Torg12BuyerContent <Torg12BuyerContent>`.
+:doc:`Torg12BuyerContent <Torg12BuyerContent>`.
 
 **Описание**
 

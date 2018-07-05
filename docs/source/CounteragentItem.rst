@@ -9,7 +9,7 @@
 --------
 
 -  Inn (строка, чтение) - ИНН контрагента
--  Counteragent (объект :doc:`Counteragent <Counteragent>`, чтение) - контрагент
+-  Counteragent (:doc:`Counteragent <Counteragent>`, чтение) - контрагент
 
 В случае, если контрагент с указанным ИНН отсутствует в Диадоке,
 свойство <Counteragent> возврашает значение Неопределено.

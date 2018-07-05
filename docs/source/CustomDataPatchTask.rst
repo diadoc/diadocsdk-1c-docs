@@ -7,7 +7,7 @@
 Свойства объекта
 ----------------
 
-- **Items** (коллекция :doc:`Collection <Collection>` объектов :doc:`CustomDataPatchItem <CustomDataPatchItem>`, чтение) - элементы для вставки/удаления
+- **Items** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataPatchItem <CustomDataPatchItem>`, чтение) - элементы для вставки/удаления
 
 Методы
 ------

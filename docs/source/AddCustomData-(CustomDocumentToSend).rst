@@ -11,7 +11,7 @@ AddCustomData()
 **Возвращаемое значение**
 
 
-Объект :doc:`CustomDataItem <CustomDataItem>`.
+:doc:`CustomDataItem <CustomDataItem>`.
 
 **Описание**
 
