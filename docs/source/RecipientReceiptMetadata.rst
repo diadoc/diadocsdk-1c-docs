@@ -8,7 +8,7 @@ RecipientReceiptMetadata
 
 - **ReceiptStatus** (строка, чтение) - состояние ИОП на документ
 
-- **ConfirmationMetadata** (объект :doc:`ConfirmationMetadata <ConfirmationMetadata>`, чтение) - метаданные - отвечает за подтверждение оператором даты отправки/получения документа
+- **ConfirmationMetadata** (:doc:`ConfirmationMetadata <ConfirmationMetadata>`, чтение) - метаданные - отвечает за подтверждение оператором даты отправки/получения документа
 
 Свойство **ReceiptStatus** может принимать следующие значения:
 

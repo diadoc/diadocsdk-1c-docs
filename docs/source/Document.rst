@@ -25,15 +25,15 @@
 
 - **Direction** (строка, чтение) - направление документа
 
-- **Organization** (объект :doc:`Organization <Organization>`, чтение) - организация, которая отправила исходящий документ, либо получила входящий документ
+- **Organization** (:doc:`Organization <Organization>`, чтение) - организация, которая отправила исходящий документ, либо получила входящий документ
 
-- **Department** (объект :doc:`Department <Department>`, чтение) - подразделение организации, к которому привязан документ
+- **Department** (:doc:`Department <Department>`, чтение) - подразделение организации, к которому привязан документ
 
-- **FromDepartment** (объект :doc:`Department <Department>`, чтение) - подразделение организации, из которого был отправлен документ
+- **FromDepartment** (:doc:`Department <Department>`, чтение) - подразделение организации, из которого был отправлен документ
 
-- **ToDepartment** (объект :doc:`Department <Department>`, чтение) - подразделение организации, в которое был отправлен документ
+- **ToDepartment** (:doc:`Department <Department>`, чтение) - подразделение организации, в которое был отправлен документ
 
-- **Counteragent** (объект :doc:`Counteragent <Counteragent>`, чтение) - контрагент документа
+- **Counteragent** (:doc:`Counteragent <Counteragent>`, чтение) - контрагент документа
 
 - **Timestamp** (дата и время, чтение) - дата и время отправки документа (в текущем часовом поясе)
 
@@ -47,9 +47,9 @@
 
 - **Status** (строка, чтение) - текущий статус документа в Диадоке. Перечень возможных значений зависит от типа документа и описан в спецификации соответствующего производного объекта.
 
-- **InitialDocumentIds** (объект :doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, на который ссылается данный документ (т.е. документы, которые по отношению к данному документы являются "родительскими"
+- **InitialDocumentIds** (:doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, на который ссылается данный документ (т.е. документы, которые по отношению к данному документы являются "родительскими"
 
-- **SubordinateDocumentIds** (объект :doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, которые ссылаются на данный документ (т.е. документы, которые по отношению к данному документу являются "дочерними")
+- **SubordinateDocumentIds** (:doc:`Collection <Collection>`, чтение) - коллекция идентификаторов документов, которые ссылаются на данный документ (т.е. документы, которые по отношению к данному документу являются "дочерними")
 
 - **IsDeleted** (булево, чтение) - признак того, что данный документ был удален
 
@@ -57,7 +57,7 @@
 
 - **OneSDocumentId** (строка, чтение) - идентификатор документа в 1С
 
-- **ResolutionStatus** (объект :doc:`ResolutionStatus <ResolutionStatus>`, чтение) - текущий статус согласования документа
+- **ResolutionStatus** (:doc:`ResolutionStatus <ResolutionStatus>`, чтение) - текущий статус согласования документа
 
 - **Resolutions** (:doc:`коллекция <Collection>` объектов :doc:`Resolution <Resolution>`, чтение) - история согласования документа
 
@@ -87,7 +87,7 @@
 
 - **SenderSignatureStatus** (строка, чтение) - статус проверки ЭЦП отправителя
 
-- **CustomData** (коллекция :doc:`Collection <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - коллекция элементов "ключ-значение"
+- **CustomData** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - коллекция элементов "ключ-значение"
 
 - **TypeNamedId** (строка, чтение) - строковый идентификатор типа документа
 
@@ -97,15 +97,15 @@
 
 - **Title** (строка, чтение) - название документа, например, "Счет-фактура №123 от 20.02.18"
 
-- **Metadata** (коллекция :doc:`Collection <Collection>` объектов :doc:`MetadataItem <MetadataItem>`) - коллекция метаданных
+- **Metadata** (:doc:`коллекция <Collection>` объектов :doc:`MetadataItem <MetadataItem>`) - коллекция метаданных
 
-- **RecipientReceiptMetadata** (объект :doc:`RecipientReceiptMetadata <RecipientReceiptMetadata>`, чтение) - метаданные - отвечает за ИОП на документ
+- **RecipientReceiptMetadata** (:doc:`RecipientReceiptMetadata <RecipientReceiptMetadata>`, чтение) - метаданные - отвечает за ИОП на документ
 
-- **ConfirmationMetadata** (объект :doc:`ConfirmationMetadata <ConfirmationMetadata>`, чтение) - метаданные - отвечает за подтверждение оператором даты отправки/получения документа или служебного документа (ИОП)
+- **ConfirmationMetadata** (:doc:`ConfirmationMetadata <ConfirmationMetadata>`, чтение) - метаданные - отвечает за подтверждение оператором даты отправки/получения документа или служебного документа (ИОП)
 
 - **RecipientResponseStatus** (строка, чтение) - отвечает за состояние ответного действия со стороны получателя документа
 
-- **AmendmentRequestMetadata** (объект :doc:`AmendmentRequestMetadata`, чтение) - метаданные уведомления об уточнении (УОУ)
+- **AmendmentRequestMetadata** (:doc:`AmendmentRequestMetadata`, чтение) - метаданные уведомления об уточнении (УОУ)
 
 Свойство **Direction** принимает одно из следующих значений:
 
@@ -206,7 +206,7 @@
 
 -  :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 
--  :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` - создает объект :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию **CustomData**
+-  :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` - создает :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию **CustomData**
 
 -  :doc:`GetAnyComment <GetAnyComment>` - получает строку комментария запрошенного типа
 

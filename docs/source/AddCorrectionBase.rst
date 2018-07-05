@@ -11,7 +11,7 @@ AddCorrectionBase()
 
 **Возвращаемое значение**
 
-Объект :doc:`CorrectionBase <CorrectionBase>`
+:doc:`CorrectionBase <CorrectionBase>`
 
 
 **Описание**

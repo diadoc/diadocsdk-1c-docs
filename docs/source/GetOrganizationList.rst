@@ -11,7 +11,7 @@ GetOrganizationList()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов
+:doc:`коллекция <Collection>` объектов
 :doc:`Organization <Organization>`.
 
 **Описание**

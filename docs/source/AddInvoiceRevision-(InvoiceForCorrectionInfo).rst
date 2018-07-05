@@ -11,7 +11,7 @@ AddInvoiceRevision
 
 **Возвращаемое значение**
 
-Объект :doc:`InvoiceRevisionInfo <InvoiceRevisionInfo>`
+:doc:`InvoiceRevisionInfo <InvoiceRevisionInfo>`
 
 
 **Описание**

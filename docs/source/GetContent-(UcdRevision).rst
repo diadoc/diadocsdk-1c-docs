@@ -11,7 +11,7 @@ GetContent()
 
 **Возвращаемое значение**
 
-Объект :doc:`UсdSellerContent <UсdSellerContent>`
+:doc:`UсdSellerContent <UсdSellerContent>`
 
 
 **Описание**

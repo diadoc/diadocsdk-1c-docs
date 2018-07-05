@@ -10,7 +10,7 @@
 
 -  **ForCorrection** (булево, чтение/запись) - признак того, является ли подписант подписантом корректировки
 
--  **ExtendedSignerDetailsToPost** (объект :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`, чтение/запись) - данные подписанта
+-  **ExtendedSignerDetailsToPost** (:doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`, чтение/запись) - данные подписанта
 
 -  **DocumentTitleType** (строка, чтение/запись) - тип титула документа
 

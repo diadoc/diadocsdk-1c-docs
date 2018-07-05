@@ -11,10 +11,10 @@ SendAsync()
 **Возвращаемое значение**
 
 
-Объект :doc:`PackageSendTaskAsyncResult <PackageSendTaskAsyncResult>`.
+:doc:`PackageSendTaskAsyncResult <PackageSendTaskAsyncResult>`.
 
 **Описание**
 
 
 Инициирует асинхронную операцию отправки сообщения с пакетом документов на сервер Диадок.
-Результатом асинхронной операции является объект :doc:`DocumentPackage <DocumentPackage>`.
+Результатом асинхронной операции является :doc:`DocumentPackage <DocumentPackage>`.

@@ -23,21 +23,21 @@
 
 - **Currency** (строка, чтение/запись, обязательно для заполнения. Числовая строка длиной 3 символа. Код должен содержаться в общероссийском классификаторе валют.) - код валюты
 
-- **Seller** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные продавца
+- **Seller** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные продавца
 
-- **Buyer** (объект :doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные покупателя
+- **Buyer** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение, обязательно для заполнения) - данные покупателя
 
-- **Signer** (объект :doc:`Signer <Signer>`, чтение, обязательно для заполнения) - данные подписанта документа
+- **Signer** (:doc:`Signer <Signer>`, чтение, обязательно для заполнения) - данные подписанта документа
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceCorrectionContent")
 
 - **Items** (:doc:`коллекция <Collection>` объектов :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`, чтение, обязательно для заполнения) - табличная часть корректировочного счета-фактуры
 
-- **TotalsInc** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к увеличению
+- **TotalsInc** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к увеличению
 
-- **TotalsDec** (объект :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
+- **TotalsDec** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - итоговая сумма к уменьшению
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение) - дополнительные сведения
 
 
 Методы объекта
@@ -56,11 +56,13 @@
    :name: Auto
    :hidden:
 
-   AddItem-(InvoiceCorrectionContent) <AddItem-(InvoiceCorrectionContent)>
-   InvoiceCorrectionItem <InvoiceCorrectionItem>
-   InvoiceTotalsDiff <InvoiceTotalsDiff> 
-   InvoiceItemFields <InvoiceItemFields>
-   AmountsDiff <AmountsDiff>  
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>
-   OriginalInvoice <OriginalInvoice>
-   AddOriginalInvoice <AddOriginalInvoice>
+   AddItem-(InvoiceCorrectionContent)
+   InvoiceCorrectionItem
+   InvoiceTotalsDiff
+   InvoiceItemFields
+   AmountsDiff
+   AddStructedAdditionalInfo
+   OriginalInvoice
+   AddOriginalInvoice
+   AddStructedAdditionalInfo (CorrectionContent)
+   AdditionalInfoItem (CorrectionContent)

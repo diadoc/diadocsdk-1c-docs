@@ -28,7 +28,7 @@ GetCounteragentListByStatusAsync(<Status>)
 **Возвращаемое значение**
 
 
-Объект :doc:`AsyncResult <AsyncResult>`.
+:doc:`AsyncResult <AsyncResult>`.
 
 **Описание**
 

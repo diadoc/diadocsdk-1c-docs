@@ -17,7 +17,7 @@ GetAddressForCounteragent(<key1S>, <addressTypeKey>)
 **Возвращаемое значение**
 
 
-Объект :doc:`AddressInfo <AddressInfo>`.
+:doc:`AddressInfo <AddressInfo>`.
 
 **Описание**
 

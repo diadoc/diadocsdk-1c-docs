@@ -11,7 +11,7 @@ GetCertificates()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов :doc:`PersonalCertificate <PersonalCertificate>`.
+:doc:`коллекция <Collection>` объектов :doc:`PersonalCertificate <PersonalCertificate>`.
 
 **Описание**
 

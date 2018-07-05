@@ -11,7 +11,7 @@ GetDocuments()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов, производных от
+:doc:`коллекция <Collection>` объектов, производных от
 :doc:`Document <Document>`
 
 **Описание**

@@ -19,7 +19,7 @@ CreateCloudSignTask(<Thumbprint>)
 **Возвращаемое значение**
 
 
-Объект :doc:`CloudSignTask <CloudSignTask>`.
+:doc:`CloudSignTask <CloudSignTask>`.
 
 **Описание**
 

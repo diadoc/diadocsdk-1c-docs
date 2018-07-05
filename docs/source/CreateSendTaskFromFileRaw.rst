@@ -50,7 +50,7 @@ CreateSendTaskFromFileRaw(<Path>, <Type>)
 **Возвращаемое значение**
 
 
-Объект :doc:`SendTask <SendTask>`.
+:doc:`SendTask <SendTask>`.
 
 **Описание**
 

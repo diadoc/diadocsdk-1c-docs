@@ -11,7 +11,7 @@ GetContent()
 **Возвращаемое значение**
 
 
-Объект :doc:`Torg12SellerContent <Torg12SellerContent>`.
+:doc:`Torg12SellerContent <Torg12SellerContent>`.
 
 **Описание**
 

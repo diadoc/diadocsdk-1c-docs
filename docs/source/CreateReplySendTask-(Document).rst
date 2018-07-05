@@ -25,7 +25,7 @@ CreateReplySendTask(<Type>)
 **Возвращаемое значение**
 
 
-Объект :doc:`ReplySendTask <ReplySendTask>`.
+:doc:`ReplySendTask <ReplySendTask>`.
 
 **Описание**
 

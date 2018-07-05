@@ -16,7 +16,7 @@ GetOrganizationById(<BoxId>)
 **Возвращаемое значение**
 
 
-Объект :doc:`Organization <Organization>`.
+:doc:`Organization <Organization>`.
 
 **Описание**
 

@@ -1,19 +1,18 @@
 ﻿InvoiceCorrectionRevisionToSend
 ===============================
 
-Объект представляет собой документ "исправление корректировочного счета-фактуры" на отправку 
-и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.
+Объект представляет собой формализованный документ на отправку "Исправление корректировочного счета-фактуры" в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567&rangeId=83296>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
 Свойства объекта
 ----------------
-
-- **Content** (чтение/запись) - содержимое документа, объект :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceCorrectionRevision")
 
 - **Comment** (строка, чтение/запись) - комментарий к документу
 
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+
+- **Content** (:doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`, чтение) - содержимое документа
 
 
 Методы отсутствуют.

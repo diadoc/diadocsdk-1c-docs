@@ -11,7 +11,7 @@ AddTransferBase()
 
 **Возвращаемое значение**
 
-Объект :doc:`TransferBase <TransferBase>`
+:doc:`TransferBase <TransferBase>`
 
 
 **Описание**

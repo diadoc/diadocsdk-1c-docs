@@ -11,7 +11,7 @@ AddItem()
 **Возвращаемое значение**
 
 
-Объект :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`.
+:doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`.
 
 **Описание**
 

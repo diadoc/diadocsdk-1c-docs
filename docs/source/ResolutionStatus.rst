@@ -8,7 +8,7 @@
 --------
 
 -  Type (строка, чтение) - тип статуса согласования
--  Author (объект :doc:`OrganizationUser <OrganizationUser>`, чтение) - ФИО согласователя
+-  Author (:doc:`OrganizationUser <OrganizationUser>`, чтение) - ФИО согласователя
 -  TargetDepartment (объект Department, чтение) - подразделение
    организации, в которое направлен запрос
 -  TargetUser (объект OrganizationUser, чтение) - пользователь,

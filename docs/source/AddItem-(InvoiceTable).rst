@@ -11,7 +11,7 @@ AddItem()
 
 **Возвращаемое значение**
 
-Объект :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`.
+:doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>`.
 
 
 **Описание**

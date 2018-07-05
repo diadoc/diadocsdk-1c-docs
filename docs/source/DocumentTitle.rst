@@ -10,9 +10,9 @@
 
 - **XsdUrl** (строка, чтение) - адрес метода, возвращающего файл XSD-схемы
 
-- **MetadataItems** (коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`) - описания метаданных документа
+- **MetadataItems** (:doc:`коллекция <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`) - описания метаданных документа
 
-- **EncryptedMetadataItems** (коллекция :doc:`Collection <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`) - описания метаданных для отправки зашифрованного документа
+- **EncryptedMetadataItems** (:doc:`коллекция <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`) - описания метаданных для отправки зашифрованного документа
 
 Методы отсутствуют
 

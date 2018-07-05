@@ -15,17 +15,17 @@
 
 - **TransferTextInfo** (строка, чтение/запись, строка длиной не более 1000 символов) - сведения о транспортировке и грузе
 
-- **Carrier** (объект :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - перевозчик
+- **Carrier** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - перевозчик
 
-- **Employee** (объект :doc:`Employee <Employee>`, чтение) - работник организации продавца
+- **Employee** (:doc:`Employee <Employee>`, чтение) - работник организации продавца
 
-- **OtherIssuer** (объект :doc:`OtherIssuer <OtherIssuer>`, чтение) - иное лицо
+- **OtherIssuer** (:doc:`OtherIssuer <OtherIssuer>`, чтение) - иное лицо
 
 - **CreatedThingTransferDate** (дата, чтение/запись) - дата передачи вещи, изготовленной по договору
 
 - **CreatedThingInfo** (строка, чтение/запись) - сведения о передаче вещи, изготовленной по договору
 
-- **AdditionalInfoId** (объект :doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
+- **AdditionalInfoId** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
 
 - **TransferBases** (:doc:`коллекция <Collection>` объектов :doc:`TransferBase <TransferBase>`, чтение) - основание отгрузки
 

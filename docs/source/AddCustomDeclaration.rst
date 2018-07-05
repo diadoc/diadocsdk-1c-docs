@@ -11,7 +11,7 @@ AddCustomDeclaration()
 
 **Возвращаемое значение**
 
-Объект :doc:`CustomDeclaration <CustomDeclaration>`
+:doc:`CustomDeclaration <CustomDeclaration>`
 
 
 **Описание**

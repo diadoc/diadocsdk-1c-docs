@@ -19,7 +19,7 @@ GetPersonalCertificates(<UserStore>)
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов типа
+:doc:`коллекция <Collection>` объектов типа
 :doc:`PersonalCertificate <PersonalCertificate>`.
 
 **Описание**

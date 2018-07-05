@@ -11,7 +11,7 @@ GetBuyerContent()
 
 **Возвращаемое значение**
 
-Объект :doc:`UtdBuyerContent <UtdBuyerContent>`.
+:doc:`UtdBuyerContent <UtdBuyerContent>`.
 
 
 **Описание**

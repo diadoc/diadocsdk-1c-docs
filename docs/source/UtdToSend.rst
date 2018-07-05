@@ -1,19 +1,18 @@
 ﻿UtdToSend
 =========
 
-Объект представляет собой Универсальный передаточный документ, подготовленный на отправку, и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.
-
+Объект представляет собой формализованный документ на отправку "Универсальный передаточный документ" в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.
 
 Свойства объекта
 ----------------
 
 - **Type** (строка, чтение) - тип документа (возвращает значение, зависимое от типа создаваемого документа: "UniversalTrasnferDocument", "UtdInvoice", "UtdTorg12" или "UtdAcceptanceCertificate")
 
-- **Content** (объект :doc:`UtdSellerContent <UtdSellerContent>`, чтение) - содержимое документа
-
 - **Comment** (строка, чтение/запись) - комментарий к документу
 
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+
+- **Content** (:doc:`UtdSellerContent <UtdSellerContent>`, чтение) - содержимое документа
 
 
 Методы отсутствуют.

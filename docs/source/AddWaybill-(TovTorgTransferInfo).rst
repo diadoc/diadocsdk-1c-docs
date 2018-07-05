@@ -11,7 +11,7 @@ AddWaybill()
 
 **Возвращаемое значение**
 
-Объект :doc:`Waybill <Waybill>`
+:doc:`Waybill <Waybill>`
 
 
 **Описание**

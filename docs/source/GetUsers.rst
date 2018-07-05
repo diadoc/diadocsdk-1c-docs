@@ -11,7 +11,7 @@ GetUsers()
 **Возвращаемое значение**
 
 
-Коллекция :doc:`Collection <Collection>` объектов типа
+:doc:`коллекция <Collection>` объектов типа
 :doc:`OrganizationUser <OrganizationUser>`.
 
 **Описание**

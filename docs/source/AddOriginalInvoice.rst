@@ -11,7 +11,7 @@ AddOriginalInvoice()
 **Возвращаемое значение**
 
 
-Объект :doc:`OriginalInvoice <OriginalInvoice>`.
+:doc:`OriginalInvoice <OriginalInvoice>`.
 
 **Описание**
 

@@ -11,7 +11,7 @@ CreatePackageSendTask()
 **Возвращаемое значение**
 
 
-Объект :doc:`PackageSendTask <PackageSendTask>`.
+:doc:`PackageSendTask <PackageSendTask>`.
 
 **Описание**
 

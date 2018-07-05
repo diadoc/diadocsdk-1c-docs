@@ -11,7 +11,7 @@ GetSenderSignature()
 **Возвращаемое значение**
 
 
-Объект :doc:`Signature <Signature>`
+:doc:`Signature <Signature>`
 
 **Описание**
 

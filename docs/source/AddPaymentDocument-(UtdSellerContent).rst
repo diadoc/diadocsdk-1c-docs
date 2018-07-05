@@ -11,7 +11,7 @@ AddPaymentDocument()
 
 **Возвращаемое значение**
 
-Объект :doc:`PaymentDocument <PaymentDocument>`
+:doc:`PaymentDocument <PaymentDocument>`
 
 
 **Описание**

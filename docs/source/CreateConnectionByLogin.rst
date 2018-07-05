@@ -17,7 +17,7 @@ CreateConnectionByLogin(<Login>, <Password>)
 **Возвращаемое значение**
 
 
-Объект :doc:`DiadocConnection <Connection>`.
+:doc:`DiadocConnection <Connection>`.
 
 **Описание**
 

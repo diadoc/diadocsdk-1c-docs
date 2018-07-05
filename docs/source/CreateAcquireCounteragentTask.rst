@@ -18,7 +18,7 @@ CreateAcquireCounteragentTask(<Path>)
 **Возвращаемое значение**
 
 
-Объект :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`.
+:doc:`AcquireCounteragentTask <AcquireCounteragentTask>`.
 
 **Описание**
 

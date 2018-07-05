@@ -10,11 +10,11 @@
 
 - **Title** (строка, чтение) - заголовок типа
 
-- **SupportedDocflows** (коллекция :doc:`Collection <Collection>` строк) - поддерживаемые типы документооборота
+- **SupportedDocflows** (:doc:`коллекция <Collection>` строк) - поддерживаемые типы документооборота
 
 - **RequiresFnsRegistration** (булево, чтение) - для работы требуется заявление участника ЭДО
 
-- **Functions** (коллекция :doc:`Collection <Collection>` объектов типа :doc:`DocumentFunction <DocumentFunction>`) - описания функций документа
+- **Functions** (:doc:`коллекция <Collection>` объектов типа :doc:`DocumentFunction <DocumentFunction>`) - описания функций документа
 
 Элементы коллекции **SupportedDocflows** могут принимать значения:
 

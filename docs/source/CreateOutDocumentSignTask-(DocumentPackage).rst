@@ -11,7 +11,7 @@ CreateOutDocumentSignTask()
 **Возвращаемое значение**
 
 
-Объект :doc:`OutDocumentSignTask <OutDocumentSignTask>`.
+:doc:`OutDocumentSignTask <OutDocumentSignTask>`.
 
 **Описание**
 

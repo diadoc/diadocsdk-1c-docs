@@ -25,13 +25,13 @@ CreateReplySendTask(<Type>)
 **Возвращаемое значение**
 
 
-Объект :doc:`ReplySendTask <ReplySendTask>`.
+:doc:`ReplySendTask <ReplySendTask>`.
 
 **Описание**
 
 
 Формирует задание для ответного действия с пакетом документов. В данном случае 
-содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет объект :doc:`PackageContent <PackageContent>`, 
+содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет :doc:`PackageContent <PackageContent>`, 
 который будет включать в себя набор контентов для каждого документа из пакета. Они будут связаны в пары "документ-контент" в 
 объекте :doc:`PackageContentItem <PackageContentItem>`. При этом контент будет являться объектом, производным от 
 :doc:`BaseContent <BaseContent>` и соответствующим типу выполняемого действия:

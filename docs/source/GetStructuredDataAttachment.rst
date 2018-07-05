@@ -11,7 +11,7 @@ GetStructuredDataAttachment()
 **Возвращаемое значение**
 
 
-Объект :doc:`StructuredAttachment <StructuredAttachment>`.
+:doc:`StructuredAttachment <StructuredAttachment>`.
 
 **Описание**
 

@@ -12,7 +12,7 @@ AddItem()
 **Возвращаемое значение**
 
 
-Объект :doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>`.
+:doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>`.
 
 **Описание**
 

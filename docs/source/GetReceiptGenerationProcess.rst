@@ -11,7 +11,7 @@ GetReceiptGenerationProcess()
 **Возвращаемое значение**
 
 
-Объект :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>`.
+:doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>`.
 
 **Описание**
 

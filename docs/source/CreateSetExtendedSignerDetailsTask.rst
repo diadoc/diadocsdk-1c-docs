@@ -16,7 +16,7 @@ CreateSetExtendedSignerDetailsTask(<CertificateThumbprint>)
 
 **Возвращаемое значение**
 
-Объект :doc:`SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>`, являющийся заданием на добавление или обновление данных подписанта в базе Диадок
+:doc:`SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>`, являющийся заданием на добавление или обновление данных подписанта в базе Диадок
 
 
 **Описание**

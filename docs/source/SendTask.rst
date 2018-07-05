@@ -20,10 +20,10 @@
    получателя
 -  **DelaySend** (булево, чтение/запись) признак того, что сообщение будет
    сохранено без отправки
--  **InitialDocuments** (объект :doc:`Collection <Collection>`, чтение) -
+-  **InitialDocuments** (:doc:`Collection <Collection>`, чтение) -
    список идентификаторов документов, на которые должен ссылаться
    отправляемый документ
--  **SubordinateDocuments** (объект :doc:`Collection <Collection>`, чтение) -
+-  **SubordinateDocuments** (:doc:`Collection <Collection>`, чтение) -
    список идентификаторов документов, которые должны ссылаться на
    отправляемый
 -  **IsInternal** (булево, чтение/запись) - признак того, что сообщение

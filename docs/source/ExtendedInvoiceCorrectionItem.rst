@@ -9,13 +9,13 @@
 
 - **Product** (строка, чтение/запись, обязательно для заполнения. Длина строка не более 1000 символов) - наименование товара
 
-- **OriginalValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения до корректировки
+- **OriginalValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения до корректировки
 
-- **CorrectedValues** (объект :doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения после корректировки
+- **CorrectedValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения после корректировки
 
-- **AmountsInc** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к увеличению
+- **AmountsInc** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к увеличению
 
-- **AmountsDec** (объект :doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
+- **AmountsDec** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
 
 - **ItemAccountDebit** (строка, чтение/запись) - корреспондирующие счета: дебет
 
