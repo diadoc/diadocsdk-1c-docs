@@ -1,5 +1,11 @@
 ﻿История изменений внешней компоненты
 ====================================
+v5.22.0 - 31.07.2018
+--------------------
+
+- У объекта :doc:`Document <Document>` появился метод SaveBuyerContent для сохранения только ответного титула двухтитульного документа.
+- :doc:`Исправлены ошибки <Bugs_5_22>`
+
 v5.21.10 - 05.07.2018
 --------------------
 
@@ -406,7 +412,7 @@ v5.0.0 - 03.07.2015
    - налогичные изменения произведены для :doc:`InvoiceItem <InvoiceItem>`
 
 - для объекта  :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
-   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo (CorrectionContent)>`
+   - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
    - налогичные изменения произведены для :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`
    - свойства  **Date**, **Number**, **InvoiceRevision Date**, **InvoiceRevisionNumber** удалены из объекта. Вместо них добавлено свойство **OriginalInvoices**
  
