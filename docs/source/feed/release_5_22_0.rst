@@ -13,6 +13,7 @@
 	- Метод :doc:`getDocumentEventList <GetDocumentEventList>` не возвращал события с типом "New" для документов, пришедших внутри патча к другому документу
 	- Метод :doc:`getDocumentEventList <GetDocumentEventList>` неверно определял DocumentId у некоторых :doc:`событий <DocumentEvent>`
 	- Метод :doc:`getDocumentEventList <GetDocumentEventList>` неверно определял тип события для сущности с Извещением о Получении документа получателем. Теперь для ИоП возвращается событие с типом Accept (было Confirmation)
+	- Некоторые методы игнорировали настройки прокси
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
