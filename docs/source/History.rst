@@ -3,7 +3,7 @@
 v5.22.3 - 31.08.2018
 --------------------
 
-- Объекту :doc:`PersonalCertificate <PersonalCertificate>` lобавлено поле **CanEncrypt**
+- Объекту :doc:`PersonalCertificate <PersonalCertificate>` добавлено поле **CanEncrypt**
 - :doc:`Исправлены ошибки <Bugs_5_22>`
 v5.22.2 - 20.08.2018
 --------------------
