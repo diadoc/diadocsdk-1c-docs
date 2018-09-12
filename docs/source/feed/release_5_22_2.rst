@@ -11,6 +11,6 @@
 - исправлены ошибки:
     - Исправлена генерация тэгов ИдПок и ИдОтпр в титуле отправителя акта формата @172 приказа
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_

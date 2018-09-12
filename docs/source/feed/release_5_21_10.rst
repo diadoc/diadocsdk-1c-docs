@@ -12,6 +12,6 @@
 	- метод **SaveAllContent** сохранял печатныю форму поверх одного из титулов документа, заменяя его
 	- метод **SaveAllContent** не мог сохранить файлы с длинным именем. Теперь имя файла обрезается до приемлемой длины
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_

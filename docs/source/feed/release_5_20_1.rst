@@ -7,6 +7,6 @@
 - исправлена ошибка, приводившая к завершению работы процесса при запуске :doc:`"магии" <ReceiptGenerationProcess>`. Проблема возникала при попытке обработать документ у которого для id-отправителя или id-получателя указан id-ящика для которого не существует id-организации.
 
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
