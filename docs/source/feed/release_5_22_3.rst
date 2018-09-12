@@ -11,6 +11,6 @@
     - :doc:`Подписанию извещений о получении <DocumentEvent>` документа со стороны контрагента вернули тип "Confirmation"
     - В поле объекта :doc:`УКД <Ucd>` **VatDec** возвращалось значение из **VatInc**
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_

@@ -1,4 +1,4 @@
-Релиз 5.21.10
+Релиз 5.22.0
 =============
 
 .. feed-entry::
@@ -15,6 +15,6 @@
 	- Метод :doc:`getDocumentEventList <GetDocumentEventList>` неверно определял тип события для сущности с Извещением о Получении документа получателем. Теперь для ИоП возвращается событие с типом Accept (было Confirmation)
 	- Некоторые методы игнорировали настройки прокси
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_

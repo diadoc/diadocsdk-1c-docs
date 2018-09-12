@@ -12,6 +12,6 @@
     - Неверное сериализовалось поле Total объекта :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, что приводило к непринятию Диадоком такого документа
     - В контенте :doc:`работы <Act552WorkItem>` с неуказанной ставкой НДС, если сумма НДС не указана, то ставка будет "Без НДС"; если сумма заполнена нулевым значением - ставка будет 0%;
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_

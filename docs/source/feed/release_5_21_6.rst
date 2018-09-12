@@ -6,6 +6,6 @@
 
 - возможность сохранения сгенерированных xml-файлов содержимого формализованных документов при отправке - свойства :doc:`PackageSendTask.SaveContentPath <PackageSendTask>` и :doc:`SendTask.SaveContentPath <SendTask>`
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
