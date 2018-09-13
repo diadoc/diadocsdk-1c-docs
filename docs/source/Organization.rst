@@ -1,8 +1,7 @@
 ﻿Организация
 ===========
 
-Объект Organization предназначен для работы с организацией на сервере
-Диадок. Позволяет:
+Объект Organization предназначен для работы с организацией на сервере Диадок. Позволяет:
 
 -  Работать со списком контрагентов. С помощью метода
    :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` можно
@@ -17,9 +16,9 @@
    :doc:`CreateSendTask <CreateSendTask>`,
    :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>`.
 
+
 Свойства объекта
 ----------------
-
 
 - **Id** (строка, чтение) - идентификатор организации в Диадоке
 
@@ -29,7 +28,7 @@
 
 - **Kpp** (строка, чтение) - КПП организации
 
-- **Departments** (:doc:`коллекция <Collection>` объектов :doc:`Department <Department>`, чтение) - список подразделений организации. Возвращаются подразделения, не имеющие родительских подразделений. Список дочерних подразделений можно получить, используя свойство Subdepartments объекта Department
+- **Departments** (:doc:`коллекция <Collection>` объектов :doc:`Department <Department>`, чтение) - подразделения, родительским подразделением которых является "Головное" подразделение
 
 - **AuthenticateType** (строка, чтение) - тип авторизации
 
@@ -47,9 +46,9 @@
 
 - **EncryptedDocumentsAllowed** (булево, чтение) - признак того, что для организации разрешена отправка зашифрованных документов
 
+
 Методы объекта
 --------------
-
 
 -  :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` - возвращает контрагентов, с которыми у организации установлены отношения
 
@@ -57,7 +56,7 @@
 
 -  :doc:`GetCounteragentById <GetCounteragentById>` - возвращает контрагента по его идентификатору
 
--  :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>` - возвращает список контрагентов по ИНН/КПП
+-  :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>` - Возвращает список ящиков организаций, у которых ИНН и КПП совпадают с заданными.
 
 -  :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` - инициирует асинхронную операцию получения списка контрагентов по списку ИНН
 
@@ -65,7 +64,7 @@
 
 -  :doc:`GetDocumentsTask <GetDocumentsTask>` - возвращает объект, который позволяет позволяет получить список документов, отправленных из выбранного ящика или пришедших в него
 
--  :doc:`CreateSendTask <CreateSendTask>` - позволяет получить задание для отправки документа
+-  :doc:`CreateSendTask <CreateSendTask>` - позволяет создать задание для отправки формализованного документа на сервер Диадок
 
 -  :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` - позволяет получить задание для отправки документа, загруженного из файла
 
