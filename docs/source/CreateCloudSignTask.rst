@@ -11,10 +11,9 @@ CreateCloudSignTask(<Thumbprint>)
 **Параметры**
 
 
--  <Thumbprint> (строка, обязательный) - отпечаток облачного сертификата пользователя.
+-  **<Thumbprint>** (строка, обязательный) - отпечаток облачного сертификата пользователя.
 
-Отпечаток облачной подписи можно получить из объекта :doc:`CloudCertificateInfo <CloudCertificateInfo>`,
-который является элементом свойства CloudCertificates объекта :doc:`DiadocConnection <Connection>`.
+Отпечаток облачной подписи можно получить из объекта :doc:`CloudCertificateInfo <CloudCertificateInfo>` :doc:`коллекции <Collection>`, возвращённой методом :doc:`DiadocConnection <Connection>`.:doc:`GetCloudCertificates() <GetCloudCertificates>`
 
 **Возвращаемое значение**
 
