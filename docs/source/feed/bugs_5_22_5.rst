@@ -12,6 +12,6 @@
 - У объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>` в Com версии отсутствовала коллекция :doc:`возникших ошибок <ReceiptError>`
 - Создание задания на отправку документа с помощью метода :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>` заканчивалось ошибкой поиска файла на диске.
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
