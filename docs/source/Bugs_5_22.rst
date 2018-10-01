@@ -44,8 +44,8 @@ v5.22.4 - 03.09.2018
 v5.22.5 - 01.10.2018
 --------------------
 
-- Не заполнялись поля Comment и Author :doc:`объекта Resolution <Resolution>` с типами "RevocationDisapprove" и "RevocationRequest"
+- Не заполнялись поля Comment и Author объекта :doc:`Resolution <Resolution>` с типами "RevocationDisapprove" и "RevocationRequest"
 - При подписании облачным сертификатом входящих однотитульных документов с запросом подписи в подпись попадал сам файл
 - Неверно определялся признак возможности шифрования сертификатом
-- Поведение методом GetOrganizationById, GetOrganizationByOrgId, GetCounteragentListByInnKpp, GetCounteragentListByInnList были не согласованы друг с другом и между AddIn и Com версиями компонент. Теперь результатом всегда является либо объект Counteragent, либо их коллекция.
-- У объекта ReceiptGenerationProcess в Com версии отсутствовала коллекция возникших ошибок
+- Поведение методов :doc:`GetCounteragentById <GetCounteragentById>`, :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>`, :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>`, :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` были не согласованы друг с другом и отличалось между AddIn и Com версиями компонент. Теперь результатом всегда является com-объект.
+- У объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>` в Com версии отсутствовала коллекция :doc:`возникших ошибок <ReceiptError>`
