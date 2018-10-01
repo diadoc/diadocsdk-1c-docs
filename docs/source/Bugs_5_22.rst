@@ -39,3 +39,13 @@ v5.22.4 - 03.09.2018
 --------------------
 
 - При вызове метода GetContent некоторых типов документов возникала ошибка "bad_weak_ptr"
+
+
+v5.22.5 - 01.10.2018
+--------------------
+
+- Не заполнялись поля Comment и Author :doc:`объекта Resolution <Resolution>` с типами "RevocationDisapprove" и "RevocationRequest"
+- При подписании облачным сертификатом входящих однотитульных документов с запросом подписи в подпись попадал сам файл
+- Неверно определялся признак возможности шифрования сертификатом
+- Поведение методом GetOrganizationById, GetOrganizationByOrgId, GetCounteragentListByInnKpp, GetCounteragentListByInnList были не согласованы друг с другом и между AddIn и Com версиями компонент. Теперь результатом всегда является либо объект Counteragent, либо их коллекция.
+- У объекта ReceiptGenerationProcess в Com версии отсутствовала коллекция возникших ошибок
