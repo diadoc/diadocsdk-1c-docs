@@ -49,3 +49,4 @@ v5.22.5 - 01.10.2018
 - Неверно определялся признак возможности шифрования сертификатом
 - Поведение методов :doc:`GetCounteragentById <GetCounteragentById>`, :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>`, :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>`, :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` были не согласованы друг с другом и отличалось между AddIn и Com версиями компонент. Теперь результатом всегда является com-объект.
 - У объекта :doc:`ReceiptGenerationProcess <ReceiptGenerationProcess>` в Com версии отсутствовала коллекция :doc:`возникших ошибок <ReceiptError>`
+- Создание задания на отправку документа с помощью метода :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>` заканчивалось ошибкой отсутствия файла на диске.
