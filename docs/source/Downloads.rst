@@ -6,13 +6,13 @@
 Текущие версии внешней компоненты
 --------------------------------------
 
-`Внешняя компонента для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ - версия 5.22.5.373
+`Внешняя компонента для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ - версия 5.23.0.374
 
-`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия 5.22.5.373
+`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия 5.23.0.374
 
-`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия 5.22.5.373
+`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия 5.23.0.374
 
-`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ - 5.22.5.373
+`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ - 5.23.0.374
 
 
 Редакции компоненты, поддержка которых прекращена
