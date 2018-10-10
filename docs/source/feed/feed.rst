@@ -42,3 +42,4 @@
    release_5_22_2
    release_5_22_3
    bugs_5_22_4
+   bugs_5_22_5
