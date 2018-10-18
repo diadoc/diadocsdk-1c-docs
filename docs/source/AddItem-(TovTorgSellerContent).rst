@@ -1,7 +1,7 @@
 ﻿AddItem 
 ========
 
-Метод объекта :doc:`TovTorgSellerContent <tovTorgSellerContent>`
+Метод объекта :doc:`TovTorgSellerContent <TovTorgSellerContent>`
 
 **Синтаксис**
 

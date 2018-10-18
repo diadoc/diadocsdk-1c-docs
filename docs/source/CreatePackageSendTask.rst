@@ -3,18 +3,24 @@
 
 Метод объекта :doc:`Organization <Organization>`
 
-**Синтаксис**
 
+**Синтаксис**
 
 CreatePackageSendTask()
 
-**Возвращаемое значение**
 
+**Возвращаемое значение**
 
 :doc:`PackageSendTask <PackageSendTask>`.
 
+
 **Описание**
 
+Позволяет создать задание для отправки пакета документов насервер Диадок.
 
-Позволяет создать задание для отправки пакета документов на
-сервер Диадок.
+
+.. toctree::
+   :name: Auto
+   :hidden:
+   
+   PackageSendTask <PackageSendTask>

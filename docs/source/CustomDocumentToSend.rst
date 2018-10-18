@@ -3,45 +3,35 @@
 
 Объект представляет собой документ на отправку произвольного типа и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
-Свойства объекта
-----------------
+
+Свойства
+--------
 
 - **Type** (строка, чтение) - тип документа (возвращает строку "Document")
-
 - **Comment** (строка, чтение/запись) - комментарий к документу
-
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
-
 - **FileName** (строка, чтение) - имя файла вложения
-
 - **NeedRecipientSignature** (булево, чтение/запись) - флаг, обозначающий запрос подписи получателя под отправляемым документом
-
 - **CustomData** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - список пар вида «ключ-значение», содержащих произвольные данные по документу
-
 - **TypeNamedId** (строка, чтение/запись) - строковой идентификатор типа документа. Доступные типы можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
-
 - **Function** (строка, чтени/запись) - идентификатор функции документа. Обязательно при отправке зашифрованных документов
-
 - **Version** (строка, чтение/запись) - идентификатор версии документа. Обязательно при отправке зашифрованных документов
-
 - **Metadata** (:doc:`коллекция <Collection>` объектов :doc:`MetadataItem <MetadataItem>`, чтение) - список пар вида "ключ-значение", содержащих метаданные документа. Каждая пара задается структурой :doc:`MetadataItem <MetadataItem>`. Список доступных метаданных для типа можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`
-
 - **WorkflowId** (строка, чтение/запись) - идентификатор вида документооборота. Список допустимых видов документооборота для типа можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`. Описание видов документооборота доступно на странице :doc:`DocumentWorkflow <DocumentWorkflow>`
-
 - **IsEncrypted** (булево, чтение/запись) - флаг, означающий, что документ передается в зашифрованном виде. Список версий, для которых поддерживается отправка в зашифрованном виде, можно взять из метода :doc:`GetDocumentTypes <GetDocumentTypes>`
-
 - **Content** (объект производный от :doc:`BaseContent <BaseContent>`, чтение) - объектное представление содержимого документа "любого типа"
 
-Методы объекта
---------------
+
+Методы
+------
 
 - :doc:`AddCustomData <AddCustomData-(CustomDocumentToSend)>` - добавляет элемент произвольных данных в коллекцию **CustomData**
 
-- :doc:`AddMetadata <AddMetadata-(CustomDocumentToSend)>` - добавляет элемент метаданных в коллекцию **Metadata**
+- :doc:`AddMetadata <AddMetadata>` - добавляет элемент метаданных в коллекцию **Metadata**
 
 .. toctree::
    :name: Auto
    :hidden:
 
-   AddCustomData-(CustomDocumentToSend)
-   AddMetadata-(CustomDocumentToSend)
+   AddCustomData <AddCustomData-(CustomDocumentToSend)>
+   AddMetadata <AddMetadata>

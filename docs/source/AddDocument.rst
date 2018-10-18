@@ -3,8 +3,8 @@
 
 Метод объекта :doc:`PackageSendTask <PackageSendTask>`
 
-**Синтаксис**
 
+**Синтаксис**
 
 AddDocument(<Type>)
 
@@ -35,8 +35,7 @@ AddDocument(<Type>)
 
 **Возвращаемое значение**
 
-Объект документа на отправку, производный от объекта :doc:`DocumentToSend <DocumentToSend>` и 
-соответствующий указанному типу:
+Объект документа на отправку, производный от объекта :doc:`DocumentToSend <DocumentToSend>` и соответствующий указанному типу:
 
 -  :doc:`InvoiceToSend <InvoiceToSend>` - для типа Invoice
 

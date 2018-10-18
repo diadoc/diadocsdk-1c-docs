@@ -1,5 +1,5 @@
 ﻿SetAndValidateAddressForCounteragent 
-=============================
+====================================
 
 Метод объекта :doc:`Organization <Organization>`
 
