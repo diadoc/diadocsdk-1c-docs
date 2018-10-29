@@ -6,12 +6,12 @@ v5.24.0 - 29.10.2018
 
 - Добавлена возможность работы с шаблонами документов
 - Добавлены объекты:
-    - doc`TemplateSendTask <TemplateSendTask>`
-    - doc`TemplateToSend <TemplateToSend>`
-    - doc`TransformTemplateTask <TransformTemplateTask>`
-    - doc`Template <Template>`
-    - doc`DocumentTransformation <DocumentTransformation>`
-    - doc`Entity <Entity>`
+    - :doc:`TemplateSendTask <TemplateSendTask>`
+    - :doc:`TemplateToSend <TemplateToSend>`
+    - :doc:`TransformTemplateTask <TransformTemplateTask>`
+    - :doc:`Template <Template>`
+    - :doc:`DocumentTransformation <DocumentTransformation>`
+    - :doc:`Entity <Entity>`
 - :doc:`Исправлены ошибки <Bugs_5_24>`
 
 v5.23.0 - 10.10.2018

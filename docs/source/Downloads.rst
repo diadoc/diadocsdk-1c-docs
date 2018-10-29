@@ -8,9 +8,9 @@
 
 `Внешняя компонента для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ - версия 5.24.0.377
 
-`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия версия 5.24.0.377
+`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия 5.24.0.377
 
-`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия версия 5.24.0.377
+`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия 5.24.0.377
 
 `COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ - версия 5.24.0.377
 

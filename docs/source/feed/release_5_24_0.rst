@@ -6,12 +6,12 @@
 
 - Добавлена возможность работы с шаблонами документов
 - Добавлены объекты:
-    - doc`TemplateSendTask <TemplateSendTask>`
-    - doc`TemplateToSend <TemplateToSend>`
-    - doc`TransformTemplateTask <TransformTemplateTask>`
-    - doc`Template <Template>`
-    - doc`DocumentTransformation <DocumentTransformation>`
-    - doc`Entity <Entity>`
+    - :doc:`TemplateSendTask <TemplateSendTask>`
+    - :doc:`TemplateToSend <TemplateToSend>`
+    - :doc:`TransformTemplateTask <TransformTemplateTask>`
+    - :doc:`Template <Template>`
+    - :doc:`DocumentTransformation <DocumentTransformation>`
+    - :doc:`Entity <Entity>`
 - исправлены ошибки:
     - Исправлена ошибка "Could not parse documentTitleType" при запросе или отправке параметров подписанта
     - Отказ в подписи теперь всегда отправляется в виде XmlSignatureRejection
