@@ -1,7 +1,7 @@
 ﻿GetContent 
 ==========
 
-Метод объекта :doc:`UсdRevision <UсdRevision>`.
+Метод объекта :doc:`UcdRevision <UcdRevision>`
 
 
 **Синтаксис**
@@ -11,9 +11,9 @@ GetContent()
 
 **Возвращаемое значение**
 
-:doc:`UсdSellerContent <UсdSellerContent>`
+:doc:`UcdSellerContent <UcdSellerContent>`
 
 
 **Описание**
 
-Возвращает содержание титула продавца универсального корректировочного документа.
+Возвращает содержание титула продавца универсального корректировочного документа

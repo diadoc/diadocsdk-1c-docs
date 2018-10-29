@@ -1,6 +1,19 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.24.0 - 29.10.2018
+--------------------
+
+- Добавлена возможность работы с шаблонами документов
+- Добавлены объекты:
+    - doc`TemplateSendTask <TemplateSendTask>`
+    - doc`TemplateToSend <TemplateToSend>`
+    - doc`TransformTemplateTask <TransformTemplateTask>`
+    - doc`Template <Template>`
+    - doc`DocumentTransformation <DocumentTransformation>`
+    - doc`Entity <Entity>`
+- :doc:`Исправлены ошибки <Bugs_5_24>`
+
 v5.23.0 - 10.10.2018
 --------------------
 
@@ -19,6 +32,7 @@ v5.22.3 - 31.08.2018
 
 - Объекту :doc:`PersonalCertificate <PersonalCertificate>` добавлено поле **CanEncrypt**
 - :doc:`Исправлены ошибки <Bugs_5_22>`
+
 v5.22.2 - 20.08.2018
 --------------------
 
@@ -42,7 +56,7 @@ v5.22.0 - 31.07.2018
 - :doc:`Исправлены ошибки <Bugs_5_22>`
 
 v5.21.10 - 05.07.2018
---------------------
+---------------------
 
 - Поле **Type** объекта :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` больше не имеет значения по умолчанию
 - В документации по контентам отправки формализованных документов добавлены ссылки на формат

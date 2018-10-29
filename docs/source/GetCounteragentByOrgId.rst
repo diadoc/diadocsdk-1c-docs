@@ -1,5 +1,5 @@
 ﻿GetCounteragentByOrgId
-===================
+======================
 
 Метод объекта :doc:`Organization <Organization>`
 
