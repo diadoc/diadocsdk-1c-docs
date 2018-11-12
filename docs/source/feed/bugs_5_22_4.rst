@@ -5,7 +5,7 @@
    :date: 2018-09-03
 
 Исправлены ошибки:
-- При вызове метода GetContent некоторых типов документов возникала ошибка "bad_weak_ptr"
+    - При вызове метода GetContent некоторых типов документов возникала ошибка "bad_weak_ptr"
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
