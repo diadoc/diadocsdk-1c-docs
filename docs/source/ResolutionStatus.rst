@@ -9,9 +9,9 @@
 
 -  Type (строка, чтение) - тип статуса согласования
 -  Author (:doc:`OrganizationUser <OrganizationUser>`, чтение) - ФИО согласователя
--  TargetDepartment (объект Department, чтение) - подразделение
+-  TargetDepartment (объект :doc:`Department <Department>`, чтение) - подразделение
    организации, в которое направлен запрос
--  TargetUser (объект OrganizationUser, чтение) - пользователь,
+-  TargetUser (объект :doc:`OrganizationUser <OrganizationUser>`, чтение) - пользователь,
    которому направлен запрос
 
 Свойство Type принимает одно из следующих значений:
