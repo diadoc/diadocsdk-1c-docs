@@ -58,7 +58,7 @@
 -  :doc:`CreateTemplateSendTask <CreateTemplateSendTask>` - возвращает :doc:`объект <TemplateSendTask>`, с помощью которого можно отправить :doc:`шаблон пакета документов <Template>`
 -  :doc:`GetTemplate <GetTemplate>` - возвращает :doc:`шаблон <Template>` по его идентификатору
 -  :doc:`CreateTransformTemplateTask` - возвращает :doc:`объект <TransformTemplateTask>`, с помощью которого можно из шаблона создать :doc:`документы <DocumentPackage>`
-
+-  :doc:`RecycleDraft <RecycleDraft>` - удаляет черновик
 
 .. toctree::
    :name: Auto
@@ -96,3 +96,4 @@
    CreateTemplateSendTask <CreateTemplateSendTask>
    GetTemplate <GetTemplate>
    CreateTransformTemplateTask
+   RecycleDraft<RecycleDraft>
