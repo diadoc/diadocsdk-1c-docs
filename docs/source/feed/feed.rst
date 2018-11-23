@@ -45,3 +45,4 @@
    bugs_5_22_5
    release_5_23_0
    release_5_24_0
+   release_5_25_0
