@@ -1,37 +1,27 @@
-﻿Как работать с облачной подписью
-================================
+﻿Как работать с электронной подписью СКБ Контур
+==============================================
 
-Если у пользователя имеется облачная подпись, он может использовать ее 
-для подписания исходящих и входящих документов (о получении списка облачных 
-сертификатов см. :doc:`GetCloudCertificates <GetCloudCertificates>`).
+Если у пользователя имеется электронная подпись СКБ Контур, он может использовать ее для подписания исходящих и входящих документов (о получении списка электронных подписей см. :doc:`GetCloudCertificates <GetCloudCertificates>`).
 
 
-Как подписать исходящие документы облачной подписью
----------------------------------------------------
+Как подписать исходящие документы электронной подписью СКБ Контур
+-----------------------------------------------------------------
 
-Для того, чтобы отправить документ и подписать его облачной подписью, нужно:
+Для того, чтобы отправить документ и подписать его электронной подписью, нужно:
  
--  создать задание на отправку методом :doc:`CreateSendTask <CreateSendTask>` или 
-   :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` объекта :doc:`Organization <Organization>` 
-   и заполнить параметры отправки документа;
+-  создать задание на отправку методом :doc:`CreateSendTask <CreateSendTask>` или :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` объекта :doc:`Organization <Organization>` и заполнить параметры отправки документа;
 
--  получить список облачных сертификатов пользователя методом :doc:`GetCloudCertificates <GetCloudCertificates>` 
-   объекта :doc:`DiadocConnection <Connection>`;
+-  получить список доступных пользователю сертификатов методом :doc:`GetCloudCertificates <GetCloudCertificates>` объекта :doc:`DiadocConnection <Connection>`;
 
--  создать задание на облачную подпись методом :doc:`CreateCloudSignTask <CreateCloudSignTask>` 
-   объекта :doc:`DiadocConnection <Connection>`, указав в качестве параметра отпечаток нужного облачного сертификата;
+-  создать задание на подписание методом :doc:`CreateCloudSignTask <CreateCloudSignTask>` объекта :doc:`DiadocConnection <Connection>`, указав в качестве параметра отпечаток нужного сертификата;
 
--  добавить содержимое документа в задание на облачную подпись методом метод :doc:`AddContent <AddContent>` 
-   объекта :doc:`CloudSignTask <CloudSignTask>`;
+-  добавить содержимое документа в задание на подписание методом метод :doc:`AddContent <AddContent>` объекта :doc:`CloudSignTask <CloudSignTask>`;
 
--  подписать документ, содержимое которого добавлено в задание на облачную подпись, 
-   последовательными вызвами методов :doc:`Sign <Sign>` и :doc:`Confirm <Confirm>` объекта 
-   :doc:`CloudSignTask <CloudSignTask>`;
+-  подписать документ, содержимое которого добавлено в задание на подписание, последовательными вызвами методов :doc:`Sign <Sign>` и :doc:`Confirm <Confirm>` объекта :doc:`CloudSignTask <CloudSignTask>`;
 
 -  отправить документ.
 
-Например, следующая процедура позволяет отправить контрагенту счет-фактуру, 
-подписанную облачной подписью:
+Например, следующая процедура позволяет отправить контрагенту счет-фактуру, подписанную электронной подписью СКБ Контур:
 
 ::
 
@@ -79,27 +69,20 @@
             КонецПроцедуры
           
 
-Как подписать входящие документы облачной подписью
---------------------------------------------------
+Как подписать входящие документы электронной подписью СКБ Контур
+----------------------------------------------------------------
 
-Для подписания входящего документа облачной подписью, нужно:
+Для подписания входящего документа электронной подписью СКБ Контур, нужно:
 
--  создать ответное задание на отправку методом :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` 
-   объекта :doc:`Document <Document>` или методом :doc:`CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>` 
-   объекта :doc:`DocumentPackage <DocumentPackage>` и заполнить параметры отправки ответного документа;
+-  создать ответное задание на отправку методом :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` объекта :doc:`Document <Document>` или методом :doc:`CreateReplySendTask <CreateReplySendTask-(DocumentPackage)>` объекта :doc:`DocumentPackage <DocumentPackage>` и заполнить параметры отправки ответного документа;
 
--  получить список облачных сертификатов пользователя методом :doc:`GetCloudCertificates <GetCloudCertificates>` 
-   объекта :doc:`DiadocConnection <Connection>`;
+-  получить список доступных пользователю сертификатов методом :doc:`GetCloudCertificates <GetCloudCertificates>` объекта :doc:`DiadocConnection <Connection>`;
 
--  создать задание на облачную подпись методом :doc:`CreateCloudSignTask <CreateCloudSignTask>` 
-   объекта :doc:`DiadocConnection <Connection>`, указав в качестве параметра отпечаток нужного облачного сертификата;
+-  создать задание на подписание методом :doc:`CreateCloudSignTask <CreateCloudSignTask>` объекта :doc:`DiadocConnection <Connection>`, указав в качестве параметра отпечаток нужного сертификата;
 
--  добавить содержимое ответного документа в задание на облачную подпись методом метод :doc:`AddContent <AddContent>` 
-   объекта :doc:`CloudSignTask <CloudSignTask>`;
+-  добавить содержимое ответного документа в задание на подписание методом метод :doc:`AddContent <AddContent>` объекта :doc:`CloudSignTask <CloudSignTask>`;
 
--  подписать ответный документ, содержимое которого добавлено в задание на облачную подпись, 
-   последовательными вызвами методов :doc:`Sign <Sign>` и :doc:`Confirm <Confirm>` объекта 
-   :doc:`CloudSignTask <CloudSignTask>`;
+-  подписать ответный документ, содержимое которого добавлено в задание на подписание, последовательными вызвами методов :doc:`Sign <Sign>` и :doc:`Confirm <Confirm>` объекта :doc:`CloudSignTask <CloudSignTask>`;
 
 -  отправить ответный документ.
 
