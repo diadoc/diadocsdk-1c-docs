@@ -4,19 +4,19 @@
 `RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
 
 Текущие версии внешней компоненты
---------------------------------------
+---------------------------------
 
-`Внешняя компонента для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ - версия 5.25.0.394
+`Внешняя компонента для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ - версия 5.25.1.397
 
-`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия 5.25.0.394
+`Внешняя компонента для 1С, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ - версия 5.25.1.397
 
-`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия 5.25.0.394
+`COM-компонента для встраивания в произвольные системы <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ - версия 5.25.1.397
 
-`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ - 5.25.0.394
+`COM-компонента для встраивания в произвольные системы, для 64-х битных приложений <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ - 5.25.1.397
 
 
 Редакции компоненты, поддержка которых прекращена
---------------------------------------------------------------------
+-------------------------------------------------
 
 **v 4.0**
 

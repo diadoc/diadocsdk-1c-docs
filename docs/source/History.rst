@@ -1,6 +1,12 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.25.1 - 10.12.2018
+--------------------
+
+- Добавлен :doc:`метод воостановления удалённого документа <RestoreDocument>`
+- :doc:`Исправлены ошибки <Bugs_5_25>`
+
 v5.25.0 - 23.11.2018
 --------------------
 
@@ -413,13 +419,10 @@ v5.5 - 08.04.2016
 -----------------------
 
 - Добавлена возможность для отправки пакета документов:
-    - в объекте :doc:`Organization <Organization>` добавлен метод :doc:`CreatePackageSendTask <CreatePackageSendTask>`
-      для создания задания на отправку пакета документов, который возвращает :doc:`PackageSendTask <PackageSendTask>`.
+    - в объекте :doc:`Organization <Organization>` добавлен метод :doc:`CreatePackageSendTask <CreatePackageSendTask>` для создания задания на отправку пакета документов, который возвращает :doc:`PackageSendTask <PackageSendTask>`.
     - добавлен :doc:`PackageSendTask <PackageSendTask>` для работы с заданием на отправку пакета документов.
-    - добавлен :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для
-      работы с документами на отправку, входящими в пакет.
-    - добавлен :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на облачную подпись содержимого 
-      всех документов из пакета на отправку.
+    - добавлен :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для работы с документами на отправку, входящими в пакет.
+    - добавлен :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на подпись содержимого сертификатом электронной подписи СКБ Контур всех документов из пакета на отправку.
 - В :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
   авторизованном пользователе.
 - В :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
@@ -453,11 +456,9 @@ v5.3 - 21.12.2015
 v5.2.0 - 01.12.2015
 -----------------------
 
-- Добавлена возможность подписания документов облачной подписью:
-    - добавлен метод :doc:`GetCloudCertificates <GetCloudCertificates>` в :doc:`DiadocConnection <Connection>` для 
-      получения облачных сертификатов пользователя
-    - добавлены объекты: :doc:`CloudCertificateInfo <CloudCertificateInfo>` (для информации об облачном сертификате),
-      :doc:`CloudSignTask <CloudSignTask>` (для задание на подписание документов облачной подписью).
+- Добавлена возможность подписания документов электронной подписью СКБ Контур:
+    - добавлен метод :doc:`GetCloudCertificates <GetCloudCertificates>` в :doc:`DiadocConnection <Connection>` для получения списка сертификатов СКБ Контур, доступных пользователю
+    - добавлены объекты: :doc:`CloudCertificateInfo <CloudCertificateInfo>` (для информации о сертификате СКБ Контур), :doc:`CloudSignTask <CloudSignTask>` (для задание на подписание документов электронной подписью СКБ Контур).
 - :doc:`Исправлены ошибки <Bugs_5_2>`
 
 

@@ -1,17 +1,17 @@
-﻿CreateReplySendTask 
+﻿CreateReplySendTask
 ===================
 
 Метод объекта :doc:`Document <Document>`.
 
-**Синтаксис**
 
+**Синтаксис**
 
 CreateReplySendTask(<Type>)
 
+
 **Параметры**
 
--  <Type> (строка, обязательный) - тип ответного действия. В случае, если тип не указан, по умолчанию будет выполняться действие "AcceptDocument".
-
+-  <Type> (строка) - тип ответного действия. В случае, если тип не указан, по умолчанию будет выполняться действие "AcceptDocument".
 
 Параметр Type может принимать одно из следующих значений:
 
@@ -24,29 +24,26 @@ CreateReplySendTask(<Type>)
 
 **Возвращаемое значение**
 
-
 :doc:`ReplySendTask <ReplySendTask>`.
+
 
 **Описание**
 
-
-Формирует задание для ответного действия с документом. В данном случае 
-содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет объект, производный от 
-:doc:`BaseContent <BaseContent>`, соответствующий типу выполняемого действия:
+Формирует задание для ответного действия с документом. В данном случае содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет объект, производный от :doc:`BaseContent <BaseContent>`, соответствующий типу выполняемого действия:
 
   -  для действия "AcceptDocument":
 
-     - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате ФНС"
-     - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа 
-       "акт о выполнении работ в формате ФНС"
+     - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 172 приказа ФНС"
+     - :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 551 приказа ФНС"
+     - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа "акт о выполнении работ в 172 формате ФНС"
+     - :doc:`Act552BuyerContent <Act552BuyerContent>` - титул покупателя для документа "акт о выполнении работ в 552 формате ФНС"
      - :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для универсального передаточного документа
      - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
 
+
   -  для действия типа "RejectDocument":
 
-     - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для формализованных документов
-     - :doc:`RejectionContent <RejectionContent>` - для неформализованных документов
-
+     - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - формализованный отказ в подписи. Для любых документов
 
   -  для действия типа "CorrectionRequest":
 

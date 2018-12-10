@@ -36,6 +36,7 @@
 -  :doc:`CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>` - создает :doc:`запрос на приглашение контрагента к сотрудничеству <AcquireCounteragentTask>`
 -  :doc:`GetDocumentById <GetDocumentById>` - возвращает :doc:`документ <Document>` в ящике по его идентификатору
 -  :doc:`GetDocumentsTask <GetDocumentsTask>` - возвращает :doc:`объект <DocumentsTask>`, который позволяет позволяет получить :doc:`список <Collection>` исходящих и отправленных :doc:`документов <Document>` текущего ящика
+-  :doc:`RestoreDocument <RestoreDocument>` - восстанавливает удалённый документ
 -  :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` - возвращает :doc:`объект <ReceiptGenerationProcess>`, с помощью которого можно запустить процесс автоматической отправки извещений о получении документов в текущем ящике
 -  :doc:`GetDocumentEventList <GetDocumentEventList>` - возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике
 -  :doc:`CreateSendTask <CreateSendTask>` - возвращает :doc:`объект <SendTask>`, с помощью которого можно отправить формализованный :doc:`документ <DocumentToSend>`

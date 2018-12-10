@@ -11,9 +11,9 @@ CreateCloudSignTask(<Thumbprint>)
 **Параметры**
 
 
--  **<Thumbprint>** (строка, обязательный) - отпечаток облачного сертификата пользователя.
+-  **<Thumbprint>** (строка, обязательный) - отпечаток сертификата.
 
-Отпечаток облачной подписи можно получить из объекта :doc:`CloudCertificateInfo <CloudCertificateInfo>` :doc:`коллекции <Collection>`, возвращённой методом :doc:`DiadocConnection <Connection>`.:doc:`GetCloudCertificates() <GetCloudCertificates>`
+Отпечаток электронной подписи СКБ Контур можно получить из объекта :doc:`CloudCertificateInfo <CloudCertificateInfo>` :doc:`коллекции <Collection>`, возвращённой методом :doc:`DiadocConnection <Connection>`.:doc:`GetCloudCertificates() <GetCloudCertificates>`
 
 **Возвращаемое значение**
 
@@ -23,4 +23,4 @@ CreateCloudSignTask(<Thumbprint>)
 **Описание**
 
 
-Позволяет создать задание для подписания облачной подписью набора документов.
+Позволяет создать задание для подписания электронной подписью СКБ Контур набора документов.
