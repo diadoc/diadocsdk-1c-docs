@@ -31,7 +31,7 @@ AddDocument(<Type>)
 - UcdInvoiceCorrection
 - TovTorg
 - XmlAcceptanceCertificate552
-- значения AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02, act_05_01_01, act_05_01_02, invoice_05_01_01, invoice_05_01_03, invoice_05_02_01, invoicecor_05_01_03, invoicecor_05_02_01, torg12_05_01_01, torg12_05_01_02)
+- значения AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, utd_05_01_04, utd_05_01_05, ucd_05_01_01, ucd_05_01_02, ucd_05_01_03, rezru_05_01_01, rezru_05_01_02, tovtorg_05_01_02, tovtorg_05_01_04, act_05_01_01, act_05_01_02, invoice_05_01_01, invoice_05_01_03, invoice_05_02_01, invoice_05_02_02, invoicecor_05_01_03, invoicecor_05_02_01, invoicecor_05_02_02, torg12_05_01_01, torg12_05_01_02)
 
 **Возвращаемое значение**
 
