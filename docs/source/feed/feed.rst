@@ -49,3 +49,4 @@
    bugs_5_24_2
    release_5_25_0
    release_5_25_1
+   release_5_25_2
