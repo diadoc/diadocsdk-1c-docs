@@ -9,6 +9,6 @@
     - При подписании черновика документ уходил не пропатченный. Частый сценарий - неверный подписант в xml документа
     - Подписание входящего документа с помощью Контур.Сертификата заканчивалось ошибкой ReplySendTask.Send: "Для подписания и отправки юридически значимого документа необходимо выполнить вход по сертификату"
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
