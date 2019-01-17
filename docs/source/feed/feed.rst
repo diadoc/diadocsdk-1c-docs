@@ -50,3 +50,4 @@
    release_5_25_0
    release_5_25_1
    release_5_25_2
+   bugs_5_25_3
