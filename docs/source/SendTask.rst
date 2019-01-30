@@ -72,8 +72,6 @@
 
 -  :doc:`SaveContent <SaveContent-(SendTask)>` - на основании содержания документа формирует файл документа и сохраняет его на диск
 
--  :doc:`ValidateContent <ValidateContent-(SendTask)>` - проверяет содержание документа на корректность заполнения
-
 -  :doc:`AddStructuredDataAttachment <AddStructuredDataAttachment>` - добавляет файл со структурированными данными в отправляемый документ
 
 -  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>` - добавляет дополнительный идентификатор 1С для документа
@@ -89,7 +87,6 @@
    Send <Send-(SendTask)>
    SendAsync <SendAsync>
    SaveContent <SaveContent-(SendTask)>
-   ValidateContent <ValidateContent-(SendTask)>
    AddStructuredDataAttachment <AddStructuredDataAttachment>
    AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>
    AddEncryptCertificate <AddEncryptCertificate-(SendTask)>
