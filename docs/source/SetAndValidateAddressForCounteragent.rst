@@ -38,7 +38,7 @@ SetAndValidateAddressForCounteragent(<key1S>, <addressTypeKey>, <isForeign>, <zi
 **Возвращаемое значение**
 
 
-:doc:`коллекция <Collection>` объектов :doc:`ValidationError <ValidationError>` - результаты валидации.
+:doc:`Коллекция <Collection>` объектов :doc:`ValidationError <ValidationError>` - результаты валидации.
 
 **Описание**
 
