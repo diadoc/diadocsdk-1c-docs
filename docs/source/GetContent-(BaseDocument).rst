@@ -1,4 +1,4 @@
-﻿GetContent 
+﻿GetContent
 ==========
 
 Метод объекта :doc:`BaseDocument <BaseDocument>`.

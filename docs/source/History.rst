@@ -1,13 +1,24 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.26.0 - 04.02.2019
+--------------------
 
-v5.25.4 - 21.01.201
+- Добавлена возможность постановки/снятия документов с маршрута согласования:
+    - у объекта :doc:`Organization <Organization>` появился метод :doc:`GetResolutionRoutes() <GetResolutionRoutes>`
+    - появился объект :doc:`маршрута согласования <Route>`
+    - у объекта :doc:`Document <Document>` появилось поле RouteId
+    - у объектов :doc:`Document <Document>` и :doc:`DocumentPackage <DocumentPackage>` появились методы :doc:`AssignToResolutionRoute(RouteId[, Comment]) <AssignToResolutionRoute>` и :doc:`RemoveFromResolutionRoute(RouteId[, Comment]) <RemoveFromResolutionRoute>`
+
+- Методы :doc:`ReplySendTask.ValidateContent() <ValidateContent-(ReplySendTask)>` и :doc:`SendTask.ValidateContent() <ValidateContent-(SendTask)>` всегда в результате содержат оповещение, что метод устарел
+- :doc:`Исправлены ошибки <Bugs_5_26>`
+
+v5.25.4 - 21.01.2019
 --------------------
 
 - :doc:`Исправлены ошибки <Bugs_5_25>`
 
-v5.25.3 - 17.01.201
+v5.25.3 - 17.01.2019
 --------------------
 
 - :doc:`Исправлены ошибки <Bugs_5_25>`
