@@ -60,7 +60,7 @@
 
                 // Для простоты рассмотрим случай, когда отправитель шаблона является получателем документа
                 SendedTemplate = ОтправитьШаблонУПДСЧФДОП(Organization.Id, CounterAgent.Id, CounterAgent.Id, Organization.Id, "C:\sellertitle.xml", "C:\buyertitle.xml");
-                TemplateId = SendedTemplate.TemplateId
+                TemplateId = SendedTemplate.TemplateId;
                 
                 //
                 //Прошло некоторое время, чтобы контрагент успел обработать шаблон
