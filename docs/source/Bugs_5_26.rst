@@ -4,7 +4,7 @@
 v5.26.2 - 12.03.2019
 --------------------
 
-- Утечка памяти в Organization.GetCounteragents приводящая к падению приложения
+- Утечка памяти в :doc:`Organization.GetCounteragentListByInnList <GetCounteragentListByInnList>` приводящая к падению приложения
 
 v5.26.1 - 07.03.2019
 --------------------
