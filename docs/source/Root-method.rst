@@ -27,6 +27,8 @@
 
 -  :doc:`TestConnection <TestConnection>` - проверяет возможность соединения с сервером Диадока, используя установленные параметры
 
+-  :doc:`TestConnection2 <TestConnection2>` - проверяет возможность соединения с сервером Диадока, используя установленные параметры
+
 -  :doc:`GetVersion <GetVersion>` - возвращает текущую версию внешней компоненты
 
 -  :doc:`GetPersonalCertificates <GetPersonalCertificates>` - возвращает :doc:`коллекцию <Collection>` объектов :doc:`PersonalCertificate <PersonalCertificate>`

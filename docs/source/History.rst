@@ -1,6 +1,14 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+v5.26.3 - 29.03.2019
+--------------------
+
+- Добавлен метод :doc:`TestConnection2 <TestConnection2>` для проверки связи с сервером Диадок
+- В объект :doc:`UserPermissions <UserPermissions>` добавлены поля CanManageCounteragents, IsBlocked, BlockReason
+- Обновлены типы :doc:`ResolutionRequest <ResolutionRequest>`
+
+- :doc:`Исправлены ошибки <Bugs_5_26>`
 
 v5.26.2 - 12.03.2019
 --------------------
