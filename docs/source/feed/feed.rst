@@ -55,3 +55,4 @@
    release_5_26_0
    release_5_26_1
    bugs_5_26_2
+   release_5_26_3
