@@ -21,7 +21,7 @@
     -  SignatureDenied - в подписи отказано
     -  SignatureRequested - запрошена подпись
     -  None - документ не согласовывался
-    -  ActionReauested - запрошено действие. Список доступных действий доступен в коллекции AvaliableActions объекта :doc:`ResolutionRequstType`
+    -  ActionRequested - запрошено действие. Список доступных действий доступен в коллекции AvaliableActions объекта :doc:`ResolutionRequest <ResolutionRequest>`
 
 
 Методы
