@@ -1,19 +1,12 @@
 ﻿Как подписать входящий документ
 ===============================
 
-Входящие электронные документы, который требуют ответной подписи, можно
-обработать несколькими способами
+Входящие электронные документы, который требуют ответной подписи, можно обработать несколькими способами
 
 1. Подписать документ
+   -  Для формализованных документов требуется сначала сформировать т.н. титул покупателя :doc:`Torg12BuyerContent <Torg12BuyerContent>` или :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` или :doc:`UtdBuyerContent <UtdBuyerContent>`, и создать задание методом :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>`
 
-   -  Для формализованных документов требуется сначала сформировать т.н.
-      титул покупателя :doc:`Torg12BuyerContent <Torg12BuyerContent>` или
-      :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` или
-      :doc:`UtdBuyerContent <UtdBuyerContent>`,
-      и создать задание методом
-      :doc:`CreateReplySendTask <CreateReplySendTask-(XmlTorg12)>`
-
-      Пример кода, формирующий задание на подписание торг-12:
+      Пример кода, формирующий задание на подписание Торг-12:
 
       ::
 
@@ -31,8 +24,7 @@
 
                           ReplySendTask.Send();
 
-   -  Неформализованные документы подписываются методом Accept (:doc:`Accept объекта NonformalizedTorg12 <Accept-(NonformalizedTorg12)>`,
-      :doc:`Accept объекта Nonformalized <Accept-(Nonformalized)>` и т.д.)
+   -  Неформализованные документы подписываются методом Accept (:doc:`Accept объекта NonformalizedTorg12 <Accept-(NonformalizedTorg12)>`, :doc:`Accept объекта Nonformalized <Accept-(Nonformalized)>` и т.д.)
 
       Пример:
 
@@ -42,8 +34,7 @@
 
 2. Отказать в подписи
 
-   Для всех типов документов применятся метод Reject (:doc:`Reject объекта NonformalizedTorg12 <Reject-(NonformalizedTorg12)>`, `Reject объекта :doc:   XmlTorg12 <Reject-(XmlTorg12)>` и т.д.), где параметром можно передать
-   свой комментарий отказа в подписи
+   Для всех типов документов применятся метод Reject (:doc:`Reject объекта NonformalizedTorg12 <Reject-(NonformalizedTorg12)>`, `Reject объекта :doc:   XmlTorg12 Reject-(XmlTorg12)>` и т.д.), где параметром можно передать свой комментарий отказа в подписи
 
    Пример:
 

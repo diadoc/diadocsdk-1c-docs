@@ -4,9 +4,9 @@
 .. feed-entry::
    :date: 2017-05-29
 
-- Поддержка корректировочных счетов-фактур(:doc:`InvoiceCorrection <InvoiceCorrection>` и :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>`) с УКД-контентом(:doc:`UcdSellerContent <UcdSellerContent>`) - новый тип контента при отправке **UcdInvoiceCorrection**
-- К :doc:`OrganizationInfo <OrganizationInfo>` добавлено поле **FnsParticipantId** - идентификатор участника ЭДО
-- Появилась возможность задавать атрибуты подписантов при отправке черновиков сообщений: новый тип :doc:`SendDraftTask <SendDraftTask>`,а также метод-конструктор :doc:`CreateSendDraftTask <CreateSendDraftTask>`.
+- Поддержка корректировочных счетов-фактур(:doc:`InvoiceCorrection` и :doc:`InvoiceCorrectionRevision`) с УКД-контентом(:doc:`UcdSellerContent`) - новый тип контента при отправке **UcdInvoiceCorrection**
+- В :doc:`OrganizationInfo` добавлено поле **FnsParticipantId** - идентификатор участника ЭДО
+- Появилась возможность задавать атрибуты подписантов при отправке черновиков сообщений: новый тип :doc:`SendDraftTask`,а также метод-конструктор :doc:`CreateSendDraftTask`.
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
