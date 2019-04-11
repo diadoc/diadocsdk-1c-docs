@@ -1,1 +1,1 @@
-py -m sphinx "docs\source" "..\compiled_docs"
+py -m sphinx "docs\source" "..\compiled_docs" -a

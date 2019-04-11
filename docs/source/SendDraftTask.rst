@@ -8,7 +8,7 @@
 --------
 
 - **Signer** (:doc:`Signer <Signer>`, чтение) - данные подписанта
-- **ExtendedSigners** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigners <ExtendedSigners>`, чтение) - данные подписанта для УПД, Торг-12 @551, Акта @552
+- **ExtendedSigners** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigners <ExtendedSigner>`, чтение) - данные подписанта для УПД, Торг-12 @551, Акта @552
 
 
 Методы

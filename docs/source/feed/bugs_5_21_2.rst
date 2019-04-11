@@ -1,14 +1,12 @@
 Релиз 5.21.2
-=============
+============
 
 .. feed-entry::
    :date: 2018-03-30
 
 Исправлены ошибки:
-
-- происходил крах приложения при вызове :doc:`CreateReplySendTask.Send <CreateReplySendTask-(Document)>`, созданного для документа "TovTorg"
-
-- :doc:`GetContent <GetContent-(Utd)>` для УПД не учитывал версию содержимого
+    - происходил крах приложения при вызове :doc:`CreateReplySendTask.Send`, созданного для документа "TovTorg"
+    - :doc:`GetContent` для УПД не учитывал версию содержимого
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 

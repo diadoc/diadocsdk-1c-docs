@@ -4,7 +4,8 @@
 .. feed-entry::
    :date: 2017-02-21
 
-Исправлена ошибка в COM-компоненте. При создании :doc:`SendTask <SendTask>` с помощью :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` или :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`, невозможно отправить документ, ошибка "Message has no attachments".
+Исправлены ошибки:
+    - В Com для произвольных систем при создании :doc:`SendTask` с помощью :doc:`CreateSendTaskFromFile` или :doc:`CreateSendTaskFromFileRaw`, невозможно отправить документ, ошибка "Message has no attachments"
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 

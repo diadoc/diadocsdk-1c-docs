@@ -5,7 +5,7 @@
    :date: 2019-03-12
 
 Исправлены ошибки:
-    - Утечка памяти в :doc:`Organization.GetCounteragentListByInnList <GetCounteragentListByInnList>` приводящая к падению приложения
+    - Утечка памяти в :doc:`Organization.GetCounteragentListByInnList` приводящая к падению приложения
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
