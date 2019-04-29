@@ -12,7 +12,6 @@
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
 - **FileName** (строка, чтение) - имя файла вложения
 - **NeedRecipientSignature** (булево, чтение/запись) - флаг, обозначающий запрос подписи получателя под отправляемым документом
-- **CustomData** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataItem <CustomDataItem>`, чтение) - список пар вида «ключ-значение», содержащих произвольные данные по документу
 - **TypeNamedId** (строка, чтение/запись) - строковой идентификатор типа документа. Доступные типы можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
 - **Function** (строка, чтени/запись) - идентификатор функции документа. Обязательно при отправке зашифрованных документов
 - **Version** (строка, чтение/запись) - идентификатор версии документа. Обязательно при отправке зашифрованных документов
@@ -24,14 +23,10 @@
 
 Методы
 ------
-
-- :doc:`AddCustomData <AddCustomData-(CustomDocumentToSend)>` - добавляет элемент произвольных данных в коллекцию **CustomData**
-
 - :doc:`AddMetadata <AddMetadata>` - добавляет элемент метаданных в коллекцию **Metadata**
 
 .. toctree::
    :name: Auto
    :hidden:
 
-   AddCustomData <AddCustomData-(CustomDocumentToSend)>
    AddMetadata <AddMetadata>
