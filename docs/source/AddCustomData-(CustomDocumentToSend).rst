@@ -1,19 +1,23 @@
-﻿AddCustomData 
-============================================
+﻿AddCustomData
+=============
 
 Метод объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>`
 
-**Синтаксис**
 
+**Синтаксис**
 
 AddCustomData()
 
+
 **Возвращаемое значение**
 
+:doc:`CustomDataItem <CustomDataItem>`
 
-:doc:`CustomDataItem <CustomDataItem>`.
 
 **Описание**
 
+Добавляет элемент произвольных данных в коллекцию произвольных данных - :doc:`CustomDocumentToSend.CustomData <CustomDocumentToSend>`
 
-Добавляет элемент произвольных данных в коллекцию произвольных данных - **CustomData**
+Метод устарел
+-------------
+Используйте :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>`
