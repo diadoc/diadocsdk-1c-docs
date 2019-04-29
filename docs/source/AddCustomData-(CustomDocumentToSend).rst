@@ -16,7 +16,8 @@ AddCustomData()
 
 **Описание**
 
-Добавляет элемент произвольных данных в коллекцию произвольных данных - **CustomData**
+Добавляет элемент произвольных данных в коллекцию произвольных данных - :doc:`CustomDocumentToSend.CustomData <CustomDocumentToSend>`
 
-Метод устарел. Ииспользуйте :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>`
-----------------------------------------------------------------------------------------
+Метод устарел
+-------------
+Используйте :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>`
