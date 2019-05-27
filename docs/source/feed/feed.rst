@@ -58,3 +58,4 @@
    release_5_26_3
    release_5_26_4
    bugs_5_26_5
+   release_5_26_6
