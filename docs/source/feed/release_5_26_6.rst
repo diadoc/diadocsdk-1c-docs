@@ -7,6 +7,6 @@
 - Обновлены прото-структуры, используемые в http запросах/ответах
 
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
