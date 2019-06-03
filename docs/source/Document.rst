@@ -129,9 +129,6 @@
 -  :doc:`GetSenderSignature <GetSenderSignature>` - возвращает подпись отправителя, приложенную к документу
 -  :doc:`GetRecipientSignature <GetRecipientSignature>` - возвращает подпись получателя, приложенную к документу
 -  :doc:`GetStructuredDataAttachment <GetStructuredDataAttachment>` - возвращает структурированные данные, описывающими те или иные документы, представленные в виде печатных форм
--  :doc:`SendRevocationRequest <SendRevocationRequest>` - отправляет запрос на аннулирование документа
--  :doc:`AcceptRevocationRequest <AcceptRevocationRequest>` - принимает запрос об аннулировании документа
--  :doc:`RejectRevocationRequest <RejectRevocationRequest>` - отклоняет запрос на аннулирование документа
 -  :doc:`GetPrintForm <GetPrintForm>` - получает печатную форму документа в формате pdf
 -  :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает пакет, в котором находится документ
 -  :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом

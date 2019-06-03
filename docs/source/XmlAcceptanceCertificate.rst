@@ -43,8 +43,6 @@
 
 -  :doc:`GetRejectionComment <GetRejectionComment-(XmlAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
 
--  :doc:`Reject <Reject-(XmlAcceptanceCertificate)>` - формирует отказ в подписании документа
-
 -  :doc:`GetContent <GetContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул исполнителя) в виде объектной модели
 
 -  :doc:`GetBuyerContent <GetBuyerContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул заказчика) в виде объектной модели
@@ -57,7 +55,6 @@
    :hidden:
 
    GetRejectionComment-(XmlAcceptanceCertificate) <GetRejectionComment-(XmlAcceptanceCertificate)>
-   Reject-(XmlAcceptanceCertificate) <Reject-(XmlAcceptanceCertificate)>
    GetContent-(XmlAcceptanceCertificate) <GetContent-(XmlAcceptanceCertificate)>
    GetBuyerContent-(XmlAcceptanceCertificate) <GetBuyerContent-(XmlAcceptanceCertificate)>
    SaveRecipientContent-(XmlAcceptanceCertificate) <SaveRecipientContent-(XmlAcceptanceCertificate)>

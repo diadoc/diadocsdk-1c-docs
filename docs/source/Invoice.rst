@@ -44,8 +44,6 @@
 
 -  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-Invoice>` - возвращает комментарий к уведомлению об уточнении
 
--  :doc:`SendCorrectionRequest <SendCorrectionRequest-Invoice>` - отправляет уведомление об уточнении счета-фактуры
-
 -  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
 
 
@@ -55,7 +53,6 @@
 
    GetContent-Invoice <GetContent-Invoice>
    GetAmendmentRequestedComment-Invoice <GetAmendmentRequestedComment-Invoice>
-   SendCorrectionRequest-Invoice <SendCorrectionRequest-Invoice>
    SendReceiptsAsync <SendReceiptsAsync>
  
 

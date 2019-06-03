@@ -1,7 +1,12 @@
 ﻿SendTask
 ========
 
-Объект предназначен для отправки сообщения на сервер Диадок.
+
+Объект предназначен для отправки сообщения на сервер Диадок
+
+Использовать не рекомендуется. Воспользуйтесь :doc:`PackageSendTask <PackageSendTask>`
+--------------------------------------------------------------------------------------
+
 
 Свойства
 --------
@@ -77,16 +82,3 @@
 -  :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>` - добавляет дополнительный идентификатор 1С для документа
 
 -  :doc:`AddEncryptCertificate <AddEncryptCertificate-(SendTask)>` - добавляет сертификат шифрования документа
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddInitialDocument <AddInitialDocument>
-   AddSubordinateDocument <AddSubordinateDocument>
-   Send <Send-(SendTask)>
-   SendAsync <SendAsync>
-   SaveContent <SaveContent-(SendTask)>
-   AddStructuredDataAttachment <AddStructuredDataAttachment>
-   AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(SendTask)>
-   AddEncryptCertificate <AddEncryptCertificate-(SendTask)>

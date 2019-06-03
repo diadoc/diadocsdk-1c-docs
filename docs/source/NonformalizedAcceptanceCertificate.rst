@@ -43,16 +43,10 @@
 
 -  :doc:`GetRejectionComment <GetRejectionComment-(NonformalizedAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
 
--  :doc:`Accept <Accept-(NonformalizedAcceptanceCertificate)>` - формирует подпись получателя документа
-
--  :doc:`Reject <Reject-(NonformalizedAcceptanceCertificate)>` - формирует отказ в подписании документа
-
 
 .. toctree::
    :name: Auto
    :hidden:
 
    GetRejectionComment-(NonformalizedAcceptanceCertificate) <GetRejectionComment-(NonformalizedAcceptanceCertificate)>
-   Accept-(NonformalizedAcceptanceCertificate) <Accept-(NonformalizedAcceptanceCertificate)>
-   Reject-(NonformalizedAcceptanceCertificate) <Reject-(NonformalizedAcceptanceCertificate)>
 

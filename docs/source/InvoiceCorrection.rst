@@ -57,9 +57,7 @@
 
 -  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(InvoiceCorrection)>` - возвращает комментарий к уведомлению об уточнении
 
--  :doc:`SendCorrectionRequest <SendCorrectionRequest-(InvoiceCorrection)>` - отправляет уведомление об уточнении корректировочного счета-фактуры
-
--  :doc:`SendReceiptsAsync <SendReceiptsAsync-(InvoiceCorrection)>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
+-  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
 
 
 .. toctree::
@@ -68,6 +66,5 @@
 
    GetContent-(InvoiceCorrection) <GetContent-(InvoiceCorrection)>
    GetAmendmentRequestedComment-(InvoiceCorrection) <GetAmendmentRequestedComment-(InvoiceCorrection)>
-   SendCorrectionRequest-(InvoiceCorrection) <SendCorrectionRequest-(InvoiceCorrection)>
-   SendReceiptsAsync-(InvoiceCorrection) <SendReceiptsAsync-(InvoiceCorrection)>
+   SendReceiptsAsync <SendReceiptsAsync>
 

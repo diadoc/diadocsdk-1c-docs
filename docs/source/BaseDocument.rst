@@ -6,14 +6,14 @@
 Свойства объекта
 ----------------
 
-Нет.
+Отсутствуют
 
 Методы объекта
 --------------
 
 -  :doc:`GetContent <GetContent-(BaseDocument)>` - возвращает объект титула продавца
 -  :doc:`GetBuyerContent <GetBuyerContent-(BaseDocument)>` - возвращает объект титула покупателя
--  :doc:`SendReceiptsAsync <SendReceiptsAsync-(BaseDocument)>` - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
+-  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
 
 .. toctree::
    :name: Auto
@@ -21,4 +21,4 @@
 
    GetContent <GetContent-(BaseDocument)>
    GetBuyerContent <GetBuyerContent-(BaseDocument)>
-   SendReceiptsAsync <SendReceiptsAsync-(BaseDocument)>
+   SendReceiptsAsync <SendReceiptsAsync>

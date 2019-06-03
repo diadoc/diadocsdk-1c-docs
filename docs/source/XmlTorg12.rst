@@ -41,8 +41,6 @@
 
 -  :doc:`GetRejectionComment <GetRejectionComment-(XmlTorg12)>` - возвращает комментарий к отказу в подписании
 
--  :doc:`Reject <Reject-(XmlTorg12)>` - формирует отказ в подписании документа
-
 -  :doc:`GetContent <GetContent-(XmlTorg12)>` - возвращает содержание документа (титул отправителя) в виде объектной модели
 
 -  :doc:`GetBuyerContent <GetBuyerContent-(XmlTorg12)>` - возвращает содержание документа (титул получателя) в виде объектной модели
@@ -55,7 +53,6 @@
    :hidden:
 
    GetRejectionComment-(XmlTorg12)
-   Reject-(XmlTorg12)
    GetContent-(XmlTorg12)
    GetBuyerContent-(XmlTorg12)
    SaveRecipientContent-(XmlTorg12)

@@ -61,7 +61,7 @@
 
 -  :doc:`GetContent <GetContent-(UcdRevision)>` - возвращает объект титула продавца УКД
 -  :doc:`GetBuyerContent <GetBuyerContent-(UcdRevision)>` - возвращает объект титула покупателя УКД
--  :doc:`SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>` - формирует и подписывает документы по регламентному документообороту УКД
+-  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту УКД
 -  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>` - возвращает комментарий к уведомлению об уточнении
 
 .. toctree::
@@ -70,5 +70,5 @@
 
    GetContent <GetContent-(UcdRevision)>
    GetBuyerContent <GetBuyerContent-(UcdRevision)>
-   SendReceiptsAsync <SendReceiptsAsync-(UcdRevision)>
+   SendReceiptsAsync <SendReceiptsAsync>
    GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>

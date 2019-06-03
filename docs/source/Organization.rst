@@ -43,9 +43,6 @@
 -  :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` - возвращает :doc:`объект <ReceiptGenerationProcess>`, с помощью которого можно запустить процесс автоматической отправки извещений о получении документов в текущем ящике
 -  :doc:`GetDocumentEventList <GetDocumentEventList>` - возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике
 
--  :doc:`CreateSendTask <CreateSendTask>` - возвращает :doc:`объект <SendTask>`, с помощью которого можно отправить формализованный :doc:`документ <DocumentToSend>`
--  :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>` - возвращает :doc:`объект <SendTask>`, для отправки разобранного :doc:`документа <DocumentToSend>`, загруженного из файла
--  :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>` - возвращает :doc:`объект <SendTask>`, для отправки :doc:`документа <DocumentToSend>`, загруженного из файла, без попытки его разбора
 -  :doc:`CreatePackageSendTask <CreatePackageSendTask>` - возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
 -  :doc:`CreateSendDraftTask <CreateSendDraftTask>` - возвращает :doc:`объект <SendDraftTask>`, с помощью которого можно отправить черновик
 -  :doc:`SendDraftAsync <SendDraftAsync>` - асинхронный запрос отправки черновика
@@ -88,8 +85,6 @@
    GetDocumentsTask <GetDocumentsTask>
    GetReceiptGenerationProcess <GetReceiptGenerationProcess>
    GetDocumentEventList <GetDocumentEventList>
-   CreateSendTask <CreateSendTask>
-   CreateSendTaskFromFile <CreateSendTaskFromFile>
    CreatePackageSendTask <CreatePackageSendTask>
    CreateSendDraftTask <CreateSendDraftTask>
    SendDraftAsync <SendDraftAsync>
@@ -99,7 +94,6 @@
    SetData <SetData>
    GetData <GetData>
    CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>
-   GetExtendedSignerDetails <GetExtendedSignerDetails>
    GetExtendedSignerDetails2 <GetExtendedSignerDetails2>
    SendFnsRegistrationMessage <SendFnsRegistrationMessage>
    CanSendInvoice <CanSendInvoice>
