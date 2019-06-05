@@ -23,6 +23,8 @@ v5.27.0 - 10.06.2019
 
 - Добавлены новые типы для объекта :doc:`ReplySendTask <ReplySendTask>`
 
+- :doc:`Исправлены ошибки <Bugs_5_27>`
+
 - Нерекомендуемыми к использованию помечены:
     - :doc:`SendTask <SendTask>`
     - :doc:`PackageSendTask <PackageSendTask>`
@@ -46,7 +48,7 @@ v5.27.0 - 10.06.2019
     - :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>`
     - :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`
     
-    - :doc:`Исправлены ошибки <Bugs_5_27>`
+
 
 
 v5.26.6 - 27.05.2019
