@@ -44,6 +44,7 @@
 -  :doc:`GetDocumentEventList <GetDocumentEventList>` - возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике
 
 -  :doc:`CreatePackageSendTask <CreatePackageSendTask>` - возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
+-  :doc:`CreatePackageSendTask2 <CreatePackageSendTask2>` - возвращает :doc:`объект <PackageSendTask2>`, с помощью которого можно отправить пакет :doc:`документов <CustomDocumentToSend>`
 -  :doc:`CreateSendDraftTask <CreateSendDraftTask>` - возвращает :doc:`объект <SendDraftTask>`, с помощью которого можно отправить черновик
 -  :doc:`SendDraftAsync <SendDraftAsync>` - асинхронный запрос отправки черновика
 
@@ -68,6 +69,8 @@
 
 -  :doc:`RecycleDraft <RecycleDraft>` - удаляет черновик
 
+-  :doc:`SaveUserDataXSD <SaveUserDataXSD>` - сохраняет описание контента документа на диск
+
 .. toctree::
    :name: Auto
    :hidden:
@@ -86,6 +89,7 @@
    GetReceiptGenerationProcess <GetReceiptGenerationProcess>
    GetDocumentEventList <GetDocumentEventList>
    CreatePackageSendTask <CreatePackageSendTask>
+   CreatePackageSendTask2 <CreatePackageSendTask2>
    CreateSendDraftTask <CreateSendDraftTask>
    SendDraftAsync <SendDraftAsync>
    SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>

@@ -1,7 +1,10 @@
 ﻿PackageSendTask
 ===============
 
-Объект предназначен для отправки сообщения с пакетом документов на сервер Диадок.
+Объект предназначен для отправки сообщения с пакетом документов на сервер Диадок
+
+Рекомендуется переходить на использование объекта :doc:`PackageSendTask2 <PackageSendTask2>`
+
 
 Свойства
 --------
@@ -21,6 +24,7 @@
 -  **UseShelf** (булево, чтение/запись) - использовать отправку "с полки" (для больших документов)
 -  **SaveContentPath** (строка, чтение) - путь к папке, для сохранения сгенерированного содержимого
 
+
 Методы
 ------
 
@@ -35,6 +39,7 @@
 
 - вызвав один из методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` или :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>`  и указав в качестве параметра Type значение "Document". Будет создан :doc:`CustomDocumentToSend <CustomDocumentToSend>` с содержимым прикрепленным из файла. В этом случае компонента не будет анализировать содержимое документа и отправит его как есть. Соответственно свойство CustomDocumentToSend.Content будет пустым.
 - вызвав любой из методов AddDocument... и указав в качестве значение параметра Type одно из значений AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, utd_05_01_04, utd_05_01_05, ucd_05_01_01, ucd_05_01_02, ucd_05_01_03, rezru_05_01_01, rezru_05_01_02, tovtorg_05_01_02, tovtorg_05_01_04, act_05_01_01, act_05_01_02, invoice_05_01_01, invoice_05_01_03, invoice_05_02_01, invoice_05_02_02, invoicecor_05_01_03, invoicecor_05_02_01, invoicecor_05_02_02, torg12_05_01_01, torg12_05_01_02). В этом случае будет создан :doc:`CustomDocumentToSend <CustomDocumentToSend>` в свойстве Content которого будет объект производный от :doc:`BaseContent <BaseContent>`, представляющий содержимое документа запрошенного типа.
+
 
 .. toctree::
    :name: Auto

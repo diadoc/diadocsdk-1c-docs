@@ -1,14 +1,17 @@
-﻿Как работать с электронной подписью СКБ Контур
-==============================================
+﻿Как работать с Контур.Сертификатом
+==================================
+
+.. deprecated:: 5.26.0
+    На данный момент вопрос поддержки работы с Контур.Сертификатами не решён
 
 **Информация в данной статье устарела**
 ---------------------------------------
 
-Если у пользователя имеется электронная подпись СКБ Контур, он может использовать ее для подписания исходящих и входящих документов (о получении списка электронных подписей см. :doc:`GetCloudCertificates <GetCloudCertificates>`).
+Если у пользователя имеется Контур.Сертификат, он может использовать его для подписания исходящих и входящих документов (о получении списка электронных подписей см. :doc:`GetCloudCertificates <GetCloudCertificates>`).
 
 
-Как подписать исходящие документы электронной подписью СКБ Контур
------------------------------------------------------------------
+Как подписать исходящие документы Контур.Сертификатом
+-----------------------------------------------------
 
 Для того, чтобы отправить документ и подписать его электронной подписью, нужно:
  
@@ -24,53 +27,53 @@
 
 -  отправить документ.
 
-Например, следующая процедура позволяет отправить контрагенту счет-фактуру, подписанную электронной подписью СКБ Контур:
+Например, следующая процедура позволяет отправить контрагенту счет-фактуру, Контур.Сертификатом:
 
 ::
 
-            Процедура ОтправитьСчетФактуру(Organization, CounteragentId)
+    Процедура ОтправитьСчетФактуру(Organization, CounteragentId)
 
-              SendTask = Organization.CreateSendTask("InvoiceContent");	
-              SendTask.CounterAgentId    = CounteragentId;
+        SendTask = Organization.CreateSendTask("InvoiceContent");	
+        SendTask.CounterAgentId    = CounteragentId;
 
-              InvoiceContent = SendTask.Content;
-              InvoiceContent.Date        = '20130101';
-              InvoiceContent.Number      = "1";
-              InvoiceContent.Currency    = "643";
+        InvoiceContent = SendTask.Content;
+        InvoiceContent.Date        = '20130101';
+        InvoiceContent.Number      = "1";
+        InvoiceContent.Currency    = "643";
 
-              InvoiceContent.Seller.Name = "ООО Продавец";
-              InvoiceContent.Seller.Inn  = "2012500001";
-              InvoiceContent.Seller.Kpp  = "111111111";
-              InvoiceContent.Seller.Address.RegionCode = "66";
+        InvoiceContent.Seller.Name = "ООО Продавец";
+        InvoiceContent.Seller.Inn  = "2012500001";
+        InvoiceContent.Seller.Kpp  = "111111111";
+        InvoiceContent.Seller.Address.RegionCode = "66";
 
-              InvoiceContent.Buyer.Name  = "ООО Покупатель";
-              InvoiceContent.Buyer.Inn   = "2012600006";
-              InvoiceContent.Buyer.Kpp   = "222222222 ID   ";
-              InvoiceContent.Buyer.Address.RegionCode = "66";
+        InvoiceContent.Buyer.Name  = "ООО Покупатель";
+        InvoiceContent.Buyer.Inn   = "2012600006";
+        InvoiceContent.Buyer.Kpp   = "222222222 ID   ";
+        InvoiceContent.Buyer.Address.RegionCode = "66";
 
-              Item = InvoiceContent.AddItem();
-              Item.Product               = "Товар";
-              Item.UnitCode              = "166";
-              Item.Quantity              = 10;
-              Item.Price                 = 100;
-              Item.TotalWithVatExcluded  = 1000;
-              Item.TaxRate               = "18";
-              Item.Vat                   = 180;
-              Item.Total                 = 1180;
+        Item = InvoiceContent.AddItem();
+        Item.Product               = "Товар";
+        Item.UnitCode              = "166";
+        Item.Quantity              = 10;
+        Item.Price                 = 100;
+        Item.TotalWithVatExcluded  = 1000;
+        Item.TaxRate               = "18";
+        Item.Vat                   = 180;
+        Item.Total                 = 1180;
 
-              CloudCerts = Connection.GetCloudCertificates();
-              SignTask = Connection.CreateCloudSignTask(CloudCerts.GetItem(0).Thumbprint);
-              SignTask.AddContent(InvoiceContent, CounteragentId);
-              SignTask.Sign();
+        CloudCerts = Connection.GetCloudCertificates();
+        SignTask = Connection.CreateCloudSignTask(CloudCerts.GetItem(0).Thumbprint);
+        SignTask.AddContent(InvoiceContent, CounteragentId);
+        SignTask.Sign();
 
-              pin = "";
-              ВвестиСтроку(pin);
-              SignTask.Confirm(pin);
+        pin = "";
+        ВвестиСтроку(pin);
+        SignTask.Confirm(pin);
 
-              SendTask.Send();
+        SendTask.Send();
 
-            КонецПроцедуры
-          
+    КонецПроцедуры
+
 
 Как подписать входящие документы электронной подписью СКБ Контур
 ----------------------------------------------------------------

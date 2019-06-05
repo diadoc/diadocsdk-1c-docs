@@ -1,7 +1,7 @@
 ﻿CreateReplySendTask
 ===================
 
-Метод объекта :doc:`DocumentPackage <DocumentPackage>`.
+Метод объекта :doc:`DocumentPackage <DocumentPackage>`
 
 
 **Синтаксис**
@@ -16,16 +16,17 @@ CreateReplySendTask(<Type>)
 
 Параметр Type может принимать одно из следующих значений:
 
--  "AcceptDocument" - подписание документа
-
--  "RejectDocument" - отказ в подписи документа
-
--  "CorrectionRequest" - запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры" (только для редактируемых пакетов)
+-  "AcceptDocument" - подписание документов
+-  "RejectDocument" - отказ в подписи документов
+-  "CorrectionRequest" - запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
+-  "RevocationRequest" - запроc на аннулирование документов
+-  "AcceptRevocation" - принятие аннулирования документов
+-  "RejectRevocation" - отказ от аннулирования документов
 
 
 **Возвращаемое значение**
 
-:doc:`ReplySendTask <ReplySendTask>`.
+:doc:`ReplySendTask <ReplySendTask>`
 
 **Описание**
 
@@ -42,10 +43,14 @@ CreateReplySendTask(<Type>)
      - :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для универсального передаточного документа
      - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
 
-  -  для действия типа "RejectDocument":
-
-     - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - формализованный отказ в подписи. Для любых документов
+  -  для действия типа "RejectDocument" и "RejectRevocation":
+    - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>`
 
   -  для действия типа "CorrectionRequest":
+    - :doc:`CorrectionRequestContent <CorrectionRequestContent>`
 
-     - :doc:`CorrectionRequestContent <CorrectionRequestContent>` - для любых документов
+  -  для действия "AcceptRevocation":    
+    - :doc:`AcceptanceContent <AcceptanceContent>`
+  
+  -  для действия типа "RevocationRequest":
+    - :doc:`RevocationRequestContent <RevocationRequestContent>`
