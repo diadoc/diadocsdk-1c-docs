@@ -12,8 +12,8 @@
 
 .. rubric:: Методы
 
-* :doc:`LoadContentFromFile <PackageContentItem_GetContentFromFile>`
-* :doc:`LoadContentFromBase64 <PackageContentItem_GetContentFromString>`
+* :doc:`LoadContentFromFile <PackageContentItem_LoadContentFromFile>` - загружает контент ответа из файла
+* :doc:`LoadContentFromBase64 <PackageContentItem_LoadContentFromBase64>` загружает контент ответа из Base64 строки
 
 
 .. rubric:: Методы

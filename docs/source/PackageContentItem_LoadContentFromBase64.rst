@@ -1,5 +1,5 @@
 LoadContentFromBase64
-====================
+=====================
 
 Метод объекта :doc:`PackageContentItem <PackageContentItem>`
 
@@ -11,7 +11,7 @@ LoadContentFromBase64(Base64)
 
 .. rubric:: Параметры
 
-:Base64: (строка) - контент ответа по документу в строковом представлении
+:Base64: (строка) - контент ответа по документу в Base64
 
 
 .. rubric:: Возвращаемое значение

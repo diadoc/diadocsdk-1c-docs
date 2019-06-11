@@ -24,7 +24,7 @@ AddDocumentFromBase64(TitleName, Function, Version, Base64)
 
 **Описание**
 
-Добавляет в задание на отправку документ указанного типа, загружая его контент из Base64 строки.
+Добавляет в задание на отправку документ указанного типа, загружая его контент из Base64 строки
 
 У полученного объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>` поле **Content** будет пусто
 
