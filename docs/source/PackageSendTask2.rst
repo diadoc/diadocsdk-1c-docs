@@ -25,7 +25,7 @@
 
 * :doc:`AddDocument <PackageSendTask2_AddDocument>` - добавляет документ заданного типа в пакет на отправку
 * :doc:`AddDocumentFromFile <PackageSendTask2_AddDocumentFromFile>` - добавляет документ в пакет на отправку, загружая его из файла
-* :doc:`AddDocumentFromString <PackageSendTask2_AddDocumentFromString>` - добавляет документ в пакет на отправку, загружая его содержание из строки
+* :doc:`AddDocumentFromString <PackageSendTask2_AddDocumentFromBase64>` - добавляет документ в пакет на отправку, загружая его содержание из Base64 строки
 * :doc:`Send <PackageSendTask2_Send>` - производит отправку документов
 * :doc:`SendAsync <PackageSendTask2_SendAsync>` - производит асинхронную отправку документов
 
