@@ -1,7 +1,7 @@
 ﻿ValidateContent
 ===============
 
-.. deprecated:: 5.26.0
+.. deprecated:: 5.18.0
     Проверку контента рекомендуется проводить самостоятельно
 
 Метод объекта :doc:`ReplySendTask <ReplySendTask>`
