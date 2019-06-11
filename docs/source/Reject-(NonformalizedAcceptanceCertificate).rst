@@ -1,28 +1,25 @@
 ﻿Reject
 ======
 
-Метод объекта
-:doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
-**Синтаксис**
-
-
-Reject(<Comment>)
-
-**Параметры**
+Метод объекта :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>`
 
 
--  <Comment> (строка, обязательный) - комментарий к отказу в подписании.
+.. rubric:: Синтаксис
 
-**Возвращаемое значение**
+Reject(Comment)
 
+
+.. rubric:: Параметры
+
+:Comment: (строка) - комментарий к отказу в подписании
+
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
-
+.. rubric:: Описание
 
 Формирует отказ в подписании документа
-
-Использовать не рекомендуется. Воспользуйтесь объектом :doc:`ReplySendTask <ReplySendTask>`
--------------------------------------------------------------------------------------------

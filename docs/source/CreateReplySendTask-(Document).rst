@@ -1,59 +1,41 @@
 ﻿CreateReplySendTask
 ===================
 
+.. deprecated:: 5.27.0
+    Используйте :doc:`CreateReplySendTask2 <CreateReplySendTask2>`
+
 Метод объекта :doc:`Document <Document>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-CreateReplySendTask(<Type>)
-
-
-**Параметры**
-
-    -  <Type> (строка) - тип ответного действия. В случае, если тип не указан, по умолчанию будет выполняться действие "AcceptDocument".
-
-Параметр Type может принимать одно из следующих значений:
-
--  "AcceptDocument" - подписание документа
--  "RejectDocument" - отказ в подписи документа
--  "CorrectionRequest" - запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
--  "RevocationRequest" - запроc на аннулирование
--  "AcceptRevocation" - принятие аннулирования
--  "RejectRevocation" - отказ от аннулирования
+CreateReplySendTask(Type="AcceptDocument")
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:Type: (строка) - тип ответного действия
+
+
+..rubric:: Возвращаемое значение
 
 :doc:`ReplySendTask <ReplySendTask>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Формирует задание для ответного действия с документом. В данном случае содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет объект, производный от :doc:`BaseContent <BaseContent>`, соответствующий типу выполняемого действия:
-
-  -  для действия "AcceptDocument":
-  
-    - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 172 приказа ФНС"
-    - :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 551 приказа ФНС"
-    - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа "акт о выполнении работ в 172 формате ФНС"
-    - :doc:`Act552BuyerContent <Act552BuyerContent>` - титул покупателя для документа "акт о выполнении работ в 552 формате ФНС"
-    - :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для универсального передаточного документа
-    - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
+Формирует задание для ответного действия с документом
 
 
-  -  для действия типа "RejectDocument" и "RejectRevocation":
-  
-    - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>`
+..rubric:: Дополнительная информация
 
-  -  для действия типа "CorrectionRequest":
-  
-    - :doc:`CorrectionRequestContent <CorrectionRequestContent>`
-
-  -  для действия "AcceptRevocation":
-  
-    - :doc:`AcceptanceContent <AcceptanceContent>`
-  
-  -  для действия типа "RevocationRequest":
-  
-    - :doc:`RevocationRequestContent <RevocationRequestContent>`
+================================= ===========================================================================
+Возможные значения параметра Type Описание
+================================= ===========================================================================
+"AcceptDocument"                  подписание документа
+"RejectDocument"                  отказ в подписи документа
+"CorrectionRequest"               запроc на уточнение документа "счет-фактура" и "исправление счета-фактуры"
+"RevocationRequest"               запроc на аннулирование документа
+"AcceptRevocation"                принятие аннулирования документа
+"RejectRevocation"                отказ от аннулирования документа
+================================= ===========================================================================

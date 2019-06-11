@@ -1,4 +1,4 @@
-﻿SendReceiptsAsync (InvoiceRevision)
-===================================
+﻿SendReceiptsAsync
+=================
 
 :doc:`Раздел переехал <SendReceiptsAsync>`

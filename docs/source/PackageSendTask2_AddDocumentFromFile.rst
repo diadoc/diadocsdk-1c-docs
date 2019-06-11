@@ -1,37 +1,32 @@
 AddDocumentFromFile
 ===================
 
-    Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
+Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-AddDocumentFromFile(<TitleName>, <Function>, <Version>, <Path>)
-
-
-**Параметры**
-
-    -  <TitleName> (строка, обязательный) - название типа документа
-    -  <Function> (строка, обязательный) - функция документа
-    -  <Version> (строка, обязательный) - версия документа
-    -  <Path> (строка, обязательный) - путь до файла с контентом
+AddDocumentFromFile(TitleName, Function, Version, Path)
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:TitleName: (строкай) - название типа документа
+:Function: (строка) - функция документа
+:Version: (строка) - версия документа
+:Path: (строка) - путь до файла с контентом
+
+
+.. rubric:: Возвращаемое значение
 
 :doc:`CustomDocumentToSend <CustomDocumentToSend>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Добавляет в задание на отправку документ указанного типа, загружая его контент из файла
+Добавляет в задание на отправку документ указанного типа, загружая его контент из файла.
 
-Доступные значения названия, функции и версии документа можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
+У полученного объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>` поле **Content** будет пусто
 
-У полученного объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>` поле **Content** будет неопределено
 
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   CustomDocumentToSend <CustomDocumentToSend>
+.. seealso:: :doc:`GetDocumentTypes <GetDocumentTypes>`

@@ -1,19 +1,17 @@
 ﻿BaseDocument
 ============
 
-Объект предназначен для работы с "любыми типами" документов и является производным объектом от :doc:`Document <Document>`.
+Объект предназначен для работы с "любыми типами" документов и является производным объектом от :doc:`Document <Document>`
 
-Свойства объекта
-----------------
 
-Отсутствуют
+.. rubric:: Свойства объекта
+    Отсутствуют
 
-Методы объекта
---------------
 
--  :doc:`GetContent <GetContent-(BaseDocument)>` - возвращает объект титула продавца
--  :doc:`GetBuyerContent <GetBuyerContent-(BaseDocument)>` - возвращает объект титула покупателя
--  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
+.. rubric:: Методы объекта
+    * :doc:`GetContent <GetContent-(BaseDocument)>` - возвращает объект титула продавца
+    * :doc:`GetBuyerContent <GetBuyerContent-(BaseDocument)>` - возвращает объект титула покупателя
+    * :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
 
 .. toctree::
    :name: Auto

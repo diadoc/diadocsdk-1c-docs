@@ -47,8 +47,6 @@ v5.27.0 - 10.06.2019
     - :doc:`CreateSendTask <CreateSendTask>`
     - :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>`
     - :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`
-    
-
 
 
 v5.26.6 - 27.05.2019

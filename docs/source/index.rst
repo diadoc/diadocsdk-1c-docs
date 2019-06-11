@@ -11,10 +11,10 @@ COM Diadoc API - внешняя компонента, предназначенн
    :maxdepth: 1
    :caption: Общее описание возможностей
 
-   Описание возможностей <description>   
-   История изменений<History>   
-   Примеры использования<Examples>  
-   Ссылки для скачивания <Downloads>  
+   Описание возможностей <description>
+   История изменений <History>
+   Примеры использования <Examples>
+   Ссылки для скачивания <Downloads>
 
 .. toctree::
    :name: methods

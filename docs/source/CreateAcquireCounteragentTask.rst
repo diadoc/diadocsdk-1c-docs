@@ -4,28 +4,21 @@
 Метод объекта :doc:`Organization <Organization>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-CreateAcquireCounteragentTask(<Path>)
-
-
-**Параметры**
-
--  <Path> (Строка, опциональный) - путь к файлу с приглашением. Может быть пустой строкой, если приглашение нужно отправить без прикрепления документа
+CreateAcquireCounteragentTask([Path])
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:Path: (Строка) - путь к файлу с приглашением
+
+
+.. rubric:: Возвращаемое значение
 
 :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`
 
 
-**Описание**
+.. rubric:: Описание
 
 Создает задание для отправки приглашения контрагента к партнерству
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   AcquireCounteragentTask <AcquireCounteragentTask>

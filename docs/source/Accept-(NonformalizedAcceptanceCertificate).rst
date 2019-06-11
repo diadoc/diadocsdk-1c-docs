@@ -1,23 +1,23 @@
 ﻿Accept
 ======
 
-Метод объекта
-:doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>`.
 
-**Синтаксис**
+.. deprecated:: 5.27.0
+    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
+Метод объекта :doc:`NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>`
+
+
+.. rubric:: Синтаксис
 
 Accept()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
 
+.. rubric:: Описание
 
 Формирует ответную подпись к документу
-
-Использовать не рекомендуется. Воспользуйтесь объектом :doc:`ReplySendTask <ReplySendTask>`
--------------------------------------------------------------------------------------------

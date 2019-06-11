@@ -1,38 +1,32 @@
-AddDocumentFromString
+AddDocumentFromBase64
 =====================
 
-    Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
+Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-AddDocumentFromString(<TitleName>, <Function>, <Version>, <Content_string>, <Encoding>)
-
-
-**Параметры**
-
-    -  <TitleName> (строка, обязательный) - название типа документа
-    -  <Function> (строка, обязательный) - функция документа
-    -  <Version> (строка, обязательный) - версия документа
-    -  <Content_string> (строка, обязательный) - контент документа в строковом представлении
-    -  <Encoding> (целое беззнаковое число, обязательный) - кодовая страница, в которую необходимо перекодировать контент
+AddDocumentFromBase64(TitleName, Function, Version, Base64)
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:TitleName: (строка) - название типа документа
+:Function: (строка) - функция документа
+:Version: (строка) - версия документа
+:Base64: (строка) - контент документа в Base64
+
+
+.. rubric:: Возвращаемое значение
 
 :doc:`CustomDocumentToSend <CustomDocumentToSend>`
 
 
 **Описание**
 
-Добавляет в задание на отправку документ указанного типа, загружая его контент из строки
+Добавляет в задание на отправку документ указанного типа, загружая его контент из Base64 строки.
 
-Доступные значения названия, функции и версии документа можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
+У полученного объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>` поле **Content** будет пусто
 
-У полученного объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>` поле **Content** будет неопределено
 
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   CustomDocumentToSend <CustomDocumentToSend>
+.. seealso:: :doc:`GetDocumentTypes <GetDocumentTypes>`

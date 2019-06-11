@@ -1,28 +1,26 @@
-GetContentFromFile
+LoadContentFromFile
 ==================
 
 Метод объекта :doc:`PackageContentItem <PackageContentItem>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-AddDocument(<Path>)
-
-
-**Параметры**
-
-    -  <Path> (строка, обязательный) - путь до файла с контентом
+LoadContentFromFile(Path)
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:Path: (строка) - путь до файла с контентом ответа
+
+
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
 
-**Описание**
+.. rubric:: Описание
 
-Добавляет контент ответного действия с диска.
+Добавляет контент ответного действия из файла. Этот контент будет подписан.
 
-В объекте :doc:`PackageContentItem <PackageContentItem>`, из которого вызван метод, поле **Content** станет пустым.
-
-При выполнении ответного действия объектом :doc:`ReplySendTask2 <ReplySendTask2>` загруженный контент будет подписан
+В объекте :doc:`PackageContentItem <PackageContentItem>`, из которого вызван метод, поле **Content** станет пустым

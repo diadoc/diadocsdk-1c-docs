@@ -1,33 +1,28 @@
 AddDocument
 ===========
 
-    Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
+Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-AddDocument(<TitleName>, <Function>, <Version>)
-
-
-**Параметры**
-
-    -  <TitleName> (строка, обязательный) - название типа документа
-    -  <Function> (строка, обязательный) - функция документа
-    -  <Version> (строка, обязательный) - версия документа
+AddDocument(TitleName, Function, Version)
 
 
-**Возвращаемое значение**
+.. rubric:: Параметры
+
+:TitleName: (строка) - название типа документа
+:Function: (строка) - функция документа
+:Version: (строка) - версия документа
+
+
+.. rubric:: Возвращаемое значение
 
 :doc:`CustomDocumentToSend <CustomDocumentToSend>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Добавляет в задание на отправку документ указанного типа.
-Доступные значения названия, функции и версии документа можно получить методом :doc:`GetDocumentTypes <GetDocumentTypes>`
+Добавляет в задание на отправку документ указанного типа
 
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   CustomDocumentToSend <CustomDocumentToSend>
+.. seealso:: :doc:`GetDocumentTypes <GetDocumentTypes>`

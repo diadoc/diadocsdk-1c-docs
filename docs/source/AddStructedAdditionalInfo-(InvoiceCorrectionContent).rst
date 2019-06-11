@@ -4,23 +4,16 @@
 Метод объекта :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 AddStructedAdditionalInfo()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
 :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
 
 
-**Описание**
+.. rubric:: Описание
 
 Добавляет новый элемент в список дополнительных сведений исправления счета-фактуры
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   StructedAdditionalInfo <StructedAdditionalInfo>

@@ -1,18 +1,19 @@
 GetResolutionRoutes
 ===================
 
-Метод объекта :doc:`Organization <Organization>`.
+Метод объекта :doc:`Organization <Organization>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 GetResolutionRoutes()
 
-**Возвращаемое значение**
+
+.. rubric:: Возвращаемое значение
 
 :doc:`коллекция <Collection>` объектов :doc:`Route <Route>`
 
 
-**Описание**
+.. rubric:: Описание
 
 Возвращает коллекцию маршрутов согласования, настроенных в ящике организации

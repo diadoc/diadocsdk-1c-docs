@@ -1,26 +1,24 @@
 ﻿AddEncryptCertificate
 =====================
 
-Метод объекта SendTask
-
-Использовать объект SendTask не рекомендуется. Воспользуйтесь :doc:`PackageSendTask <PackageSendTask>`
-------------------------------------------------------------------------------------------------------
-
-**Синтаксис**
+Метод объекта :doc:`SendTask <SendTask>`
 
 
-AddEncryptCertificate(<cert>)
+.. rubric:: Синтаксис
 
-**Параметры**
-
-
-- <cert> - сертификат :doc:`PersonalCertificate <PersonalCertificate>`
-
-**Возвращаемое значение**
+AddEncryptCertificate(Certificate)
 
 
-Нет
+.. rubric:: Параметры
 
-**Описание**
+:Certificate: - сертификат :doc:`PersonalCertificate <PersonalCertificate>`
+
+
+.. rubric:: Возвращаемое значение
+
+Отсутствует
+
+
+.. rubric:: Описание
 
 Добавляет сертификат шифрования документа

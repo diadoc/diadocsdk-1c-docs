@@ -6,9 +6,9 @@
 
 Получение документов производится с помощью объекта :doc:`DocumentTask <DocumentsTask>`.
 
-::
+.. code-block:: c#
 
-    //Создаем объект DocumentsTask
+    // Создаем объект DocumentsTask
     DocumentsTask = Organization.GetDocumentsTask();
     
     // Заполняем параметры отбора документов

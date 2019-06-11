@@ -3,29 +3,36 @@
 
 Элемент объекта :doc:`PackageContent <PackageContent>`, хранящий в себе пару "документ-контент"
 
-Свойства объекта
-----------------
+
+.. rubric:: Свойства
+
+:Document: (:doc:`Document <Document>`, чтение) - документ, с которым связан хранимый в паре контент
+:Content: (:doc:`BaseContent <BaseContent>` или :doc:`DynamicContent <DynamicContent>`, чтение) - представление контента
 
 
-    - **Document** (:doc:`Document <Document>`, чтение) - документ, с которым связан хранимый в паре контент
-    - **Content** (:doc:`BaseContent <BaseContent>`, чтение) - контент. Может быть одним из следующих объектов:
-       -  :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа "ТОРГ-12 в формате ФНС"
-       -  :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа "акт о выполнении работ в формате ФНС"
-       -  :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для действия типа "AcceptDocument" документа УПД
-       -  :doc:`AcceptanceContent <AcceptanceContent>` - для действия типа "AcceptDocument" других документов
-       -  :doc:`RejectionContent <RejectionContent>` - для действия типа "RejectDocument", применяемого к неформализованному документу
-       -  :doc:`FormalizedRejectionContent <FormalizedRejectionContent>` - для действия типа "RejectDocument", применяемого к формализованному документу
+.. rubric:: Методы
+
+* :doc:`LoadContentFromFile <PackageContentItem_GetContentFromFile>`
+* :doc:`LoadContentFromBase64 <PackageContentItem_GetContentFromString>`
 
 
-Методы
-------
+.. rubric:: Методы
 
 Отсутствуют
 
 
-Дополнительная информация
--------------------------
+.. rubric:: Дополнительная информация
 
-1. Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>`, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`
+* Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>` с типом **AcceptDocument**, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
+  В противном случае **Content** будет объектом, производным от :doc:`BaseContent <BaseContent>`
 
-2. Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>`, то у объекта есть методы :doc:`GetContentFromFile <PackageContentItem_GetContentFromFile>` и :doc:`GetContentFromString <PackageContentItem_GetContentFromString>`
+============================================================================ ====================================================================================================
+Тип BaseContent'а свойства Content                                           Описание
+============================================================================ ====================================================================================================
+:doc:`Torg12BuyerContent <Torg12BuyerContent>`                               Титул покупателя Торг-12 в формате 172 приказа ФНС
+:doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` Титул покупателя акта выполненных работ в формате 172 приказа ФНС
+:doc:`UtdBuyerContent <UtdBuyerContent>`                                     Титул покупателя для документа формата 155 приказа ФНС (УПД)
+:doc:`AcceptanceContent <AcceptanceContent>`                                 Подписание однотитульного документа или запроса аннулирования
+:doc:`FormalizedRejectionContent <FormalizedRejectionContent>`               Отказ от подписания документа или запроса аннулирования
+:doc:`CorrectionRequestContent <CorrectionRequestContent>`                   Запрос корректировки документа
+============================================================================ ====================================================================================================

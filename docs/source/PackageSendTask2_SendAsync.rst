@@ -3,18 +3,18 @@
 
 Метод объекта :doc:`PackageSendTask2 <PackageSendTask2>`
 
-**Синтаксис**
 
+.. rubric:: Синтаксис
 
 SendAsync()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
 :doc:`PackageSendTaskAsyncResult <PackageSendTaskAsyncResult>`.
 
-**Описание**
 
+.. rubric:: Описание
 
 Инициирует асинхронную операцию отправки сообщения с пакетом документов на сервер Диадок.
 Результатом асинхронной операции является :doc:`DocumentPackage <DocumentPackage>`.

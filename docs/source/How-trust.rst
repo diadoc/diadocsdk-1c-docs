@@ -10,9 +10,9 @@
 
 Есть несколько способов найти контрагента:
 
--  Поиск по ИНН-КПП контрагента
+# Поиск по ИНН-КПП контрагента
 
-::
+.. code-block:: c#
 
     ЯщикиКонтрагентов = Новый Массив;
 
@@ -25,9 +25,9 @@
         ЯщикиКонтрагентов.Добавить(CounteragentList.GetItem(Ц));
     КонецЦикла;
 
--  Поиск контрагентов по списку ИНН
+# Поиск контрагентов по списку ИНН
 
-::
+.. code-block:: c#
 
     СтрокаИНН = "9667853716,9667853667";
     CounteragentList=   Organization.GetCounteragentListByInnList(СтрокаИНН);
@@ -49,7 +49,7 @@
 
 Для установления партнерских отношений между двумя организациями необходимо отправить запрос партнёрства с помощью метода :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>` или с помощью объекта :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`
 
-::
+.. code-block:: c#
 
     Task = Organization.CreateAcquireCounteragentTask();
     Task.FileName           = "С:\Файл с приглашением.pdf";
@@ -66,7 +66,7 @@
 
 Необходимо выполнить метод :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>`
 
-::
+.. code-block:: c#
 
     Counteragent = Organization.GetCounteragentById(CounteragentId);
     Counteragent.AcquireCounteragent("Принимаем партнёрство");
@@ -77,7 +77,7 @@
 
 Необходимо выполнить метод :doc:`Counteragent.BreakWithCounteragent <BreakWithCounteragent>`
 
-::
+.. code-block:: c#
 
     Counteragent = Organization.GetCounteragentById(CounteragentId);
     Counteragent.BreakWithCounteragent("Отказываем в партнерстве");

@@ -1,56 +1,42 @@
 ﻿CreateReplySendTask
 ===================
 
+.. deprecated:: 5.27.0
+    Используйте :doc:`CreateReplySendTask2 <CreateReplySendTask2>`
+
 Метод объекта :doc:`DocumentPackage <DocumentPackage>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
-CreateReplySendTask(<Type>)
-
-
-**Параметры**
-
--  <Type> (строка, обязательный) - тип ответного действия. В случае, если тип не указан, по умолчанию будет выполняться действие "AcceptDocument".
+CreateReplySendTask(Type="AcceptDocument")
 
 
-Параметр Type может принимать одно из следующих значений:
+..rubric:: Параметры
 
--  "AcceptDocument" - подписание документов
--  "RejectDocument" - отказ в подписи документов
--  "CorrectionRequest" - запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
--  "RevocationRequest" - запроc на аннулирование документов
--  "AcceptRevocation" - принятие аннулирования документов
--  "RejectRevocation" - отказ от аннулирования документов
+:Type: (строка) - тип ответного действия
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
 :doc:`ReplySendTask <ReplySendTask>`
 
-**Описание**
+
+.. rubric:: Описание
+
+Формирует задание для ответного действия с пакетом документов.
+В данном случае содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет :doc:`PackageContent <PackageContent>`, который будет включать в себя набор контентов для каждого документа из пакета. Они будут связаны в пары "документ-контент" в объекте :doc:`PackageContentItem <PackageContentItem>`. При этом контент будет являться объектом, производным от :doc:`BaseContent <BaseContent>` и соответствующим типу выполняемого действия:
 
 
-Формирует задание для ответного действия с пакетом документов. В данном случае 
-содержимым объекта :doc:`ReplySendTask <ReplySendTask>` (свойство **Content**) будет :doc:`PackageContent <PackageContent>`, который будет включать в себя набор контентов для каждого документа из пакета. Они будут связаны в пары "документ-контент" в объекте :doc:`PackageContentItem <PackageContentItem>`. При этом контент будет являться объектом, производным от :doc:`BaseContent <BaseContent>` и соответствующим типу выполняемого действия:
+.. rubric:: Дополнительная информация
 
-  -  для действия "AcceptDocument":
-
-     - :doc:`Torg12BuyerContent <Torg12BuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 172 приказа ФНС"
-     - :doc:`TovTorgBuyerContent <TovTorgBuyerContent>` - титул покупателя для документа "ТОРГ-12 в формате 551 приказа ФНС"
-     - :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>` - титул покупателя для документа "акт о выполнении работ в 172 формате ФНС"
-     - :doc:`Act552BuyerContent <Act552BuyerContent>` - титул покупателя для документа "акт о выполнении работ в 552 формате ФНС"
-     - :doc:`UtdBuyerContent <UtdBuyerContent>` - титул покупателя для универсального передаточного документа
-     - :doc:`AcceptanceContent <AcceptanceContent>` - для других документов
-
-  -  для действия типа "RejectDocument" и "RejectRevocation":
-    - :doc:`FormalizedRejectionContent <FormalizedRejectionContent>`
-
-  -  для действия типа "CorrectionRequest":
-    - :doc:`CorrectionRequestContent <CorrectionRequestContent>`
-
-  -  для действия "AcceptRevocation":    
-    - :doc:`AcceptanceContent <AcceptanceContent>`
-  
-  -  для действия типа "RevocationRequest":
-    - :doc:`RevocationRequestContent <RevocationRequestContent>`
+================================= ===========================================================================
+Возможные значения параметра Type Описание
+================================= ===========================================================================
+"AcceptDocument"                  подписание документов
+"RejectDocument"                  отказ в подписи документов
+"CorrectionRequest"               запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
+"RevocationRequest"               запроc на аннулирование документов
+"AcceptRevocation"                принятие аннулирования документов
+"RejectRevocation"                отказ от аннулирования документов
+================================= ===========================================================================

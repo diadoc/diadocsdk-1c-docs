@@ -5,45 +5,14 @@
 Как установить партнёрские отношения в Диадок описано в разделе :doc:`Как установить партнерские отношения <How-trust>`).
 
 
-**Способ 1:**
-Отправка документов производится с путём создания объекта :doc:`PackageSendTask <PackageSendTask>`, добавления в него :doc:`документов на отправку <DocumentToSend>` и непосредственной отправкой.
-Стоит учитывать, что неформализованные типы документов добавляются только как файлы с диска.
+Способ 1
+--------
+Отправка документов производится с путём создания объекта :doc:`PackageSendTask2 <PackageSendTask2>`, добавления в него :doc:`документов на отправку <CustomDocumentToSend>` и самой отправкой.
 
-В ближайшее время планируется отказ от данного метода отправки документов (см. Способ 2 ниже)
+При использовании данного метода необходимо указывать дополнительно :doc:`мета информацию <DocumentMetadataItem>`, у которой источник (Source) указан *"User"*.
 
-::
-
-    Процедура ОтправитьДокументы(Organization, Counteragent)
-    
-        // Создание задания на отправку
-        SendTask = Organization.CreatePackageSendTask();
-        SendTask.CounterAgentId = Counteragent.Id;
-        
-        // Добавление документа для заполнения контента средствами компоненты
-        // Предполагаем, что процедура заполнения контента уже существует
-        First_DocumentToSend = SendTask.AddDocument("UniversalTransferDocument");
-        First_DocumentToSend.Comment = "Это УПД с заполнением контента средствами компоненты";
-        ЗаполнитьКонтентДокумента(First_DocumentToSend.Content);
-        
-        // Добавление документа УПД с контентом, взятым из файла
-        Second_DocumentToSend = SendTask.AddDocumentFromFileRaw("UniversalTransferDocument", "С:\Moй УПД.xml");
-        Second_DocumentToSend.Comment = "Это УПД с контентом, загруженным из файла";
-        
-        // Добавление неформализованного документа
-        Third_DocumentToSend = SendTask.AddDocumentFromFileRaw("Nonformalized", "С:\Документ.pdf");
-        Third_DocumentToSend.Comment = "Это неформализованный документ";
-        
-        ОтправленныеДокументы = SendTask.Send();
-    
-    КонецПроцедуры
-
-
-
-**Способ 2:**
-Идейно тот же, что Способ 1, но с использованием :doc:`PackageSendTask2 <PackageSendTask2>`.
-Преимущества заключаются в том, что этот объект поддерживает большее количество формализованных документов и только с его помощью можно отправить УПД в формате 820 приказа.
-При использовании данного метода необходимо указывать дополнительно :doc:`мета информацию <DocumentMetadataItem>`, у которой источник (Source) указан User.
 Для получения информации о всех доступных типах документов используйте :doc:`Organization.GetDocumentTypes <GetDocumentTypes>`.
+
 
 ::
 
@@ -74,3 +43,42 @@
         ОтправленныеДокументы = SendTask.Send();
     
     КонецПроцедуры
+
+
+Способ 2
+--------
+
+.. deprecated:: 5.27.0
+
+Отправка документов производится с путём создания объекта :doc:`PackageSendTask <PackageSendTask>`, добавления в него :doc:`документов на отправку <DocumentToSend>` и самой отправкой.
+Стоит учитывать, что неформализованные типы документов добавляются только как файлы с диска.
+
+::
+
+    Процедура ОтправитьДокументы(Organization, Counteragent)
+    
+        // Создание задания на отправку
+        SendTask = Organization.CreatePackageSendTask();
+        SendTask.CounterAgentId = Counteragent.Id;
+        
+        // Добавление документа для заполнения контента средствами компоненты
+        // Предполагаем, что процедура заполнения контента уже существует
+        First_DocumentToSend = SendTask.AddDocument("UniversalTransferDocument");
+        First_DocumentToSend.Comment = "Это УПД с заполнением контента средствами компоненты";
+        ЗаполнитьКонтентДокумента(First_DocumentToSend.Content);
+        
+        // Добавление документа УПД с контентом, взятым из файла
+        Second_DocumentToSend = SendTask.AddDocumentFromFileRaw("UniversalTransferDocument", "С:\Moй УПД.xml");
+        Second_DocumentToSend.Comment = "Это УПД с контентом, загруженным из файла";
+        
+        // Добавление неформализованного документа
+        Third_DocumentToSend = SendTask.AddDocumentFromFileRaw("Nonformalized", "С:\Документ.pdf");
+        Third_DocumentToSend.Comment = "Это неформализованный документ";
+        
+        ОтправленныеДокументы = SendTask.Send();
+    
+    КонецПроцедуры
+
+
+.. seealso:: :doc:`Как установить партнерские отношения <How-trust>`
+.. seealso:: :doc:`Organization.GetDocumentTypes <GetDocumentTypes>`

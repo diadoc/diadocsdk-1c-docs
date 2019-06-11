@@ -1,19 +1,22 @@
 ﻿GetContent
 ==========
 
-Метод объекта :doc:`BaseDocument <BaseDocument>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <GetDynamicContent>`
+
+Метод объекта :doc:`BaseDocument <BaseDocument>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 GetContent()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
-Объект титула продовца, производный от :doc:`BaseContent <BaseContent>`
+Объект, производный от :doc:`BaseContent <BaseContent>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Возвращает содержание титула продавца.
+Возвращает содержание титула продавца

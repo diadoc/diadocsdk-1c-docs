@@ -4,23 +4,16 @@
 Метод объекта :doc:`Organization <Organization>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 CreatePackageSendTask2()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
-:doc:`PackageSendTask2 <PackageSendTask2>`.
+:doc:`PackageSendTask2 <PackageSendTask2>`
 
 
-**Описание**
+.. rubric:: Описание
 
 Позволяет создать задание для отправки документов на сервер Диадок
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   PackageSendTask <PackageSendTask>

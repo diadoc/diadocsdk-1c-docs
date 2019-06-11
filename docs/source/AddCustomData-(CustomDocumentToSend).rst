@@ -1,23 +1,22 @@
 ﻿AddCustomData
 =============
 
+.. deprecated:: 5.27.0
+    Используйте :doc:`CustomDataPatchTask <CustomDataPatchTask>`
+
 Метод объекта :doc:`CustomDocumentToSend <CustomDocumentToSend>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 AddCustomData()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
 :doc:`CustomDataItem <CustomDataItem>`
 
 
-**Описание**
+.. rubric:: Описание
 
 Добавляет элемент произвольных данных в коллекцию произвольных данных - :doc:`CustomDocumentToSend.CustomData <CustomDocumentToSend>`
-
-Метод устарел
--------------
-Используйте :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>`
