@@ -91,7 +91,7 @@
 * :doc:`GetPrintForm <GetPrintForm>` - получает печатную форму документа в формате pdf
 * :doc:`GetDocumentPackage <GetDocumentPackage>` - возвращает пакет, в котором находится документ
 * :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` - создает задание на выполнение ответного действия с документом
-* :doc:`CreateReplySendTask2 <Document_CreateReplySendTask2>` - создает задание на выполнение ответного действия с документом
+* :doc:`CreateReplySendTask2 <CreateReplySendTask2>` - создает задание на выполнение ответного действия с документом
 * :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` - создает задание на подписание и отправку исходящего документа с отложенной отправкой.
 * :doc:`MarkAsRead <MarkAsRead>` - помечает, что документ был прочитан сотрудником организации (устанавливает флаг IsRead)
 * :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` - создает :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию **CustomData**

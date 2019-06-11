@@ -2,7 +2,7 @@
 ====
 
 .. deprecated:: 5.6.0
-    Для отправки документов используйте :doc:`PackageSendTask2 <PackageSendTask2>` и :doc:`OutdocumentSignTask <OutdocumentSignTask>`
+    Для отправки документов используйте :doc:`PackageSendTask2 <PackageSendTask2>` и :doc:`OutDocumentSignTask <OutDocumentSignTask>`
 
 Метод объекта Send
 

@@ -24,7 +24,7 @@
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 |Контекст создания                                                                             |Тип контента                                                                |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:doc:`DocumentPackage.CreateReplySendTask(<Any Type>) <CreateReplySendTask-(DocumentPackage)>`|:doc:`PackageContent <PackageContent>`                                      |
+|:doc:`DocumentPackage.CreateReplySendTask(Any Type) <CreateReplySendTask-(DocumentPackage)>`|:doc:`PackageContent <PackageContent>`                                      |
 +----------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
 |:doc:`Document.CreateReplySendTask("AcceptDocument") <CreateReplySendTask-(Document)>`        |:doc:`Torg12BuyerContent <Torg12BuyerContent>`                              |
 |                                                                                              |:doc:`TovTorgBuyerContent <TovTorgBuyerContent>`                            |

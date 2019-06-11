@@ -2,7 +2,7 @@
 ==========
 
 .. deprecated:: 5.27.0
-    Используйте :doc:`GetDynamicContent <GetDynamicContent>`
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
 Метод объекта :doc:`BaseDocument <BaseDocument>`
 

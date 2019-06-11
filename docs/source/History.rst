@@ -14,7 +14,7 @@ v5.27.0 - 10.06.2019
      - Тип объекта :doc:`PackageContentItem.Content <PackageContentItem>` изменён при использовании новых объектов
      - Тип объекта :doc:`CustomDocumentToSend.Content <PackageContentItem>` изменён при использовании новых объектов
      - В объект :doc:`DocumentTitle <DocumentTitle>` добавлено поле HaveUserDataXSD
-     - Добавлены методы :doc:`Document.GetDynamicContent() <Document_GetDynamicContent>` и :doc:`Document.GetDynamicBuyerContent() <Document_GetDynamicBuyerContent>` для представления контента документов в виде :doc:`DynamicContent <DynamicContent>`
+     - Добавлены методы :doc:`Document.GetDynamicContent() <Document_GetDynamicContent>` для представления контента документов в виде :doc:`DynamicContent <DynamicContent>`
      - Расширен набор статусов подписанта в объекте :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`
      
 - Уменьшено количество различных текстов ошибок. Исправлены опечатки

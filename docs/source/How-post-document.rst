@@ -14,7 +14,7 @@
 Для получения информации о всех доступных типах документов используйте :doc:`Organization.GetDocumentTypes <GetDocumentTypes>`.
 
 
-::
+.. code-block:: c#
 
     Процедура ОтправитьДокументы(Organization, Counteragent)
     
@@ -53,7 +53,7 @@
 Отправка документов производится с путём создания объекта :doc:`PackageSendTask <PackageSendTask>`, добавления в него :doc:`документов на отправку <DocumentToSend>` и самой отправкой.
 Стоит учитывать, что неформализованные типы документов добавляются только как файлы с диска.
 
-::
+.. code-block:: c#
 
     Процедура ОтправитьДокументы(Organization, Counteragent)
     
