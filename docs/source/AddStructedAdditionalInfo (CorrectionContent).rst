@@ -1,4 +1,4 @@
 AddStructedAdditionalInfo
-===========================
+=========================
 
-Переименован в :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>`
+:doc:`Раздел переехал <AddStructedAdditionalInfo-(InvoiceCorrectionContent)>`

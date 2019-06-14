@@ -1,24 +1,25 @@
-﻿Reject 
-=================================
+﻿Reject
+======
 
-Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
-**Синтаксис**
-
-
-Reject(<Comment>)
-
-**Параметры**
+Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`
 
 
--  <Comment> (строка, обязательный) - комментарий к отказу в подписании
+.. rubric:: Синтаксис
 
-**Возвращаемое значение**
+Reject(Comment)
 
+
+.. rubric:: Параметры
+
+:Comment: (строка) - комментарий к отказу в подписании
+
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
+.. rubric:: Описание
 
-
-Формирует отказ в подписании документа.
+Формирует отказ в подписании документа

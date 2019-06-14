@@ -1,19 +1,19 @@
 GetDocumentTypes
-==================
+================
 
-Метод объекта :doc:`Organization <Organization>`.
+Метод объекта :doc:`Organization <Organization>`
 
-**Синтаксис**
 
+.. rubric:: Синтаксис
 
 GetDocumentTypes()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
 :doc:`коллекция <Collection>` объектов типа :doc:`DocumentTypeDescription <DocumentTypeDescription>`
 
-**Описание**
 
+.. rubric:: Описание
 
-Возвращает описание типов документов, доступных в ящике.
+Возвращает описание типов документов, доступных в ящике организации

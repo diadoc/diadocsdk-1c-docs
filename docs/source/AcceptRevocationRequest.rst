@@ -1,19 +1,22 @@
 ﻿AcceptRevocationRequest
 =======================
 
-Метод объекта :doc:`Document <Document>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
-**Синтаксис**
+Метод объекта :doc:`Document <Document>`
 
+
+.. rubric:: Синтаксис
 
 AcceptRevocationRequest()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
 
+.. rubric:: Описание
 
-Принимает запрос на аннулирование документа.
+Принимает запрос на аннулирование документа

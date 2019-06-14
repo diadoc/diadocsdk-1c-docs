@@ -1,19 +1,19 @@
 ﻿AddStructedAdditionalInfo
 =========================
 
-Метод объекта :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`.
+Метод объекта :doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 AddStructedAdditionalInfo()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
-:doc:`StructedAdditionalInfo <StructedAdditionalInfo>`.
+:doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Добавляет новый элемент в список дополнительных сведений исправления счета-фактуры.
+Добавляет новый элемент в список дополнительных сведений исправления счета-фактуры

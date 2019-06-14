@@ -1,26 +1,28 @@
 ﻿AddStructuredDataAttachment
 ===========================
 
+.. deprecated:: 5.27.0
+    используйте :doc:`CustomDataPatchTask  <CustomDataPatchTask>`
+
 Метод объекта :doc:`SendTask <SendTask>`
 
-**Синтаксис**
+
+.. rubric:: Синтаксис
+
+AddStructuredDataAttachment(FileName, FilePath)
 
 
-AddStructuredDataAttachment(<FileName>, <FilePath>)
+.. rubric:: Параметры
 
-**Параметры**
+:FileName: - имя файла
+:FilePath: - путь до файла
 
 
--  <FileName> (строка, обязательный) - имя файла
--  <FilePath> (строка, обязательный) - путь до файла
-
-**Возвращаемое значение**
-
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
 
+.. rubric:: Описание
 
-Метод позволяет добавить файл со структурированными данными в
-отправляемый документ.
+Метод позволяет добавить файл со структурированными данными в отправляемый документ

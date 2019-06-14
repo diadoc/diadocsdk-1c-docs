@@ -1,104 +1,83 @@
 ﻿Как установить партнерские отношения
 ====================================
 
-Для того что бы две организации могли обмениваться документами, они
-должны установить партнерские отношения в Диадоке.
 
-Отправлять документы организации, с которой не установлены партнерские
-отношения невозможно.
+Для того, чтобы отправлять документы другой организации в Диадок, между вашей органиазцией и организацией контрагента должны быть установлены партнёрские отношения
 
-Для отражения сущности произвольной организации в Диадоке предназначен
-:doc:`Counteragent <Counteragent>`.
 
-﻿Как найти контрагента
----------------------------------
+Как найти контрагента
+---------------------
 
-Найти контрагента в Диадоке возможно с помощью поиска по ИНН/КПП. С
-помощью компоненты можно реализовать несколько способов поиска
-контрагента.
+Есть несколько способов найти контрагента:
 
--  Поиск по ИНН/КПП в синхронном режиме, для этого можно использовать
-   метод :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>`
+# Поиск по ИНН-КПП контрагента
 
-   ::
+.. code-block:: c#
 
-                   ЯщикиКонтрагентов = Новый Массив;
+    ЯщикиКонтрагентов = Новый Массив;
 
-                   ИНН= СокрЛП(Контрагент.ИНН);
-                   КПП= СокрЛП(Контрагент.КПП);
+    ИНН= СокрЛП(Контрагент.ИНН);
+    КПП= СокрЛП(Контрагент.КПП);
 
-                   //Получаем список контрагентов с заданными ИНН/КПП
-                   CounteragentList = Organization.GetCounteragentListByInnKpp(ИНН, КПП);
-                   Для Ц = 0 по CounteragentList.count-1 Цикл
-                     ЯщикиКонтрагентов.Добавить(CounteragentList.GetItem(Ц));
-                   КонецЦикла;
+    // Получаем список контрагентов с заданными ИНН/КПП
+    CounteragentList = Organization.GetCounteragentListByInnKpp(ИНН, КПП);
+    Для Ц = 0 по CounteragentList.count-1 Цикл
+        ЯщикиКонтрагентов.Добавить(CounteragentList.GetItem(Ц));
+    КонецЦикла;
 
--  Поиск по списку ИНН, для получения результата в асинхронном режиме,
-   можно воспользоваться методом
-   :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>`
-   объекта :doc:`Organization <Organization>`
+# Поиск контрагентов по списку ИНН
 
-   ::
+.. code-block:: c#
 
-                   //Получаем результат асинхронной операции по строке содержащей список ИНН
-                   CounteragentList=   Organization.GetCounteragentListByInnList(СтрокаИНН);
+    СтрокаИНН = "9667853716,9667853667";
+    CounteragentList=   Organization.GetCounteragentListByInnList(СтрокаИНН);
 
-                   Если CounteragentList.IsCompleted Тогда
-                     РезультатЗапроса = CounteragentList.Result;
-                     Item = РезультатЗапроса.GetItem(0);
-                     Counteragent = Item.Counteragent;
-                   КонецЕсли;
+    Если CounteragentList.IsCompleted Тогда
+        РезультатЗапроса = CounteragentList.Result;
+        Item = РезультатЗапроса.GetItem(0);
+        Counteragent = Item.Counteragent;
+    КонецЕсли;
 
-Как установить партнерство
+
+Также можно получать объект :doc:`Counteragent <Counteragent>`, зная идентификатор ящика контрагента в диадок, - :doc:`Organization.GetCounteragentById <GetCounteragentById>`
+
+Или фильтровать контрагентов по статусу - :doc:`Organization.GetCounteragentListByStatus <GetCounteragentListByStatus>`
+
+
+Как пригласить контрагента к партнёрству
+----------------------------------------
+
+Для установления партнерских отношений между двумя организациями необходимо отправить запрос партнёрства с помощью метода :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>` или с помощью объекта :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`
+
+.. code-block:: c#
+
+    Task = Organization.CreateAcquireCounteragentTask();
+    Task.FileName           = "С:\Файл с приглашением.pdf";
+    Task.CounteragentBoxId  = Counteragent.Id;
+    Task.Message            = "Приглашаем к партнерству";
+    Task.SignatureRequested = True;
+    
+    ИдентификаторКонтрагента = Task.Send();
+    
+
+
+Как принять приглашение от контрагента
 --------------------------------------
 
-Для установления партнерства между организациями А и Б в Диадоке,
-организация А должна отправить, а организация Б принять запрос на
-установление партнерства.
+Необходимо выполнить метод :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>`
 
-Для отправки, принятия или отклонения запроса, а также для разрыва
-партнерских отношений используются методы объекта
-:doc:`Counteragent <Counteragent>`:
+.. code-block:: c#
 
--  AcquireCounteragent – отправка запроса и подтверждение входящего
-   запроса от контрагента.
+    Counteragent = Organization.GetCounteragentById(CounteragentId);
+    Counteragent.AcquireCounteragent("Принимаем партнёрство");
 
-   ::
 
-                   //Находим контрагента по ИНН/КПП
-                   CounteragentList = Organization.GetCounteragentListByInnKpp(ИНН, КПП);
-                   Counteragent = CounteragentList.GetItem(0);
-                   //Принимаем запрос или отправляем приглашение
-                   Counteragent.AcquireCounteragent("Приглашаем к партнерству");
+Как отказаться от партнёрства
+-----------------------------
 
-                   //Или если у нас имеется ID контрагента, получаем его по ID
-                   Counteragent = Organization.GetCounteragentById(CounteragentId);
-                   Counteragent.AcquireCounteragent("Приглашаем к партнерству");
+Необходимо выполнить метод :doc:`Counteragent.BreakWithCounteragent <BreakWithCounteragent>`
 
--  BreakWithCounteragent – отклонение запроса и разрыв существующего
-   партнерства.
+.. code-block:: c#
 
-   ::
-
-                   //Находим контрагента по ИНН/КПП
-                   CounteragentList = Organization.GetCounteragentListByInnKpp(ИНН, КПП);
-                   Counteragent = CounteragentList.GetItem(0);
-                   //Отклоняем запрос или разрываем взаимоотношения
-                   Counteragent.BreakWithCounteragent("Отказываем в партнерстве");
-
-                   //Или если у нас имеется ID контрагента, получаем его по ID
-                   Counteragent = Organization.GetCounteragentById(CounteragentId);
-                   Counteragent.BreakWithCounteragent("Отказываем в партнерстве");
-
-Для получения списка контрагентов в зависимости от статуса партнерства
-предназначен метод
-:doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` объекта
-:doc:`Organization <Organization>`.
-
-Для получения объекта :doc:`Counteragent <Counteragent>` по идентификатору
-ящика организации используется метод
-:doc:`GetCounteragentById <GetCounteragentById>` объекта
-:doc:`Organization <Organization>`.
-
-Важно. Партнерство с контрагентом необходимо устанавливать для каждой
-нашей организации.
+    Counteragent = Organization.GetCounteragentById(CounteragentId);
+    Counteragent.BreakWithCounteragent("Отказываем в партнерстве");

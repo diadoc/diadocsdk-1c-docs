@@ -3,21 +3,22 @@
 
 Метод объекта :doc:`SendTask <SendTask>`
 
-**Синтаксис**
+
+.. rubric:: Синтаксис
+
+AddEncryptCertificate(Certificate)
 
 
-AddEncryptCertificate(<cert>)
+.. rubric:: Параметры
 
-**Параметры**
-
-
-- <cert> - сертификат :doc:`PersonalCertificate <PersonalCertificate>`
-
-**Возвращаемое значение**
+:Certificate: - сертификат :doc:`PersonalCertificate <PersonalCertificate>`
 
 
-Нет
+.. rubric:: Возвращаемое значение
 
-**Описание**
+Отсутствует
+
+
+.. rubric:: Описание
 
 Добавляет сертификат шифрования документа

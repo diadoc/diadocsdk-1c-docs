@@ -1,6 +1,54 @@
 ﻿История изменений внешней компоненты
 ====================================
 
+`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+
+v5.27.0 - 10.06.2019
+--------------------
+
+- Добавлена поддержка УПД в формате 820 приказа:
+     - Добавлен объект :doc:`PackageSendTask2 <PackageSendTask2>`
+     - Добавлен объект :doc:`ReplySendTask2 <ReplySendTask2>`
+     - Добавлен объект :doc:`DynamicContent <DynamicContent>`
+     - Добавлен метод :doc:`Organization.SaveUserDataXSD <SaveUserDataXSD>`
+     - Тип объекта :doc:`PackageContentItem.Content <PackageContentItem>` изменён при использовании новых объектов
+     - Тип объекта :doc:`CustomDocumentToSend.Content <PackageContentItem>` изменён при использовании новых объектов
+     - В объект :doc:`DocumentTitle <DocumentTitle>` добавлено поле HaveUserDataXSD
+     - Добавлены методы :doc:`Document.GetDynamicContent() <Document_GetDynamicContent>` для представления контента документов в виде :doc:`DynamicContent <DynamicContent>`
+     - Расширен набор статусов подписанта в объекте :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`
+     
+- Уменьшено количество различных текстов ошибок. Исправлены опечатки
+
+- Объекту :doc:`Counteragent <Counteragent>` добавлено поле IsBranch
+
+- Добавлены новые типы для объекта :doc:`ReplySendTask <ReplySendTask>`
+
+- :doc:`Исправлены ошибки <Bugs_5_27>`
+
+- Нерекомендуемыми к использованию помечены:
+    - :doc:`SendTask <SendTask>`
+    - :doc:`PackageSendTask <PackageSendTask>`
+    - :doc:`ReplySendTask <ReplySendTask>`
+    - :doc:`Contract.Accept <Accept-(Contract)>`
+    - :doc:`Nonformalized.Accept <Accept-(Nonformalized)>`
+    - :doc:`NonformalizedAcceptanceCertificate.Accept <Accept-(NonformalizedAcceptanceCertificate)>`
+    - :doc:`NonformalizedTorg12.Accept <Accept-(NonformalizedTorg12)>`
+    - :doc:`Contract.Reject <Reject-(Contract)>`
+    - :doc:`Nonformalized.Reject <Reject-(Nonformalized)>`
+    - :doc:`NonformalizedAcceptanceCertificate.Reject <Reject-(NonformalizedAcceptanceCertificate)>`
+    - :doc:`NonformalizedTorg12.Reject <Reject-(NonformalizedTorg12)>`
+    - :doc:`XmlAcceptanceCertificate.Reject <Reject-(XmlAcceptanceCertificate)>`
+    - :doc:`XmlTorg12.Reject <Reject-(XmlTorg12)>`
+    - :doc:`InvoiceCorrection.SendCorrectionRequest <SendCorrectionRequest-(InvoiceCorrection)>`
+    - :doc:`InvoiceCorrectionRevision.SendCorrectionRequest <SendCorrectionRequest-(InvoiceCorrectionRevision)>`
+    - :doc:`InvoiceRevision.SendCorrectionRequest <SendCorrectionRequest-(InvoiceRevision)>`
+    - :doc:`Invoice.SendCorrectionRequest <SendCorrectionRequest-Invoice>`
+    - :doc:`AcceptRevocationRequest <AcceptRevocationRequest>`
+    - :doc:`CreateSendTask <CreateSendTask>`
+    - :doc:`CreateSendTaskFromFile <CreateSendTaskFromFile>`
+    - :doc:`CreateSendTaskFromFileRaw <CreateSendTaskFromFileRaw>`
+
+
 v5.26.6 - 27.05.2019
 --------------------
 

@@ -1,26 +1,27 @@
-﻿SendCorrectionRequest (InvoiceCorrectionRevision)
-=================================================
+﻿SendCorrectionRequest
+=====================
 
-Метод объекта :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
-**Синтаксис**
-
-
-SendCorrectionRequest( <Comment>)
-
-**Параметры**
+Метод объекта :doc:`InvoiceCorrectionRevision <InvoiceCorrectionRevision>`
 
 
--  <Comment> (Строка, обязательный) Комментарий к уведомлению об
-   уточнении.
+.. rubric:: Синтаксис
 
-**Возвращаемое значение**
+SendCorrectionRequest(Comment)
 
+
+.. rubric:: Параметры
+
+:Comment: (Строка) - комментарий к уведомлению об уточнении
+
+
+.. rubric:: Возвращаемое значение
 
 Отсутствует
 
-**Описание**
 
+.. rubric:: Описание
 
-Отправляет уведомление об уточнении счета-фактуры с указанным
-комментарием, согласно порядка обмена ЭСФ
+Отправляет уведомление об уточнении счета-фактуры с указанным комментарием, согласно порядка обмена ЭСФ
