@@ -26,9 +26,9 @@
 
 .. rubric:: Методы объекта
 
-    * :doc:`GetContent <GetContent-(InvoiceCorrectionRevision)>` - возвращает содержание корректировочного счета-фактуры в виде объектной модели
-    * :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(InvoiceCorrectionRevision)>` - возвращает комментарий к уведомлению об уточнении
-    * :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
+* :doc:`GetContent <GetContent-(InvoiceCorrectionRevision)>` - возвращает содержание корректировочного счета-фактуры в виде объектной модели
+* :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(InvoiceCorrectionRevision)>` - возвращает комментарий к уведомлению об уточнении
+* :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
 
 
 .. rubric:: Дополнительная информация

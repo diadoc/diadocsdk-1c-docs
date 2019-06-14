@@ -14,10 +14,10 @@
 
 .. rubric:: Методы объекта
 
-    * :doc:`GetRejectionComment <GetRejectionComment-(XmlAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
-    * :doc:`GetContent <GetContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул исполнителя) в виде объектной модели
-    * :doc:`GetBuyerContent <GetBuyerContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул заказчика) в виде объектной модели
-    * :doc:`SaveRecipientContent <SaveRecipientContent-(XmlAcceptanceCertificate)>` - сохраняет содержимое титула покупателя на локальный диск
+* :doc:`GetRejectionComment <GetRejectionComment-(XmlAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
+* :doc:`GetContent <GetContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул исполнителя) в виде объектной модели
+* :doc:`GetBuyerContent <GetBuyerContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул заказчика) в виде объектной модели
+* :doc:`SaveRecipientContent <SaveRecipientContent-(XmlAcceptanceCertificate)>` - сохраняет содержимое титула покупателя на локальный диск
 
 
 .. rubric:: Дополнительная информация

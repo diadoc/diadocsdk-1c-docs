@@ -17,9 +17,9 @@
 
 .. rubric:: Методы объекта
 
-    *  :doc:`GetContent <GetContent-Invoice>` - возвращает содержание счета-фактуры в виде объектной модели
-    *  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-Invoice>` - возвращает комментарий к уведомлению об уточнении
-    *  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
+*  :doc:`GetContent <GetContent-Invoice>` - возвращает содержание счета-фактуры в виде объектной модели
+*  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-Invoice>` - возвращает комментарий к уведомлению об уточнении
+*  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
 
 
 .. rubric:: Дполнительная информация

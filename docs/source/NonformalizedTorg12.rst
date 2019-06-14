@@ -14,7 +14,7 @@
 
 .. rubric:: Методы объекта
 
-    * :doc:`GetRejectionComment <GetRejectionComment-(NonformalizedTorg12)>` - возвращает комментарий к отказу в подписании
+* :doc:`GetRejectionComment <GetRejectionComment-(NonformalizedTorg12)>` - возвращает комментарий к отказу в подписании
 
 
 .. rubric:: Дополнительная информация

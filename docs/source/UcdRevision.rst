@@ -22,10 +22,10 @@
 
 .. rubric:: Методы объекта
 
-    * :doc:`GetContent <GetContent-(UcdRevision)>` - возвращает объект титула продавца УКД
-    * :doc:`GetBuyerContent <GetBuyerContent-(UcdRevision)>` - возвращает объект титула покупателя УКД
-    * :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту УКД
-    * :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>` - возвращает комментарий к уведомлению об уточнении
+* :doc:`GetContent <GetContent-(UcdRevision)>` - возвращает объект титула продавца УКД
+* :doc:`GetBuyerContent <GetBuyerContent-(UcdRevision)>` - возвращает объект титула покупателя УКД
+* :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту УКД
+* :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>` - возвращает комментарий к уведомлению об уточнении
 
 
 .. rubric:: Дополнительная информация
