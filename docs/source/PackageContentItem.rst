@@ -23,7 +23,7 @@
 
 .. rubric:: Дополнительная информация
 
-* Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>` с типом **AcceptDocument**, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
+* Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>` с типом **AcceptDocument** для двухтитульного документа, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
   В противном случае **Content** будет объектом, производным от :doc:`BaseContent <BaseContent>`
 
 ============================================================================ ====================================================================================================
