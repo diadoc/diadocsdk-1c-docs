@@ -1,9 +1,9 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-`RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
+`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
 
-v5.27.0 - 14.06.2019
+v5.27.0 - 17.06.2019
 --------------------
 
 - Добавлена поддержка УПД в формате 820 приказа:
@@ -132,27 +132,8 @@ v5.25.0 - 23.11.2018
 v5.24.2 - 16.11.2018
 --------------------
 
-- :doc:`Исправлены ошибки <Bugs_5_24>`
-
-v5.24.1 - 13.11.2018
---------------------
-
-- :doc:`Исправлены ошибки <Bugs_5_24>`
-
-v5.24.0 - 29.10.2018
---------------------
-
 - Добавлена возможность работы с шаблонами документов
-- Добавлены объекты:
-    - :doc:`TemplateSendTask <TemplateSendTask>`
-    - :doc:`TemplateToSend <TemplateToSend>`
-    - :doc:`TransformTemplateTask <TransformTemplateTask>`
-    - :doc:`Template <Template>`
-    - :doc:`DocumentTransformation <DocumentTransformation>`
-    - :doc:`Entity <Entity>`
-    
 - :doc:`Исправлены ошибки <Bugs_5_24>`
-
 
 v5.23.0 - 10.10.2018
 --------------------

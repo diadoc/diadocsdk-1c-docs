@@ -2,7 +2,7 @@
 ============
 
 .. feed-entry::
-   :date: 2019-06-14
+   :date: 2019-06-17
    
 - Добавлена поддержка УПД в формате 820 приказа:
      - Добавлен объект :doc:`PackageSendTask2 <PackageSendTask2>`
@@ -56,6 +56,6 @@
     - Исправлена работа методов Reject у документов с типом Contract, Nonformalized
 
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
