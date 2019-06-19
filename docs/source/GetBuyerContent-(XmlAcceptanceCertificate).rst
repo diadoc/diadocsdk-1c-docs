@@ -1,21 +1,22 @@
-﻿GetBuyerContent 
-==========================================
+﻿GetBuyerContent
+===============
 
-Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
-**Синтаксис**
+Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`
 
+
+.. rubric:: Синтаксис
 
 GetBuyerContent()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
-Объект
 :doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>`.
 
-**Описание**
 
+.. rubric:: Описание
 
-Возвращает содержание документа в виде объектной модели (титул
-заказчика).
+Возвращает содержание документа в виде объектной модели (титул заказчика)

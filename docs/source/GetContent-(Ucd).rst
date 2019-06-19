@@ -1,19 +1,22 @@
-﻿GetContent 
+﻿GetContent
 ==========
 
-Метод объекта :doc:`Ucd <Ucd>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
+
+Метод объекта :doc:`Ucd <Ucd>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 GetContent()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
 :doc:`UcdSellerContent <UcdSellerContent>`
 
 
-**Описание**
+..rubric:: Описание
 
-Возвращает содержание титула продавца универсального корректировочного документа.
+Возвращает содержание титула продавца универсального корректировочного документа

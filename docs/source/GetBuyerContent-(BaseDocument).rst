@@ -1,19 +1,20 @@
-﻿GetBuyerContent 
+﻿GetBuyerContent
 ===============
 
-Метод объекта :doc:`BaseDocument <BaseDocument>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
+Метод объекта :doc:`BaseDocument <BaseDocument>`
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 GetBuyerContent()
 
+.. rubric:: Возвращаемое значение
 
-**Возвращаемое значение**
-
-Объект титула покупателя, производный от :doc:`BaseContent <BaseContent>` 
+Объект титула покупателя, производный от :doc:`BaseContent <BaseContent>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Возвращает содержание титула покупателя.
+Возвращает содержание титула покупателя

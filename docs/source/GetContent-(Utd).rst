@@ -1,19 +1,22 @@
-﻿GetContent 
+﻿GetContent
 ==========
 
-Метод объекта :doc:`Utd <Utd>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
+
+Метод объекта :doc:`Utd <Utd>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис
 
 GetContent()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
 :doc:`UtdSellerContent <UtdSellerContent>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Возвращает содержание титула продавца универсального передаточного документа.
+Возвращает содержание титула продавца универсального передаточного документа

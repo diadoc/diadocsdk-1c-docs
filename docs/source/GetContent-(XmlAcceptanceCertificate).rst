@@ -1,21 +1,22 @@
-﻿GetContent 
-=====================================
+﻿GetContent
+==========
 
-Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
-**Синтаксис**
+Метод объекта :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`
 
+
+.. rubric:: Синтаксис
 
 GetContent()
 
-**Возвращаемое значение**
+
+.. rubric:: Возвращаемое значение
+
+:doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`
 
 
-Объект
-:doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`.
+.. rubric:: Описание
 
-**Описание**
-
-
-Возвращает содержание документа в виде объектной модели (титул
-исполнителя).
+Возвращает содержание документа в виде объектной модели (титул исполнителя)

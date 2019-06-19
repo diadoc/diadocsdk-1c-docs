@@ -1,7 +1,13 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+`RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
+
+v5.27.1 - 19.06.2019
+--------------------
+
+- :doc:`Исправлены ошибки <Bugs_5_27>`
+
 
 v5.27.0 - 17.06.2019
 --------------------
