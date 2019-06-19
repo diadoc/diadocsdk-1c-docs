@@ -1,20 +1,22 @@
-﻿GetBuyerContent 
-===========================
+﻿GetBuyerContent
+===============
 
-Метод объекта :doc:`XmlTorg12 <XmlTorg12>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
-**Синтаксис**
+Метод объекта :doc:`XmlTorg12 <XmlTorg12>`
 
+
+.. rubric:: Синтаксис
 
 GetBuyerContent()
 
-**Возвращаемое значение**
+
+.. rubric:: Возвращаемое значение
+
+:doc:`Torg12BuyerContent <Torg12BuyerContent>`
 
 
-:doc:`Torg12BuyerContent <Torg12BuyerContent>`.
+.. rubric:: Описание
 
-**Описание**
-
-
-Возвращает содержание документа торг-12 в виде объектной модели (титул
-покупателя).
+Возвращает содержание документа торг-12 в виде объектной модели (титул покупателя)

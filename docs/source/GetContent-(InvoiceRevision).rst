@@ -1,20 +1,22 @@
-﻿GetContent 
-============================
+﻿GetContent
+==========
+
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
 Метод объекта :doc:`InvoiceRevision <InvoiceRevision>`.
 
-**Синтаксис**
 
+.. rubric:: Синтаксис
 
 GetContent()
 
-**Возвращаемое значение**
 
+.. rubric:: Возвращаемое значение
 
 Объектная модель данных :doc:`InvoiceContent <InvoiceContent>`.
 
-**Описание**
 
+.. rubric:: Описание
 
-Возвращает содержание исправленного счета-фактуры в виде объектной
-модели.
+Возвращает содержание исправленного счета-фактуры в виде объектной модели

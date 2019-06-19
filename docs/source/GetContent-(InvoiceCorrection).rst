@@ -1,20 +1,22 @@
-﻿GetContent 
-==============================
+﻿GetContent
+==========
 
-Метод объекта :doc:`InvoiceCorrection <InvoiceCorrection>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
 
-**Синтаксис**
+Метод объекта :doc:`InvoiceCorrection <InvoiceCorrection>`
 
+
+.. rubric:: Синтаксис
 
 GetContent()
 
-**Возвращаемое значение**
+
+.. rubric:: Возвращаемое значение
+
+:doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`
 
 
-:doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`.
+.. rubric:: Описание
 
-**Описание**
-
-
-Возвращает содержание корректировочного счета-фактуры в виде объектной
-модели.
+Возвращает содержание корректировочного счета-фактуры в виде объектной модели

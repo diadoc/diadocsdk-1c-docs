@@ -1,19 +1,22 @@
-﻿GetBuyerContent 
+﻿GetBuyerContent
 ===============
 
-Метод объекта :doc:`Ucd <Ucd>`.
+.. deprecated:: 5.27.0
+    Используйте :doc:`GetDynamicContent <Document_GetDynamicContent>`
+
+Метод объекта :doc:`Ucd <Ucd>`
 
 
-**Синтаксис**
+.. rubric:: Синтаксис**
 
 GetBuyerContent()
 
 
-**Возвращаемое значение**
+.. rubric:: Возвращаемое значение
 
-:doc:`UtdBuyerContent <UtdBuyerContent>`.
+:doc:`UtdBuyerContent <UtdBuyerContent>`
 
 
-**Описание**
+.. rubric:: Описание
 
-Возвращает содержание титула покупателя универсального корректировочного документа.
+Возвращает содержание титула покупателя универсального корректировочного документа
