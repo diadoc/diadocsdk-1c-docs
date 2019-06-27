@@ -4,8 +4,8 @@
 .. feed-entry::
    :date: 2018-08-20
 
-- Поле объекта :doc:`ContractToSend <ContractToSend>` ContractPrice устаревшее. Вместо него используйте поле Price
-- Добавлено поле IsLiquidated для объекта :doc:`Counteragent <Counteragent>`
+- Поле объекта ContractToSend ContractPrice устаревшее. Вместо него используйте поле Price
+- Добавлено поле IsLiquidated для объекта Counteragent
 - Улучшена стабильность
 
 - исправлены ошибки:

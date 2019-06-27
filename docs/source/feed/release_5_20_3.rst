@@ -4,15 +4,15 @@
 .. feed-entry::
    :date: 2018-02-06
 
-- добавлен универсальный метод получения комментариев - :doc:`GetAnyComment <GetAnyComment>`
+- добавлен универсальный метод получения комментариев - GetAnyComment
 
-- в :doc:`Utd <Utd>` и :doc:`Ucd <Ucd>` появились признаки **Revised** (было ли исправление данного документа) и **Corrected** (была ли корректировка данного документа)
+- в Utd и Ucd появились признаки **Revised** (было ли исправление данного документа) и **Corrected** (была ли корректировка данного документа)
 
-- методы используемые для получения контрагентов (:doc:`GetCounteragentById <GetCounteragentById>`, :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>`) теперь используют /V2/GetCounteragent АПИ Диадок
+- методы используемые для получения контрагентов (GetCounteragentById, GetCounteragentListByInnKpp) теперь используют /V2/GetCounteragent АПИ Диадок
 
-- метод :doc:`AcquireCounteragent <AcquireCounteragent>` стал блокирующим, теперь ожидается завершение асинхронного вызова со стороны АПИ Диадок - генерирует исключения в случае получения ошибочных кодов состояния со стороны АПИ Диадок
+- метод AcquireCounteragent стал блокирующим, теперь ожидается завершение асинхронного вызова со стороны АПИ Диадок - генерирует исключения в случае получения ошибочных кодов состояния со стороны АПИ Диадок
 
-- свойство **AdressText** объекта :doc:`AddressInfo <AddressInfo>` для  :doc:`XmlTorg12 <XmlTorg12>` и :doc:`XmlAcceptanceCertificate <XmlAcceptanceCertificate>`, предтавляет строку иностранного адреса или неструктурированного российского адреса.
+- свойство **AdressText** объекта :doc:`AddressInfo <AddressInfo>` для  XmlTorg12 и XmlAcceptanceCertificate, предтавляет строку иностранного адреса или неструктурированного российского адреса.
 
 - улучшена совместимость COM-компоненты с Microsoft VB6 и Microsoft VBA (Microsoft Office)
 

@@ -5,10 +5,10 @@
    :date: 2018-11-23
 
 - Добавлена поддержка ставки НДС "20/120"
-- Добавлен метод удаления черновика :doc:`Organization.RecycleDraft <RecycleDraft>`
+- Добавлен метод удаления черновика Organization.RecycleDraft
 - Исправлены ошибки:
-    - при выполнение ответного действия "AcceptDocument" для документа (:doc:`Document.CreateReplySendTask <CreateReplySendTask-(Document)>`): если в структуре документа Диадок АПИ у титула отправителя есть дочерние элементы типа Attachment это приводило к тому, что :doc:`ReplySendTask.Content <ReplySendTask>` возвращал объект типа :doc:`AcceptanceContent <AcceptanceContent>` для любых типов документов
-    - при вызове метода :doc:`OutDocumentSignTask.Send <OutDocumentSignTask>` или :doc:`OutDocumentSignTask.SendAsync <OutDocumentSignTask>` в Диадок АПИ не отправлялись данные подписанта типа :doc:`ExtendedSigner <ExtendedSigner>`
+    - при выполнение ответного действия "AcceptDocument" для документа (Document.CreateReplySendTask): если в структуре документа Диадок АПИ у титула отправителя есть дочерние элементы типа Attachment это приводило к тому, что ReplySendTask.Content возвращал объект типа AcceptanceContent для любых типов документов
+    - при вызове метода OutDocumentSignTask.Send или OutDocumentSignTask.SendAsync в Диадок АПИ не отправлялись данные подписанта типа ExtendedSigner
     - исправлена совместимость с Windows XP
     - При получении некоторых документов возникала ошибка "vector<T> too long"
 
