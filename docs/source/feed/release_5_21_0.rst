@@ -16,7 +16,9 @@
         - поддержка отправки документов "любого типа" в PackageSendTask - возможность добавлять объект CustomDocumentToSend для конкретного типа содержимого AttachmentVersion Diadoc API (поддерживаются: utd_05_01_01, utd_05_01_02, ucd_05_01_01, rezru_05_01_01, tovtorg_05_01_02)
 
 - новое свойство **Title** у объекта Document - название документа
-- :doc:`Исправлены ошибки <Bugs_5_21>`
+- Исправлены ошибки:
+    - Метод GetDocumentEventList имел ограничение на количество возвращаемых объектов(100), что приводило к фрагментации результатов
+    - Не заполнялось свойство TovTorgTransferInfo.Waybills
 
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_

@@ -6,7 +6,7 @@
 
 Исправлены ошибки:
     - некорректно читались подписи с PRIMITIVE CONTEXT_SPECIFIC тегами
-    - некорректное обращение к памяти, приводящее к seh-исключению при использовании метода :doc:`DocumentsTask.GetDocumentsAsync`
+    - некорректное обращение к памяти, приводящее к seh-исключению при использовании метода DocumentsTask.GetDocumentsAsync
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 

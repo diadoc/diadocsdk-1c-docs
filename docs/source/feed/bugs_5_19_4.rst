@@ -5,8 +5,8 @@
    :date: 2017-12-12
 
 Исправлены ошибки:
-    - вместо :doc:`TovTorgTransferInfo.StructedAdditionalInfo` заполнятеся :doc:`TovTorgTransferInfo.Waybills`
-    - :doc:`TovTorgItem.ItemToRelease` принимал только строковые значения (BSTR), теперь принимает как строку, так и число
+    - вместо TovTorgTransferInfo.StructedAdditionalInfo заполнятеся TovTorgTransferInfo.Waybills
+    - TovTorgItem.ItemToRelease принимал только строковые значения (BSTR), теперь принимает как строку, так и число
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
