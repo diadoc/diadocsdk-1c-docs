@@ -6,13 +6,10 @@
 
 .. rubric:: Текущие версии внешней компоненты
 
-AddIn компонента `v5.27.3.462 x86 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ для 1С
-
-AddIn компонента `v5.27.3.462 x64 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ для 1С
-
-COM компонента `v5.27.3.462 x86 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ для произвольных систем
-
-COM компонента `v5.27.3.462 x64 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ для произвольных систем
+* Компонента `AddIn v5.27.3.462_x86 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ для 1С
+* Компонента `AddIn v5.27.3.462_x64 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ для 1С
+* Компонента `COM v5.27.3.462_x86 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ для произвольных систем
+* Компонента `COM v5.27.3.462_x64 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ для произвольных систем
 
 
 .. rubric:: Редакции компоненты, поддержка которых прекращена
