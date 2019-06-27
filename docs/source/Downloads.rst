@@ -1,18 +1,18 @@
 ﻿Ссылки для скачивания
 =====================
 
-`RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
 
 
 .. rubric:: Текущие версии внешней компоненты
 
-`AddIn компонента v5.27.3.462 x86 для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_
+AddIn компонента `v5.27.3.462 x86 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest.zip>`_ для 1С
 
-`AddIn компонента v5.27.3.462 x64 для 1С <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_
+AddIn компонента `v5.27.3.462 x64 <https://diadoc-api.kontur.ru/1c-addin/Diadoc_latest_x64.zip>`_ для 1С
 
-`COM компонента v5.27.3.462 x86 для произвольных систем <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_
+COM компонента `v5.27.3.462 x86 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest.zip>`_ для произвольных систем
 
-`COM компонента v5.27.3.462 x64 для произвольных систем <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_
+COM компонента `v5.27.3.462 x64 <https://diadoc-api.kontur.ru/1c-addin/DiadocCom_latest_x64.zip>`_ для произвольных систем
 
 
 .. rubric:: Редакции компоненты, поддержка которых прекращена

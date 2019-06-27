@@ -4,8 +4,8 @@
 .. feed-entry::
    :date: 2017-09-05
 
-    - в объект :doc:`PersonalCertificate` добавлено поле **JobTitle** - должность
-    - в COM-компоненте добавлена поддержка типа UcdInvoiceCorrection для объекта :doc:`PackageSendTask`
+- в объект :doc:`PersonalCertificate` добавлено поле **JobTitle** - должность
+- в COM-компоненте добавлена поддержка типа UcdInvoiceCorrection для объекта :doc:`PackageSendTask`
 
 Исправлены ошибки:
     - исключение с описанием: "Unknown attachment type", при создании :doc:`CreateSendTask` для документов в формате 155-го приказа
