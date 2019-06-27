@@ -4,17 +4,17 @@
 .. feed-entry::
    :date: 2017-04-10
 
-    - Поддержка УКД в компоненте:
-        - Новый тип отправляемого документа для :doc:`CreateSendTask`: **UniversalCorrectionDocument**
-        - Новые типы отправляемых документов для :doc:`AddDocument`: **UniversalCorrectionDocument** и **UniversalCorrectionDocumentRevision**. Соответствующий новый тип возвращаемого значения - :doc:`UcdToSend`
-        - Новый тип контента :doc:`UcdSellerContent`
-        - Новые типы документов :doc:`Document`: :doc:`Ucd` и :doc:`UcdRevision`
-        - Изменилась сигнатура :doc:`GetExtendedSignerDetails`, теперь принимает аргумент **forCorrection**
-        - В :doc:`SetExtendedSignerDetailsTask` появилось свойство **ForCorrection**
-    - Изменилась сигнатура и семантика :doc:`CanSendInvoice` - определяет можно ли подписывать счета-фактуры переданным сертификатом
-    - Для :doc:`Utd` и :doc:`UtdRevision` реализована отправка ИоП - методы: :doc:`SendReceiptsAsync` и :doc:`SendReceiptsAsync`
-    - Поддержка отправки "с полки" в :doc:`SendTask` и :doc:`PackageSendTask` - свойство **UseShelf**
-    - Методы :doc:`Send` и :doc:`SendAsync` теперь возвращают идентификатор организации
+- Поддержка УКД в компоненте:
+    - Новый тип отправляемого документа для :doc:`CreateSendTask`: **UniversalCorrectionDocument**
+    - Новые типы отправляемых документов для :doc:`AddDocument`: **UniversalCorrectionDocument** и **UniversalCorrectionDocumentRevision**. Соответствующий новый тип возвращаемого значения - :doc:`UcdToSend`
+    - Новый тип контента :doc:`UcdSellerContent`
+    - Новые типы документов :doc:`Document`: :doc:`Ucd` и :doc:`UcdRevision`
+    - Изменилась сигнатура :doc:`GetExtendedSignerDetails`, теперь принимает аргумент **forCorrection**
+    - В :doc:`SetExtendedSignerDetailsTask` появилось свойство **ForCorrection**
+- Изменилась сигнатура и семантика :doc:`CanSendInvoice` - определяет можно ли подписывать счета-фактуры переданным сертификатом
+- Для :doc:`Utd` и :doc:`UtdRevision` реализована отправка ИоП - методы: :doc:`SendReceiptsAsync` и :doc:`SendReceiptsAsync`
+- Поддержка отправки "с полки" в :doc:`SendTask` и :doc:`PackageSendTask` - свойство **UseShelf**
+- Методы :doc:`Send` и :doc:`SendAsync` теперь возвращают идентификатор организации
 
 Исправлены ошибки:
     - В COM-компоненте, в :doc:`DocumentsTask` не искались иУПД

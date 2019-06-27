@@ -96,7 +96,7 @@ exclude_patterns = []
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-highlight_language = 'csharp'
+highlight_language = 'c#'
 pygments_style = 'vs'
 
 # A list of ignored prefixes for module index sorting.
