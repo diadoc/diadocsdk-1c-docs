@@ -4,6 +4,11 @@
 `RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
 
 
+v5.27.4 - 02.07.2019
+--------------------
+
+- :doc:`Исправлены ошибки <Bugs_5_27>`
+
 v5.27.3 - 27.06.2019
 --------------------
 
@@ -33,7 +38,7 @@ v5.27.0 - 17.06.2019
      - В объект :doc:`DocumentTitle <DocumentTitle>` добавлено поле HaveUserDataXSD
      - Добавлены методы :doc:`Document.GetDynamicContent() <Document_GetDynamicContent>` для представления контента документов в виде :doc:`DynamicContent <DynamicContent>`
      - Расширен набор статусов подписанта в объекте :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>`
-     
+
 - Уменьшено количество различных текстов ошибок. Исправлены опечатки
 
 - Объекту :doc:`Counteragent <Counteragent>` добавлено поле IsBranch
@@ -257,7 +262,7 @@ v5.21.0 - 13.03.2018
 - расширена поддержка документов "любого типа":
     - у базового объекта :doc:`Document <Document>` появились новые свойства:
         - **TypeNamedId** - строковый идентификатор типа документа
-        - **DocumentFunction** - функция документа 
+        - **DocumentFunction** - функция документа
         - **WorkflowId** - идентификатор типа документооборота
         - **Metadata** - коллекция метаданных
         - новые статусы и метаданные **RecipientReceiptMetadata**, **ConfirmationMetadata**, **RecipientResponseStatus**, **AmendmentRequestMetadata**
@@ -299,7 +304,7 @@ v5.20.0 - 25.12.2017
 ---------------------
 
 - добавлена поддержка работы с "документом любого типа":
-    
+
     - поддержка типа документа "Document" для методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` и :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` объекта :doc:`PackageSendTask <PackageSendTask>`
 
     - метод :doc:`GetDocumentTypes <GetDocumentTypes>` - возвращает описание типов документов, доступных в ящике
@@ -325,7 +330,7 @@ v5.19.1 - 20.11.2017
 --------------------
 
 - CustomData - коллекция "ключ-значение" для объекта :doc:`Document <Document>`:
-    
+
     - свойство :doc:`Document.CustomData <Document>` - коллекция объектов :doc:`CustomDataItem <CustomDataItem>` содержащих записи "ключ-значение"
 
     - метод :doc:`Document.CreateCustomDataPatchTask <Document>` - создает :doc:`CustomDataPatchTask <CustomDataPatchTask>`, позволяющий редактировать коллекцию :doc:`Document.CustomData <Document>`
@@ -464,7 +469,7 @@ v5.14 - 20.01.2017
     - Флаг шифрованного документа **IsEncryptedContent** в :doc:`Document <Document>`.
 - Возможность отказа от запроса подписи сотрудника:
     - :doc:`ResolutionRequest <ResolutionRequest>` - запрос на согласование, возможен отказ и отмена.
-    - :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ. 
+    - :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` - объект отмены запроса на согласование, возможен отказ.
     - Свойство **ResolutionRequests** в :doc:`Document <Document>` - коллекция запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequest <ResolutionRequest>`).
     - Свойство **ResolutionRequestDenials** в :doc:`Document <Document>` - коллекция объектов отмены запросов на согласование(:doc:`коллекция <Collection>` объектов :doc:`ResolutionRequestDenial <ResolutionRequestDenial>`).
 - Возможность "сырой" отправки xml-файлов формализованных документов:
@@ -510,7 +515,7 @@ v5.8 - 26.10.2016
 v5.7 - 15.09.2016
 -----------------------
 
-- Исправлены ошибки при работе через прокси	
+- Исправлены ошибки при работе через прокси
 - Исправлена ошибка валидации номера ГТД в счете-фактуре.
 
 
@@ -519,7 +524,7 @@ v5.6 - 18.04.2016
 
 - Добавлена возможность подписания и отправки исходящих документов с отложенной отправкой:
     - в :doc:`Document <Document>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` и
-      в :doc:`DocumentPackage <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>` 
+      в :doc:`DocumentPackage <DocumentPackage>` добавлен метод :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(DocumentPackage)>`
       для создания задания на подписание и отправку исходящего документа или пакета  документов соответственно. Эти методы возвращают объект
       :doc:`OutDocumentSignTask <OutDocumentSignTask>`.
     - добавлен :doc:`OutDocumentSignTask <OutDocumentSignTask>`, представляющий собой задание на подписание и отправку исходящего документа.
@@ -536,9 +541,9 @@ v5.5 - 08.04.2016
     - добавлен :doc:`PackageSendTask <PackageSendTask>` для работы с заданием на отправку пакета документов.
     - добавлен :doc:`DocumentToSend <DocumentToSend>` и производные от него объекты, предназначенные для работы с документами на отправку, входящими в пакет.
     - добавлен :doc:`SentPackageContent <SentPackageContent>` для передачи в задание на подпись содержимого сертификатом электронной подписи СКБ Контур всех документов из пакета на отправку.
-- В :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем 
+- В :doc:`DiadocConnection <Connection>` добавлен метод :doc:`GetMyUser <GetMyUser>`, позволяющий получить данные о текущем
   авторизованном пользователе.
-- В :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие 
+- В :doc:`Organization <Organization>` добавлены методы :doc:`SetData <SetData>` и :doc:`GetData <GetData>`, позволяющие
   добавлять и извлекать пары вида "ключ-значение" в хранилище.
 - В метод :doc:`GetPersonalCertificates <GetPersonalCertificates>` объекта :doc:`интерфейса "Диадок" <Root-method>` добавлен входной параметр UserStore,
   позволяющий искать сертификаты не только в хранилище текущего пользователя, но и в хранилище машины.
@@ -597,7 +602,7 @@ v5.0.0 - 03.07.2015
    - вместо реквизита **AdditionalInfo** с типом "строка" введен реквизит **StructedAdditionalInfos**, который представляет собой :doc:`коллекцию <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`
    - налогичные изменения произведены для :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>`
    - свойства  **Date**, **Number**, **InvoiceRevision Date**, **InvoiceRevisionNumber** удалены из объекта. Вместо них добавлено свойство **OriginalInvoices**
- 
+
 
 v4.2.0 - 13.04.2015
 -------------------
