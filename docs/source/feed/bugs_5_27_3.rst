@@ -9,6 +9,6 @@
     - Неправильно искались сущности связанные с документом. Одним из эффектов было появление лишних Resolution в Document.Resolutions
     - Неправильно десериализовался Resolution с типом ResolutionDisapprove
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/experiment/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/experiment/Downloads.html>`_

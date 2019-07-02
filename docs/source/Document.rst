@@ -151,78 +151,331 @@ Document
 
 .. rubric:: Методы
 
+=============================== ======================================== ==================================
+..                              ..                                       ..
+=============================== ======================================== ==================================
+:func:`.SaveContent`            :func:`.GetComment`                      :func:`.GetDocumentPackage`
+:func:`.SaveBuyerContent`       :func:`.GetAnyComment`                   :func:`.CreateReplySendTask`
+:func:`.SaveAllContent`         :func:`.Move`                            :func:`.CreateReplySendTask2`
+:func:`.SaveAllContentAsync`    :func:`.Delete`                          :func:`.CreateOutDocumentSignTask`
+:func:`.SaveAllContentZip`      :func:`.Approve`                         :func:`.MarkAsRead`
+:func:`.SaveAllContentZipAsync` :func:`.Disapprove`                      :func:`.CreateCustomDataPatchTask`
+:func:`.GetDynamicContent`      :func:`.SetOneSDocumentId`               :func:`.AssignToResolutionRoute`
+:func:`.GetBase64Content`       :func:`.ReSetOneSDocumentId`             :func:`.RemoveFromResolutionRoute`
+:func:`.GetBase64ContentAsync`  :func:`.AddSubordinateOneSDocumentId`
+:func:`.GetBase64Signature`     :func:`.RemoveSubordinateOneSDocumentId`
+:func:`.GetSenderSignature`     :func:`.CreateResolutionRequestTask`
+:func:`.GetRecipientSignature`  :func:`.GetPrintForm`
+=============================== ======================================== ==================================
+
+
 .. function:: Document.SaveContent(FilePath)
+
+  :FilePath: ``строка``
 
   Сохраняет титул отправителя на диск
 
 
+
 .. function:: Document.SaveBuyerContent(FilePath)
+
+  :FilePath: ``строка``
 
   Сохраняет титул получателя документа в указанный файл. Если  титул отсутсвует, то ничего не произойдёт
 
 
+
 .. function:: Document.SaveAllContent(DirectoryPath)
+
+  :DirectoryPath: ``строка``
 
   Сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
 
+
 .. function:: Document.SaveAllContentAsync(DirectoryPath)
+
+  :DirectoryPath: ``строка``
 
   Асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
 
+
 .. function:: Document.SaveAllContentZip(DirectoryPath)
+
+  :DirectoryPath: ``строка``
 
   Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 
 
+
 .. function:: Document.SaveAllContentZipAsync(DirectoryPath)
+
+  :DirectoryPath: ``строка``
 
   Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 
 
+
 .. function:: Document.GetDynamicContent(WorkflowSide)
 
-  Возвращает представление контента титула документа со стороны *WorkflowSide*
+  :WorkflowSide: ``строка``
+
+  Возвращает :doc:`представление контента титула документа <DynamicContent>` со стороны *WorkflowSide*
+
+  +-------------------------------+
+  |Значение параметра WorkflowSide|
+  +-------------------------------+
+  |Seller                         |
+  +-------------------------------+
+  |Buyer                          |
+  +-------------------------------+
+
 
 
 .. function:: Document.GetBase64Content(WorkflowSide)
 
-  Возвращает контент титула документа со стороны *WorkflowSide* в Base64
+  :WorkflowSide: ``строка``
+
+  Возвращает контент титула документа со стороны *WorkflowSide* в виде Base64 строки
+
+  +-------------------------------+
+  |Значение параметра WorkflowSide|
+  +-------------------------------+
+  |Seller                         |
+  +-------------------------------+
+  |Buyer                          |
+  +-------------------------------+
+
 
 
 .. function:: Document.GetBase64ContentAsync(WorkflowSide)
 
-  Возвращает контент титула документа со стороны *WorkflowSide* в Base64
+  :WorkflowSide: ``строка``
+
+  Возвращает контент титула документа со стороны *WorkflowSide* в виде Base64 строки
+
+  +-------------------------------+
+  |Значение параметра WorkflowSide|
+  +-------------------------------+
+  |Seller                         |
+  +-------------------------------+
+  |Buyer                          |
+  +-------------------------------+
 
 
-.. function:: Document.GetBase64Signature(Workflow)
 
-  Возвращает подпись титула документа со стороны *WorkflowSide* в Base64
+.. function:: Document.GetBase64Signature(WorkflowSide)
 
-  
-* :doc:`GetSenderSignature <GetSenderSignature>` возвращает представление подписи титула отправителя
-* :doc:`GetRecipientSignature <GetRecipientSignature>` возвращает представление подписи титула получателя
-* :doc:`GetComment <GetComment>` возвращает комментарий к документу, заданный при отправке
-* :doc:`GetAnyComment <GetAnyComment>` возвращает комментарий определённого типа, связанный с документом
-* :doc:`Move <Move>` перемещает документ в указанное подразделение
-* :doc:`Delete <Delete>` помечает документ как удаленный
-* :doc:`Approve <Approve>` ставит признак согласования документа
-* :doc:`Disapprove <Disapprove>` ставит признак отказа в согласовании документа
-* :doc:`SetOneSDocumentId <SetOneSDocumentId>` присваивает документу дополнительный идентификатор
-* :doc:`ReSetOneSDocumentId <ReSetOneSDocumentId>` сбрасывает дополнительный идентификатор
-* :doc:`AddSubordinateOneSDocumentId <AddSubordinateOneSDocumentId-(Document)>` добавляет документу дополнительный идентификатор как подчинённый
-* :doc:`RemoveSubordinateOneSDocumentId <RemoveSubordinateOneSDocumentId>` удаляет дополнительный подчинённый идентификатор
-* :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>` создает задание для отправки запроса на согласование
-* :doc:`GetPrintForm <GetPrintForm>` получает печатную форму документа в формате pdf
-* :doc:`GetDocumentPackage <GetDocumentPackage>` возвращает сообщение, в котором находится документ
-* :doc:`CreateReplySendTask <CreateReplySendTask-(Document)>` создает задание на выполнение ответного действия с документом
-* :doc:`CreateReplySendTask2 <CreateReplySendTask2>` создает задание на выполнение ответного действия с документом
-* :doc:`CreateOutDocumentSignTask <CreateOutDocumentSignTask-(Document)>` создает задание на подписание и отправку исходящего документа с отложенной отправкой
-* :doc:`MarkAsRead <MarkAsRead>` помечает, что документ как прочитанный
-* :doc:`CreateCustomDataPatchTask <CreateCustomDataPatchTask>` создает задание на редактирование коллекции CustomData
-* :doc:`AssignToResolutionRoute <AssignToResolutionRoute>` ставит документ на маршрут согласования
-* :doc:`RemoveFromResolutionRoute <RemoveFromResolutionRoute>` снимает документ с маршрута согласования
+  :WorkflowSide: ``строка``
+
+  Возвращает подпись титула документа со стороны *WorkflowSide* в виде Base64 строки
+
+  +-------------------------------+
+  |Значение параметра WorkflowSide|
+  +-------------------------------+
+  |Seller                         |
+  +-------------------------------+
+  |Buyer                          |
+  +-------------------------------+
+
+
+
+.. function:: Document.GetSenderSignature()
+
+  Возвращает :doc:`представление подписи <Signature>` титула отправителя
+
+
+
+.. function:: Document.GetRecipientSignature()
+
+  Возвращает :doc:`представление подписи <Signature>` титула получателя
+
+
+
+.. function:: Document.GetComment()
+
+  Возвращает строку с комментарием к документу, заданным при отправке
+
+  .. deprecated:: 5.20.3
+    Используйте :func:`GetAnyComment` с типом ``AttachmentComment``
+
+
+
+.. function:: Document.GetAnyComment(CommentType)
+
+  Возвращает строку с комментарием определённого типа, связанным с документом
+
+  ========================== ==================================
+  Значение *CommentType*     Описание
+  ========================== ==================================
+  AttachmentComment          комментарий к документу
+  RecipientAttachmentComment комментарий к титулу покупателя
+  SignatureRejectionComment  комментарий к отказу в подписи
+  AmendmentComment           комментарий к запросу на уточнение
+  ========================== ==================================
+
+  .. versionadded:: 5.20.3
+
+
+
+.. function:: Document.Move(DepartmentId)
+
+  :DepartmentId: ``строка``
+
+  Перемещает документ в указанное подразделение
+
+
+
+.. function:: Document.Delete()
+
+  Помечает документ как удаленный
+
+
+
+.. function:: Document.Approve([Comment])
+
+  :Comment: ``строка``
+
+  Согласует документ
+
+
+
+.. function:: Document.Disapprove([Comment])
+
+  :Comment: ``строка``
+
+  Отказывает в согласовании документа
+
+
+
+.. function:: Document.SetOneSDocumentId(ID)
+
+  :ID: ``строка``
+
+  Присваивает документу дополнительный идентификатор из учётной системы
+
+
+
+.. function:: Document.ReSetOneSDocumentId()
+
+  Сбрасывает дополнительный идентификатор учётной системы у документа в Диадоке
+
+
+
+.. function:: Document.AddSubordinateOneSDocumentId(ID)
+
+  :ID: ``строка``
+
+  Добавляет документу дополнительный идентификатор из учётной системы как подчинённый
+
+
+
+.. function:: Document.RemoveSubordinateOneSDocumentId(ID)
+
+  :ID: ``строка``
+
+  Удаляет дополнительный подчинённый идентификатор
+
+
+
+.. function:: Document.CreateResolutionRequestTask()
+
+  Создает :doc:`задание для отправки запроса на согласование <ResolutionRequestTask>`
+
+
+
+.. function:: Document.GetPrintForm(FilePath[, Timeout])
+
+  :FilePath: ``строка``
+  :Timeout: ``беззнаковое целое число``
+
+  Получает печатную форму документа в формате ``.pdf`` и сохраняет её в указанный файл. Если расширение файла отличается от ``.pdf``, то такой файл будет создан
+  Делается 5 попыток сгенерировать печатную форму. Если за 5 попыток она не получена или, если превышен таймаут, то будет сгенерировано исключение
+
+.. function:: Document.GetDocumentPackage()
+
+  Возвращает `сообщение <http://api-docs.diadoc.ru/ru/latest/proto/Message.html>`_, в котором находится документ
+
+  .. note:: понятие пакета в терминах компоненты и в терминах `HTTP-API <http://api-docs.diadoc.ru/ru/latest/index.html>`_ или Веб-интерфейса разные. Не стоит ожидать, что если документы связаны в пакет в веб интерфейсе, то все они вернутся в этом методе.
+
+
+
+.. function:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
+
+  :ReplyType: ``строка``
+
+  Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
+
+  ====================================== ===========================================================================
+  Возможные значения параметра ReplyType Описание
+  ====================================== ===========================================================================
+  "AcceptDocument"                       подписание документов
+  "RejectDocument"                       отказ в подписи документов
+  "CorrectionRequest"                    запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
+  "RevocationRequest"                    запроc на аннулирование документов
+  "AcceptRevocation"                     принятие аннулирования документов
+  "RejectRevocation"                     отказ от аннулирования документов
+  ====================================== ===========================================================================
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`CreateReplySendTask2`
+
+.. function:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
+
+  :ReplyType: ``строка``
+
+  Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask2>`
+
+  ====================================== ===========================================================================
+  Возможные значения параметра ReplyType Описание
+  ====================================== ===========================================================================
+  "AcceptDocument"                       подписание документов
+  "RejectDocument"                       отказ в подписи документов
+  "CorrectionRequest"                    запроc на уточнение документов "счет-фактура" и "исправление счета-фактуры"
+  "RevocationRequest"                    запроc на аннулирование документов
+  "AcceptRevocation"                     принятие аннулирования документов
+  "RejectRevocation"                     отказ от аннулирования документов
+  ====================================== ===========================================================================
+
+    .. versionadded:: 5.27.0
+
+
+
+.. function:: Document.CreateOutDocumentSignTask()
+
+  Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
+
+
+
+.. function:: Document.MarkAsRead()
+
+  Помечает, что документ как прочитанный
+
+
+
+.. function:: Document.CreateCustomDataPatchTask()
+
+  Создает :doc:`задание на редактирование коллекции CustomData <CustomDataPatchTask>`
+
+
+
+.. function:: Document.AssignToResolutionRoute(RouteId[, Comment])
+
+  :RouteId: ``строка``
+  :Comment: ``строка``
+
+  Ставит документ на маршрут согласования. Получить доступные маршруты согласования можно методом :func:`Organization.GetResolutionRoutes`
+
+
+
+.. function:: Document.RemoveFromResolutionRoute(RouteId[, Comment])
+
+  :RouteId: ``строка``
+  :Comment: ``строка``
+
+  Снимает документ с маршрута согласования
+
 
 
 .. rubric:: Дополнительная информация
