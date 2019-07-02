@@ -151,56 +151,16 @@ Document
 
 .. rubric:: Методы
 
-.. function:: Document.SaveContent(FilePath)
-
-  Сохраняет титул отправителя на диск
-
-
-.. function:: Document.SaveBuyerContent(FilePath)
-
-  Сохраняет титул получателя документа в указанный файл. Если  титул отсутсвует, то ничего не произойдёт
-
-
-.. function:: Document.SaveAllContent(DirectoryPath)
-
-  Сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
-
-
-.. function:: Document.SaveAllContentAsync(DirectoryPath)
-
-  Асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
-
-
-.. function:: Document.SaveAllContentZip(DirectoryPath)
-
-  Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
-
-
-.. function:: Document.SaveAllContentZipAsync(DirectoryPath)
-
-  Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
-
-
-.. function:: Document.GetDynamicContent(WorkflowSide)
-
-  Возвращает представление контента титула документа со стороны *WorkflowSide*
-
-
-.. function:: Document.GetBase64Content(WorkflowSide)
-
-  Возвращает контент титула документа со стороны *WorkflowSide* в Base64
-
-
-.. function:: Document.GetBase64ContentAsync(WorkflowSide)
-
-  Возвращает контент титула документа со стороны *WorkflowSide* в Base64
-
-
-.. function:: Document.GetBase64Signature(Workflow)
-
-  Возвращает подпись титула документа со стороны *WorkflowSide* в Base64
-
-  
+* :doc:`SaveContent <SaveContent>` сохраняет титул отправителя на диск
+* :doc:`SaveBuyerContent <SaveBuyerContent>` сохраняет титул получателя на диск
+* :doc:`SaveAllContent <SaveAllContent>` сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
+* :doc:`SaveAllContentAsync <SaveAllContentAsync>` асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
+* :doc:`SaveAllContentZip <SaveAllContentZip>` формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+* :doc:`SaveAllContentZipAsync <SaveAllContentZipAsync>` асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+* :doc:`GetDynamicContent <Document_GetDynamicContent>` возвращает представление контента титула документа
+* :doc:`GetBase64Content <Document_GetBase64Content>` возвращает контент одного из титулов документа в base64
+* :doc:`GetBase64ContentAsync <Document_GetBase64ContentAsync>` асинхронно возвращает контента одного из титулов документа в base64
+* :doc:`GetBase64Signature <Document_GetBase64Signature>` возвращает подпись одного из титулов документа в base64
 * :doc:`GetSenderSignature <GetSenderSignature>` возвращает представление подписи титула отправителя
 * :doc:`GetRecipientSignature <GetRecipientSignature>` возвращает представление подписи титула получателя
 * :doc:`GetComment <GetComment>` возвращает комментарий к документу, заданный при отправке
