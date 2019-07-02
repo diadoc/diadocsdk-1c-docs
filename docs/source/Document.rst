@@ -196,7 +196,11 @@ Document
   Возвращает контент титула документа со стороны *WorkflowSide* в Base64
 
 
-* :doc:`GetBase64Signature <Document_GetBase64Signature>` возвращает подпись одного из титулов документа в base64
+.. function:: Document.GetBase64Signature(Workflow)
+
+  Возвращает подпись титула документа со стороны *WorkflowSide* в Base64
+
+  
 * :doc:`GetSenderSignature <GetSenderSignature>` возвращает представление подписи титула отправителя
 * :doc:`GetRecipientSignature <GetRecipientSignature>` возвращает представление подписи титула получателя
 * :doc:`GetComment <GetComment>` возвращает комментарий к документу, заданный при отправке
