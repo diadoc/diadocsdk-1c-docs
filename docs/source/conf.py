@@ -36,7 +36,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+#templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -115,9 +115,9 @@ todo_include_todos = False
 # a list of builtin themes.
 
 html_theme_path = ['_themes']
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'custom_sphinx_rtd_theme'
 # on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-# 
+#
 # if not on_rtd:  # only import and set the theme if we're building docs locally
 #     import sphinx_rtd_theme
 #     html_theme = 'sphinx_rtd_theme'
