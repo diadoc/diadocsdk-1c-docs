@@ -5390,6 +5390,11 @@ input[type="checkbox"][disabled] {
 	margin-bottom: 24px
 }
 
+.rst-content table.field-list tr.field-odd {
+	background-color: #f6f6fd
+
+}
+
 .wy-table caption,
 .rst-content table.docutils caption,
 .rst-content table.field-list caption {
