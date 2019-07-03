@@ -5391,7 +5391,7 @@ input[type="checkbox"][disabled] {
 }
 
 .rst-content table.field-list tr.field-odd {
-	background-color: #f6f6fd
+	background-color: #f3f6f6
 
 }
 
@@ -7179,7 +7179,7 @@ a .rst-content code {
 .rst-content dl:not(.docutils) code.descname,
 .rst-content dl:not(.docutils) tt.descclassname,
 .rst-content dl:not(.docutils) code.descclassname {
-	background-color: #f4f4ff;
+	background-color: #d2e7f6;
 	border: none;
 	padding: 0;
 	font-size: 100% !important
