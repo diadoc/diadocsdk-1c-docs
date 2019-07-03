@@ -5,19 +5,6 @@
 .. deprecated:: 5.27.0
     Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
 
-Метод объекта :doc:`Contract <Contract>`
+Метод объекта :doc:`Contract <Contract>`. Формирует ответную подпись к документу
 
-
-.. rubric:: Синтаксис
-
-Accept()
-
-
-.. rubric:: Возвращаемое значение
-
-Отсутствует
-
-
-.. rubric:: Описание
-
-Формирует ответную подпись к документу
+.. function:: Contract.Accept()
