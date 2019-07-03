@@ -26,7 +26,12 @@
 * :doc:`GetUsers <GetUsers>` - вовзращает :doc:`список <Collection>` всех :doc:`пользователей <User>` организации
 * :doc:`GetUserPermissions <GetUserPermissions>` - возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
 
-* :doc:`GetCounteragentById <GetCounteragentById>` - возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+.. function:: Organization.GetCounteragentById
+
+.. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Сделано ради теста. Надо доделать
+возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+
+
 * :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает :doc:`контрагента <Counteragent>` по идентификатору организации
 * :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` - возвращает :doc:`список <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом
 * :doc:`GetCounteragentListByStatusAsync <GetCounteragentListByStatusAsync>` - асинхронный запрос :doc:`списка <Collection>` :doc:`контрагентов <CounteragentItem>`, с указанным в запросе статусом
@@ -68,3 +73,6 @@
 * :doc:`RecycleDraft <RecycleDraft>` - удаляет черновик
 
 * :doc:`SaveUserDataXSD <SaveUserDataXSD>` - сохраняет описание контента документа на диск
+
+
+.. seealso:: :doc:`How-auth`

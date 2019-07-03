@@ -2,15 +2,14 @@
 ==============================
 
 Список документов можно получить только в контексте :doc:`организации <Organization>`.
-Получение контекста организации описано в разделе :doc:`Как авторизоваться в системе Диадок <How-auth>`.
 
-Получение документов производится с помощью объекта :doc:`DocumentTask <DocumentsTask>`.
+Для получения документов используется объект :doc:`DocumentTask <DocumentsTask>`.
 
 .. code-block:: c#
 
     // Создаем объект DocumentsTask
     DocumentsTask = Organization.GetDocumentsTask();
-    
+
     // Заполняем параметры отбора документов
     DocumentsTask.FromSendDate = НачалоГода(ТекущаяДата());
     DocumentsTask.ToSendDate   = КонецГода(ТекущаяДата());

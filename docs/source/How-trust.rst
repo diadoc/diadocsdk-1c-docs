@@ -1,16 +1,14 @@
 ﻿Как установить партнерские отношения
 ====================================
 
-
-Для того, чтобы отправлять документы другой организации в Диадок, между вашей органиазцией и организацией контрагента должны быть установлены партнёрские отношения
-
-
 Как найти контрагента
 ---------------------
 
 Есть несколько способов найти контрагента:
 
-# Поиск по ИНН-КПП контрагента
+.. rubric:: Поиск по ИНН-КПП контрагента
+
+Необходимо использовать метод :func:`Organization.GetCounteragentListByInnKpp`
 
 .. code-block:: c#
 
@@ -25,12 +23,14 @@
         ЯщикиКонтрагентов.Добавить(CounteragentList.GetItem(Ц));
     КонецЦикла;
 
-# Поиск контрагентов по списку ИНН
+.. rubric:: Поиск контрагентов по списку ИНН
+
+Необходимо использовать метод :func:`Organization.GetCounteragentListByInnList`
 
 .. code-block:: c#
 
     СтрокаИНН = "9667853716,9667853667";
-    CounteragentList=   Organization.GetCounteragentListByInnList(СтрокаИНН);
+    CounteragentList = Organization.GetCounteragentListByInnList(СтрокаИНН);
 
     Если CounteragentList.IsCompleted Тогда
         РезультатЗапроса = CounteragentList.Result;
@@ -38,33 +38,34 @@
         Counteragent = Item.Counteragent;
     КонецЕсли;
 
+.. rubric:: Другие способы
 
-Также можно получать объект :doc:`Counteragent <Counteragent>`, зная идентификатор ящика контрагента в диадок, - :doc:`Organization.GetCounteragentById <GetCounteragentById>`
+* Зная идентификатор ящика контрагента в Диадок можно применить метод :func:`Organization.GetCounteragentById`
 
-Или фильтровать контрагентов по статусу - :doc:`Organization.GetCounteragentListByStatus <GetCounteragentListByStatus>`
+* Или отфильтровать контрагентов по статусу: :func:`Organization.GetCounteragentListByStatus`
 
 
 Как пригласить контрагента к партнёрству
 ----------------------------------------
 
-Для установления партнерских отношений между двумя организациями необходимо отправить запрос партнёрства с помощью метода :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>` или с помощью объекта :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`
+Необходимо отправить запрос партнёрства методом :func:`Counteragent.AcquireCounteragent` или использовать объект :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`:
 
 .. code-block:: c#
 
     Task = Organization.CreateAcquireCounteragentTask();
-    Task.FileName           = "С:\Файл с приглашением.pdf";
+    Task.FileName           = "С:\\Файл с приглашением.pdf";
     Task.CounteragentBoxId  = Counteragent.Id;
     Task.Message            = "Приглашаем к партнерству";
     Task.SignatureRequested = True;
-    
+
     ИдентификаторКонтрагента = Task.Send();
-    
+
 
 
 Как принять приглашение от контрагента
 --------------------------------------
 
-Необходимо выполнить метод :doc:`Counteragent.AcquireCounteragent <AcquireCounteragent>`
+Необходимо выполнить метод :func:`Counteragent.AcquireCounteragent`
 
 .. code-block:: c#
 
@@ -75,7 +76,7 @@
 Как отказаться от партнёрства
 -----------------------------
 
-Необходимо выполнить метод :doc:`Counteragent.BreakWithCounteragent <BreakWithCounteragent>`
+Необходимо выполнить метод :func:`Counteragent.BreakWithCounteragent`
 
 .. code-block:: c#
 
