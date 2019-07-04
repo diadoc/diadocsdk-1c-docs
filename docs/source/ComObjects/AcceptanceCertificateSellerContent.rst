@@ -1,4 +1,4 @@
-﻿AcceptanceCertificateSellerContent
+AcceptanceCertificateSellerContent
 ==================================
 
 Объект предназначен для работы с содержанием формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83259>`_ .
@@ -46,6 +46,6 @@
 |:func:`.AddItem`|
 +----------------+
 
-.. function:: ﻿AcceptanceCertificateSellerContent.AddItem()
+.. function:: AcceptanceCertificateSellerContent.AddItem()
 
   Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его

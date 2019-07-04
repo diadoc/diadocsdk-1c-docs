@@ -24,15 +24,10 @@
 .. toctree::
    :name: main
    :maxdepth: 1
-   :caption: Общая информация
+   :caption: Оглавление
 
+   Общая информация <index>
    Примеры использования <HowTo/HowTo>
    История изменений <History/History>
    Ссылки для скачивания <Downloads>
-
-.. toctree::
-   :name: ComObjects
-   :maxdepth: 1
-   :caption: Объекты компоненты
-
-   Объекты компоненты <ComObjects/_list>
+   Объекты компоненты <ComObjects/_list> 
