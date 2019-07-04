@@ -1,4 +1,4 @@
-﻿ResolutionRequestTask
+ResolutionRequestTask
 =====================
 
 Объект предназначен для отправки запроса на согласование.

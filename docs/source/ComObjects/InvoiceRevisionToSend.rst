@@ -1,4 +1,4 @@
-﻿InvoiceRevisionToSend
+InvoiceRevisionToSend
 =====================
 
 Объект представляет собой формализованный документ на отправку "Исправление счета-фактуры" в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

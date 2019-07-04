@@ -1,4 +1,4 @@
-﻿CustomDeclaration
+CustomDeclaration
 =================
 
 Объект, отражающий свойства таможенной декларации.

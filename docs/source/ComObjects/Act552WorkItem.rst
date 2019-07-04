@@ -1,4 +1,4 @@
-﻿Act552WorkItem
+Act552WorkItem
 ===============
 
 Сведения о произведенной работе в документе типа "Акт в формате 552-го приказа ФНС"
@@ -52,7 +52,8 @@
 +----------------------------------+
 
 
-.. function:: ﻿Act552WorkItem.AddStructedAdditionalInfo()
+.. function:: Act552WorkItem.AddStructedAdditionalInfo()
+
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
 
 

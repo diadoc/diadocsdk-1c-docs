@@ -1,4 +1,4 @@
-﻿CustomDataPatchItem
+CustomDataPatchItem
 ===================
 
 Объект описывающий модификацию элемента коллекции :doc:`Document.CustomData <Document>`

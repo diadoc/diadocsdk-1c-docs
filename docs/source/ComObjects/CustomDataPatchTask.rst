@@ -1,4 +1,4 @@
-﻿CustomDataPatchTask
+CustomDataPatchTask
 ===================
 
 Объект предназначен для редактирования коллекции **CustomData** объекта :doc:`Document <Document>`

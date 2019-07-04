@@ -1,4 +1,4 @@
-﻿CounteragentItem
+CounteragentItem
 ================
 
 Объект предназначен для получения информации о контрагенте с соответствующим ИНН. Объект возврашается в качестве результата работы метода :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>`

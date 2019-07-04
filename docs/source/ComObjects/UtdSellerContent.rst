@@ -1,4 +1,4 @@
-﻿UtdSellerContent
+UtdSellerContent
 ================
 
 Объект предназначен для работы с содержанием формализованного документа "Универсальный передаточный документ" в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.

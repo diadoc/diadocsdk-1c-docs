@@ -1,4 +1,4 @@
-﻿UtdBuyerContent
+UtdBuyerContent
 ================
 
 Объект предназначен для работы с содержанием титула покупателя универсального передаточного документа в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_ или универсального корректировочного документа в формате приказа `ММВ-7-15/189@ <https://normativ.kontur.ru/document?moduleId=1&documentId=273231>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.

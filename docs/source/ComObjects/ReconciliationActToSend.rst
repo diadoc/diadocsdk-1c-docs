@@ -1,4 +1,4 @@
-﻿ReconciliationActToSend
+ReconciliationActToSend
 =======================
 
 Объект представляет собой неформализованный документ на отправку "Акт сверки" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.

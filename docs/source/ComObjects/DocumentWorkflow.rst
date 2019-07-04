@@ -1,4 +1,4 @@
-﻿DocumentWorkflow
+DocumentWorkflow
 ================
 
 Объект, описывающий документооборот

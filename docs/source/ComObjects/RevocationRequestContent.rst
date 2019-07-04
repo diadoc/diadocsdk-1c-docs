@@ -1,4 +1,4 @@
-﻿RevocationRequestContent
+RevocationRequestContent
 ========================
 
 Объект предназначен для работы с метаданными запроса на аннулирование документа

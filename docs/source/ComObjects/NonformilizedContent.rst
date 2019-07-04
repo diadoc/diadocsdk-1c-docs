@@ -1,4 +1,4 @@
-﻿NonformilizedContent
+NonformilizedContent
 ====================
 
 Объект предназначен для работы с содержанием неформализованного

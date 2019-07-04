@@ -1,4 +1,4 @@
-﻿GroundInfo
+GroundInfo
 ==========
 
 Документ - основание

@@ -1,4 +1,4 @@
-﻿PackageContentItem
+PackageContentItem
 ==================
 
 Элемент объекта :doc:`PackageContent <PackageContent>`, хранящий в себе пару "документ-контент"

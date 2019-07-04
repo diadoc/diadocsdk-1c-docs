@@ -1,4 +1,4 @@
-﻿CertificateRegistryToSend
+CertificateRegistryToSend
 =========================
 
 Объект представляет собой неформализованный документ на отправку "Реестр сертификатов" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

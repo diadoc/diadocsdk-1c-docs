@@ -1,4 +1,4 @@
-﻿Torg12BuyerContent
+Torg12BuyerContent
 ==================
 
 Объект предназначен для работы с содержанием титула покупателя формализованного документа "ТОРГ-12" в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.

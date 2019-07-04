@@ -1,4 +1,4 @@
-﻿CorrectionBase
+CorrectionBase
 ==============
 
 Основание корректировки

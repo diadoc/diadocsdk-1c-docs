@@ -1,4 +1,4 @@
-﻿XmlDocumentContent
+XmlDocumentContent
 ==================
 
 .. deprecated:: 5.27.0

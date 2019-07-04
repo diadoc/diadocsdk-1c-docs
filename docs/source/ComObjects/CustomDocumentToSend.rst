@@ -1,4 +1,4 @@
-﻿CustomDocumentToSend
+CustomDocumentToSend
 ====================
 
 Объект представляет собой документ на отправку произвольного типа и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

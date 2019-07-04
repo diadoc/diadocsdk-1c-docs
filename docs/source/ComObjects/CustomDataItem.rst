@@ -1,4 +1,4 @@
-﻿CustomDataItem
+CustomDataItem
 ==============
 
 Элемент коллекции "ключ-значение" :doc:`Document.CustomData <Document>`

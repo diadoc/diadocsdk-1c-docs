@@ -1,4 +1,4 @@
-﻿ServiceDetailsToSend
+ServiceDetailsToSend
 ====================
 
 Объект представляет собой неформализованный документ на отправку "Детализация" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

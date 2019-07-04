@@ -1,4 +1,4 @@
-﻿ExtendedOrganizationInfo
+ExtendedOrganizationInfo
 ========================
 
 Объект предназначен для редактирования информации о реквизитах организации.

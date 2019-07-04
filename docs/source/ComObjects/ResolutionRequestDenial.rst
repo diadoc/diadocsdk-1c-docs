@@ -1,4 +1,4 @@
-﻿ResolutionRequestDenial
+ResolutionRequestDenial
 =======================
 
 Объект представляющий отказ от запроса подписи к документу.

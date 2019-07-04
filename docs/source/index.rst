@@ -26,8 +26,7 @@
    :maxdepth: 1
    :caption: Оглавление
 
-   Общая информация <index>
    Примеры использования <HowTo/HowTo>
    История изменений <History/History>
    Ссылки для скачивания <Downloads>
-   Объекты компоненты <ComObjects/_list> 
+   Объекты компоненты <ComObjects/_list>

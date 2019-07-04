@@ -1,4 +1,4 @@
-﻿PriceListAgreementToSend
+PriceListAgreementToSend
 ========================
 
 Объект представляет собой неформализованный документ на отправку "Протокол согласования цен" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

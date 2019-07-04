@@ -1,4 +1,4 @@
-﻿ExtendedInvoiceCorrectionItem
+ExtendedInvoiceCorrectionItem
 =============================
 
 Сведения о товаре (работе, услуге) универсального корректировочного документа

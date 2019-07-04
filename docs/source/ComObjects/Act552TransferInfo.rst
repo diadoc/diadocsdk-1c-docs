@@ -1,4 +1,4 @@
-﻿Act552TransferInfo
+Act552TransferInfo
 ==================
 
 Содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг) для документа типа
@@ -28,6 +28,6 @@
 |:func:`.AddStructedAdditionalInfo`|
 +----------------------------------+
 
-.. function:: ﻿Act552TransferInfo.AddStructedAdditionalInfo()
+.. function:: Act552TransferInfo.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`

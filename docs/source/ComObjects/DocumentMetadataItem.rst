@@ -1,4 +1,4 @@
-﻿DocumentMetadataItem
+DocumentMetadataItem
 ====================
 
 Описывает метаданные документа

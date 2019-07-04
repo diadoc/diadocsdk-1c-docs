@@ -1,4 +1,4 @@
-﻿NonformalizedDocumentToSend
+NonformalizedDocumentToSend
 ===========================
 
 Объект представляет собой неформализоанный документ на отправку без специализированного типа и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

@@ -1,4 +1,4 @@
-﻿AdditionalInfoId
+AdditionalInfoId
 ================
 
 Объект предназначен для работы с информационным полем документа
@@ -19,6 +19,6 @@
 |:func:`.AddStructedAdditionalInfo`|
 +----------------------------------+
 
-.. function:: ﻿AdditionalInfoId.AddStructedAdditionalInfo()
+.. function:: AdditionalInfoId.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

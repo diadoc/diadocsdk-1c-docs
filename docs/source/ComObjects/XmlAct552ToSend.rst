@@ -1,4 +1,4 @@
-﻿Act552ToSend
+Act552ToSend
 ============
 
 Объект представляет собой формализованный документ на отправку "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

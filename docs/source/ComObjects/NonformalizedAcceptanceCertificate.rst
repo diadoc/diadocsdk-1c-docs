@@ -1,4 +1,4 @@
-﻿NonformalizedAcceptanceCertificate
+NonformalizedAcceptanceCertificate
 ==================================
 
 Данный объект предназначен для работы с документами типа "акт овыполнении работ" в произвольном формате, и является производным объектом от :doc:`Document <Document>`.

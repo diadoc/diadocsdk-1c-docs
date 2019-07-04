@@ -1,4 +1,4 @@
-﻿SendTask
+SendTask
 ========
 
 .. deprecated:: 5.27.0

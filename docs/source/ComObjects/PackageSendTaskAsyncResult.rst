@@ -1,4 +1,4 @@
-﻿PackageSendTaskAsyncResult
+PackageSendTaskAsyncResult
 ==========================
 
 Объект предназначен для получения результата асинхронной операции :doc:`SendAsync <SendAsync-(PackageSendTask)>` по отправке пакета документов.

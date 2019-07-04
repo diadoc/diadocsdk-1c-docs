@@ -1,4 +1,4 @@
-﻿ExtendedSignerDetailsToPost
+ExtendedSignerDetailsToPost
 ===========================
 
 Объект предназначен для редактирования информации о лице, подписавшем документ

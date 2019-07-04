@@ -1,4 +1,4 @@
-﻿ShipperOrConsigneeInfo
+ShipperOrConsigneeInfo
 ======================
 
 Объект предназначен для редактирования информации о

@@ -1,4 +1,4 @@
-﻿UcdSellerContent
+UcdSellerContent
 ================
 
 Объект предназначен для работы с содержанием формализованного документа "Универсальный корректировочный документ" в формате приказа `ММВ-7-15/189@ <https://normativ.kontur.ru/document?moduleId=1&documentId=273231>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.

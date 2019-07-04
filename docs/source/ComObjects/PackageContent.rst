@@ -1,4 +1,4 @@
-﻿PackageContent
+PackageContent
 ==============
 
 Объект предназначен для работы с пакетами контентов (объектов :doc:`BaseContent <BaseContent>`) и является производным объектом от :doc:`BaseContent <BaseContent>`.

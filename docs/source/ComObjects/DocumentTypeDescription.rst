@@ -1,4 +1,4 @@
-﻿DocumentTypeDescription
+DocumentTypeDescription
 =======================
 
 Объект, описывающий тип документа

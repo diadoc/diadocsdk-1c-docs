@@ -1,4 +1,4 @@
-﻿NonformalizedProforma
+NonformalizedProforma
 =====================
 
 Данный объект предназначен для работы документами типа "счет на оплату" и является производным объектом от :doc:`Document <Document>`.

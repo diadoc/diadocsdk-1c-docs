@@ -1,4 +1,4 @@
-﻿CloudCertificateInfo
+CloudCertificateInfo
 ====================
 
 Объект хранит данные Контур.Сертификате пользователя

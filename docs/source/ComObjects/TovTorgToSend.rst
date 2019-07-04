@@ -1,4 +1,4 @@
-﻿TovTorgToSend
+TovTorgToSend
 ===============
 
 Объект представляет собой формализованный документ на отправку "ТОРГ-12" в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

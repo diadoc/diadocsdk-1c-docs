@@ -1,4 +1,4 @@
-﻿StructedAdditionalInfo
+StructedAdditionalInfo
 ======================
 
 Объект предназначен для работы с дополнительными сведениями.

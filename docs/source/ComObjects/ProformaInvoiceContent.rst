@@ -1,4 +1,4 @@
-﻿ProformaInvoiceContent
+ProformaInvoiceContent
 ======================
 
 Объект предназначен работы с метаданными счета на оплату.

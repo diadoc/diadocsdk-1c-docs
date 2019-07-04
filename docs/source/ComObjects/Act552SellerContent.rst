@@ -1,4 +1,4 @@
-﻿Act552SellerContent
+Act552SellerContent
 ===================
 
 Объект предназначен для работы с содержанием формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
@@ -73,18 +73,18 @@
 +------------------+------------------+----------------+
 
 
-.. function:: ﻿Act552SellerContent.AddSigner()
+.. function:: Act552SellerContent.AddSigner()
 
   Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
 
 
 
-.. function:: ﻿Act552SellerContent.AddGround()
+.. function:: Act552SellerContent.AddGround()
 
   Добавляет :doc:`новый элемент <GroundInfo>` в коллекцию *Grounds* и возвращает его
 
 
 
-.. function:: ﻿Act552SellerContent.AddWork()
+.. function:: Act552SellerContent.AddWork()
 
   Добавляет :doc:`новый элемент <Act552WorkDescription>` в коллекцию *Works* и возвращает его

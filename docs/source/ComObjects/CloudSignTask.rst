@@ -1,4 +1,4 @@
-﻿CloudSignTask
+CloudSignTask
 =============
 
 .. deprecated:: 5.26.0

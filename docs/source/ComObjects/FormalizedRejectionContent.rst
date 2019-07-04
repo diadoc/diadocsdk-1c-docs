@@ -1,4 +1,4 @@
-﻿FormalizedRejectionContent
+FormalizedRejectionContent
 ==========================
 
 Объект предназначен для работы с метаданными отказа в подписи документа и является производным объектом от :doc:`BaseContent <BaseContent>`.

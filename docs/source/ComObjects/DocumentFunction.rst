@@ -1,4 +1,4 @@
-﻿DocumentFunction
+DocumentFunction
 ================
 
 Объект, описывающий функцию документа

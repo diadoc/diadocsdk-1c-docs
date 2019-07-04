@@ -1,4 +1,4 @@
-﻿InvoiceCorrectionItem
+InvoiceCorrectionItem
 =====================
 
 Сведения о товаре (работе, услуге) корректировочной счета-фактуры

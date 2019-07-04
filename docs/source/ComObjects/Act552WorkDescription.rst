@@ -1,4 +1,4 @@
-﻿Act552WorkDescription
+Act552WorkDescription
 =====================
 
 Описание выполненных работ для документа типа "Акт в формате 552-го приказа ФНС"
@@ -31,7 +31,8 @@
 |:func:`.AddItem`|
 +----------------+
 
-.. function:: ﻿Act552WorkDescription.AddItem()
+.. function:: Act552WorkDescription.AddItem()
+
  Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию *Items* и возвращает его
 
 

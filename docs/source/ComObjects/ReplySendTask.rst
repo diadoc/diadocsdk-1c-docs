@@ -1,4 +1,4 @@
-﻿ReplySendTask
+ReplySendTask
 =============
 
 .. deprecated:: 5.27.0

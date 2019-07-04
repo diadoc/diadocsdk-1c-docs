@@ -1,4 +1,4 @@
-﻿PackageSendTask
+PackageSendTask
 ===============
 
 .. deprecated:: 5.27.0
@@ -29,7 +29,7 @@
 
 * :doc:`AddDocument <AddDocument>` - добавляет документ заданного типа в пакет на отправку
 * :doc:`AddDocumentFromFile <AddDocumentFromFile>` - добавляет документ в пакет на отправку, загружая его из файла
-* :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` - добавляет документ в пакет на отправку, загружая его из файла (без парсинга) 
+* :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` - добавляет документ в пакет на отправку, загружая его из файла (без парсинга)
 * :doc:`Send <Send-(PackageSendTask)>` - отправляет пакет документов на сервер
 * :doc:`SendAsync <SendAsync-(PackageSendTask)>` - инициирует асинхронную отправку пакета документов
 * :doc:`AddEncryptCertificate <AddEncryptCertificate-(PackageSendTask)>` - добавляет сертификат шифрования документа

@@ -1,4 +1,4 @@
-﻿SetExtendedSignerDetailsTask
+SetExtendedSignerDetailsTask
 ============================
 
 Объект предназначен для добавления или обновления данных подписанта в базе Диадок.

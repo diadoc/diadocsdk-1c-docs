@@ -1,4 +1,4 @@
-﻿ResolutionRequest
+ResolutionRequest
 =================
 
 Объект соответствующий запросу согласования

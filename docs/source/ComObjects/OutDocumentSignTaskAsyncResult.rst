@@ -1,4 +1,4 @@
-﻿OutDocumentSignTaskAsyncResult
+OutDocumentSignTaskAsyncResult
 ==============================
 
 Объект предназначен для получения результата асинхронной операции :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>`

@@ -1,4 +1,4 @@
-﻿TovTorgTransferInfo
+TovTorgTransferInfo
 ===================
 
 Сведения о факте передачи (об отпуске груза)

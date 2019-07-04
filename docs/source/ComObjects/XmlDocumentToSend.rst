@@ -1,4 +1,4 @@
-﻿XmlDocumentToSend
+XmlDocumentToSend
 =================
 
 Объект представляет собой XML-документ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.

@@ -1,4 +1,4 @@
-﻿ContractToSend
+ContractToSend
 ==============
 
 Объект представляет собой неформализованный документ на отправку "Договор" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`

@@ -1,4 +1,4 @@
-﻿AcquireCounteragentTask
+AcquireCounteragentTask
 =======================
 
 Объект предназначен для отправки приглашения контрагента к партнерству
@@ -29,7 +29,7 @@
 +-------------+-------------------+
 
 
-.. function:: ﻿AcquireCounteragentTask.Send()
+.. function:: AcquireCounteragentTask.Send()
 
   Отправляет приглашение контрагента к партнерству
 
