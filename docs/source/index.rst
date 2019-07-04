@@ -34,3 +34,5 @@
    :name: ComObjects
    :maxdepth: 1
    :caption: Объекты компоненты
+
+   Объекты компоненты <ComObjects/_list>

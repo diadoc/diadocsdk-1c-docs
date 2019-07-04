@@ -1,18 +1,23 @@
 ﻿AdditionalInfoId
 ================
 
-Объект предназначен для работы с информационным полем документа.
+Объект предназначен для работы с информационным полем документа
 
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **InfoFileId** (строка, чтение/запись, строка длиной не более 36 символов) - идентификатор файла информационного поля
+:InfoFileId:
+  **Строка, чтение/запись** - идентификатор файла информационного поля
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+:StructedAdditionalInfos:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
 
 
-Методы объекта
---------------
+.. rubric:: Методы
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(AdditionalInfoId)>` - добавляет строку дополнительных сведений
++----------------------------------+
+|:func:`.AddStructedAdditionalInfo`|
++----------------------------------+
+
+.. function:: ﻿AdditionalInfoId.AddStructedAdditionalInfo()
+  Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

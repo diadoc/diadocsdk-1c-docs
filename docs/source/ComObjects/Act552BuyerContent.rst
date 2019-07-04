@@ -3,32 +3,46 @@
 
 Объект предназначен для работы с содержанием титула покупателя формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
 
-Свойства
---------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "XmlAcceptanceCertificate552BuyerTitle")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate552BuyerTitle``
 
-- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - данные подписантов
+:Signers:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - данные подписантов
 
-- **DocumentCreator** (строка, чтение/запись) - cоставитель файла информации продавца
+:DocumentCreator:
+  **Строка, чтение/запись** - cоставитель файла информации продавца
 
-- **DocumentCreatorBase** (строка, чтение/запись) - основание, по которому экономический субъект является составителем файла
+:DocumentCreatorBase:
+  **Строка, чтение/запись** - основание, по которому экономический субъект является составителем файла
 
-- **OperationType** (строка, чтение/запись) - вид операции
+:perationType:
+  **Строка, чтение/запись** - вид операции
 
-- **OperationContent** (строка, чтение/запись) - содержание операции
+:OperationContent:
+  **Строка, чтение/запись** - содержание операции
 
-- **AcceptanceDate** (дата, чтение/запись) - дата приемки результатов работ
+:AcceptanceDate:
+  **Дата, чтение/запись** - дата приемки результатов работ
 
-- **CreatedThingAcceptDate** (дата, чтение/запись) - дата получения вещи, изготовленной  по договору подряда
+:CreatedThingAcceptDate:
+  **Дата, чтение/запись** - дата получения вещи, изготовленной  по договору подряда
 
-- **CreatedThingInfo** (строка, чтение/запись) - сведения о получении
+:CreatedThingInfo:
+  **Строка, чтение/запись** - сведения о получении
 
-- **AdditionalInfoId** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
-
-
-Методы
-------
+:AdditionalInfoId:
+  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
 
 
--  :doc:`AddSigner <AddSigner-(Act552BuyerContent)>` - добавляет новый элемент в список подписантов
+.. rubric:: Методы
+
++------------------+
+|:func:`.AddSigner`|
++------------------+
+
+
+.. function:: ﻿Act552BuyerContent.AddSigner()
+
+  Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его

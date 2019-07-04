@@ -26,10 +26,11 @@
 * :doc:`GetUsers <GetUsers>` - вовзращает :doc:`список <Collection>` всех :doc:`пользователей <User>` организации
 * :doc:`GetUserPermissions <GetUserPermissions>` - возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
 
-.. function:: Organization.GetCounteragentById
-
+.. function:: Organization.GetCounteragentById()
+  возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+  
 .. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Сделано ради теста. Надо доделать
-возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+
 
 
 * :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает :doc:`контрагента <Counteragent>` по идентификатору организации

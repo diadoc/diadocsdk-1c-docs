@@ -3,20 +3,31 @@
 
 Содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг) для документа типа
 
-Свойства
---------
+.. rubric:: Свойства
 
-- **OperationInfo** (строка, чтение/запись) - содержание операции
+:OperationInfo:
+  **Строка, чтение/запись** - содержание операции
 
-- **TransferDate** (дата, чтение/запись) - дата передачи результатов работ
+:TransferDate:
+  **Дата, чтение/запись** - дата передачи результатов работ
 
-- **CreatedThingTransferDate** (дата, чтение/запись) - дата передачи вещи, изготовленной по договору подряда
+:CreatedThingTransferDate:
+  **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору подряда
 
-- **CreatedThingInfo** (строка, чтение/запись) - сведения о передаче
+:CreatedThingInfo:
+  **Строка, чтение/запись** - сведения о передаче
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`) - информационное поле документа
+:StructedAdditionalInfos:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - информационное поле документа
 
-Методы
-------
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(Act552TransferInfo)>` - добавляет элемент в коллекцию информационных полей
+
+.. rubric:: Методы
+
++----------------------------------+
+|:func:`.AddStructedAdditionalInfo`|
++----------------------------------+
+
+.. function:: ﻿Act552TransferInfo.AddStructedAdditionalInfo()
+
+  Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`

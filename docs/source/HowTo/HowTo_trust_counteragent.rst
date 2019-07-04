@@ -48,7 +48,7 @@
 Как пригласить контрагента к партнёрству
 ----------------------------------------
 
-Необходимо отправить запрос партнёрства методом :func:`Counteragent.AcquireCounteragent` или использовать объект :doc:`AcquireCounteragentTask <AcquireCounteragentTask>`:
+Необходимо отправить запрос партнёрства методом :func:`Counteragent.AcquireCounteragent` или использовать объект :doc:`AcquireCounteragentTask <../ComObjects/AcquireCounteragentTask>`:
 
 .. code-block:: c#
 
