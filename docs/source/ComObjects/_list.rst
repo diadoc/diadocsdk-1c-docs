@@ -2,7 +2,7 @@
 ==================
 
 .. toctree::
-  :name: Examples
+  :name: ComObjectList
   :maxdepth: 1
 
   AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>
@@ -25,7 +25,6 @@
   Attorney <Attorney>
   BaseContent <BaseContent>
   BaseDocument <BaseDocument>
-  BasicDocumentContent <BasicDocumentContent>
   CertificateRegistryToSend <CertificateRegistryToSend>
   CloudCertificateInfo <CloudCertificateInfo>
   CloudSignTask <CloudSignTask>
