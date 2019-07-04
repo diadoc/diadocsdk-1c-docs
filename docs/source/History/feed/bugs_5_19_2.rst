@@ -1,0 +1,13 @@
+Релиз 5.19.2
+============
+
+.. feed-entry::
+   :date: 2017-11-27
+
+Исправлены ошибки:
+    - при отправке шифрованного счета-фактуры с помощью PackageSendTask и SendTask не заполнялось свойство DocumentNumber, что приводило к исключению "Incorrect EncryptedInvoiceAttachment: Metadata.DocumentDateAndNumber.DocumentNumber should be filled"
+
+
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
