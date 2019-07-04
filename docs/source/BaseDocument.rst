@@ -11,7 +11,7 @@
 .. rubric:: Методы объекта
     * :doc:`GetContent <GetContent-(BaseDocument)>` - возвращает объект титула продавца
     * :doc:`GetBuyerContent <GetBuyerContent-(BaseDocument)>` - возвращает объект титула покупателя
-    * :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
+  .. function:: SendReceiptsAsync - формирует и подписывает документы по регламентному документообороту СЧФ/УПД
 
 .. toctree::
    :name: Auto

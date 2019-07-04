@@ -5,30 +5,30 @@
 Как запрашивать согласование и передавать на подпись документ
 -------------------------------------------------------------
 
-Отправить документ на подпись или на согласование в другое подразделение или другому сотруднику можно, используя объект :doc:`ResolutionRequestTask`.
-Создать данный объект можно методом CreateResolutionRequestTask, вызвав его у :doc:`объекта документа <Document>` или объекта :doc:`пакета документов <DocumentPackage>`
+Для отправки документа на подпись или согласование предназначен объект :doc:`ResolutionRequestTask`, который можно создать методами :func:`Document.CreateResolutionRequestTask` и :func:`DocumentPackage.CreateResolutionRequestTask`
 
-Если в качестве подразделения, в которое нужно отправить запрос, необходимо указать Головное подразделение, то TargetDepartmentId нужно указать "00000000-0000-0000-0000-000000000000"
 
 .. code-block:: c#
 
     Процедура ОтправитьДокументНаПодписьВПодразделение(ИдентификаторДокумента, ИдентификаторПодразделения)
-    
+
         Document = Organization.GetDocumentById(ИдентификаторДокумента)
-        
+
         ResolutionRequestTask = Document.CreateResolutionRequestTask();
-        
+
         // ResolutionRequestType определяет будет ли это запрос на согласование или передача на подпись
         // В данном случае - передача на подпись
         ResolutionRequestTask.ResolutionRequestType = "SignatureRequest";
         ResolutionRequestTask.TargetDepartmentId    = ИдентификаторПодразделения;
-        
+
         ResolutionRequestTask.Send();
-        
+
     КонецПроцедуры
 
 
 Подтверждение и отказ в соласовании или подписи
 -----------------------------------------------
 
-Если :doc:`документ <Document>` или :doc:`пакет документов <DocumentPackage>` переданы на согласование/подпись, то у них можно вызвать методы Approve и Disapprove для принятия или отказа в согласовании/подписи
+Для принятия резолюции используйте методы :func:`Document.Approve` и :func:`DpcumentPackage.Approve`
+
+Для отказа в резолюции - :func:`Document.Disapprove` и :func:`DpcumentPackage.Disapprove`
