@@ -28,10 +28,3 @@
 --------------
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(ExtendedInvoiceCorrectionItem)>` - добавляет строку дополнительных сведений
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(ExtendedInvoiceCorrectionItem)>

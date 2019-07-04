@@ -37,10 +37,3 @@
 ------
 
 -  :doc:`Send <Send-(SetExtendedSignerDetailsTask)>` - отправляет данные подписанта на сервер Диадок
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   Send <Send-(SetExtendedSignerDetailsTask)>

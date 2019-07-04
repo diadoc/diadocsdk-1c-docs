@@ -42,13 +42,3 @@ InternalWaitingForSenderSignature         документ внутренний,
 InternalInvalidSenderSignature            документ внутренний, документ не отправлен, поскольку подпись отправителя не является корректной
 InternalInvalidRecipientSignature         документ внутренний, документооборот не завершен, поскольку подпись отправителя не является корректной
 ========================================= ======================================================================================================
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   GetRejectionComment-(XmlTorg12)
-   GetContent-(XmlTorg12)
-   GetBuyerContent-(XmlTorg12)
-   SaveRecipientContent-(XmlTorg12)

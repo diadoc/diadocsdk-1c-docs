@@ -21,10 +21,3 @@
 ------
 
 - :doc:`AddCorrectionBase <AddCorrectionBase>` - добавляет основание корректировки в коллекцию оснований
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   CorrectionBase <CorrectionBase>
-   AddCorrectionBase <AddCorrectionBase>

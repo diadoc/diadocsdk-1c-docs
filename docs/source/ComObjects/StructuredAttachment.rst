@@ -17,10 +17,3 @@
 
 -  :doc:`SaveContent <SaveContent-(StructuredAttachment)>` - сохраняет
    структурированные данные на локальный диск
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   
-   SaveContent <SaveContent-(StructuredAttachment)>

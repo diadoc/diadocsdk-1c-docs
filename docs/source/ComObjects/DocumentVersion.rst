@@ -12,8 +12,3 @@
 :Titles: (:doc:`коллекция <Collection>` объектов :doc:`DocumentTitle <DocumentTitle>`) - описания титулов документа
 :IsActual: (булево, чтение) - версия актуальна
 :Workflows: (:doc:`коллекция <Collection>` объектов :doc:`DocumentWorkflow <DocumentWorkflow>`) - виды документооборота
-
-
-.. rubric:: Методы
-
-Отсутствуют

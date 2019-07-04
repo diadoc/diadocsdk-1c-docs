@@ -42,6 +42,10 @@
 
 .. rubric:: Методы
 
++----------------+
+|:func:`.AddItem`|
++----------------+
+
 .. function:: ﻿AcceptanceCertificateSellerContent.AddItem()
 
   Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его

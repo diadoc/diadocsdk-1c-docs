@@ -36,11 +36,3 @@
    на диск
 -  :doc:`GetSignatureContent <GetSignatureContent>` - сохраняет содержимое
    подписи документа на диск
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   GetDocument <GetDocument>
-   GetFileContent <GetFileContent>
-   GetSignatureContent <GetSignatureContent>

@@ -56,14 +56,3 @@
 -  :doc:`AddGround <AddGround-(Act552SellerContent)>` - добавляет основание в список оснований
 
 -  :doc:`AddWork <AddWork-(Act552SellerContent)>` - добавляет элемент в коллекцию описаний выполненных работ
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-    AddSigner <AddSigner-(Act552SellerContent)>
-    AddGround <AddGround-(Act552SellerContent)>
-    AddWork <AddWork-(Act552SellerContent)>
-    Act552WorkDescription <Act552WorkDescription>
-    Act552TransferInfo <Act552TransferInfo>

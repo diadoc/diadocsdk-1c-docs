@@ -29,13 +29,3 @@
 
 
 -  :doc:`AddItem <AddItem-(TovTorgSellerContent)>` - добавляет сведения о товаре в коллекцию строк
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner-(TovTorgSellerContent)
-   AddGround <AddGround-(TovTorgSellerContent)>
-   TovTorgItem <TovTorgItem>
-   AddItem-(TovTorgSellerContent)

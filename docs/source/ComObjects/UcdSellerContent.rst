@@ -46,7 +46,7 @@
 
 
 Свойство **Function** принимает одно из следующих значений:
- 
+
 -  "Invoice" - КСЧФ
 -  "Basic" - ДИС
 -  "InvoiceAndBasic" - КСЧФДИС
@@ -58,15 +58,3 @@
 -  :doc:`AddSigner <AddSigner-(UcdSellerContent)>` - добавляет подписанта
 
 -  :doc:`AddInvoice <AddInvoice-(UcdSellerContent)>` - добавляет счет-фактуру (первичный документ), к которому составлен УКД
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner <AddSigner-(UcdSellerContent)>
-   AddInvoice <AddInvoice-(UcdSellerContent)>
-   InvoiceForCorrectionInfo <InvoiceForCorrectionInfo>
-   EventContent <EventContent>
-   InvoiceCorrectionTable <InvoiceCorrectionTable>
-   

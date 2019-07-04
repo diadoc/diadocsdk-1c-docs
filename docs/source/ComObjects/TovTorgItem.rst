@@ -67,10 +67,3 @@
 --------------
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(TovTorgItem)>` - добавляет новый элемент в список дополнительных сведений информационного поля документа
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(TovTorgItem)>

@@ -13,12 +13,12 @@
 
 -  InitialDocuments (:doc:`коллекция <Collection>` объектов :doc:`Document <Document>`, чтение) - документы, для
    которых формируется запрос на согласование.
-   
+
    -  если объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>`
       объекта :doc:`Document <Document>`, то **InitialDocuments** вернет единственный документ;
 
    -  если объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask-(DocumentPackage)>`
-      объекта :doc:`DocumentPackage <DocumentPackage>`, то **InitialDocuments** вернет все документы пакета, 
+      объекта :doc:`DocumentPackage <DocumentPackage>`, то **InitialDocuments** вернет все документы пакета,
       для которого был создан запрос.
 
 -  ResolutionRequestType (строка, чтение/запись) - тип запроса на
@@ -43,9 +43,3 @@
 
 -  :doc:`Send <Send-(ResolutionRequestTask)>` - отправить запрос на
    согласование на сервер Диадок
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   Send <Send-(ResolutionRequestTask)>

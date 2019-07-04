@@ -18,5 +18,3 @@
 -  Subdepartments (объект Collection, чтение) - коллекция дочерних
    подразделений (Department)
 -  Address (:doc:`AddressInfo <AddressInfo>`, чтение) - адрес подразделения
-
-Методы отсутствуют

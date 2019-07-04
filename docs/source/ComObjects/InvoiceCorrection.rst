@@ -42,13 +42,3 @@ OutboundInvalidSenderSignature    документ исходящий, доку�
 InboundNotFinished                документ входящий, документооборот не завершен
 InboundFinished                   документ входящий, документооборот завершен
 ================================= ====================================================================================================
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   GetContent-(InvoiceCorrection) <GetContent-(InvoiceCorrection)>
-   GetAmendmentRequestedComment-(InvoiceCorrection) <GetAmendmentRequestedComment-(InvoiceCorrection)>
-   SendReceiptsAsync <SendReceiptsAsync>
-

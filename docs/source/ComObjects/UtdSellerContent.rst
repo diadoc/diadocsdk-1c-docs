@@ -24,7 +24,7 @@
 
 - **Consignee** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - данные грузополучателя. В случае УПД с функцией "СЧФ" и "СЧФДОП" для грузополучателя должен быть указан адрес
 
-- **InvoiceTable** (:doc:`InvoiceTable <InvoiceTable>`, чтение) - сведения табличной части счета-фактуры. В случае УПД с функцией "СЧФ" и "СЧФДОП" табличная часть документа должна быть заполнена 
+- **InvoiceTable** (:doc:`InvoiceTable <InvoiceTable>`, чтение) - сведения табличной части счета-фактуры. В случае УПД с функцией "СЧФ" и "СЧФДОП" табличная часть документа должна быть заполнена
   и должна содержать хотя бы одну строку.
 
 - **Currency** (строка, чтение/запись, обязательно для запонения) - код валюты по Общероссийскому классификатору валют
@@ -62,14 +62,3 @@
 -  :doc:`AddSigner <AddSigner-(UtdSellerContent)>` - добавляет подписанта
 
 -  :doc:`AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>` - добавляет сведения о платежно-расчетном документе
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner <AddSigner-(UtdSellerContent)>
-   AddPaymentDocument <AddPaymentDocument-(UtdSellerContent)>
-   InvoiceTable <InvoiceTable>
-   TransferInfo <TransferInfo>
-   

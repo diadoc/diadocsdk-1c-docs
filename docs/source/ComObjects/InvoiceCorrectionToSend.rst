@@ -13,6 +13,3 @@
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
 
 - **Content** (:doc:`InvoiceCorrectionContent <InvoiceCorrectionContent>`, чтение) - содержимое документа
-
-
-Методы отсутствуют.

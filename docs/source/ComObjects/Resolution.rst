@@ -27,5 +27,3 @@
 -  "RevocationRequest" - запрос на аннулирование документа
 -  "FormalizedSignatureDisapprove" - формализованный отказ в подписи
 -  "InvoiceCorrectionRequest" - уведомление об уточнении счета-фактуры
-
-Методы отсутствуют

@@ -17,10 +17,3 @@
 --------------
 
 - :doc:`AddItem <AddItem-(InvoiceCorrectionTable)>` - добавляет элемент информации о товарах
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>
-   AddItem <AddItem-(InvoiceCorrectionTable)>

@@ -1,5 +1,5 @@
-DiadocInvoiceAPI
-================
+DiadocAPI
+=========
 
 
 Объект DiadocInvoiceAPI предназначен для:
@@ -36,7 +36,7 @@ DiadocInvoiceAPI
 +--------------------------------------+----------------------------------------+
 
 
-.. function:: DiadocInvoiceAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
+.. function:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
   :Pin:        ``Строка`` Пин-код или пароль от контейнера сертификата
@@ -47,7 +47,7 @@ DiadocInvoiceAPI
 
 
 
-.. function:: DiadocInvoiceAPI.CreateConnectionByLogin(Login, Password)
+.. function:: DiadocAPI.CreateConnectionByLogin(Login, Password)
 
   :Login:    ``Строка`` Логин пользователя
   :Password: ``Строка`` Пароль пользователя
@@ -56,7 +56,7 @@ DiadocInvoiceAPI
 
 
 
-.. function:: DiadocInvoiceAPI.GetPersonalCertificates(UserStore=TRUE)
+.. function:: DiadocAPI.GetPersonalCertificates(UserStore=TRUE)
 
   :UsePersonalStore: ``Булево`` Поиск производится в хранилище пользователя
 
@@ -64,13 +64,13 @@ DiadocInvoiceAPI
 
 
 
-.. function:: DiadocInvoiceAPI.GetVersion()
+.. function:: DiadocAPI.GetVersion()
 
   Возвращает строку с версией используемой компоненты
 
 
 
-.. function:: DiadocInvoiceAPI.TestConnection()
+.. function:: DiadocAPI.TestConnection()
 
   Проверяет возможность соединения с сервером Диадока, используя установленные параметры. Возвращает булево значение
 
@@ -79,7 +79,7 @@ DiadocInvoiceAPI
 
 
 
-.. function:: DiadocInvoiceAPI.TestConnection2()
+.. function:: DiadocAPI.TestConnection2()
 
   Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
 
@@ -87,7 +87,7 @@ DiadocInvoiceAPI
 
 
 
-.. function:: DiadocInvoiceAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
+.. function:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
 
@@ -104,6 +104,3 @@ NoProxy              не использовать прокси-сервер п�
 UseProxy             использовать настройки прокси-сервера, указанные в ProxySettings
 UseDefaultProxy      использовать прокси-сервер по умолчанию
 ==================== ================================================================
-
-
-.. seealso:: :doc:`How-auth`

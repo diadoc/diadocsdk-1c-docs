@@ -26,10 +26,3 @@
 ------
 
 -  :doc:`AddItem <AddItem-(Act552WorkDescription)>` - добавляет элемент в коллекцию сведений о произведенной работе
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-    AddItem <AddItem-(Act552WorkDescription)>
-    Act552WorkItem <Act552WorkItem>

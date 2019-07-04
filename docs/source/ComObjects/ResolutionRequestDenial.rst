@@ -12,9 +12,3 @@
 ------
 
 - :doc:`Cancel <Cancel-(ResolutionRequestDenial)>` -  отмена отказа от запроса подписи.
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   Cancel <Cancel-(ResolutionRequestDenial)>

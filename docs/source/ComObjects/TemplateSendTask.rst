@@ -18,19 +18,10 @@ TemplateSendTask
     -  "Send" - для документов возможна только совместная отправка. После отправки пакета документов все ограничения на подокументную обработку снимаются
     -  "Full" - документы сообщения будут отправлены закрытым пакетом. В таком пакете любая операция применяется ко всем документам сразу
 -  **Templates** (:doc:`коллекция <Collection>` объектов :doc:`TemplateToSend <TemplateToSend>`, чтение) - коллекция шаблонов документов, добавленных в задание на отправку
-    
+
 
 Методы
 ------
 
 -  :doc:`AddTemplate <AddTemplate>` - добавляет шаблон документа заданного типа на отправку
 -  :doc:`Send <Send-(TemplateSendTask)>` - отправляет шаблон пакета документов на сервер
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   TemplateToSend <TemplateToSend>
-   AddTemplate <AddTemplate>
-   Send <Send-(TemplateSendTask)>

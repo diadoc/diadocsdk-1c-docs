@@ -38,13 +38,3 @@
 -  :doc:`AddTransferBase <AddTransferBase>` - добавляет основание отгрузки
 
 -  :doc:`AddWaybill <AddWaybill>` - добавляет транспортную накладную
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddTransferBase <AddTransferBase>
-   AddWaybill <AddWaybill>
-   TransferBase <TransferBase>
-   Waybill <Waybill>

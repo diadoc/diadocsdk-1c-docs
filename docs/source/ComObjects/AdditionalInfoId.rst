@@ -16,10 +16,3 @@
 --------------
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(AdditionalInfoId)>` - добавляет строку дополнительных сведений
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(AdditionalInfoId)>

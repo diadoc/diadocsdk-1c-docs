@@ -24,11 +24,3 @@
 --------------
 
 -  :doc:`AddItem <AddItem-(InvoiceTable)>` - добавляет строку в табличную часть счета-фактуры
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddItem <AddItem-(InvoiceTable)>
-   ExtendedInvoiceItem <ExtendedInvoiceItem>

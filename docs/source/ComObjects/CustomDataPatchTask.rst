@@ -17,12 +17,3 @@
 -  :doc:`Send <Send-(CustomDataPatchTask)>` - применяет изменнения описанные в коллекции **Items**
 
 -  :doc:`SendAsync <SendAsync-(CustomDataPatchTask)>` - асинхронно применяет изменнения описанные в коллекции **Items**
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   CustomDataPatchItem <CustomDataPatchItem>
-   AddItem <AddItem-(CustomDataPatchTask)>
-   Send <Send-(CustomDataPatchTask)>
-   SendAsync <SendAsync-(CustomDataPatchTask)>

@@ -30,9 +30,3 @@
 --------------
 
 -  :doc:`AddSigner <AddSigner-(TovTorgBuyerContent)>` - добавляет подписанта
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner <AddSigner-(TovTorgBuyerContent)>

@@ -1,7 +1,7 @@
 ﻿Act552TransferInfo
 ==================
 
-Содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг) для документа типа 
+Содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг) для документа типа
 
 Свойства
 --------
@@ -20,9 +20,3 @@
 ------
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(Act552TransferInfo)>` - добавляет элемент в коллекцию информационных полей
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-    AddStructedAdditionalInfo <AddStructedAdditionalInfo-(Act552TransferInfo)>

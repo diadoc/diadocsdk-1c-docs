@@ -32,9 +32,3 @@
 
 
 -  :doc:`AddSigner <AddSigner-(Act552BuyerContent)>` - добавляет новый элемент в список подписантов
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner-(Act552BuyerContent)

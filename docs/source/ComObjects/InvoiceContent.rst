@@ -51,16 +51,3 @@
 -  :doc:`AddPaymentDocument <AddPaymentDocument-(InvoiceContent)>` - добавляет сведения о платежно-расчетном документе
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo>` - добавляет строку дополнительных сведений
-
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddItem-(InvoiceContent) <AddItem-(InvoiceContent)>
-   AddPaymentDocument-(InvoiceContent) <AddPaymentDocument-(InvoiceContent)>
-   InvoiceItem <InvoiceItem-(Invoice)>
-   InvoiceItem <InvoiceItem>
-   InvoiceTotals <Totals-InvoiceTotals>
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo>

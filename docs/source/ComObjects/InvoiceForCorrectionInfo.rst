@@ -18,11 +18,3 @@
 
 
 -  :doc:`AddInvoiceRevision <AddInvoiceRevision-(InvoiceForCorrectionInfo)>` - добавляет строку "с учетом исправления"
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   InvoiceRevisionInfo <InvoiceRevisionInfo>
-   AddInvoiceRevision <AddInvoiceRevision-(InvoiceForCorrectionInfo)>

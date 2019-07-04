@@ -25,6 +25,3 @@
   - "AcceptanceCertificatey" -- для акта о выполнении работ
   - "NonformalizedProforma" -- для счета на оплату
   - "Torg12" -- для ТОРГ-12
-
-
-Методы отсутствуют

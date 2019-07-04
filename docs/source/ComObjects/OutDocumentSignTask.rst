@@ -17,13 +17,5 @@
 
 -  :doc:`Send <Send-(OutDocumentSignTask)>` - подписывает и отправляет исходящий документ с отложенной отправкой
 
--  :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` - инициирует асинхронное подписание и отправку исходящего 
+-  :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` - инициирует асинхронное подписание и отправку исходящего
    документа с отложенной отправкой
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddExtendedSigner <AddExtendedSigner>
-   Send <Send-(OutDocumentSignTask)>
-   SendAsync <SendAsync-(OutDocumentSignTask)>

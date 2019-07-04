@@ -13,6 +13,3 @@
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
 
 - **Content** (:doc:`AcceptanceCertificateSellerContent <AcceptanceCertificateSellerContent>`, чтение) - содержимое документа
-
-
-Методы отсутствуют.

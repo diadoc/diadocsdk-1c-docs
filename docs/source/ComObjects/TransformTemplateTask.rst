@@ -16,12 +16,3 @@ TransformTemplateTask
 
 -  :doc:`AddDocumentTransformation <AddDocumentTransformation>` - добавляет документ для трансформации
 -  :doc:`Send <Send-(TransformTemplateTask)>` - создаёт документы на основе шаблонов документов, указанных в **DocumentTransformations**
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-   
-   DocumentTransformation <DocumentTransformation>
-   AddDocumentTransformation <AddDocumentTransformation>
-   Send <Send-(TransformTemplateTask)>

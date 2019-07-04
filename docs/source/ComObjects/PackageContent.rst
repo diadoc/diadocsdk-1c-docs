@@ -8,8 +8,3 @@
 :ContentItems: (:doc:`коллекция <Collection>` объектов :doc:`PackageContentItem <PackageContentItem>`, чтение) - коллекция пар "документ-контент", хранящихся в пакете
 
 :Type: (строка, чтение) - тип контента (возвращает строку "PackageContent")
-
-
-.. rubric:: Методы
-
-Отсутствуют

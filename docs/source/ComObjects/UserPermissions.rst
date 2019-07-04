@@ -18,12 +18,6 @@
 :SelectedDepartments: (:doc:`Collection <Collection>` объектов :doc:`Department <Department>`, чтение) - список подразделений, к которым имеет доступ пользователь
 :JobTitle: (строка, чтение) - должность сотрудника
 
-
-.. rubric:: Методы
-
-Отсутствуют
-
-
 .. rubric:: Дополнительная информация
 
 * Свойство **SelectedDepartments** заполнено только в случае DocumentsAccessLevel = SelectedDepartments

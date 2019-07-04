@@ -65,14 +65,3 @@
 -  :doc:`AddItem <AddItem-(Torg12SellerContent)>` - добавляет строку в табличную часть Торг-12
 
 -  :doc:`SaveExternalCodes <SaveExternalCodes>` - сохраняет на сервере Диадока список внешних идентификаторов товаров накладной
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddItem-(Torg12SellerContent) <AddItem-(Torg12SellerContent)>
-   SaveExternalCodes <SaveExternalCodes>
-   Torg12Item <Torg12Item>
-   Torg12Totals <Torg12Totals>
-   Torg12Commons <Torg12Commons>

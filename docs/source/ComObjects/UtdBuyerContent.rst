@@ -31,11 +31,3 @@
 --------------
 
 -  :doc:`AddSigner <AddSigner-(UtdBuyerContent)>` - добавляет подписанта
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner <AddSigner-(UtdBuyerContent)>
-   

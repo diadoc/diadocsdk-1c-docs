@@ -73,6 +73,3 @@
 * :doc:`RecycleDraft <RecycleDraft>` - удаляет черновик
 
 * :doc:`SaveUserDataXSD <SaveUserDataXSD>` - сохраняет описание контента документа на диск
-
-
-.. seealso:: :doc:`How-auth`

@@ -35,15 +35,3 @@
 
 
 Объект можно получить, вызвав метод :doc:`CreateConnectionByLogin <CreateConnectionByLogin>` (авторизация по логину и паролю пользователя), либо вызвав метод :doc:`CreateConnectionByCertificate <CreateConnectionByCertificate>` (авторизация по сертификату с указанным отпечатком) :doc:`объекта интерфейса "Диадок" <Root-method>`.
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   PersonalCertificate <PersonalCertificate>
-   GetOrganizationList <GetOrganizationList>
-   GetOrganizationById <GetOrganizationById>
-   CreateCloudSignTask <CreateCloudSignTask>
-   GetCloudCertificates <GetCloudCertificates>
-   GetMyUser <GetMyUser>
-

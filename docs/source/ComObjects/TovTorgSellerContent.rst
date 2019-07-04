@@ -58,14 +58,3 @@
 -  :doc:`AddSigner <AddSigner-(TovTorgSellerContent)>` - добавляет новый элемент в список подписантов
 
 -  :doc:`AddGround <AddGround-(TovTorgSellerContent)>` - добавляет основание в список оснований
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddSigner <AddSigner-(TovTorgSellerContent)>
-   AddGround <AddGround-(TovTorgSellerContent)>
-   TovTorgTable <TovTorgTable>
-   TovTorgTransferInfo <TovTorgTransferInfo>
-   GroundInfo <GroundInfo>

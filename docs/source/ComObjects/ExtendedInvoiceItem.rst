@@ -61,6 +61,3 @@ Service                    услуга
 PropertyRights             имущественные права
 Other                      иное
 ========================== ===================
-
-
-.. seealso:: `Приказ ФНС РФ от 24.03.2016 N ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958&rangeId=210759>`_

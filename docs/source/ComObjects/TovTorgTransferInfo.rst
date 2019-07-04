@@ -27,11 +27,3 @@
 -  :doc:`AddWaybill <AddWaybill-(TovTorgTransferInfo)>` - добавляет новый элемент в список транспортных накладных
 
 -  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(TovTorgTransferInfo)>` - добавляет новый элемент в список дополнительных сведений
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   AddWaybill <AddWaybill-(TovTorgTransferInfo)>
-   AddStructedAdditionalInfo <AddStructedAdditionalInfo-(TovTorgTransferInfo)>

@@ -60,13 +60,3 @@ InboundNotFinished                                    документ вход�
 InboundFinished                                       документ входящий, документооборот завершен
 UnknownDocumentStatus                                 неизвестный статус
 ===================================================== ====================================================================================================================================
-
-
-.. toctree::
-   :name: Auto
-   :hidden:
-
-   GetContent <GetContent-(UcdRevision)>
-   GetBuyerContent <GetBuyerContent-(UcdRevision)>
-   SendReceiptsAsync <SendReceiptsAsync>
-   GetAmendmentRequestedComment <GetAmendmentRequestedComment-(UcdRevision)>

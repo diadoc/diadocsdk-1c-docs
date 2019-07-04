@@ -13,6 +13,3 @@
 - **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
 
 - **Content** (:doc:`Torg12SellerContent <Torg12SellerContent>`, чтение) - содержимое документа
-
-
-Методы отсутствуют.

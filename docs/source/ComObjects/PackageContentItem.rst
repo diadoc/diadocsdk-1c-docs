@@ -16,11 +16,6 @@
 * :doc:`LoadContentFromBase64 <PackageContentItem_LoadContentFromBase64>` загружает контент ответа из Base64 строки
 
 
-.. rubric:: Методы
-
-Отсутствуют
-
-
 .. rubric:: Дополнительная информация
 
 * Если :doc:`PackageContent <PackageContent>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>` с типом **AcceptDocument** для двухтитульного документа, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
