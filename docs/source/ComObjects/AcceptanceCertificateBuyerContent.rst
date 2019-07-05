@@ -1,8 +1,11 @@
 ﻿AcceptanceCertificateBuyerContent
 =================================
 
-Объект предназначен для работы с содержанием титула покупателя формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83259>`_ .
+Содержание титула покупателя *Акта о выполнении работ* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83259>`_ .
 Является производным объектом от :doc:`BaseContent <BaseContent>`
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
 
 
 .. rubric:: Свойства

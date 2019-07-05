@@ -1,14 +1,16 @@
 BaseContent
 ===========
 
-Объект является базовым для представления контента ответных действийпо документам
-Для получение контента документов используйте объект :doc:`DynamicContent <DynamicContent>`
+Базовые представление контента ответных действий по документу.
+Для получение контента документов используйте объект :doc:`DynamicContent`, получаемый методом :func:`Document.GetDynamicContent`
+
+.. note:: Является базовым объектом для представления контента документов, если используется :doc:`SendTask`, :doc:`PackageSendTask`, :doc:`ReplySendTask`
 
 
 .. rubric:: Свойства объекта
 
-:Type: (строка, чтение) - тип контента
-
+:Type:
+  **Строка, чтение** - тип контента
 
 
 .. rubric:: Дополнительная информация
@@ -16,10 +18,10 @@ BaseContent
 ============================================================== ==================================================================================================
 Производный объект                                             Описание
 ============================================================== ==================================================================================================
-:doc:`AcceptanceContent <AcceptanceContent>`                   метаданные подписания документа
-:doc:`CorrectionRequestContent <CorrectionRequestContent>`     метаданные запроса корректировки по документу
-:doc:`RejectionContent <RejectionContent>`                     метаданные неформализованного отказа в подписании документа
-:doc:`FormalizedRejectionContent <FormalizedRejectionContent>` метаданные формализованного отказа в подписании документа
-:doc:`OutDocumentSignTaskContent <OutDocumentSignTaskContent>` метаданные содержание запроса на подписание и отправку исходящего документа с отложенной отправкой
-:doc:`RevocationRequestContent <RevocationRequestContent>`     метаданные запроса на аннулирование документа
+:doc:`AcceptanceContent <AcceptanceContent>`                   данные подписания документа
+:doc:`CorrectionRequestContent <CorrectionRequestContent>`     данные запроса корректировки по документу
+:doc:`RejectionContent <RejectionContent>`                     данные неформализованного отказа в подписании документа
+:doc:`FormalizedRejectionContent <FormalizedRejectionContent>` данные формализованного отказа в подписании документа
+:doc:`OutDocumentSignTaskContent <OutDocumentSignTaskContent>` данные содержание запроса на подписание и отправку исходящего документа с отложенной отправкой
+:doc:`RevocationRequestContent <RevocationRequestContent>`     данные запроса на аннулирование документа
 ============================================================== ==================================================================================================

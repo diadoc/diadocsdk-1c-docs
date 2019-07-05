@@ -29,10 +29,10 @@ AcquireCounteragentTask
 +-------------+-------------------+
 
 
+
 .. function:: AcquireCounteragentTask.Send()
 
   Отправляет приглашение контрагента к партнерству
-
 
 
 

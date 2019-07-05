@@ -3,8 +3,8 @@
 
 `Сведения о произведённой работе <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=230056>`_ в акте выполненных работ
 
-.. rubric:: Свойства
 
+.. rubric:: Свойства
 
 :Name:
   **Строка, чтение/запись** - наименование работы

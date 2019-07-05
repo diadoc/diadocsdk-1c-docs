@@ -1,7 +1,7 @@
 Act552WorkDescription
 =====================
 
-Описание выполненных работ для документа типа "Акт в формате 552-го приказа ФНС"
+Описание выполненных работ для *Акта о выполнении работ* в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_
 
 
 .. rubric:: Свойства
@@ -30,6 +30,7 @@ Act552WorkDescription
 +----------------+
 |:func:`.AddItem`|
 +----------------+
+
 
 .. function:: Act552WorkDescription.AddItem()
 

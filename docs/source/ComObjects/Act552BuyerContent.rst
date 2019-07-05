@@ -1,7 +1,11 @@
 Act552BuyerContent
 ==================
 
-Объект предназначен для работы с содержанием титула покупателя формализованного документа "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
+Cодержание титула покупателя *Акта о выполнении работ* в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ .
+Является производным объектом от :doc:`BaseContent <BaseContent>`.
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
 
 .. rubric:: Свойства
 
