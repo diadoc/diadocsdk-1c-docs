@@ -37,14 +37,26 @@ DocumentsTask
   **Булево, чтение/запись** - признак того, что нужно вернуть только первые сто документов
 
 
+
 .. rubric:: Методы
 
+
++------------------------------+-----------------------------------+
+| |DocumentTask-GetDocuments|_ | |DocumentTask-GetDocumentsAsync|_ |
++------------------------------+-----------------------------------+
+
+.. |DocumentTask-GetDocuments| replace:: GetDocuments()
+.. |DocumentTask-GetDocumentsAsync| replace:: GetDocumentsAsync()
+
+
+
+.. _DocumentTask-GetDocuments:
 .. method:: DocumentTask.GetDocuments()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`документов <Document>` удовлетворяющих заданному фильтру
 
 
-
+.. _DocumentTask-GetDocumentsAsync:
 .. method:: DocumentTask.GetDocumentsAsync()
 
   Асинхронно получает список документов, удовлетворяющих фиьлтру. Возвращает :doc:`AsyncResult` с результатом в виде :doc:`коллекции <Collection>` :doc:`документов <Document>`
