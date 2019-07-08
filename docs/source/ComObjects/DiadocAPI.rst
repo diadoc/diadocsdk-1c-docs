@@ -25,18 +25,27 @@ DiadocAPI
 
 .. rubric:: Методы
 
-+--------------------------------------+----------------------------------------+
-|:func:`.CreateConnectionByCertificate`|:func:`.TestConnection`                 |
-+--------------------------------------+----------------------------------------+
-|:func:`.CreateConnectionByLogin`      |:func:`.TestConnection2`                |
-+--------------------------------------+----------------------------------------+
-|:func:`.GetPersonalCertificates`      |:func:`.VerifyThatUserHasAccessToAnyBox`|
-+--------------------------------------+----------------------------------------+
-|:func:`.GetVersion`                   |                                        |
-+--------------------------------------+----------------------------------------+
++--------------------------------------------+------------------------------+----------------------------------------------+
+| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
++--------------------------------------------+------------------------------+----------------------------------------------+
+| |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  |                                              |
++--------------------------------------------+------------------------------+----------------------------------------------+
+| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ |                                              |
++--------------------------------------------+------------------------------+----------------------------------------------+
 
 
-.. function:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
+.. |DiadocAPI-CreateConnectionByCertificate| replace:: CreateConnectionByCertificate()
+.. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
+.. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
+.. |DiadocAPI-GetVersion| replace:: GetVersion()
+.. |DiadocAPI-TestConnection| replace:: TestConnection()
+.. |DiadocAPI-TestConnection2| replace:: TestConnection2()
+.. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
+
+
+
+.. _DiadocAPI-CreateConnectionByCertificate:
+.. method:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
   :Pin:        ``Строка`` Пин-код или пароль от контейнера сертификата
@@ -47,7 +56,8 @@ DiadocAPI
 
 
 
-.. function:: DiadocAPI.CreateConnectionByLogin(Login, Password)
+.. _DiadocAPI-CreateConnectionByLogin:
+.. method:: DiadocAPI.CreateConnectionByLogin(Login, Password)
 
   :Login:    ``Строка`` Логин пользователя
   :Password: ``Строка`` Пароль пользователя
@@ -56,21 +66,24 @@ DiadocAPI
 
 
 
-.. function:: DiadocAPI.GetPersonalCertificates(UserStore=TRUE)
+.. _DiadocAPI-GetPersonalCertificates:
+.. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
 
   :UsePersonalStore: ``Булево`` Поиск производится в хранилище пользователя
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в хранилище `Личное`. Поиск может производиться в хранилище пользователя или машины
+  Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в хранилище `Личное <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_. Поиск может производиться в хранилище пользователя или машины
 
 
 
-.. function:: DiadocAPI.GetVersion()
+.. _DiadocAPI-GetVersion:
+.. method:: DiadocAPI.GetVersion()
 
   Возвращает строку с версией используемой компоненты
 
 
 
-.. function:: DiadocAPI.TestConnection()
+.. _DiadocAPI-TestConnection:
+.. method:: DiadocAPI.TestConnection()
 
   Проверяет возможность соединения с сервером Диадока, используя установленные параметры. Возвращает булево значение
 
@@ -79,7 +92,8 @@ DiadocAPI
 
 
 
-.. function:: DiadocAPI.TestConnection2()
+.. _DiadocAPI-TestConnection2:
+.. method:: DiadocAPI.TestConnection2()
 
   Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
 
@@ -87,7 +101,8 @@ DiadocAPI
 
 
 
-.. function:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
+.. _DiadocAPI-VerifyThatUserHasAccessToAnyBox:
+.. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
 

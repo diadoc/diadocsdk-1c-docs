@@ -1,18 +1,31 @@
 DocumentTitle
 =============
 
-Объект, описывающий титул документа
+Описание титула документа
 
 
 .. rubric:: Свойства
 
-:IsFormal: (булево, чтение) - титул формализованный
-:XsdUrl: (строка, чтение) - адрес метода, возвращающего файл XSD-схемы
-:HaveUserDataXSD: (булево, чтение) - есть ли для этого документа описание контента.
-:MetadataItems: (:doc:`коллекция <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`, чтение) - описания метаданных документа
-:EncryptedMetadataItems: (:doc:`коллекция <Collection>` объектов :doc:`DocumentMetadataItem <DocumentMetadataItem>`, чтение) - описания метаданных для отправки зашифрованного документа
+:IsFormal:
+  **Булево, чтение** - титул формализованный
+
+:XsdUrl:
+  **Строка, чтение** - адрес метода, возвращающего файл XSD-схемы титула
+
+:HaveUserDataXSD:
+  **Булево, чтение** - есть ли для этого документа упрощенное описание контента
+
+:MetadataItems:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem <DocumentMetadataItem>` **, чтение** - описания метаданных документа
+
+:EncryptedMetadataItems:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem <DocumentMetadataItem>` **, чтение** - описания метаданных для отправки зашифрованного документа
 
 
 .. rubric:: Дополнительная информация
 
-* Только для титулов документа с истиной в поле **HaveUserDataXSD** доступно добавление в объект :doc:`PackageSendTask2 <PackageSendTask2>` методом :doc:`AddDocument <PackageSendTask2_AddDocument>` для последующего заполнения. В противном случае, документ можно отправить только загрузив файлом с диска
+* Только для титулов с *HaveUserDataXSD* == ``TRUE``, доступен метод :func:`PackageSendTask2.AddDocument`.
+  В противном случае, для добавления :doc:`документа на отправку <CustomDocumentToSend>` необходимо воспользоваться методом :func:`PackageSendTask2.AddDocumentFromFile` или :func:`PackageSendTask2.AddDocumentFromString`
+
+
+.. seealso:: :doc:`../HowTo/HowTo_post_document`

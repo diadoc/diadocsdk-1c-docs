@@ -1,7 +1,7 @@
 Document
 ========
 
-Объект является базовым объектом для всех типов документов.
+Объект является базовым объектом для всех |Document-Inheritable|_ .
 Обладает базовым набором свойств и методов, которые также работают для всех производных типов документов.
 
 
@@ -38,7 +38,7 @@ Document
   **Строка, чтение** - идентификатор пакета
 
 :Direction:
-  **Строка, чтение** - направление документа
+  **Строка, чтение** - направление документа. |Document-Direction|_
 
 :Department:
   :doc:`Department <Department>` **, чтение** - подразделение организации, к которому привязан документ
@@ -101,16 +101,16 @@ Document
   :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` **, чтение** - коллекция объектов отмены запросов на согласование
 
 :RevocationStatus:
-  **Строка, чтение** - статус аннулирования документа
+  **Строка, чтение** - статус аннулирования документа. |Document-RevocationStatus|_
 
 :SenderSignatureStatus:
-  **Строка, чтение** - статус проверки ЭЦП отправителя
+  **Строка, чтение** - статус проверки ЭЦП отправителя. |Document-SenderSignatureStatus|_
 
 :RecipientResponseStatus:
-  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа
+  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. |Document-RecipientResponseStatus|_
 
 :RoamingNotificationStatus:
-  **Строка, чтение** - статус передачи документа через роуминг
+  **Строка, чтение** - статус передачи документа через роуминг. |Document-RoamingNotificationStatus|
 
 :RoamingNotificationStatusDescription:
   **Строка, чтение** - описание статуса передачи документа через роуминг.
@@ -151,35 +151,68 @@ Document
 
 .. rubric:: Методы
 
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveContent`           |:func:`.GetComment`                     |:func:`.GetDocumentPackage`       |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveBuyerContent`      |:func:`.GetAnyComment`                  |:func:`.CreateReplySendTask`      |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveAllContent`        |:func:`.Move`                           |:func:`.CreateReplySendTask2`     |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveAllContentAsync`   |:func:`.Delete`                         |:func:`.CreateOutDocumentSignTask`|
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveAllContentZip`     |:func:`.Approve`                        |:func:`.MarkAsRead`               |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.SaveAllContentZipAsync`|:func:`.Disapprove`                     |:func:`.CreateCustomDataPatchTask`|
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetDynamicContent`     |:func:`.SetOneSDocumentId`              |:func:`.AssignToResolutionRoute`  |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetBase64Content`      |:func:`.ReSetOneSDocumentId`            |:func:`.RemoveFromResolutionRoute`|
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetBase64ContentAsync` |:func:`.AddSubordinateOneSDocumentId`   |                                  |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetBase64Signature`    |:func:`.RemoveSubordinateOneSDocumentId`|                                  |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetSenderSignature`    |:func:`.CreateResolutionRequestTask`    |                                  |
-+-------------------------------+----------------------------------------+----------------------------------+
-|:func:`.GetRecipientSignature` |:func:`.GetPrintForm`                   |                                  |
-+-------------------------------+----------------------------------------+----------------------------------+
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveContent|_            | |Document-GetComment|_                      | |Document-GetDocumentPackage|_        |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveBuyerContent|_       | |Document-GetAnyComment|_                   | |Document-CreateReplySendTask|_       |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveAllContent|_         | |Document-Move|_                            | |Document-CreateReplySendTask2|_      |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveAllContentAsync|_    | |Document-Delete|_                          | |Document-CreateOutDocumentSignTask|_ |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveAllContentZip|_      | |Document-Approve|_                         | |Document-MarkAsRead|_                |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-SaveAllContentZipAsync|_ | |Document-Disapprove|_                      | |Document-CreateCustomDataPatchTask|_ |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetDynamicContent|_      | |Document-SetOneSDocumentId|_               | |Document-AssignToResolutionRoute|_   |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetBase64Content|_       | |Document-ReSetOneSDocumentId|_             | |Document-RemoveFromResolutionRoute|_ |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetBase64ContentAsync|_  | |Document-AddSubordinateOneSDocumentId|_    |                                       |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetBase64Signature|_     | |Document-RemoveSubordinateOneSDocumentId|_ |                                       |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetSenderSignature|_     | |Document-CreateResolutionRequestTask|_     |                                       |
++------------------------------------+---------------------------------------------+---------------------------------------+
+| |Document-GetRecipientSignature|_  | |Document-GetPrintForm|_                    |                                       |
++------------------------------------+---------------------------------------------+---------------------------------------+
 
 
+.. |Document-SaveContent| replace:: SaveContent()
+.. |Document-SaveBuyerContent| replace:: SaveBuyerContent()
+.. |Document-SaveAllContent| replace:: SaveAllContent()
+.. |Document-SaveAllContentAsync| replace:: SaveAllContentAsync()
+.. |Document-SaveAllContentZip| replace:: SaveAllContentZip()
+.. |Document-SaveAllContentZipAsync| replace:: SaveAllContentZipAsync()
+.. |Document-GetDynamicContent| replace:: GetDynamicContent()
+.. |Document-GetBase64Content| replace:: GetBase64Content()
+.. |Document-GetBase64ContentAsync| replace:: GetBase64ContentAsync()
+.. |Document-GetBase64Signature| replace:: GetBase64Signature()
+.. |Document-GetSenderSignature| replace:: GetSenderSignature()
+.. |Document-GetRecipientSignature| replace:: GetRecipientSignature()
+.. |Document-GetComment| replace:: GetComment()
+.. |Document-GetAnyComment| replace:: GetAnyComment()
+.. |Document-Move| replace:: Move()
+.. |Document-Delete| replace:: Delete()
+.. |Document-Approve| replace:: Approve()
+.. |Document-Disapprove| replace:: Disapprove()
+.. |Document-SetOneSDocumentId| replace:: SetOneSDocumentId()
+.. |Document-ReSetOneSDocumentId| replace:: ReSetOneSDocumentId()
+.. |Document-AddSubordinateOneSDocumentId| replace:: AddSubordinateOneSDocumentId()
+.. |Document-RemoveSubordinateOneSDocumentId| replace:: RemoveSubordinateOneSDocumentId()
+.. |Document-CreateResolutionRequestTask| replace:: CreateResolutionRequestTask()
+.. |Document-GetPrintForm| replace:: GetPrintForm()
+.. |Document-GetDocumentPackage| replace:: GetDocumentPackage()
+.. |Document-CreateReplySendTask| replace:: CreateReplySendTask()
+.. |Document-CreateReplySendTask2| replace:: CreateReplySendTask2()
+.. |Document-CreateOutDocumentSignTask| replace:: CreateOutDocumentSignTask()
+.. |Document-MarkAsRead| replace:: MarkAsRead()
+.. |Document-CreateCustomDataPatchTask| replace:: CreateCustomDataPatchTask()
+.. |Document-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
+.. |Document-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
 
-.. function:: Document.SaveContent(FilePath)
+.. _Document-SaveContent:
+.. method:: Document.SaveContent(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет записан контент
 
@@ -187,7 +220,8 @@ Document
 
 
 
-.. function:: Document.SaveBuyerContent(FilePath)
+.. _Document-SaveBuyerContent:
+.. method:: Document.SaveBuyerContent(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет записан контент
 
@@ -195,7 +229,8 @@ Document
 
 
 
-.. function:: Document.SaveAllContent(DirectoryPath)
+.. _Document-SaveAllContent:
+.. method:: Document.SaveAllContent(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
 
@@ -203,7 +238,8 @@ Document
 
 
 
-.. function:: Document.SaveAllContentAsync(DirectoryPath)
+.. _Document-SaveAllContentAsync:
+.. method:: Document.SaveAllContentAsync(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
 
@@ -211,7 +247,8 @@ Document
 
 
 
-.. function:: Document.SaveAllContentZip(DirectoryPath)
+.. _Document-SaveAllContentZip:
+.. method:: Document.SaveAllContentZip(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
 
@@ -219,7 +256,8 @@ Document
 
 
 
-.. function:: Document.SaveAllContentZipAsync(DirectoryPath)
+.. _Document-SaveAllContentZipAsync:
+.. method:: Document.SaveAllContentZipAsync(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
 
@@ -227,79 +265,57 @@ Document
 
 
 
-.. function:: Document.GetDynamicContent(WorkflowSide)
+.. _Document-GetDynamicContent:
+.. method:: Document.GetDynamicContent(WorkflowSide)
 
-  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен
+  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-WorkflowSide|_
 
   Возвращает :doc:`представление контента титула документа <DynamicContent>` со стороны *WorkflowSide*
 
-  ======================= =================
-  Значение *WorkflowSide* Описание
-  ======================= =================
-  Seller                  Титул отправителя
-  Buyer                   Титул получателя
-  ======================= =================
 
 
+.. _Document-GetBase64Content:
+.. method:: Document.GetBase64Content(WorkflowSide)
 
-.. function:: Document.GetBase64Content(WorkflowSide)
-
-  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен
+  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-WorkflowSide|_
 
   Возвращает контент титула документа со стороны *WorkflowSide* в виде Base64 строки
 
-  ======================= =================
-  Значение *WorkflowSide* Описание
-  ======================= =================
-  Seller                  Титул отправителя
-  Buyer                   Титул получателя
-  ======================= =================
 
 
+.. _Document-GetBase64ContentAsync:
+.. method:: Document.GetBase64ContentAsync(WorkflowSide)
 
-.. function:: Document.GetBase64ContentAsync(WorkflowSide)
-
-  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен
+  :WorkflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-WorkflowSide|_
 
   Возвращает контент титула документа со стороны *WorkflowSide* в виде Base64 строки
 
-  ======================= =================
-  Значение *WorkflowSide* Описание
-  ======================= =================
-  Seller                  Титул отправителя
-  Buyer                   Титул получателя
-  ======================= =================
 
 
+.. _Document-GetBase64Signature:
+.. method:: Document.GetBase64Signature(WorkflowSide)
 
-.. function:: Document.GetBase64Signature(WorkflowSide)
-
-  :WorkflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена
+  :WorkflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. |Document-WorkflowSide|_
 
   Возвращает подпись титула документа со стороны *WorkflowSide* в виде Base64 строки
 
-  ======================= =================
-  Значение *WorkflowSide* Описание
-  ======================= =================
-  Seller                  Титул отправителя
-  Buyer                   Титул получателя
-  ======================= =================
 
-
-
-.. function:: Document.GetSenderSignature()
+.. _Document-GetSenderSignature:
+.. method:: Document.GetSenderSignature()
 
   Возвращает :doc:`представление подписи <Signature>` титула отправителя
 
 
 
-.. function:: Document.GetRecipientSignature()
+.. _Document-GetRecipientSignature:
+.. method:: Document.GetRecipientSignature()
 
   Возвращает :doc:`представление подписи <Signature>` титула получателя
 
 
 
-.. function:: Document.GetComment()
+.. _Document-GetComment:
+.. method:: Document.GetComment()
 
   Возвращает строку с комментарием к документу, заданным при отправке
 
@@ -308,7 +324,8 @@ Document
 
 
 
-.. function:: Document.GetAnyComment(CommentType)
+.. _Document-GetAnyComment:
+.. method:: Document.GetAnyComment(CommentType)
 
   :CommentType: ``строка`` Тип комментария
 
@@ -327,7 +344,8 @@ Document
 
 
 
-.. function:: Document.Move(DepartmentId)
+.. _Document-Move:
+.. method:: Document.Move(DepartmentId)
 
   :DepartmentId: ``Строка`` Идентификатор подразделения
 
@@ -335,13 +353,15 @@ Document
 
 
 
-.. function:: Document.Delete()
+.. _Document-Delete:
+.. method:: Document.Delete()
 
   Помечает документ как удаленный
 
 
 
-.. function:: Document.Approve([Comment])
+.. _Document-Approve:
+.. method:: Document.Approve([Comment])
 
   :Comment: ``Строка`` Комментарий, который будет указан при согласовании
 
@@ -349,7 +369,8 @@ Document
 
 
 
-.. function:: Document.Disapprove([Comment])
+.. _Document-Disapprove:
+.. method:: Document.Disapprove([Comment])
 
   :Comment: ``Строка`` Комментарий, который будет указан при отказе согласования
 
@@ -357,34 +378,35 @@ Document
 
 
 
-.. function:: Document.SetOneSDocumentId(ID)
+.. _Document-SetOneSDocumentId:
+.. method:: Document.SetOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
   Присваивает документу дополнительный идентификатор из учётной системы
 
-  .. note:: Рекомендуется хранить сопоставление документа Диадок и документа учётной системы без использования данного метода, например, в самой учётной системе
 
 
 
-.. function:: Document.ReSetOneSDocumentId()
+.. _Document-ReSetOneSDocumentId:
+.. method:: Document.ReSetOneSDocumentId()
 
   Сбрасывает дополнительный идентификатор учётной системы у документа в Диадоке
 
 
 
-.. function:: Document.AddSubordinateOneSDocumentId(ID)
+.. _Document-AddSubordinateOneSDocumentId:
+.. method:: Document.AddSubordinateOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
   Добавляет документу дополнительный идентификатор из учётной системы как подчинённый. Обычно используется чтобы обозначить связь документов друг с другом
 
-  .. deprecated:: 5.5
-    Используйте :doc:`DocumentToSend.AddSubordinateDocument <DocumentToSend>`
 
 
 
-.. function:: Document.RemoveSubordinateOneSDocumentId(ID)
+.. _Document-RemoveSubordinateOneSDocumentId:
+.. method:: Document.RemoveSubordinateOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
@@ -392,13 +414,15 @@ Document
 
 
 
-.. function:: Document.CreateResolutionRequestTask()
+.. _Document-CreateResolutionRequestTask:
+.. method:: Document.CreateResolutionRequestTask()
 
-  Создает :doc:`задание для отправки запроса на согласование <ResolutionRequestTask>`
+  Создает :doc:`задание для отправки запроса согласования <ResolutionRequestTask>`
 
 
 
-.. function:: Document.GetPrintForm(FilePath[, Timeout])
+.. _Document-GetPrintForm:
+.. method:: Document.GetPrintForm(FilePath[, Timeout])
 
   :FilePath: ``Строка`` Путь до файла, в который будет сохранена печатная форма
   :Timeout:  ``Беззнаковое целое число`` Таймаут за который необходимо получить печатную форму
@@ -408,7 +432,8 @@ Document
 
 
 
-.. function:: Document.GetDocumentPackage()
+.. _Document-GetDocumentPackage:
+.. method:: Document.GetDocumentPackage()
 
   Возвращает :doc:`пакет документов <DocumentPackage>`, в котором находится документ
 
@@ -418,68 +443,52 @@ Document
 
 
 
-.. function:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
+.. _Document-CreateReplySendTask:
+.. method:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа
+  :ReplyType: ``Строка`` Тип ответа. |Document-ReplyType|_
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
 
-  ==================== =================================
-  Значение *ReplyType* Описание
-  ==================== =================================
-  AcceptDocument       подписание документа
-  RejectDocument       отказ в подписи документа
-  CorrectionRequest    запроc на уточнение документа
-  RevocationRequest    запроc на аннулирование документа
-  AcceptRevocation     принятие аннулирования документа
-  RejectRevocation     отказ от аннулирования документа
-  ==================== =================================
-
   .. deprecated:: 5.27.0
-    Используйте :func:`CreateReplySendTask2`
+    Используйте :func:`Document.CreateReplySendTask2`
 
 
 
-.. function:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
+.. _Document-CreateReplySendTask2:
+.. method:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :ReplyType: ``строка`` Тип ответа
+  :ReplyType: ``строка`` Тип ответа. |Document-ReplyType|_
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask2>`
-
-  ==================== =================================
-  Значение *ReplyType* Описание
-  ==================== =================================
-  AcceptDocument       подписание документа
-  RejectDocument       отказ в подписи документа
-  CorrectionRequest    запроc на уточнение документа
-  RevocationRequest    запроc на аннулирование документа
-  AcceptRevocation     принятие аннулирования документа
-  RejectRevocation     отказ от аннулирования документа
-  ==================== =================================
 
     .. versionadded:: 5.27.0
 
 
 
-.. function:: Document.CreateOutDocumentSignTask()
+.. _Document-CreateOutDocumentSignTask:
+.. method:: Document.CreateOutDocumentSignTask()
 
   Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
 
 
 
-.. function:: Document.MarkAsRead()
+.. _Document-MarkAsRead:
+.. method:: Document.MarkAsRead()
 
   Помечает, что документ как прочитанный
 
 
 
-.. function:: Document.CreateCustomDataPatchTask()
+.. _Document-CreateCustomDataPatchTask:
+.. method:: Document.CreateCustomDataPatchTask()
 
   Создает :doc:`задание на редактирование коллекции CustomData <CustomDataPatchTask>`
 
 
 
-.. function:: Document.AssignToResolutionRoute(RouteId[, Comment])
+.. _Document-AssignToResolutionRoute:
+.. method:: Document.AssignToResolutionRoute(RouteId[, Comment])
 
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при постановке документа на маршрут
@@ -488,7 +497,8 @@ Document
 
 
 
-.. function:: Document.RemoveFromResolutionRoute(RouteId[, Comment])
+.. _Document-RemoveFromResolutionRoute:
+.. method:: Document.RemoveFromResolutionRoute(RouteId[, Comment])
 
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при снятии документа с маршрута
@@ -499,6 +509,39 @@ Document
 
 .. rubric:: Дополнительная информация
 
+
+.. |Document-WorkflowSide| replace:: Возможные значения
+
+.. _Document-WorkflowSide:
+
+======================= =================
+Значение *WorkflowSide* Описание
+======================= =================
+Seller                  Титул отправителя
+Buyer                   Титул получателя
+======================= =================
+
+
+.. |Document-ReplyType| replace:: Возможные значения
+
+.. _Document-ReplyType:
+
+==================== =================================
+Значение *ReplyType* Описание
+==================== =================================
+AcceptDocument       подписание документа
+RejectDocument       отказ в подписи документа
+CorrectionRequest    запроc на уточнение документа
+RevocationRequest    запроc на аннулирование документа
+AcceptRevocation     принятие аннулирования документа
+RejectRevocation     отказ от аннулирования документа
+==================== =================================
+
+
+.. |Document-Direction| replace:: Возможные значения
+
+.. _Document-Direction:
+
 ==================== ===================
 Значение *Direction* Описание
 ==================== ===================
@@ -507,6 +550,10 @@ Outbound             исходящий документ
 Internal             внутренний документ
 ==================== ===================
 
+
+.. |Document-RevocationStatus| replace:: Возможные значения
+
+.. _Document-RevocationStatus:
 
 =========================== =====================================================================
 Значение *RevocationStatus* Описание
@@ -520,6 +567,10 @@ UnknownRevocationStatus     неизвестный статус аннулиро
 =========================== =====================================================================
 
 
+.. |Document-RoamingNotificationStatus| replace:: Возможные значения
+
+.. _Document-RoamingNotificationStatus:
+
 ==================================== =====================================================
 Значение *RoamingNotificationStatus* Описание
 ==================================== =====================================================
@@ -529,6 +580,10 @@ RoamingNotificationStatusError       документ с ошибкой дост
 UnknownRoamingNotificationStatus     неизвестный роуминговый статус документа
 ==================================== =====================================================
 
+
+.. |Document-SenderSignatureStatus| replace:: Возможные значения
+
+.. _Document-SenderSignatureStatus:
 
 ================================ =========================================
 Значение *SenderSignatureStatus* Описание
@@ -541,6 +596,10 @@ UnknownSenderSignatureStatus     неизвестный статус прове�
 ================================ =========================================
 
 
+.. |Document-RecipientResponseStatus| replace:: Возможные значения
+
+.. _Document-RecipientResponseStatus:
+
 ==================================== ==================================================
 Значение *RecipientResponseStatus*   Описание
 ==================================== ==================================================
@@ -552,6 +611,11 @@ RecipientSignatureRequestRejected    получатель отказал в по
 InvalidRecipientSignature            получатель подписал документ некорректной подписью
 ==================================== ==================================================
 
+
+
+.. |Document-Inheritable| replace:: типов документов
+
+.. _Document-Inheritable:
 
 ========================================= ======================================================
 Объекты, производные от *Document*        Описание
@@ -571,5 +635,5 @@ InvalidRecipientSignature            получатель подписал до�
 :doc:`UtdRevision`                        исправление универсального передаточного документа
 :doc:`Ucd`                                универсальный корректировочный документ
 :doc:`UcdRevision`                        исправление универсального корректировочного документа
-:doc:`BaseDocument`                       документ "любого типа"
+:doc:`BaseDocument`                       документ произвольного типа
 ========================================= ======================================================
