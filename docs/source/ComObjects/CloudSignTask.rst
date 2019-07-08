@@ -9,12 +9,17 @@ CloudSignTask
 
 .. rubric:: Методы
 
-+-------------------+-------------+----------------+
-|:func:`.AddContent`|:func:`.Sign`|:func:`.Confirm`|
-+-------------------+-------------+----------------+
++-----------------------------+-----------------------+--------------------------+
+| |CloudSignTask-AddContent|_ | |CloudSignTask-Sign|_ | |CloudSignTask-Confirm|_ |
++-----------------------------+-----------------------+--------------------------+
+
+.. |CloudSignTask-AddContent| replace:: AddContent()
+.. |CloudSignTask-Sign| replace:: Sign()
+.. |CloudSignTask-Confirm| replace:: Confirm()
 
 
-.. function:: CloudSignTask.AddContent(Content, CounteragentId)
+.. _CloudSignTask-AddContent:
+.. method:: CloudSignTask.AddContent(Content, CounteragentId)
 
   :Content: ``BaseContent`` контент, который будет в последствии подписан. Должен быть одним из наследников :doc:`BaseContent`
   :CounteragentId: ``строка`` идентификатор контрагента, с которым идёт документооборот
@@ -23,13 +28,15 @@ CloudSignTask
 
 
 
-.. function:: CloudSignTask.Sign()
+.. _CloudSignTask-Sign:
+.. method:: CloudSignTask.Sign()
 
   Передает на сервер запрос на подписание документов, добавленных в список и инициирует отправку СМС с кодом подтверждения на телефон пользователя
 
 
 
-.. function:: CloudSignTask.Confirm(SMSCode)
+.. _CloudSignTask-Confirm:
+.. method:: CloudSignTask.Confirm(SMSCode)
 
   :SMSCode: ``строка`` код подтверждения операции
 
@@ -37,4 +44,4 @@ CloudSignTask
 
 
 
-.. seealso:: :doc:`Как работать с Контур.Сертификатом <HowTo_cloud_certificate>`
+.. seealso:: :doc:`../HowTo/HowTo_cloud_certificate`

@@ -1,7 +1,7 @@
 Как выполнить ответные действия по документам
 =============================================
 
-Большинство ответных действий с документом выполняется с помощью объекта :doc:`ReplySendTask2 <ReplySendTask2>`.
+Большинство ответных действий с документом выполняется с помощью объекта :doc:`ReplySendTask2 <../ComObjects/ReplySendTask2>`.
 Создать этот объект можно методами :func:`Document.CreateReplySendTask2` или :func:`DocumentPackage.CreateReplySendTask2`
 
 .. code-block:: c#

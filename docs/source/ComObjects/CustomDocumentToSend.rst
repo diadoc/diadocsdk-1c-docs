@@ -1,35 +1,68 @@
 CustomDocumentToSend
 ====================
 
-Объект представляет собой документ на отправку произвольного типа и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Документ на отправку произвольного типа.
+Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
 
 .. rubric:: Свойства
 
-:Type: (строка, чтение) - тип документа (возвращает строку "Document")
-:FileName: (строка, чтение) - имя файла вложения
-:Comment: (строка, чтение/запись) - комментарий к документу
-:NeedRecipientSignature: (булево, чтение/запись) - флаг, обозначающий запрос подписи получателя под отправляемым документом
-:CustomDocumentId: (строка, чтение/запись) - внешний идентификатор документа
-:TypeNamedId: (строка, чтение/запись) - строковой идентификатор типа документа
-:Function: (строка, чтени/запись) - идентификатор функции документа. Обязательно при отправке зашифрованных документов
-:Version: (строка, чтение/запись) - идентификатор версии документа. Обязательно при отправке зашифрованных документов
-:WorkflowId: (строка, чтение/запись) - идентификатор вида документооборота
-:IsEncrypted: (булево, чтение/запись) - флаг, означающий, что документ передается в зашифрованном виде
-:Metadata: (:doc:`коллекция <Collection>` объектов :doc:`MetadataItem <MetadataItem>`, чтение) - список :doc:`пар вида "ключ-значение" <MetadataItem>`, содержащих метаданные документа
-:Content: (:doc:`BaseContent <BaseContent>` или :doc:`DynamicContent <DynamicContent>`, чтение) - объектное представление содержимого документа "любого типа"
+:Type:
+  **Строка, чтение** - тип документа. Константа ``Document``
+
+:FileName:
+  **Строка, чтение** - имя файла вложения
+
+:Comment:
+  **Строка, чтение/запись** - комментарий к документу
+
+:NeedRecipientSignature:
+  **Булево, чтение/запись** - документ будет отправлен с запросом подписи получателя
+
+:CustomDocumentId:
+  **Строка, чтение/запись** - внешний идентификатор документа
+
+:TypeNamedId:
+  **Строка, чтение/запись** - строковой идентификатор типа документа
+
+:Function:
+  **Строка, чтение/запись** - идентификатор функции документа. Обязательно при отправке зашифрованных документов
+
+:Version:
+  **Строка, чтение/запись** - идентификатор версии документа. Обязательно при отправке зашифрованных документов
+
+:WorkflowId:
+  **Строка, чтение/запись** - идентификатор вида документооборота
+
+:IsEncrypted:
+  **Булево, чтение/запись** - документ будет отправлен в зашифрованном виде
+
+:Metadata:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem <MetadataItem>` **, чтение** - метаданные документа
+
+:Content:
+  :doc:`DynamicContent <DynamicContent>` **или** :doc:`BaseContent <BaseContent>` **, чтение** - представление содержимого документа
 
 
 .. rubric:: Методы
 
-* :doc:`AddMetadata <AddMetadata>` - добавляет элемент метаданных в коллекцию **Metadata**
++-------------------------------------+
+| |CustomDocumentToSend-AddMetadata|_ |
++-------------------------------------+
+
+.. |CustomDocumentToSend-AddMetadata| replace:: AddMetadata()
+
+.. _CustomDocumentToSend-AddMetadata:
+.. function:: CustomDocumentToSend.AddMetadata()
+
+  Добавляет :doc:`новый элемент <MetadataItem>` в коллекцию *Metadata* и возвращает его
 
 
 .. rubric:: Дополнительная информация
 
-* Если объект был создан из :doc:`PackageSendTask2 <PackageSendTask2>`, то поле **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
-  Если объект был создан из :doc:`PackageSendTask <PackageSendTask>`, то поле **Content** будет объектом, производным от :doc:`BaseContent <BaseContent>`
+Если объект был создан из :doc:`PackageSendTask2 <PackageSendTask2>`, то поле *Content* будет объектом :doc:`DynamicContent <DynamicContent>`
 
-* Список идентификаторов типа документов, версий документа, возможных функций, видов документооборота, возможность шифрования можно получить через метод :doc:`GetDocumentTypes <GetDocumentTypes>`
+Если объект был создан из :doc:`PackageSendTask <PackageSendTask>` или :doc:`SendTask <SendTask>`, то поле *Content* будет объектом, производным от :doc:`BaseContent <BaseContent>`
 
-* К документу необходимо дописывать те метаданные, для которых в объекте :doc:`DocumentMetadataItem <DocumentMetadataItem>` поле *Source* имеет значение *"User"*
+
+.. seealso:: :doc:`../HowTo/HowTo_post_document`

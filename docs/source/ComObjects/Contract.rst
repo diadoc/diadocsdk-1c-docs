@@ -16,12 +16,18 @@ Contract
 
 .. rubric:: Методы
 
-+----------------------------+---------------+---------------+
-|:func:`.GetRejectionComment`|:func:`.Accept`|:func:`.Reject`|
-+----------------------------+---------------+---------------+
++---------------------------------+--------------------+--------------------+
+| |Contract-GetRejectionComment|_ | |Contract-Accept|_ | |Contract-Reject|_ |
++---------------------------------+--------------------+--------------------+
+
+.. |Contract-GetRejectionComment| replace:: GetRejectionComment()
+.. |Contract-Accept| replace:: Accept()
+.. |Contract-Reject| replace:: Reject()
 
 
-.. function:: Contract.GetRejectionComment()
+
+.. _Contract-GetRejectionComment:
+.. method:: Contract.GetRejectionComment()
 
   Возвращает комментарий к отказу в подписании
 
@@ -29,7 +35,9 @@ Contract
     Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
 
 
-.. function:: Contract.Accept()
+
+.. _Contract-Accept:
+.. method:: Contract.Accept()
 
   Подписывает документы
 
@@ -37,7 +45,9 @@ Contract
     Используйте :func:`Document.CreateReplySendTask2`
 
 
-.. function:: Contract.Reject([Comment])
+
+.. _Contract-Reject:
+.. method:: Contract.Reject([Comment])
 
   :Comment: ``строка`` комментарий к отказу подписании
 

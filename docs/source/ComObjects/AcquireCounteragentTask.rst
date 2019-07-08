@@ -24,18 +24,23 @@ AcquireCounteragentTask
 
 .. rubric:: Методы
 
-+-------------+-------------------+
-|:func:`.Send`| :func:`.SendAsync`|
-+-------------+-------------------+
++---------------------------------+--------------------------------------+
+| |AcquireCounteragentTask-Send|_ | |AcquireCounteragentTask-SendAsync|_ |
++---------------------------------+--------------------------------------+
+
+.. |AcquireCounteragentTask-Send| replace:: Send()
+.. |AcquireCounteragentTask-SendAsync| replace:: SendAsync()
 
 
 
-.. function:: AcquireCounteragentTask.Send()
+.. _AcquireCounteragentTask-Send:
+.. method:: AcquireCounteragentTask.Send()
 
   Отправляет приглашение контрагента к партнерству
 
 
 
-.. function:: AcquireCounteragentTask.SendAsync()
+.. _AcquireCounteragentTask-SendAsync:
+.. method:: AcquireCounteragentTask.SendAsync()
 
   Асинхронно отправляет приглашение контрагента к партнерству. Возвращает :doc:`AsyncResult`

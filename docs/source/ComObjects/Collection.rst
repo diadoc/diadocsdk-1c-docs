@@ -11,11 +11,15 @@ Collection
 
 .. rubric:: Методы
 
-+----------------+
-|:func:`.GetItem`|
-+----------------+
++-----------------------+
+| |Collection-GetItem|_ |
++-----------------------+
 
-.. function:: Collection.GetItem(index)
+.. |Collection-GetItem| replace:: GetItem()
+
+
+.. _Collection-GetItem:
+.. method:: Collection.GetItem(index)
 
   :index: ``целое число`` порядковый номер элемента в коллекции
 

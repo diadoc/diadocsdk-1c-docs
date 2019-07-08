@@ -47,11 +47,15 @@ Act552WorkItem
 
 .. rubric:: Методы
 
-+----------------------------------+
-|:func:`.AddStructedAdditionalInfo`|
-+----------------------------------+
++---------------------------------------------+
+| |Act552WorkItem-AddStructedAdditionalInfo|_ |
++---------------------------------------------+
+
+.. |Act552WorkItem-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
 
 
+
+.. _Act552WorkItem-AddStructedAdditionalInfo:
 .. function:: Act552WorkItem.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

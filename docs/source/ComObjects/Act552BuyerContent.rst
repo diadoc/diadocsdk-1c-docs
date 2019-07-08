@@ -42,11 +42,13 @@ Cодержание титула покупателя *Акта о выполн�
 
 .. rubric:: Методы
 
-+------------------+
-|:func:`.AddSigner`|
-+------------------+
++---------------------------------+
+| |Act552BuyerContent-AddSigner|_ |
++---------------------------------+
 
+.. |Act552BuyerContent-AddSigner| replace:: AddSigner()
 
-.. function:: Act552BuyerContent.AddSigner()
+.. _Act552BuyerContent-AddSigner:
+.. method:: Act552BuyerContent.AddSigner()
 
   Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его

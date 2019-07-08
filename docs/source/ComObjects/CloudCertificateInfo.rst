@@ -15,4 +15,4 @@ CloudCertificateInfo
   **Дата, чтение** - дата окончания срока действия сертификата
 
 
-.. seealso:: :doc:`Как работать с Контур.Сертификатом <HowTo_cloud_certificate>`
+.. seealso:: :doc:`../HowTo/HowTo_cloud_certificate`

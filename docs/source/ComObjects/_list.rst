@@ -102,13 +102,11 @@
   OriginalInvoice <OriginalInvoice>
   OtherIssuer <OtherIssuer>
   OutDocumentSignTask <OutDocumentSignTask>
-  OutDocumentSignTaskAsyncResult <OutDocumentSignTaskAsyncResult>
   OutDocumentSignTaskContent <OutDocumentSignTaskContent>
   PackageContent <PackageContent>
   PackageContentItem <PackageContentItem>
   PackageSendTask <PackageSendTask>
   PackageSendTask2 <PackageSendTask2>
-  PackageSendTaskAsyncResult <PackageSendTaskAsyncResult>
   PaymentDocument <PaymentDocument>
   PersonalCertificate <PersonalCertificate>
   PriceListAgreementToSend <PriceListAgreementToSend>
@@ -131,7 +129,6 @@
   Route <Route>
   SendDraftTask <SendDraftTask>
   SendTask <SendTask>
-  SentPackageContent <SentPackageContent>
   ServiceDetailsToSend <ServiceDetailsToSend>
   SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
   SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>

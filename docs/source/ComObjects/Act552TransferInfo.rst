@@ -24,12 +24,14 @@ Act552TransferInfo
 
 .. rubric:: Методы
 
-+----------------------------------+
-|:func:`.AddStructedAdditionalInfo`|
-+----------------------------------+
++-------------------------------------------------+
+| |Act552TransferInfo-AddStructedAdditionalInfo|_ |
++-------------------------------------------------+
+
+.. |Act552TransferInfo-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
 
 
-
-.. function:: Act552TransferInfo.AddStructedAdditionalInfo()
+.. _Act552TransferInfo-AddStructedAdditionalInfo:
+.. method:: Act552TransferInfo.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`

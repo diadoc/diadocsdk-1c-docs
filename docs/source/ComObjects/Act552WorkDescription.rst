@@ -27,12 +27,14 @@ Act552WorkDescription
 
 .. rubric:: Методы
 
-+----------------+
-|:func:`.AddItem`|
-+----------------+
++----------------------------------+
+| |Act552WorkDescription-AddItem|_ |
++----------------------------------+
 
+.. |Act552WorkDescription-AddItem| replace:: AddItem()
 
-.. function:: Act552WorkDescription.AddItem()
+.. _Act552WorkDescription-AddItem:
+.. method:: Act552WorkDescription.AddItem()
 
  Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию *Items* и возвращает его
 

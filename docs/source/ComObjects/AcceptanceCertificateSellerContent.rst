@@ -45,10 +45,13 @@ AcceptanceCertificateSellerContent
 
 .. rubric:: Методы
 
-+----------------+
-|:func:`.AddItem`|
-+----------------+
++-----------------------------------------------+
+| |AcceptanceCertificateSellerContent-AddItem|_ |
++-----------------------------------------------+
 
-.. function:: AcceptanceCertificateSellerContent.AddItem()
+.. |AcceptanceCertificateSellerContent-AddItem| replace:: AddItem()
+
+.. _AcceptanceCertificateSellerContent-AddItem:
+.. method:: AcceptanceCertificateSellerContent.AddItem()
 
   Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его

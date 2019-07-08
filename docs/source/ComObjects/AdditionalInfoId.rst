@@ -15,10 +15,15 @@ AdditionalInfoId
 
 .. rubric:: Методы
 
-+----------------------------------+
-|:func:`.AddStructedAdditionalInfo`|
-+----------------------------------+
++-----------------------------------------------+
+| |AdditionalInfoId-AddStructedAdditionalInfo|_ |
++-----------------------------------------------+
 
+.. |AdditionalInfoId-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
+
+
+
+.. _AdditionalInfoId-AddStructedAdditionalInfo:
 .. function:: AdditionalInfoId.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

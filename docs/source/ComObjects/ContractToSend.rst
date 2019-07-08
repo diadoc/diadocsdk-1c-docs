@@ -27,13 +27,13 @@ ContractToSend
 :ContractPrice:
   **Строка, чтение/запись** - сумма договора
 
-  .. deprecated::
+  .. deprecated:: 5.22.2
     используйте поле *Price*
 
 :Price:
   **Строка, чтение/запись** - сумма договора
 
-  .. addedversion::
+  .. versionadded:: 5.22.2
 
 :ContractType:
   **Строка, чтение/запись** - тип договора

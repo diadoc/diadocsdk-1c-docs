@@ -1,19 +1,38 @@
 CustomDataPatchTask
 ===================
 
-Объект предназначен для редактирования коллекции **CustomData** объекта :doc:`Document <Document>`
+Задача редактирования коллекции :doc:`Document.CustomData <Document>`
 
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Items** (:doc:`коллекция <Collection>` объектов :doc:`CustomDataPatchItem <CustomDataPatchItem>`, чтение) - элементы для вставки/удаления
+:Items:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataPatchItem <CustomDataPatchItem>` **, чтение** - коллекция изменений :doc:`Document.CustomData <Document>`
 
-Методы
-------
 
--  :doc:`AddItem <AddItem-(CustomDataPatchTask)>` - добавляет элемент в коллекцию **Items**
+.. rubric:: Методы
 
--  :doc:`Send <Send-(CustomDataPatchTask)>` - применяет изменнения описанные в коллекции **Items**
++--------------------------------+-----------------------------+----------------------------------+
+| |CustomDataPatchTask-AddItem|_ | |CustomDataPatchTask-Send|_ | |CustomDataPatchTask-SendAsync|_ |
++--------------------------------+-----------------------------+----------------------------------+
 
--  :doc:`SendAsync <SendAsync-(CustomDataPatchTask)>` - асинхронно применяет изменнения описанные в коллекции **Items**
+.. |CustomDataPatchTask-AddItem| replace:: AddItem()
+.. |CustomDataPatchTask-Send| replace:: Send()
+.. |CustomDataPatchTask-SendAsync| replace:: SendAsync()
+
+.. _CustomDataPatchTask-AddItem:
+.. method:: CustomDataPatchTask.AddItem()
+
+  Добавляет :doc:`новый элемент <CustomDataPatchItem>` в коллекцию *Items* и возвращает его
+
+
+.. _CustomDataPatchTask-Send:
+.. method:: CustomDataPatchTask.Send()
+
+  Применяет изменения, описанные в коллекции *Items*
+
+
+.. _CustomDataPatchTask-SendAsync:
+.. method:: CustomDataPatchTask.SendAsync()
+
+  Асинхронно применяет изменения, описанные в коллекции *Items*

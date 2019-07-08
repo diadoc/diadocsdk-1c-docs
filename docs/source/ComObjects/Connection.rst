@@ -21,20 +21,28 @@ Connection
 
 .. rubric:: Методы
 
-+-----------------------------+----------------------------+----------------------------+
-|:func:`.GetOrganizationList` |:func:`.GetOrganizationById`|:func:`.CreateCloudSignTask`|
-+-----------------------------+----------------------------+----------------------------+
-|:func:`.GetCloudCertificates`|:func:`.GetMyUser`          |                            |
-+-----------------------------+----------------------------+----------------------------+
++-----------------------------------+-----------------------------------+------------------------------------+
+| |Connection-GetOrganizationList|_ | |Connection-GetOrganizationById|_ | |Connection-GetCloudCertificates|_ |
++-----------------------------------+-----------------------------------+------------------------------------+
+| |Connection-CreateCloudSignTask|_ | |Connection-GetMyUser|_           |                                    |
++-----------------------------------+-----------------------------------+------------------------------------+
+
+.. |Connection-GetOrganizationList| replace:: GetOrganizationList()
+.. |Connection-GetOrganizationById| replace:: GetOrganizationById()
+.. |Connection-CreateCloudSignTask| replace:: CreateCloudSignTask()
+.. |Connection-GetCloudCertificates| replace:: GetCloudCertificates()
+.. |Connection-GetMyUser| replace:: GetMyUser()
 
 
-.. function:: Connection.GetOrganizationList()
+.. _Connection-GetOrganizationList:
+.. method:: Connection.GetOrganizationList()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`организаций <Organization>`, к которым текущий пользователь имеет доступ
 
 
 
-.. function:: Connection.GetOrganizationById(BoxID)
+.. _Connection-GetOrganizationById:
+.. method:: Connection.GetOrganizationById(BoxID)
 
   :BoxID: ``строка`` идентификатор ящика организации
 
@@ -42,7 +50,8 @@ Connection
 
 
 
-.. function:: Connection.CreateCloudSignTask(Thumbprint)
+.. _Connection-CreateCloudSignTask:
+.. method:: Connection.CreateCloudSignTask(Thumbprint)
 
   :Thumbprint: ``строка`` отпечаток Контур.Сертификата
 
@@ -50,13 +59,15 @@ Connection
 
 
 
-.. function:: Connection.GetCloudCertificates()
+.. _Connection-GetCloudCertificates:
+.. method:: Connection.GetCloudCertificates()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
 
 
 
-.. function:: Connection.GetMyUser()
+.. _Connection-GetMyUser:
+.. method:: Connection.GetMyUser()
 
   Возвращает :doc:`информацию <User>` об авторизованном пользователе
 
@@ -72,4 +83,4 @@ Certificate                 подключение к серверу Диадо�
 =========================== =========================================================
 
 
-.. seealso:: :doc:`HowTo_auth`
+.. seealso:: :doc:`../HowTo/HowTo_auth`

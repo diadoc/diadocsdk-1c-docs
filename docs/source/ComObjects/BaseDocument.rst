@@ -7,10 +7,13 @@ BaseDocument
 
 .. rubric:: Методы объекта
 
-+--------------------------+
-|:func:`.SendReceiptsAsync`|
-+--------------------------+
++-----------------------------------+
+| |BaseDocument-SendReceiptsAsync|_ |
++-----------------------------------+
 
-.. function:: BaseDocument.SendReceiptsAsync()
+.. |BaseDocument-SendReceiptsAsync| replace:: SendReceiptsAsync()
+
+.. _BaseDocument-SendReceiptsAsync:
+.. method:: BaseDocument.SendReceiptsAsync()
 
   Формирует и подписывает документы по регламентному документообороту СЧФ/УПД. Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``

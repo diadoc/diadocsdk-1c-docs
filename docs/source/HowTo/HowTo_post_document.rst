@@ -1,11 +1,11 @@
 Как отправить документы
 =======================
 
-Отправка документов возможна только тем контрагентам в Диадоке, с которыми :doc:`установлены партнерские отношения <How-trust>`
+Отправка документов возможна только тем контрагентам в Диадоке, с которыми :doc:`установлены партнерские отношения <HowTo_trust_counteragent>`
 
-Отправка документов производится с помощью объекта :doc:`PackageSendTask2 <PackageSendTask2>` путём добавления в него :doc:`документов на отправку <CustomDocumentToSend>`
+Отправка документов производится с помощью объекта :doc:`PackageSendTask2 <../ComObjects/PackageSendTask2>` путём добавления в него :doc:`документов на отправку <../ComObjects/CustomDocumentToSend>`
 
-Для отправляемого документа необходимо заполнить :doc:`мета информацию <DocumentMetadataItem>`, у которой источник (Source) указан *"User"*
+Для отправляемого документа необходимо заполнить :doc:`мета информацию <../ComObjects/DocumentMetadataItem>`, у которой источник (Source) указан *"User"*
 
 
 
@@ -39,4 +39,4 @@
     КонецПроцедуры
 
 
-.. seealso:: :doc:`Organization.GetDocumentTypes <GetDocumentTypes>`
+.. seealso:: :func:`Organization.GetDocumentTypes`

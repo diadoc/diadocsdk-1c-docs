@@ -73,23 +73,28 @@ Act552SellerContent
 
 .. rubric:: Методы
 
-+------------------+------------------+----------------+
-|:func:`.AddSigner`|:func:`.AddGround`|:func:`.AddWork`|
-+------------------+------------------+----------------+
++----------------------------------+----------------------------------+--------------------------------+
+| |Act552SellerContent-AddSigner|_ | |Act552SellerContent-AddGround|_ | |Act552SellerContent-AddWork|_ |
++----------------------------------+----------------------------------+--------------------------------+
+
+.. |Act552SellerContent-AddSigner| replace:: AddSigner()
+.. |Act552SellerContent-AddGround| replace:: AddGround()
+.. |Act552SellerContent-AddWork| replace:: AddWork()
 
 
-.. function:: Act552SellerContent.AddSigner()
+.. _Act552SellerContent-AddSigner:
+.. method:: Act552SellerContent.AddSigner()
 
   Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
 
 
-
-.. function:: Act552SellerContent.AddGround()
+.. _Act552SellerContent-AddGround:
+.. method:: Act552SellerContent.AddGround()
 
   Добавляет :doc:`новый элемент <GroundInfo>` в коллекцию *Grounds* и возвращает его
 
 
-
-.. function:: Act552SellerContent.AddWork()
+.. _Act552SellerContent-AddWork:
+.. method:: Act552SellerContent.AddWork()
 
   Добавляет :doc:`новый элемент <Act552WorkDescription>` в коллекцию *Works* и возвращает его
