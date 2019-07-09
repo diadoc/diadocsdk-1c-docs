@@ -1,5 +1,5 @@
-ProformaInvoiceToSend
-=====================
+NonformalizedProformaToSend
+===========================
 
 Объект представляет собой неформализованный документ на отправку "Счет на оплату" и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 

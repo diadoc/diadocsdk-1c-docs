@@ -1,23 +1,37 @@
 ﻿EventContent
 ============
 
-Содержание события
+`Содержание факта хозяйственной жизни - сведения о факте согласования <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230530>`_
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **CostChangeInfo** (строка, чтение/запись) - иные сведения об изменении стоимости
+:CostChangeInfo:
+  **Строка, чтение/запись** - иные сведения об изменении стоимости
 
-- **TransferDocDetails** (строка, чтение/запись) - реквизиты передаточных документов, к которым относится корректировка
+:TransferDocDetails:
+  **Строка, чтение/запись** - реквизиты передаточных документов, к которым относится корректировка
 
-- **OperationContent** (строка, чтение/запись) - содержание операции
+:OperationContent:
+  **Строка, чтение/запись** - содержание операции
 
-- **NotificationDate** (дата, чтение/запись) - дата направления на согласование
+:NotificationDate:
+  **Дата, чтение/запись** - дата направления на согласование
 
-- **CorrectionBases** (:doc:`коллекция <Collection>` объектов :doc:`CorrectionBase <CorrectionBase>`, чтение) - основание корректировки
+:CorrectionBases:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase <CorrectionBase>` **, чтение** - основание корректировки
 
 
-Методы
-------
+.. Методы
 
-- :doc:`AddCorrectionBase <AddCorrectionBase>` - добавляет основание корректировки в коллекцию оснований
++-----------------------------------+
+| |EventContent-AddCorrectionBase|_ |
++-----------------------------------+
+
+.. |EventContent-AddCorrectionBase| replace:: AddCorrectionBase()
+
+
+
+.. _EventContent-AddCorrectionBase:
+.. method:: ﻿EventContent.AddCorrectionBase()
+
+  Добавляет :doc:`новый элемент <CorrectionBase>` в коллекцию *CorrectionBases* и возвращает его

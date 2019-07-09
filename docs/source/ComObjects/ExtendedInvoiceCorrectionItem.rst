@@ -1,30 +1,48 @@
 ExtendedInvoiceCorrectionItem
 =============================
 
-Сведения о товаре (работе, услуге) универсального корректировочного документа
-
-Свойства объекта
-----------------
+`Сведения о товаре (работе, услуге), имущественном праве <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230531>`_
 
 
-- **Product** (строка, чтение/запись, обязательно для заполнения. Длина строка не более 1000 символов) - наименование товара
+.. rubric:: Свойства
 
-- **OriginalValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения до корректировки
+:Product:
+  **Строка, чтение/запись** - наименование товара
 
-- **CorrectedValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения после корректировки
+:OriginalValues:
+  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения до корректировки
 
-- **AmountsInc** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к увеличению
+:CorrectedValues:
+  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения после корректировки
 
-- **AmountsDec** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
+:AmountsInc:
+  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к увеличению
 
-- **ItemAccountDebit** (строка, чтение/запись) - корреспондирующие счета: дебет
+:AmountsDec:
+  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к уменьшению
 
-- **ItemAccountCredit** (строка, чтение/запись) - корреспондирующие счета: кредит
+:ItemAccountDebit:
+  **Строка, чтение/запись** - корреспондирующие счета: дебет
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+:ItemAccountCredit:
+  **Строка, чтение/запись** - корреспондирующие счета: кредит
+
+:StructedAdditionalInfos:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
 
 
-Методы объекта
---------------
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(ExtendedInvoiceCorrectionItem)>` - добавляет строку дополнительных сведений
+.. rubric:: Методы
+
++------------------------------------------------------------+
+| |ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo|_ |
++------------------------------------------------------------+
+
+.. |ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
+
+
+
+.. _ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo:
+.. method:: ExtendedInvoiceCorrectionItem.AddStructedAdditionalInfo()
+
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos*

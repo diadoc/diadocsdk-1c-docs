@@ -92,7 +92,9 @@
   Nonformalized <Nonformalized>
   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
   NonformalizedDocumentToSend <NonformalizedDocumentToSend>
-  NonformalizedProformaInvoice <NonformalizedProformaInvoice>
+  NonformalizedProforma <NonformalizedProforma>
+  NonformalizedProformaContent <NonformalizedProformaContent>
+  NonformalizedProformaToSend <NonformalizedProformaToSend>
   NonformalizedTorg12 <NonformalizedTorg12>
   NonformilizedContent <NonformilizedContent>
   Official <Official>
@@ -109,9 +111,7 @@
   PackageSendTask2 <PackageSendTask2>
   PaymentDocument <PaymentDocument>
   PersonalCertificate <PersonalCertificate>
-  PriceListAgreementToSend <PriceListAgreementToSend>
-  ProformaInvoiceContent <ProformaInvoiceContent>
-  ProformaInvoiceToSend <ProformaInvoiceToSend>
+  PriceListAgreementToSend <PriceListAgreementToSend>  
   ProxySettings <ProxySettings>
   ReceiptError <ReceiptError>
   ReceiptGenerationProcess <ReceiptGenerationProcess>
