@@ -1,26 +1,40 @@
 InvoiceCorrectionItem
 =====================
 
-Сведения о товаре (работе, услуге) корректировочной счета-фактуры
+`Сведения о товаре (работе, услуге) <https://normativ.kontur.ru/document?moduleId=1&documentId=249567&rangeId=230592>`_
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
+
+:Product:
+  **Строка, чтение/запись** - наименование товара
+
+:OriginalValues:
+  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения до корректировки
+
+:CorrectedValues:
+  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения после корректировки
+
+:AmountsInc:
+  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к увеличению
+
+:AmountsDec:
+  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к уменьшению
+
+:StructedAdditionalInfos:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение/запись** - дополнительные сведения
 
 
-- **Product** (строка, чтение/запись, обязательно для заполнения. Длина строка не более 1000 символов) - наименование товара
 
-- **OriginalValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения до корректировки
+.. rubric:: Методы
 
-- **CorrectedValues** (:doc:`InvoiceItemFields <InvoiceItemFields>`, чтение, обязательно для заполнения) - значения после корректировки
++----------------------------------------------------+
+| |InvoiceCorrectionItem-AddStructedAdditionalInfo|_ |
++----------------------------------------------------+
 
-- **AmountsInc** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к увеличению
-
-- **AmountsDec** (:doc:`AmountsDiff <AmountsDiff>`, чтение) - суммы к уменьшению
-
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAdditionalInfo <StructedAdditionalInfo>`, чтение/запись) - дополнительные сведения
+.. |InvoiceCorrectionItem-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
 
 
-Методы объекта
---------------
+.. _InvoiceCorrectionItem-AddStructedAdditionalInfo:
+.. method:: InvoiceCorrectionItem.AddStructedAdditionalInfo()
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(InvoiceCorrectionItem)>` - добавляет строку дополнительных сведений
+  Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

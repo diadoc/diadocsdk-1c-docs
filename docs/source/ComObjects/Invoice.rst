@@ -1,31 +1,84 @@
 Invoice
 =======
 
-Данный объект предназначен для работы с документами типа "счет-фактура" и является производным объектом от :doc:`Document <Document>`
-
-.. rubric:: Свойства объекта
-
-:Currency: (число, чтение) - код валюты
-:ConfirmationDate: (дата и время, чтение) - дата и время подтверждения спец. оператора передачи ЭСФ
-:AmendmentRequested: (булево, чтение) - признак, был ли запрос на уточнение
-:Revised: (булево, чтение) - признак, было ли исправление данного ЭСФ
-:Corrected: (булево, чтение) - признак, была ли корректировка данного ЭСФ
-:Total: (число, чтение) - сумма по документу
-:Vat: (число, чтение) - сумма НДС по документу
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+Документ *Счет-фактура*.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Методы объекта
+.. rubric:: Свойства
 
-*  :doc:`GetContent <GetContent-Invoice>` - возвращает содержание счета-фактуры в виде объектной модели
-*  :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-Invoice>` - возвращает комментарий к уведомлению об уточнении
-*  :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
+:Currency:
+  **Число, чтение** - код валюты
+
+:ConfirmationDate:
+  **Дата и время, чтение** - дата и время подтверждения спец. оператора передачи ЭСФ
+
+:AmendmentRequested:
+  **Булево, чтение** - признак, был ли запрос на уточнение
+
+:Revised:
+  **Булево, чтение** - признак, было ли исправление данного ЭСФ
+
+:Corrected:
+  **Булево, чтение** - признак, была ли корректировка данного ЭСФ
+
+:Total:
+  **Число, чтение** - сумма по документу
+
+:Vat:
+  **Число, чтение** - сумма НДС по документу
+
+:Status:
+  **Строка, чтение** - статус документа. |Invoice-Status|_
+
+
+.. rubric:: Методы
+
++-----------------------+-----------------------------------------+------------------------------+
+| |Invoice-GetContent|_ | |Invoice-GetAmendmentRequestedComment|_ | |Invoice-SendReceiptsAsync|_ |
++-----------------------+-----------------------------------------+------------------------------+
+
+.. |Invoice-GetContent| replace:: GetContent()
+.. |Invoice-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
+.. |Invoice-SendReceiptsAsync| replace:: SendReceiptsAsync()
+
+
+
+.. _Invoice-GetContent:
+.. method:: Invoice.GetContent()
+
+  Возвращает :doc:`представление контента <InvoiceContent>` счета-фактуры
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
+
+
+.. _Invoice-GetAmendmentRequestedComment:
+.. method:: Invoice.GetAmendmentRequestedComment()
+
+  Возвращает комментарий к уведомлению об уточнении
+
+  .. deprecated:: 5.20.3
+    Используйте Используйте :func:`Document.GetAnyComment` с типом ``AmendmentComment``
+
+
+
+.. _Invoice-SendReceiptsAsync:
+.. method:: Invoice.SendReceiptsAsync()
+
+  Асинхронно формирует и подписывает документы по :doc:`регламентному документообороту счетов-фактур <../HowTo/HowTo_invoice_docflow>`. Возвращает :doc:`AsyncResult` с булевым типом результата
+
 
 
 .. rubric:: Дополнительная информация
 
+
+.. |Invoice-Status| replace:: Возможные значения
+.. _Invoice-Status:
+
 ================================= ====================================================================================================
-Значения свойства Status          Описание
+Значения *Status*                 Описание
 ================================= ====================================================================================================
 UnknownInvoiceStatus              неизвестное состояние документа
 OutboundWaitingForInvoiceReceipt  документ исходящий, ожидается извещение о получении от покупателя

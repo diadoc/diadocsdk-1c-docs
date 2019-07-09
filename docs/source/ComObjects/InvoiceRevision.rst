@@ -1,34 +1,86 @@
 InvoiceRevision
 ===============
 
-Данный объект предназначен для работы с документами типа "исправление счета-фактуры", и является производным объектом от :doc:`Document <Document>`
+Документ *Исправление счета-фактуры*.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Свойства объекта
+.. rubric:: Свойства
 
-:Currency: (число, чтение) - код валюты
-:ConfirmationDate: (дата и время, чтение) - дата и время подтверждения спец. оператора передачи ЭСФ
-:AmendmentRequested: (булево, чтение) - признак, был ли запрос на уточнение
-:Revised: (булево, чтение) - признак, было ли исправление данного ЭСФ
-:Corrected: (булево, чтение) - признак, была ли корректировка данного ЭСФ
-:Total: (число, чтение) - сумма по документу
-:Vat: (число, чтение) - сумма НДС по документ
-:OriginalDocumentDate: (дата, чтение) - дата первоначального счета-фактуры
-:OriginalDocumentNumber: (строка, чтение) - номер первоначального счета-фактуры
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+:Currency:
+  **Число, чтение** - код валюты
+
+:ConfirmationDate:
+  **Дата и время, чтение** - дата и время подтверждения спец. оператора передачи ЭСФ
+
+:AmendmentRequested:
+  **Булево, чтение** - признак, был ли запрос на уточнение
+
+:Revised:
+  **Булево, чтение** - признак, было ли исправление данного ЭСФ
+
+:Corrected:
+  **Булево, чтение** - признак, была ли корректировка данного ЭСФ
+
+:Total:
+  **Число, чтение** - сумма по документу
+
+:Vat:
+  **Число, чтение** - сумма НДС по документ
+
+:OriginalDocumentDate:
+  **Дата, чтение** - дата первоначального счета-фактуры
+
+:OriginalDocumentNumber:
+  **Строка, чтение** - номер первоначального счета-фактуры
+
+:Status:
+  **Строка, чтение** - текущий статус документа в Диадоке
 
 
-.. rubric:: Методы объекта
+.. rubric:: Методы
 
-* :doc:`GetContent <GetContent-(InvoiceRevision)>` - возвращает содержание счета-фактуры в виде объектной модели
-* :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(InvoiceRevision)>` - возвращает комментарий к уведомлению об уточнении
-* :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
++-------------------------------+-------------------------------------------------+--------------------------------------+
+| |InvoiceRevision-GetContent|_ | |InvoiceRevision-GetAmendmentRequestedComment|_ | |InvoiceRevision-SendReceiptsAsync|_ |
++-------------------------------+-------------------------------------------------+--------------------------------------+
+
+.. |InvoiceRevision-GetContent| replace:: GetContent()
+.. |InvoiceRevision-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
+.. |InvoiceRevision-SendReceiptsAsync| replace:: SendReceiptsAsync()
+
+
+
+.. _InvoiceRevision-GetContent:
+.. method:: InvoiceRevision.GetContent()
+
+  Возвращает :doc:`представление контента <InvoiceContent>` счета-фактуры
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
+
+
+.. _InvoiceRevision-GetAmendmentRequestedComment:
+.. method:: InvoiceRevision.GetAmendmentRequestedComment()
+
+  Возвращает комментарий к уведомлению об уточнении
+
+  .. deprecated:: 5.20.3
+    Используйте Используйте :func:`Document.GetAnyComment` с типом ``AmendmentComment``
+
+
+
+.. _InvoiceRevision-SendReceiptsAsync:
+.. method:: InvoiceRevision.SendReceiptsAsync()
+
+  Асинхронно формирует и подписывает документы по :doc:`регламентному документообороту счетов-фактур <../HowTo/HowTo_invoice_docflow>`. Возвращает :doc:`AsyncResult` с булевым типом результата
+
 
 
 .. rubric:: Дополнительная информация
 
 ================================= ====================================================================================================
-Значения свойства Status Описание
+Значение *Status*                 Описание
 ================================= ====================================================================================================
 UnknownInvoiceStatus              неизвестное состояние документа
 OutboundWaitingForInvoiceReceipt  документ исходящий, ожидается извещение о получении от покупателя

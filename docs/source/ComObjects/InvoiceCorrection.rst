@@ -1,37 +1,102 @@
 InvoiceCorrection
 =================
 
-Данный объект предназначен для работы с документами типа "корректировочный счет-фактура", и является производным объектом от :doc:`Document <Document>`
+Документ *Корректировочный счет-фактура*.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Свойства объекта
 
-:Currency: (число, чтение) - код валюты
-:ConfirmationDate: (дата и время, чтение) - дата и время подтверждения спец. оператора передачи ЭСФ
-:AmendmentRequested: (булево, чтение) - признак, был ли запрос на уточнение
-:Revised: (булево, чтение) - признак, было ли исправление данного ЭСФ
-:Corrected: (булево, чтение) - признак, была ли корректировка данного ЭСФ
-:TotalInc: (число, чтение) - сумма к увеличению по документу
-:TotalDec: (число, чтение) - сумма к уменьшению по документу
-:VatInc: (число, чтение) - сумма НДС к увеличению по документу
-:VatDec: (число, чтение) - сумма НДС к уменьшению по документу
-:OriginalDocumentDate: (дата, чтение) - дата первоначального счета-фактуры
-:OriginalDocumentNumber: (строка, чтение) - номер первоначального счета-фактуры
-:OriginalInvoiceRevisionDate: (дата, чтение) - дата исправления первоначального счета-фактуры
-:OriginalInvoiceRevisionNumber: (строка, чтение) - номер исправления первоначального счета-фактуры
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+.. rubric:: Свойства
 
-.. rubric:: Методы объекта
+:Currency:
+  **Число, чтение** - код валюты
 
-* :doc:`GetContent <GetContent-(InvoiceCorrection)>` - возвращает содержание корректировочного счета-фактуры в виде объектной модели
-* :doc:`GetAmendmentRequestedComment <GetAmendmentRequestedComment-(InvoiceCorrection)>` - возвращает комментарий к уведомлению об уточнении
-* :doc:`SendReceiptsAsync <SendReceiptsAsync>` - формирует и подписывает документы по регламентному документообороту счетов-фактур
+:ConfirmationDate:
+  **Дата и время, чтение** - дата и время подтверждения спец. оператора передачи ЭСФ
+
+:AmendmentRequested:
+  **Булево, чтение** - признак, был ли запрос на уточнение
+
+:Revised:
+  **Булево, чтение** - признак, было ли исправление данного ЭСФ
+
+:Corrected:
+  **Булево, чтение** - признак, была ли корректировка данного ЭСФ
+
+:TotalInc:
+  **Число, чтение** - сумма к увеличению по документу
+
+:TotalDec:
+  **Число, чтение** - сумма к уменьшению по документу
+
+:VatInc:
+  **Число, чтение** - сумма НДС к увеличению по документу
+
+:VatDec:
+  **Число, чтение** - сумма НДС к уменьшению по документу
+
+:OriginalDocumentDate:
+  **Дата, чтение** - дата первоначального счета-фактуры
+
+:OriginalDocumentNumber:
+  **Строка, чтение** - номер первоначального счета-фактуры
+
+:OriginalInvoiceRevisionDate:
+  **Дата, чтение** - дата исправления первоначального счета-фактуры
+
+:OriginalInvoiceRevisionNumber:
+  **Строка, чтение** - номер исправления первоначального счета-фактуры
+
+:Status:
+  **Строка, чтение** - статус документа. |InvoiceCorrection-Status|_
+
+
+.. rubric:: Методы
+
++---------------------------------+---------------------------------------------------+----------------------------------------+
+| |InvoiceCorrection-GetContent|_ | |InvoiceCorrection-GetAmendmentRequestedComment|_ | |InvoiceCorrection-SendReceiptsAsync|_ |
++---------------------------------+---------------------------------------------------+----------------------------------------+
+
+.. |InvoiceCorrection-GetContent| replace:: GetContent()
+.. |InvoiceCorrection-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
+.. |InvoiceCorrection-SendReceiptsAsync| replace:: SendReceiptsAsync()
+
+
+
+.. _InvoiceCorrection-GetContent:
+.. method:: InvoiceCorrection.GetContent()
+
+  Возвращает :doc:`представление контента <InvoiceCorrectionContent>` корректировочного счета-фактуры
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
+
+
+.. _InvoiceCorrection-GetAmendmentRequestedComment:
+.. method:: InvoiceCorrection.GetAmendmentRequestedComment()
+
+  Возвращает комментарий к уведомлению об уточнении
+
+  .. deprecated:: 5.20.3
+    Используйте Используйте :func:`Document.GetAnyComment` с типом ``AmendmentComment``
+
+
+
+.. _InvoiceCorrection-SendReceiptsAsync:
+.. method:: InvoiceCorrection.SendReceiptsAsync()
+
+  Асинхронно формирует и подписывает документы по :doc:`регламентному документообороту счетов-фактур <../HowTo/HowTo_invoice_docflow>`. Возвращает :doc:`AsyncResult` с булевым типом результата
+
 
 
 .. rubric:: Дополнительная информация
 
+.. |InvoiceCorrection-Status| replace:: Возможные значения
+.. _InvoiceCorrection-Status:
+
 ================================= ====================================================================================================
-Значения свойства Status          Описание
+Значения *Status*                 Описание
 ================================= ====================================================================================================
 UnknownInvoiceStatus              неизвестное состояние документа
 OutboundWaitingForInvoiceReceipt  документ исходящий, ожидается извещение о получении от покупателя

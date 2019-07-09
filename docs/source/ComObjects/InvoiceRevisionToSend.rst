@@ -1,15 +1,20 @@
 InvoiceRevisionToSend
 =====================
 
-Объект представляет собой формализованный документ на отправку "Исправление счета-фактуры" в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Документ на отправку *Исправление  счета-фактуры* в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_.
+Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
-Свойства объекта
-----------------
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "InvoiceRevision")
+.. rubric:: Свойства
 
-- **Comment** (строка, чтение/запись) - комментарий к документу
+:Type:
+  **Строка, чтение** - тип документа. Константа ``InvoiceRevision``
 
-- **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+:Comment:
+  **Строка, чтение/запись** - комментарий к документу
 
-- **Content** (:doc:`InvoiceContent <InvoiceContent>`, чтение) - содержимое документа
+:CustomDocumentId:
+  **Строка, чтение/запись** - внешний идентификатор документа
+
+:Content:
+  :doc:`InvoiceContent <InvoiceContent>` **, чтение** - содержимое документа

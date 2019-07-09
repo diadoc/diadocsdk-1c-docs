@@ -1,19 +1,31 @@
-﻿InvoiceCorrectionTable
+InvoiceCorrectionTable
 ======================
 
-Сведения таблицы корректировочного счета-фактуры
+`Сведения таблицы корректировочного счета-фактуры (содержание события (факта хозяйственной жизни) 2 - сведения об изменении <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230593>`_
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
+
+:Items:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>` **, чтение** - информация о товарах
+
+:TotalsInc:
+  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - суммы к увеличению
+
+:TotalsDec:
+  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - суммы к уменьшению
 
 
-- **Items** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>`, чтение) - информация о товарах
 
-- **TotalsInc** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к увеличению
+.. rubric:: Методы
 
-- **TotalsDec** (:doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>`, чтение) - суммы к уменьшению
++-----------------------------------+
+| |InvoiceCorrectionTable-AddItem|_ |
++-----------------------------------+
 
-Методы объекта
---------------
 
-- :doc:`AddItem <AddItem-(InvoiceCorrectionTable)>` - добавляет элемент информации о товарах
+.. |InvoiceCorrectionTable-AddItem| replace:: AddItem()
+
+.. _InvoiceCorrectionTable-AddItem:
+.. method:: InvoiceCorrectionTable.AddItem()
+
+  Добавляет :doc:`новый элементе <ExtendedInvoiceCorrectionItem>` в коллекцию *Items* и возвращает его

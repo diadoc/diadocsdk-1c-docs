@@ -1,20 +1,32 @@
 InvoiceForCorrectionInfo
 ========================
 
-Сведения о cчете-фактуре (первичном документе), к которому составлен корректировочный счет-фактура
+`Сведения о cчете-фактуре, к которому составлен корректировочный счет-фактура <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230596>`_
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
+:InvoiceDate:
+  **Дата, чтение/запись** - дата счета-фактуры
 
-- **InvoiceDate** (дата, чтение/запись) - дата счета-фактуры
+:InvoiceNumber:
+  **Строка, чтение/запись** - номер счета-фактуры
 
-- **InvoiceNumber** (строка, чтение/запись) - номер счета-фактуры
-
-- **InvoiceRevisions** (коллекция :doc:`Collection<Collection>` объектов :doc:`InvoiceRevisionInfo <InvoiceRevisionInfo>`) - с учетом исправления
-
-Методы объекта
---------------
+:InvoiceRevisions:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceRevisionInfo <InvoiceRevisionInfo>` **, чтение** - список исправлений
 
 
--  :doc:`AddInvoiceRevision <AddInvoiceRevision-(InvoiceForCorrectionInfo)>` - добавляет строку "с учетом исправления"
+
+.. rubric:: Методы
+
++------------------------------------------------+
+| |InvoiceForCorrectionInfo-AddInvoiceRevision|_ |
++------------------------------------------------+
+
+.. |InvoiceForCorrectionInfo-AddInvoiceRevision| replace:: AddInvoiceRevision()
+
+
+
+.. _InvoiceForCorrectionInfo-AddInvoiceRevision:
+.. method:: InvoiceForCorrectionInfo.AddInvoiceRevision()
+
+  Добавляет :doc:`новый элемент <InvoiceRevisionInfo>` в коллекцию *InvoiceRevisions* и возвращает его

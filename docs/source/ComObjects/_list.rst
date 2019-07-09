@@ -79,7 +79,6 @@
   InvoiceCorrectionTable <InvoiceCorrectionTable>
   InvoiceCorrectionToSend <InvoiceCorrectionToSend>
   InvoiceForCorrectionInfo <InvoiceForCorrectionInfo>
-  InvoiceItem-(Invoice) <InvoiceItem-(Invoice)>
   InvoiceItem <InvoiceItem>
   InvoiceItemFields <InvoiceItemFields>
   InvoiceRevision <InvoiceRevision>
@@ -87,6 +86,7 @@
   InvoiceRevisionToSend <InvoiceRevisionToSend>
   InvoiceTable <InvoiceTable>
   InvoiceToSend <InvoiceToSend>
+  InvoiceTotals <InvoiceTotals>
   InvoiceTotalsDiff <InvoiceTotalsDiff>
   MetadataItem <MetadataItem>
   Nonformalized <Nonformalized>
@@ -111,7 +111,7 @@
   PackageSendTask2 <PackageSendTask2>
   PaymentDocument <PaymentDocument>
   PersonalCertificate <PersonalCertificate>
-  PriceListAgreementToSend <PriceListAgreementToSend>  
+  PriceListAgreementToSend <PriceListAgreementToSend>
   ProxySettings <ProxySettings>
   ReceiptError <ReceiptError>
   ReceiptGenerationProcess <ReceiptGenerationProcess>
@@ -149,7 +149,6 @@
   Torg12SellerContent <Torg12SellerContent>
   Torg12ToSend <Torg12ToSend>
   Torg12Totals <Torg12Totals>
-  Totals-InvoiceTotals <Totals-InvoiceTotals>
   TovTorgBuyerContent <TovTorgBuyerContent>
   TovTorgItem <TovTorgItem>
   TovTorgSellerContent <TovTorgSellerContent>
