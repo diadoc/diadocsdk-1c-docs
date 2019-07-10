@@ -1,23 +1,43 @@
 Nonformalized
 =============
 
-Данный объект предназначен для работы с документами в неформализованном формате и является производным объектом от :doc:`Document <Document>`.
+Документам *Неформализованный*.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Свойства объекта
+.. rubric:: Свойства
 
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+:Status:
+  **Строка, чтение** - статус документа. |Nonformalized-Status|_
 
 
-.. rubric:: Методы объекта
+.. rubric:: Методы
 
-* :doc:`GetRejectionComment <GetRejectionComment-(Nonformalized)>` - возвращает комментарий к отказу в подписании
++--------------------------------------+
+| |Nonformalized-GetRejectionComment|_ |
++--------------------------------------+
+
+.. |Nonformalized-GetRejectionComment| replace:: GetRejectionComment()
+
+
+
+.. _Nonformalized-GetRejectionComment:
+.. method:: Nonformalized.GetRejectionComment()
+
+  Возвращает комментарий к отказу в подписании
+
+  .. deprecated:: 5.20.3
+    Используйте Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+
 
 
 .. rubric:: Дополнительная информация
 
+.. |Nonformalized-Status| replace:: Возможные значения
+.. _Nonformalized-Status:
+
 ========================================= ======================================================================================================
-Значения свойства Status                  Описание
+Значения *Status*                         Описание
 ========================================= ======================================================================================================
 UnknownNonformalizedDocumentStatus        неизвестное состояние документа
 OutboundNoRecipientSignatureRequest       документ исходящий, без запроса ответной подписи

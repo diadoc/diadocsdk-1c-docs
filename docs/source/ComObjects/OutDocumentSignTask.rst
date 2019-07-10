@@ -1,21 +1,56 @@
 OutDocumentSignTask
 ===================
 
-Объект предназначен для подписания и отправки исходящего документа с отложенной отправкой.
+Задания на подписание и отправку исходящего документа с отложенной отправкой
 
-Свойства
---------
 
-- **Signer** (:doc:`Signer <Signer>`, чтение/запись) - данные подписанта документа. Используется для всех типов документов, кроме УПД. В случае, если производится подписание УПД, этот параметр игнорируется, вместо него используются подписанты, добавленные с помощью метода **AddExtendedSigner**.
 
-- **Content** (:doc:`OutDocumentSignTaskContent <OutDocumentSignTaskContent>`, чтение/запись) - содержимое запроса
+.. rubric:: Свойства
 
-Методы
-------
+:Signer:
+  :doc:`Signer <Signer>` **, чтение/запись** - данные подписанта документа
 
--  :doc:`AddExtendedSigner <AddExtendedSigner>` - добавляет подписант документа. Используется только с случае подписания УПД. В случае подписания других документов подписанты, добавленные с помощью этого метода, игнорируются, а в качестве подписанта используется подписант, указанный в поле **Signer**.
+:Content:
+  :doc:`OutDocumentSignTaskContent <OutDocumentSignTaskContent>` **, чтение/запись** - содержимое запроса
 
--  :doc:`Send <Send-(OutDocumentSignTask)>` - подписывает и отправляет исходящий документ с отложенной отправкой
 
--  :doc:`SendAsync <SendAsync-(OutDocumentSignTask)>` - инициирует асинхронное подписание и отправку исходящего
-   документа с отложенной отправкой
+
+.. rubric:: Методы
+
++----------------------------------------------+----------------------------------+
+| |OutDocumentSignTask-AddExtendedSigner|_     | |OutDocumentSignTask-Send|_      |
++----------------------------------------------+----------------------------------+
+| |OutDocumentSignTask-AddEncryptCertificate|_ | |OutDocumentSignTask-SendAsync|_ |
++----------------------------------------------+----------------------------------+
+
+.. |OutDocumentSignTask-AddExtendedSigner| replace:: AddExtendedSigner()
+.. |OutDocumentSignTask-AddEncryptCertificate| replace:: AddEncryptCertificate()
+.. |OutDocumentSignTask-Send| replace:: Send()
+.. |OutDocumentSignTask-SendAsync| replace:: SendAsync()
+
+
+.. _OutDocumentSignTask-AddExtendedSigner:
+.. method:: OutDocumentSignTask.AddExtendedSigner()
+
+  Добавляет :doc:`подписанта <ExtendedSigner>` для документов УПД, УКД, Торг12 @551, Акт @552 и возвращает его в качестве результата
+
+
+
+.. _OutDocumentSignTask-AddEncryptCertificate:
+.. method:: OutDocumentSignTask.AddEncryptCertificate()
+
+  Добавляет :doc:`сертификат <PersonalCertificate>` для шифрования контента и возвращает его в качестве результата
+
+
+
+.. _OutDocumentSignTask-Send:
+.. method:: OutDocumentSignTask.Send()
+
+  Подписывает и отправляет исходящий документ с отложенной отправкой
+
+
+
+.. _OutDocumentSignTask-SendAsync:
+.. method:: OutDocumentSignTask.SendAsync()
+
+  Подписывает и отправляет исходящий документ с отложенной отправкой. Возвращает :doc:`AsyncResult` с булевым типом результата

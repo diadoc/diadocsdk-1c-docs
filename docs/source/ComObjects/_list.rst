@@ -96,7 +96,7 @@
   NonformalizedProformaContent <NonformalizedProformaContent>
   NonformalizedProformaToSend <NonformalizedProformaToSend>
   NonformalizedTorg12 <NonformalizedTorg12>
-  NonformilizedContent <NonformilizedContent>
+  NonformalizedContent <NonformalizedContent>
   Official <Official>
   Organization <Organization>
   OrganizationInfo <OrganizationInfo>

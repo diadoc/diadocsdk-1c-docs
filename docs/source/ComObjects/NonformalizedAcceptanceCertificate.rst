@@ -1,26 +1,52 @@
 NonformalizedAcceptanceCertificate
 ==================================
 
-Данный объект предназначен для работы с документами типа "акт овыполнении работ" в произвольном формате, и является производным объектом от :doc:`Document <Document>`.
+Документам *Акт о выполнении работ* в произвольном формате.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Свойства объекта
+.. rubric:: Свойства
 
-:Total: (число, чтение) - cумма по документу
-:Vat: (число, чтение) - cумма НДС по документу
-:Grounds: (строка, чтение) - основание документа
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+:Total:
+  **Число, чтение** - cумма по документу
+
+:Vat:
+  **Число, чтение** - cумма НДС по документу
+
+:Grounds:
+  **Строка, чтение** - основание документа
+
+:Status:
+  **Строка, чтение** - статус документа. |NonformalizedAcceptanceCertificate-Status|_
 
 
 .. rubric:: Методы объекта
 
-* :doc:`GetRejectionComment <GetRejectionComment-(NonformalizedAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
++-----------------------------------------------------------+
+| |NonformalizedAcceptanceCertificate-GetRejectionComment|_ |
++-----------------------------------------------------------+
+
+.. |NonformalizedAcceptanceCertificate-GetRejectionComment| replace:: GetRejectionComment()
+
+
+
+.. _NonformalizedAcceptanceCertificate-GetRejectionComment:
+.. method:: NonformalizedAcceptanceCertificate.GetRejectionComment()
+
+  Возвращает комментарий к отказу в подписании
+
+  .. deprecated:: 5.20.3
+    Используйте Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+
 
 
 .. rubric:: Дополнительная информация
 
+.. |NonformalizedAcceptanceCertificate-Status| replace:: Возможные значения
+.. _NonformalizedAcceptanceCertificate-Status:
+
 ========================================= ======================================================================================================
-Значение свойства Status                  Описание
+Значение *Status*                         Описание
 ========================================= ======================================================================================================
 UnknownBilateralDocumentStatus            неизвестное состояние документа
 OutboundWaitingForRecipientSignature      документ исходящий, ответная подпись, либо отказ от ее формирования еще не получены

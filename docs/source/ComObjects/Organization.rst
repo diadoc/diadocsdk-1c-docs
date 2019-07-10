@@ -1,76 +1,595 @@
 Organization
 ============
 
-Объект предназначен для работы с организацией на сервере Диадок
+Организацией на сервере Диадок
 
 
-.. rubric:: Свойства объекта
+.. rubric:: Свойства
 
-:Id: (строка, чтение) - идентификатор ящика организации в Диадоке
-:Name: (строка, чтение) - наименование организации
-:Inn: (строка, чтение) - ИНН организации
-:Kpp: (строка, чтение) - КПП организации
-:Departments: (:doc:`коллекция <Collection>` объектов :doc:`Department <Department>`, чтение) - подразделения, родительским подразделением которых является "Головное" подразделение
-:AuthenticateType: (строка, чтение) - тип авторизации
-:Login: (строка, чтение) - логин, по которому произошла авторизация к данной организации
-:Certificate: (:doc:`PersonalCertificate <PersonalCertificate>`, чтение) - сертификат, по которому произошла авторизация в данной организации
-:FnsParticipantId: (строка, чтение) - идентификатор организации-участника документооборота
-:FnsRegistrationDate: (дата, чтение) - дата подачи заявляения в ФНС на регистрацию данной организации в качестве участника документооборота ЭСФ. В случае, если организация не подавала заявления, возвращается пустая дата
-:IsTest: (булево, чтение) - признак того, что организация работает в тестовом режиме
-:IsPilot: (булево, чтение) - признак того, что организация работает в пилотном режиме
-:EncryptedDocumentsAllowed: (булево, чтение) - признак того, что для организации разрешена отправка зашифрованных документов
+:Id:
+  **Строка, чтение** - идентификатор ящика организации в Диадоке
+
+:Name:
+  **Строка, чтение** - наименование организации
+
+:Inn:
+  **Строка, чтение** - ИНН организации
+
+:Kpp:
+  **Строка, чтение** - КПП организации
+
+:Departments:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Department <Department>` **, чтение** - подразделения, родительским подразделением которых является "Головное" подразделение
+
+:AuthenticateType:
+  **Строка, чтение** - тип авторизации
+
+:Login:
+  **Строка, чтение** - логин, по которому произошла авторизация к данной организации
+
+:Certificate:
+  :doc:`PersonalCertificate <PersonalCertificate>` **, чтение** - сертификат, по которому произошла авторизация в данной организации
+
+:FnsParticipantId:
+  **Строка, чтение** - идентификатор организации-участника документооборота
+
+:FnsRegistrationDate:
+  **Дата, чтение** - дата подачи заявляения в ФНС на регистрацию данной организации в качестве участника документооборота ЭСФ
+
+:IsTest:
+  **Булево, чтение** - организация работает в тестовом режиме
+
+:IsPilot:
+  **Булево, чтение** - организация работает в пилотном режиме
+
+:EncryptedDocumentsAllowed:
+  **Булево, чтение** - организации разрешена отправка зашифрованных документов
 
 
-.. rubric:: Методы объекта
+.. rubric:: Методы
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetCounteragentListByInnKpp|_          | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetReceiptGenerationProcess|_          | |Organization-GetDocumentEventList|_         | |Organization-CreateSendTask|_                     |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-CreateSendTaskFromFile|_               | |Organization-CreateSendTaskFromFileRaw|_    | |Organization-CreatePackageSendTask|_              |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-CreatePackageSendTask2|_               | |Organization-CreateSendDraftTask|_          | |Organization-SendDraftAsync|_                     |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-SetAndValidateAddressForCounteragent|_ | |Organization-GetAddressForCounteragent|_    | |Organization-GetSentDocuments|_                   |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-SetData|_                              | |Organization-GetData|_                      | |Organization-CreateSetExtendedSignerDetailsTask|_ |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-GetExtendedSignerDetails|_             | |Organization-GetExtendedSignerDetails2|_    | |Organization-SendFnsRegistrationMessage|_         |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-CanSendInvoice|_                       | |Organization-GetDocumentTypes|_             | |Organization-GetResolutionRoutes|_                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
+| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              |                                                    |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
 
-* :doc:`GetUsers <GetUsers>` - вовзращает :doc:`список <Collection>` всех :doc:`пользователей <User>` организации
-* :doc:`GetUserPermissions <GetUserPermissions>` - возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
 
-.. function:: Organization.GetCounteragentById()
-  возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+.. |Organization-GetUsers| replace:: GetUsers()
+.. |Organization-GetUserPermissions| replace:: GetUserPermissions()
+.. |Organization-GetCounteragentById| replace:: GetCounteragentById()
+.. |Organization-GetCounteragentByOrgId| replace:: GetCounteragentByOrgId()
+.. |Organization-GetCounteragentListByStatus| replace:: GetCounteragentListByStatus()
+.. |Organization-GetCounteragentListByStatusAsync| replace:: GetCounteragentListByStatusAsync()
+.. |Organization-GetCounteragentListByInnKpp| replace:: GetCounteragentListByInnKpp()
+.. |Organization-GetCounteragentListByInnList| replace:: GetCounteragentListByInnList()
+.. |Organization-CreateAcquireCounteragentTask| replace:: CreateAcquireCounteragentTask()
+.. |Organization-GetDocumentById| replace:: GetDocumentById()
+.. |Organization-GetDocumentsTask| replace:: GetDocumentsTask()
+.. |Organization-RestoreDocument| replace:: RestoreDocument()
+.. |Organization-GetReceiptGenerationProcess| replace:: GetReceiptGenerationProcess()
+.. |Organization-GetDocumentEventList| replace:: GetDocumentEventList()
+.. |Organization-CreateSendTask| replace:: CreateSendTask()
+.. |Organization-CreateSendTaskFromFile| replace:: CreateSendTaskFromFile()
+.. |Organization-CreateSendTaskFromFileRaw| replace:: CreateSendTaskFromFileRaw()
+.. |Organization-CreatePackageSendTask| replace:: CreatePackageSendTask()
+.. |Organization-CreatePackageSendTask2| replace:: CreatePackageSendTask2()
+.. |Organization-CreateSendDraftTask| replace:: CreateSendDraftTask()
+.. |Organization-SendDraftAsync| replace:: SendDraftAsync()
+.. |Organization-SetAndValidateAddressForCounteragent| replace:: SetAndValidateAddressForCounteragent()
+.. |Organization-GetAddressForCounteragent| replace:: GetAddressForCounteragent()
+.. |Organization-GetSentDocuments| replace:: GetSentDocuments()
+.. |Organization-SetData| replace:: SetData()
+.. |Organization-GetData| replace:: GetData()
+.. |Organization-CreateSetExtendedSignerDetailsTask| replace:: CreateSetExtendedSignerDetailsTask()
+.. |Organization-GetExtendedSignerDetails| replace:: GetExtendedSignerDetails()
+.. |Organization-GetExtendedSignerDetails2| replace:: GetExtendedSignerDetails2()
+.. |Organization-SendFnsRegistrationMessage| replace:: SendFnsRegistrationMessage()
+.. |Organization-CanSendInvoice| replace:: CanSendInvoice()
+.. |Organization-GetDocumentTypes| replace:: GetDocumentTypes()
+.. |Organization-GetResolutionRoutes| replace:: GetResolutionRoutes()
+.. |Organization-CreateTemplateSendTask| replace:: CreateTemplateSendTask()
+.. |Organization-GetTemplate| replace:: GetTemplate()
+.. |Organization-CreateTransformTemplateTask| replace:: CreateTransformTemplateTask()
+.. |Organization-RecycleDraft| replace:: RecycleDraft()
+.. |Organization-SaveUserDataXSD| replace:: SaveUserDataXSD()
 
-.. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Сделано ради теста. Надо доделать
 
 
 
-* :doc:`GetCounteragentByOrgId <GetCounteragentByOrgId>` - возвращает :doc:`контрагента <Counteragent>` по идентификатору организации
-* :doc:`GetCounteragentListByStatus <GetCounteragentListByStatus>` - возвращает :doc:`список <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом
-* :doc:`GetCounteragentListByStatusAsync <GetCounteragentListByStatusAsync>` - асинхронный запрос :doc:`списка <Collection>` :doc:`контрагентов <CounteragentItem>`, с указанным в запросе статусом
-* :doc:`GetCounteragentListByInnKpp <GetCounteragentListByInnKpp>` - возвращает :doc:`список <Collection>` :doc:`контрагентов <Counteragent>` с указанными ИНН/КПП
-* :doc:`GetCounteragentListByInnList <GetCounteragentListByInnList>` - асинхронный запрос :doc:`списка <Collection>` :doc:`контрагентов <CounteragentItem>` с указанными ИНН
-* :doc:`CreateAcquireCounteragentTask <CreateAcquireCounteragentTask>` - создает :doc:`запрос на приглашение контрагента к сотрудничеству <AcquireCounteragentTask>`
+.. _Organization-GetUsers:
+.. method:: Organization.GetUsers()
 
-* :doc:`GetDocumentById <GetDocumentById>` - возвращает :doc:`документ <Document>` в ящике по его идентификатору
-* :doc:`GetDocumentsTask <GetDocumentsTask>` - возвращает :doc:`объект <DocumentsTask>`, который позволяет позволяет получить :doc:`список <Collection>` исходящих и отправленных :doc:`документов <Document>` текущего ящика
-* :doc:`RestoreDocument <RestoreDocument>` - восстанавливает удалённый документ
+  Возращает :doc:`коллекцию <Collection>` :doc:`пользователей <User>` организации
 
-* :doc:`GetReceiptGenerationProcess <GetReceiptGenerationProcess>` - возвращает :doc:`объект <ReceiptGenerationProcess>`, с помощью которого можно запустить процесс автоматической отправки извещений о получении документов в текущем ящике
-* :doc:`GetDocumentEventList <GetDocumentEventList>` - возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике
 
-* :doc:`CreatePackageSendTask <CreatePackageSendTask>` - возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
-* :doc:`CreatePackageSendTask2 <CreatePackageSendTask2>` - возвращает :doc:`объект <PackageSendTask2>`, с помощью которого можно отправить пакет :doc:`документов <CustomDocumentToSend>`
-* :doc:`CreateSendDraftTask <CreateSendDraftTask>` - возвращает :doc:`объект <SendDraftTask>`, с помощью которого можно отправить черновик
-* :doc:`SendDraftAsync <SendDraftAsync>` - асинхронный запрос отправки черновика
 
-* :doc:`SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>` - валидирует и загружает адресную информацию в хранилище
-* :doc:`GetAddressForCounteragent <GetAddressForCounteragent>` - возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
-* :doc:`GetSentDocuments <GetSentDocuments>` - возвращает список идентификаторов отправленных документов
-* :doc:`SetData <SetData>` - добавляет пару "ключ-значение" в хранилище
-* :doc:`GetData <GetData>` - извлекает значение по ключу из хранилища
+.. _Organization-GetUserPermissions:
+.. method:: Organization.GetUserPermissions()
 
-* :doc:`CreateSetExtendedSignerDetailsTask <CreateSetExtendedSignerDetailsTask>` - возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта в Диадоке
-* :doc:`GetExtendedSignerDetails <GetExtendedSignerDetails>` - возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок
-* :doc:`GetExtendedSignerDetails2 <GetExtendedSignerDetails2>` - возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок
+  Возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
 
-* :doc:`SendFnsRegistrationMessage <SendFnsRegistrationMessage>` - добавление в сообщение ФНС нового сертификата
-* :doc:`CanSendInvoice <CanSendInvoice>` - определяет может ли указанный сертификат ЭП использоваться для подписания формализованных документов
-* :doc:`GetDocumentTypes <GetDocumentTypes>` - возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике для отправки
-* :doc:`GetResolutionRoutes <GetResolutionRoutes>` - возвращает :doc:`коллекцию <Collection>` :doc:`маршрутов согласования <Route>`, настроенных в ящике
 
-* :doc:`CreateTemplateSendTask <CreateTemplateSendTask>` - возвращает :doc:`объект <TemplateSendTask>`, с помощью которого можно отправить :doc:`шаблон пакета документов <Template>`
-* :doc:`GetTemplate <GetTemplate>` - возвращает :doc:`шаблон <Template>` по его идентификатору
-* :doc:`CreateTransformTemplateTask` - возвращает :doc:`объект <TransformTemplateTask>`, с помощью которого можно из шаблона создать :doc:`документы <DocumentPackage>`
 
-* :doc:`RecycleDraft <RecycleDraft>` - удаляет черновик
+.. _Organization-GetCounteragentById:
+.. method:: Organization.GetCounteragentById(BoxId)
 
-* :doc:`SaveUserDataXSD <SaveUserDataXSD>` - сохраняет описание контента документа на диск
+  :BoxId: ``строка`` идентификатор ящика
+
+  Возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика
+
+
+
+.. _Organization-GetCounteragentByOrgId:
+.. method:: Organization.GetCounteragentByOrgId(OrgId)
+
+  :OrgId: ``строка`` идентификатор организации в Диадок
+
+  Возвращает :doc:`контрагента <Counteragent>` по идентификатору организации
+
+
+
+.. _Organization-GetCounteragentListByStatus:
+.. method:: Organization.GetCounteragentListByStatus([CounteragentStatus])
+
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. |Organization-CounteragentStatus|_
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом.
+  Если параметр не задан, вернётся весь список контрагентов
+
+
+
+.. _Organization-GetCounteragentListByStatusAsync:
+.. method:: Organization.GetCounteragentListByStatusAsync([CounteragentStatus])
+
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. |Organization-CounteragentStatus|_
+
+  Асинхронный запрос контрагентов с указанным статусом. Если параметр не задан, вернётся весь список контрагентов.
+  Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <Counteragent>` в качестве результата
+
+
+
+.. _Organization-GetCounteragentListByInnKpp:
+.. method:: Organization.GetCounteragentListByInnKpp(Inn[, Kpp])
+
+  :Inn: ``строка`` ИНН для поиска
+  :Kpp: ``строка`` КПП для поиска
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанными ИНН-КПП
+
+
+
+.. _Organization-GetCounteragentListByInnList:
+.. method:: Organization.GetCounteragentListByInnList(INNs)
+
+  :INNs: ``строка`` ИНН, перечисленные через запятую без пробелов
+
+  Aсинхронный запрос контрагентов с перечисленными ИНН.
+  Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <CounteragentItem>` в качестве результата
+
+
+
+.. _Organization-CreateAcquireCounteragentTask:
+.. method:: Organization.CreateAcquireCounteragentTask([FilePath])
+
+  :FilePath: ``строка`` путь до файла-вложения
+
+  Создает :doc:`запрос на приглашение контрагента к сотрудничеству <AcquireCounteragentTask>`. Если *FilePath* задан, то вместе с приглашением будет отправлен и этот файл
+
+
+
+.. _Organization-GetDocumentById:
+.. method:: Organization.GetDocumentById(DocumentId, WithOneSId=falst)
+
+  :DocumentId: ``строка`` идентифкатор документа
+  :WithOneSId: ``булево`` нужно ли запрашивать дополнительный идентификатор учётной системы
+
+  Возвращает :doc:`документ <Document>` в ящике по его идентификатору.
+  При *WithOneSId* == ``TRUE`` у документа будет заполнено поле *OneSDocumentId*, если оно установлено для него, но сам метод отработает медленнее
+
+
+
+.. _Organization-GetDocumentsTask:
+.. method:: Organization.GetDocumentsTask()
+
+  Возвращает :doc:`задачу поиска документов в ящике <DocumentsTask>`
+
+
+
+.. _Organization-RestoreDocument:
+.. method:: Organization.RestoreDocument(DocumentId)
+
+  :DocumentId: ``строка`` идентификатор документа
+
+  Восстанавливает удалённый документ
+
+
+
+.. _Organization-GetReceiptGenerationProcess:
+.. method:: Organization.GetReceiptGenerationProcess()
+
+  Возвращает :doc:`объект <ReceiptGenerationProcess>`, с помощью которого можно запустить процесс автоматической отправки извещений о получении документов в текущем ящике
+
+
+
+.. _Organization-GetDocumentEventList:
+.. method:: Organization.GetDocumentEventList([AfterEventId])
+
+  :AfterEventId: ``строка`` Идентификатор события после которого будет вычитываться лента событий
+
+  Возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике.
+  Если *AfterEventId* не задан, то события начнут вычитываться с момента создания ящика Диадок
+
+
+
+.. _Organization-CreateSendTask:
+.. method:: Organization.CreateSendTask(FormalDocumentType)
+
+  :DocumentType: ``строка`` тип документа на отправку. |Organization-FormalDocumentType|_
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreateSendTaskFromFile:
+.. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. |Organization-DocumentType|_
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreateSendTaskFromFileRaw:
+.. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. |Organization-DocumentType|_
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл не будет отправлен без изменений. Попытки разбора в объектную модель не будет
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreatePackageSendTask:
+.. method:: Organization.CreatePackageSendTask()
+
+  Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreatePackageSendTask2:
+.. method:: Organization.CreatePackageSendTask2()
+
+  Возвращает :doc:`объект <PackageSendTask2>`, с помощью которого можно отправить пакет :doc:`документов <CustomDocumentToSend>`
+
+
+
+.. _Organization-CreateSendDraftTask:
+.. method:: Organization.CreateSendDraftTask(MessageId)
+
+  :MessageId: ``строка`` идентификатор сообщения черновика
+
+  Создаёт :doc:`задание для отправки черновика документа <SendDraftTask>`
+
+
+
+.. _Organization-SendDraftAsync:
+.. method:: Organization.SendDraftAsync(MessageId)
+
+  :MessageId: ``строка`` идентификатор сообщения черновика
+
+  Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
+
+
+
+.. _Organization-SetAndValidateAddressForCounteragent:
+.. method:: Organization.SetAndValidateAddressForCounteragent(key1S, addressTypeKey, isForeign, zipCode, regionCode, territory, city, locality, street, building, block, apartment)
+
+  :key1S: ``строка`` идентификатор адресной информации
+  :addressTypeKey: ``строка`` тип адресной информации
+  :isForeign: ``строка`` признак того, что адрес является иностранным (за пределами РФ)
+  :zipCode: ``строка`` индекс
+  :regionCode: ``строка`` код региона РФ
+  :territory: ``строка`` район
+  :city: ``строка`` город
+  :locality: ``строка`` населенный пункт
+  :street: ``строка`` улица
+  :building: ``строка`` дом
+  :block: ``строка`` корпус
+  :apartment: ``строка`` квартира
+
+  Валидирует и загружает адресную информацию в хранилище. Возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`
+
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.SetData`
+
+  .. note:: Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
+
+
+
+.. _Organization-GetAddressForCounteragent:
+.. method:: Organization.GetAddressForCounteragent(key1S, AddressTypeKey)
+
+  :key1S: ``строка`` идентификатор адресной информации
+  :addressTypeKey: ``строка`` тип адресной информации
+
+  Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
+
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.GetData`
+
+
+
+.. _Organization-GetSentDocuments:
+.. method:: Organization.GetSentDocuments(OneSId, AsDiadocDocumentId=False)
+
+  :OneSId: ``строка`` идентификаторы учётной системы, перечисленные через ``;``
+  :AsDiadocDocumentId: ``булево`` возвращать идентификаторы документов в Диадок
+
+
+  Возвращает :doc:`коллекцию <Collection>` строк - идентификаторов отправленных документов для запрашиваемых идентификаторов *OneSId*. Тип возвращаемых идентификаторов определяется параметром *AsDiadocDocumentId*:
+  Если *AsDiadocDocumentId* == ``FALSE``, то будут возвращены идентификаторы учётной системы;
+  Если *AsDiadocDocumentId* == ``TRUE``, то будут возвращены идентификаторы документов в Диадок
+
+
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.GetData`
+
+
+
+.. _Organization-SetData:
+.. method:: Organization.SetData(Key, Value)
+
+  :Key: ``строка`` уникальный ключ в хранилище
+  :Value: ``строка`` значение, соответствующее ключу
+
+  Добавляет пару *ключ-значение* в хранилище
+
+
+.. _Organization-GetData:
+.. method:: Organization.GetData(Key)
+
+  :Key: ``строка`` уникальный ключ в хранилище
+
+  Возвращает значение, соответствующее ключу
+
+
+
+.. _Organization-CreateSetExtendedSignerDetailsTask:
+.. method:: Organization.CreateSetExtendedSignerDetailsTask(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Возвращает :doc:`задание для установки параметры подписанта <SetExtendedSignerDetailsTask>`
+
+
+
+.. _Organization-GetExtendedSignerDetails:
+.. method:: Organization.GetExtendedSignerDetails(Thumbprint, IsSeller=false, forCorrection=false)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+  :IsSeller: ``булево`` подписант для титула продавца
+  :forCorrection: ``булево`` подписант для титула корректировочного документа
+
+  Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. Метод может быть запрошен самим пользователем или администратором организации
+
+  .. deprecated:: 5.19.0
+    Используйте :func:`Organization.GetExtendedSignerDetails2`
+
+
+
+.. _Organization-GetExtendedSignerDetails2:
+.. method:: Organization.GetExtendedSignerDetails2(Thumbprint, TitleType)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+  :TitleType: ``строка`` тип титула документа. |Organization-TitleType|_
+
+  Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. . Метод может быть запрошен самим пользователем или администратором организации
+
+
+
+.. _Organization-SendFnsRegistrationMessage:
+.. method:: Organization.SendFnsRegistrationMessage(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Добавление в сообщение ФНС нового сертификата
+
+
+
+.. _Organization-CanSendInvoice:
+.. method:: Organization.CanSendInvoice(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Возвращает булево значение - может ли указанный сертификат использоваться для подписания формализованных документов в текущей организации
+
+
+
+.. _Organization-GetDocumentTypes:
+.. method:: Organization.GetDocumentTypes()
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике организации для отправки
+
+
+
+.. _Organization-GetResolutionRoutes:
+.. method:: Organization.GetResolutionRoutes()
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`маршрутов согласования <Route>`, настроенных в ящике
+
+
+
+.. _Organization-CreateTemplateSendTask:
+.. method:: Organization.CreateTemplateSendTask()
+
+  Возвращает :doc:`задание для отправки шаблонов документов <TemplateSendTask>`
+
+
+
+.. _Organization-GetTemplate:
+.. method:: Organization.GetTemplate(TemplateId)
+
+  :TemplateId: ``строка`` идентификатор шаблона
+
+  Возвращает :doc:`шаблон документа <Template>` по его идентификатору
+
+
+
+.. _Organization-CreateTransformTemplateTask:
+.. method:: Organization.CreateTransformTemplateTask(TemplateId)
+
+  :TemplateId: ``строка`` идентификатор шаблона
+
+  Возвращает :doc:`задание для создания документов из шаблона <TransformTemplateTask>`
+
+
+
+.. _Organization-RecycleDraft:
+.. method:: Organization.RecycleDraft(DraftId)
+
+  :DraftId: ``строка`` идентификатор черновика
+
+  удаляет черновик
+
+
+
+.. _Organization-SaveUserDataXSD:
+.. method:: Organization.SaveUserDataXSD(TitleName, Function, Version, DocflowSide, FilePath)
+
+  :TitleName: ``строка`` название типа документа
+  :Function: ``строка`` функция документа
+  :Version: ``строка`` версия документа
+  :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
+  :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
+
+  Сохраняет описание контента документа на диск
+
+
+
+.. rubric:: Дополнительная информация
+
+.. |Organization-CounteragentStatus| replace:: Возможные значения
+.. _Organization-CounteragentStatus:
+
+============================= ==============================================================================
+Значение *CounteragentStatus* Описание
+============================= ==============================================================================
+IsMyCounteragent              отношение партнерства установлено и действует
+InvitesMe                     контрагент прислал запрос на установление отношения партнерства
+IsInvitedByMe                 в адрес контрагента был отправлен запрос на установление отношения партнерства
+Rejected                      отношение партнерства было разорвано или запрос партнёрства был отклонен
+============================= ==============================================================================
+
+
+.. |Organization-FormalDocumentType| replace:: Возможные значения
+.. _Organization-FormalDocumentType:
+
+=============================== ======================================================================================================
+Значение *FormalDocumentType*   Описание
+=============================== ======================================================================================================
+InvoiceContent                  счет-фактура или исправительный счет-фактура в формате 93 приказа ФНС
+InvoiceCorrectionContent        корректировочный счет-фактура или исправление корректировочного счета-фактуры в формате 93 приказа ФНС
+XmlAcceptanceCertificateContent акт о выполнении работ в формате 172 приказа ФНС
+XmlTorg12Content                ТОРГ-12 в формате 172 приказа ФНС
+UniversalTransferDocument       универсальный передаточный документ в формате 155 приказа ФНС
+UniversalCorrectionDocument     универсальный корректировочный документ в формате 189 приказа ФНС
+UtdTorg12                       формализованный ТОРГ-12 в формате 155 приказа ФНС
+UtdAcceptanceCertificate        формализованный акт о выполнении работ в формате 155 приказа ФНС
+UtdInvoice                      счет-фактура в формате 155 приказа ФНС
+UcdInvoiceCorrection            корректировка счета-фактуры в формате 189 приказа ФНС
+TovTorg                         Торг-12 в формате 551-го приказа ФНС
+XmlAcceptanceCertificate552     акт в формате 552-го приказа ФНС
+=============================== ======================================================================================================
+
+
+.. |Organization-DocumentType| replace:: Возможные значения
+.. _Organization-DocumentType:
+
+=============================== ======================================================================================================
+Значение *DocumentType*         Описание
+=============================== ======================================================================================================
+InvoiceContent                  счет-фактура, исправление счета-фактуры в формате 93 приказа ФНС
+UtdInvoice                      счет-фактура в формате 155 приказа ФНС
+InvoiceCorrectionContent        корректировочный счет-фактура, исправление корректировочного счета-фактуры в формате 93 приказа ФНС
+UcdInvoiceCorrection            корректировка счета-фактуры в формате 189 приказа ФНС
+AcceptanceCertificateContent    неформализованный акт о выполнении работ
+XmlAcceptanceCertificateContent акта в формате 172 приказа ФНС
+UtdAcceptanceCertificate        формализованный акт о выполнении работ в формате 155 приказа ФНС
+XmlAcceptanceCertificate552     акт в формате 552-го приказа ФНС
+Torg12Content                   неформализованный ТОРГ-12
+XmlTorg12Content                Торг-12 в формате 172 приказа ФНС
+UtdTorg12                       формализованный ТОРГ-12 в формате 155 приказа ФНС
+TovTorg                         Торг-12 в формате 551 приказа ФНС
+UniversalTransferDocument       УПД в формате 155 приказа ФНС
+NonformilizedDocumentContent    произвольный неформализованный документ
+ProformaInvoiceContent          неформализованный счета на оплату
+XmlContent                      произвольный формализованный документ в формате xml
+Contract                        договор
+CertificateRegistry             реестр сертификатов
+PriceListAgreement              протокол согласования цены
+ReconciliationAct               акт сверки
+ServiceDetails                  детализация
+=============================== ======================================================================================================
+
+
+.. |Organization-TitleType| replace:: Возможные значения
+.. _Organization-TitleType:
+
+==================== ====================================================
+Значение *TitleType* Описание
+==================== ====================================================
+UtdSeller            титул продавца УПД
+UtdBuyer             титул покупателя УПД
+UcdSeller            титул продавца УКД
+UcdBuyer             титул покупателя УКД
+TovTorg551Seller     титул продавца торг-12 в формате 551-го приказа ФНС
+TovTorg551Buyer      титул покупателя торг-12 в формате 551-го приказа ФНС
+AccCert552Seller     титул продавца акта в формате 552-го приказа ФНС
+AccCert552Buyer      титул покупателя акта в формате 552-го приказа ФНС
+==================== ====================================================
+
+
+.. |Organization-DocflowSide| replace:: Возможные значения
+.. _Organization-DocflowSide:
+
+======================= =================
+Значение *DocflowSide*  Описание
+======================= =================
+Seller                  Титул отправителя
+Buyer                   Титул получателя
+======================= =================
