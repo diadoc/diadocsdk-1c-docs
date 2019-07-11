@@ -1,29 +1,48 @@
 Resolution
 ==========
 
-Объект предназначен для получения информации о состоянии согласования.
+Согласование документа
 
 
-Свойства
---------
+.. rubric:: Свойства
 
--  Author (строка, чтение) - ФИО согласователя
--  CreationDate (дата, чтение) - дата-время создания согласования
--  Comment (строка, чтение) - комментарий к согласованию
--  ResolutionType (строка, чтение) - тип действия по согласованию
--  TargetDepartment (:doc:`Department <Department>`, чтение) - подразделение организации, в которое направлен запрос
--  TargetUser (:doc:`OrganizationUser <OrganizationUser>`, чтение) - пользователь, которому направлен запрос
+:Author:
+  **Строка, чтение** - ФИО согласователя
 
-Свойство ResolutionType принимает одно из следующих значений:
+:CreationDate:
+  **Дата, чтение** - дата-время создания согласования
 
--  "SignatureRequest" - запрос на подпись документа
--  "SignatureApprove" - подписать документ
--  "SignatureDisapprove" - отказать в подписи документа
--  "ResolutionRequest" - запрос на огласование документа
--  "ResolutionApprove" - согласовать документ
--  "ResolutionDisapprove" - отказать в согласовании документа
--  "RevocationApprove" - согласовать аннулирование документа
--  "RevocationDisapprove" - отказать в аннулировании документа
--  "RevocationRequest" - запрос на аннулирование документа
--  "FormalizedSignatureDisapprove" - формализованный отказ в подписи
--  "InvoiceCorrectionRequest" - уведомление об уточнении счета-фактуры
+:Comment:
+  **Строка, чтение** - комментарий к согласованию
+
+:ResolutionType:
+  **Строка, чтение** - тип действия по согласованию. |Resolution-Type|_
+
+:TargetDepartment:
+  :doc:`Department <Department>` **, чтение** - подразделение организации, в которое направлен запрос
+
+:TargetUser:
+  :doc:`OrganizationUser <OrganizationUser>` **, чтение** - пользователь, которому направлен запрос
+
+
+.. rubric:: Дополнительная информация
+
+
+.. |Resolution-Type| replace:: Возможные значения
+.. _Resolution-Type:
+
+============================= ======================================
+Значение *ResolutionType*     Описание
+============================= ======================================
+SignatureRequest              запрос на подпись документа
+SignatureApprove              подпись документа
+SignatureDisapprove           отказ в подписи документа
+ResolutionRequest             запрос согласования документа
+ResolutionApprove             согласование документа
+ResolutionDisapprove          отказ в согласовании документа
+RevocationApprove             подтверждение аннулирования документа
+RevocationDisapprove          отказ в аннулировании документа
+RevocationRequest             запрос аннулирования документа
+FormalizedSignatureDisapprove формализованный отказ в подписи
+InvoiceCorrectionRequest      уведомление об уточнении счета-фактуры
+============================= ======================================

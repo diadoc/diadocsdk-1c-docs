@@ -1,19 +1,39 @@
-﻿ReceiptGenerationProcess
+ReceiptGenerationProcess
 ========================
 
-Объект предназначен запуска процесса автоматического формирования извещений о получении (ИоП) документов в ящике.
+Процесс автоматического формирования технологических документов в ящике
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **IsRun** (булево, чтение) - флаг, говорящий о том, что процесс генерации ИоП запущен.
-- **Errors** (:doc:`Коллекция <Collection>` объектов типа :doc:`ReceiptError <ReceiptError>`) - информация об ошибках, возникших во время выполнения формирования ИоП.
+:IsRun:
+  **Булево, чтение** - процесс запущен
+
+:Errors:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ReceiptError <ReceiptError>` - информация об ошибках, возникших во время работы процесса
 
 
-Методы
-------
+.. rubric:: Методы
 
--  Start() - запускает процесс автоматического формирования и
-   подписания документов.
--  Stop()  - останавливает процесс автоматического формирования
-   и подписания документов
++-----------------------------------+----------------------------------+
+| |ReceiptGenerationProcess-Start|_ | |ReceiptGenerationProcess-Stop|_ |
++-----------------------------------+----------------------------------+
+
+.. |ReceiptGenerationProcess-Start| replace:: Start()
+.. |ReceiptGenerationProcess-Stop| replace:: Stop()
+
+
+
+.. _ReceiptGenerationProcess-Start:
+.. method:: ReceiptGenerationProcess.Start()
+
+  Запускает процесс формирования технологических документов
+
+
+
+.. _ReceiptGenerationProcess-Stop:
+.. method:: ReceiptGenerationProcess.Stop()
+
+  Останавливает процесс формирования технологических документов
+
+
+.. seealso:: :doc:`../HowTo/HowTo_invoice_docflow`

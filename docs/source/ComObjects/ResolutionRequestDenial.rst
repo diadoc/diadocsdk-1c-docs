@@ -1,14 +1,24 @@
 ResolutionRequestDenial
 =======================
 
-Объект представляющий отказ от запроса подписи к документу.
+Отказ в запрощенной резолюции
 
-Свойства
---------
+.. rubric:: Свойства
 
--  InitialRequestId (строка, чтение) - идентификатор сущности объекта :doc:`ResolutionRequest <ResolutionRequest>`
+:InitialRequestId:
+  **Строка, чтение** - идентификатор :doc:`запроса резолюции <ResolutionRequest>`
 
-Методы
-------
+.. rubric:: Методы
 
-- :doc:`Cancel <Cancel-(ResolutionRequestDenial)>` -  отмена отказа от запроса подписи.
++-----------------------------------+
+| |ResolutionRequestDenial-Cancel|_ |
++-----------------------------------+
+
+.. |ResolutionRequestDenial-Cancel| replace:: Cancel()
+
+
+
+.. _ResolutionRequestDenial-Cancel:
+.. method:: ResolutionRequestDenial.Cancel()
+
+  Отменяет отказ запрошенной резолюции

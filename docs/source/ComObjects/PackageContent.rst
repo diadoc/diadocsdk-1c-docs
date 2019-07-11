@@ -1,10 +1,14 @@
 PackageContent
 ==============
 
-Объект предназначен для работы с пакетами контентов (объектов :doc:`BaseContent <BaseContent>`) и является производным объектом от :doc:`BaseContent <BaseContent>`.
+Пакет контентов - объектов :doc:`BaseContent <BaseContent>`.
+Является производным объектом от :doc:`BaseContent <BaseContent>`
 
-.. rubric:: Свойства объекта
 
-:ContentItems: (:doc:`коллекция <Collection>` объектов :doc:`PackageContentItem <PackageContentItem>`, чтение) - коллекция пар "документ-контент", хранящихся в пакете
+.. rubric:: Свойства
 
-:Type: (строка, чтение) - тип контента (возвращает строку "PackageContent")
+:ContentItems:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem <PackageContentItem>` **, чтение** - коллекция пар *документ-контент*, хранящихся в пакете
+
+:Type:
+  **Строка, чтение** - тип контента. Константа ``PackageContent``

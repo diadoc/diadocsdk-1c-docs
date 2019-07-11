@@ -89,16 +89,16 @@ Document
   **Строка, чтение** - текущий статус документа в Диадоке. Перечень возможных значений зависит от типа документа и описан в спецификации соответствующего производного объекта
 
 :ResolutionStatus:
-  :doc:`ResolutionStatus <ResolutionStatus>` **, чтение** - текущий статус согласования документа
+  :doc:`ResolutionStatus <ResolutionStatus>` **, чтение** - текущий статус запрошенного согласования или подписи документа
 
 :Resolutions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Resolution <Resolution>` **, чтение** - история согласования документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Resolution <Resolution>` **, чтение** - история резолюций документа: согласований, подписаний, аннулирований
 
 :ResolutionRequests:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequest <ResolutionRequest>` **, чтение** - коллекция запросов на согласование
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequest <ResolutionRequest>` **, чтение** - история запросов резолюций документа: запросов согласований, запросов подписаний, запросов аннулирований
 
 :ResolutionRequestDenials:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` **, чтение** - коллекция объектов отмены запросов на согласование
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` **, чтение** - коллекция объектов отказов по резолюциям
 
 :RevocationStatus:
   **Строка, чтение** - статус аннулирования документа. |Document-RevocationStatus|_

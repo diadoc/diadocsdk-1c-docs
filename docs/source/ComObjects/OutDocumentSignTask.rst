@@ -37,9 +37,11 @@ OutDocumentSignTask
 
 
 .. _OutDocumentSignTask-AddEncryptCertificate:
-.. method:: OutDocumentSignTask.AddEncryptCertificate()
+.. method:: OutDocumentSignTask.AddEncryptCertificate(Certificate)
 
-  Добавляет :doc:`сертификат <PersonalCertificate>` для шифрования контента и возвращает его в качестве результата
+  :Certificate: :doc:`PersonalCertificate` сертификат КЭП
+
+  Добавляет :doc:`сертификат <PersonalCertificate>` для шифрования контента
 
 
 

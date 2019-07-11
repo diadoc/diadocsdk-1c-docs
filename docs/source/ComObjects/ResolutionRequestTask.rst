@@ -1,45 +1,59 @@
 ResolutionRequestTask
 =====================
 
-Объект предназначен для отправки запроса на согласование.
+Задание для отправки запроса согласования или подписи
 
-Свойства
---------
+.. rubric:: Свойства
 
--  InitialDocumentId (строка, чтение) - идентификатор документа, для
-   которого формируется запрос на согласование, если такой документ единственный
-   (т.е. объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>`
-   объекта :doc:`Document <Document>`)
+:InitialDocumentId:
+  **Строка, чтение** - идентификатор документа, для которого формируется запрос
 
--  InitialDocuments (:doc:`коллекция <Collection>` объектов :doc:`Document <Document>`, чтение) - документы, для
-   которых формируется запрос на согласование.
+  .. deprecated:: 5.3.0
+    Используйте коллекцию *InitialDocuments*
 
-   -  если объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask>`
-      объекта :doc:`Document <Document>`, то **InitialDocuments** вернет единственный документ;
+:InitialDocuments:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Document <Document>` **, чтение** - документы, для которых формируется запрос
 
-   -  если объект ResolutionRequestTask создан методом :doc:`CreateResolutionRequestTask <CreateResolutionRequestTask-(DocumentPackage)>`
-      объекта :doc:`DocumentPackage <DocumentPackage>`, то **InitialDocuments** вернет все документы пакета,
-      для которого был создан запрос.
 
--  ResolutionRequestType (строка, чтение/запись) - тип запроса на
-   согласование
+:ResolutionRequestType:
+  **Строка, чтение/запись** - тип запроса. |ResolutionRequestTask-Type|_
 
--  Comment (строка, чтение/запись) - комментарий к запросу согласования
+:Comment:
+  **Строка, чтение/запись** - комментарий к запросу
 
--  TargetDepartmentId (строка, чтение/запись) - идентификатор
-   подразделения, в которое направлен запрос
+:TargetDepartmentId:
+  **Строка, чтение/запись** - идентификатор подразделения, в которое направлен запрос
 
--  TargetUserId (строка, чтение/запись) - идентификатор пользователя,
-   которому направлен запрос
+:TargetUserId:
+  **Строка, чтение/запись** - идентификатор пользователя, которому направлен запрос
 
-Свойство ResolutionRequestType принимает одно из следующих значений:
 
--  ApprovementRequest - запрос на согласование документа
 
--  SignatureRequest - запрос на подпись документа
+.. rubric:: Методы
 
-Методы
-------
++-------------------------------+
+| |ResolutionRequestTask-Send|_ |
++-------------------------------+
 
--  :doc:`Send <Send-(ResolutionRequestTask)>` - отправить запрос на
-   согласование на сервер Диадок
+.. |ResolutionRequestTask-Send| replace:: Send()
+
+
+
+.. _ResolutionRequestTask-Send:
+.. method:: ResolutionRequestTask.Send()
+
+  Отправить запрос на сервер Диадок
+
+
+
+.. rubric:: Дополнительная информация
+
+.. |ResolutionRequestTask-Type| replace:: Возможные значения
+.. _ResolutionRequestTask-Type:
+
+================================ =============================
+Значение *ResolutionRequestType* Описание
+================================ =============================
+ApprovementRequest               запрос согласования документа
+SignatureRequest                 запрос подписи документа
+================================ =============================

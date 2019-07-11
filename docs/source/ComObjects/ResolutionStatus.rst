@@ -1,21 +1,31 @@
 ResolutionStatus
 ================
 
-Объект предназначен для получения информации о текущем статусе согласования документа
+Информация о статусе запрошенного согласования или подписи документа
 
 
 .. rubric:: Свойства
 
-:Type: (строка, чтение) - тип статуса согласования
-:Author: (:doc:`OrganizationUser <OrganizationUser>`, чтение) - ФИО согласователя
-:TargetDepartment: (объект :doc:`Department <Department>`, чтение) - подразделение организации, в которое направлен запрос
-:TargetUser: (объект :doc:`OrganizationUser <OrganizationUser>`, чтение) - пользователь, которому направлен запрос
+:Type:
+  **Строка, чтение** - тип/статус запроса. |ResolutionStatus-Type|_
+
+:Author:
+  :doc:`OrganizationUser <OrganizationUser>` **, чтение** - автор запроса
+
+:TargetDepartment:
+  :doc:`Department <Department>` **, чтение** - подразделение организации, в которое направлен запрос
+
+:TargetUser:
+  :doc:`OrganizationUser <OrganizationUser>` **, чтение** - пользователь, которому направлен запрос
 
 
 .. rubric:: Дополнительная информация
 
+.. |ResolutionStatus-Type| replace:: Возможные значения
+.. _ResolutionStatus-Type:
+
 ====================== ==========================
-Значение свойства Type Описание
+Значение *Type*        Описание
 ====================== ==========================
 Approved               согласован
 ApprovementRequested   запрошено согласование
@@ -25,5 +35,3 @@ SignatureRequested     запрошена подпись
 None                   документ не согласовывался
 ActionRequested        запрошено действие
 ====================== ==========================
-
-* Список действий, доступных для работы с резолюцией доступен в поле **AvaliableActions** объекта :doc:`ResolutionRequest <ResolutionRequest>`
