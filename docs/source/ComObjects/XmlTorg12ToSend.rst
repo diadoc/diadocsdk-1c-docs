@@ -1,15 +1,19 @@
 XmlTorg12ToSend
 ===============
 
-Объект представляет собой формализованный документ на отправку "ТОРГ-12" в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83283>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Документ на отправку *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83283>`_.
+Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "XmlTorg12")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``XmlTorg12``
 
-- **Comment** (строка, чтение/запись) - комментарий к документу
+:Comment:
+  **Строка, чтение/запись** - комментарий к документу
 
-- **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+:CustomDocumentId:
+  **Строка, чтение/запись** - внешний идентификатор документа
 
-- **Content** (:doc:`Torg12SellerContent <Torg12SellerContent>`, чтение) - содержимое документа
+:Content:
+  :doc:`Torg12SellerContent <Torg12SellerContent>` **, чтение** - содержимое документа

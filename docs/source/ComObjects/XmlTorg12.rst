@@ -1,29 +1,74 @@
 XmlTorg12
 =========
 
-Данный объект предназначен для работы с документами типа "ТОРГ-12 в формате ФНС" и является производным объектом от :doc:`Document <Document>`.
+Документ *формализованный ТОРГ-12*.
+Является производным объектом от :doc:`Document <Document>`
 
 
 .. rubric:: Свойства объекта
 
-:Total: (число, чтение) - cумма по документу
-:Vat: (число, чтение) - cумма НДС по документу
-:Grounds: (строка, чтение) - основание документа
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+:Total:
+  **Число, чтение** - cумма по документу
+
+:Vat:
+  **Число, чтение** - cумма НДС по документу
+
+:Grounds:
+  **Строка, чтение** - основание документа
+
+:Status:
+  **Строка, чтение** - текущий статус документа в Диадоке. |XmlTorg12-Status|_
 
 
-.. rubric:: Методы объекта
+.. rubric:: Методы
 
-* :doc:`GetRejectionComment <GetRejectionComment-(XmlTorg12)>` - возвращает комментарий к отказу в подписании
-* :doc:`GetContent <GetContent-(XmlTorg12)>` - возвращает содержание документа (титул отправителя) в виде объектной модели
-* :doc:`GetBuyerContent <GetBuyerContent-(XmlTorg12)>` - возвращает содержание документа (титул получателя) в виде объектной модели
-* :doc:`SaveRecipientContent <SaveRecipientContent-(XmlTorg12)>` - сохраняет содержимое титула получателя на локальный диск
++----------------------------------+-------------------------+------------------------------+
+| |XmlTorg12-GetRejectionComment|_ | |XmlTorg12-GetContent|_ | |XmlTorg12-GetBuyerContent|_ |
++----------------------------------+-------------------------+------------------------------+
+
+.. |XmlTorg12-GetRejectionComment| replace:: GetRejectionComment()
+.. |XmlTorg12-GetContent| replace:: GetContent()
+.. |XmlTorg12-GetBuyerContent| replace:: GetBuyerContent()
+
+
+.. _XmlTorg12-GetRejectionComment:
+.. method:: XmlTorg12.GetRejectionComment()
+
+  Возвращает строку с комментарием, добавленным при отказе в подписи
+
+  .. deprecated:: 5.20.3
+    Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+
+
+
+.. _XmlTorg12-GetContent:
+.. method:: XmlTorg12.GetContent()
+
+  Возвращает :doc:`представление контента титула продавца <Torg12SellerContent>` документа
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
+
+
+.. _XmlTorg12-GetBuyerContent:
+.. method:: XmlTorg12.GetBuyerContent()
+
+  Возвращает :doc:`представление контента титула покупателя <Torg12BuyerContent>` документа
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
 
 
 .. rubric:: Дополнительная информация
 
+.. |XmlTorg12-Status| replace:: Возможные значения
+.. _XmlTorg12-Status:
+
+
 ========================================= ======================================================================================================
-Значение свойства Status                  Описание
+Значение *Status*                         Описание
 ========================================= ======================================================================================================
 UnknownBilateralDocumentStatus            неизвестное состояние документа
 OutboundWaitingForRecipientSignature      документ исходящий, ответная подпись, либо отказ от ее формирования еще не получены

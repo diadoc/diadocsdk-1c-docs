@@ -175,7 +175,5 @@
   XmlAcceptanceCertificate <XmlAcceptanceCertificate>
   XmlAct552ToSend <XmlAct552ToSend>
   XmlActToSend <XmlActToSend>
-  XmlDocumentContent <XmlDocumentContent>
-  XmlDocumentToSend <XmlDocumentToSend>
   XmlTorg12 <XmlTorg12>
   XmlTorg12ToSend <XmlTorg12ToSend>

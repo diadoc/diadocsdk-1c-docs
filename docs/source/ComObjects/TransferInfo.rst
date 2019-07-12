@@ -25,7 +25,7 @@ TransferInfo
   :doc:`Employee <Employee>` **, чтение** - работник организации продавца
 
 :OtherIssuer:
-  :doc:`OtherIssuer <OtherIssuer>`**, чтение** - иное лицо
+  :doc:`OtherIssuer <OtherIssuer>` **, чтение** - иное лицо
 
 :CreatedThingTransferDate:
   **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору
@@ -55,13 +55,13 @@ TransferInfo
 
 
 .. _TransferInfo-AddTransferBase:
-..method:: TransferInfo.AddTransferBase()
+.. method:: TransferInfo.AddTransferBase()
 
   Добавляет :doc:`новый элемент <TransferBase>` в коллекцию *TransferBases* и возвращает его
 
 
 
 .. _TransferInfo-AddWaybill:
-..method:: TransferInfo.AddWaybill()
+.. method:: TransferInfo.AddWaybill()
 
   Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его

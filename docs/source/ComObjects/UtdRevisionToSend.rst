@@ -1,15 +1,19 @@
 UtdRevisionToSend
 =================
 
-Объект представляет собой формализованный документ на отправку "Исправление универсального передаточного документа" в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`.
+Документ на отправку *Исправление универсального передаточного документа* в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_.
+Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает значение "UniversalTrasnferDocumentRevision")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``UniversalTrasnferDocumentRevision``
 
-- **Comment** (строка, чтение/запись) - комментарий к документу
+:Comment:
+  **Строка, чтение/запись** - комментарий к документу
 
-- **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+:CustomDocumentId:
+  **Строка, чтение/запись** - внешний идентификатор документа
 
-- **Content** (:doc:`UtdSellerContent <UtdSellerContent>`, чтение) - содержимое документа
+:Content:
+  :doc:`UtdSellerContent <UtdSellerContent>` **, чтение** - содержимое документа

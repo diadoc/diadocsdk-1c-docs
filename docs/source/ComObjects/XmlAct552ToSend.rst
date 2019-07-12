@@ -1,15 +1,19 @@
 Act552ToSend
 ============
 
-Объект представляет собой формализованный документ на отправку "Акт о выполнении работ" в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ и является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Документ на отправку *Акт о выполнении работ* в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_.
+Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает значение "XmlAcceptanceCertificate552")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate552``
 
-- **Comment** (строка, чтение/запись) - комментарий к документу
+:Comment:
+  **Строка, чтение/запись** - комментарий к документу
 
-- **CustomDocumentId** (строка, чтение/запись) - внешний идентификатор документа
+:CustomDocumentId:
+  **Строка, чтение/запись** - внешний идентификатор документа
 
-- **Content** (:doc:`Act552SellerContent <Act552SellerContent>`, чтение) - содержимое документа
+:Content:
+  :doc:`Act552SellerContent <Act552SellerContent>` **, чтение** - содержимое документа

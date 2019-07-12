@@ -1,29 +1,73 @@
 XmlAcceptanceCertificate
 ========================
 
-Данный объект предназначен для работы с документами типа "акт о выполнении работ в формате ФНС", и является производным объектом от :doc:`Document <Document>`
+Документ *Формализованный акт о выполнении работ*.
+Является производным объектом от :doc:`Document <Document>`
 
 
-.. rubric:: Свойства объекта
+.. rubric:: Свойства
 
-:Total: (число, чтение) - cумма по документу
-:Vat: (число, чтение) - cумма НДС по документу
-:Grounds: (строка, чтение) - основание документа
-:Status: (строка, чтение) - текущий статус документа в Диадоке
+:Total:
+  **Число, чтение** - cумма по документу
+
+:Vat:
+  **Число, чтение** - cумма НДС по документу
+
+:Grounds:
+  **Строка, чтение** - основание документа
+
+:Status:
+  **Строка, чтение** - текущий статус документа в Диадоке. |XmlAcceptanceCertificate-Status|_
 
 
-.. rubric:: Методы объекта
+.. rubric:: Методы
 
-* :doc:`GetRejectionComment <GetRejectionComment-(XmlAcceptanceCertificate)>` - возвращает комментарий к отказу в подписании
-* :doc:`GetContent <GetContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул исполнителя) в виде объектной модели
-* :doc:`GetBuyerContent <GetBuyerContent-(XmlAcceptanceCertificate)>` - возвращает содержание документа (титул заказчика) в виде объектной модели
-* :doc:`SaveRecipientContent <SaveRecipientContent-(XmlAcceptanceCertificate)>` - сохраняет содержимое титула покупателя на локальный диск
++-------------------------------------------------+----------------------------------------+---------------------------------------------+
+| |XmlAcceptanceCertificate-GetRejectionComment|_ | |XmlAcceptanceCertificate-GetContent|_ | |XmlAcceptanceCertificate-GetBuyerContent|_ |
++-------------------------------------------------+----------------------------------------+---------------------------------------------+
+
+.. |XmlAcceptanceCertificate-GetRejectionComment| replace:: GetRejectionComment()
+.. |XmlAcceptanceCertificate-GetContent| replace:: GetContent()
+.. |XmlAcceptanceCertificate-GetBuyerContent| replace:: GetBuyerContent()
+
+
+.. _XmlAcceptanceCertificate-GetRejectionComment:
+.. method:: XmlAcceptanceCertificate.GetRejectionComment()
+
+  Возвращает строку с комментарием, добавленным при отказе в подписи
+
+  .. deprecated:: 5.20.3
+    Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+
+
+
+.. _XmlAcceptanceCertificate-GetContent:
+.. method:: XmlAcceptanceCertificate.GetContent()
+
+  Возвращает :doc:`представление контента титула продавца <AcceptanceCertificateSellerContent>` документа
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
+
+
+.. _XmlAcceptanceCertificate-GetBuyerContent:
+.. method:: XmlAcceptanceCertificate.GetBuyerContent()
+
+  Возвращает :doc:`представление контента титула покупателя <AcceptanceCertificateBuyerContent>` документа
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.GetDynamicContent`
+
 
 
 .. rubric:: Дополнительная информация
 
+.. |XmlAcceptanceCertificate-Status| replace:: Возможные значения
+.. _XmlAcceptanceCertificate-Status:
+
 ========================================= ======================================================================================================
-Значение свойства Status                  Описание
+Значение *Status*                         Описание
 ========================================= ======================================================================================================
 UnknownBilateralDocumentStatus            неизвестное состояние документа
 OutboundWaitingForRecipientSignature      документ исходящий, ответная подпись, либо отказ от ее формирования еще не получены
