@@ -13,6 +13,8 @@ InvoiceCorrectionContent
 :InvoiceVersion:
   **Строка, чтение/запись** - версия формата счета-фактуры. ``5.01`` или ``5.02``
 
+  .. versionadded:: 4.2.0
+
 :OriginalInvoices:
   :doc:`Коллекция <Collection>` **объектов** :doc:`OriginalInvoice <OriginalInvoice>` **, чтение** - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
 

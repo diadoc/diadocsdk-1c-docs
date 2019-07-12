@@ -3,9 +3,9 @@
 
 .. feed-entry::
    :date: 2019-06-17
-   
+
 - Добавлена поддержка УПД в формате 820 приказа:
-     - Добавлен объект PackageSendTask2
+     - Добавлен объект :doc:`../../ComObjects/PackageSendTask2`
      - Добавлен объект ReplySendTask2
      - Добавлен объект DynamicContent
      - Добавлен метод Organization.SaveUserDataXSD
@@ -14,7 +14,7 @@
      - В объект DocumentTitle добавлено поле HaveUserDataXSD
      - Добавлены методы Document.GetDynamicContent() для представления контента документов в виде DynamicContent
      - Расширен набор статусов подписанта в объекте ExtendedSignerDetailsToPost
-     
+
 - Уменьшено количество различных текстов ошибок. Исправлены опечатки
 
 - Объекту Counteragent добавлено поле IsBranch
@@ -43,9 +43,9 @@
     - CreateSendTask
     - CreateSendTaskFromFile
     - CreateSendTaskFromFileRaw
-    
+
 - внутренние улучшения и оптимизации
-    
+
 - Исправлены ошибки:
     - Медленная работа компоненты при получении документа/списка документов
     - Удален ошибочно добавленный метод CustomDocumentToSend.AddCustomData()

@@ -20,6 +20,8 @@ Counteragent
 
 :Address:
   :doc:`Address <AddressInfo>` **, чтение** - юридический адрес контрагента
+  
+  .. versionadded:: 3.0.8
 
 :Departments:
   :doc:`Коллекция <Collection>` **объектов** :doc:`Department <Department>` **, чтение** - список подразделений первого уровня вложенности

@@ -315,6 +315,8 @@ Organization
 
   Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
 
+  .. versionadded:: 4.1.0
+
 
 
 .. _Organization-SetAndValidateAddressForCounteragent:

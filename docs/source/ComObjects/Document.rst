@@ -46,8 +46,12 @@ Document
 :FromDepartment:
   :doc:`Department <Department>` **, чтение** - подразделение организации, из которого был отправлен документ
 
+  .. versionadded:: 3.0.8
+
 :ToDepartment:
   :doc:`Department <Department>` **, чтение** - подразделение организации, в которое был отправлен документ
+
+  .. versionadded:: 3.0.8
 
 :Timestamp:
   **Дата и время, чтение** - дата и время отправки документа (в текущем часовом поясе)
@@ -139,6 +143,8 @@ Document
 :HasCustomPrintForm:
   **Булево, чтение** - флаг, показывающий, что документ имеет нестандартную печатную форму
 
+  .. versionadded:: 3.0.10
+
 :IsLockedPackage:
   **Булево, чтение** - флаг, показывающий, что документ является частью нередактируемого пакета
 
@@ -168,11 +174,11 @@ Document
 +------------------------------------+---------------------------------------------+---------------------------------------+
 | |Document-GetBase64Content|_       | |Document-ReSetOneSDocumentId|_             | |Document-RemoveFromResolutionRoute|_ |
 +------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetBase64ContentAsync|_  | |Document-AddSubordinateOneSDocumentId|_    |                                       |
+| |Document-GetBase64ContentAsync|_  | |Document-AddSubordinateOneSDocumentId|_    | |Document-SendRevocationRequest|_     |
 +------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetBase64Signature|_     | |Document-RemoveSubordinateOneSDocumentId|_ |                                       |
+| |Document-GetBase64Signature|_     | |Document-RemoveSubordinateOneSDocumentId|_ | |Document-AcceptRevocationRequest|_   |
 +------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetSenderSignature|_     | |Document-CreateResolutionRequestTask|_     |                                       |
+| |Document-GetSenderSignature|_     | |Document-CreateResolutionRequestTask|_     | |Document-RejectRevocationRequest|_   |
 +------------------------------------+---------------------------------------------+---------------------------------------+
 | |Document-GetRecipientSignature|_  | |Document-GetPrintForm|_                    |                                       |
 +------------------------------------+---------------------------------------------+---------------------------------------+
@@ -210,6 +216,9 @@ Document
 .. |Document-CreateCustomDataPatchTask| replace:: CreateCustomDataPatchTask()
 .. |Document-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
 .. |Document-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
+.. |Document-SendRevocationRequest| replace:: SendRevocationRequest()
+.. |Document-AcceptRevocationRequest| replace:: AcceptRevocationRequest()
+.. |Document-RejectRevocationRequest| replace:: RejectRevocationRequest()
 
 .. _Document-SaveContent:
 .. method:: Document.SaveContent(FilePath)
@@ -430,6 +439,8 @@ Document
   Получает печатную форму документа в формате ``.pdf`` и сохраняет её в указанный файл. Если расширение файла отличается от ``.pdf``, то такой файл будет создан/
   Совершается 5 попыток сгенерировать печатную форму. Если за 5 попыток она не получена или, если превышен таймаут, то будет сгенерировано исключение
 
+  .. versionadded:: 3.0.10
+
 
 
 .. _Document-GetDocumentPackage:
@@ -504,6 +515,43 @@ Document
   :Comment: ``строка`` Комментарий, который будет добавлен при снятии документа с маршрута
 
   Снимает документ с маршрута согласования
+
+
+.. _Document-SendRevocationRequest:
+.. method:: Document.SendRevocationRequest([Comment])
+
+  :Comment: ``строка`` комментарий к запросу аннулирования
+
+  Запрашивает аннулирование документа
+
+  .. versionadded:: 3.0.3
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.CreateReplySendTask2`
+
+
+
+.. _Document-AcceptRevocationRequest:
+.. method:: Document.AcceptRevocationRequest()
+
+  Принимает запрос аннулирования
+
+  .. versionadded:: 3.0.3
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.CreateReplySendTask2`
+
+
+
+.. _Document-RejectRevocationRequest:
+.. method:: Document.RejectRevocationRequest()
+
+  Отказывает в аннулировании
+
+  .. versionadded:: 3.0.3
+
+  .. deprecated:: 5.27.0
+    Используйте :func:`Document.CreateReplySendTask2`
 
 
 
