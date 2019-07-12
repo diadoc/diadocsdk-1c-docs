@@ -1,67 +1,110 @@
 Torg12SellerContent
 ===================
 
-Объект предназначен для работы с содержанием формализованного документа "ТОРГ-12" в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
-
-Свойства объекта
-----------------
+Содержание документа *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_.
+Является производным объектом от :doc:`BaseContent <BaseContent>`
 
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "XmlTorg12Content")
+.. rubric:: Свойства
 
-- **Date** (дата, чтение/запись) - дата документа
+:Type:
+  **Строка, чтение** - тип документа. Константа ``XmlTorg12Content``
 
-- **Number** (строка, чтение/запись) - номер документа
+:Date:
+  **Дата, чтение/запись** - дата документа
 
-- **WaybillDate** (дата, чтение/запись) - дата транспортной накладной
+:Number:
+  **Строка, чтение/запись** - номер документа
 
-- **WaybillNumber** (строка, чтение/запись) - номер транспортной накладной
+:WaybillDate:
+  **Дата, чтение/запись** - дата транспортной накладной
 
-- **OperationCode** (строка, чтение/запись) - код вида операции
+:WaybillNumber:
+  **Строка, чтение/запись** - номер транспортной накладной
 
-- **GroundName** (строка, чтение/запись) - наименование документа-основания
+:OperationCode:
+  **Строка, чтение/запись** - код вида операции
 
-- **GroundDate** (дата, чтение/запись) - дата документа-основания
+:GroundName:
+  **Строка, чтение/запись** - наименование документа-основания
 
-- **GroundNumber** (строка, чтение/запись) - номер документа-основания
+:GroundDate:
+  **Дата, чтение/запись** - дата документа-основания
 
-- **Seller** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные продавца
+:GroundNumber:
+  **Строка, чтение/запись** - номер документа-основания
 
-- **Buyer** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные покупателя
+:Seller:
+  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные продавца
 
-- **Shipper** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные грузоотправителя
+:Buyer:
+  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные покупателя
 
-- **ShipperDepartment** (строка, чтение/запись) - структурное подразделение грузоотправителя
+:Shipper:
+  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные грузоотправителя
 
-- **ShipperOkdp** (строка, чтение/запись) - код основного вида деятельности по ОКДП грузоотправителя
+:ShipperDepartment:
+  **Строка, чтение/запись** - структурное подразделение грузоотправителя
 
-- **Consignee** (:doc:`OrganizationInfo <OrganizationInfo>`, чтение) - данные грузополучателя
+:ShipperOkdp:
+  **Строка, чтение/запись** - код основного вида деятельности по ОКДП грузоотправителя
 
-- **Items** (:doc:`коллекция <Collection>` объектов :doc:`Torg12Item <Torg12Item>`, чтение) - табличная часть Торг-12
+:Consignee:
+  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные грузополучателя
 
-- **Totals** (:doc:`Torg12Totals <Torg12Totals>`, чтение) - итоги по накладной
+:Items:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Torg12Item <Torg12Item>` **, чтение** - табличная часть Торг-12
 
-- **Commons** (:doc:`Torg12Commons <Torg12Commons>`, чтение) - общие сведения по накладной
+:Totals:
+  :doc:`Torg12Totals <Torg12Totals>` **, чтение** - итоги по накладной
 
-- **AttachmentSheetsQuantity** (число, чтение/запись) - приложение, количество листов
+:Commons:
+  :doc:`Torg12Commons <Torg12Commons>` **, чтение** - общие сведения по накладной
 
-- **SupplyAllowedBy** (:doc:`Official <Official>`, чтение) - отпуск груза разрешил
+:AttachmentSheetsQuantity:
+  **Число, чтение/запись** - приложение, количество листов
 
-- **ChiefAccountant** (:doc:`Official <Official>`, чтение) - главный бухгалтер
+:SupplyAllowedBy:
+  :doc:`Official <Official>` **, чтение** - отпуск груза разрешил
 
-- **SupplyPerformedBy** (:doc:`Official <Official>`, чтение) - отпуск груза произвел
+:ChiefAccountant:
+  :doc:`Official <Official>` **, чтение** - главный бухгалтер
 
-- **SupplyDate** (дата, чтение/запись) - дата отпуска груза
+:SupplyPerformedBy:
+  :doc:`Official <Official>` **, чтение** - отпуск груза произвел
 
-- **Signer** (:doc:`Signer <Signer>`, чтение) - подписант
+:SupplyDate:
+  **Дата, чтение/запись** - дата отпуска груза
 
-- **AdditionalInfo** (строка, чтение/запись) - дополнительные сведения
+:Signer:
+  :doc:`Signer <Signer>` **, чтение** - подписант
+
+:AdditionalInfo:
+  **Строка, чтение/запись** - дополнительные сведения
 
 
-Методы объекта
---------------
+.. rubric:: Методы
+
++--------------------------------+------------------------------------------+
+| |Torg12SellerContent-AddItem|_ | |Torg12SellerContent-SaveExternalCodes|_ |
++--------------------------------+------------------------------------------+
+
+.. |Torg12SellerContent-AddItem| replace:: AddItem()
+.. |Torg12SellerContent-SaveExternalCodes| replace:: SaveExternalCodes()
 
 
--  :doc:`AddItem <AddItem-(Torg12SellerContent)>` - добавляет строку в табличную часть Торг-12
 
--  :doc:`SaveExternalCodes <SaveExternalCodes>` - сохраняет на сервере Диадока список внешних идентификаторов товаров накладной
+.. _Torg12SellerContent-AddItem:
+.. method:: Torg12SellerContent.AddItem()
+
+  Добавляет :doc:`новый элемент <Torg12Item>` в коллекцию *Items* и возвращает его
+
+
+
+.. _Torg12SellerContent-SaveExternalCodes:
+.. method:: Torg12SellerContent.SaveExternalCodes()
+
+  Сохраняет на сервере Диадока список внешних идентификаторов товаров накладной
+
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.SetData`

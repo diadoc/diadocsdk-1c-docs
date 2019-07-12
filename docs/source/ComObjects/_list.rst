@@ -131,7 +131,6 @@
   SendTask <SendTask>
   SentPackageContent <SentPackageContent>
   ServiceDetailsToSend <ServiceDetailsToSend>
-  SetAndValidateAddressForCounteragent <SetAndValidateAddressForCounteragent>
   SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>
   Shipper <Shipper>
   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>

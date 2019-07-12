@@ -1,32 +1,53 @@
 TovTorgBuyerContent
 ====================
 
-Объект предназначен для работы с содержанием титула покупателя формализованного документа "ТОРГ-12" в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
+Содержание титула покупателя документа *ТОРГ-12* в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_.
+Является производным объектом от :doc:`BaseContent <BaseContent>`
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "TovTorgBuyerTitle")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``TovTorgBuyerTitle``
 
-- **DocumentCreator** (строка, чтение/запись) - составитель файла обмена (информации покупателя)
+:DocumentCreator:
+  **Строка, чтение/запись** - составитель файла обмена (информации покупателя)
 
-- **DocumentCreatorBase** (строка, чтение/запись) - основание, по которому экономический субъект является составителем файла обмена
+:DocumentCreatorBase:
+  **Строка, чтение/запись** - основание, по которому экономический субъект является составителем файла обмена
 
-- **OperationCode** (строка, чтение/запись) - вид операции
+:OperationCode:
+  **Строка, чтение/запись** - вид операции
 
-- **OperationContent** (строка, чтение/запись) - содержание операции
+:OperationContent:
+  **Строка, чтение/запись** - содержание операции
 
-- **AcceptanceDate** (дата, чтение/запись) - дата принятия товаров (результатов выполненных работ) или имущественных прав (подтверждения факта оказания услуг)
+:AcceptanceDate:
+  **Дата, чтение/запись** - дата принятия товаров (результатов выполненных работ) или имущественных прав (подтверждения факта оказания услуг)
 
-- **Employee** (:doc:`Employee <Employee>`, чтение) - работник организации покупателя
+:Employee:
+  :doc:`Employee <Employee>` **, чтение** - работник организации покупателя
 
-- **OtherIssuer** (:doc:`OtherIssuer <OtherIssuer>`, чтение) - иное лицо
+:OtherIssuer:
+  :doc:`OtherIssuer <OtherIssuer>` **, чтение** - иное лицо
 
-- **AdditionalInfo** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
+:AdditionalInfo:
+  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
 
-- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
+:Signers:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты документа
 
-Методы объекта
---------------
 
--  :doc:`AddSigner <AddSigner-(TovTorgBuyerContent)>` - добавляет подписанта
+.. rubric:: Методы
+
++----------------------------------+
+| |TovTorgBuyerContent-AddSigner|_ |
++----------------------------------+
+
+.. |TovTorgBuyerContent-AddSigner| replace:: AddSigner()
+
+
+
+.. _TovTorgBuyerContent-AddSigner:
+.. method:: TovTorgBuyerContent.AddSigner()
+
+  Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его

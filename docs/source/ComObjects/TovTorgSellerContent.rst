@@ -1,60 +1,97 @@
 TovTorgSellerContent
-======================
+====================
 
-Объект предназначен для работы с содержанием формализованного документа "ТОРГ-12" в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_ и является производным объектом от :doc:`BaseContent <BaseContent>`.
+Cодержание документа *ТОРГ-12* в формате приказа `ММВ-7-10/551@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265102>`_.
+Является производным объектом от :doc:`BaseContent <BaseContent>`
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
 
-- **Type** (строка, чтение) - тип документа (возвращает строку "TovTorg")
+:Type:
+  **Строка, чтение** - тип документа. Константа ``TovTorg``
 
-- **Seller** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - продавец
+:Seller:
+  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - продавец
 
-- **Buyer** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - покупатель
+:Buyer:
+  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - покупатель
 
-- **Shipper** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузоотправитель
+:Shipper:
+  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - грузоотправитель
 
-- **Consignee** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - грузополучатель
+:Consignee:
+  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - грузополучатель
 
-- **Carrier** (:doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>`, чтение) - перевозчик
+:Carrier:
+  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - перевозчик
 
-- **Signers** (:doc:`коллекция <Collection>` объектов :doc:`ExtendedSigner <ExtendedSigner>`, чтение) - подписанты
+:Signers:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты
 
-- **Grounds** (:doc:`коллекция <Collection>` объектов :doc:`GroundInfo <GroundInfo>`, чтение) - основания
+:Grounds:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`GroundInfo <GroundInfo>` **, чтение** - основания
 
-- **Currency** (строка, чтение/запись) - валюта (код)
+:Currency:
+  **Строка, чтение/запись** - код валюты
 
-- **CurrencyRate** (строка, чтение/запись) - курс валюты
+:CurrencyRate:
+  **Строка, чтение/запись** - курс валюты
 
-- **DocumentDate** (дата, чтение/запись) - дата составления документа о передаче товара
+:DocumentDate:
+  **Дата, чтение/запись** - дата составления документа о передаче товара
 
-- **DocumentNumber** (строка, чтение/запись) - номер документа о передаче товара
+:DocumentNumber:
+  **Строка, чтение/запись** - номер документа о передаче товара
 
-- **RevisionDate** (дата, чтени/запись) - дата исправления документа о передаче товара
+:RevisionDate:
+  **Дата, чтение/запись** - дата исправления документа о передаче товара
 
-- **RevisionNumber** (строка, чтение/запись) - номер исправления документа о передаче товара
+:RevisionNumber:
+  **Строка, чтение/запись** - номер исправления документа о передаче товара
 
-- **TransferInfo** (:doc:`TovTorgTransferInfo <TovTorgTransferInfo>`, чтение) - сведения о факте передачи (об отпуске груза)
+:TransferInfo:
+  :doc:`TovTorgTransferInfo <TovTorgTransferInfo>` **, чтение** - сведения о факте передачи (об отпуске груза)
 
-- **DocumentCreator** (строка, чтение/запись) - составитель файла информации продавца
+:DocumentCreator:
+  **Строка, чтение/запись** - составитель файла информации продавца
 
-- **DocumentCreatorBase** (строка, чтение/запись) - основание, по которому экономический субъект является составителем файла
+:DocumentCreatorBase:
+  **Строка, чтение/запись** - основание, по которому экономический субъект является составителем файла
 
-- **OperationType** (строка, чтение/запись) - вид операции
+:OperationType:
+  **Строка, чтение/запись** - вид операции
 
-- **GovernmentContractInfo** (строка, чтение/запись) - идентификатор государственного контракта
+:GovernmentContractInfo:
+  **Строка, чтение/запись** - идентификатор государственного контракта
 
-- **Table** (:doc:`TovTorgTable <TovTorgTable>`, чтение) - сведения об ассортименте, количестве, стоимости и другой информации о товарных позициях
+:Table:
+  :doc:`TovTorgTable <TovTorgTable>` **, чтение** - сведения об ассортименте, количестве, стоимости и другой информации о товарных позициях
 
-- **AdditionalInfoId** (:doc:`AdditionalInfoId <AdditionalInfoId>`, чтение) - информационное поле документа
+:AdditionalInfoId:
+  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
 
-- **DocumentName** (строка, чтение/запись) - наименование первичного документа, определенное организацией
-
-
-Методы объекта
---------------
+:DocumentName:
+  **Строка, чтение/запись** - наименование первичного документа, определенное организацией
 
 
--  :doc:`AddSigner <AddSigner-(TovTorgSellerContent)>` - добавляет новый элемент в список подписантов
+.. rubric:: Методы
 
--  :doc:`AddGround <AddGround-(TovTorgSellerContent)>` - добавляет основание в список оснований
++-----------------------------------+-----------------------------------+
+| |TovTorgSellerContent-AddSigner|_ | |TovTorgSellerContent-AddGround|_ |
++-----------------------------------+-----------------------------------+
+
+.. |TovTorgSellerContent-AddSigner| replace:: AddSigner()
+.. |TovTorgSellerContent-AddGround| replace:: AddGround()
+
+
+
+.. _TovTorgSellerContent-AddSigner:
+.. method:: TovTorgSellerContent.AddSigner()
+
+  Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
+
+
+
+.. _TovTorgSellerContent-AddGround:
+.. method:: TovTorgSellerContent.AddGround()
+
+  Добавляет :doc:`новый элемент <GroundInfo>` в коллекцию *Grounds* и возвращает его

@@ -1,18 +1,39 @@
 TransformTemplateTask
 =====================
 
-Объект предназначенный для создания документов на основе шаблонов
+Задания для создания документов на основе шаблонов
 
 
-Свойства
---------
+.. rubric:: Свойства
 
--  **TemplateId** (строка, чтение/запись)
--  **DocumentTransformations** (:doc:`коллекция <Collection>` объектов :doc:`DocumentTransformation <DocumentTransformation>`, чтение)
+:TemplateId:
+  **Строка, чтение/запись** - идентификатор шаблона пакета документов
+
+:DocumentTransformations:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentTransformation <DocumentTransformation>` **, чтение** - информация об идентификаторах документа
 
 
-Методы
-------
+.. rubric:: Методы
 
--  :doc:`AddDocumentTransformation <AddDocumentTransformation>` - добавляет документ для трансформации
--  :doc:`Send <Send-(TransformTemplateTask)>` - создаёт документы на основе шаблонов документов, указанных в **DocumentTransformations**
++----------------------------------------------------+-------------------------------+
+| |TransformTemplateTask-AddDocumentTransformation|_ | |TransformTemplateTask-Send|_ |
++----------------------------------------------------+-------------------------------+
+
+.. |TransformTemplateTask-AddDocumentTransformation| replace:: AddDocumentTransformation()
+.. |TransformTemplateTask-Send| replace:: Send()
+
+
+
+.. _TransformTemplateTask-AddDocumentTransformation:
+.. method:: TransformTemplateTask.AddDocumentTransformation([EntityId])
+
+  :EntityId: ``строка`` идентификтаор сущности документа в шаблоне, который будет превращён в документ
+
+  Добавляет :doc:`новый элемент <DocumentTransformation>` в коллекцию *DocumentTransformations* и возвращает его
+
+
+
+.. _TransformTemplateTask-Send:
+.. method:: TransformTemplateTask.Send()
+
+  Превращает отмеченные сущности шаблона в документы. Возвращает :doc:`DocumentPackage`

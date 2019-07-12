@@ -3,27 +3,50 @@ TovTorgTransferInfo
 
 Сведения о факте передачи (об отпуске груза)
 
-Свойства объекта
-----------------
+.. rubric:: Свойства
+
+:OperationInfo:
+  **Строка, чтение/запись** - содержание операции
+
+:TransferDate:
+  **Дата, чтение/запись** - дата отгрузки
+
+:Attachment:
+  **Строка, чтение/запись** - приложение, сертификаты и прочее
+
+:Waybills:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill <Waybill>` **, чтение** - транспортны накладные
+
+:Employee:
+  :doc:`Employee <Employee>` **, чтение** - работник организации продавца
+
+:OtherIssuer:
+  :doc:`OtherIssuer <OtherIssuer>` **, чтение** - иное лицо
+
+:StructedAdditionalInfos:
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAditionalInfo <StructedAdditionalInfo>` **, чтение** - информационные поля документа
 
 
-- **OperationInfo** (строка, чтение/запись) - содержание операции
 
-- **TransferDate** (дата, чтение/запись) - дата отгрузки
+.. rubric:: Методы
 
-- **Attachment** (строка, чтение/запись) - приложение, сертификаты и прочее
++-----------------------------------+--------------------------------------------------+
+| |TovTorgTransferInfo-AddWaybill|_ | |TovTorgTransferInfo-AddStructedAdditionalInfo|_ |
++-----------------------------------+--------------------------------------------------+
 
-- **Waybills** (:doc:`коллекция <Collection>` объектов :doc:`Waybill <Waybill>`) - транспортны накладные
+.. |TovTorgTransferInfo-AddWaybill| replace:: AddWaybill()
+.. |TovTorgTransferInfo-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
 
-- **Employee** (:doc:`Employee <Employee>`) - работник организации продавца
 
-- **OtherIssuer** (:doc:`OtherIssuer <OtherIssuer>`) - иное лицо
 
-- **StructedAdditionalInfos** (:doc:`коллекция <Collection>` объектов :doc:`StructedAditionalInfo <StructedAdditionalInfo>`) - информационные поля документа
+.. _TovTorgTransferInfo-AddWaybill:
+.. method:: TovTorgTransferInfo.AddWaybill()
 
-Методы объекта
---------------
+  Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его
 
--  :doc:`AddWaybill <AddWaybill-(TovTorgTransferInfo)>` - добавляет новый элемент в список транспортных накладных
 
--  :doc:`AddStructedAdditionalInfo <AddStructedAdditionalInfo-(TovTorgTransferInfo)>` - добавляет новый элемент в список дополнительных сведений
+
+.. _TovTorgTransferInfo-AddStructedAdditionalInfo:
+.. method:: TovTorgTransferInfo.AddStructedAdditionalInfo()
+
+  Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
