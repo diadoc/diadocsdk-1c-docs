@@ -23,6 +23,8 @@ InvoiceCorrectionItem
 :StructedAdditionalInfos:
   :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение/запись** - дополнительные сведения
 
+  .. versionadded:: 5.0.0
+
 
 
 .. rubric:: Методы

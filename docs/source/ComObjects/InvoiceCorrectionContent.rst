@@ -18,6 +18,8 @@ InvoiceCorrectionContent
 :OriginalInvoices:
   :doc:`Коллекция <Collection>` **объектов** :doc:`OriginalInvoice <OriginalInvoice>` **, чтение** - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
 
+  .. versionadded:: 5.0.0
+
 :InvoiceCorrectionDate:
   **Дата, чтение/запись** - дата КСФ
 
@@ -54,6 +56,8 @@ InvoiceCorrectionContent
 :StructedAdditionalInfos:
   :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
 
+  .. versionadded:: 5.0.0
+
 
 
 .. rubric:: Методы
@@ -76,7 +80,7 @@ InvoiceCorrectionContent
 
 
 .. _InvoiceCorrectionContent-AddOriginalInvoice:
-.. method:: InvoiceCorrectionContent.AddPaymentDocument()
+.. method:: InvoiceCorrectionContent.AddOriginalInvoice()
 
   Добавляет :doc:`новый элемент <OriginalInvoice>` в коллекцию *OriginalInvoices* и возвращает его
 

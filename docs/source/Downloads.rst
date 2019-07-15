@@ -1,7 +1,7 @@
 ﻿Ссылки для скачивания
 =====================
 
-`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/experiment/index.rss>`_
 
 
 .. rubric:: Текущие версии внешней компоненты
