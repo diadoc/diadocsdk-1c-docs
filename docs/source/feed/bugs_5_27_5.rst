@@ -5,8 +5,8 @@
    :date: 2019-07-15
 
 Исправлены ошибки:
-  - Методы :doc:`Document.GetRecipientSignature <../Document>` и :doc:`Document.GetBase64Signare("Buyer") <../Document>` не возвращали подпись под двухтитульными документами со стороны подписанта
-  - У объекта :doc:`../Organization` в COM версии компоненты отсутствовал метод :doc:`../SaveUserDataXSD`
+  - Методы :doc:`Document.GetRecipientSignature <Document>` и :doc:`Document.GetBase64Signare("Buyer") <Document>` не возвращали подпись под двухтитульными документами со стороны подписанта
+  - У объекта :doc:`Organization` в COM версии компоненты отсутствовал метод :doc:`SaveUserDataXSD`
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
 
