@@ -1,16 +1,18 @@
 Релиз 5.20.0
-=============
+============
 
 .. feed-entry::
    :date: 2017-12-25
 
 - добавлена поддержка работы с "документом любого типа":
     
-    - поддержка типа документа "Document" для методов :doc:`AddDocumentFromFile <AddDocumentFromFile>` и :doc:`AddDocumentFromFileRaw <AddDocumentFromFileRaw>` объекта :doc:`PackageSendTask <PackageSendTask>`
+    - поддержка типа документа "Document" для методов AddDocumentFromFile и AddDocumentFromFileRaw объекта PackageSendTask
 
-    - метод :doc:`GetDocumentTypes <GetDocumentTypes>` - возвращает описание типов документов, доступных в ящике
+    - метод GetDocumentTypes - возвращает описание типов документов, доступных в ящике
 
-- :doc:`Исправлены ошибки <Bugs_5_20>`
+- Исправлены ошибки:
+    - исключение при присвоении значения "5.02" свойству InvoiceContent.InvoiceVersion
+    - если сертификат не содержит ИНН, исключение при попытке чтения PersonalCertificate.INN
 
 
 `История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_

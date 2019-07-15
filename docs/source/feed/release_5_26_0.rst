@@ -5,12 +5,12 @@
    :date: 2019-02-05
 
 - Добавлена возможность постановки/снятия документов с маршрута согласования:
-    - у объекта :doc:`Organization <Organization>` появился метод :doc:`GetResolutionRoutes() <GetResolutionRoutes>`
-    - появился объект :doc:`маршрута согласования <Route>`
-    - у объекта :doc:`Document <Document>` появилось поле RouteId
-    - у объектов :doc:`Document <Document>` и :doc:`DocumentPackage <DocumentPackage>` появились методы :doc:`AssignToResolutionRoute(RouteId[, Comment]) <AssignToResolutionRoute>` и :doc:`RemoveFromResolutionRoute(RouteId[, Comment]) <RemoveFromResolutionRoute>`
+    - у объекта Organization появился метод GetResolutionRoutes
+    - появился объект маршрута согласования
+    - у объекта Document появилось поле RouteId
+    - у объектов Document и DocumentPackage появились методы AssignToResolutionRoute и RemoveFromResolutionRoute
 
-- Методы :doc:`ReplySendTask.ValidateContent() <ValidateContent-(ReplySendTask)>` и :doc:`SendTask.ValidateContent() <ValidateContent-(SendTask)>` всегда в результате содержат оповещение, что метод устарел
+- Методы ReplySendTask.ValidateContent и SendTask.ValidateContent всегда в результате содержат оповещение, что метод устарел
 - Асинхронные методы часто теряли описание ошибки, возвращая "Unknown exception"
 
 

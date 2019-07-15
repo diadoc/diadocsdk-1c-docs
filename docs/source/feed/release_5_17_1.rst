@@ -4,7 +4,7 @@
 .. feed-entry::
    :date: 2017-05-18
 
-- Поддержка документов старых типов с упд-контентом(UtdInvoice, UtdAcceptanceCertificate, UtdTorg12) в :doc:`AddDocumentFromFileRaw` и :doc:`CreateSendTaskFromFileRaw`
+- Поддержка документов старых типов с упд-контентом(UtdInvoice, UtdAcceptanceCertificate, UtdTorg12) в AddDocumentFromFileRaw и CreateSendTaskFromFileRaw
 - Поддержка шифрования InvoiceCorrection и InvoiceCorrectionRevision
 
 Исправлены ошибки:
@@ -12,6 +12,6 @@
     - генерация корректных метаданных для шифрованных документов
     - корректное получение титула покупателя для шифрованных документов - методы GetBuyerContent
 
-`История изменений <http://diadocsdk-1c.readthedocs.io/ru/dev/History.html>`_
+`История изменений <http://diadocsdk-1c.readthedocs.io/ru/latest/History.html>`_
 
-`Релиз <http://diadocsdk-1c.readthedocs.io/ru/dev/Downloads.html>`_
+`Релиз <http://diadocsdk-1c.readthedocs.io/ru/latest/Downloads.html>`_
