@@ -9,8 +9,11 @@ import shlex
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.newsfeed'
 ]
+
+sys.path.append(os.path.abspath('_extensions'))
+#extensions_path = ['_extensions']
+extensions.append('custom_newsfeed')
 
 source_suffix = '.rst'
 master_doc = 'index'
