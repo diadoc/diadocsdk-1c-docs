@@ -4,12 +4,13 @@
 .. feed-entry::
   :date: 2015-07-03
 
-.. versionadded:: 5.0.0
+.. rubric:: Добавлено
 
   * Реализованы модели для работы с документами *Счёт-фактура* и *Корректировочный счёт-фактура* в версии формата ``5.02``
 
 
-.. versionchanged:: 5.0.0
+
+.. rubric:: Изменено
 
   * Реквизит **AdditionalInfo** в объектах :doc:`../../ComObjects/InvoiceContent`, :doc:`../../ComObjects/InvoiceCorrectionContent`, :doc:`../../ComObjects/InvoiceItem`, :doc:`../../ComObjects/InvoiceCorrectionItem` изменён на **StructedAdditionalInfos** - :doc:`коллекцию <../../ComObjects/Collection>` объектов :doc:`../../ComObjects/StructedAdditionalInfo`
   * Реквизиты **Date**, **Number**, **InvoiceRevisionDate**, **InvoiceRevisionNumber** объекта :doc:`../../ComObjects/InvoiceCorrectionContent` объединены в реквизит **OriginalInvoices** - :doc:`коллекцию <../../ComObjects/Collection>` объектов :doc:`../../ComObjects/OriginalInvoice`

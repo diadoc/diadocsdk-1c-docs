@@ -4,12 +4,14 @@
 .. feed-entry::
   :date: 2015-10-28
 
-.. versionchanged:: 5.1.0
+.. rubric:: Изменено
 
-  * Поле **Quantity** объекта :doc:`../../ComObjects/AcceptanceCertificateItem` может принимать отрицательные значения
-  * В поле **CustomsDeclarationNumbers** объекта :doc:`../../ComObjects/InvoiceItem` можно указать несколько ГТД
-  * Добавлена поддержка нулевых сумм для документов Торг-12
+* Поле **Quantity** объекта :doc:`../../ComObjects/AcceptanceCertificateItem` может принимать отрицательные значения
+* В поле **CustomsDeclarationNumbers** объекта :doc:`../../ComObjects/InvoiceItem` можно указать несколько ГТД
+* Добавлена поддержка нулевых сумм для документов Торг-12
 
-*Исправлены ошибки:*
+
+
+.. rubric:: Исправлено
 
 * Различные ошибки при вызове :func:`AcquireCounteragentTask.SendAsync()`
