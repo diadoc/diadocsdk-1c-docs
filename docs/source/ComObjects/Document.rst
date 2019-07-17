@@ -114,10 +114,14 @@ Document
   **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. |Document-RecipientResponseStatus|_
 
 :RoamingNotificationStatus:
-  **Строка, чтение** - статус передачи документа через роуминг. |Document-RoamingNotificationStatus|
+  **Строка, чтение** - статус передачи документа через роуминг. |Document-RoamingNotificationStatus|_
+
+  .. versionadded:: 5.3.1
 
 :RoamingNotificationStatusDescription:
-  **Строка, чтение** - описание статуса передачи документа через роуминг.
+  **Строка, чтение** - описание статуса передачи документа через роуминг
+
+  .. versionadded:: 5.3.1
 
 :CustomData:
   :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem <CustomDataItem>` **, чтение** - коллекция элементов "ключ-значение"
@@ -148,11 +152,15 @@ Document
 :IsLockedPackage:
   **Булево, чтение** - флаг, показывающий, что документ является частью нередактируемого пакета
 
+  .. versionadded:: 5.3.0
+
 :IsRead:
   **Булево, чтение** - флаг, показывающий, что документ был прочитан сотрудником организации
 
 :IsEncryptedContent:
   **Булево, чтение** - флаг, показывающий, что содержимое документа зашифровано
+
+  .. versionadded:: 5.14.0
 
 
 .. rubric:: Методы
@@ -447,6 +455,8 @@ Document
 .. method:: Document.GetDocumentPackage()
 
   Возвращает :doc:`пакет документов <DocumentPackage>`, в котором находится документ
+
+  .. versionadded:: 5.3.0
 
   .. note:: понятие пакета в терминах компоненты и в терминах `HTTP-API <http://api-docs.diadoc.ru/ru/latest/index.html>`_ или Веб-интерфейса разные.
     В данном случае в пакете будут содержаться только те документы, у которых LetterId/MessageId (первая половина DocumentId) совпадает со значением в исходном документе.

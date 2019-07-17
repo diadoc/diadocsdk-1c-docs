@@ -9,4 +9,3 @@
   :caption: История обновлений
 
   release_info/5_0_0
-  release_info/5_1_0

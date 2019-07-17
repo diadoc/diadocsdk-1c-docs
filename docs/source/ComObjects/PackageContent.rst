@@ -4,6 +4,8 @@ PackageContent
 Пакет контентов - объектов :doc:`BaseContent <BaseContent>`.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+.. versionadded:: 5.3.0
+
 
 .. rubric:: Свойства
 

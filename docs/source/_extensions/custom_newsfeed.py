@@ -265,7 +265,6 @@ def process_feed(app, doctree, fromdocname):
                     rss_item_description = app.builder.render_partial(
                                                     rss_item_description)['body']
                     rss_item_date = meta['date']
-                    print(rss_item_link)
                     rss_item = RSSItem(rss_item_title, rss_item_link,
                                        rss_item_description, rss_item_date)
                     rss_items.append(rss_item)

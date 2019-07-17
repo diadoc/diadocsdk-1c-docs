@@ -1,0 +1,21 @@
+5.18.0
+------
+
+.. feed-entry::
+  :date: 2017-05-29
+
+.. rubric:: Добавлено
+
+* Поддержка корректировочных СФ с УКД-контентом
+* Добавлено свойство **FnsParticipantId** в объект :doc:`../../ComObjects/OrganizationInfo`
+* Добавлена возможность задавать данных подписантов при отправке черновиков документов:
+
+  * Добавлен объект :doc:`../../ComObjects/SendDraftTask`
+  * Добавлен метод :func:`Organization.CreateSendDraftTask`
+
+
+.. rubric:: Изменено
+
+* Устаревшими считаются:
+
+  * :func:`Organization.SendDraftAsync`

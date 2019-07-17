@@ -20,7 +20,7 @@ Counteragent
 
 :Address:
   :doc:`Address <AddressInfo>` **, чтение** - юридический адрес контрагента
-  
+
   .. versionadded:: 3.0.8
 
 :Departments:
@@ -55,6 +55,8 @@ Counteragent
 
 :IsRoaming:
   **Булево, чтение** - признак того, что организация работает через роуминг, то есть подключена к другому оператору ЭДО
+
+  .. versionadded:: 5.4.0
 
 :IsLiquidated:
   **Булево, чтение** - признак того, что организация ликвидирована
@@ -106,6 +108,8 @@ Counteragent
 .. method:: Counteragent.GetCertificates()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>` контрагента. Доступно для организаций с возможностью отправки зашифрованных документов
+
+  .. versionadded:: 5.0.0
 
 
 

@@ -3,6 +3,8 @@ OrganizationUser
 
 Информация о пользователе организации
 
+.. versionadded:: 5.6.0
+
 .. rubric:: Свойства
 
 :Id:

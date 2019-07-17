@@ -3,6 +3,8 @@ CloudCertificateInfo
 
 Данные о Контур.Сертификате пользователя
 
+.. versionadded:: 5.2.0
+
 .. rubric:: Свойства
 
 :Thumbprint:

@@ -1,0 +1,10 @@
+5.10.3
+------
+
+.. feed-entry::
+  :date: 2016-12-12
+
+.. rubric:: Исправлено
+
+* :func:`SendTask.ValidateContent` допускает 5 знаков в дробной части числа для поля **Quantity** в :doc:`../../ComObjects/AcceptanceCertificateItem`
+* :func:`Organization.GetExtendedSignerDetails` теперь возвращает :doc:`../../ComObjects/ExtendedSignerDetails`

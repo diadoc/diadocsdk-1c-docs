@@ -57,6 +57,8 @@ Connection
 
   Возвращает :doc:`объект <CloudSignTask>`, с помощью которого можно подписать документы Контур.Сертификатом
 
+  .. versionadded:: 5.2.0
+
 
 
 .. _Connection-GetCloudCertificates:
@@ -64,12 +66,15 @@ Connection
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
 
+  .. versionadded:: 5.2.0
 
 
 .. _Connection-GetMyUser:
 .. method:: Connection.GetMyUser()
 
   Возвращает :doc:`информацию <User>` об авторизованном пользователе
+
+  .. versionadded:: 5.6.0
 
 
 

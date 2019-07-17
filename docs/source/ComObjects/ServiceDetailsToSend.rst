@@ -4,6 +4,8 @@ ServiceDetailsToSend
 Документ на отправку *Детализация*.
 Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
+.. versionadded:: 5.5.0
+
 .. rubric:: Свойства
 
 :Type:

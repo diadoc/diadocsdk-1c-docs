@@ -4,6 +4,8 @@ BaseContent
 Базовое представление контента ответных действий по документу.
 Для получение контента документов используйте объект :doc:`DynamicContent`, получаемый методом :func:`Document.GetDynamicContent`
 
+.. versionadded:: 5.2.0
+
 
 .. rubric:: Свойства объекта
 

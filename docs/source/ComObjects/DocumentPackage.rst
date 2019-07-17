@@ -3,6 +3,8 @@ DocumentPackage
 
 Инфомация о пакете документов
 
+.. versionadded:: 5.3.0
+
 
 .. rubric:: Свойства
 

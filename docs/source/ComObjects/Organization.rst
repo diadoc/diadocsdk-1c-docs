@@ -251,8 +251,8 @@ Organization
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
 
-  .. deprecated:: 5.27.0
-    Используйте :func:`Organization.CreatePackageSendTask2`
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.CreatePackageSendTask`
 
 
 
@@ -264,8 +264,8 @@ Organization
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
 
-  .. deprecated:: 5.27.0
-    Используйте :func:`Organization.CreatePackageSendTask2`
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.CreatePackageSendTask`
 
 
 
@@ -277,8 +277,8 @@ Organization
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл не будет отправлен без изменений. Попытки разбора в объектную модель не будет
 
-  .. deprecated:: 5.27.0
-    Используйте :func:`Organization.CreatePackageSendTask2`
+  .. deprecated:: 5.5.0
+    Используйте :func:`Organization.CreatePackageSendTask`
 
 
 

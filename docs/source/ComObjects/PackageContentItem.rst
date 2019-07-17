@@ -3,6 +3,9 @@ PackageContentItem
 
 Пара *документ-контент*
 
+.. versionadded:: 5.3.0
+
+
 
 .. rubric:: Свойства
 
