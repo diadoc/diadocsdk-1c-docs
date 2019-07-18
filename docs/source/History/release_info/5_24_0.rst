@@ -1,0 +1,22 @@
+5.24.0
+------
+
+.. feed-entry::
+  :date: 2018-10-29
+
+.. rubric:: Добавлено
+
+* Поддержка работы с *Шаблоном документов*:
+
+  * Добавлен объект :doc:`../../ComObjects/Template`
+  * Добавлен объект :doc:`../../ComObjects/TemplateSendTask`
+  * Добавлен объект :doc:`../../ComObjects/TemplateToSend`
+  * Добавлен объект :doc:`../../ComObjects/TransformTemplateTask`
+  * Добавлен объект :doc:`../../ComObjects/Entity`
+  * Добавлен метод :func:`Organization.CreateTransformTemplateTask`
+  * Добавлен метод :func:`Organization.CreateTemplateSendTask`
+
+.. rubric:: Исправлено
+
+* Методы :func:`Organization.GetExtendedSignerDetails` и :func:`SetExtendedSignerDetailsTask.Send` вызывали ошибку ``Could not parse documentTitleType``
+* Отказ в подписи по любым документам формуруется :doc:`формализованным <../../ComObjects/XmlSignatureRejection>`
