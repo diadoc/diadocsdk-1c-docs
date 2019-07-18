@@ -25,7 +25,7 @@
 
 .. rubric:: Исправлено
 
-* В COM-компоненте объект :doc:`../../ComObjects/DocumentTask` не находил в ящике *ИУПД*
+* В COM-компоненте объект :doc:`../../ComObjects/DocumentsTask` не находил в ящике *ИУПД*
 * У объектов :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/UtdRevision` свойство **Type** было пустым
 * В объекте :doc:`../../ComObjects/InvoiceContent` указание значений по умолчанию в **InvoiceRevisionDate** или **InvoiceRevisionNumber** изменяло тип документа на *ИСФ*
 * Исправлены значения свойства **Type** объекта :doc:`../../ComObjects/DocumentEvent` для событий документов *УПД* и *УКД*

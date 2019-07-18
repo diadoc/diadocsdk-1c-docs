@@ -1,0 +1,10 @@
+5.18.4
+------
+
+.. feed-entry::
+  :date: 2017-08-02
+
+
+.. rubric:: Исправлено
+
+* Метод :func:`Organization.GetCounteragnetById` мог приводить к AppCrash, если ящик контрагента в Диадок был удалён
