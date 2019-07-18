@@ -16,7 +16,10 @@
   * Добавлен метод :func:`Organization.CreateTransformTemplateTask`
   * Добавлен метод :func:`Organization.CreateTemplateSendTask`
 
+.. rubric:: Изменено
+
+* Отказ в подписи по любым документам формируется :doc:`формализованным <../../ComObjects/FormalizedRejectionContent>`
+
 .. rubric:: Исправлено
 
 * Методы :func:`Organization.GetExtendedSignerDetails` и :func:`SetExtendedSignerDetailsTask.Send` вызывали ошибку ``Could not parse documentTitleType``
-* Отказ в подписи по любым документам формуруется :doc:`формализованным <../../ComObjects/XmlSignatureRejection>`

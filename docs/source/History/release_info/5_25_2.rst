@@ -1,0 +1,25 @@
+5.25.2
+------
+
+.. feed-entry::
+  :date: 2018-12-28
+
+.. rubric:: Добавлено
+
+* Добавлено свойство **Version** в объект :doc:`../../ComObjects/Document`
+* Добавлено свойство **CreatedDocumentIds** в объект :doc:`../../ComObjects/Entity`
+* Поддержаны новые версии документов (см. `https://www.diadoc.ru/blog/7840`_)
+
+.. rubric:: Изменено
+
+* Помечены устаревшими:
+
+  * Поле **AttachmentVersion** объекта :doc:`../../ComObjects/Document`
+
+.. rubric:: Исправлено
+
+* Метод :func:`Document.GetContent` вызывал ошибку ``Unable to detect document type with submitted versionFilters...``
+* Методы :func:`Document.CreateReplySendTask` и :func:`DocumentPackage.CreateReplySendTask` с типом ``RejectDocument`` возвращали COM-объект неправильного типа
+* Не сериализовалось свойство **EditingSettingId** объекта :doc:`../../ComObjects/TemplateToSend`
+* AppCrash при десериализации объекта :doc:`../../ComObjects/Department` в случае, если у подразделения не указан адрес
+* Невозможно подписать или отказать в подписи по документам в закрытом пакете, если в нём есть документы без запроса подписи
