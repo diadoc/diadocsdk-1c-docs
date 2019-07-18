@@ -19,3 +19,6 @@
 * Устаревшими считаются:
 
   * :func:`Organization.SendDraftAsync`
+  * :func:`ReplySendTask.ValidateContent`
+  * :func:`SendTask.ValidateContent`
+  * :func:`PackageSendTask.ValidateContent`
