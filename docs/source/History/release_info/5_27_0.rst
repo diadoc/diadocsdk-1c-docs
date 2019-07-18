@@ -38,7 +38,7 @@
 
   * Объект :doc:`../../ComObjects/PackageSendTask`
   * Объект :doc:`../../ComObjects/ReplySendTask`
-  * :func:`Organziation.CreatePackageSendTask`
+  * :func:`Organization.CreatePackageSendTask`
   * :func:`Document.CreateReplySendTask`
   * :func:`DocumentPackage.CreateReplySendTask`
   * :func:`Contract.Accept`

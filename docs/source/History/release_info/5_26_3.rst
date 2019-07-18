@@ -20,7 +20,7 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Organization.GetDocumentEventList` мог приводить к ошибке ``##100[Ошибка сервера Диадок]code:400, HTTP error: Could not parse messageId query param:.``
 .. текст ошибки был именно с точкой на конце
 
+* Метод :func:`Organization.GetDocumentEventList` мог приводить к ошибке ``##100[Ошибка сервера Диадок]code:400, HTTP error: Could not parse messageId query param:.``
 * Метод :func:`Organization.GetDocumentEventList` не возвращал событий, если в ящике было создано много черновиков подряд

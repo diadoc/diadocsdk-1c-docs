@@ -1,11 +1,102 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-`RSS <http://diadocsdk-1c.readthedocs.io/ru/experiment/History/release_info/index.rss>`_
+`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/experiment/History/release_info/index.rss>`_
 
 
 .. toctree::
   :name: History
   :caption: История обновлений
+  :reversed:
 
   release_info/5_0_0
+  release_info/5_1_0
+  release_info/5_1_1
+  release_info/5_1_4
+  release_info/5_1_6
+  release_info/5_2_0
+  release_info/5_2_2
+  release_info/5_2_3
+  release_info/5_2_4
+  release_info/5_3_0
+  release_info/5_3_1
+  release_info/5_4_0
+  release_info/5_4_1
+  release_info/5_4_2
+  release_info/5_5_0
+  release_info/5_5_1
+  release_info/5_5_3
+  release_info/5_6_0
+  release_info/5_6_1
+  release_info/5_6_2
+  release_info/5_7_0
+  release_info/5_8_0
+  release_info/5_9_0
+  release_info/5_10_0
+  release_info/5_10_1
+  release_info/5_10_2
+  release_info/5_10_3
+  release_info/5_10_4
+  release_info/5_14_0
+  release_info/5_14_1
+  release_info/5_15_0
+  release_info/5_16_0
+  release_info/5_16_1
+  release_info/5_17_0
+  release_info/5_17_1
+  release_info/5_18_0
+  release_info/5_18_1
+  release_info/5_18_2
+  release_info/5_18_3
+  release_info/5_18_4
+  release_info/5_18_5
+  release_info/5_18_6
+  release_info/5_18_7
+  release_info/5_19_0
+  release_info/5_19_1
+  release_info/5_19_2
+  release_info/5_19_3
+  release_info/5_19_4
+  release_info/5_20_0
+  release_info/5_20_1
+  release_info/5_20_2
+  release_info/5_20_3
+  release_info/5_21_0
+  release_info/5_21_1
+  release_info/5_21_2
+  release_info/5_21_3
+  release_info/5_21_4
+  release_info/5_21_5
+  release_info/5_21_6
+  release_info/5_21_7
+  release_info/5_21_8
+  release_info/5_21_9
+  release_info/5_21_10
+  release_info/5_22_0
+  release_info/5_22_1
+  release_info/5_22_2
+  release_info/5_22_3
+  release_info/5_22_4
+  release_info/5_22_5
+  release_info/5_23_0
+  release_info/5_24_0
+  release_info/5_24_1
+  release_info/5_24_2
+  release_info/5_25_0
+  release_info/5_25_1
+  release_info/5_25_2
+  release_info/5_25_3
+  release_info/5_25_4
+  release_info/5_26_0
+  release_info/5_26_1
+  release_info/5_26_2
+  release_info/5_26_3
+  release_info/5_26_4
+  release_info/5_26_5
+  release_info/5_26_6
+  release_info/5_27_0
+  release_info/5_27_1
+  release_info/5_27_2
+  release_info/5_27_3
+  release_info/5_27_4
+  release_info/5_27_5

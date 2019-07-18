@@ -8,13 +8,15 @@
 
 * Добавлено свойство **Version** в объект :doc:`../../ComObjects/Document`
 * Добавлено свойство **CreatedDocumentIds** в объект :doc:`../../ComObjects/Entity`
-* Поддержаны новые версии документов (см. `https://www.diadoc.ru/blog/7840`_)
+* Поддержаны новые версии документов (см. https://www.diadoc.ru/blog/7840)
+
 
 .. rubric:: Изменено
 
 * Помечены устаревшими:
 
   * Поле **AttachmentVersion** объекта :doc:`../../ComObjects/Document`
+
 
 .. rubric:: Исправлено
 

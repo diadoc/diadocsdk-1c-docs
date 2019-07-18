@@ -14,5 +14,5 @@
 
 * Метод :func:`Document.CreateReplySendTask` :doc:`../../ComObjects/AcceptanceContent`. если на титул отправителя документа ссылались другие *Attachment*, например, комментарии
 * Методы :func:`OutDocumentSignTask.Send` и :func:`OutDocumentSignTask.SendAsync` не отправляли добавленные в них :doc:`../../ComObjects/ExtendedSigner`
-* Метод :doc:`DocumentsTask.GetDocuments` мог вызывать ошибку ``vector<T> too long``
+* Метод :func:`DocumentsTask.GetDocuments` мог вызывать ошибку ``vector<T> too long``
 * Улучшена совместимость с Windows XP
