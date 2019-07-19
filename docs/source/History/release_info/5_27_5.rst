@@ -7,5 +7,5 @@
 .. rubric:: Исправлено
 
 * Метод :func:`Document.GetRecipientSignature` не возвращали подпись под двухтитульными документами
-* Метод :func:`Document.GetBase64Signare` с параметром ``Buyer`` для двухтитульного документа приводил к AppCrash
+* Метод :func:`Document.GetBase64Signature` с параметром ``Buyer`` для двухтитульного документа приводил к AppCrash
 * В COM-компоненте отсутствовал метод :func:`Organization.SaveUserDataXSD`
