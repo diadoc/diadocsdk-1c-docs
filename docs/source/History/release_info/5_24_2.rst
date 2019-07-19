@@ -1,0 +1,10 @@
+5.24.2
+------
+
+.. feed-entry::
+  :date: 2018-11-16
+
+.. rubric:: Исправлено
+
+* Некорректное чтение подписи с `PRIMITIVE CONTEXT_SPECIFIC` тэгами
+* Метод :func:`DocumentsTask.GetDocumentsAsync` мог приводить к AppCrash

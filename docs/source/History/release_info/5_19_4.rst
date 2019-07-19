@@ -1,0 +1,15 @@
+5.19.4
+------
+
+.. feed-entry::
+  :date: 2017-12-12
+
+.. rubric:: Изменено
+
+* Свойство **ItemToRelease** объекта :doc:`../../ComObjects/TovTorgItem` принимало только строковые значения (BSTR), теперь принимает и числа
+
+
+
+.. rubric:: Исправлено
+
+* В объекте :doc:`../../ComObjects/TovTorgTransferInfo` вместо свойства **StructedAdditionalInfo** заполнялось свойство **Waybills**

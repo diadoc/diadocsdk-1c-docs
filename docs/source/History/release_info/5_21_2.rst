@@ -1,0 +1,10 @@
+5.21.2
+------
+
+.. feed-entry::
+  :date: 2018-03-30
+
+.. rubric:: Исправлено
+
+* Вызов метода :func:`CreateReplySendTask.Send` приводил к AppCrash, если :doc:`../../ComObjects/ReplySendTask` создан для *Торг-12 551 приказа*
+* Метод :func:`Utd.GetContent` не учитывал версию содержимого

@@ -1,0 +1,21 @@
+5.18.3
+------
+
+.. feed-entry::
+  :date: 2017-08-02
+
+
+.. rubric:: Добавлено
+
+* Добавлено свойство **SenderSignatureStatus** в объект :doc:`../../ComObjects/Document`
+* Добавлен объект :doc:`../../ComObjects/FormalizedRejectionContent`
+
+
+.. rubric:: Изменено
+
+* Свойство **Type** объекта :doc:`../../ComObjects/UtdToSend` может принимать значения: ``UniversalTransferDocument``, ``UtdInvoice``, ``UtdTorg12``, ``UtdAcceptanceCertificate``
+* Отказ в подписи для роуминговых документов теперь формализованный
+
+.. rubric:: Исправлено
+
+* Отправка УКД с нулевым изменением суммы по строке в табличной части приводило к ошибке ``SubtotalWithVatExcluded should be specified in Info.InvoiceCorrectionTable.Items[N].AmountsInc and/or Info.InvoiceCorrectionTable.Items[N].AmountsDec``

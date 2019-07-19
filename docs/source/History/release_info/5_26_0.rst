@@ -1,0 +1,26 @@
+5.26.0
+------
+
+.. feed-entry::
+  :date: 2019-02-05
+
+.. rubric:: Добавлено
+
+* Поддержка маршрутов согласования:
+
+  * Добавлен объект :doc:`../../ComObjects/Route`
+  * Добавлен метод :func:`Organization.GetResolutionRoutes`
+  * Добавлено свойство **RouteId** в объект :doc:`../../ComObjects/Document`
+  * Добавлен метод :func:`Document.AssignToResolutionRoute`
+  * Добавлен метод :func:`DocumentPackage.AssignToResolutionRoute`
+  * Добавлен метод :func:`Document.RemoveFromResolutionRoute`
+  * Добавлен метод :func:`DocumentPackage.RemoveFromResolutionRoute`
+
+.. rubric:: Изменено
+
+* Методы :func:`ReplySendTask.ValidateContent`, :func:`SendTask.ValidateContent`, :func:`PackageSendTask.ValidateContent` всегда содержат элемент, оповещающий, что метод устарел
+
+
+.. rubric:: Исправлено
+
+* Асинхронные методы часто теряли описание ошибки, возвращая ``Unknown exception``

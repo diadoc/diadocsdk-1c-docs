@@ -1,0 +1,11 @@
+5.27.5
+------
+
+.. feed-entry::
+  :date: 2019-07-15
+
+.. rubric:: Исправлено
+
+* Метод :func:`Document.GetRecipientSignature` не возвращали подпись под двухтитульными документами
+* Метод :func:`Document.GetBase64Signare` с параметром ``Buyer`` для двухтитульного документа приводил к AppCrash
+* В COM-компоненте отсутствовал метод :func:`Organization.SaveUserDataXSD`

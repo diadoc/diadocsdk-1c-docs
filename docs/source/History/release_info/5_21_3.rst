@@ -1,0 +1,9 @@
+5.21.3
+------
+
+.. feed-entry::
+  :date: 2018-04-17
+
+.. rubric:: Исправлено
+
+* Некорректно заполнялась коллекция **StructedAdditionalInfos** объекта :doc:`../../ComObjects/TovTorgTransferInfo`

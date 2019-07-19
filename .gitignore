@@ -2,3 +2,4 @@
 Docs/Build/
 compile_doc.bat
 *.bat
+docs/source/_extensions/__pycache__/

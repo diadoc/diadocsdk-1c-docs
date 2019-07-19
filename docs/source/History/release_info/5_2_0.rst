@@ -1,0 +1,17 @@
+5.2.0
+-----
+
+.. feed-entry::
+  :date: 2015-12-01
+
+.. rubric:: Добавлено
+
+* Добавлена возможность подписания документов Контур.Сертификатом:
+
+  * :doc:`../../HowTo/HowTo_cloud_certificate`
+  * Добавлен объект :doc:`../../ComObjects/CloudCertificateInfo`
+  * Добавлен объект :doc:`../../ComObjects/CloudSignTask`
+  * Добавлен метод :func:`Connection.GetCloudCertificates`
+  * Добавлен метод :func:`Connection.CreateCloudSignTask`
+  
+* Добавлен объект :doc:`../../ComObjects/BaseContent`

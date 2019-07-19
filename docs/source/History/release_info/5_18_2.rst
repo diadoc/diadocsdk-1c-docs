@@ -1,0 +1,30 @@
+5.18.2
+------
+
+.. feed-entry::
+  :date: 2017-07-18
+
+
+
+.. rubric:: Добавлено
+
+* Добавлено свойство **EncryptedDocumentsAllowed** в объект :doc:`../../ComObjects/Organization`
+
+
+
+.. rubric:: Исправлено
+
+* Метод :func:`Document.SaveAllContent` сохраняет файлы подписи в файлы с расширением ``.sgn``
+
+
+
+.. rubric:: Исправлено
+
+* Методы :func:`Document.SaveAllContent` и :func:`Document.SaveAllContentAsync` сохраняли печатную форму документа в файл без расширения
+* В объекте :doc:`../../ComObjects/Document`, получаемом методами :func:`SendTask.Send` и :func:`SendTask.SendAsync` не заполнялось поле **OneSDocumentId**
+* Ошибка при вызове :func:`Document.CreateReplySendTask` с типом ``RejectDocument`` для всех неформализованных типов документов
+* В COM-компоненте обращение к полю **AmendmentRequested** объектов :doc:`../../ComObjects/Invoice`, :doc:`../../ComObjects/InvoiceRevision`, :doc:`../../ComObjects/InvoiceCorrection`, :doc:`../../ComObjects/InvoiceCorrectionRevision` вызывало исключение
+* Метод :func:`SendDraftTask.SendAsync` не имел результата
+* Метод :func:`DocumentTask.GetDocuments` возвращал ``Неопределено`` вместо пустой коллекции документов
+* При подписании документов pin-код сертификата КЭП запрашивался несколько раз
+* Методы :func:`Organization.CreateSendTask`, :func:`Organization.CreateSendTaskFromFile`, :func:`Organization.CreateSendTaskFromFileRaw` не проверяли кооректность переданного типа документа

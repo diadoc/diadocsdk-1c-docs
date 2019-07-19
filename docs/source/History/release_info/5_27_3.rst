@@ -1,0 +1,11 @@
+5.27.3
+------
+
+.. feed-entry::
+  :date: 2019-06-27
+
+.. rubric:: Исправлено
+
+* Методы :func:`PackageSendTask.AddDocument`, :func:`Document.CreateReplySendTask2` и :func:`DocumentPackage.CreateReplySendTask2` вызывали ошибку ``Неверная версия вложения``
+* Лишние элементы в коллекции **Resolutions** объекта :doc:`../../ComObjects/Document`
+* Неправильно десериализовался :doc:`../../ComObjects/Resolution` с типом ``ResolutionDisapprove``
