@@ -4,11 +4,6 @@
 .. feed-entry::
   :date: 2015-08-03
 
-.. rubric:: Добавлено
-
-* У объекта :doc:`../../ComObjects/ReceiptGenerationProcess` добавлено поле **Errors**
-
-
 .. rubric:: Изменено
 
 * В поле **CustomsDeclarationNumbers** объекта :doc:`../../ComObjects/InvoiceItem` можно указать несколько ГТД
@@ -18,6 +13,6 @@
 
 .. rubric:: Исправлено
 
-* При возникновении ошибки в :func:`AcquireCounteragentTask.SendAsync()` исключение в поле **Result** попадает с задержкой 
+* При возникновении ошибки в :func:`AcquireCounteragentTask.SendAsync()` исключение в поле **Result** попадает с задержкой
 * Исправлена валидация :doc:`../../ComObjects/AcceptanceCertificateItem`: **UnitCode** и **UnitName** могут одновременно отсутствовать
 * Поле **Quantity** объекта :doc:`../../ComObjects/AcceptanceCertificateItem` может принимать отрицательные значения

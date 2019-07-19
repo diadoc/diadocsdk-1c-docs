@@ -113,6 +113,7 @@ DocumentPackage
 
   Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
 
+.. versionadded:: 5.6.0
 
 
 .. _DocumentPackage-AssignToResolutionRoute:

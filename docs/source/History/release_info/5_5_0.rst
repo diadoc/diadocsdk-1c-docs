@@ -13,7 +13,6 @@
   * Добавлен объект :doc:`../../ComObjects/SentPackageContent`
   * Добавлен метод :func:`Organization.CreatePackageSendTask`
 
-* Добавлен метод :func:`Connection.GetMyUser`
 * Добавлен метод :func:`Organization.SetData`
 * Добавлен метод :func:`Organization.GetData`
 

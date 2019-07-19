@@ -4,6 +4,8 @@ RevocationRequestContent
 Метаданные запроса аннулирования документа.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+.. versionadded:: 5.2.2
+
 .. rubric:: Свойства
 
 :Signer:

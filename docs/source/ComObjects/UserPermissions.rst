@@ -3,6 +3,8 @@ UserPermissions
 
 Права пользователя в контексте организации
 
+.. versionadded:: 5.6.0
+
 .. rubric:: Свойства
 
 :IsBlocked:

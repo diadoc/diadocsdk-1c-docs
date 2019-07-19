@@ -160,7 +160,7 @@ Document
 :IsEncryptedContent:
   **Булево, чтение** - флаг, показывающий, что содержимое документа зашифровано
 
-  .. versionadded:: 5.14.0
+  .. versionadded:: 5.3.0
 
 
 .. rubric:: Методы
@@ -491,6 +491,8 @@ Document
 .. method:: Document.CreateOutDocumentSignTask()
 
   Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
+
+  .. versionadded:: 5.6.0
 
 
 

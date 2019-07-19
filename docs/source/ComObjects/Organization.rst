@@ -287,6 +287,8 @@ Organization
 
   Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
 
+  .. versionadded:: 5.5.0
+
   .. deprecated:: 5.27.0
     Используйте :func:`Organization.CreatePackageSendTask2`
 
@@ -296,6 +298,8 @@ Organization
 .. method:: Organization.CreatePackageSendTask2()
 
   Возвращает :doc:`объект <PackageSendTask2>`, с помощью которого можно отправить пакет :doc:`документов <CustomDocumentToSend>`
+
+  .. versionadded:: 5.27.0
 
 
 

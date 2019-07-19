@@ -56,3 +56,5 @@ AddressInfo
 .. function:: AddressInfo.GetAddressString()
 
   Возвращает строковое представление адреса
+
+  .. versionadded:: 5.0.0
