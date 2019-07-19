@@ -1,0 +1,23 @@
+5.20.0
+------
+
+.. feed-entry::
+  :date: 2017-12-27
+
+.. rubric:: Добавлено
+
+* Поддержка отправки своих типов документов:
+
+  * Добавлен объект :doc:`../../ComObjects/CustomDocumentToSend`
+  * Добавлен объект :doc:`../../ComObjects/BaseDocument`
+  * Добавлен объект :doc:`../../ComObjects/DocumentTypeDescription`
+  * Добавлен объект :doc:`../../ComObjects/DocumentFunction`
+  * Добавлен объект :doc:`../../ComObjects/DocumentVersion`
+  * Добавлен объект :doc:`../../ComObjects/DocumentWorkflow`
+  * Добавлен объект :doc:`../../ComObjects/DocumentTitle`
+  * Добавлен метод :func:`Organization.GetDocumentTypes`
+
+.. rubric:: Исправлено
+
+* Возникало исключение при присвоении значения ``5.02`` свойству **InvoiceVersion** объекта :doc:`../../ComObjects/InvoiceContent`
+* Исключение при чтении свойства **Inn** объекта :doc:`../../ComObjects/PersonalCertificate`, если в сертификате не содержится ИНН

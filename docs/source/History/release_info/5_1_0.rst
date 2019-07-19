@@ -1,0 +1,18 @@
+5.1.0
+-----
+
+.. feed-entry::
+  :date: 2015-08-03
+
+.. rubric:: Изменено
+
+* В поле **CustomsDeclarationNumbers** объекта :doc:`../../ComObjects/InvoiceItem` можно указать несколько ГТД
+* Добавлена поддержка нулевых сумм для документов Торг-12
+
+
+
+.. rubric:: Исправлено
+
+* При возникновении ошибки в :func:`AcquireCounteragentTask.SendAsync()` исключение в поле **Result** попадает с задержкой
+* Исправлена валидация :doc:`../../ComObjects/AcceptanceCertificateItem`: **UnitCode** и **UnitName** могут одновременно отсутствовать
+* Поле **Quantity** объекта :doc:`../../ComObjects/AcceptanceCertificateItem` может принимать отрицательные значения

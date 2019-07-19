@@ -5390,6 +5390,11 @@ input[type="checkbox"][disabled] {
 	margin-bottom: 24px
 }
 
+.rst-content table.field-list tr.field-odd {
+	background-color: #f3f6f6
+
+}
+
 .wy-table caption,
 .rst-content table.docutils caption,
 .rst-content table.field-list caption {
@@ -6333,7 +6338,8 @@ html {
 .wy-nav-content {
 	padding: 1.618em 3.236em;
 	height: 100%;
-	max-width: 1000px;
+	width: 100%;
+	/*max-width: 1200px;*/
 	margin: auto
 }
 
@@ -7174,7 +7180,7 @@ a .rst-content code {
 .rst-content dl:not(.docutils) code.descname,
 .rst-content dl:not(.docutils) tt.descclassname,
 .rst-content dl:not(.docutils) code.descclassname {
-	background-color: #f4f4ff;
+	background-color: #d2e7f6;
 	border: none;
 	padding: 0;
 	font-size: 100% !important

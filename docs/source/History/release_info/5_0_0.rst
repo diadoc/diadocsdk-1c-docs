@@ -1,0 +1,19 @@
+5.0.0
+-----
+
+.. feed-entry::
+  :date: 2015-07-03
+
+.. rubric:: Добавлено
+
+* Реализованы модели для работы с документами *Счёт-фактура* и *Корректировочный счёт-фактура* в версии формата ``5.02``
+* Добавлен метод :func:`Counteragent.GetCertificates`
+* Добавлен метод :func:`AddressInfo.GetAddressString`
+* В :doc:`../../ComObjects/PersonalCertificate` добавлены реквизиты **Inn**, **Kpp**
+
+
+
+.. rubric:: Изменено
+
+* Реквизит **AdditionalInfo** в объектах :doc:`../../ComObjects/InvoiceContent`, :doc:`../../ComObjects/InvoiceCorrectionContent`, :doc:`../../ComObjects/InvoiceItem`, :doc:`../../ComObjects/InvoiceCorrectionItem` изменён на **StructedAdditionalInfos** - :doc:`коллекцию <../../ComObjects/Collection>` объектов :doc:`../../ComObjects/StructedAdditionalInfo`
+* Реквизиты **Date**, **Number**, **InvoiceRevisionDate**, **InvoiceRevisionNumber** объекта :doc:`../../ComObjects/InvoiceCorrectionContent` объединены в реквизит **OriginalInvoices** - :doc:`коллекцию <../../ComObjects/Collection>` объектов :doc:`../../ComObjects/OriginalInvoice`

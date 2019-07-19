@@ -1,0 +1,18 @@
+5.25.0
+------
+
+.. feed-entry::
+  :date: 2018-11-23
+
+.. rubric:: Добавлено
+
+* Поддержка ставки НДС ``20/120``
+* Добавлен метод :func:`Organization.RecycleDraft`
+
+
+.. rubric:: Исправлено
+
+* Метод :func:`Document.CreateReplySendTask` :doc:`../../ComObjects/AcceptanceContent`. если на титул отправителя документа ссылались другие *Attachment*, например, комментарии
+* Методы :func:`OutDocumentSignTask.Send` и :func:`OutDocumentSignTask.SendAsync` не отправляли добавленные в них :doc:`../../ComObjects/ExtendedSigner`
+* Метод :func:`DocumentsTask.GetDocuments` мог вызывать ошибку ``vector<T> too long``
+* Улучшена совместимость с Windows XP
