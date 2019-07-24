@@ -2,14 +2,38 @@
 ------
 
 .. feed-entry::
-  :date: 2019-07-15
+  :date: 2019-07-24
+
+
+.. rubric:: Добавлено
+
+* Поддержка приказа `ФНС от 8 апреля 2019 г. N ММВ-7-15/176@ <https://normativ.kontur.ru/document?moduleId=1&documentId=339376>`_ :
+
+  * Обновлены версии документов отправляемые объектами :doc:`../../ComObjects/PackageSendTask` и :doc:`../../ComObjects/SendTask`
+  * Обновлены методы:
+
+    * :func:`Invoice.GetContent`
+    * :func:`InvoiceRevision.GetContent`
+    * :func:`InvoiceCorrection.GetContent`
+    * :func:`InvoiceCorrectionRevision.GetContent`
+    * :func:`XmlAcceptanceCertificate.GetContent`
+    * :func:`XmlAcceptanceCertificate.GetBuyerContent`
+    * :func:`XmlTorg12.GetContent`
+    * :func:`XmlTorg12.GetBuyerContent`
+    * :func:`Utd.GetContent`
+    * :func:`Utd.GetBuyerContent`
+    * :func:`UtdRevision.GetContent`
+    * :func:`UtdRevision.GetBuyerContent`
+    * :func:`Ucd.GetContent`
+    * :func:`Ucd.GetBuyerContent`
+    * :func:`UcdRevision.GetContent`
+    * :func:`UcdRevision.GetBuyerContent`
 
 
 .. rubric:: Изменено
 
 * Поиск полей и методов в :doc:`../../ComObjects/DynamicContent` стал регистронезависимым
-* Обновлены используемые HTTP методы API Диадок
-
+* Доступ к свойству **HasCustomPrintForm** объекта :doc:`../../ComObjects/Document` стал ленивым
 
 
 .. rubric:: Исправлено
