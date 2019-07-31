@@ -1,0 +1,18 @@
+5.28.1
+------
+
+.. feed-entry::
+  :date: 2019-07-31
+
+
+.. rubric:: Изменено
+
+* Версии документов отправляемые объектами :doc:`../../ComObjects/PackageSendTask` и :doc:`../../ComObjects/SendTask` откачены до состояния до релиза :doc:`5_28_0`
+* Ошибка `Неверный тип варианты` изменена на `Unexpected VT_VARIANT: <VT_TYPE index>`
+
+
+.. rubric:: Исправлено
+
+* Ошибка `Неверный тип варианты` при передаче аргументов типа VARIANT по ссылке (`BY_REF`)
+* Вызов :func:`Document.GetBase64Signature` с параметром `Buyer` приводит к `AppCrash`, если :doc:`../../ComObjects/Document` - черновик
+* Обращение к свойству **HasCustomPrintForm** объекта :doc:`../../ComObjects/Document` приводило к ошибке `##100[Ошибка сервера Диадок]code:404, HTTP error: Документ <id> не найден`, если :doc:`../../ComObjects/Document` - черновик
