@@ -102,3 +102,4 @@
   release_info/5_27_5
   release_info/5_28_0
   release_info/5_28_1
+  release_info/5_28_2
