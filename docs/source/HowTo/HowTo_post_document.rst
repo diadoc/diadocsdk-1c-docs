@@ -3,9 +3,9 @@
 
 Отправка документов возможна только тем контрагентам в Диадоке, с которыми :doc:`установлены партнерские отношения <HowTo_trust_counteragent>`
 
-Отправка документов производится с помощью объекта :doc:`PackageSendTask2 <../ComObjects/PackageSendTask2>` путём добавления в него :doc:`документов на отправку <../ComObjects/CustomDocumentToSend>`
+Отправка документов производится с помощью объекта :doc:`PackageSendTask2 <../ComObjects/PackageSendTask2>`
 
-Для отправляемого документа необходимо заполнить :doc:`мета информацию <../ComObjects/DocumentMetadataItem>`, у которой источник (Source) указан *"User"*
+Для отправляемого документа необходимо заполнить :doc:`мета информацию <../ComObjects/DocumentMetadataItem>`, у которой источник (поле **Source**) указан ``User``
 
 
 
