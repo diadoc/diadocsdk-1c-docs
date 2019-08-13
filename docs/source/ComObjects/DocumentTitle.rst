@@ -25,7 +25,7 @@ DocumentTitle
 .. rubric:: Дополнительная информация
 
 * Только для титулов с *HaveUserDataXSD* == ``TRUE``, доступен метод :func:`PackageSendTask2.AddDocument`.
-  В противном случае, для добавления :doc:`документа на отправку <CustomDocumentToSend>` необходимо воспользоваться методом :func:`PackageSendTask2.AddDocumentFromFile` или :func:`PackageSendTask2.AddDocumentFromString`
+  В противном случае, для добавления :doc:`документа на отправку <CustomDocumentToSend>` необходимо воспользоваться методом :func:`PackageSendTask2.AddDocumentFromFile` или :func:`PackageSendTask2.AddDocumentFromBase64`
 
 
 .. seealso:: :doc:`../HowTo/HowTo_post_document`
