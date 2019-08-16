@@ -9,11 +9,11 @@ import shlex
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
+    'custom_newsfeed',
+    'CComDomain'
 ]
 
 sys.path.append(os.path.abspath('_extensions'))
-#extensions_path = ['_extensions']
-extensions.append('custom_newsfeed')
 
 source_suffix = '.rst'
 master_doc = 'index'
@@ -34,6 +34,7 @@ html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
 html_use_index = True
+primary_domain = 'CCom'
 
 # -- Options for LaTeX output ---------------------------------------------
 
