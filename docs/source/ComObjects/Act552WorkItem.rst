@@ -56,7 +56,7 @@ Act552WorkItem
 
 
 .. _Act552WorkItem-AddStructedAdditionalInfo:
-.. function:: Act552WorkItem.AddStructedAdditionalInfo()
+.. method:: Act552WorkItem.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
 

@@ -53,7 +53,7 @@ AddressInfo
 
 
 
-.. function:: AddressInfo.GetAddressString()
+.. method:: AddressInfo.GetAddressString()
 
   Возвращает строковое представление адреса
 
