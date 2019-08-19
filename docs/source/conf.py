@@ -34,7 +34,7 @@ html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
 html_use_index = True
-html_search_scorer = 'searchindex.js'
+# html_search_scorer = 'searchindex.js'
 
 # -- Options for LaTeX output ---------------------------------------------
 
