@@ -43,6 +43,7 @@ html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
 html_use_index = True
 primary_domain = 'CCom'
+system_packages = True
 
 need_reindex = True
 if need_reindex:
