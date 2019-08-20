@@ -5,7 +5,7 @@
 Как запрашивать согласование и передавать на подпись документ
 -------------------------------------------------------------
 
-Для отправки документа на подпись или согласование предназначен объект :doc:`../ComObjects/ResolutionRequestTask`, который можно создать методами :func:`Document.CreateResolutionRequestTask` и :func:`DocumentPackage.CreateResolutionRequestTask`
+Для отправки документа на подпись или согласование предназначен объект :doc:`../ComObjects/ResolutionRequestTask`, который можно создать методами :meth:`Document.CreateResolutionRequestTask` и :meth:`DocumentPackage.CreateResolutionRequestTask`
 
 
 .. code-block:: c#
@@ -29,6 +29,6 @@
 Подтверждение и отказ в соласовании или подписи
 -----------------------------------------------
 
-Для принятия резолюции используйте методы :func:`Document.Approve` и :func:`DpcumentPackage.Approve`
+Для принятия резолюции используйте методы :meth:`Document.Approve` и :meth:`DpcumentPackage.Approve`
 
-Для отказа в резолюции - :func:`Document.Disapprove` и :func:`DpcumentPackage.Disapprove`
+Для отказа в резолюции - :meth:`Document.Disapprove` и :meth:`DpcumentPackage.Disapprove`

@@ -2,7 +2,7 @@ CounteragentItem
 ================
 
 Контрагент с ИНН.
-Является результатом метода :func:`Organization.GetCounteragentListByInnList`
+Является результатом метода :meth:`Organization.GetCounteragentListByInnList`
 
 
 .. rubric:: Свойства

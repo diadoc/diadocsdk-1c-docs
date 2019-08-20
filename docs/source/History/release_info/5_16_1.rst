@@ -11,4 +11,4 @@
 
 .. rubric:: Исправлено
 
-* В COM-компоненте реализация метод :func:`Organization.CanSendInvoice` не соответствовала интерфейсу
+* В COM-компоненте реализация метод :meth:`Organization.CanSendInvoice` не соответствовала интерфейсу

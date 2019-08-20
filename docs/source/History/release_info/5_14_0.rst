@@ -10,29 +10,29 @@
 
 * Поддержка отправки *Торг-12*, *Акта* и *Счёта фактуры* в формате УПД:
 
-  * Добавлены новые значения параметров для методов :func:`Organization.CreateSendTask`, :func:`Organization.CreateSendTaskFromFile`, :func:`PackageSendTask.AddDocument`, :func:`PackageSendTask.AddDocumentFromFile`
+  * Добавлены новые значения параметров для методов :meth:`Organization.CreateSendTask`, :meth:`Organization.CreateSendTaskFromFile`, :meth:`PackageSendTask.AddDocument`, :meth:`PackageSendTask.AddDocumentFromFile`
 
-* Добавлен метод :func:`Organization.CreateSendTaskFromFileRaw`
-* Добавлен метод :func:`PackageSendTask.AddDocumentFromFileRaw`
+* Добавлен метод :meth:`Organization.CreateSendTaskFromFileRaw`
+* Добавлен метод :meth:`PackageSendTask.AddDocumentFromFileRaw`
 * Добавлен реквизит **IsEncryptedContent** для объекта :doc:`../../ComObjects/Document`
 
 * Добавлена возможность отправки зашифрованных документов *Акт*, *Торг-12*, *Счёт-Фактура*:
 
-  * Добавлен метод :func:`Counteragent.GetCertificates`
-  * Добавлен метод :func:`SendTask.AddEncryptCertificate`
-  * Добавлен метод :func:`PackageSendTask.AddEncryptCertificate`
+  * Добавлен метод :meth:`Counteragent.GetCertificates`
+  * Добавлен метод :meth:`SendTask.AddEncryptCertificate`
+  * Добавлен метод :meth:`PackageSendTask.AddEncryptCertificate`
 
 
 
 .. rubric:: Изменено
 
 * Контент объектов :doc:`../../ComObjects/Invoice`, :doc:`../../ComObjects/XmlTorg12`, :doc:`../../ComObjects/XmlAcceptanceCertificate` теперь может быть :doc:`../../ComObjects/UtdSellerContent` и :doc:`../../ComObjects/UtdBuyerContent`
-* Метод **AddCertToFnsRegistrationMessage** переименован в :func:`Organization.SendFnsRegistrationMessage`
+* Метод **AddCertToFnsRegistrationMessage** переименован в :meth:`Organization.SendFnsRegistrationMessage`
 
 
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.SaveAllContent` теперь работает и для *УПД*
-* Метод :func:`Document.SaveAllContentAsync` теперь работает и для *УПД*
-* При вызове :func:`Document.MarkAsRead` документ не помечался какпрочитанный
+* Метод :meth:`Document.SaveAllContent` теперь работает и для *УПД*
+* Метод :meth:`Document.SaveAllContentAsync` теперь работает и для *УПД*
+* При вызове :meth:`Document.MarkAsRead` документ не помечался какпрочитанный

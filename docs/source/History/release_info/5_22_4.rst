@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* Методы :func:`Document.GetContent` для некоторых типов документов генерировал исключение ``bad_weak_ptr``
+* Методы :meth:`Document.GetContent` для некоторых типов документов генерировал исключение ``bad_weak_ptr``

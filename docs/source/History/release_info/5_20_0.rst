@@ -15,7 +15,7 @@
   * Добавлен объект :doc:`../../ComObjects/DocumentVersion`
   * Добавлен объект :doc:`../../ComObjects/DocumentWorkflow`
   * Добавлен объект :doc:`../../ComObjects/DocumentTitle`
-  * Добавлен метод :func:`Organization.GetDocumentTypes`
+  * Добавлен метод :meth:`Organization.GetDocumentTypes`
 
 .. rubric:: Исправлено
 

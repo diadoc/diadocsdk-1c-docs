@@ -6,7 +6,7 @@
 
 .. rubric:: Изменено
 
-* Поведение методов :func:`Organization.GetCounteragentById`, :func:`Organization.GetCounteragentByOrgId`, :func:`Organization.GetCounteragentListByInnList`, :func:`Organization.GetCounteragentListByStatus` не были согласованы друг с другом. Поведение отличалось у AddIn и COM версий компоненты. Теперь результатом всегда является COM-объект соответствующего типа
+* Поведение методов :meth:`Organization.GetCounteragentById`, :meth:`Organization.GetCounteragentByOrgId`, :meth:`Organization.GetCounteragentListByInnList`, :meth:`Organization.GetCounteragentListByStatus` не были согласованы друг с другом. Поведение отличалось у AddIn и COM версий компоненты. Теперь результатом всегда является COM-объект соответствующего типа
 
 .. rubric:: Исправлено
 
@@ -14,4 +14,4 @@
 * При подписании входящих документов Контур.Сертиифкатом в подпись попадал сам документ, а не его подпись
 * Неправильно вычислялось поле **CanEncrypt** объекта :doc:`../../ComObjects/PersonalCertificate`
 * В COM-компоненте отсутствовало свойство **Errors** у объекта :doc:`../../ComObjects/ReceiptGenerationProcess`
-* Метод :func:`Organization.CreateSendTaskFromFileRaw` завершался ошибкой поиска файла на диске
+* Метод :meth:`Organization.CreateSendTaskFromFileRaw` завершался ошибкой поиска файла на диске

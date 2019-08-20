@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* В COM-компоненте: При создании :doc:`../../ComObjects/SendTask` методами :func:`Organization.CreateSendTaskFromFile` и :func:`Organization.CreateSendTaskFromFileRaw` невозможно отправить документы - ошибка ``Message has no attachments``
+* В COM-компоненте: При создании :doc:`../../ComObjects/SendTask` методами :meth:`Organization.CreateSendTaskFromFile` и :meth:`Organization.CreateSendTaskFromFileRaw` невозможно отправить документы - ошибка ``Message has no attachments``

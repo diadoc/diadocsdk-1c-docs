@@ -2,7 +2,7 @@
 =============================================
 
 Большинство ответных действий с документом выполняется с помощью объекта :doc:`ReplySendTask2 <../ComObjects/ReplySendTask2>`.
-Создать этот объект можно методами :func:`Document.CreateReplySendTask2` или :func:`DocumentPackage.CreateReplySendTask2`
+Создать этот объект можно методами :meth:`Document.CreateReplySendTask2` или :meth:`DocumentPackage.CreateReplySendTask2`
 
 .. code-block:: c#
 

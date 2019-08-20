@@ -11,6 +11,6 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.SaveAllContent` не сохранял печатную форму для документа *дополнительное соглашение*/``SupplementaryAdreement``
+* Метод :meth:`Document.SaveAllContent` не сохранял печатную форму для документа *дополнительное соглашение*/``SupplementaryAdreement``
 * Неправильно сериализовалось поле **Total** объекта :doc:`../../ComObjects/InvoiceTotalsDiff`
 * При десериализации :doc:`../../ComObjects/Act552WorkItem` значение **TaxRate** учитывает значение свойства **Vat**

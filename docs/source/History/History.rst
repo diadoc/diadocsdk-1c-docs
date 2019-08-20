@@ -1,7 +1,7 @@
 ﻿История изменений внешней компоненты
 ====================================
 
-`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/History/release_info/index.rss>`_
+`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/CComDomain/History/release_info/index.rss>`_
 
 
 .. toctree::

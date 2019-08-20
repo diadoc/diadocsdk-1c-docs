@@ -6,5 +6,5 @@
 
 .. rubric:: Добавлено
 
-* Метод :func:`PackageSendTask.SaveContentPath`
-* Метод :func:`SendTask.SaveContentPath`
+* Метод :meth:`PackageSendTask.SaveContentPath`
+* Метод :meth:`SendTask.SaveContentPath`

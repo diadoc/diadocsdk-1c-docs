@@ -107,4 +107,4 @@ Torg12SellerContent
   Сохраняет на сервере Диадока список внешних идентификаторов товаров накладной
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.SetData`
+    Используйте :meth:`Organization.SetData`

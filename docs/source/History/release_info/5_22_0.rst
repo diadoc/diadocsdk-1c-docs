@@ -6,7 +6,7 @@
 
 .. rubric:: Добавлено
 
-* Добавлен метод :func:`Document.SaveBuyerContent`
+* Добавлен метод :meth:`Document.SaveBuyerContent`
 
 .. rubric:: Изменено
 
@@ -15,8 +15,8 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`PackageSendTask.Send` не возвращал в результате документы, отпрвленные с типом ``SupplementaryAgreement``
+* Метод :meth:`PackageSendTask.Send` не возвращал в результате документы, отпрвленные с типом ``SupplementaryAgreement``
 * Поле **TaxRat** объекта :doc:`../../ComObjects/Act552WorkItem` десериализовалось как ``18%`` вместо ``без НДС``
-* Метод :func:`Organization.GetDocumentEventList` не возвращал события ``New`` для документов, пришелших внутри патча к другому документу
-* Метод :func:`Organization.GetDocumentEventList` неправильно определял **DocumentId** объекта :doc:`../../ComObjects/DocumentEvent`
+* Метод :meth:`Organization.GetDocumentEventList` не возвращал события ``New`` для документов, пришелших внутри патча к другому документу
+* Метод :meth:`Organization.GetDocumentEventList` неправильно определял **DocumentId** объекта :doc:`../../ComObjects/DocumentEvent`
 * Некоторые методы игнорировали настройки прокси

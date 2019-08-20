@@ -11,17 +11,17 @@
   * Добавлен объект :doc:`../../ComObjects/PackageSendTask2`
   * Добавлен объект :doc:`../../ComObjects/ReplySendTask2`
   * Добавлен объект :doc:`../../ComObjects/DynamicContent`
-  * Добавлен метод :func:`Organization.SaveUserDataXSD`
-  * Добавлен метод :func:`Organization.CreatePackageSendTask2`
+  * Добавлен метод :meth:`Organization.SaveUserDataXSD`
+  * Добавлен метод :meth:`Organization.CreatePackageSendTask2`
   * Добавлено свойство **HaveUserDataXSD** в объект :doc:`../../ComObjects/DocumentTitle`
-  * Добавлен метод :func:`Document.GetDynamicContent`
-  * Добавлен метод :func:`Document.GetBase64Content`
-  * Добавлен метод :func:`Document.GetBase64ContentAsync`
-  * Добавлен метод :func:`Document.GetBase64Signature`
-  * Добавлен метод :func:`Document.CreateReplySendTask2`
-  * Добавлен метод :func:`DocumentPackage.CreateReplySendTask2`
-  * Добавлен метод :func:`PackageContentItem.LoadContentFromFile`
-  * Добавлен метод :func:`PackageContentItem.LoadContentFromBase64`
+  * Добавлен метод :meth:`Document.GetDynamicContent`
+  * Добавлен метод :meth:`Document.GetBase64Content`
+  * Добавлен метод :meth:`Document.GetBase64ContentAsync`
+  * Добавлен метод :meth:`Document.GetBase64Signature`
+  * Добавлен метод :meth:`Document.CreateReplySendTask2`
+  * Добавлен метод :meth:`DocumentPackage.CreateReplySendTask2`
+  * Добавлен метод :meth:`PackageContentItem.LoadContentFromFile`
+  * Добавлен метод :meth:`PackageContentItem.LoadContentFromBase64`
 
 
 .. rubric:: Изменено
@@ -30,38 +30,38 @@
 * Свойство **Content** объекта :doc:`../../ComObjects/CustomDocumentToSend` может быть :doc:`../../ComObjects/DynamicContent`'ом
 * Расширен набор значений свойства **Status** объекта :doc:`../../ComObjects/ExtendedSignerDetailsToPost` и объекта :doc:`../../ComObjects/ExtendedSignerDetails`
 * Уменьшено количество различных текстов ошибок, исправлены опечатки в них
-* Расширен набор значений параметра **Type** метода :func:`Document.CreateReplySendTask`
-* Удалён метод :func:`CustomDocumentToSend.AddCustomData`
+* Расширен набор значений параметра **Type** метода :meth:`Document.CreateReplySendTask`
+* Удалён метод :meth:`CustomDocumentToSend.AddCustomData`
 * Удалено свойство **CustomData** объекта :doc:`../../ComObjects/CustomDocumentToSend`
 
 * Помечены устаревшими:
 
   * Объект :doc:`../../ComObjects/PackageSendTask`
   * Объект :doc:`../../ComObjects/ReplySendTask`
-  * :func:`Organization.CreatePackageSendTask`
-  * :func:`Document.CreateReplySendTask`
-  * :func:`DocumentPackage.CreateReplySendTask`
-  * :func:`Contract.Accept`
-  * :func:`Nonformalized.Accept`
-  * :func:`NonformalizedAcceptanceCertificate.Accept`
-  * :func:`NonformalizedTorg12.Accept`
-  * :func:`Contract.Reject`
-  * :func:`Nonformalized.Reject`
-  * :func:`NonformalizedAcceptanceCertificate.Reject`
-  * :func:`NonformalizedTorg12.Reject`
-  * :func:`XmlAcceptanceCertificate.Reject`
-  * :func:`XmlTorg12.Reject`
-  * :func:`InvoiceCorrection.SendCorrectionRequest`
-  * :func:`InvoiceCorrectionRevision.SendCorrectionRequest`
-  * :func:`InvoiceRevision.SendCorrectionRequest`
-  * :func:`Invoice.SendCorrectionRequest`
-  * :func:`Document.AcceptRevocationRequest`
+  * :meth:`Organization.CreatePackageSendTask`
+  * :meth:`Document.CreateReplySendTask`
+  * :meth:`DocumentPackage.CreateReplySendTask`
+  * :meth:`Contract.Accept`
+  * :meth:`Nonformalized.Accept`
+  * :meth:`NonformalizedAcceptanceCertificate.Accept`
+  * :meth:`NonformalizedTorg12.Accept`
+  * :meth:`Contract.Reject`
+  * :meth:`Nonformalized.Reject`
+  * :meth:`NonformalizedAcceptanceCertificate.Reject`
+  * :meth:`NonformalizedTorg12.Reject`
+  * :meth:`XmlAcceptanceCertificate.Reject`
+  * :meth:`XmlTorg12.Reject`
+  * :meth:`InvoiceCorrection.SendCorrectionRequest`
+  * :meth:`InvoiceCorrectionRevision.SendCorrectionRequest`
+  * :meth:`InvoiceRevision.SendCorrectionRequest`
+  * :meth:`Invoice.SendCorrectionRequest`
+  * :meth:`Document.AcceptRevocationRequest`
 
 
 .. rubric:: Исправлено
 
 * Медленная работа компоненты при получении документа/списка документов
-* Метод :func:`Organization.GetCounteragentListByInnList` вызывал ошибку ``##100[Ошибка сервера Диадок]code:400, HTTP error: Too many INN in request``
-* Метод :func:`SendTask.SendAsync` приводил к AppCrash, если в отправляемом документе есть ошибки
+* Метод :meth:`Organization.GetCounteragentListByInnList` вызывал ошибку ``##100[Ошибка сервера Диадок]code:400, HTTP error: Too many INN in request``
+* Метод :meth:`SendTask.SendAsync` приводил к AppCrash, если в отправляемом документе есть ошибки
 * Получении документа любым из способов могло окончиться ошибкой ``##100[Ошибка сервера Диадок]code:404, HTTP error: Unknown box:``
-* Методы :func:`Contract.Reject` и :func:`Nonformalized.Reject` отправляли неформализованный отказ в подписи
+* Методы :meth:`Contract.Reject` и :meth:`Nonformalized.Reject` отправляли неформализованный отказ в подписи

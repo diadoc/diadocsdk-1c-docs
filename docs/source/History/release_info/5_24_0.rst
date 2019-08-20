@@ -13,8 +13,8 @@
   * Добавлен объект :doc:`../../ComObjects/TemplateToSend`
   * Добавлен объект :doc:`../../ComObjects/TransformTemplateTask`
   * Добавлен объект :doc:`../../ComObjects/Entity`
-  * Добавлен метод :func:`Organization.CreateTransformTemplateTask`
-  * Добавлен метод :func:`Organization.CreateTemplateSendTask`
+  * Добавлен метод :meth:`Organization.CreateTransformTemplateTask`
+  * Добавлен метод :meth:`Organization.CreateTemplateSendTask`
 
 .. rubric:: Изменено
 
@@ -22,4 +22,4 @@
 
 .. rubric:: Исправлено
 
-* Методы :func:`Organization.GetExtendedSignerDetails` и :func:`SetExtendedSignerDetailsTask.Send` вызывали ошибку ``Could not parse documentTitleType``
+* Методы :meth:`Organization.GetExtendedSignerDetails` и :meth:`SetExtendedSignerDetailsTask.Send` вызывали ошибку ``Could not parse documentTitleType``

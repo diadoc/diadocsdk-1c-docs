@@ -6,5 +6,5 @@
 
 .. rubric:: Исправлено
 
-* Исправлена валидация контента акта при вызове :func:`SendTask.ValidateContent`в случае отрицательного **Quantity** в :doc:`../../ComObjects/AcceptanceCertificateItem`
-* Исправлена валидация точности поля **Quantity** в :doc:`../../ComObjects/ExtendedInvoiceItem` методом :func:`SendTask.ValidateContent`
+* Исправлена валидация контента акта при вызове :meth:`SendTask.ValidateContent`в случае отрицательного **Quantity** в :doc:`../../ComObjects/AcceptanceCertificateItem`
+* Исправлена валидация точности поля **Quantity** в :doc:`../../ComObjects/ExtendedInvoiceItem` методом :meth:`SendTask.ValidateContent`

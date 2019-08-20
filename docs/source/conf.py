@@ -31,26 +31,23 @@ html_static_path = ['_static']
 html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
-primary_domain = 'CCom'
+primary_domain = 'comobject'
+# primary_domain = 'py'
 
 
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {}
 latex_documents = [
-  (master_doc, '1CDiadoc.tex', u'1C Diadoc Documentation',
-   author, 'manual'),
+  (master_doc, '1CDiadoc.tex', u'1C Diadoc Documentation', author, 'manual'),
 ]
 
 man_pages = [
-    (master_doc, '1cdiadoc', u'1C Diadoc Documentation',
-     [author], 1)
+    (master_doc, '1cdiadoc', u'1C Diadoc Documentation', [author], 1)
 ]
 
 texinfo_documents = [
-  (master_doc, '1CDiadoc', u'1C Diadoc Documentation',
-   author, '1CDiadoc', 'One line description of project.',
-   'Miscellaneous'),
+  (master_doc, '1CDiadoc', u'1C Diadoc Documentation', author, '1CDiadoc', 'One line description of project.', 'Miscellaneous'),
 ]
 
 epub_title = project

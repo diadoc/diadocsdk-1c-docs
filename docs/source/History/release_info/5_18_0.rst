@@ -11,14 +11,14 @@
 * Добавлена возможность задавать данных подписантов при отправке черновиков документов:
 
   * Добавлен объект :doc:`../../ComObjects/SendDraftTask`
-  * Добавлен метод :func:`Organization.CreateSendDraftTask`
+  * Добавлен метод :meth:`Organization.CreateSendDraftTask`
 
 
 .. rubric:: Изменено
 
 * Устаревшими считаются:
 
-  * :func:`Organization.SendDraftAsync`
-  * :func:`ReplySendTask.ValidateContent`
-  * :func:`SendTask.ValidateContent`
-  * :func:`PackageSendTask.ValidateContent`
+  * :meth:`Organization.SendDraftAsync`
+  * :meth:`ReplySendTask.ValidateContent`
+  * :meth:`SendTask.ValidateContent`
+  * :meth:`PackageSendTask.ValidateContent`

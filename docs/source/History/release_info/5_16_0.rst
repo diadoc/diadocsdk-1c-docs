@@ -16,11 +16,11 @@
 
 .. rubric:: Изменено
 
-* В методе :func:`Organization.GetExtendedSignerDetails` появился параметр **ForCorrection**
-* В объект :func:`../../ComObjects/SetExtendedSignerDetailsTask` добавлен реквизит **ForCorrection**
-* Методы :func:`AcquireCounteragentTask.Send` и :func:`AcquireCounteragentTask.SendAsync` возвращают идентификатор организации
+* В методе :meth:`Organization.GetExtendedSignerDetails` появился параметр **ForCorrection**
+* В объект :meth:`../../ComObjects/SetExtendedSignerDetailsTask` добавлен реквизит **ForCorrection**
+* Методы :meth:`AcquireCounteragentTask.Send` и :meth:`AcquireCounteragentTask.SendAsync` возвращают идентификатор организации
 * В объектах :doc:`../../ComObjects/SendTask` и :doc:`../../ComObjects/PackageSendTask` добавлен реквизит **UseShelf** - признак отправки документов по частям
-* Изменена сигнатура метода :func:`Organization.CanSendInvoice`
+* Изменена сигнатура метода :meth:`Organization.CanSendInvoice`
 
 
 .. rubric:: Исправлено

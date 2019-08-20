@@ -252,7 +252,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask`
 
 
 
@@ -265,7 +265,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask`
 
 
 
@@ -278,7 +278,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл не будет отправлен без изменений. Попытки разбора в объектную модель не будет
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask`
 
 
 
@@ -290,7 +290,7 @@ Organization
   .. versionadded:: 5.5.0
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Organization.CreatePackageSendTask2`
+    Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
 
@@ -342,7 +342,7 @@ Organization
   Валидирует и загружает адресную информацию в хранилище. Возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.SetData`
+    Используйте :meth:`Organization.SetData`
 
   .. note:: Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
 
@@ -357,7 +357,7 @@ Organization
   Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.GetData`
+    Используйте :meth:`Organization.GetData`
 
 
 
@@ -374,7 +374,7 @@ Organization
 
 
   .. deprecated:: 5.5.0
-    Используйте :func:`Organization.GetData`
+    Используйте :meth:`Organization.GetData`
 
 
 
@@ -415,7 +415,7 @@ Organization
   Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. Метод может быть запрошен самим пользователем или администратором организации
 
   .. deprecated:: 5.19.0
-    Используйте :func:`Organization.GetExtendedSignerDetails2`
+    Используйте :meth:`Organization.GetExtendedSignerDetails2`
 
 
 
