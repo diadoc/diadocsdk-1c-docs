@@ -4,16 +4,6 @@
 import sys
 import os
 
-
-def reindex():
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "readthedocs.settings.dev")
-    sys.path.append(os.getcwd())
-
-    from django.core.management import execute_from_command_line
-
-    execute_from_command_line('reindex_elasticsearch')
-
-
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
@@ -41,13 +31,8 @@ html_static_path = ['_static']
 html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
-html_use_index = True
 primary_domain = 'CCom'
-system_packages = True
 
-need_reindex = True
-if need_reindex:
-    reindex()
 
 # -- Options for LaTeX output ---------------------------------------------
 
