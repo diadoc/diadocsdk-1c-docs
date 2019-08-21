@@ -37,7 +37,7 @@ XmlTorg12
   Возвращает строку с комментарием, добавленным при отказе в подписи
 
   .. deprecated:: 5.20.3
-    Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+    Используйте :meth:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
 
 
 
@@ -47,7 +47,7 @@ XmlTorg12
   Возвращает :doc:`представление контента титула продавца <Torg12SellerContent>` документа
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.GetDynamicContent`
+    Используйте :meth:`Document.GetDynamicContent`
 
 
 
@@ -57,7 +57,7 @@ XmlTorg12
   Возвращает :doc:`представление контента титула покупателя <Torg12BuyerContent>` документа
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.GetDynamicContent`
+    Используйте :meth:`Document.GetDynamicContent`
 
 
 

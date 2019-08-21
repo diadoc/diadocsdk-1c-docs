@@ -11,5 +11,5 @@
 
 .. rubric:: Исправлено
 
-* Фрагментация результата выполнения метода :func:`Organization.GetDocumentEventList`
+* Фрагментация результата выполнения метода :meth:`Organization.GetDocumentEventList`
 * Не заполнялось свойство **Waybills** объекта :doc:`../../ComObjects/TovTorgTransferInfo`

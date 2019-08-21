@@ -19,4 +19,4 @@ ExtendedSigner
 .. note:: Должны быть заполнены либо *BoxId* + *CertificateThumbprint*, либо *SignerDetails*
 
 
-.. seealso:: :func:`Organization.CreateSetExtendedSignerDetailsTask`
+.. seealso:: :meth:`Organization.CreateSetExtendedSignerDetailsTask`

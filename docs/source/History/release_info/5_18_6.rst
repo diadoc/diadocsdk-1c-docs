@@ -12,4 +12,4 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Nonformalized.Reject` не работал для роуминговых документов
+* Метод :meth:`Nonformalized.Reject` не работал для роуминговых документов

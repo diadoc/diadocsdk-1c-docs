@@ -14,8 +14,8 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Organization.GetExtendedSignerDetails` и объект :doc:`../../ComObjects/SetExtendedSignerDetailsTask` не поддерживали работу с данными подписанта *УКД*
+* Метод :meth:`Organization.GetExtendedSignerDetails` и объект :doc:`../../ComObjects/SetExtendedSignerDetailsTask` не поддерживали работу с данными подписанта *УКД*
 * Исправлена ганерация контента формализованных отказов в подписи
-* В COM-компоненте некооректное обращение к памяти в методе :func:`OutDocumentSignTask.AddExtendedSigner`
+* В COM-компоненте некооректное обращение к памяти в методе :meth:`OutDocumentSignTask.AddExtendedSigner`
 * Зависание компоненты, если заданы неверные реквизиты прокси
-* Метод :func:`Document.GetRecipientSignature` не возвращал подпись для неформализованных документов
+* Метод :meth:`Document.GetRecipientSignature` не возвращал подпись для неформализованных документов

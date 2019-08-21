@@ -47,13 +47,17 @@ AddressInfo
 
 .. rubric:: Методы
 
-+-------------------------+
-|:func:`.GetAddressString`|
-+-------------------------+
++---------------------------------+
+| |AddressInfo-GetAddressString|_ |
++---------------------------------+
+
+
+.. |AddressInfo-GetAddressString| replace:: GetAddressString()
 
 
 
-.. function:: AddressInfo.GetAddressString()
+.. _AddressInfo-GetAddressString:
+.. method:: AddressInfo.GetAddressString()
 
   Возвращает строковое представление адреса
 

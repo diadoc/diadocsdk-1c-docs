@@ -4,7 +4,7 @@
 Все действия с документами производятся в контексте объекта :doc:`Organization <../ComObjects/Organization>`
 
 :doc:`Документы <../ComObjects/Document>` в Диадоке имеют разные типы. Существуют свойства и методы, характерные как для всех типов, так и специфичные для какого-то конкретного типа.
-Для получения информации о типах доступных документов используйте :func:`Organization.GetDocumentTypes`
+Для получения информации о типах доступных документов используйте :meth:`Organization.GetDocumentTypes`
 
 .. toctree::
    :name: Examples_Work_With_Docs

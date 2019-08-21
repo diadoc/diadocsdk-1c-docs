@@ -10,11 +10,11 @@
 * Расширена поддержка прокси: добавлена поддержка HTTP ответа ``407 (Proxy Authentication Required)``
 * Автоматический расчёт сумм в :doc:`../../ComObjects/Torg12Totals` для :doc:`../../ComObjects/Torg12Content`
 * Добавлено свойство **AmendmentRequested** для объектов :doc:`../../ComObjects/Utd`, :doc:`../../ComObjects/Ucd`, :doc:`../../ComObjects/UtdRevision`, :doc:`../../ComObjects/UcdRevision`
-* Добавлены методы :func:`Utd.GetAmendmentRequestedComment`, :func:`Ucd.GetAmendmentRequestedComment`, :func:`UtdRevision.GetAmendmentRequestedComment`, :func:`UcdRevision.GetAmendmentRequestedComment`
+* Добавлены методы :meth:`Utd.GetAmendmentRequestedComment`, :meth:`Ucd.GetAmendmentRequestedComment`, :meth:`UtdRevision.GetAmendmentRequestedComment`, :meth:`UcdRevision.GetAmendmentRequestedComment`
 * Добавлено свойство **AttachmentVersion** в объект :doc:`../../ComObjects/Document`
 
 
 .. rubric:: Изменено
 
-* Метод :func:`Organization.GetCounteragentListByInnList` возвращает весь набор подходящих для одного ИНН организаций
+* Метод :meth:`Organization.GetCounteragentListByInnList` возвращает весь набор подходящих для одного ИНН организаций
 * Оптимизирована работа объекта :doc:`../../ComObjects/ReceiptGenerationProcess`

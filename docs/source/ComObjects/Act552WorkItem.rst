@@ -56,7 +56,7 @@ Act552WorkItem
 
 
 .. _Act552WorkItem-AddStructedAdditionalInfo:
-.. function:: Act552WorkItem.AddStructedAdditionalInfo()
+.. method:: Act552WorkItem.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
 
@@ -76,5 +76,5 @@ Act552WorkItem
 20                 ставка налога 20%
 ================== ============================
 
-.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ ).
+.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ .
   В 1С такое представление можно получить с помощью функции глобального контекста XMLСтрока/XMLString

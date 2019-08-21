@@ -10,7 +10,7 @@
 
   * Добавлен реквизит **IsLockedPackage** объекта :doc:`../../ComObjects/Document`
   * Добавлен объект :doc:`../../ComObjects/DocumentPackage`
-  * Добавлен метод :func:`Document.GetDocumentPackage`
+  * Добавлен метод :meth:`Document.GetDocumentPackage`
   * Добавлен объект :doc:`../../ComObjects/PackageContentItem`
   * Добавлен объект :doc:`../../ComObjects/PackageContent`
 

@@ -6,4 +6,4 @@
 
 .. rubric:: Изменено
 
-* Утечка памяти в методе :func:`Organization.GetCounteragentListByInnList`, приводящая к AppCrash
+* Утечка памяти в методе :meth:`Organization.GetCounteragentListByInnList`, приводящая к AppCrash

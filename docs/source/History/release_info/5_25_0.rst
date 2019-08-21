@@ -7,12 +7,12 @@
 .. rubric:: Добавлено
 
 * Поддержка ставки НДС ``20/120``
-* Добавлен метод :func:`Organization.RecycleDraft`
+* Добавлен метод :meth:`Organization.RecycleDraft`
 
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.CreateReplySendTask` :doc:`../../ComObjects/AcceptanceContent`. если на титул отправителя документа ссылались другие *Attachment*, например, комментарии
-* Методы :func:`OutDocumentSignTask.Send` и :func:`OutDocumentSignTask.SendAsync` не отправляли добавленные в них :doc:`../../ComObjects/ExtendedSigner`
-* Метод :func:`DocumentsTask.GetDocuments` мог вызывать ошибку ``vector<T> too long``
+* Метод :meth:`Document.CreateReplySendTask` :doc:`../../ComObjects/AcceptanceContent`. если на титул отправителя документа ссылались другие *Attachment*, например, комментарии
+* Методы :meth:`OutDocumentSignTask.Send` и :meth:`OutDocumentSignTask.SendAsync` не отправляли добавленные в них :doc:`../../ComObjects/ExtendedSigner`
+* Метод :meth:`DocumentsTask.GetDocuments` мог вызывать ошибку ``vector<T> too long``
 * Улучшена совместимость с Windows XP

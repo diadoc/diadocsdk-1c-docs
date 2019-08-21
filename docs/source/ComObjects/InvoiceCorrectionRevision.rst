@@ -74,7 +74,7 @@
   Возвращает :doc:`представление контента <InvoiceCorrectionContent>` исправления корректировочного счета-фактуры
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.GetDynamicContent`
+    Используйте :meth:`Document.GetDynamicContent`
 
 
 
@@ -84,7 +84,7 @@
   Возвращает комментарий к уведомлению об уточнении
 
   .. deprecated:: 5.20.3
-    Используйте Используйте :func:`Document.GetAnyComment` с типом ``AmendmentComment``
+    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
 
 
 

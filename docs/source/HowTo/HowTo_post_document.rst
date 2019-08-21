@@ -39,4 +39,4 @@
     КонецПроцедуры
 
 
-.. seealso:: :func:`Organization.GetDocumentTypes`
+.. seealso:: :meth:`Organization.GetDocumentTypes`

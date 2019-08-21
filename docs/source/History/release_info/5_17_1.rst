@@ -6,11 +6,11 @@
 
 .. rubric:: Добавлено
 
-* Загрузка *Акта*, *Торг-12* и *Счёта-фактуры* с УПД-контентом методами :func:`PackageSendTask.AddDocumentFromFileRaw` и :func:`Organization.CreateSendTaskFromFileRaw`
+* Загрузка *Акта*, *Торг-12* и *Счёта-фактуры* с УПД-контентом методами :meth:`PackageSendTask.AddDocumentFromFileRaw` и :meth:`Organization.CreateSendTaskFromFileRaw`
 * Шифрование *Корректировочного СФ* и *Исправленного корректировочного СФ*
 
 
 .. rubric:: Исправленного
 
 * Генерация метаданных для шифрованных документов
-* Получение титула покупателя для шифрованных документов методом :func:`Document.GetBuyerContent`
+* Получение титула покупателя для шифрованных документов методом :meth:`Document.GetBuyerContent`

@@ -7,7 +7,7 @@
 .. rubric:: Добавлено
 
 * Добавлен объект :doc:`../../ComObjects/TestConnectionResult`
-* Добавлен метод :func:`DiadocAPI.TestConnection2`
+* Добавлен метод :meth:`DiadocAPI.TestConnection2`
 * Добавлены свойства **CanManageCounteragent**, **IsBlocked**, **BlockReason** в объект :doc:`../../ComObjects/UserPermissions`
 
 .. rubric:: Изменено
@@ -15,12 +15,12 @@
 * Обновлены значения свойства **Type** объекта :doc:`../../ComObjects/ResolutionRequest`
 * Помечены устаревшими:
 
-  * Метод :func:`DiadocAPI.TestConnection`
+  * Метод :meth:`DiadocAPI.TestConnection`
 
 
 .. rubric:: Исправлено
 
 .. текст ошибки был именно с точкой на конце
 
-* Метод :func:`Organization.GetDocumentEventList` мог приводить к ошибке ``##100[Ошибка сервера Диадок]code:400, HTTP error: Could not parse messageId query param:.``
-* Метод :func:`Organization.GetDocumentEventList` не возвращал событий, если в ящике было создано много черновиков подряд
+* Метод :meth:`Organization.GetDocumentEventList` мог приводить к ошибке ``##100[Ошибка сервера Диадок]code:400, HTTP error: Could not parse messageId query param:.``
+* Метод :meth:`Organization.GetDocumentEventList` не возвращал событий, если в ящике было создано много черновиков подряд

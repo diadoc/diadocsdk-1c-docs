@@ -11,5 +11,5 @@
 .. rubric:: Исправлено
 
 * COM-компонента не поддерживала КСФ с УКД-контентом в объекте :doc:`../../ComObjects/PackageSendTask`
-* Метод :func:`Organization.CreateSendTask` выбрасывал исключение ``Unknown attachment type`` при работе с документами с УПД-контентом
-* Исправлена валидация УПД-контента методом :func:`SendTask.ValidateContent`
+* Метод :meth:`Organization.CreateSendTask` выбрасывал исключение ``Unknown attachment type`` при работе с документами с УПД-контентом
+* Исправлена валидация УПД-контента методом :meth:`SendTask.ValidateContent`

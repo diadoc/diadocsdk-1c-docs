@@ -24,6 +24,6 @@ AdditionalInfoId
 
 
 .. _AdditionalInfoId-AddStructedAdditionalInfo:
-.. function:: AdditionalInfoId.AddStructedAdditionalInfo()
+.. method:: AdditionalInfoId.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его

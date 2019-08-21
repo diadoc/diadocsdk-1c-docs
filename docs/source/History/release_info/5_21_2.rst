@@ -6,5 +6,5 @@
 
 .. rubric:: Исправлено
 
-* Вызов метода :func:`CreateReplySendTask.Send` приводил к AppCrash, если :doc:`../../ComObjects/ReplySendTask` создан для *Торг-12 551 приказа*
-* Метод :func:`Utd.GetContent` не учитывал версию содержимого
+* Вызов метода :meth:`CreateReplySendTask.Send` приводил к AppCrash, если :doc:`../../ComObjects/ReplySendTask` создан для *Торг-12 551 приказа*
+* Метод :meth:`Utd.GetContent` не учитывал версию содержимого

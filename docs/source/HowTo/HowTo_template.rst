@@ -9,11 +9,11 @@
 
 Для отправки шаблона документа необходимо:
     * находиться в контексте :doc:`организации <../ComObjects/Organization>`
-    * вызвать метод :func:`Organization.CreateTemplateSendTask`
+    * вызвать метод :meth:`Organization.CreateTemplateSendTask`
     * заполнить :doc:`полученный объект <../ComObjects/TemplateSendTask>`
-    * вызвать метод :func:`TemplateSendTask.Send`
+    * вызвать метод :meth:`TemplateSendTask.Send`
 
-Можно отправлять как однотитульные документы, так и двухтитульные документы - для этого у :doc:`отправляемого шаблона <../ComObjects/TemplateToSend>` есть методы :func:`TemplateToSend.LoadSellerTitleFromFile` и :func:`TemplateToSend.LoadBuyerTitleFromFile`
+Можно отправлять как однотитульные документы, так и двухтитульные документы - для этого у :doc:`отправляемого шаблона <../ComObjects/TemplateToSend>` есть методы :meth:`TemplateToSend.LoadSellerTitleFromFile` и :meth:`TemplateToSend.LoadBuyerTitleFromFile`
 
 Сами титулы при этом компонента не готовит - подготовкой контента пользователь занимается самостоятельно.
 
@@ -50,7 +50,7 @@
 ----------------------------------------------------------
 
 
-После отправки шаблона, вернётся объект :doc:`Template <../ComObjects/Template>`, который содержит идентификатор шаблона. Зная этот идентификатор, можно запросить шаблон повторно, и если из шаблона был создан документ, то в соответствующей коллекции будет указаны ID таких документов. Далее можно вызвать метод :func:`Organization.GetDocumentById`:
+После отправки шаблона, вернётся объект :doc:`Template <../ComObjects/Template>`, который содержит идентификатор шаблона. Зная этот идентификатор, можно запросить шаблон повторно, и если из шаблона был создан документ, то в соответствующей коллекции будет указаны ID таких документов. Далее можно вызвать метод :meth:`Organization.GetDocumentById`:
 
 .. code-block:: c#
 

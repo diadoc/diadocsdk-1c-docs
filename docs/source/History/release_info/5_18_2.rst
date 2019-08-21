@@ -14,17 +14,17 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.SaveAllContent` сохраняет файлы подписи в файлы с расширением ``.sgn``
+* Метод :meth:`Document.SaveAllContent` сохраняет файлы подписи в файлы с расширением ``.sgn``
 
 
 
 .. rubric:: Исправлено
 
-* Методы :func:`Document.SaveAllContent` и :func:`Document.SaveAllContentAsync` сохраняли печатную форму документа в файл без расширения
-* В объекте :doc:`../../ComObjects/Document`, получаемом методами :func:`SendTask.Send` и :func:`SendTask.SendAsync` не заполнялось поле **OneSDocumentId**
-* Ошибка при вызове :func:`Document.CreateReplySendTask` с типом ``RejectDocument`` для всех неформализованных типов документов
+* Методы :meth:`Document.SaveAllContent` и :meth:`Document.SaveAllContentAsync` сохраняли печатную форму документа в файл без расширения
+* В объекте :doc:`../../ComObjects/Document`, получаемом методами :meth:`SendTask.Send` и :meth:`SendTask.SendAsync` не заполнялось поле **OneSDocumentId**
+* Ошибка при вызове :meth:`Document.CreateReplySendTask` с типом ``RejectDocument`` для всех неформализованных типов документов
 * В COM-компоненте обращение к полю **AmendmentRequested** объектов :doc:`../../ComObjects/Invoice`, :doc:`../../ComObjects/InvoiceRevision`, :doc:`../../ComObjects/InvoiceCorrection`, :doc:`../../ComObjects/InvoiceCorrectionRevision` вызывало исключение
-* Метод :func:`SendDraftTask.SendAsync` не имел результата
-* Метод :func:`DocumentTask.GetDocuments` возвращал ``Неопределено`` вместо пустой коллекции документов
+* Метод :meth:`SendDraftTask.SendAsync` не имел результата
+* Метод :meth:`DocumentTask.GetDocuments` возвращал ``Неопределено`` вместо пустой коллекции документов
 * При подписании документов pin-код сертификата КЭП запрашивался несколько раз
-* Методы :func:`Organization.CreateSendTask`, :func:`Organization.CreateSendTaskFromFile`, :func:`Organization.CreateSendTaskFromFileRaw` не проверяли кооректность переданного типа документа
+* Методы :meth:`Organization.CreateSendTask`, :meth:`Organization.CreateSendTaskFromFile`, :meth:`Organization.CreateSendTaskFromFileRaw` не проверяли кооректность переданного типа документа

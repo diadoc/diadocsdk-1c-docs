@@ -53,7 +53,7 @@ CustomDocumentToSend
 .. |CustomDocumentToSend-AddMetadata| replace:: AddMetadata()
 
 .. _CustomDocumentToSend-AddMetadata:
-.. function:: CustomDocumentToSend.AddMetadata()
+.. method:: CustomDocumentToSend.AddMetadata()
 
   Добавляет :doc:`новый элемент <MetadataItem>` в коллекцию *Metadata* и возвращает его
 

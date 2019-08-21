@@ -12,4 +12,4 @@
 
 .. rubric:: Изменения
 
-* Метод :func:`Document.GetAnyComment` поддерживает параметр ``RecipientAttachmentComment`` для получения комментария к титулу покупателя
+* Метод :meth:`Document.GetAnyComment` поддерживает параметр ``RecipientAttachmentComment`` для получения комментария к титулу покупателя

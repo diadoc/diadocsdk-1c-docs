@@ -12,22 +12,22 @@
   * Обновлены версии документов отправляемые объектами :doc:`../../ComObjects/PackageSendTask` и :doc:`../../ComObjects/SendTask`
   * Обновлены методы:
 
-    * :func:`Invoice.GetContent`
-    * :func:`InvoiceRevision.GetContent`
-    * :func:`InvoiceCorrection.GetContent`
-    * :func:`InvoiceCorrectionRevision.GetContent`
-    * :func:`XmlAcceptanceCertificate.GetContent`
-    * :func:`XmlAcceptanceCertificate.GetBuyerContent`
-    * :func:`XmlTorg12.GetContent`
-    * :func:`XmlTorg12.GetBuyerContent`
-    * :func:`Utd.GetContent`
-    * :func:`Utd.GetBuyerContent`
-    * :func:`UtdRevision.GetContent`
-    * :func:`UtdRevision.GetBuyerContent`
-    * :func:`Ucd.GetContent`
-    * :func:`Ucd.GetBuyerContent`
-    * :func:`UcdRevision.GetContent`
-    * :func:`UcdRevision.GetBuyerContent`
+    * :meth:`Invoice.GetContent`
+    * :meth:`InvoiceRevision.GetContent`
+    * :meth:`InvoiceCorrection.GetContent`
+    * :meth:`InvoiceCorrectionRevision.GetContent`
+    * :meth:`XmlAcceptanceCertificate.GetContent`
+    * :meth:`XmlAcceptanceCertificate.GetBuyerContent`
+    * :meth:`XmlTorg12.GetContent`
+    * :meth:`XmlTorg12.GetBuyerContent`
+    * :meth:`Utd.GetContent`
+    * :meth:`Utd.GetBuyerContent`
+    * :meth:`UtdRevision.GetContent`
+    * :meth:`UtdRevision.GetBuyerContent`
+    * :meth:`Ucd.GetContent`
+    * :meth:`Ucd.GetBuyerContent`
+    * :meth:`UcdRevision.GetContent`
+    * :meth:`UcdRevision.GetBuyerContent`
 
 
 .. rubric:: Изменено
@@ -38,5 +38,5 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.GetAnyComment` с параметром ``RecipientAttachmentComment`` возвращал комментарий к титулу отправителя, а не получателя
+* Метод :meth:`Document.GetAnyComment` с параметром ``RecipientAttachmentComment`` возвращал комментарий к титулу отправителя, а не получателя
 * Подпись для входящего двухтитульного документа, созданного из шаблона с предзаполненным титулом получателя, формировалась на основе титула отправителя, а не получателя

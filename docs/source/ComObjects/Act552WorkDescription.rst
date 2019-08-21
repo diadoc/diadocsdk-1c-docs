@@ -39,5 +39,5 @@ Act552WorkDescription
  Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию *Items* и возвращает его
 
 
-.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ ).
+.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ .
   В 1С такое представление можно получить с помощью функции глобального контекста XMLСтрока/XMLString

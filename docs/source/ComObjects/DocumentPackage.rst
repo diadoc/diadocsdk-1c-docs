@@ -93,7 +93,7 @@ DocumentPackage
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask>`
 
   .. deprecated:: 5.27.0
-    Используйте :func:`DocumentPackage.CreateReplySendTask2`
+    Используйте :meth:`DocumentPackage.CreateReplySendTask2`
 
 
 
@@ -122,7 +122,7 @@ DocumentPackage
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при постановке документов на маршрут
 
-  Ставит документы на маршрут согласования. Получить доступные маршруты согласования можно методом :func:`Organization.GetResolutionRoutes`
+  Ставит документы на маршрут согласования. Получить доступные маршруты согласования можно методом :meth:`Organization.GetResolutionRoutes`
 
 
 .. _DocumentPackage-RemoveFromResolutionRoute:

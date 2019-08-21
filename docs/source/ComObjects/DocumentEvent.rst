@@ -50,7 +50,7 @@ DocumentEvent
 
 
 .. _DocumentEvent-GetFileContent:
-.. method:: GetFileContent(FilePath)
+.. method:: DocumentEvent.GetFileContent(FilePath)
 
   :FilePath: ``строка`` путь до файла, в который будет сохранён контент
 
@@ -59,7 +59,7 @@ DocumentEvent
 
 
 .. _DocumentEvent-GetSignatureContent:
-.. method:: GetSignatureContent(FilePath)
+.. method:: DocumentEvent.GetSignatureContent(FilePath)
 
   :FilePath: ``строка`` путь до файла, в который будет сохранён контент подписи
 
@@ -70,7 +70,6 @@ DocumentEvent
 .. rubric:: Дополнительная информация
 
 .. |DocumentEvent-EventType| replace:: Возможные значения
-
 .. _DocumentEvent-EventType:
 
 ==================== ========================================
@@ -89,7 +88,6 @@ UnsupportedEventType неподдерживаемый тип события
 
 
 .. |DocumentEvent-Direction| replace:: Возможные значения
-
 .. _DocumentEvent-Direction:
 
 ==================== ===================

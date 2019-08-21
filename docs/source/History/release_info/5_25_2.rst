@@ -20,8 +20,8 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.GetContent` вызывал ошибку ``Unable to detect document type with submitted versionFilters...``
-* Методы :func:`Document.CreateReplySendTask` и :func:`DocumentPackage.CreateReplySendTask` с типом ``RejectDocument`` возвращали COM-объект неправильного типа
+* Метод :meth:`Document.GetContent` вызывал ошибку ``Unable to detect document type with submitted versionFilters...``
+* Методы :meth:`Document.CreateReplySendTask` и :meth:`DocumentPackage.CreateReplySendTask` с типом ``RejectDocument`` возвращали COM-объект неправильного типа
 * Не сериализовалось свойство **EditingSettingId** объекта :doc:`../../ComObjects/TemplateToSend`
 * AppCrash при десериализации объекта :doc:`../../ComObjects/Department` в случае, если у подразделения не указан адрес
 * Невозможно подписать или отказать в подписи по документам в закрытом пакете, если в нём есть документы без запроса подписи

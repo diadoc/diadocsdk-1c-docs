@@ -35,7 +35,7 @@ NonformalizedTorg12
   Возвращает комментарий к отказу в подписании
 
   .. deprecated:: 5.20.3
-    Используйте Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
 
 
 

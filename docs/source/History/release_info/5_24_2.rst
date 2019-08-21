@@ -7,4 +7,4 @@
 .. rubric:: Исправлено
 
 * Некорректное чтение подписи с `PRIMITIVE CONTEXT_SPECIFIC` тэгами
-* Метод :func:`DocumentsTask.GetDocumentsAsync` мог приводить к AppCrash
+* Метод :meth:`DocumentsTask.GetDocumentsAsync` мог приводить к AppCrash
