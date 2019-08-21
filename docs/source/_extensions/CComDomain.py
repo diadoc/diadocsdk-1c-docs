@@ -1,20 +1,14 @@
 # -*- coding: utf-8 -*-
 
 import re
-
-from docutils import nodes
-from docutils.parsers.rst import directives
 from six import iteritems
 
-from sphinx import addnodes, locale
-from sphinx.deprecation import DeprecatedDict, RemovedInSphinx30Warning
+from sphinx import addnodes
 from sphinx.directives import ObjectDescription
 from sphinx.domains import Domain, ObjType, Index
 from sphinx.locale import _, __
 from sphinx.roles import XRefRole
 from sphinx.util import logging
-from sphinx.util.docfields import Field, GroupedField, TypedField
-from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import make_refnode
 
 
@@ -27,24 +21,6 @@ py_sig_re = re.compile(
            (?:\s* -> \s* (.*))?  #           return annotation
           )? $                   # and nothing more
           ''', re.VERBOSE)
-
-
-pairindextypes = {
-    'module':    _('module'),
-    'keyword':   _('keyword'),
-    'operator':  _('operator'),
-    'object':    _('object'),
-    'exception': _('exception'),
-    'statement': _('statement'),
-    'builtin':   _('built-in function'),
-}
-
-locale.pairindextypes = DeprecatedDict(
-    pairindextypes,
-    'sphinx.locale.pairindextypes is deprecated. '
-    'Please use sphinx.domains.python.pairindextypes instead.',
-    RemovedInSphinx30Warning
-)
 
 
 def _pseudo_parse_arglist(signode, arglist):
@@ -85,119 +61,9 @@ def _pseudo_parse_arglist(signode, arglist):
         signode += paramlist
 
 
-class ComObjectXrefMixin(object):
-    def make_xref(self,
-                  rolename,
-                  domain,
-                  target,
-                  innernode=nodes.emphasis,
-                  contnode=None,
-                  env=None,
-                  ):
-        result = super(ComObjectXrefMixin, self).make_xref(rolename, domain, target,
-                                                    innernode, contnode, env)
-        result['refspecific'] = True
-        if target.startswith(('.', '~')):
-            prefix, result['reftarget'] = target[0], target[1:]
-            if prefix == '.':
-                text = target[1:]
-            elif prefix == '~':
-                text = target.split('.')[-1]
-            for node in result.traverse(nodes.Text):
-                node.parent[node.parent.index(node)] = nodes.Text(text)
-                break
-        return result
-
-    def make_xrefs(self,
-                   rolename,
-                   domain,
-                   target,
-                   innernode=nodes.emphasis,
-                   contnode=None,
-                   env=None,
-                   ):
-        # type: (...) -> List[nodes.Node]
-        delims = r'(\s*[\[\]\(\),](?:\s*or\s)?\s*|\s+or\s+)'
-        delims_re = re.compile(delims)
-        sub_targets = re.split(delims, target)
-
-        split_contnode = bool(contnode and contnode.astext() == target)
-
-        results = []
-        for sub_target in filter(None, sub_targets):
-            if split_contnode:
-                contnode = nodes.Text(sub_target)
-
-            if delims_re.match(sub_target):
-                results.append(contnode or innernode(sub_target, sub_target))
-            else:
-                results.append(self.make_xref(rolename, domain, sub_target,
-                                              innernode, contnode, env))
-
-        return results
-
-
-class ComObjectField(ComObjectXrefMixin, Field):
-    def make_xref(self, rolename, domain, target,
-                  innernode=nodes.emphasis, contnode=None, env=None):
-        if rolename == 'class' and target == 'None':
-            rolename = 'obj'
-
-        return super(ComObjectField, self).make_xref(rolename, domain, target,
-                                              innernode, contnode, env)
-
-
-class ComObjectGroupedField(ComObjectXrefMixin, GroupedField):
-    pass
-
-
-class ComObjectTypedField(ComObjectXrefMixin, TypedField):
-    def make_xref(self, rolename, domain, target,
-                  innernode=nodes.emphasis, contnode=None, env=None):
-        if rolename == 'class' and target == 'None':
-            rolename = 'obj'
-
-        return super(ComObjectTypedField, self).make_xref(rolename, domain, target,
-                                                   innernode, contnode, env)
-
-
 class ComObjectBase(ObjectDescription):
-    option_spec = {
-        'noindex': directives.flag,
-        'module': directives.unchanged,
-        'annotation': directives.unchanged,
-    }
-
-    doc_field_types = [
-        ComObjectTypedField('parameter',
-                            label=_('Parameters'),
-                            names=('param', 'parameter', 'arg', 'argument', 'keyword', 'kwarg', 'kwparam'),
-                            typerolename='class',
-                            typenames=('paramtype', 'type'),
-                            can_collapse=True),
-        ComObjectTypedField('variable',
-                            label=_('Variables'),
-                            rolename='obj',
-                            names=('var', 'ivar', 'cvar'),
-                            typerolename='class',
-                            typenames=('vartype',),
-                            can_collapse=True),
-        ComObjectGroupedField('exceptions',
-                              label=_('Raises'),
-                              rolename='exc',
-                              names=('raises', 'raise', 'exception', 'except'),
-                              can_collapse=True),
-        Field('returnvalue',
-              label=_('Returns'),
-              has_arg=False,
-              names=('returns', 'return')),
-        ComObjectField('returntype',
-                       label=_('Return type'),
-                       has_arg=False,
-                       names=('rtype',),
-                       bodyrolename='class'),
-    ]
-
+    option_spec = dict()
+    doc_field_types = []
     allow_nesting = False
 
     def get_signature_prefix(self, sig):
