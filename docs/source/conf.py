@@ -32,7 +32,6 @@ html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
 primary_domain = 'comobject'
-# primary_domain = 'py'
 
 
 # -- Options for LaTeX output ---------------------------------------------
