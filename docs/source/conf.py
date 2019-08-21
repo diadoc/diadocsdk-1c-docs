@@ -31,7 +31,7 @@ html_static_path = ['_static']
 html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CDiadocdoc'
-primary_domain = 'ComObject'
+primary_domain = 'com-object'
 
 
 # -- Options for LaTeX output ---------------------------------------------

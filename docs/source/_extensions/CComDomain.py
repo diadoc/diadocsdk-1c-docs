@@ -105,7 +105,7 @@ class ComObjectBase(ObjectDescription):
             signode['ids'].append(fullname)
             signode['first'] = (not self.names)
             self.state.document.note_explicit_target(signode)
-            objects = self.env.domaindata['ComObject']['objects']
+            objects = self.env.domaindata['com-object']['objects']
             objects[fullname] = (self.env.docname, self.objtype)
 
         indextext = self.get_index_text(None, name_cls)
@@ -119,10 +119,10 @@ class ComObjectBase(ObjectDescription):
             if name_prefix:
                 prefix = name_prefix.strip('.')
         if prefix:
-            self.env.ref_context['comobject'] = prefix
+            self.env.ref_context['com-object'] = prefix
 
     def after_content(self):
-        self.env.ref_context['comobject'] = None
+        self.env.ref_context['com-object'] = None
 
 
 class ComObjectClassmember(ComObjectBase):
@@ -144,7 +144,7 @@ class ComObjectClassmember(ComObjectBase):
 
 class ComObjectXRefRole(XRefRole):
     def process_link(self, env, refnode, has_explicit_title, title, target):
-        refnode['comobject'] = env.ref_context.get('comobject')
+        refnode['com-object'] = env.ref_context.get('com-object')
         if not has_explicit_title:
             title = title.lstrip('.')
 
@@ -164,7 +164,7 @@ class ComObjectIndex(Index):
 
 
 class ComObjectDomain(Domain):
-    name = 'ComObject'
+    name = 'com-object'
     label = 'ComObject'
     object_types = {
         'method': ObjType(_('method'), 'meth'),
@@ -217,7 +217,7 @@ class ComObjectDomain(Domain):
         elif len(matches) > 1:
             match_list = ', '.join(match[0] for match in matches)
             warning = 'more than one target found for cross-reference {}: {}'.format(target.repr(), match_list)
-            logger.warning(__(warning), type='ref', subtype='comobject', location=node)
+            logger.warning(__(warning), type='ref', subtype='com-object', location=node)
         name, obj = matches[0]
 
         return make_refnode(builder, fromdocname, obj[0], name, contnode, name)
