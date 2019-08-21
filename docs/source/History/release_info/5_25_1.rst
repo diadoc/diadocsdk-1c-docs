@@ -6,9 +6,9 @@
 
 .. rubric:: Добавлено
 
-* Добавлен метод :func:`Organization.RestoreDocument`
+* Добавлен метод :meth:`Organization.RestoreDocument`
 
 .. rubric:: Исправлено
 
-* Метод :func:`Document.CreateReplySendTask` вызвал ошибку ``Access to Box is denied``
+* Метод :meth:`Document.CreateReplySendTask` вызвал ошибку ``Access to Box is denied``
 * Исправлена совместимость с Windows XP

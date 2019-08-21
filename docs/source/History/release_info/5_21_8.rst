@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Organization.GetDocuments` завершался исключением, если докуентов не найдено
+* Метод :meth:`Organization.GetDocuments` завершался исключением, если докуентов не найдено

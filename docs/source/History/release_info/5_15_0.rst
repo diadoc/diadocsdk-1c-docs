@@ -6,9 +6,9 @@
 
 .. rubric:: Добавлено
 
-* Метод :func:`Utd.SendReceiptAsync`
-* Метод :func:`UtdRevision.SendReceiptAsync`
-* Метод :func:`Organization.CanSendInvoice`
+* Метод :meth:`Utd.SendReceiptAsync`
+* Метод :meth:`UtdRevision.SendReceiptAsync`
+* Метод :meth:`Organization.CanSendInvoice`
 * В объект :doc:`../../ComObjects/Counteragent` добавлен реквизит **LastEventTimestampTicks**
 * В объект :doc:`../../ComObjects/UserPermissions` добавлен реквизит **JobTitle**
 * В объект :doc:`../../ComObjects/Document` добавлен реквизит **PackageId**

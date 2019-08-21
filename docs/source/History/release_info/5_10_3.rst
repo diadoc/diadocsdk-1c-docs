@@ -6,5 +6,5 @@
 
 .. rubric:: Исправлено
 
-* :func:`SendTask.ValidateContent` допускает 5 знаков в дробной части числа для поля **Quantity** в :doc:`../../ComObjects/AcceptanceCertificateItem`
-* :func:`Organization.GetExtendedSignerDetails` теперь возвращает :doc:`../../ComObjects/ExtendedSignerDetails`
+* :meth:`SendTask.ValidateContent` допускает 5 знаков в дробной части числа для поля **Quantity** в :doc:`../../ComObjects/AcceptanceCertificateItem`
+* :meth:`Organization.GetExtendedSignerDetails` теперь возвращает :doc:`../../ComObjects/ExtendedSignerDetails`

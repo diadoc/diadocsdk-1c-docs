@@ -7,4 +7,4 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Organization.GetCounteragnetById` мог приводить к AppCrash, если ящик контрагента в Диадок был удалён
+* Метод :meth:`Organization.GetCounteragnetById` мог приводить к AppCrash, если ящик контрагента в Диадок был удалён

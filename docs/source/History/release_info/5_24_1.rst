@@ -8,7 +8,7 @@
 
 * В некоторых объектах пропадала о :doc:`информация пользователе <../../ComObjects/OrganizationUser>` после первого обращения к ней
 * В :doc:`../../ComObjects/TovTorgSellerContent` и его вложенных объектах не генерировалась ставка НДС ``18%``
-* Метод :func:`DocumentsTask.GetDocumentsAsync` игнорировал флаг **RequireOneSDocumentId**
+* Метод :meth:`DocumentsTask.GetDocumentsAsync` игнорировал флаг **RequireOneSDocumentId**
 * При подписании черновиков генерировалась неправильная подпись
 * Отправка документов с помощью Контур.Сертификата заканчивалась ошибкой ``Для подписания и отправки юридически значимого документа необходимо выполнить вход по сертификату``
 * Подписание двухтитульных документов с комментарием к титулу продавца завершалось ошибкой ``MessagePatchToPost.Signatures[N]: recipient title content was not specified``

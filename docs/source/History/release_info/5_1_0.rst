@@ -13,6 +13,6 @@
 
 .. rubric:: Исправлено
 
-* При возникновении ошибки в :func:`AcquireCounteragentTask.SendAsync()` исключение в поле **Result** попадает с задержкой
+* При возникновении ошибки в :meth:`AcquireCounteragentTask.SendAsync()` исключение в поле **Result** попадает с задержкой
 * Исправлена валидация :doc:`../../ComObjects/AcceptanceCertificateItem`: **UnitCode** и **UnitName** могут одновременно отсутствовать
 * Поле **Quantity** объекта :doc:`../../ComObjects/AcceptanceCertificateItem` может принимать отрицательные значения

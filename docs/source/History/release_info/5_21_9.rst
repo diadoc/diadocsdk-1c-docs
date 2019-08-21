@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* Метод :func:`Organization.GetDocumentEventList` не возвращал события, связанные с патчингом документов
+* Метод :meth:`Organization.GetDocumentEventList` не возвращал события, связанные с патчингом документов

@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* Не работал метод :func:`Document.GetRecipientSignature` для *УПД*
+* Не работал метод :meth:`Document.GetRecipientSignature` для *УПД*

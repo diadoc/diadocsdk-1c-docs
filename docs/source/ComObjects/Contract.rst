@@ -32,7 +32,7 @@ Contract
   Возвращает комментарий к отказу в подписании
 
   .. deprecated:: 5.20.3
-    Используйте :func:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+    Используйте :meth:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
 
 
 
@@ -42,7 +42,7 @@ Contract
   Подписывает документы
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`
 
 
 
@@ -54,4 +54,4 @@ Contract
   Отказывает в подписании документа
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`

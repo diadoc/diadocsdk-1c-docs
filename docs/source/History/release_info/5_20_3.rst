@@ -6,35 +6,35 @@
 
 .. rubric:: Добавлено
 
-* Добавлен метод :func:`Document.GetAnyComment`
+* Добавлен метод :meth:`Document.GetAnyComment`
 * Добавлено свойство **Revised** в объекты :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/Ucd`
 * Добавлено свойство **Corrected** в объекты :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/Ucd`
 
 .. rubric:: Изменено
 
-* Методы :func:`Organization.GetCounteragentById` и :func:`Organization.GetCounteragentListByInnKpp` используют `/V2/GetCounteragent <http://api-docs.diadoc.ru/ru/latest/http/GetCounteragent.html#v2>`_
-* Метод :func:`Counteragnet.AcquireCounteragent` стал блокирующим - теперь ожидается зхавершение асинххронного вызова со стороны Api Diadoc и выбрасывает исключение в случае получение кода ошибки со стороны ядра Диадок
+* Методы :meth:`Organization.GetCounteragentById` и :meth:`Organization.GetCounteragentListByInnKpp` используют `/V2/GetCounteragent <http://api-docs.diadoc.ru/ru/latest/http/GetCounteragent.html#v2>`_
+* Метод :meth:`Counteragnet.AcquireCounteragent` стал блокирующим - теперь ожидается зхавершение асинххронного вызова со стороны Api Diadoc и выбрасывает исключение в случае получение кода ошибки со стороны ядра Диадок
 * Поле **AddressText** объекта :doc:`../../ComObjects/AddressInfo` теперь может использоваться для задания иностранного адреса или неструктурированого российского адреса
 * Улучшена совместимость COM-компоненты с *Microsoft VB6* и *Microsoft VBA*
 
 
 * Помечены устаревшими:
 
-  * :func:`InvoiceCorrectionRevision.GetAmendmentRequestedComment`
-  * :func:`InvoiceCorrection.GetAmendmentRequestedComment`
-  * :func:`InvoiceRevision.GetAmendmentRequestedComment`
-  * :func:`Invoice.GetAmendmentRequestedComment`
-  * :func:`UtdRevision.GetAmendmentRequestedComment`
-  * :func:`Utd.GetAmendmentRequestedComment`
-  * :func:`UcdRevision.GetAmendmentRequestedComment`
-  * :func:`Ucd.GetAmendmentRequestedComment`
-  * :func:`Document.GetComment`
-  * :func:`XmlAcceptanceCertificate.GetRejectionComment`
-  * :func:`NonformalizedTorg12.GetRejectionComment`
-  * :func:`NonformalizedAcceptanceCertificate.GetRejectionComment`
-  * :func:`XmlTorg12.GetRejectionComment`
-  * :func:`Contract.GetRejectionComment`
-  * :func:`Nonformalized.GetRejectionComment`
+  * :meth:`InvoiceCorrectionRevision.GetAmendmentRequestedComment`
+  * :meth:`InvoiceCorrection.GetAmendmentRequestedComment`
+  * :meth:`InvoiceRevision.GetAmendmentRequestedComment`
+  * :meth:`Invoice.GetAmendmentRequestedComment`
+  * :meth:`UtdRevision.GetAmendmentRequestedComment`
+  * :meth:`Utd.GetAmendmentRequestedComment`
+  * :meth:`UcdRevision.GetAmendmentRequestedComment`
+  * :meth:`Ucd.GetAmendmentRequestedComment`
+  * :meth:`Document.GetComment`
+  * :meth:`XmlAcceptanceCertificate.GetRejectionComment`
+  * :meth:`NonformalizedTorg12.GetRejectionComment`
+  * :meth:`NonformalizedAcceptanceCertificate.GetRejectionComment`
+  * :meth:`XmlTorg12.GetRejectionComment`
+  * :meth:`Contract.GetRejectionComment`
+  * :meth:`Nonformalized.GetRejectionComment`
 
 
 .. rubric:: Исправлено

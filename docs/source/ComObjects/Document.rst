@@ -337,7 +337,7 @@ Document
   Возвращает строку с комментарием к документу, заданным при отправке
 
   .. deprecated:: 5.20.3
-    Используйте :func:`GetAnyComment` с типом ``AttachmentComment``
+    Используйте :meth:`GetAnyComment` с типом ``AttachmentComment``
 
 
 
@@ -472,7 +472,7 @@ Document
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`
 
 
 
@@ -516,7 +516,7 @@ Document
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при постановке документа на маршрут
 
-  Ставит документ на маршрут согласования. Получить доступные маршруты согласования можно методом :func:`Organization.GetResolutionRoutes`
+  Ставит документ на маршрут согласования. Получить доступные маршруты согласования можно методом :meth:`Organization.GetResolutionRoutes`
 
 
 
@@ -539,7 +539,7 @@ Document
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`
 
 
 
@@ -551,7 +551,7 @@ Document
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`
 
 
 
@@ -563,7 +563,7 @@ Document
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :func:`Document.CreateReplySendTask2`
+    Используйте :meth:`Document.CreateReplySendTask2`
 
 
 

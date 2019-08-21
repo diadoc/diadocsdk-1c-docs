@@ -8,7 +8,7 @@
 
 .. rubric:: Поиск по ИНН-КПП контрагента
 
-Необходимо использовать метод :func:`Organization.GetCounteragentListByInnKpp`
+Необходимо использовать метод :meth:`Organization.GetCounteragentListByInnKpp`
 
 .. code-block:: c#
 
@@ -25,7 +25,7 @@
 
 .. rubric:: Поиск контрагентов по списку ИНН
 
-Необходимо использовать метод :func:`Organization.GetCounteragentListByInnList`
+Необходимо использовать метод :meth:`Organization.GetCounteragentListByInnList`
 
 .. code-block:: c#
 
@@ -40,15 +40,15 @@
 
 .. rubric:: Другие способы
 
-* Зная идентификатор ящика контрагента в Диадок можно применить метод :func:`Organization.GetCounteragentById`
+* Зная идентификатор ящика контрагента в Диадок можно применить метод :meth:`Organization.GetCounteragentById`
 
-* Или отфильтровать контрагентов по статусу: :func:`Organization.GetCounteragentListByStatus`
+* Или отфильтровать контрагентов по статусу: :meth:`Organization.GetCounteragentListByStatus`
 
 
 Как пригласить контрагента к партнёрству
 ----------------------------------------
 
-Необходимо отправить запрос партнёрства методом :func:`Counteragent.AcquireCounteragent` или использовать объект :doc:`AcquireCounteragentTask <../ComObjects/AcquireCounteragentTask>`:
+Необходимо отправить запрос партнёрства методом :meth:`Counteragent.AcquireCounteragent` или использовать объект :doc:`AcquireCounteragentTask <../ComObjects/AcquireCounteragentTask>`:
 
 .. code-block:: c#
 
@@ -65,7 +65,7 @@
 Как принять приглашение от контрагента
 --------------------------------------
 
-Необходимо выполнить метод :func:`Counteragent.AcquireCounteragent`
+Необходимо выполнить метод :meth:`Counteragent.AcquireCounteragent`
 
 .. code-block:: c#
 
@@ -76,7 +76,7 @@
 Как отказаться от партнёрства
 -----------------------------
 
-Необходимо выполнить метод :func:`Counteragent.BreakWithCounteragent`
+Необходимо выполнить метод :meth:`Counteragent.BreakWithCounteragent`
 
 .. code-block:: c#
 

@@ -7,21 +7,21 @@
 .. rubric:: Добавлено
 
 * Добавлен объект :doc:`../../ComObjects/OrganizationUser`
-* Добавлен метод :func:`Connection.GetMyUser`
+* Добавлен метод :meth:`Connection.GetMyUser`
 
 * Добавлена поддержка отправки документов, отправленных в Диадок без доставки до контрагента:
 
   * Добавлен объект :doc:`../../ComObjects/OutDocumentSignTask`
   * Добавлен объект :doc:`../../ComObjects/OutDocumentSignTaskContent`
-  * Добавлен метод :func:`Document.CreateOutDocumentSignTask`
-  * Добавлен метод :func:`DocumentPackage.CreateOutDocumentSignTask`
+  * Добавлен метод :meth:`Document.CreateOutDocumentSignTask`
+  * Добавлен метод :meth:`DocumentPackage.CreateOutDocumentSignTask`
 
 .. rubric:: Изменено
 
 * Внутренние улучшения в архитектуре BaseContent и его наследников
 * Ошибка при отправке пакета: ``##100[Ошибка сервера Диадок]code:400, HTTP error: Can't find referred entity <THIS_MESSAGE>:<DocumentId>`` изменена на ``документ <DocumentId> ссылается на несуществующий в пакете документ``
-* Метод :func:`DiadocAPI.CreateConnectionByCertificate` ищет сертификат не только в хранилище Личное полльзователя, но и в хранилище Личное машины
-* Метод :func:`DiadocAPI.VerifyThatUserHasAccessToAnyBox` ищет сертификат не только в хранилище Личное полльзователя, но и в хранилище Личное машины
+* Метод :meth:`DiadocAPI.CreateConnectionByCertificate` ищет сертификат не только в хранилище Личное полльзователя, но и в хранилище Личное машины
+* Метод :meth:`DiadocAPI.VerifyThatUserHasAccessToAnyBox` ищет сертификат не только в хранилище Личное полльзователя, но и в хранилище Личное машины
 * Значение **ProxyMode** объекта :doc:`../../ComObjects/DiadocAPI` изменено на *NoProxy* вместо *UseDefaultProxy*
 
 .. rubric:: Исправлено

@@ -6,7 +6,7 @@
 
 .. rubric:: Добавлено
 
-* Добавлен метод :func:`AcquireCounteragentTask.SendAsync`
+* Добавлен метод :meth:`AcquireCounteragentTask.SendAsync`
 
 .. rubric:: Исправлено
 

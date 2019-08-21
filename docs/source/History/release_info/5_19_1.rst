@@ -10,7 +10,7 @@
 * Добавлено свойство **CustomData** в объект :doc:`../../ComObjects/Document`
 * Добавлен объект :doc:`../../ComObjects/CustomDataItem`
 * Добавлен объект :doc:`../../ComObjects/CustomDataPatchTask`
-* Добавлен метод :func:`Document.CreateCustomDataPatchTask`
+* Добавлен метод :meth:`Document.CreateCustomDataPatchTask`
 * Добавлены свойства **OriginalInvoiceNumber**, **OriginalInvoiceDate**, **OriginalInvoiceRevisionNumber**, **OriginalInvoiceRevisionDate** в объект :doc:`../../ComObjects/Ucd`
 
 
@@ -18,5 +18,5 @@
 .. rubric:: Исправлено
 
 * Неправильно определялось значение поля **IsQualifiedElectronicSignature** объекта :doc:`../../ComObjects/PersonalCertificate`, если сертиифкат выдан юр.лицу и в ОГРН (1.2.643.100.1) нет нолей
-* При указании неверного значения в **CounteragentBoxId** объекта :doc:`../../ComObjects/AcquireCounteragentTask`, вызов методов :func:`AcquireCounteragentTask.Send` и :func:`AcquireCounteragentTask.SendAsync` приводил к AppCrash
-* В COM-компоненте методы :func:`XmlTorg12.GetContent`, :func:`XmlTorg12.GetBuyerContent`, :func:`XmlAcceptanceCertificate.GetContent`, :func:`XmlAcceptanceCertificate.GetBuyerContent` возвращали неправильный контент для *Торг-12 551 приказа* и *Акта 552 приказа*
+* При указании неверного значения в **CounteragentBoxId** объекта :doc:`../../ComObjects/AcquireCounteragentTask`, вызов методов :meth:`AcquireCounteragentTask.Send` и :meth:`AcquireCounteragentTask.SendAsync` приводил к AppCrash
+* В COM-компоненте методы :meth:`XmlTorg12.GetContent`, :meth:`XmlTorg12.GetBuyerContent`, :meth:`XmlAcceptanceCertificate.GetContent`, :meth:`XmlAcceptanceCertificate.GetBuyerContent` возвращали неправильный контент для *Торг-12 551 приказа* и *Акта 552 приказа*

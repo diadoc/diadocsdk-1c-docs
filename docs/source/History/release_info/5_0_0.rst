@@ -7,8 +7,8 @@
 .. rubric:: Добавлено
 
 * Реализованы модели для работы с документами *Счёт-фактура* и *Корректировочный счёт-фактура* в версии формата ``5.02``
-* Добавлен метод :func:`Counteragent.GetCertificates`
-* Добавлен метод :func:`AddressInfo.GetAddressString`
+* Добавлен метод :meth:`Counteragent.GetCertificates`
+* Добавлен метод :meth:`AddressInfo.GetAddressString`
 * В :doc:`../../ComObjects/PersonalCertificate` добавлены реквизиты **Inn**, **Kpp**
 
 

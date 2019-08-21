@@ -44,7 +44,7 @@ TemplateSendTask
 
   :DocumentType: ``строка`` идентификатор типа документа
 
-  Добавляет новый элемент в коллекцию и возвращает его. Параметр *DocumentType* - значение *DocumentTypeDescription.Name*, полученное методом :func:`Organization.GetDocumentTypes`
+  Добавляет новый элемент в коллекцию и возвращает его. Параметр *DocumentType* - значение *DocumentTypeDescription.Name*, полученное методом :meth:`Organization.GetDocumentTypes`
 
 
 .. _TemplateSendTask-Send:

@@ -11,4 +11,4 @@ MetadataItem
 :Value:
   **Строка, чтение/запись** - значение
 
-.. seealso:: :func:`Organization.GetDocumentTypes`
+.. seealso:: :meth:`Organization.GetDocumentTypes`
