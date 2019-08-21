@@ -78,10 +78,8 @@ class ComObjectBase(ObjectDescription):
             raise ValueError
         name_prefix, name, arglist, retann = m.groups()
 
-        modname = self.options.get('module', self.env.ref_context.get('comobject:module'))
         classname, fullname = (name_prefix.rstrip('.'), name_prefix + name) if name_prefix else ('', name)
 
-        signode['module'] = modname
         signode['class'] = classname
         signode['fullname'] = fullname
 
@@ -101,8 +99,7 @@ class ComObjectBase(ObjectDescription):
         raise NotImplementedError('must be implemented in subclasses')
 
     def add_target_and_index(self, name_cls, sig, signode):
-        modname = self.options.get('module', self.env.ref_context.get('comobject:module'))
-        fullname = (modname and modname + '.' or '') + name_cls[0]
+        fullname = name_cls[0]
         if fullname not in self.state.document.ids:
             signode['names'].append(fullname)
             signode['ids'].append(fullname)
@@ -111,7 +108,7 @@ class ComObjectBase(ObjectDescription):
             objects = self.env.domaindata['comobject']['objects']
             objects[fullname] = (self.env.docname, self.objtype)
 
-        indextext = self.get_index_text(modname, name_cls)
+        indextext = self.get_index_text(None, name_cls)
         if indextext:
             self.indexnode['entries'].append(('single', indextext, fullname, '', None))
 
@@ -122,10 +119,10 @@ class ComObjectBase(ObjectDescription):
             if name_prefix:
                 prefix = name_prefix.strip('.')
         if prefix:
-            self.env.ref_context['comobject:class'] = prefix
+            self.env.ref_context['comobject'] = prefix
 
     def after_content(self):
-        self.env.ref_context['comobject:class'] = None
+        self.env.ref_context['comobject'] = None
 
 
 class ComObjectClassmember(ComObjectBase):
@@ -137,21 +134,17 @@ class ComObjectClassmember(ComObjectBase):
 
     def get_index_text(self, modname, name_cls):
         name, cls = name_cls
-        add_modules = self.env.config.add_module_names
         result = ''
         if self.objtype == 'method':
             clsname, methname = name.rsplit('.', 1)
-            if modname and add_modules:
-                result = _('{}() ({}.{} method)'.format(methname, modname, clsname))
-            else:
-                result = _('{}() ({} method)'.format(methname, clsname))
+            result = _('{}() ({} method)'.format(methname, clsname))
 
         return result
 
 
 class ComObjectXRefRole(XRefRole):
     def process_link(self, env, refnode, has_explicit_title, title, target):
-        refnode['comobject:module'] = env.ref_context.get('comobject:module')
+        refnode['comobject'] = env.ref_context.get('comobject')
         if not has_explicit_title:
             title = title.lstrip('.')
 
@@ -161,10 +154,10 @@ class ComObjectXRefRole(XRefRole):
         return title, target
 
 
-class ComObjectModuleIndex(Index):
-    name = 'modindex'
-    localname = _('ComObject Module Index')
-    shortname = _('modules')
+class ComObjectIndex(Index):
+    name = 'comobjectindex'
+    localname = _('ComObject Index')
+    shortname = _('comobjects')
 
     def generate(self, docnames=None):
         return [], False
@@ -175,7 +168,6 @@ class ComObjectDomain(Domain):
     label = 'ComObject'
     object_types = {
         'method': ObjType(_('method'), 'meth'),
-        'module': ObjType(_('module'), 'mod')
     }
 
     directives = {
@@ -183,23 +175,18 @@ class ComObjectDomain(Domain):
     }
     roles = {
         'meth': ComObjectXRefRole(fix_parens=True),
-        'mod': ComObjectXRefRole()
     }
     initial_data = {
-        'objects': {},
-        'modules': {},
+        'objects': {}
     }
     indices = [
-        ComObjectModuleIndex,
+        ComObjectIndex,
     ]
 
     def clear_doc(self, docname):
         for fullname, (fn, _l) in list(self.data['objects'].items()):
             if fn == docname:
                 del self.data['objects'][fullname]
-        for modname, (fn, _x, _x, _x) in list(self.data['modules'].items()):
-            if fn == docname:
-                del self.data['modules'][modname]
 
     def find_obj(self, name, type, searchmode=0):
         if name[-2:] == '()':
@@ -211,19 +198,15 @@ class ComObjectDomain(Domain):
         objects = self.data['objects']
         matches = []
 
-        newname = None
         if searchmode == 1:
             objtypes = list(self.object_types) if type is None else self.objtypes_for_role(type)
             if objtypes is not None:
-                if not newname:
-                    searchname = '.' + name
-                    matches = [(oname, objects[oname]) for oname in objects
-                                   if oname.endswith(searchname) and objects[oname][1] in objtypes]
+                searchname = '.' + name
+                matches = [(oname, objects[oname]) for oname in objects
+                           if oname.endswith(searchname) and objects[oname][1] in objtypes]
         else:
             if name in objects:
-                newname = name
-        if newname is not None:
-            matches.append((newname, objects[newname]))
+                matches.append((name, objects[name]))
         return matches
 
     def resolve_xref(self, env, fromdocname, builder, type, target, node, contnode):
@@ -241,13 +224,11 @@ class ComObjectDomain(Domain):
 
     def get_objects(self):
         for refname, (docname, type) in iteritems(self.data['objects']):
-            if type != 'module':
-                yield (refname, refname, type, docname, refname, 1)
+            yield (refname, refname, type, docname, refname, 1)
 
     def get_full_qualified_name(self, node):
-        modname = node.get('comobject:module')
         target = node.get('reftarget')
-        return None if target is None else '.'.join(filter(None, [modname, target]))
+        return None if target is None else '.'.join(filter(None, [None, target]))
 
 
 def setup(app):
