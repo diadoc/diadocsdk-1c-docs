@@ -105,7 +105,7 @@ class ComObjectBase(ObjectDescription):
             signode['ids'].append(fullname)
             signode['first'] = (not self.names)
             self.state.document.note_explicit_target(signode)
-            objects = self.env.domaindata['comobject']['objects']
+            objects = self.env.domaindata['ComObject']['objects']
             objects[fullname] = (self.env.docname, self.objtype)
 
         indextext = self.get_index_text(None, name_cls)
@@ -164,7 +164,7 @@ class ComObjectIndex(Index):
 
 
 class ComObjectDomain(Domain):
-    name = 'comobject'
+    name = 'ComObject'
     label = 'ComObject'
     object_types = {
         'method': ObjType(_('method'), 'meth'),
