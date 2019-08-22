@@ -312,6 +312,8 @@ Organization
 
   Создаёт :doc:`задание для отправки черновика документа <SendDraftTask>`
 
+  .. versionadded:: 5.18.0
+
 
 
 .. _Organization-SendDraftAsync:
@@ -322,6 +324,9 @@ Organization
   Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
 
   .. versionadded:: 4.1.0
+
+  .. deprecated:: 5.18.0
+    Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.SendDraftAsync`
 
 
 
