@@ -46,6 +46,7 @@ Organization
   **Булево, чтение** - организации разрешена отправка зашифрованных документов
 
 
+
 .. rubric:: Методы
 
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
@@ -73,7 +74,7 @@ Organization
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
 | |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              |                                                    |
+| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              | |Organization-GetBase64UserDataXSD|_               |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
 
 
@@ -115,6 +116,7 @@ Organization
 .. |Organization-CreateTransformTemplateTask| replace:: CreateTransformTemplateTask()
 .. |Organization-RecycleDraft| replace:: RecycleDraft()
 .. |Organization-SaveUserDataXSD| replace:: SaveUserDataXSD()
+.. |Organization-GetBase64UserDataXSD| replace:: GetBase64UserDataXSD()
 
 
 
@@ -450,7 +452,7 @@ Organization
 .. _Organization-GetDocumentTypes:
 .. method:: Organization.GetDocumentTypes()
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике организации для отправки
+  Возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике организации
 
 
 
@@ -505,6 +507,17 @@ Organization
   :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
 
   Сохраняет описание контента документа на диск
+
+
+.. _Organization-GetBase64UserDataXSD:
+.. method:: Organization.GetBase64UserDataXSD(TitleName, Function, Version, DocflowSide)
+
+  :TitleName: ``строка`` название типа документа
+  :Function: ``строка`` функция документа
+  :Version: ``строка`` версия документа
+  :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
+
+  Возвращает Base64 строку описания контента документа
 
 
 
