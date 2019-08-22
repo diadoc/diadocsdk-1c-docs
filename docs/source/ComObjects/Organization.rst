@@ -450,7 +450,7 @@ Organization
 .. _Organization-GetDocumentTypes:
 .. method:: Organization.GetDocumentTypes()
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике организации для отправки
+  Возвращает :doc:`коллекцию <Collection>` :doc:`типов документов <DocumentTypeDescription>`, доступных в ящике организации
 
 
 
