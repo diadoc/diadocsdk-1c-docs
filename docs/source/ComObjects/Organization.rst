@@ -508,6 +508,8 @@ Organization
 
   Сохраняет описание контента документа на диск
 
+  .. versionadded:: 5.27.0
+
 
 .. _Organization-GetBase64UserDataXSD:
 .. method:: Organization.GetBase64UserDataXSD(TitleName, Function, Version, DocflowSide)
@@ -518,6 +520,8 @@ Organization
   :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
 
   Возвращает Base64 строку описания контента документа
+
+  .. versionadded:: 5.28.3
 
 
 
