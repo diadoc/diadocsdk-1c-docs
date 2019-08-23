@@ -511,7 +511,7 @@ Organization
   :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
   :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
 
-  Сохраняет описание контента документа на диск
+  Сохраняет описание контента документа на диск. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
   .. versionadded:: 5.27.0
 
@@ -524,7 +524,7 @@ Organization
   :Version: ``строка`` версия документа
   :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
 
-  Возвращает Base64 строку описания контента документа
+  Возвращает Base64 строку описания контента документа. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
   .. versionadded:: 5.28.3
 

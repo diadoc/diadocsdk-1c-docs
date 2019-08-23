@@ -10,32 +10,111 @@ DynamicContent
     * как результат выполнения метода :meth:`Document.GetDynamicContent`
 
 
-.. rubric:: Свойства и методы
+.. rubric:: Свойства
 
-Объект реализует интерфейс `IDispatch <https://docs.microsoft.com/en-us/windows/desktop/api/oaidl/nn-oaidl-idispatch>`_ и не имеет фиксированного набора полей и методов.
-Набор полей напрямую зависит от информации о контенте, которую может предоставить Диадок.
-Получить описание полей можно методом :meth:`Organization.SaveUserDataXSD`
+Не имеет фиксированного набора свойств.
+Набор свойств можно получить методом :meth:`DynamicContent.GetPropertyNames` или можно ориентироваться на описание, полученное методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`
 
 Каждое поле объекта является или строкой, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
+
+
+.. rubric:: Методы
+
++------------------------------------+-------------------------------+
+| |DynamicContent-GetPropertyNames|_ | |DynamicContent-HasProperty|_ |
++------------------------------------+-------------------------------+
+
+.. |DynamicContent-GetPropertyNames| replace:: GetPropertyNames()
+.. |DynamicContent-HasProperty| replace:: HasProperty()
+
+
+.. _DynamicContent-GetPropertyNames:
+.. method:: DynamicContent.GetPropertyNames()
+
+  Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
+
+
+.. _DynamicContent-HasProperty:
+.. method:: DynamicContent.HasProperty(PropertyName)
+
+  :PropertyName: ``строка`` - имя свойства
+
+  Возвращает булевое значение наличия у объекта свойства с заданным именем
+
 
 
 .. rubric:: Как работать с коллекциями
 
 Если контент выглядит так:
 
-    ``DynamicContent.ВладелецКоллекции.Коллекция``
+    ``DynamicContent_ВладелецКоллекции.Коллекция``
 
 Тогда для добавления элемента в коллекцию необходимо вызвать
 
 .. code-block:: c#
 
-    // Если коллекция состоит из COM-объектов
-    // ЭлементКоллекции будет обектом типа DynamicContent
-    НовыйЭлементКоллекции = DynamicContent.ВладелецКоллекции.AddКоллекция();
+    // Если коллекция состоит из сложных объектов
+    НовыйЭлементКоллекции = DynamicContent_ВладелецКоллекции.AddКоллекция();
 
-    // или,
-    // если коллекция состоит из строк
-    DynamicContent.ВладелецКоллекции.AddКоллекция("Значение");
+    // Если коллекция состоит из строк
+    DynamicContent_ВладелецКоллекции.AddКоллекция("Значение");
 
 
-Имя метода, с помощью которого можно добавить элемент зависит от названия коллекции и формируется как ``"Add" + <название коллекции>``
+Имя метода, с помощью которого можно добавить элемент зависит от названия коллекции и формируется как ``"Add" + <название коллекции>``. У коллекций, для которых в XSD не указано имя, используется имя ``items``
+
+.. rubric:: Пример работы с динамическим контентом
+
+.. code-block:: c#
+
+  // Добавление нового элемента в коллекцию строк
+  SendTask = Organization.CreatePackageSendTask2();
+  DocumentToSend = SendTask.AddDocument("UniversalTransferDocument", "СЧФДОП", "utd820_05_01_01");
+  DynamicContent = DocumentToSend.Content;
+  Utd820_SellerContent = DynamicContent.UniversalTransferDocument;
+
+  Signers = Utd820_SellerContent.Signers;
+  NewSigner = Signers.AddItems();
+  // Signers - Владелец коллекции с именем items. Имя будет items потому, что у узла choice нет имени и он повторяющийся
+  // Описание в XSD:
+  // <xs:element name="Signers">
+  //   <xs:complexType>
+  //     <xs:choice maxOccurs="unbounded">
+  //       <xs:element name="SignerReference" type="SignerReference" />
+  //       <xs:element name="SignerDetails" type="ExtendedSignerDetails_SellerTitle" />
+  //     </xs:choice>
+  //   </xs:complexType>
+  // </xs:element>
+
+  InvoiceTable = Utd820_SellerContent.Table;
+  NewInvoiceTableItem = InvoiceTable.AddItem();
+  // InvoiceTable - Владелец коллекции с именем Item
+  // Описание в XSD:
+  // <xs:complexType name="InvoiceTable">
+  // <xs:sequence>
+  //   <xs:element maxOccurs="unbounded" name="Item">
+
+  ItemIdentificationNumbers = NewInvoiceTableItem.ItemIdentificationNumbers;
+  NewItemIdentificationNumber = ItemIdentificationNumbers.AddItemIdentificationNumber();
+  NewItemIdentificationNumber.AddUnit("Unit1")
+  NewItemIdentificationNumber.TransPackageId = "SomeTransPackageId";
+  // ItemIdentificationNumbers - Владелец коллекции с именем ItemIdentificationNumber
+  // NewItemIdentificationNumber - владелец коллекции строк с именем Unit. В отличие от Signers, узел choice не повторяющийся
+  // Описание в XSD:
+  // <xs:element minOccurs="0" name="ItemIdentificationNumbers">
+  //   <xs:complexType>
+  //     <xs:sequence>
+  //       <xs:element maxOccurs="**unbounded**" name="ItemIdentificationNumber">
+  //         <xs:complexType>
+  //           <xs:choice>
+  //             <xs:element minOccurs="0" maxOccurs="unbounded" name="Unit" type="string255">
+  //             </xs:element>
+  //             <xs:element minOccurs="0" maxOccurs="unbounded" name="PackageId" type="string255">
+  //             </xs:element>
+  //           </xs:choice>
+  //           <xs:attribute name="TransPackageId" type="string255" use="optional">
+  //           </xs:attribute>
+  //         </xs:complexType>
+  //       </xs:element>
+  //     </xs:sequence>
+  //   </xs:complexType>
+  // </xs:element>
