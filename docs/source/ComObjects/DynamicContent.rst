@@ -20,16 +20,16 @@ DynamicContent
 
 .. rubric:: Методы
 
-+------------------------------------+-------------------------------+
-| |DynamicContent-GetPropertyNames|_ | |DynamicContent-HasProperty|_ |
-+------------------------------------+-------------------------------+
++--------------------------------------+-------------------------------+
+| |DynamicContent-GetPropertiesNames|_ | |DynamicContent-HasProperty|_ |
++--------------------------------------+-------------------------------+
 
-.. |DynamicContent-GetPropertyNames| replace:: GetPropertyNames()
+.. |DynamicContent-GetPropertiesNames| replace:: GetPropertiesNames()
 .. |DynamicContent-HasProperty| replace:: HasProperty()
 
 
-.. _DynamicContent-GetPropertyNames:
-.. method:: DynamicContent.GetPropertyNames()
+.. _DynamicContent-GetPropertiesNames:
+.. method:: DynamicContent.GetPropertiesNames()
 
   Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
 
