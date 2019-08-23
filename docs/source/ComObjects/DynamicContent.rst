@@ -33,6 +33,8 @@ DynamicContent
 
   Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
 
+  .. versionadded:: 5.28.3
+
 
 .. _DynamicContent-HasProperty:
 .. method:: DynamicContent.HasProperty(PropertyName)
@@ -40,6 +42,8 @@ DynamicContent
   :PropertyName: ``строка`` - имя свойства
 
   Возвращает булевое значение наличия у объекта свойства с заданным именем
+
+  .. versionadded:: 5.28.3
 
 
 
