@@ -1,0 +1,30 @@
+5.28.3
+------
+
+.. feed-entry::
+  :date: 2019-08-27
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`DynamicContent.GetPropertiesNames`
+* Добавлен метод :meth:`DynamicContent.HasProperty`
+* Добавлен метод :meth:`Organization.GetBase64UserDataXSD`
+* По объекту :doc:`../../ComObjects/Collection` можно итерироваться
+
+
+
+.. rubric:: Изменено
+
+* Изменён метод, с помощью которого генерировались титулы документов в объектах :doc:`../../ComObjects/PackageSendTask2` и :doc:`../../ComObjects/ReplySendTask2`
+
+
+
+.. rubric:: Исправлено
+
+* Значение поля **IsDeleted** обеъкта :doc:`../../ComObjects/Document` всегда было ``False``, если тот представлял черновик
+* Значение поля **FromDepartment** обеъкта :doc:`../../ComObjects/Document` всегда было ``Undefined``
+* Значение полей **IsDeleted**, **HasCustomPrintForm** объекта :doc:`../../ComObjects/Document` вычислялись при каждом обращении к полю
+* Название регионов и стран в результате метода :meth:`AddressInfo.GetAddressString` возвращалось в неправильной кодировке
+* При сохранении файлов с длиной полного пути больше 260 символов возникала ошибка записи в файл
+* Метод :meth:`Organization.SaveUserDataXSD`, если для документа не найдено описание контента, сохранял пустой файл вместо вызова исключения

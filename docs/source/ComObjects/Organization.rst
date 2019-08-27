@@ -312,6 +312,8 @@ Organization
 
   Создаёт :doc:`задание для отправки черновика документа <SendDraftTask>`
 
+  .. versionadded:: 5.18.0
+
 
 
 .. _Organization-SendDraftAsync:
@@ -322,6 +324,9 @@ Organization
   Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
 
   .. versionadded:: 4.1.0
+
+  .. deprecated:: 5.18.0
+    Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.SendDraftAsync`
 
 
 
@@ -506,7 +511,9 @@ Organization
   :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
   :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
 
-  Сохраняет описание контента документа на диск
+  Сохраняет описание контента документа на диск. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
+
+  .. versionadded:: 5.27.0
 
 
 .. _Organization-GetBase64UserDataXSD:
@@ -517,7 +524,9 @@ Organization
   :Version: ``строка`` версия документа
   :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
 
-  Возвращает Base64 строку описания контента документа
+  Возвращает Base64 строку описания контента документа. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
+
+  .. versionadded:: 5.28.3
 
 
 

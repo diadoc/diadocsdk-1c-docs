@@ -21,7 +21,7 @@
   :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase <CorrectionBase>` **, чтение** - основание корректировки
 
 
-.. Методы
+.. rubric:: Методы
 
 +-----------------------------------+
 | |EventContent-AddCorrectionBase|_ |
