@@ -16,14 +16,14 @@
 
 .. rubric:: Изменено
 
-* Изменён метод, с помощью которого генерировались титулы документов в объектах :doc:`../../ComObjects/PackageSendTask2` и :doc:`../../ComObjects/ReplySendTask2`
+* Изменён метод ядра, с помощью которого генерировались титулы документов в объектах :doc:`../../ComObjects/PackageSendTask2` и :doc:`../../ComObjects/ReplySendTask2`
 
 
 
 .. rubric:: Исправлено
 
-* Значение поля **IsDeleted** обеъкта :doc:`../../ComObjects/Document` всегда было ``False``, если тот представлял черновик
-* Значение поля **FromDepartment** обеъкта :doc:`../../ComObjects/Document` всегда было ``Undefined``
+* Значение поля **IsDeleted** объекта :doc:`../../ComObjects/Document` всегда было ``False``, если тот представлял черновик
+* Значение поля **FromDepartment** объекта :doc:`../../ComObjects/Document` всегда было ``Undefined``
 * Значение полей **IsDeleted**, **HasCustomPrintForm** объекта :doc:`../../ComObjects/Document` вычислялись при каждом обращении к полю
 * Название регионов и стран в результате метода :meth:`AddressInfo.GetAddressString` возвращалось в неправильной кодировке
 * При сохранении файлов с длиной полного пути больше 260 символов возникала ошибка записи в файл
