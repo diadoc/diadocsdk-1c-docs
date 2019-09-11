@@ -13,7 +13,7 @@ DynamicContent
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
-Набор свойств можно получить методом :meth:`DynamicContent.GetPropertyNames` или можно ориентироваться на описание, полученное методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`
+Набор свойств можно получить методом :meth:`DynamicContent.GetPropertiesNames` или можно ориентироваться на описание, полученное методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`
 
 Каждое поле объекта является или строкой, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
 
