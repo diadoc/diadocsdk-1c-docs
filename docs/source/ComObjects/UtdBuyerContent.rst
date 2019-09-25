@@ -5,6 +5,11 @@ UtdBuyerContent
 или *универсального корректировочного документа* в формате приказа `ММВ-7-15/189@ <https://normativ.kontur.ru/document?moduleId=1&documentId=273231>`_.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :Type:

@@ -6,6 +6,9 @@ NonformalizedDocumentToSend
 
 .. versionadded:: 5.5.0
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`CustomDocumentToSend`
+
 
 .. rubric:: Свойства
 

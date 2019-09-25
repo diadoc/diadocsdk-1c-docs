@@ -13,9 +13,9 @@ DynamicContent
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
-Набор свойств можно получить методом :meth:`DynamicContent.GetPropertiesNames` или можно ориентироваться на описание, полученное методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`
+Описание полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
 
-Каждое поле объекта является или строкой, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
+Каждое поле объекта является или **строкой**, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
 
 
 .. rubric:: Методы
@@ -35,6 +35,9 @@ DynamicContent
 
   .. versionadded:: 5.28.3
 
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
+
 
 .. _DynamicContent-HasProperty:
 .. method:: DynamicContent.HasProperty(PropertyName)
@@ -44,6 +47,9 @@ DynamicContent
   Возвращает булевое значение наличия у объекта свойства с заданным именем
 
   .. versionadded:: 5.28.3
+
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
 
 
 

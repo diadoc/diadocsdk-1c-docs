@@ -4,6 +4,9 @@ UtdToSend
 Документ на отправку *Универсальный передаточный документ* в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_.
 Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`CustomDocumentToSend`
+
 .. rubric:: Свойства
 
 :Type:
