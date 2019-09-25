@@ -28,7 +28,7 @@ TypeDesc
 .. _TypeDesc-GetPropertiesNames:
 .. method:: TypeDesc.GetPropertiesNames()
 
-Возвращает `коллекцию <Collection>` строк с именами полей класса
+Возвращает :doc:`коллекцию <Collection>` строк с именами полей класса
 
 
 
@@ -46,6 +46,6 @@ TypeDesc
 
 :PropertyName: ``Регистрозависимая строка`` Имя свойства
 
-Возвращает строковое имя типа, которое имеет указанное свойство.
-Возможные типы перечислены `здесь <https://docs.microsoft.com/en-us/windows/win32/api/wtypes/ne-wtypes-varenum>`_
+Возвращает имя типа, который имеет указанное свойство.
+Возможные типы перечислены `здесь <https://docs.microsoft.com/en-us/windows/win32/api/wtypes/ne-wtypes-varenum>`_ .
 Если указанного свойства у объекта нет, то вернётся пустая строка
