@@ -7,6 +7,7 @@ UtdToSend
 .. deprecated:: 5.27.0
   Используйте :doc:`CustomDocumentToSend`
 
+
 .. rubric:: Свойства
 
 :Type:
