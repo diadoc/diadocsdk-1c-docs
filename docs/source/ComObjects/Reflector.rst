@@ -16,8 +16,12 @@ Reflector
 
 
 .. _Reflector-Describe:
-.. method:: Reflector.Describe(object)
+.. method:: Reflector.Describe(Object)
 
-:object: ``Dispatch`` Com-объект, реализующий интерфейс `IDispatch <https://docs.microsoft.com/en-us/windows/win32/api/oaidl/nn-oaidl-idispatch>`_
+:Object: ``Dispatch`` Com-объект, реализующий интерфейс `IDispatch <https://docs.microsoft.com/en-us/windows/win32/api/oaidl/nn-oaidl-idispatch>`_
 
-Возвращает `описание Com-объекта <TypeDesc>`
+Возвращает :doc:`описание Com-объекта <TypeDesc>`
+
+
+
+.. seealso:: :doc:`../HowTo/HowTo_reflect_object`
