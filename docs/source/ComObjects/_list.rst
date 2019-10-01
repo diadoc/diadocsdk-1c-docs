@@ -117,6 +117,7 @@
   ReceiptGenerationProcess <ReceiptGenerationProcess>
   RecipientReceiptMetadata <RecipientReceiptMetadata>
   ReconciliationActToSend <ReconciliationActToSend>
+  Reflector <Reflector>
   RejectionContent <RejectionContent>
   ReplySendTask <ReplySendTask>
   ReplySendTask2 <ReplySendTask2>
@@ -158,6 +159,7 @@
   TransferBase <TransferBase>
   TransferInfo <TransferInfo>
   TransformTemplateTask <TransformTemplateTask>
+  TypeDesc <TypeDesc>
   Ucd <Ucd>
   UcdRevision <UcdRevision>
   UcdSellerContent <UcdSellerContent>

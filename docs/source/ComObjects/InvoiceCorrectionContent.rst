@@ -4,6 +4,9 @@ InvoiceCorrectionContent
 Представление содержания документа *Корректировочный счет-фактура* и *Исправление корректировочного счета-фактуры* в формате `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567&rangeId=230580>`_.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

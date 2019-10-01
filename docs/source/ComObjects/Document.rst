@@ -265,18 +265,20 @@ Document
 
 
 .. _Document-SaveAllContentZip:
-.. method:: Document.SaveAllContentZip(DirectoryPath)
+.. method:: Document.SaveAllContentZip(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
+  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 
 
 
 .. _Document-SaveAllContentZipAsync:
-.. method:: Document.SaveAllContentZipAsync(DirectoryPath)
+.. method:: Document.SaveAllContentZipAsync(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
+  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 

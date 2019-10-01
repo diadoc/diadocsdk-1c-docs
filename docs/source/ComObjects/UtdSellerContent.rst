@@ -4,6 +4,10 @@ UtdSellerContent
 Содержанием формализованного документа *Универсальный передаточный документ* в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+  
+
 .. rubric:: Свойства
 
 :Type:

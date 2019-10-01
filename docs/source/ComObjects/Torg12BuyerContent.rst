@@ -4,6 +4,10 @@ Torg12BuyerContent
 Содержание титула покупателя документа *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_.
 Является производным объектом от :doc:`BaseContent <BaseContent>`
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+  
+
 .. rubric:: Свойства
 
 :Type:

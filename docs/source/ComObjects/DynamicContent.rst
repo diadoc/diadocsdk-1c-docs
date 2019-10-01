@@ -13,9 +13,15 @@ DynamicContent
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
-Набор свойств можно получить методом :meth:`DynamicContent.GetPropertiesNames` или можно ориентироваться на описание, полученное методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`
+Описание полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
 
-Каждое поле объекта является или строкой, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
+Каждое поле объекта является или **строкой**, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
+
+
+.. warning::
+  При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
+  
+  Всё описание теперь находится в соответвующей XSD схеме
 
 
 .. rubric:: Методы
@@ -35,6 +41,9 @@ DynamicContent
 
   .. versionadded:: 5.28.3
 
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
+
 
 .. _DynamicContent-HasProperty:
 .. method:: DynamicContent.HasProperty(PropertyName)
@@ -44,6 +53,9 @@ DynamicContent
   Возвращает булевое значение наличия у объекта свойства с заданным именем
 
   .. versionadded:: 5.28.3
+
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
 
 
 
@@ -57,14 +69,15 @@ DynamicContent
 
 .. code-block:: c#
 
-    // Если коллекция состоит из сложных объектов
-    НовыйЭлементКоллекции = DynamicContent_ВладелецКоллекции.AddКоллекция();
+  // Если коллекция состоит из сложных объектов
+  НовыйЭлементКоллекции = DynamicContent_ВладелецКоллекции.AddКоллекция();
 
-    // Если коллекция состоит из строк
-    DynamicContent_ВладелецКоллекции.AddКоллекция("Значение");
+  // Если коллекция состоит из строк
+  DynamicContent_ВладелецКоллекции.AddКоллекция("Значение");
 
 
-Имя метода, с помощью которого можно добавить элемент зависит от названия коллекции и формируется как ``"Add" + <название коллекции>``. У коллекций, для которых в XSD не указано имя, используется имя ``items``
+Имя метода, с помощью которого можно добавить элемент зависит от названия коллекции и формируется как ``"Add" + <название коллекции>``.
+У коллекций, для которых в XSD не указано имя, используется имя ``items``
 
 .. rubric:: Пример работы с динамическим контентом
 
@@ -122,3 +135,6 @@ DynamicContent
   //     </xs:sequence>
   //   </xs:complexType>
   // </xs:element>
+
+
+.. seealso:: :doc:`../HowTo/HowTo_reflect_object`
