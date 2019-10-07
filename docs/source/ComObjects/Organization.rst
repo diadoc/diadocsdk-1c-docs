@@ -239,7 +239,7 @@ Organization
 .. _Organization-GetDocumentEventList:
 .. method:: Organization.GetDocumentEventList([AfterEventId])
 
-  :AfterEventId: ``строка`` Идентификатор события после которого будет вычитываться лента событий
+  :AfterEventId: ``строка`` Идентификатор события, после которого будет вычитываться лента событий
 
   Возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике.
   Если *AfterEventId* не задан, то события начнут вычитываться с момента создания ящика Диадок
