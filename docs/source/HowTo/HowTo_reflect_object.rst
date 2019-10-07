@@ -11,6 +11,12 @@
   * узнать тип значения у свойства
 
 
+Тип компоненты Имя Com-Объекта
+============== ==========================
+AddIn          ``AddIn.Diadoc.Reflector``
+COM            ``Diadoc.Reflector``
+
+
 .. code-block:: c#
 
   //Создание Reflector'а
