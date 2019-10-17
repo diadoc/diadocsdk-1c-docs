@@ -1,0 +1,26 @@
+5.28.8
+------
+
+.. feed-entry::
+  :date: 2019-10-17
+
+
+.. rubric:: Добавлено
+
+* Добавлены параметры *FromDepartmentId* и *ToDepartmentId* в объект :doc:`../../ComObjects/DocumentsTask`
+
+
+
+.. rubric:: Изменено
+
+* В динамическом контенте больше не заполняются дефолтные значения для аттрибутов и параметров из XSD
+
+
+
+.. rubric:: Исправлено
+
+* Оптимизирован метод :meth:`Document.GetDynamicContent`
+* Методы :meth:`Document.SaveAllContent`, :meth:`Document.SaveAllZip` и их асинхронные версии могли сохранять файлы нулевого размера, вместо сгенерированных протоколов, печатных форм и подписей
+* Отправка черновиков документов с версией ``utd820_05_01_01_hyphen`` заканчивалась ошибкой ``Невозможно записать данные о подписанте. Для данного документа следует использовать структуру ExtendedSigner``
+* Метод :meth:`Document.GetRecipientSignature` не возвращал ответные подписи у однотитульных документов
+* Отправка документа с версией ``utd820_05_01_01_hyphen`` заканчивалась ошибкой ``Invalid data UserContractData: ... /OrganizationDetails[1]/@OrgType: The 'OrgType' attribute is invalid - The value '' is invalid according to its datatype 'OrganizationType' - The Enumeration constraint failed`` если заполнялся OrganizationReference, а не OrganizationDetails
