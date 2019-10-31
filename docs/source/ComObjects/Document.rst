@@ -247,38 +247,38 @@ Document
 
 
 .. _Document-SaveAllContent:
-.. method:: Document.SaveAllContent(DirectoryPath)
+.. method:: Document.SaveAllContent(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
+  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
 
 
 .. _Document-SaveAllContentAsync:
-.. method:: Document.SaveAllContentAsync(DirectoryPath)
+.. method:: Document.SaveAllContentAsync(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
+  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Асинхронно сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
 
 
 .. _Document-SaveAllContentZip:
-.. method:: Document.SaveAllContentZip(DirectoryPath, WithProtocol=false)
+.. method:: Document.SaveAllContentZip(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
-  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 
 
 
 .. _Document-SaveAllContentZipAsync:
-.. method:: Document.SaveAllContentZipAsync(DirectoryPath, WithProtocol=false)
+.. method:: Document.SaveAllContentZipAsync(DirectoryPath)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
-  :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
 
   Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
 
