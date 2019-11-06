@@ -7,7 +7,7 @@
 
 .. rubric:: Изменено
 
-* Методы валидации контента :meth:`SendTask.ValidateContent`, :meth:`PackageSendTask.ValidateContent`, :meth:`ReplySendTask.ValidateContent` в результате всегда возвращают пустую коллекцию
+* Методы валидации контента :meth:`SendTask.ValidateContent`, :meth:`PackageSendTask.ValidateContent`, :meth:`ReplySendTask.ValidateContent`, :meth:`Organization.SetAndValidateAddressForCounteragent` в результате всегда возвращают пустую коллекцию
 
 
 .. rubric:: Исправлено
