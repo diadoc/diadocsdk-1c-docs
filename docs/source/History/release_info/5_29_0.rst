@@ -1,0 +1,15 @@
+5.29.0
+------
+
+.. feed-entry::
+  :date: 2019-11-06
+
+
+.. rubric:: Изменено
+
+* Методы валидации контента :meth:`SendTask.ValidateContent`, :meth:`PackageSendTask.ValidateContent`, :meth:`ReplySendTask.ValidateContent`, :meth:`Organization.SetAndValidateAddressForCounteragent` в результате всегда возвращают пустую коллекцию
+
+
+.. rubric:: Исправлено
+
+* Методы работающие с файлами не могли загрузить содержимое файла, если путь до них указывался как сетевой
