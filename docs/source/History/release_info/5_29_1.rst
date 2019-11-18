@@ -7,5 +7,5 @@
 
 .. rubric:: Исправлено
 
-* Метод :meth:`Organization.GetCounteragentListByInnList` могу возвращать разное количество результатов, если запрашивалось больше 100 ИНН
+* Метод :meth:`Organization.GetCounteragentListByInnList` мог возвращать разное количество результатов, если запрашивалось больше 100 ИНН
 * Отправка внутренних документов через :doc:`../../ComObjects/PackageSendTask2` заканчивалась ошибкой ``[Ошибка сервера Диадок]code:400, HTTP error: MessageToPost.ToBoxId should not be set for internal message``
