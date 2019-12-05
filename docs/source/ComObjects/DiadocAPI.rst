@@ -81,7 +81,7 @@ DiadocAPI
 
 
 .. _DiadocAPI-GetFullVersion:
-  .. method:: DiadocAPI.GetFullVersion()
+.. method:: DiadocAPI.GetFullVersion()
 
     Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
 

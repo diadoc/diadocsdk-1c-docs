@@ -7,7 +7,7 @@
 
 .. rubric:: Добавлено
 
-* В объект :doc:`../../ComObjects/DiadocApi` добавлен метод :meth:`DiadocAPI.GetFullVersion`
+* В объект :doc:`../../ComObjects/DiadocAPI` добавлен метод :meth:`DiadocAPI.GetFullVersion`
 
 
 .. rubric:: Исправлено
