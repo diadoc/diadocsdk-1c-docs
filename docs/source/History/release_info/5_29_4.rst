@@ -1,0 +1,17 @@
+5.29.4
+------
+
+.. feed-entry::
+  :date: 2019-12-05
+
+
+.. rubric:: Добавлено
+
+* В объект :doc:`../../ComObjects/DiadocApi` добавлен метод :meth:`DiadocAPI.GetFullVersion`
+
+
+.. rubric:: Исправлено
+
+* После обращения к элементу :doc:`коллекции <../../ComObjects/Collection>`, элемент уничтожался
+* Текла память в методах объекта :doc:`../../ComObjects/TypeDesc`
+* В методе :meth:`TypeDesc.GetPropertiesNames` шло обращение к освобождённой памяти
