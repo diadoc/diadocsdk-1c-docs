@@ -23,9 +23,9 @@ DiadocAPI
 .. rubric:: Методы
 
 +--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
+| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-GetFullVersion|_                   |
 +--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  |                                              |
+| |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
 +--------------------------------------------+------------------------------+----------------------------------------------+
 | |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ |                                              |
 +--------------------------------------------+------------------------------+----------------------------------------------+
@@ -35,6 +35,7 @@ DiadocAPI
 .. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
 .. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
 .. |DiadocAPI-GetVersion| replace:: GetVersion()
+.. |DiadocAPI-GetFullVersion| replace:: GetFullVersion()
 .. |DiadocAPI-TestConnection| replace:: TestConnection()
 .. |DiadocAPI-TestConnection2| replace:: TestConnection2()
 .. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
@@ -77,6 +78,14 @@ DiadocAPI
 
   Возвращает строку с версией используемой компоненты
 
+
+
+.. _DiadocAPI-GetFullVersion:
+.. method:: DiadocAPI.GetFullVersion()
+
+    Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
+
+  .. versionadded:: 5.29.4
 
 
 .. _DiadocAPI-TestConnection:
