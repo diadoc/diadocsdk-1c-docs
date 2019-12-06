@@ -114,3 +114,4 @@
   release_info/5_29_2
   release_info/5_29_3
   release_info/5_29_4
+  release_info/5_29_5
