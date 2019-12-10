@@ -1,0 +1,9 @@
+5.29.6
+------
+
+.. feed-entry::
+  :date: 2019-12-10
+
+.. rubric:: Исправлено
+
+* Ошибка доступа к памяти при обращении к :doc:`../../ComObjects/DynamicContent` вложенному в :doc:`../../ComObjects/DynamicContent`, приводящая к ``AppCrash``
