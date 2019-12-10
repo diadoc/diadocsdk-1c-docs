@@ -6,4 +6,4 @@
 
 .. rubric:: Исправлено
 
-* Ошибка доступа к памяти при обращении к :doc:`../../ComObjects/DynamicContent` вложенному в :doc:`../../ComObjects/DynamicContent`, приводящая к ``AppCrash``
+* Ошибка доступа к памяти при обращении к :doc:`../../ComObjects/DynamicContent`, вложенному в :doc:`../../ComObjects/DynamicContent`, приводящая к ``AppCrash``
