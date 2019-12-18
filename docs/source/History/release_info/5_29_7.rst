@@ -17,3 +17,4 @@
 * В ``AddIn``-компоненте поле :doc:`../../ComObjects/Department`.:doc:`Address <../../ComObjects/AddressInfo>` всегда было пустым
 * Вызов асинхронных методов в нескольких потоках мог приводить к ``AppCrash``
 * При подписании больших файлов из черновиков, формировалась некорректная подпись
+* В ``COM``-компоненте результат асинхронной операции методов :meth:`Organization.GetCounteragentListByInnList`, :meth:`Organization.GetCounteragentListByStatusAsync` всегда был пустой коллекцией
