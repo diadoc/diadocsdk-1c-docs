@@ -45,13 +45,29 @@ AcceptanceCertificateSellerContent
 
 .. rubric:: Методы
 
-+-----------------------------------------------+
-| |AcceptanceCertificateSellerContent-AddItem|_ |
-+-----------------------------------------------+
++-----------------------------------------------+---------------------------------------------------------+
+| |AcceptanceCertificateSellerContent-AddItem|_ | |AcceptanceCertificateSellerContent-SaveExternalCodes|_ |
++-----------------------------------------------+---------------------------------------------------------+
 
 .. |AcceptanceCertificateSellerContent-AddItem| replace:: AddItem()
+.. |AcceptanceCertificateSellerContent-SaveExternalCodes| replace:: SaveExternalCodes()
+
+
 
 .. _AcceptanceCertificateSellerContent-AddItem:
 .. method:: AcceptanceCertificateSellerContent.AddItem()
 
   Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его
+
+
+
+.. _AcceptanceCertificateSellerContent-SaveExternalCodes:
+.. method:: AcceptanceCertificateSellerContent.SaveExternalCodes()
+
+  Сохраняет на сервере Диадока список внешних идентификаторов акта выполненных работ
+
+  .. deprecated:: 5.5.0
+    Используйте :meth:`Organization.SetData`
+
+  .. versionchanged:: 5.29.7
+    Метод перестал что-либо делать. Оставлен для совместимости
