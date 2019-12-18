@@ -23,7 +23,7 @@ DiadocAPI
 .. rubric:: Методы
 
 +--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-GetFullVersion|_                   |
+| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-GetFullVersion|_                  |
 +--------------------------------------------+------------------------------+----------------------------------------------+
 | |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
 +--------------------------------------------+------------------------------+----------------------------------------------+

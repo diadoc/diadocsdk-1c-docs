@@ -111,3 +111,6 @@ Torg12SellerContent
 
   .. deprecated:: 5.5.0
     Используйте :meth:`Organization.SetData`
+
+  .. versionchanged:: 5.29.7
+    Метод перестал что-либо делать. Оставлен для совместимости
