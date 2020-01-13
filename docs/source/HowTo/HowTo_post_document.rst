@@ -31,9 +31,9 @@
         // Добавление неформализованного документа
         Third_DocumentToSend = SendTask.AddDocumentFromFile("Nonformalized", "default", "v1", "С:\\Документ.pdf");
         Third_DocumentToSend.Comment = "Это неформализованный документ";
-        MetaData = Third_DocumentToSend.AddMetadata();
-        MetaData.Key   = "FileName";
-        MetaData.Value = "Имя Файла Для Передачи.xml";
+        MetaDataItem = Third_DocumentToSend.AddMetadata();
+        MetaDataItem.Key   = "FileName";
+        MetaDataItem.Value = "Имя Файла Для Передачи.xml";
 
         ОтправленныеДокументы = SendTask.Send();
 
