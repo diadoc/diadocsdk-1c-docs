@@ -165,31 +165,33 @@ Document
 
 .. rubric:: Методы
 
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveContent|_            | |Document-GetComment|_                      | |Document-GetDocumentPackage|_        |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveBuyerContent|_       | |Document-GetAnyComment|_                   | |Document-CreateReplySendTask|_       |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveAllContent|_         | |Document-Move|_                            | |Document-CreateReplySendTask2|_      |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveAllContentAsync|_    | |Document-Delete|_                          | |Document-CreateOutDocumentSignTask|_ |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveAllContentZip|_      | |Document-Approve|_                         | |Document-MarkAsRead|_                |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-SaveAllContentZipAsync|_ | |Document-Disapprove|_                      | |Document-CreateCustomDataPatchTask|_ |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetDynamicContent|_      | |Document-SetOneSDocumentId|_               | |Document-AssignToResolutionRoute|_   |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetBase64Content|_       | |Document-ReSetOneSDocumentId|_             | |Document-RemoveFromResolutionRoute|_ |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetBase64ContentAsync|_  | |Document-AddSubordinateOneSDocumentId|_    | |Document-SendRevocationRequest|_     |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetBase64Signature|_     | |Document-RemoveSubordinateOneSDocumentId|_ | |Document-AcceptRevocationRequest|_   |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetSenderSignature|_     | |Document-CreateResolutionRequestTask|_     | |Document-RejectRevocationRequest|_   |
-+------------------------------------+---------------------------------------------+---------------------------------------+
-| |Document-GetRecipientSignature|_  | |Document-GetPrintForm|_                    |                                       |
-+------------------------------------+---------------------------------------------+---------------------------------------+
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveContent|_                | |Document-GetComment|_                      | |Document-GetDocumentPackage|_          |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveBuyerContent|_           | |Document-GetAnyComment|_                   | |Document-CreateReplySendTask|_         |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveAllContent|_             | |Document-Move|_                            | |Document-CreateReplySendTask2|_        |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveAllContentAsync|_        | |Document-Delete|_                          | |Document-CreateOutDocumentSignTask|_   |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveAllContentZip|_          | |Document-MarkAsRead|_                      | |Document-CreateResolutionRequestTask|_ |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-SaveAllContentZipAsync|_     | |Document-SendRevocationRequest|_           | |Document-CreateCustomDataPatchTask|_   |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetDynamicContent|_          | |Document-AcceptRevocationRequest|_         | |Document-AssignToResolutionRoute|_     |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetBase64Content|_           | |Document-RejectRevocationRequest|_         | |Document-RemoveFromResolutionRoute|_   |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetBase64ContentAsync|_      | |Document-AddSubordinateOneSDocumentId|_    | |Document-SetOneSDocumentId|_           |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetBase64Signature|_         | |Document-RemoveSubordinateOneSDocumentId|_ | |Document-ReSetOneSDocumentId|_         |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetBase64OriginalSignature|_ | |Document-GetPrintForm|_                    |                                         |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetSenderSignature|_         | |Document-Approve|_                         |                                         |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
+| |Document-GetRecipientSignature|_      | |Document-Disapprove|_                      |                                         |
++----------------------------------------+---------------------------------------------+-----------------------------------------+
 
 
 .. |Document-SaveContent| replace:: SaveContent()
@@ -202,6 +204,7 @@ Document
 .. |Document-GetBase64Content| replace:: GetBase64Content()
 .. |Document-GetBase64ContentAsync| replace:: GetBase64ContentAsync()
 .. |Document-GetBase64Signature| replace:: GetBase64Signature()
+.. |Document-GetBase64OriginalSignature| replace:: GetBaseOriginal64Signature()
 .. |Document-GetSenderSignature| replace:: GetSenderSignature()
 .. |Document-GetRecipientSignature| replace:: GetRecipientSignature()
 .. |Document-GetComment| replace:: GetComment()
@@ -318,7 +321,17 @@ Document
 
   :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. |Document-DocflowSide|_
 
-  Возвращает подпись титула документа со стороны *DocflowSide* в виде Base64 строки
+  Возвращает подпись с меткой времени к титулу документа со стороны *DocflowSide* в виде Base64 строки
+
+
+
+.. _Document-GetBase64OriginalSignature:
+.. method:: Document.GetBase64OriginalSignature(DocflowSide)
+
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. |Document-DocflowSide|_
+
+  Возвращает оригинальную подпись (обычно без метки времени) титула документа со стороны *DocflowSide* в виде Base64 строки
+
 
 
 .. _Document-GetSenderSignature:
