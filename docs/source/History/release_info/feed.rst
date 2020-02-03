@@ -3,7 +3,7 @@
 .. do not move this file, pls
 
 .. feed::
-   :rss:   index.rss
+   :rss:   History/release_info/index.rss
    :title: Новости AddIn Diadoc API
 
    5_0_0
