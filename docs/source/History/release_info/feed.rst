@@ -3,7 +3,7 @@
 .. do not move this file, pls
 
 .. feed::
-   :rss:   index.rss
+   :rss:   History/release_info/index.rss
    :title: Новости AddIn Diadoc API
 
    5_0_0
@@ -115,4 +115,3 @@
    5_29_6
    5_29_7
    5_29_8
-   News_04.02.2020
