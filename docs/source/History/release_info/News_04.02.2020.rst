@@ -4,4 +4,4 @@
 .. feed-entry::
   :date: 2020-02-04
 
-RSS канал сегодня поменяет свой адррес. Пожалуйста, переподпишитесь. `Новый адрес <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+RSS канал сегодня поменяет свой адррес. Пожалуйста, переподпишитесь. `Новый адрес <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
