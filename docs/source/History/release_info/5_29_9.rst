@@ -8,10 +8,12 @@
 .. rubric:: Добавлено
 
 * Добавлен метод получения контента документа до его отправки :meth:`DocumentToSend.SaveContent`
-* Добавлено поле **TemplateRefusalInfo**, содержащее информацию об отклонении шаблона, в объект :doc:`Entity`
-* Добавлен объект :doc:`TemplateRefusal` - информация об отклонении шаблона
-* Добавлены объекты :doc:`KeyValue`, :doc:`DataTask` для более гибкой работы с внутренним хранилищем ключей-значений Диадока
-* Добавлен метод :meth:`Organization.CreateDataTask` для создания объекта :doc:`DataTask`
+* Добавлено поле **TemplateRefusalInfo**, содержащее информацию об отклонении шаблона, в объект :doc:`../../ComObjects/Entity`
+* Добавлен объект :doc:`../../ComObjects/TemplateRefusal` - информация об отклонении шаблона
+* Добавлены объекты :doc:`../../ComObjects/KeyValue`, :doc:`../../ComObjects/DataTask` для более гибкой работы с внутренним хранилищем ключей-значений Диадока
+* Добавлен метод :meth:`Organization.CreateDataTask` для создания объекта :doc:`../../ComObjects/DataTask`
+* Добавлен объекты :doc:`../../ComObjects/MethodDesc` и :doc:`../../ComObjects/ArgPack` для работы с методами COM-объектов
+* Добавлены методы :meth:`TypeDesc.GetMethodsNames`, :meth:`TypeDesc.GetMethodDesc`, :meth:`TypeDesc.CreateArgs`, :meth:`TypeDesc.InvokeMethod` для работы с методами COM-объектов через :doc:`../../ComObjects/Reflector`
 
 
 .. rubric:: Изменено
