@@ -1,0 +1,19 @@
+5.29.9
+------
+
+.. feed-entry::
+  :date: 2020-02-04
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод получения контента документа до его отправки :meth:`DocumentToSend.SaveContent`
+* Добавлено поле **TemplateRefusalInfo**, содержащее информацию об отклонении шаблона, в объект :doc:`Entity`
+* Добавлен объект :doc:`TemplateRefusal` - информация об отклонении шаблона
+* Добавлены объекты :doc:`KeyValue`, :doc:`DataTask` для более гибкой работы с внутренним хранилищем ключей-значений Диадока
+* Добавлен метод :meth:`Organization.CreateDataTask` для создания объекта :doc:`DataTask`
+
+
+.. rubric:: Изменено
+
+* Методы :meth:`Organization.GetData` и :meth:`Organization.SetData` помечены устаревшими

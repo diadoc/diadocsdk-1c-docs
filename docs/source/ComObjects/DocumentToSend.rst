@@ -17,16 +17,17 @@ DocumentToSend
 
 .. rubric:: Методы
 
-+------------------------------------------+-----------------------------------------------------+
-| |DocumentToSend-AddInitialDocument|_     | |DocumentToSend-AddInitialDocumentFromPackage|_     |
-+------------------------------------------+-----------------------------------------------------+
-| |DocumentToSend-AddSubordinateDocument|_ | |DocumentToSend-AddSubordinateDocumentFromPackage|_ |
-+------------------------------------------+-----------------------------------------------------+
++------------------------------------------+-----------------------------------------------------+-------------------------------+
+| |DocumentToSend-AddInitialDocument|_     | |DocumentToSend-AddInitialDocumentFromPackage|_     | |DocumentToSend-SaveContent|_ |
++------------------------------------------+-----------------------------------------------------+-------------------------------+
+| |DocumentToSend-AddSubordinateDocument|_ | |DocumentToSend-AddSubordinateDocumentFromPackage|_ |                               |
++------------------------------------------+-----------------------------------------------------+-------------------------------+
 
 .. |DocumentToSend-AddInitialDocument| replace:: AddInitialDocument()
 .. |DocumentToSend-AddSubordinateDocument| replace:: AddSubordinateDocument()
 .. |DocumentToSend-AddInitialDocumentFromPackage| replace:: AddInitialDocumentFromPackage()
 .. |DocumentToSend-AddSubordinateDocumentFromPackage| replace:: AddSubordinateDocumentFromPackage()
+.. |DocumentToSend-SaveContent| replace:: SaveContent()
 
 
 
@@ -63,6 +64,15 @@ DocumentToSend
   :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
 
   Добавляет идентификатор документа из пакета на отправку в коллекцию подчиненных документов
+
+
+.. _DocumentToSend-SaveContent:
+.. method:: DocumentToSend.SaveContent(BoxId, FileName)
+
+  :BoxId: ``строка`` идентификатор ящика контрагента, которому должен быть отправлен документ
+  :FileName: ``строка`` полной имя файла, в который необходимо сохранить содержание документа
+
+  Генерирует содержание отправляемого документа и сохраняет его на диск
 
 
 
