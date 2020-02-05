@@ -16,7 +16,7 @@
   * Добавлен объект :doc:`../../ComObjects/TemplateRefusal`
 
 
-* Добавлена работа с методами COM-объектов через :doc:`../../ComObjects/Reflector`:
+* Добавлена работа с полями и методами COM-объектов через :doc:`../../ComObjects/Reflector`:
 
   * Добавлен объект :doc:`../../ComObjects/MethodDesc`
   * Добавлен объект :doc:`../../ComObjects/ArgPack`
@@ -24,6 +24,8 @@
   * Добавлен метод :meth:`TypeDesc.GetMethodDesc`
   * Добавлен метод :meth:`TypeDesc.CreateArgs`
   * Добавлен метод :meth:`TypeDesc.InvokeMethod`
+  * Добавлен метод :meth:`TypeDesc.SetProperty`
+  * Добавлен метод :meth:`TypeDesc.GetProperty`
 
 
 
