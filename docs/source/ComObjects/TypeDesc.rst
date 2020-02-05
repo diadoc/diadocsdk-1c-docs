@@ -6,11 +6,11 @@ TypeDesc
 
 .. rubric:: Методы
 
-+------------------------------+--------------------------------+-----------------------------+--------------------------+-------------------------+
-| |TypeDesc-GetInterfaceName|_ | |TypeDesc-GetPropertiesNames|_ | |TypeDesc-GetMethodsNames|_ | |TypeDesc-CreateArgs|_   | |TypeDesc-SetProperty|_ |
-+------------------------------+--------------------------------+-----------------------------+--------------------------+-------------------------+
-| |TypeDesc-HasProperty|_      | |TypeDesc-GetPropertyType|_    | |TypeDesc-GetMethodDesc|_   | |TypeDesc-InvokeMethod|_ | |TypeDesc-GetProperty|_ |
-+------------------------------+--------------------------------+-----------------------------+--------------------------+-------------------------+
++------------------------------+--------------------------------+-------------------------+-----------------------------+--------------------------+
+| |TypeDesc-GetInterfaceName|_ | |TypeDesc-GetPropertiesNames|_ | |TypeDesc-SetProperty|_ | |TypeDesc-GetMethodsNames|_ | |TypeDesc-CreateArgs|_   |
++------------------------------+--------------------------------+-------------------------+-----------------------------+--------------------------+
+| |TypeDesc-HasProperty|_      | |TypeDesc-GetPropertyType|_    | |TypeDesc-GetProperty|_ | |TypeDesc-GetMethodDesc|_   | |TypeDesc-InvokeMethod|_ |
++------------------------------+--------------------------------+-------------------------+-----------------------------+--------------------------+
 
 .. |TypeDesc-GetInterfaceName| replace:: GetInterfaceName()
 .. |TypeDesc-GetPropertiesNames| replace:: GetPropertiesNames()
@@ -58,6 +58,29 @@ TypeDesc
 
 
 
+.. _TypeDesc-SetProperty:
+.. method:: TypeDesc.SetProperty(PropertyName, Object)
+
+:PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
+:Object:       ``Произвольный объект`` устанавливаемое значение
+
+Задаёт новое значение полю COM-объекта
+
+.. versionadded:: 5.29.9
+
+
+
+.. _TypeDesc-GetProperty:
+.. method:: TypeDesc.GetProperty(PropertyName)
+
+:PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
+
+Получает значение значение поля COM-объекта
+
+.. versionadded:: 5.29.9
+
+
+
 .. _TypeDesc-GetMethodsNames:
 .. method:: TypeDesc.GetMethodsNames()
 
@@ -94,29 +117,5 @@ TypeDesc
 :Args:       ``ArgPack`` набор аргументов, представленный объектом :doc:`ArgPack`
 
 Вызывает метод по его имени с переданными параметрами и возвращает результат его выполнения, если он есть. Неявного преобразования типов аргументов не происходит
-
-.. versionadded:: 5.29.9
-
-
-
-
-.. _TypeDesc-SetProperty:
-.. method:: TypeDesc.SetProperty(PropertyName, Object)
-
-:PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
-:Object:       ``Произвольный объект`` устанавливаемое значение
-
-Задаёт новое значение полю COM-объекта
-
-.. versionadded:: 5.29.9
-
-
-
-.. _TypeDesc-GetProperty:
-.. method:: TypeDesc.GetProperty(PropertyName)
-
-:PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
-
-Получает значение значение поля COM-объекта
 
 .. versionadded:: 5.29.9
