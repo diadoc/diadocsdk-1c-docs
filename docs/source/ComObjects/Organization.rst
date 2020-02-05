@@ -49,33 +49,33 @@ Organization
 
 .. rubric:: Методы
 
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetCounteragentListByInnKpp|_          | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetReceiptGenerationProcess|_          | |Organization-GetDocumentEventList|_         | |Organization-CreateSendTask|_                     |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-CreateSendTaskFromFile|_               | |Organization-CreateSendTaskFromFileRaw|_    | |Organization-CreatePackageSendTask|_              |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-CreatePackageSendTask2|_               | |Organization-CreateSendDraftTask|_          | |Organization-SendDraftAsync|_                     |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-SetAndValidateAddressForCounteragent|_ | |Organization-GetAddressForCounteragent|_    | |Organization-GetSentDocuments|_                   |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-SetData|_                              | |Organization-GetData|_                      | |Organization-CreateSetExtendedSignerDetailsTask|_ |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-GetExtendedSignerDetails|_             | |Organization-GetExtendedSignerDetails2|_    | |Organization-SendFnsRegistrationMessage|_         |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-CanSendInvoice|_                       | |Organization-GetDocumentTypes|_             | |Organization-GetResolutionRoutes|_                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
-| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              | |Organization-GetBase64UserDataXSD|_               |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                | |Organization-CreateDataTask|_ |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetCounteragentListByInnKpp|_          | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetReceiptGenerationProcess|_          | |Organization-GetDocumentEventList|_         | |Organization-CreateSendTask|_                     |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-CreateSendTaskFromFile|_               | |Organization-CreateSendTaskFromFileRaw|_    | |Organization-CreatePackageSendTask|_              |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-CreatePackageSendTask2|_               | |Organization-CreateSendDraftTask|_          | |Organization-SendDraftAsync|_                     |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-SetAndValidateAddressForCounteragent|_ | |Organization-GetAddressForCounteragent|_    | |Organization-GetSentDocuments|_                   |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-SetData|_                              | |Organization-GetData|_                      | |Organization-CreateSetExtendedSignerDetailsTask|_ |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-GetExtendedSignerDetails|_             | |Organization-GetExtendedSignerDetails2|_    | |Organization-SendFnsRegistrationMessage|_         |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-CanSendInvoice|_                       | |Organization-GetDocumentTypes|_             | |Organization-GetResolutionRoutes|_                |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
+| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              | |Organization-GetBase64UserDataXSD|_               |                                |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
 
 
 .. |Organization-GetUsers| replace:: GetUsers()
@@ -117,7 +117,7 @@ Organization
 .. |Organization-RecycleDraft| replace:: RecycleDraft()
 .. |Organization-SaveUserDataXSD| replace:: SaveUserDataXSD()
 .. |Organization-GetBase64UserDataXSD| replace:: GetBase64UserDataXSD()
-
+.. |Organization-CreateDataTask| replace:: CreateDataTask()
 
 
 
@@ -254,7 +254,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
 
@@ -267,7 +267,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
 
@@ -280,7 +280,7 @@ Organization
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask`
+    Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
 
@@ -350,7 +350,7 @@ Organization
   Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.SetData`
+    Используйте :meth:`Organization.CreateDataTask`
 
   .. versionchanged:: 5.29.0
     Вовзращаемая коллекция всегда пустая. Валидации не происходит
@@ -366,7 +366,7 @@ Organization
   Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.GetData`
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 
@@ -383,7 +383,7 @@ Organization
 
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.GetData`
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 
@@ -395,6 +395,9 @@ Organization
 
   Добавляет пару *ключ-значение* в хранилище
 
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
+
 
 .. _Organization-GetData:
 .. method:: Organization.GetData(Key)
@@ -402,6 +405,9 @@ Organization
   :Key: ``строка`` уникальный ключ в хранилище
 
   Возвращает значение, соответствующее ключу
+
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 
@@ -529,6 +535,14 @@ Organization
   Возвращает Base64 строку описания контента документа. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
   .. versionadded:: 5.28.3
+
+
+.. _Organization-CreateDataTask:
+.. method:: Organization.CreateDataTask()
+
+  Создаёт :doc:`задание для работы с хранилищем ключей-значений Диадок <DataTask>`
+
+  .. versionadded:: 5.29.9
 
 
 

@@ -21,6 +21,7 @@
   AddressInfo <AddressInfo>
   AmendmentRequestMetadata <AmendmentRequestMetadata>
   AmountsDiff <AmountsDiff>
+  ArgPack <ArgPack>
   AsyncResult <AsyncResult>
   Attorney <Attorney>
   BaseContent <BaseContent>
@@ -43,6 +44,7 @@
   CustomDataPatchTask <CustomDataPatchTask>
   CustomDeclaration <CustomDeclaration>
   CustomDocumentToSend <CustomDocumentToSend>
+  DataTask <DataTask>
   Department <Department>
   DiadocAPI <DiadocAPI>
   Document <Document>
@@ -88,7 +90,9 @@
   InvoiceToSend <InvoiceToSend>
   InvoiceTotals <InvoiceTotals>
   InvoiceTotalsDiff <InvoiceTotalsDiff>
+  KeyValue <KeyValue>
   MetadataItem <MetadataItem>
+  MethodDesc <MethodDesc>
   Nonformalized <Nonformalized>
   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
   NonformalizedDocumentToSend <NonformalizedDocumentToSend>
@@ -140,6 +144,7 @@
   StructedAdditionalInfo <StructedAdditionalInfo>
   StructuredAttachment <StructuredAttachment>
   Template <Template>
+  TemplateRefusal <TemplateRefusal>
   TemplateSendTask <TemplateSendTask>
   TemplateToSend <TemplateToSend>
   TestConnectionResult <TestConnectionResult>

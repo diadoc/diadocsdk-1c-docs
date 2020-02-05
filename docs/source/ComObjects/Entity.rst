@@ -39,7 +39,12 @@ Entity
   **Булево, чтение** - флаг, указывающий зашифрован ли контент сущности
 
 :DocumentInfo:
-  :doc:`Document <Document>` **, чтение** - для сущности типа ``Attachment`` содержит расширенную информацию о документе
+  :doc:`Document` **, чтение** - для сущности типа ``Attachment`` содержит расширенную информацию о документе
 
 :CreatedDocumentIds:
   :doc:`Коллекция <Collection>` **строк, чтение** - коллекция идентификаторов документов, созданных из сущности
+
+:TemplateRefusalInfo:
+  :doc:`TemplateRefusal` **, чтение** - для сущности с **AttachmentType** = ``TemplateRefusal`` содержит информацию об отклонении шаблона
+  
+  .. versionadded:: 5.29.9

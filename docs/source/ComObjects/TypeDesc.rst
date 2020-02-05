@@ -6,16 +6,20 @@ TypeDesc
 
 .. rubric:: Методы
 
-+------------------------------+--------------------------------+
-| |TypeDesc-GetInterfaceName|_ | |TypeDesc-GetPropertiesNames|_ |
-+------------------------------+--------------------------------+
-| |TypeDesc-HasProperty|_      | |TypeDesc-GetPropertyType|_    |
-+------------------------------+--------------------------------+
++------------------------------+--------------------------------+-----------------------------+--------------------------+
+| |TypeDesc-GetInterfaceName|_ | |TypeDesc-GetPropertiesNames|_ | |TypeDesc-GetMethodsNames|_ | |TypeDesc-CreateArgs|_   |
++------------------------------+--------------------------------+-----------------------------+--------------------------+
+| |TypeDesc-HasProperty|_      | |TypeDesc-GetPropertyType|_    | |TypeDesc-GetMethodDesc|_   | |TypeDesc-InvokeMethod|_ |
++------------------------------+--------------------------------+-----------------------------+--------------------------+
 
 .. |TypeDesc-GetInterfaceName| replace:: GetInterfaceName()
 .. |TypeDesc-GetPropertiesNames| replace:: GetPropertiesNames()
 .. |TypeDesc-HasProperty| replace:: HasProperty()
 .. |TypeDesc-GetPropertyType| replace:: GetPropertyType()
+.. |TypeDesc-GetMethodsNames| replace:: GetMethodsNames()
+.. |TypeDesc-GetMethodDesc| replace:: GetMethodDesc()
+.. |TypeDesc-CreateArgs| replace:: CreateArgs()
+.. |TypeDesc-InvokeMethod| replace:: InvokeMethod()
 
 
 .. _TypeDesc-GetInterfaceName:
@@ -49,3 +53,44 @@ TypeDesc
 Возвращает имя типа, который имеет указанное свойство.
 Возможные типы перечислены `здесь <https://docs.microsoft.com/en-us/windows/win32/api/wtypes/ne-wtypes-varenum>`_ .
 Если указанного свойства у объекта нет, то вернётся пустая строка
+
+
+
+.. _TypeDesc-GetMethodsNames:
+.. method:: TypeDesc.GetMethodsNames()
+
+Возвращает :doc:`коллекцию <Collection>` строк с именами методов класса
+
+.. versionadded:: 5.29.9
+
+
+
+.. _TypeDesc-GetMethodDesc:
+.. method:: TypeDesc.GetMethodDesc(MethodName)
+
+:MethodName: ``Регистрозависимая строка`` Имя метода
+
+Возвращает :doc:`описание интерфейса метода <MethodDesc>` по имени метода
+
+.. versionadded:: 5.29.9
+
+
+
+.. _TypeDesc-CreateArgs:
+.. method:: TypeDesc.CreateArgs()
+
+Создаёт :doc:`набор аргументов <ArgPack>` для последующей передачи в метод
+
+.. versionadded:: 5.29.9
+
+
+
+.. _TypeDesc-InvokeMethod:
+.. method:: TypeDesc.InvokeMethod(MethodName, Args)
+
+:MethodName: ``Регистрозависимая строка`` имя вызываемого метода
+:Args:       ``ArgPack`` набор аргументов, представленный объектом :doc:`ArgPack`
+
+Вызывает метод по его имени с переданными параметрами и возвращает результат его выполнения, если он есть. Неявного преобразования типов аргументов не происходит
+
+.. versionadded:: 5.29.9
