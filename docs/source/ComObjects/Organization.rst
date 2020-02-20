@@ -124,7 +124,7 @@ Organization
 .. _Organization-GetUsers:
 .. method:: Organization.GetUsers()
 
-  Возращает :doc:`коллекцию <Collection>` :doc:`пользователей <User>` организации
+  Возращает :doc:`коллекцию <Collection>` :doc:`пользователей <OrganizationUser>` организации
 
 
 

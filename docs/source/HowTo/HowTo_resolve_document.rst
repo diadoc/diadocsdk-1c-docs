@@ -29,6 +29,6 @@
 Подтверждение и отказ в соласовании или подписи
 -----------------------------------------------
 
-Для принятия резолюции используйте методы :meth:`Document.Approve` и :meth:`DpcumentPackage.Approve`
+Для принятия резолюции используйте методы :meth:`Document.Approve` и :meth:`DocumentPackage.Approve`
 
-Для отказа в резолюции - :meth:`Document.Disapprove` и :meth:`DpcumentPackage.Disapprove`
+Для отказа в резолюции - :meth:`Document.Disapprove` и :meth:`DocumentPackage.Disapprove`
