@@ -49,33 +49,33 @@ Organization
 
 .. rubric:: Методы
 
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                | |Organization-CreateDataTask|_ |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetCounteragentListByInnKpp|_          | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetReceiptGenerationProcess|_          | |Organization-GetDocumentEventList|_         | |Organization-CreateSendTask|_                     |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-CreateSendTaskFromFile|_               | |Organization-CreateSendTaskFromFileRaw|_    | |Organization-CreatePackageSendTask|_              |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-CreatePackageSendTask2|_               | |Organization-CreateSendDraftTask|_          | |Organization-SendDraftAsync|_                     |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-SetAndValidateAddressForCounteragent|_ | |Organization-GetAddressForCounteragent|_    | |Organization-GetSentDocuments|_                   |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-SetData|_                              | |Organization-GetData|_                      | |Organization-CreateSetExtendedSignerDetailsTask|_ |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-GetExtendedSignerDetails|_             | |Organization-GetExtendedSignerDetails2|_    | |Organization-SendFnsRegistrationMessage|_         |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-CanSendInvoice|_                       | |Organization-GetDocumentTypes|_             | |Organization-GetResolutionRoutes|_                |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
-| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              | |Organization-GetBase64UserDataXSD|_               |                                |
-+------------------------------------------------------+----------------------------------------------+----------------------------------------------------+--------------------------------+
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                | |Organization-CreateDataTask|_              |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   | |Organization-GetCounteragentListByInnKpp|_ |                              |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetCounteragentListByInnKppAsync|_     | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetReceiptGenerationProcess|_          | |Organization-GetDocumentEventList|_         | |Organization-CreateSendTask|_                     |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-CreateSendTaskFromFile|_               | |Organization-CreateSendTaskFromFileRaw|_    | |Organization-CreatePackageSendTask|_              |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-CreatePackageSendTask2|_               | |Organization-CreateSendDraftTask|_          | |Organization-SendDraftAsync|_                     |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-SetAndValidateAddressForCounteragent|_ | |Organization-GetAddressForCounteragent|_    | |Organization-GetSentDocuments|_                   |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-SetData|_                              | |Organization-GetData|_                      | |Organization-CreateSetExtendedSignerDetailsTask|_ |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-GetExtendedSignerDetails|_             | |Organization-GetExtendedSignerDetails2|_    | |Organization-SendFnsRegistrationMessage|_         |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-CanSendInvoice|_                       | |Organization-GetDocumentTypes|_             | |Organization-GetResolutionRoutes|_                |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-CreateTemplateSendTask|_               | |Organization-GetTemplate|_                  | |Organization-CreateTransformTemplateTask|_        |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
+| |Organization-RecycleDraft|_                         | |Organization-SaveUserDataXSD|_              | |Organization-GetBase64UserDataXSD|_               |                                             |
++------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
 
 
 .. |Organization-GetUsers| replace:: GetUsers()
@@ -85,6 +85,7 @@ Organization
 .. |Organization-GetCounteragentListByStatus| replace:: GetCounteragentListByStatus()
 .. |Organization-GetCounteragentListByStatusAsync| replace:: GetCounteragentListByStatusAsync()
 .. |Organization-GetCounteragentListByInnKpp| replace:: GetCounteragentListByInnKpp()
+.. |Organization-GetCounteragentListByInnKppAsync| replace:: GetCounteragentListByInnKppAsync()
 .. |Organization-GetCounteragentListByInnList| replace:: GetCounteragentListByInnList()
 .. |Organization-CreateAcquireCounteragentTask| replace:: CreateAcquireCounteragentTask()
 .. |Organization-GetDocumentById| replace:: GetDocumentById()
@@ -179,7 +180,16 @@ Organization
   :Inn: ``строка`` ИНН для поиска
   :Kpp: ``строка`` КПП для поиска
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанными ИНН-КПП
+  Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>` с указанными ИНН-КПП
+
+
+.. _Organization-GetCounteragentListByInnKppAsync:
+.. method:: Organization.GetCounteragentListByInnKppAsync(Inn[, Kpp])
+
+  :Inn: ``строка`` ИНН для поиска
+  :Kpp: ``строка`` КПП для поиска
+
+  Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <Counteragent>` с указанными ИНН-КПП в качестве результата
 
 
 
