@@ -8,7 +8,7 @@
 
 .. rubric:: Добавлено
 
-* Добавлен метод :meth:`Organziation.GetCounteragentListByInnKppAsync`
+* Добавлен метод :meth:`Organization.GetCounteragentListByInnKppAsync`
 
 
 .. rubric:: Изменено
