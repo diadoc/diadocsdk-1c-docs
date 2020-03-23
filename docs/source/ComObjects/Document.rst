@@ -10,7 +10,7 @@ Document
 :Type:
   **Строка, чтение** - тип документа
 
-  .. depracetad:: 5.21.0
+  .. deprecated:: 5.21.0
     Используйте тройку **TypeNamedId**, **DocumentFunction**, **Version**
 
 :TypeNamedId:
