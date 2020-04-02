@@ -7,4 +7,4 @@
 
 .. rubric:: Исправлено
 
-* При работе с хранилищей ключей-значений воникакла ошибка ``##100[Ошибка сервера Диадок]code:400, HTTP error: Number of keys in request to KeyValueStorageGet exceeds allowed 100 items per query``
+* При работе с хранилищем ключей-значений возникала ошибка ``##100[Ошибка сервера Диадок]code:400, HTTP error: Number of keys in request to KeyValueStorageGet exceeds allowed 100 items per query``
