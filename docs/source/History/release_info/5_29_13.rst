@@ -1,0 +1,10 @@
+5.29.13
+-------
+
+.. feed-entry::
+  :date: 2020-12-31
+
+
+.. rubric:: Добавлено
+
+* В объекты :doc:`../../ComObjects/Document` и :doc:`../../ComObjects/CustomDocumentToSend` добавлено поле *EditingSettingId* - идентификатор настройки дозаполнения контента документа
