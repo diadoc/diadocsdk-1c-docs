@@ -52,7 +52,7 @@ Organization
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
 | |Organization-GetUsers|_                             | |Organization-GetUserPermissions|_           | |Organization-GetCounteragentById|_                | |Organization-CreateDataTask|_              |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
-| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   | |Organization-GetCounteragentListByInnKpp|_ |                              |
+| |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   | |Organization-GetCounteragentListByInnKpp|_ |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
 | |Organization-GetCounteragentListByInnKppAsync|_     | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |                                             |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
