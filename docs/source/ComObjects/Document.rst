@@ -434,7 +434,8 @@ Document
 
   Присваивает документу дополнительный идентификатор из учётной системы
 
-
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 .. _Document-ReSetOneSDocumentId:
@@ -442,6 +443,8 @@ Document
 
   Сбрасывает дополнительный идентификатор учётной системы у документа в Диадоке
 
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 .. _Document-AddSubordinateOneSDocumentId:
@@ -451,7 +454,8 @@ Document
 
   Добавляет документу дополнительный идентификатор из учётной системы как подчинённый. Обычно используется чтобы обозначить связь документов друг с другом
 
-
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
 
 
 .. _Document-RemoveSubordinateOneSDocumentId:
@@ -461,7 +465,9 @@ Document
 
   Удаляет дополнительный подчинённый идентификатор
 
-
+  .. deprecated:: 5.29.9
+    Используйте :meth:`Organization.CreateDataTask`
+    
 
 .. _Document-CreateResolutionRequestTask:
 .. method:: Document.CreateResolutionRequestTask()

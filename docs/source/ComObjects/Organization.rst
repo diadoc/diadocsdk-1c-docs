@@ -360,7 +360,7 @@ Organization
   Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreateDataTask`
+    Используйте :meth:`Organization.SetData`
 
   .. versionchanged:: 5.29.0
     Вовзращаемая коллекция всегда пустая. Валидации не происходит
@@ -376,7 +376,7 @@ Organization
   Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
 
   .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreateDataTask`
+    Используйте :meth:`Organization.GetData`
 
 
 
@@ -392,7 +392,7 @@ Organization
   Если *AsDiadocDocumentId* == ``TRUE``, то будут возвращены идентификаторы документов в Диадок
 
 
-  .. deprecated:: 5.5.0
+  .. deprecated:: 5.29.9
     Используйте :meth:`Organization.CreateDataTask`
 
 
