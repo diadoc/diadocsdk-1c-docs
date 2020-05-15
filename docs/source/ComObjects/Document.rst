@@ -285,20 +285,20 @@ Document
 
 
 .. _Document-SaveAllContentZip:
-.. method:: Document.SaveAllContentZip(DirectoryPath)
+.. method:: Document.SaveAllContentZip(FilePath)
 
-  :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
+  :FilePath: ``Строка`` Путь до файла, в который будет сохранён архив
 
-  Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+  Формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанный файл. Если файла не существует, то он будет создан, иначе перезаписан
 
 
 
 .. _Document-SaveAllContentZipAsync:
-.. method:: Document.SaveAllContentZipAsync(DirectoryPath)
+.. method:: Document.SaveAllContentZipAsync(FilePath)
 
-  :DirectoryPath: ``Строка`` Путь до директории, в которой будет сохранён архив
+  :FilePath: ``Строка`` Путь до файла, в который будет сохранён архив
 
-  Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанную директорию
+  Асинхронно формирует архив, содержащий все файлы, относящиеся к документу (в т.ч. электронные подписи), и сохраняет его в указанный файл. Если файла не существует, то он будет создан, иначе перезаписан
 
 
 
@@ -467,7 +467,7 @@ Document
 
   .. deprecated:: 5.29.9
     Используйте :meth:`Organization.CreateDataTask`
-    
+
 
 .. _Document-CreateResolutionRequestTask:
 .. method:: Document.CreateResolutionRequestTask()
