@@ -133,7 +133,7 @@ Document
   .. versionadded:: 5.3.1
 
 :CustomData:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem <CustomDataItem>` **, чтение** - коллекция элементов "ключ-значение"
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem <CustomDataItem>` **, чтение** - коллекция тэгов документа
 
 :Metadata:
   :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem <MetadataItem>` **, чтение** - коллекция метаданных

@@ -1,7 +1,7 @@
 CustomDataPatchTask
 ===================
 
-Задача редактирования коллекции :doc:`Document.CustomData <Document>`
+Задача редактирования коллекции :doc:`Document.CustomData <Document>` - тэгов документа
 
 
 .. rubric:: Свойства
