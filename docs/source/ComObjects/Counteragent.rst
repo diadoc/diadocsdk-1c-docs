@@ -82,7 +82,7 @@ Counteragent
 .. _Counteragent-GetStatus:
 .. method:: Counteragent.GetStatus()
 
-  Возвращает строковое представление текущего статуса отношений с контрагентом
+  Возвращает строковое представление текущего статуса отношений с контрагентом. :doc:`Возможные значения <Enums/CounteragentStatus>`
 
 
 
