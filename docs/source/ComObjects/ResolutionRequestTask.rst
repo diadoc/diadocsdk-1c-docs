@@ -12,11 +12,11 @@ ResolutionRequestTask
     Используйте коллекцию *InitialDocuments*
 
 :InitialDocuments:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Document <Document>` **, чтение** - документы, для которых формируется запрос
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Document` **, чтение** - документы, для которых формируется запрос
 
 
 :ResolutionRequestType:
-  **Строка, чтение/запись** - тип запроса. |ResolutionRequestTask-Type|_
+  **Строка, чтение/запись** - тип запроса. :doc:`Возможные значения <Enums/ResolutionRequestTaskType>`
 
 :Comment:
   **Строка, чтение/запись** - комментарий к запросу
@@ -43,17 +43,3 @@ ResolutionRequestTask
 .. method:: ResolutionRequestTask.Send()
 
   Отправить запрос на сервер Диадок
-
-
-
-.. rubric:: Дополнительная информация
-
-.. |ResolutionRequestTask-Type| replace:: Возможные значения
-.. _ResolutionRequestTask-Type:
-
-================================ =============================
-Значение *ResolutionRequestType* Описание
-================================ =============================
-ApprovementRequest               запрос согласования документа
-SignatureRequest                 запрос подписи документа
-================================ =============================

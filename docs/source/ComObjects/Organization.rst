@@ -259,7 +259,7 @@ Organization
 .. _Organization-CreateSendTask:
 .. method:: Organization.CreateSendTask(FormalDocumentType)
 
-  :DocumentType: ``строка`` тип документа на отправку. |Organization-FormalDocumentType|_
+  :DocumentType: ``строка`` тип документа на отправку.:doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
 
@@ -271,7 +271,7 @@ Organization
 .. _Organization-CreateSendTaskFromFile:
 .. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа на отправку. |Organization-DocumentType|_
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
   :FilePath: ``строка`` путь до файла контента документа
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
@@ -284,7 +284,7 @@ Organization
 .. _Organization-CreateSendTaskFromFileRaw:
 .. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа на отправку. |Organization-DocumentType|_
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента документа
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
@@ -448,7 +448,7 @@ Organization
 .. method:: Organization.GetExtendedSignerDetails2(Thumbprint, TitleType)
 
   :Thumbprint: ``строка`` отпечаток сертификата
-  :TitleType: ``строка`` тип титула документа. |Organization-TitleType|_
+  :TitleType: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/SignerTitleType>`
 
   Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. . Метод может быть запрошен самим пользователем или администратором организации
 
@@ -526,7 +526,7 @@ Organization
   :TitleName: ``строка`` название типа документа
   :Function: ``строка`` функция документа
   :Version: ``строка`` версия документа
-  :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
+  :DocflowSide: ``строка`` сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
   :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
 
   Сохраняет описание контента документа на диск. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
@@ -540,7 +540,7 @@ Organization
   :TitleName: ``строка`` название типа документа
   :Function: ``строка`` функция документа
   :Version: ``строка`` версия документа
-  :DocflowSide: ``строка`` сторона документооборота. |Organization-DocflowSide|_
+  :DocflowSide: ``строка`` сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает Base64 строку описания контента документа. Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
@@ -553,89 +553,3 @@ Organization
   Создаёт :doc:`задание для работы с хранилищем ключей-значений Диадок <DataTask>`
 
   .. versionadded:: 5.29.9
-
-
-
-.. rubric:: Дополнительная информация
-
-
-.. |Organization-FormalDocumentType| replace:: Возможные значения
-.. _Organization-FormalDocumentType:
-
-=============================== ======================================================================================================
-Значение *FormalDocumentType*   Описание
-=============================== ======================================================================================================
-InvoiceContent                  счет-фактура или исправительный счет-фактура в формате 93 приказа ФНС
-InvoiceCorrectionContent        корректировочный счет-фактура или исправление корректировочного счета-фактуры в формате 93 приказа ФНС
-XmlAcceptanceCertificateContent акт о выполнении работ в формате 172 приказа ФНС
-XmlTorg12Content                ТОРГ-12 в формате 172 приказа ФНС
-UniversalTransferDocument       универсальный передаточный документ в формате 155 приказа ФНС
-UniversalCorrectionDocument     универсальный корректировочный документ в формате 189 приказа ФНС
-UtdTorg12                       формализованный ТОРГ-12 в формате 155 приказа ФНС
-UtdAcceptanceCertificate        формализованный акт о выполнении работ в формате 155 приказа ФНС
-UtdInvoice                      счет-фактура в формате 155 приказа ФНС
-UcdInvoiceCorrection            корректировка счета-фактуры в формате 189 приказа ФНС
-TovTorg                         Торг-12 в формате 551-го приказа ФНС
-XmlAcceptanceCertificate552     акт в формате 552-го приказа ФНС
-=============================== ======================================================================================================
-
-
-.. |Organization-DocumentType| replace:: Возможные значения
-.. _Organization-DocumentType:
-
-=============================== ======================================================================================================
-Значение *DocumentType*         Описание
-=============================== ======================================================================================================
-InvoiceContent                  счет-фактура, исправление счета-фактуры в формате 93 приказа ФНС
-UtdInvoice                      счет-фактура в формате 155 приказа ФНС
-InvoiceCorrectionContent        корректировочный счет-фактура, исправление корректировочного счета-фактуры в формате 93 приказа ФНС
-UcdInvoiceCorrection            корректировка счета-фактуры в формате 189 приказа ФНС
-AcceptanceCertificateContent    неформализованный акт о выполнении работ
-XmlAcceptanceCertificateContent акта в формате 172 приказа ФНС
-UtdAcceptanceCertificate        формализованный акт о выполнении работ в формате 155 приказа ФНС
-XmlAcceptanceCertificate552     акт в формате 552-го приказа ФНС
-Torg12Content                   неформализованный ТОРГ-12
-XmlTorg12Content                Торг-12 в формате 172 приказа ФНС
-UtdTorg12                       формализованный ТОРГ-12 в формате 155 приказа ФНС
-TovTorg                         Торг-12 в формате 551 приказа ФНС
-UniversalTransferDocument       УПД в формате 155 приказа ФНС
-NonformilizedDocumentContent    произвольный неформализованный документ
-ProformaInvoiceContent          неформализованный счета на оплату
-XmlContent                      произвольный формализованный документ в формате xml
-Contract                        договор
-CertificateRegistry             реестр сертификатов
-PriceListAgreement              протокол согласования цены
-ReconciliationAct               акт сверки
-ServiceDetails                  детализация
-=============================== ======================================================================================================
-
-
-.. |Organization-TitleType| replace:: Возможные значения
-.. _Organization-TitleType:
-
-==================== =====================================================
-Значение *TitleType* Описание
-==================== =====================================================
-UtdSeller            титул продавца УПД
-UtdBuyer             титул покупателя УПД
-UcdSeller            титул продавца УКД
-UcdBuyer             титул покупателя УКД
-TovTorg551Seller     титул продавца Торг-12 в формате 551-го приказа ФНС
-TovTorg551Buyer      титул покупателя Торг-12 в формате 551-го приказа ФНС
-AccCert552Seller     титул продавца акта в формате 552-го приказа ФНС
-AccCert552Buyer      титул покупателя акта в формате 552-го приказа ФНС
-Utd820Buyer          титул покупателя УПД 820
-Torg2Buyer           титул покупателя Торг-2 приказа 423
-Torg2AdditionalInfo  титул дополнительных сведений Торг-2 приказа 423
-==================== =====================================================
-
-
-.. |Organization-DocflowSide| replace:: Возможные значения
-.. _Organization-DocflowSide:
-
-======================= =================
-Значение *DocflowSide*  Описание
-======================= =================
-Seller                  Титул отправителя
-Buyer                   Титул получателя
-======================= =================
