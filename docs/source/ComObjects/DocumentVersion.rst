@@ -16,10 +16,10 @@ DocumentVersion
   **Булево, чтение** - поддерживается отправка зашифрованных документов
 
 :Titles:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentTitle <DocumentTitle>` **, чтение** - описания титулов документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentTitle` **, чтение** - описания титулов документа
 
 :IsActual:
   **Булево, чтение** - версия актуальна
 
 :Workflows:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentWorkflow <DocumentWorkflow>` **, чтение** - виды документооборота
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentWorkflow` **, чтение** - виды документооборота

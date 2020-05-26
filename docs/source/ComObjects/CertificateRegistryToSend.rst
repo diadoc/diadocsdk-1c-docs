@@ -2,7 +2,7 @@ CertificateRegistryToSend
 =========================
 
 *Реестр сертификатов*  на отправку.
-Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Является производным объектом от :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 

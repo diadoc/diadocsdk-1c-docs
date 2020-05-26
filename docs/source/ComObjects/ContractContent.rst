@@ -2,7 +2,7 @@ ContractContent
 ===============
 
 Метаданными содержания договора.
-Является производным от :doc:`BaseContent <BaseContent>`.
+Является производным от :doc:`BaseContent`.
 
 .. rubric:: Свойства
 

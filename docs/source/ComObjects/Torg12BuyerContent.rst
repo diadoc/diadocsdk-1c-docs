@@ -2,11 +2,11 @@ Torg12BuyerContent
 ==================
 
 Содержание титула покупателя документа *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
-  
+
 
 .. rubric:: Свойства
 
@@ -17,16 +17,16 @@ Torg12BuyerContent
   **Дата, чтение/запись** - дата получения груза
 
 :Attorney:
-  :doc:`Attorney <Attorney>` **, чтение** - сведения о доверенности
+  :doc:`Attorney` **, чтение** - сведения о доверенности
 
 :Receiver:
-  :doc:`Official <Official>` **, чтение** - лицо, получившее груз
+  :doc:`Official` **, чтение** - лицо, получившее груз
 
 :Accepter:
-  :doc:`Official <Official>` **, чтение** - лицо, принявшее груз
+  :doc:`Official` **, чтение** - лицо, принявшее груз
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение** - подписант
+  :doc:`Signer` **, чтение** - подписант
 
 :AdditionalInfo:
   **Строка, чтение/запись** - дополнительные сведения

@@ -2,7 +2,7 @@ InvoiceContent
 ==============
 
 Представление содержания документа *Счет-фактура* и *Исправление счета-фактуры* в формате приказа `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -34,31 +34,31 @@ InvoiceContent
   **Строка, чтение/запись** - код валюты
 
 :Seller:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные продавца
+  :doc:`OrganizationInfo` **, чтение** - данные продавца
 
 :Buyer:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные покупателя
+  :doc:`OrganizationInfo` **, чтение** - данные покупателя
 
 :Shipper:
-  :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>` **, чтение** - данные грузоотправителя
+  :doc:`ShipperOrConsigneeInfo` **, чтение** - данные грузоотправителя
 
 :Consignee:
-  :doc:`ShipperOr ConsigneeInfo <ShipperOrConsigneeInfo>` **, чтение** - данные грузополучателя
+  :doc:`ShipperOrConsigneeInfo` **, чтение** - данные грузополучателя
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение** - данные подписанта документа
+  :doc:`Signer` **, чтение** - данные подписанта документа
 
 :Totals:
-  :doc:`InvoiceTotals <InvoiceTotals>` **, чтение** - общие итоги по документу
+  :doc:`InvoiceTotals` **, чтение** - общие итоги по документу
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceItem <InvoiceItem>` **, чтение** - табличная часть счета-фактуры
+  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceItem` **, чтение** - табличная часть счета-фактуры
 
 :PaymentDocuments:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`PaymentDocument <PaymentDocument>` **, чтение** - список платежно-расчетных документов
+  :doc:`Коллекция <Collection>` **объектов** :doc:`PaymentDocument` **, чтение** - список платежно-расчетных документов
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
 
   .. versionadded:: 5.0.0
 

@@ -2,7 +2,7 @@ ReplySendTask
 =============
 
 .. deprecated:: 5.27.0
-    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
+    Используйте :doc:`ReplySendTask2`
 
 Задание для выполнения ответного действия с документом или с пакетом документов
 
@@ -10,7 +10,7 @@ ReplySendTask
 .. rubric:: Свойства
 
 :Content:
-  :doc:`BaseContent <BaseContent>` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
+  :doc:`BaseContent` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
 
 
 .. rubric:: Методы

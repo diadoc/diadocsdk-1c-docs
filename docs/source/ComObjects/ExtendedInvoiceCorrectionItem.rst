@@ -10,16 +10,16 @@ ExtendedInvoiceCorrectionItem
   **Строка, чтение/запись** - наименование товара
 
 :OriginalValues:
-  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения до корректировки
+  :doc:`InvoiceItemFields` **, чтение** - значения до корректировки
 
 :CorrectedValues:
-  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения после корректировки
+  :doc:`InvoiceItemFields` **, чтение** - значения после корректировки
 
 :AmountsInc:
-  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к увеличению
+  :doc:`AmountsDiff` **, чтение** - суммы к увеличению
 
 :AmountsDec:
-  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к уменьшению
+  :doc:`AmountsDiff` **, чтение** - суммы к уменьшению
 
 :ItemAccountDebit:
   **Строка, чтение/запись** - корреспондирующие счета: дебет
@@ -28,7 +28,7 @@ ExtendedInvoiceCorrectionItem
   **Строка, чтение/запись** - корреспондирующие счета: кредит
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
 
 
 

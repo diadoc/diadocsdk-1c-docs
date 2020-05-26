@@ -2,7 +2,7 @@ SendTask
 ========
 
 .. deprecated:: 5.5.0
-    Используйте :doc:`PackageSendTask2 <PackageSendTask>`
+    Используйте :doc:`PackageSendTask`
 
 Задание для отправки документа на сервер Диадок
 
@@ -10,7 +10,7 @@ SendTask
 .. rubric:: Свойства
 
 :Content:
-  :doc:`BaseContent <BaseContent>` **, чтение** - содержание документа. |SendTask-ContentType|_
+  :doc:`BaseContent` **, чтение** - содержание документа. |SendTask-ContentType|_
 
 :CounterAgentId:
   **Строка, чтение/запись** - идентификатор контрагента

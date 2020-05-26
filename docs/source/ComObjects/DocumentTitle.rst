@@ -16,10 +16,10 @@ DocumentTitle
   **Булево, чтение** - есть ли для этого документа упрощенное описание контента
 
 :MetadataItems:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem <DocumentMetadataItem>` **, чтение** - описания метаданных документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem` **, чтение** - описания метаданных документа
 
 :EncryptedMetadataItems:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem <DocumentMetadataItem>` **, чтение** - описания метаданных для отправки зашифрованного документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem ` **, чтение** - описания метаданных для отправки зашифрованного документа
 
 
 .. rubric:: Дополнительная информация

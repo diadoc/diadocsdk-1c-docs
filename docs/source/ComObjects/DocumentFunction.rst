@@ -10,4 +10,4 @@ DocumentFunction
   **Строка, чтение** - строковой идентификатор функции, уникальное в рамках типа документов
 
 :Versions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentVersion <DocumentVersion>` - описания версий документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentVersion` - описания версий документа

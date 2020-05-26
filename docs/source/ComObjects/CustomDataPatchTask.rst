@@ -7,7 +7,7 @@ CustomDataPatchTask
 .. rubric:: Свойства
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataPatchItem <CustomDataPatchItem>` **, чтение** - коллекция изменений :doc:`Document.CustomData <Document>`
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataPatchItem` **, чтение** - коллекция изменений :doc:`Document.CustomData <Document>`
 
 
 .. rubric:: Методы

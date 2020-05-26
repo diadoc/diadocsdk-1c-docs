@@ -33,10 +33,10 @@ Act552WorkItem
   **Число, чтение/запись** - сумма с учетом НДС
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - информационное поле сведений о работе (услуге)
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - информационное поле сведений о работе (услуге)
 
 :TaxRate:
-  **Строка, чтение/запись** - ставка налога. :doc:`Возможные значения <Enums/TaxRate>`
+  **Строка, чтение/запись** - ставка налога. :doc:`Возможные значения <./Enums/TaxRate>`
 
 :ItemAccountDebit:
   **Строка, чтение/запись** - корреспондирующие счета: дебет
@@ -59,7 +59,3 @@ Act552WorkItem
 .. method:: Act552WorkItem.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
-
-
-.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ .
-  В 1С такое представление можно получить с помощью функции глобального контекста XMLСтрока/XMLString

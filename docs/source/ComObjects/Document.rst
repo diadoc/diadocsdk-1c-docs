@@ -29,13 +29,13 @@ Document
   .. versionadded:: 5.21.0
 
 :Organization:
-  :doc:`Organization <Organization>` **, чтение** - организация, которая отправила исходящий документ, либо получила входящий документ
+  :doc:`Organization` **, чтение** - организация, которая отправила исходящий документ, либо получила входящий документ
 
 :OrganizationId:
   **Строка, чтение** - идентификатор организации, которой принадлежит документ
 
 :Counteragent:
-  :doc:`Counteragent <Counteragent>` **, чтение** - контрагент документа
+  :doc:`Counteragent>` **, чтение** - контрагент документа
 
 :DocumentId:
   **Строка, чтение** - идентификатор документа
@@ -47,18 +47,18 @@ Document
   **Строка, чтение** - идентификатор пакета
 
 :Direction:
-  **Строка, чтение** - направление документа. :doc:`Возможные значения <Enums/DocumentDirection>`
+  **Строка, чтение** - направление документа. :doc:`Возможные значения <./Enums/DocumentDirection>`
 
 :Department:
-  :doc:`Department <Department>` **, чтение** - подразделение организации, к которому привязан документ
+  :doc:`Department` **, чтение** - подразделение организации, к которому привязан документ
 
 :FromDepartment:
-  :doc:`Department <Department>` **, чтение** - подразделение организации, из которого был отправлен документ
+  :doc:`Department` **, чтение** - подразделение организации, из которого был отправлен документ
 
   .. versionadded:: 3.0.8
 
 :ToDepartment:
-  :doc:`Department <Department>` **, чтение** - подразделение организации, в которое был отправлен документ
+  :doc:`Department` **, чтение** - подразделение организации, в которое был отправлен документ
 
   .. versionadded:: 3.0.8
 
@@ -102,28 +102,28 @@ Document
   **Строка, чтение** - текущий статус документа в Диадоке. Перечень возможных значений зависит от типа документа и описан в спецификации соответствующего производного объекта
 
 :ResolutionStatus:
-  :doc:`ResolutionStatus <ResolutionStatus>` **, чтение** - текущий статус запрошенного согласования или подписи документа
+  :doc:`ResolutionStatus` **, чтение** - текущий статус запрошенного согласования или подписи документа
 
 :Resolutions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Resolution <Resolution>` **, чтение** - история резолюций документа: согласований, подписаний, аннулирований
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Resolution` **, чтение** - история резолюций документа: согласований, подписаний, аннулирований
 
 :ResolutionRequests:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequest <ResolutionRequest>` **, чтение** - история запросов резолюций документа: запросов согласований, запросов подписаний, запросов аннулирований
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequest` **, чтение** - история запросов резолюций документа: запросов согласований, запросов подписаний, запросов аннулирований
 
 :ResolutionRequestDenials:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` **, чтение** - коллекция объектов отказов по резолюциям
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial` **, чтение** - коллекция объектов отказов по резолюциям
 
 :RevocationStatus:
-  **Строка, чтение** - статус аннулирования документа. :doc:`Возможные значения <Enums/RevocationStatus>`
+  **Строка, чтение** - статус аннулирования документа. :doc:`Возможные значения <./Enums/RevocationStatus>`
 
 :SenderSignatureStatus:
-  **Строка, чтение** - статус проверки ЭЦП отправителя. :doc:`Возможные значения <Enums/SenderSignatureStatus>`
+  **Строка, чтение** - статус проверки ЭЦП отправителя. :doc:`Возможные значения <./Enums/SenderSignatureStatus>`
 
 :RecipientResponseStatus:
-  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. :doc:`Возможные значения <Enums/RecipientResponseStatus>`
+  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. :doc:`Возможные значения <./Enums/RecipientResponseStatus>`
 
 :RoamingNotificationStatus:
-  **Строка, чтение** - статус передачи документа через роуминг. :doc:`Возможные значения <Enums/RoamingNotificationStatus>`
+  **Строка, чтение** - статус передачи документа через роуминг. :doc:`Возможные значения <./Enums/RoamingNotificationStatus>`
 
   .. versionadded:: 5.3.1
 
@@ -133,19 +133,19 @@ Document
   .. versionadded:: 5.3.1
 
 :CustomData:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem <CustomDataItem>` **, чтение** - коллекция тэгов документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem` **, чтение** - коллекция тэгов документа
 
 :Metadata:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem <MetadataItem>` **, чтение** - коллекция метаданных
+  :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem` **, чтение** - коллекция метаданных
 
 :RecipientReceiptMetadata:
-  :doc:`RecipientReceiptMetadata <RecipientReceiptMetadata>` **, чтение** - метаданные извещения о получении документа получателем
+  :doc:`RecipientReceiptMetadata` **, чтение** - метаданные извещения о получении документа получателем
 
 :ConfirmationMetadata:
-  :doc:`ConfirmationMetadata <ConfirmationMetadata>` **, чтение** - метаданные подтверждения оператором отправки/получения документа или служебного документа
+  :doc:`ConfirmationMetadata` **, чтение** - метаданные подтверждения оператором отправки/получения документа или служебного документа
 
 :AmendmentRequestMetadata:
-  :doc:`AmendmentRequestMetadata <AmendmentRequestMetadata>` **, чтение** - метаданные уведомления об уточнении
+  :doc:`AmendmentRequestMetadata` **, чтение** - метаданные уведомления об уточнении
 
 :IsDeleted:
   **Булево, чтение** - флаг, показывающий, был ли удален данный документ
@@ -305,7 +305,7 @@ Document
 .. _Document-GetDynamicContent:
 .. method:: Document.GetDynamicContent(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает :doc:`представление контента титула документа <DynamicContent>` со стороны *WorkflowSide*.
   Если запрашиваемого титула у документа нет, то результатом будет ``Undefined`` / ``Неопределено``.
@@ -316,7 +316,7 @@ Document
 .. _Document-GetBase64Content:
 .. method:: Document.GetBase64Content(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает контент титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -325,7 +325,7 @@ Document
 .. _Document-GetBase64ContentAsync:
 .. method:: Document.GetBase64ContentAsync(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает контент титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -334,7 +334,7 @@ Document
 .. _Document-GetBase64Signature:
 .. method:: Document.GetBase64Signature(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена.:doc:`Возможные значения <Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена.:doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает подпись с меткой времени к титулу документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -343,7 +343,7 @@ Document
 .. _Document-GetBase64OriginalSignature:
 .. method:: Document.GetBase64OriginalSignature(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает оригинальную подпись (обычно без метки времени) титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -376,7 +376,7 @@ Document
 .. _Document-GetAnyComment:
 .. method:: Document.GetAnyComment(CommentType)
 
-  :CommentType: ``строка`` Тип комментария. :doc:`Возможные значения <Enums/CommentType>`
+  :CommentType: ``строка`` Тип комментария. :doc:`Возможные значения <./Enums/CommentType>`
 
   Возвращает строку с комментарием определённого типа, связанным с документом
 
@@ -496,7 +496,7 @@ Document
 .. _Document-CreateReplySendTask:
 .. method:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
 
@@ -508,7 +508,7 @@ Document
 .. _Document-CreateReplySendTask2:
 .. method:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :ReplyType: ``строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
+  :ReplyType: ``строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask2>`
 

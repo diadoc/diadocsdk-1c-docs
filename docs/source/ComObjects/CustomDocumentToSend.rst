@@ -2,7 +2,7 @@ CustomDocumentToSend
 ====================
 
 Документ на отправку произвольного типа.
-Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Является производным объектом от :doc:`DocumentToSend`
 
 
 .. rubric:: Свойства
@@ -38,10 +38,10 @@ CustomDocumentToSend
   **Булево, чтение/запись** - документ будет отправлен в зашифрованном виде
 
 :Metadata:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem <MetadataItem>` **, чтение** - метаданные документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem` **, чтение** - метаданные документа
 
 :Content:
-  :doc:`DynamicContent <DynamicContent>` **или** :doc:`BaseContent <BaseContent>` **, чтение** - представление содержимого документа
+  :doc:`DynamicContent` **или** :doc:`BaseContent` **, чтение** - представление содержимого документа
 
 :EditingSettingId:
   **Строка, чтение/запись** - идентификатор настройки редактирования содержимого документа.
@@ -67,9 +67,9 @@ CustomDocumentToSend
 
 .. rubric:: Дополнительная информация
 
-Если объект был создан из :doc:`PackageSendTask2 <PackageSendTask2>`, то поле *Content* будет объектом :doc:`DynamicContent <DynamicContent>`
+Если объект был создан из :doc:`PackageSendTask2`, то поле *Content* будет объектом :doc:`DynamicContent`
 
-Если объект был создан из :doc:`PackageSendTask <PackageSendTask>` или :doc:`SendTask <SendTask>`, то поле *Content* будет объектом, производным от :doc:`BaseContent <BaseContent>`
+Если объект был создан из :doc:`PackageSendTask` или :doc:`SendTask`, то поле *Content* будет объектом, производным от :doc:`BaseContent`
 
 
 .. seealso:: :doc:`../HowTo/HowTo_post_document`

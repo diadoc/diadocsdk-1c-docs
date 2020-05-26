@@ -6,7 +6,7 @@ RecipientReceiptMetadata
 .. rubric:: Свойства
 
 :ReceiptStatus:
-  **Строка, чтение** - состояние ИОП на документ. :doc:`Возможне значения <Enums/ReceiptStatus>`
+  **Строка, чтение** - состояние ИОП на документ. :doc:`Возможне значения <./Enums/ReceiptStatus>`
 
 :ConfirmationMetadata:
-  :doc:`ConfirmationMetadata <ConfirmationMetadata>` **, чтение** - метаданные подтверждения оператором даты отправки/получения документа
+  :doc:`ConfirmationMetadata` **, чтение** - метаданные подтверждения оператором даты отправки/получения документа

@@ -16,7 +16,7 @@ ResolutionRequestTask
 
 
 :ResolutionRequestType:
-  **Строка, чтение/запись** - тип запроса. :doc:`Возможные значения <Enums/ResolutionRequestTaskType>`
+  **Строка, чтение/запись** - тип запроса. :doc:`Возможные значения <./Enums/ResolutionRequestTaskType>`
 
 :Comment:
   **Строка, чтение/запись** - комментарий к запросу

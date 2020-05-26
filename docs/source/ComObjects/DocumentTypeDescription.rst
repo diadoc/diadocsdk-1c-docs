@@ -13,10 +13,10 @@ DocumentTypeDescription
   **Строка, чтение** - заголовок типа
 
 :SupportedDocflows:
-  :doc:`Коллекция <Collection>` **строк, чтение** - поддерживаемые типы документооборота. :doc:`Возможные значения <Enums/Docflow>`
+  :doc:`Коллекция <Collection>` **строк, чтение** - поддерживаемые типы документооборота. :doc:`Возможные значения <./Enums/Docflow>`
 
 :RequiresFnsRegistration:
   **Булево, чтение** - для работы требуется заявление участника ЭДО
 
 :Functions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentFunction <DocumentFunction>` **, чтение** - описания функций документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentFunction` **, чтение** - описания функций документа

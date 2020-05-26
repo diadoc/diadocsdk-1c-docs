@@ -18,10 +18,10 @@ SetExtendedSignerDetailsTask
     Используйте *DocumentTitleType*
 
 :ExtendedSignerDetailsToPost:
-  :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>` **, чтение** - данные подписанта
+  :doc:`ExtendedSignerDetailsToPost` **, чтение** - данные подписанта
 
 :DocumentTitleType:
-  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <Enums/SignerTitleType>`
+  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/SignerTitleType>`
 
 
 .. rubric:: Методы

@@ -6,7 +6,7 @@ Signature
 .. rubric:: Свойства
 
 :Certificate:
-  :doc:`PersonalCertificate <PersonalCertificate>` **, чтение** - сертификат, которым подписан документ
+  :doc:`PersonalCertificate` **, чтение** - сертификат, которым подписан документ
 
 :SignDate:
   **Дата, чтение** - дата формирования подписи

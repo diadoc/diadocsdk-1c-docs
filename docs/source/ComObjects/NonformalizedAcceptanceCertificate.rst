@@ -2,7 +2,7 @@ NonformalizedAcceptanceCertificate
 ==================================
 
 Документам *Акт о выполнении работ* в произвольном формате.
-Является производным объектом от :doc:`Document <Document>`
+Является производным объектом от :doc:`Document`
 
 
 .. rubric:: Свойства
@@ -17,7 +17,7 @@ NonformalizedAcceptanceCertificate
   **Строка, чтение** - основание документа
 
 :Status:
-  **Строка, чтение** - статус документа. :doc:`Возможные значения <Enums/BilateralStatus>`
+  **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/BilateralStatus>`
 
 
 .. rubric:: Методы объекта

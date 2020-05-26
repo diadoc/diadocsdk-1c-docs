@@ -9,7 +9,7 @@ ReceiptGenerationProcess
   **Булево, чтение** - процесс запущен
 
 :Errors:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ReceiptError <ReceiptError>` - информация об ошибках, возникших во время работы процесса
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ReceiptError` - информация об ошибках, возникших во время работы процесса
 
 
 .. rubric:: Методы

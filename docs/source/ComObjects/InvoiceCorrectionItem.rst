@@ -9,19 +9,19 @@ InvoiceCorrectionItem
   **Строка, чтение/запись** - наименование товара
 
 :OriginalValues:
-  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения до корректировки
+  :doc:`InvoiceItemFields` **, чтение** - значения до корректировки
 
 :CorrectedValues:
-  :doc:`InvoiceItemFields <InvoiceItemFields>` **, чтение** - значения после корректировки
+  :doc:`InvoiceItemFields` **, чтение** - значения после корректировки
 
 :AmountsInc:
-  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к увеличению
+  :doc:`AmountsDiff` **, чтение** - суммы к увеличению
 
 :AmountsDec:
-  :doc:`AmountsDiff <AmountsDiff>` **, чтение** - суммы к уменьшению
+  :doc:`AmountsDiff` **, чтение** - суммы к уменьшению
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение/запись** - дополнительные сведения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение/запись** - дополнительные сведения
 
   .. versionadded:: 5.0.0
 

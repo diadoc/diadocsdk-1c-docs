@@ -2,13 +2,13 @@ Nonformalized
 =============
 
 Документам *Неформализованный*.
-Является производным объектом от :doc:`Document <Document>`
+Является производным объектом от :doc:`Document`
 
 
 .. rubric:: Свойства
 
 :Status:
-  **Строка, чтение** - статус документа. :doc:`Воможные значения <Enums/NonfomalizedDocumentStatus>`
+  **Строка, чтение** - статус документа. :doc:`Воможные значения <./Enums/NonfomalizedDocumentStatus>`
 
 
 .. rubric:: Методы

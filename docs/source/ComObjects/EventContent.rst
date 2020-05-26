@@ -18,7 +18,7 @@
   **Дата, чтение/запись** - дата направления на согласование
 
 :CorrectionBases:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase <CorrectionBase>` **, чтение** - основание корректировки
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase` **, чтение** - основание корректировки
 
 
 .. rubric:: Методы

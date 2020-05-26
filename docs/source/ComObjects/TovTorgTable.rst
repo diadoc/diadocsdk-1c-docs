@@ -6,7 +6,7 @@ TovTorgTable
 .. rubric:: Свойства
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`TovTorgItem <TovTorgItem>` **, чтение** - информация о товарах
+  :doc:`Коллекция <Collection>` **объектов** :doc:`TovTorgItem` **, чтение** - информация о товарах
 
 :TotalQuantity:
   **Число, чтение/запись** - количество мест всего по документу

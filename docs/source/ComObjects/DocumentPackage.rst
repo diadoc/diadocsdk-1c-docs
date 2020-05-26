@@ -12,10 +12,10 @@ DocumentPackage
   **Булево, чтение** - признак того, что пакет является нередактируемым
 
 :LockMode:
-  **Строка, чтение** - редактируемость пакета. :doc:`Возможные зачения <Enums/LockMode>`
+  **Строка, чтение** - редактируемость пакета. :doc:`Возможные зачения <./Enums/LockMode>`
 
 :Documents:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Document <Document>` **, чтение** - документы, входящие в пакет
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Document` **, чтение** - документы, входящие в пакет
 
 
 
@@ -48,9 +48,6 @@ DocumentPackage
 .. method:: DocumentPackage.Move(DepartmentID)
 
   :DepartmentID: ``строка`` идентификатор подразделения
-
-  Перемещает документы в указанное подразделение. Идентификатор головного подразделения всегда ``00000000-0000-0000-0000-000000000000``
-
 
 
 .. _DocumentPackage-Delete:
@@ -88,7 +85,7 @@ DocumentPackage
 .. _DocumentPackage-CreateReplySendTask:
 .. method:: DocumentPackage.CreateReplySendTask(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask>`
 
@@ -100,7 +97,7 @@ DocumentPackage
 .. _DocumentPackage-CreateReplySendTask2:
 .. method:: DocumentPackage.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask2>`
 

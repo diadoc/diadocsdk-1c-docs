@@ -22,7 +22,7 @@ Act552WorkDescription
   **Число, чтение/запись** - сумма с учетом НДС - итого
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Act552WorkItem <Act552WorkItem>` **, чтение** - сведения о произведенной работе
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Act552WorkItem` **, чтение** - сведения о произведенной работе
 
 
 .. rubric:: Методы
@@ -37,7 +37,3 @@ Act552WorkDescription
 .. method:: Act552WorkDescription.AddItem()
 
  Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию *Items* и возвращает его
-
-
-.. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ .
-  В 1С такое представление можно получить с помощью функции глобального контекста XMLСтрока/XMLString

@@ -32,13 +32,13 @@ UserPermissions
   **Булево, чтение** - пользователь может создавать документы в ящике организации
 
 :DocumentsAccessLevel:
-  **Строка, чтение** - уровень доступа к документам. :doc:`Возможные значения <Enums/DocumentsAccessLevel>`
+  **Строка, чтение** - уровень доступа к документам. :doc:`Возможные значения <./Enums/DocumentsAccessLevel>`
 
 :UserDepartment:
   :doc:`Department <Department>` **, чтение** - подразделение организации, в котором состоит пользователь
 
 :SelectedDepartments:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Department <Department>` **, чтение** - список подразделений, к которым имеет доступ пользователь. Заполнено в случае *DocumentsAccessLevel* == ``SelectedDepartments``
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - список подразделений, к которым имеет доступ пользователь. Заполнено в случае *DocumentsAccessLevel* == ``SelectedDepartments``
 
 :JobTitle:
   **Строка, чтение** - должность сотрудника

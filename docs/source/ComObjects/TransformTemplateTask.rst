@@ -10,7 +10,7 @@ TransformTemplateTask
   **Строка, чтение/запись** - идентификатор шаблона пакета документов
 
 :DocumentTransformations:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentTransformation <DocumentTransformation>` **, чтение** - информация об идентификаторах документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentTransformation` **, чтение** - информация об идентификаторах документа
 
 
 .. rubric:: Методы

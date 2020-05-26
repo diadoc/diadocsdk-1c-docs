@@ -21,7 +21,7 @@ Department
   :doc:`Department` **, чтение** - родительское подразделение
 
 :Subdepartments:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Department <Department>` **, чтение** - дочерние подразделения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - дочерние подразделения
 
 :Address:
   :doc:`AddressInfo <AddressInfo>` **, чтение** - адрес подразделения

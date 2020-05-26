@@ -2,7 +2,7 @@ AcceptanceCertificateSellerContent
 ==================================
 
 Содержание титула продавца *Акта о выполнении работ* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83259>`_ .
-Является производным объектом от :doc:`BaseContent <BaseContent>`.
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -25,19 +25,19 @@ AcceptanceCertificateSellerContent
   **Дата, чтение/запись** - дата подписи акта исполнителем
 
 :Seller:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - исполнитель (организация, выполнившая работы либо оказавшая услуги)
+  :doc:`OrganizationInfo` **, чтение** - исполнитель (организация, выполнившая работы либо оказавшая услуги)
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem <AcceptanceCertificateItem>` **, чтение** - табличная часть акта выполненных работ
+  :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem ` **, чтение** - табличная часть акта выполненных работ
 
 :Official:
-  :doc:`Official <Official>` **, чтение** - лицо, подписывающее со стороны исполнителя
+  :doc:`Official` **, чтение** - лицо, подписывающее со стороны исполнителя
 
 :Attorney:
-  :doc:`Attorney <Attorney>` **, чтение** - сведения о доверенности подписывающего со стороны исполнителя
+  :doc:`Attorney` **, чтение** - сведения о доверенности подписывающего со стороны исполнителя
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение** - подписант
+  :doc:`Signer` **, чтение** - подписант
 
 :AdditionalInfo:
   **Строка, чтение/запись** - дополнительные сведения

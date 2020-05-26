@@ -6,13 +6,13 @@ PackageSendTask
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-    Используйте :doc:`PackageSendTask2 <PackageSendTask2>`
+    Используйте :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
 
 :Content:
-  :doc:`SentPackageContent <SentPackageContent>` **, чтение** - содержание пакета документов
+  :doc:`SentPackageContent` **, чтение** - содержание пакета документов
 
 :OperationId:
   **Строка, чтение/запись** - уникальный идентификатор операции
@@ -39,7 +39,7 @@ PackageSendTask
   **Булево, чтение/запись** - признак того, что сообщение будет сохранено без отправки
 
 :DocumentsToSend:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentToSend <DocumentToSend>` **, чтение** - документы на отправку, добавленные в пакет
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentToSend` **, чтение** - документы на отправку, добавленные в пакет
 
 :ProxyBoxId:
   **Строка, чтение/запись** - идентификатор ящика, промежуточного получателя
@@ -74,7 +74,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocument:
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
@@ -83,7 +83,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocumentFromFile:
 .. method:: PackageSendTask.AddDocumentFromFile(FormalizedDocumentType, FilePath)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
@@ -94,7 +94,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocumentFromFileRaw:
 .. method:: PackageSendTask.AddDocumentFromFileRaw(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа. :doc:`Возможные значения <Enums/DocumentToSend>`
+  :DocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
