@@ -28,7 +28,7 @@ AcceptanceCertificateSellerContent
   :doc:`OrganizationInfo` **, чтение** - исполнитель (организация, выполнившая работы либо оказавшая услуги)
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem ` **, чтение** - табличная часть акта выполненных работ
+  :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem` **, чтение** - табличная часть акта выполненных работ
 
 :Official:
   :doc:`Official` **, чтение** - лицо, подписывающее со стороны исполнителя

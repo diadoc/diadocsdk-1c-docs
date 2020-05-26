@@ -15,7 +15,7 @@ TovTorgTransferInfo
   **Строка, чтение/запись** - приложение, сертификаты и прочее
 
 :Waybills:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill ` **, чтение** - транспортны накладные
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill` **, чтение** - транспортны накладные
 
 :Employee:
   :doc:`Employee` **, чтение** - работник организации продавца
@@ -24,7 +24,7 @@ TovTorgTransferInfo
   :doc:`OtherIssuer` **, чтение** - иное лицо
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAditionalInfo` **, чтение** - информационные поля документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - информационные поля документа
 
 
 

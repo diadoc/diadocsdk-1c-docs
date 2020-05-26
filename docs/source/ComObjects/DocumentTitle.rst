@@ -19,7 +19,7 @@ DocumentTitle
   :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem` **, чтение** - описания метаданных документа
 
 :EncryptedMetadataItems:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem ` **, чтение** - описания метаданных для отправки зашифрованного документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem` **, чтение** - описания метаданных для отправки зашифрованного документа
 
 
 .. rubric:: Дополнительная информация

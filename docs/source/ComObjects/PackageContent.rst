@@ -2,7 +2,7 @@ PackageContent
 ==============
 
 Пакет контентов - объектов :doc:`BaseContent`.
-Является производным объектом от :doc:`BaseContent `
+Является производным объектом от :doc:`BaseContent`
 
 .. versionadded:: 5.3.0
 

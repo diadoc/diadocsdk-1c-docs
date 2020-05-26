@@ -10,7 +10,7 @@ SendDraftTask
   :doc:`Signer` **, чтение** - данные подписанта
 
 :ExtendedSigners:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigners` **, чтение** - данные подписанта для УПД, Торг-12 @551, Акта @552
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner` **, чтение** - данные подписанта для УПД, Торг-12 @551, Акта @552
 
 
 .. rubric:: Методы
