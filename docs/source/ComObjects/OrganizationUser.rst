@@ -14,7 +14,7 @@ OrganizationUser
   **Строка, чтение** - ФИО пользователя
 
 :Permissions:
-  :doc:`UserPermissions <UserPermissions>` **, чтение** - права пользователя в организации
+  :doc:`UserPermissions` **, чтение** - права пользователя в организации
 
 :Position:
   **Строка, чтение** - должность пользователя

@@ -10,4 +10,4 @@ Shipper
   **Булево, чтение/запись** - в документе грузотправитель должен быть указан ``он же``
 
 :OrganizationInfo:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - информация об организации грузоотправителя
+  :doc:`ExtendedOrganizationInfo` **, чтение** - информация об организации грузоотправителя

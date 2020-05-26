@@ -2,11 +2,11 @@ UtdSellerContent
 ================
 
 Содержанием формализованного документа *Универсальный передаточный документ* в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
-  
+
 
 .. rubric:: Свойства
 
@@ -26,19 +26,19 @@ UtdSellerContent
   **Строка, чтение/запись** - номер УПД
 
 :Seller:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - данные продавца
+  :doc:`ExtendedOrganizationInfo` **, чтение** - данные продавца
 
 :Buyer:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - данные покупателя
+  :doc:`ExtendedOrganizationInfo` **, чтение** - данные покупателя
 
 :Shipper:
-  :doc:`Shipper <Shipper>` **, чтение** - данные грузоотправителя
+  :doc:`Shipper` **, чтение** - данные грузоотправителя
 
 :Consignee:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - данные грузополучателя
+  :doc:`ExtendedOrganizationInfo` **, чтение** - данные грузополучателя
 
 :InvoiceTable:
-  :doc:`InvoiceTable <InvoiceTable>` **, чтение** - сведения табличной части счета-фактуры
+  :doc:`InvoiceTable` **, чтение** - сведения табличной части счета-фактуры
 
 :Currency:
   **Строка, чтение/запись** - код валюты по Общероссийскому классификатору валют
@@ -53,10 +53,10 @@ UtdSellerContent
   **Строка, чтение/запись** - номер исправления счета-фактуры
 
 :AdditionalInfoId:
-  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
+  :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
 
 :TransferInfo:
-  :doc:`TransferInfo <TransferInfo>` **, чтение** - сведения о передаче (сдаче) товара/услуги
+  :doc:`TransferInfo` **, чтение** - сведения о передаче (сдаче) товара/услуги
 
 :Creator:
   **Строка, чтение/запись** - составитель файла обмена счета-фактуры (информации продавца)
@@ -68,10 +68,10 @@ UtdSellerContent
   **Строка, чтение/запись** - идентификатор государственного контракта
 
 :Signers:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner` **, чтение** - подписанты документа
 
 :PaymentDocuments:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`PaymentDocument <PaymentDocument>` **, чтение** - платежно-расчетные документы
+  :doc:`Коллекция <Collection>` **объектов** :doc:`PaymentDocument` **, чтение** - платежно-расчетные документы
 
 
 .. rubric:: Методы

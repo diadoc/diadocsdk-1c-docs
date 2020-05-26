@@ -2,7 +2,7 @@ PriceListAgreementToSend
 ========================
 
 Документ на отправку *Протокол согласования цен*.
-Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Является производным объектом от :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 

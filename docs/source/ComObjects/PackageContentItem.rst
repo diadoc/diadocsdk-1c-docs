@@ -10,14 +10,14 @@ PackageContentItem
 .. rubric:: Свойства
 
 :Document:
-  :doc:`Document <Document>` **, чтение** - документ, с которым связан хранимый в паре контент
+  :doc:`Document` **, чтение** - документ, с которым связан хранимый в паре контент
 
 :Content:
-  :doc:`DynamicContent <DynamicContent>` **или** :doc:`BaseContent <BaseContent>` **, чтение** - представление контента.
+  :doc:`DynamicContent` **или** :doc:`BaseContent` **, чтение** - представление контента.
 
 
 .. note:: Если :doc:`PackageContentItem <PackageContentItem>` запрашивается из :doc:`ReplySendTask2 <ReplySendTask2>` с типом **AcceptDocument** для двухтитульного документа, то **Content** будет объектом :doc:`DynamicContent <DynamicContent>`.
-  В противном случае **Content** будет объектом, производным от :doc:`BaseContent <BaseContent>`
+  В противном случае **Content** будет объектом, производным от :doc:`BaseContent`
 
 
 

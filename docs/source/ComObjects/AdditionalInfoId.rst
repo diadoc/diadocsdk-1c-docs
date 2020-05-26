@@ -10,7 +10,7 @@ AdditionalInfoId
   **Строка, чтение/запись** - идентификатор файла информационного поля
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
 
 
 .. rubric:: Методы

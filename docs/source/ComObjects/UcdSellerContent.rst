@@ -2,7 +2,7 @@ UcdSellerContent
 ================
 
 Содержание документа *Универсальный корректировочный документ* в формате приказа `ММВ-7-15/189@ <https://normativ.kontur.ru/document?moduleId=1&documentId=273231>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -26,22 +26,22 @@ UcdSellerContent
   **Строка, чтение/запись** - номер УКД
 
 :Invoices:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceForCorrectionInfo <InvoiceForCorrectionInfo>` **, чтение** - счет-фактура (первичный документ), к которому составлен УКД
+  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceForCorrectionInfo` **, чтение** - счет-фактура (первичный документ), к которому составлен УКД
 
 :Seller:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - данные продавца. В случае УКД с функцией "КСЧФ" и "КСЧФДИС" для продавца должен быть указан адрес
+  :doc:`ExtendedOrganizationInfo` **, чтение** - данные продавца. В случае УКД с функцией "КСЧФ" и "КСЧФДИС" для продавца должен быть указан адрес
 
 :Buyer:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - данные покупателя. В случае УКД с функцией "КСЧФ" и "КСЧФДИС" для покупателя должен быть указан адрес
+  :doc:`ExtendedOrganizationInfo` **, чтение** - данные покупателя. В случае УКД с функцией "КСЧФ" и "КСЧФДИС" для покупателя должен быть указан адрес
 
 :Signers:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner` **, чтение** - подписанты документа. Для документа должен быть указан по крайней мере один подписант.
 
 :EventContent:
-  :doc:`EventContent <EventContent>` **, чтение** - содержание события
+  :doc:`EventContent` **, чтение** - содержание события
 
 :InvoiceCorrectionTable:
-  :doc:`InvoiceCorrectionTable <InvoiceCorrectionTable>` **, чтение** - сведения таблицы корректировочного счета-фактуры
+  :doc:`InvoiceCorrectionTable` **, чтение** - сведения таблицы корректировочного счета-фактуры
 
 :Currency:
   **Строка, чтение/запись** - код валюты по Общероссийскому классификатору валют
@@ -56,7 +56,7 @@ UcdSellerContent
   **Строка, чтение/запись** - номер исправления
 
 :AdditionalInfoId:
-  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
+  :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
 
 :Creator:
   **Строка, чтение/запись** - составитель файла обмена счета-фактуры (информации продавца)

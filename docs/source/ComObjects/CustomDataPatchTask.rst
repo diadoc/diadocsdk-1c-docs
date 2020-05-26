@@ -1,13 +1,13 @@
 CustomDataPatchTask
 ===================
 
-Задача редактирования коллекции :doc:`Document.CustomData <Document>`
+Задача редактирования коллекции :doc:`Document.CustomData <Document>` - тэгов документа
 
 
 .. rubric:: Свойства
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataPatchItem <CustomDataPatchItem>` **, чтение** - коллекция изменений :doc:`Document.CustomData <Document>`
+  :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataPatchItem` **, чтение** - коллекция изменений :doc:`Document.CustomData <Document>`
 
 
 .. rubric:: Методы

@@ -1,0 +1,15 @@
+5.30.0
+======
+
+.. feed-entry::
+  :date: 2020-05-26
+
+
+.. rubric:: Добавлено
+
+* Добавлены параметры подписанта для Торг-2
+
+
+.. rubric:: Исправлено
+
+* Получение ранее отправленных документов через :doc:`../../ComObjects/PackageSendTask2` с заполненным **OperationId** и отсутствующим **CounteragentId** заканчивалось ошибкой ``PackageSendTask2.Send: ##100[Ошибка сервера Диадок]code:400, HTTP error: Could not parse boxId in boxId query param:``

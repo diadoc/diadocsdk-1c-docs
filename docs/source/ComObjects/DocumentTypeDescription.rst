@@ -13,25 +13,10 @@ DocumentTypeDescription
   **Строка, чтение** - заголовок типа
 
 :SupportedDocflows:
-  :doc:`Коллекция <Collection>` **строк, чтение** - поддерживаемые типы документооборота. |DocumentTypeDescription-SupportedDocflows|_
+  :doc:`Коллекция <Collection>` **строк, чтение** - поддерживаемые типы документооборота. :doc:`Возможные значения <./Enums/Docflow>`
 
 :RequiresFnsRegistration:
   **Булево, чтение** - для работы требуется заявление участника ЭДО
 
 :Functions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentFunction <DocumentFunction>` **, чтение** - описания функций документа
-
-
-
-.. rubric:: Дополнительная информация
-
-.. |DocumentTypeDescription-SupportedDocflows| replace:: Возможные значения
-
-.. _DocumentTypeDescription-SupportedDocflows:
-
-============================ ==========================
-Значение *SupportedDocflows* Описание
-============================ ==========================
-External                     внешний документооборот
-Internal                     внутренний документооборот
-============================ ==========================
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentFunction` **, чтение** - описания функций документа

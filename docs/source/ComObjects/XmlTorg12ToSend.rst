@@ -2,7 +2,7 @@ XmlTorg12ToSend
 ===============
 
 Документ на отправку *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=83283>`_.
-Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Является производным объектом от :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 
@@ -22,4 +22,4 @@ XmlTorg12ToSend
   **Строка, чтение/запись** - внешний идентификатор документа
 
 :Content:
-  :doc:`Torg12SellerContent <Torg12SellerContent>` **, чтение** - содержимое документа
+  :doc:`Torg12SellerContent` **, чтение** - содержимое документа

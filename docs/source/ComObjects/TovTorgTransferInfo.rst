@@ -15,16 +15,16 @@ TovTorgTransferInfo
   **Строка, чтение/запись** - приложение, сертификаты и прочее
 
 :Waybills:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill <Waybill>` **, чтение** - транспортны накладные
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill` **, чтение** - транспортны накладные
 
 :Employee:
-  :doc:`Employee <Employee>` **, чтение** - работник организации продавца
+  :doc:`Employee` **, чтение** - работник организации продавца
 
 :OtherIssuer:
-  :doc:`OtherIssuer <OtherIssuer>` **, чтение** - иное лицо
+  :doc:`OtherIssuer` **, чтение** - иное лицо
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAditionalInfo <StructedAdditionalInfo>` **, чтение** - информационные поля документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - информационные поля документа
 
 
 

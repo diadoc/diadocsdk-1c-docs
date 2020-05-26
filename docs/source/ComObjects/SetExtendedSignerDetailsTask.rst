@@ -18,10 +18,10 @@ SetExtendedSignerDetailsTask
     Используйте *DocumentTitleType*
 
 :ExtendedSignerDetailsToPost:
-  :doc:`ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>` **, чтение** - данные подписанта
+  :doc:`ExtendedSignerDetailsToPost` **, чтение** - данные подписанта
 
 :DocumentTitleType:
-  **Строка, чтение/запись** - тип титула документа. |SetExtendedSignerDetailsTask-TitleType|_
+  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/SignerTitleType>`
 
 
 .. rubric:: Методы
@@ -38,22 +38,3 @@ SetExtendedSignerDetailsTask
 .. method:: SetExtendedSignerDetailsTask.Send()
 
   Отправляет данные подписанта на сервер Диадок
-
-.. rubric:: Дополнительная информация
-
-.. |SetExtendedSignerDetailsTask-TitleType| replace:: Возможные значения
-.. _SetExtendedSignerDetailsTask-TitleType:
-
-============================ =====================================================
-Значение *DocumentTitleType* Описание
-============================ =====================================================
-UtdSeller                    титул продавца УПД
-UtdBuyer                     титул покупателя УПД
-UcdSeller                    титул продавца УКД
-UcdBuyer                     титул покупателя УКД
-TovTorg551Seller             титул продавца торг-12 в формате 551-го приказа ФНС
-TovTorg551Buyer              титул покупателя торг-12 в формате 551-го приказа ФНС
-AccCert552Seller             титул продавца акта в формате 552-го приказа ФНС
-AccCert552Buyer              титул покупателя акта в формате 552-го приказа ФНС
-Utd820Buyer                  титул покупателя УПД 820
-============================ =====================================================

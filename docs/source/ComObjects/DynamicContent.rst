@@ -5,8 +5,8 @@ DynamicContent
 
 Используется:
 
-    * в :doc:`CustomDocumentToSend.Content <CustomDocumentToSend>`, если тот создан через объект :doc:`PackageSendTask2 <PackageSendTask2>`
-    * в :doc:`PackageContentItem.Content <PackageContentItem>`, полученным через объект  :doc:`ReplySendTask2 <ReplySendTask2>` с типом ``AcceptDocument``
+    * в :doc:`CustomDocumentToSend.Content <CustomDocumentToSend>`, если тот создан через объект :doc:`PackageSendTask2`
+    * в :doc:`PackageContentItem.Content <PackageContentItem>`, полученным через объект  :doc:`ReplySendTask2` с типом ``AcceptDocument``
     * как результат выполнения метода :meth:`Document.GetDynamicContent`
 
 
@@ -15,12 +15,12 @@ DynamicContent
 Не имеет фиксированного набора свойств.
 Описание полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
 
-Каждое поле объекта является или **строкой**, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent'ом <DynamicContent>`
+Каждое поле объекта является или **строкой**, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent`'ом
 
 
 .. warning::
   При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
-  
+
   Всё описание теперь находится в соответвующей XSD схеме
 
 

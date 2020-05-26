@@ -6,13 +6,13 @@ InvoiceCorrectionTable
 .. rubric:: Свойства
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>` **, чтение** - информация о товарах
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedInvoiceCorrectionItem` **, чтение** - информация о товарах
 
 :TotalsInc:
-  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - суммы к увеличению
+  :doc:`InvoiceTotalsDiff` **, чтение** - суммы к увеличению
 
 :TotalsDec:
-  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - суммы к уменьшению
+  :doc:`InvoiceTotalsDiff` **, чтение** - суммы к уменьшению
 
 
 

@@ -2,7 +2,7 @@ NonformalizedProformaToSend
 ===========================
 
 Документ на отправку *Счет на оплату*.
-Является производным объектом от :doc:`DocumentToSend <DocumentToSend>`
+Является производным объектом от :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 

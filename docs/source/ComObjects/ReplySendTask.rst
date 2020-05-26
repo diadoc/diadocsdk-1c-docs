@@ -2,7 +2,7 @@ ReplySendTask
 =============
 
 .. deprecated:: 5.27.0
-    Используйте :doc:`ReplySendTask2 <ReplySendTask2>`
+    Используйте :doc:`ReplySendTask2`
 
 Задание для выполнения ответного действия с документом или с пакетом документов
 
@@ -10,7 +10,7 @@ ReplySendTask
 .. rubric:: Свойства
 
 :Content:
-  :doc:`BaseContent <BaseContent>` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
+  :doc:`BaseContent` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
 
 
 .. rubric:: Методы
@@ -59,25 +59,25 @@ ReplySendTask
 .. |ReplySendTask-CreationContext| replace:: Возможные типы
 .. _ReplySendTask-CreationContext:
 
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|Контекст создания ReplySendTask'а                                 |Тип контента                                                                |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`DocumentPackage.CreateReplySendTask`                       |:doc:`PackageContent <PackageContent>`                                      |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``AcceptDocument``   |:doc:`Torg12BuyerContent <Torg12BuyerContent>`                              |
-|                                                                  |:doc:`TovTorgBuyerContent <TovTorgBuyerContent>`                            |
-|                                                                  |:doc:`AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>`|
-|                                                                  |:doc:`Act552BuyerContent <Act552BuyerContent>`                              |
-|                                                                  |:doc:`UtdBuyerContent <UtdBuyerContent>`                                    |
-|                                                                  |:doc:`AcceptanceContent <AcceptanceContent>`                                |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``RejectDocument``   |:doc:`FormalizedRejectionContent <FormalizedRejectionContent>`              |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``CorrectionRequest``|:doc:`CorrectionRequestContent <CorrectionRequestContent>`                  |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``AcceptRevocation`` |:doc:`AcceptanceContent <AcceptanceContent>`                                |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``RejectRevocation`` |:doc:`FormalizedRejectionContent <FormalizedRejectionContent>`              |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
-|:meth:`Document.CreateReplySendTask` с типом ``RevocationRequest``|:doc:`RevocationRequestContent <RevocationRequestContent>`                  |
-+------------------------------------------------------------------+----------------------------------------------------------------------------+
++------------------------------------------------------------------+----------------------------------------+
+|Контекст создания ReplySendTask'а                                 |Тип контента                            |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`DocumentPackage.CreateReplySendTask`                       |:doc:`PackageContent`                   |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``AcceptDocument``   |:doc:`Torg12BuyerContent`               |
+|                                                                  |:doc:`TovTorgBuyerContent`              |
+|                                                                  |:doc:`AcceptanceCertificateBuyerContent`|
+|                                                                  |:doc:`Act552BuyerContent`               |
+|                                                                  |:doc:`UtdBuyerContent`                  |
+|                                                                  |:doc:`AcceptanceContent`                |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``RejectDocument``   |:doc:`FormalizedRejectionContent`       |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``CorrectionRequest``|:doc:`CorrectionRequestContent`         |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``AcceptRevocation`` |:doc:`AcceptanceContent`                |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``RejectRevocation`` |:doc:`FormalizedRejectionContent`       |
++------------------------------------------------------------------+----------------------------------------+
+|:meth:`Document.CreateReplySendTask` с типом ``RevocationRequest``|:doc:`RevocationRequestContent`         |
++------------------------------------------------------------------+----------------------------------------+

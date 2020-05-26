@@ -2,7 +2,7 @@ InvoiceCorrectionContent
 ========================
 
 Представление содержания документа *Корректировочный счет-фактура* и *Исправление корректировочного счета-фактуры* в формате `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567&rangeId=230580>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -19,7 +19,7 @@ InvoiceCorrectionContent
   .. versionadded:: 4.2.0
 
 :OriginalInvoices:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`OriginalInvoice <OriginalInvoice>` **, чтение** - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
+  :doc:`Коллекция <Collection>` **объектов** :doc:`OriginalInvoice` **, чтение** - данные об счет-фактурах, на основании которых был выставлен корректировочный счет-фактура
 
   .. versionadded:: 5.0.0
 
@@ -39,25 +39,25 @@ InvoiceCorrectionContent
   **Строка, чтение/запись** - код валюты
 
 :Seller:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные продавца
+  :doc:`OrganizationInfo` **, чтение** - данные продавца
 
 :Buyer:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные покупателя
+  :doc:`OrganizationInfo` **, чтение** - данные покупателя
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение** - данные подписанта документа
+  :doc:`Signer` **, чтение** - данные подписанта документа
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceCorrectionItem <InvoiceCorrectionItem>` **, чтение** - табличная часть корректировочного счета-фактуры
+  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceCorrectionItem` **, чтение** - табличная часть корректировочного счета-фактуры
 
 :TotalsInc:
-  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - итоговая сумма к увеличению
+  :doc:`InvoiceTotalsDiff` **, чтение** - итоговая сумма к увеличению
 
 :TotalsDec:
-  :doc:`InvoiceTotalsDiff <InvoiceTotalsDiff>` **, чтение** - итоговая сумма к уменьшению
+  :doc:`InvoiceTotalsDiff` **, чтение** - итоговая сумма к уменьшению
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo <StructedAdditionalInfo>` **, чтение** - дополнительные сведения
+  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
 
   .. versionadded:: 5.0.0
 

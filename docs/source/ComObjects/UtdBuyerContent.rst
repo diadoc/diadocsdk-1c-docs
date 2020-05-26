@@ -3,7 +3,7 @@ UtdBuyerContent
 
 Содержание титула покупателя *Универсального передаточного документа* в формате приказа `ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958>`_
 или *универсального корректировочного документа* в формате приказа `ММВ-7-15/189@ <https://normativ.kontur.ru/document?moduleId=1&documentId=273231>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 
 .. deprecated:: 5.27.0
@@ -31,16 +31,16 @@ UtdBuyerContent
   **Дата, чтение/запись** - дата принятия товаров (результатов выполненных работ) или имущественных прав (подтверждения факта оказания услуг)
 
 :Employee:
-  :doc:`Employee <Employee>` **, чтение** - работник организации покупателя
+  :doc:`Employee` **, чтение** - работник организации покупателя
 
 :OtherIssuer:
-  :doc:`OtherIssuer <OtherIssuer>` **, чтение** - иное лицо
+  :doc:`OtherIssuer` **, чтение** - иное лицо
 
 :AdditionalInfoId:
-  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
+  :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
 
 :Signers:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты документа
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner` **, чтение** - подписанты документа
 
 
 .. rubric:: Методы

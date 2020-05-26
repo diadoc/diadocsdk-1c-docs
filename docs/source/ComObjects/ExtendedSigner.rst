@@ -17,7 +17,7 @@ ExtendedSigner
   **Строка, чтение/запись** - отпечаток сертификата подписанта
 
 :SignerDetails:
-  :doc:`ExtendedSignerDetails <ExtendedSignerDetails>` **, чтение** - информация о подписанте
+  :doc:`ExtendedSignerDetails` **, чтение** - информация о подписанте
 
 
 .. note:: Должны быть заполнены либо *BoxId* + *CertificateThumbprint*, либо *SignerDetails*

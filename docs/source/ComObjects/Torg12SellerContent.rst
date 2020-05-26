@@ -2,7 +2,7 @@ Torg12SellerContent
 ===================
 
 Содержание документа *ТОРГ-12* в формате приказа `ММВ-7-6/172@ <https://normativ.kontur.ru/document?moduleId=1&documentId=261859>`_.
-Является производным объектом от :doc:`BaseContent <BaseContent>`
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -38,13 +38,13 @@ Torg12SellerContent
   **Строка, чтение/запись** - номер документа-основания
 
 :Seller:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные продавца
+  :doc:`OrganizationInfo` **, чтение** - данные продавца
 
 :Buyer:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные покупателя
+  :doc:`OrganizationInfo` **, чтение** - данные покупателя
 
 :Shipper:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные грузоотправителя
+  :doc:`OrganizationInfo` **, чтение** - данные грузоотправителя
 
 :ShipperDepartment:
   **Строка, чтение/запись** - структурное подразделение грузоотправителя
@@ -53,34 +53,34 @@ Torg12SellerContent
   **Строка, чтение/запись** - код основного вида деятельности по ОКДП грузоотправителя
 
 :Consignee:
-  :doc:`OrganizationInfo <OrganizationInfo>` **, чтение** - данные грузополучателя
+  :doc:`OrganizationInfo` **, чтение** - данные грузополучателя
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Torg12Item <Torg12Item>` **, чтение** - табличная часть Торг-12
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Torg12Item` **, чтение** - табличная часть Торг-12
 
 :Totals:
-  :doc:`Torg12Totals <Torg12Totals>` **, чтение** - итоги по накладной
+  :doc:`Torg12Totals` **, чтение** - итоги по накладной
 
 :Commons:
-  :doc:`Torg12Commons <Torg12Commons>` **, чтение** - общие сведения по накладной
+  :doc:`Torg12Commons` **, чтение** - общие сведения по накладной
 
 :AttachmentSheetsQuantity:
   **Число, чтение/запись** - приложение, количество листов
 
 :SupplyAllowedBy:
-  :doc:`Official <Official>` **, чтение** - отпуск груза разрешил
+  :doc:`Official` **, чтение** - отпуск груза разрешил
 
 :ChiefAccountant:
-  :doc:`Official <Official>` **, чтение** - главный бухгалтер
+  :doc:`Official` **, чтение** - главный бухгалтер
 
 :SupplyPerformedBy:
-  :doc:`Official <Official>` **, чтение** - отпуск груза произвел
+  :doc:`Official` **, чтение** - отпуск груза произвел
 
 :SupplyDate:
   **Дата, чтение/запись** - дата отпуска груза
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение** - подписант
+  :doc:`Signer` **, чтение** - подписант
 
 :AdditionalInfo:
   **Строка, чтение/запись** - дополнительные сведения

@@ -8,10 +8,10 @@ OutDocumentSignTask
 .. rubric:: Свойства
 
 :Signer:
-  :doc:`Signer <Signer>` **, чтение/запись** - данные подписанта документа
+  :doc:`Signer` **, чтение/запись** - данные подписанта документа
 
 :Content:
-  :doc:`OutDocumentSignTaskContent <OutDocumentSignTaskContent>` **, чтение/запись** - содержимое запроса
+  :doc:`OutDocumentSignTaskContent` **, чтение/запись** - содержимое запроса
 
 
 

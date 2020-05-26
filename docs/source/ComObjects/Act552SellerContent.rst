@@ -2,7 +2,7 @@ Act552SellerContent
 ===================
 
 Содержаним титула продавца *Акта о выполнении работ* в формате приказа `ММВ-7-10/552@ <https://normativ.kontur.ru/document?moduleId=1&documentId=265283>`_ .
-Является производным объектом от :doc:`BaseContent <BaseContent>`.
+Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
   Используйте :doc:`DynamicContent`
@@ -14,16 +14,16 @@ Act552SellerContent
   **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate552``
 
 :Seller:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - исполнитель (продавец услуг)
+  :doc:`ExtendedOrganizationInfo` **, чтение** - исполнитель (продавец услуг)
 
 :Buyer:
-  :doc:`ExtendedOrganizationInfo <ExtendedOrganizationInfo>` **, чтение** - заказчик (покупатель услуг)
+  :doc:`ExtendedOrganizationInfo` **, чтение** - заказчик (покупатель услуг)
 
 :Signers:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner <ExtendedSigner>` **, чтение** - подписанты
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedSigner` **, чтение** - подписанты
 
 :Grounds:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`GroundInfo <GroundInfo>` **, чтение** - основания
+  :doc:`Коллекция <Collection>` **объектов** :doc:`GroundInfo` **, чтение** - основания
 
 :Currency:
   **Строка, чтение/запись** - код валюты
@@ -32,7 +32,7 @@ Act552SellerContent
   **Строка, чтение/запись** - курс валюты
 
 :Works:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Act552WorkDescription <Act552WorkDescription>` **, чтение** - описание выполненных работ
+  :doc:`Коллекция <Collection>` **объектов** :doc:`Act552WorkDescription` **, чтение** - описание выполненных работ
 
 :DocumentDate:
   **Дата, чтение/запись** - дата составления документа о передаче товара
@@ -62,13 +62,13 @@ Act552SellerContent
   **Строка, чтение/запись** - идентификатор государственного контракта
 
 :AdditionalInfo:
-  :doc:`AdditionalInfoId <AdditionalInfoId>` **, чтение** - информационное поле документа
+  :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
 
 :DocumentName:
   **Строка, чтение/запись** - наименование первичного документа, определенное организацией
 
 :TransferInfo:
-  :doc:`Act552TransferInfo <Act552TransferInfo>` **, чтение** - содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг)
+  :doc:`Act552TransferInfo` **, чтение** - содержание факта хозяйственной жизни - сведения о передаче результатов работ (о предъявлении оказанных услуг)
 
 
 .. rubric:: Методы
