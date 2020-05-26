@@ -124,3 +124,4 @@
   release_info/5_29_12
   release_info/5_29_13
   release_info/5_29_14
+  release_info/5_30_0
