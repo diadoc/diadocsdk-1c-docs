@@ -12,7 +12,7 @@ InvoiceForCorrectionInfo
   **Строка, чтение/запись** - номер счета-фактуры
 
 :InvoiceRevisions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceRevisionInfo <InvoiceRevisionInfo>` **, чтение** - список исправлений
+  :doc:`Коллекция <Collection>` **объектов** :doc:`InvoiceRevisionInfo` **, чтение** - список исправлений
 
 
 

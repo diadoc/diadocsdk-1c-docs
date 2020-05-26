@@ -19,7 +19,7 @@ InvoiceTable
   **Число, чтение/запись** - нетто всего
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedInvoiceItem <ExtendedInvoiceItem>` **, чтение** - информация о товарах
+  :doc:`Коллекция <Collection>` **объектов** :doc:`ExtendedInvoiceItem` **, чтение** - информация о товарах
 
 .. note:: Числа рекомендуется записывать строкой в виде XML представления типа `decimal <http://www.w3.org/TR/xmlschema-2/#decimal>`_ .
           В 1С такое представление можно получить с помощью функции глобального контекста XMLСтрока/XMLString

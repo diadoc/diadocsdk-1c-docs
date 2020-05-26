@@ -18,22 +18,4 @@ NonformalizedContent
   **Булево, чтение/запись** - по документу запрошена ответная подпись
 
 :Type:
-  **Строка, чтение** - тип документа. |NonformalizedContent-Type|_
-
-
-.. rubric:: Дополнительная информация
-
-.. |NonformalizedContent-Type| replace:: Возмонжые значения
-.. _NonformalizedContent-Type:
-
-============================ =======================================
-Значение *Type*              Описание
-============================ =======================================
-CertificateRegistry          реестр сертификатов
-PriceList                    ценовой лист
-PriceListAgreement           протокол согласования цены
-ReconciliationAct            акт сверки
-ServiceDetails               детализация
-SupplementaryAgreement       дополнительное соглашение к договору
-NonformilizedDocumentContent произвольный неформализованный документ
-============================ =======================================
+  **Строка, чтение** - тип документа. :doc:`Возможные значения <Enums/NonformalizedContentType>`

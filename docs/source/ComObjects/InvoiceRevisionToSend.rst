@@ -22,4 +22,4 @@ InvoiceRevisionToSend
   **Строка, чтение/запись** - внешний идентификатор документа
 
 :Content:
-  :doc:`InvoiceContent <InvoiceContent>` **, чтение** - содержимое документа
+  :doc:`InvoiceContent` **, чтение** - содержимое документа
