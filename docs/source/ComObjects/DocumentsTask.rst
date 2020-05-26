@@ -90,26 +90,7 @@ DocumentsTask
 =================================== =====================================================================================================================================================================================================================================================================================================
 Значение *Типа документа*           Описание
 =================================== =====================================================================================================================================================================================================================================================================================================
-Nonformalized                       неформализованный документ
-Invoice                             счет-фактура
-InvoiceRevision                     исправление счета-фактуры
-InvoiceCorrection                   корректировочный счет-фактура
-InvoiceCorrectionRevision           исправление корректировочного счета-фактуры
-Torg12                              неформализованная накладная ТОРГ-12
-XmlTorg12                           формализованная накладная ТОРГ-12
-AcceptanceCertificate               неформализованный акт о выполнении работ
-XmlAcceptanceCertificate            формализованный акт о выполнении работ
-TrustConnectionRequest              предложение партнёрских отношений
-PriceListAgreement                  протокол согласования цены
-CertificateRegistry                 реестр сертификатов
-ReconciliationAct                   акт сверки
-Contract                            договор
-ProformaInvoice                     счет на оплату
-ServiceDetails                      детализация
-UniversalTransferDocument           УПД
-UniversalTransferDocumentRevision   исправление УПД
-UniversalCorrectionDocument         УКД
-UniversalCorrectionDocumentRevision исправление УКД
+<DocumentTypeName>                  имя :doc:`типа документа <DocumentTypeDescription>` 
 AnyInvoiceDocumentType              соответствует набору из четырех типов документов: ``Invoice``, ``InvoiceRevision``, ``InvoiceCorrection``, ``InvoiceCorrectionRevision``
 AnyBilateralDocumentType            соответствует любому типу двусторонних документов: ``Nonformalized``, ``Torg12``, ``AcceptanceCertificate``, ``XmlTorg12``, ``XmlAcceptanceCertificate``, ``TrustConnectionRequest``, ``PriceList``, ``PriceListAgreement``, ``CertificateRegistry``, ``ReconciliationAct``, ``Contract``, ``Torg13``
 AnyUnilateralDocumentType           соответствует любому типу односторонних документов: ``ProformaInvoice``, ``ServiceDetails``

@@ -47,7 +47,7 @@ Document
   **Строка, чтение** - идентификатор пакета
 
 :Direction:
-  **Строка, чтение** - направление документа. |Document-Direction|_
+  **Строка, чтение** - направление документа. :doc:`Возможные значения <Enums/DocumentDirection>`
 
 :Department:
   :doc:`Department <Department>` **, чтение** - подразделение организации, к которому привязан документ
@@ -114,16 +114,16 @@ Document
   :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial <ResolutionRequestDenial>` **, чтение** - коллекция объектов отказов по резолюциям
 
 :RevocationStatus:
-  **Строка, чтение** - статус аннулирования документа. |Document-RevocationStatus|_
+  **Строка, чтение** - статус аннулирования документа. :doc:`Возможные значения <Enums/RevocationStatus>`
 
 :SenderSignatureStatus:
-  **Строка, чтение** - статус проверки ЭЦП отправителя. |Document-SenderSignatureStatus|_
+  **Строка, чтение** - статус проверки ЭЦП отправителя. :doc:`Возможные значения <Enums/SenderSignatureStatus>`
 
 :RecipientResponseStatus:
-  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. |Document-RecipientResponseStatus|_
+  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. :doc:`Возможные значения <Enums/RecipientResponseStatus>`
 
 :RoamingNotificationStatus:
-  **Строка, чтение** - статус передачи документа через роуминг. |Document-RoamingNotificationStatus|_
+  **Строка, чтение** - статус передачи документа через роуминг. :doc:`Возможные значения <Enums/RoamingNotificationStatus>`
 
   .. versionadded:: 5.3.1
 
@@ -305,7 +305,7 @@ Document
 .. _Document-GetDynamicContent:
 .. method:: Document.GetDynamicContent(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-DocflowSide|_
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает :doc:`представление контента титула документа <DynamicContent>` со стороны *WorkflowSide*.
   Если запрашиваемого титула у документа нет, то результатом будет ``Undefined`` / ``Неопределено``.
@@ -316,7 +316,7 @@ Document
 .. _Document-GetBase64Content:
 .. method:: Document.GetBase64Content(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-DocflowSide|_
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает контент титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -325,7 +325,7 @@ Document
 .. _Document-GetBase64ContentAsync:
 .. method:: Document.GetBase64ContentAsync(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. |Document-DocflowSide|_
+  :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает контент титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -334,7 +334,7 @@ Document
 .. _Document-GetBase64Signature:
 .. method:: Document.GetBase64Signature(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. |Document-DocflowSide|_
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена.:doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает подпись с меткой времени к титулу документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -343,7 +343,7 @@ Document
 .. _Document-GetBase64OriginalSignature:
 .. method:: Document.GetBase64OriginalSignature(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. |Document-DocflowSide|_
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <Enums/DocflowSide>`
 
   Возвращает оригинальную подпись (обычно без метки времени) титула документа со стороны *DocflowSide* в виде Base64 строки
 
@@ -376,18 +376,9 @@ Document
 .. _Document-GetAnyComment:
 .. method:: Document.GetAnyComment(CommentType)
 
-  :CommentType: ``строка`` Тип комментария
+  :CommentType: ``строка`` Тип комментария. :doc:`Возможные значения <Enums/CommentType>`
 
   Возвращает строку с комментарием определённого типа, связанным с документом
-
-  ========================== ==================================
-  Значение *CommentType*     Описание
-  ========================== ==================================
-  AttachmentComment          комментарий к документу
-  RecipientAttachmentComment комментарий к титулу покупателя
-  SignatureRejectionComment  комментарий к отказу в подписи
-  AmendmentComment           комментарий к запросу на уточнение
-  ========================== ==================================
 
   .. versionadded:: 5.20.3
 
@@ -398,7 +389,7 @@ Document
 
   :DepartmentId: ``Строка`` Идентификатор подразделения
 
-  Перемещает документ в указанное подразделение. Идентификатор головного подразделения всегда ``00000000-0000-0000-0000-000000000000``
+  Перемещает документ в указанное подразделение
 
 
 
@@ -482,8 +473,8 @@ Document
   :FilePath: ``Строка`` Путь до файла, в который будет сохранена печатная форма
   :Timeout:  ``Беззнаковое целое число`` Таймаут за который необходимо получить печатную форму
 
-  Получает печатную форму документа в формате ``.pdf`` и сохраняет её в указанный файл. Если расширение файла отличается от ``.pdf``, то такой файл будет создан/
-  Совершается 5 попыток сгенерировать печатную форму. Если за 5 попыток она не получена или, если превышен таймаут, то будет сгенерировано исключение
+  Получает печатную форму документа в формате ``.pdf`` и сохраняет её в указанный файл. Если расширение файла отличается от ``.pdf``, то такой файл будет создан.
+  Совершается 5 попыток сгенерировать печатную форму. Если за 5 попыток она не получена, или превышен таймаут, то будет сгенерировано исключение
 
   .. versionadded:: 3.0.10
 
@@ -505,7 +496,7 @@ Document
 .. _Document-CreateReplySendTask:
 .. method:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. |Document-ReplyType|_
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
 
@@ -517,7 +508,7 @@ Document
 .. _Document-CreateReplySendTask2:
 .. method:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :ReplyType: ``строка`` Тип ответа. |Document-ReplyType|_
+  :ReplyType: ``строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask2>`
 
@@ -606,102 +597,6 @@ Document
 
 
 .. rubric:: Дополнительная информация
-
-
-.. |Document-DocflowSide| replace:: Возможные значения
-.. _Document-DocflowSide:
-
-======================= =================
-Значение *DocflowSide*  Описание
-======================= =================
-Seller                  Титул отправителя
-Buyer                   Титул получателя
-======================= =================
-
-
-.. |Document-ReplyType| replace:: Возможные значения
-.. _Document-ReplyType:
-
-==================== =================================
-Значение *ReplyType* Описание
-==================== =================================
-AcceptDocument       подписание документа
-RejectDocument       отказ в подписи документа
-CorrectionRequest    запроc на уточнение документа
-RevocationRequest    запроc на аннулирование документа
-AcceptRevocation     принятие аннулирования документа
-RejectRevocation     отказ от аннулирования документа
-==================== =================================
-
-
-.. |Document-Direction| replace:: Возможные значения
-.. _Document-Direction:
-
-==================== ===================
-Значение *Direction* Описание
-==================== ===================
-Inbound              входящий документ
-Outbound             исходящий документ
-Internal             внутренний документ
-==================== ===================
-
-
-.. |Document-RevocationStatus| replace:: Возможные значения
-.. _Document-RevocationStatus:
-
-=========================== =====================================================================
-Значение *RevocationStatus* Описание
-=========================== =====================================================================
-RevocationStatusNone        документ не аннулирован, и не было предложений об аннулировании
-RevocationIsRequestedByMe   отправлено исходящее предложение об аннулировании документа
-RequestsMyRevocation        получено входящее предложение об аннулировании документа
-RevocationAccepted          документ аннулирован
-RevocationRejected          получен или отправлен отказ от предложения об аннулировании документа
-UnknownRevocationStatus     неизвестный статус аннулирования документа
-=========================== =====================================================================
-
-
-.. |Document-RoamingNotificationStatus| replace:: Возможные значения
-.. _Document-RoamingNotificationStatus:
-
-==================================== =====================================================
-Значение *RoamingNotificationStatus* Описание
-==================================== =====================================================
-RoamingNotificationStatusNone        документ не доставлялся в роуминг
-RoamingNotificationStatusSuccess     документ с подтверждением успешной доставки в роуминг
-RoamingNotificationStatusError       документ с ошибкой доставки в роуминг
-UnknownRoamingNotificationStatus     неизвестный роуминговый статус документа
-==================================== =====================================================
-
-
-.. |Document-SenderSignatureStatus| replace:: Возможные значения
-.. _Document-SenderSignatureStatus:
-
-================================ =========================================
-Значение *SenderSignatureStatus* Описание
-================================ =========================================
-WaitingForSenderSignature        ожидается подпись отправителя
-SenderSignatureUnchecked         подпись отправителя еще не проверена
-SenderSignatureCheckedAndValid   подпись отправителя проверена и валидна
-SenderSignatureCheckedAndInvalid подпись отправителя проверена и невалидна
-UnknownSenderSignatureStatus     неизвестный статус проверки подписи
-================================ =========================================
-
-
-.. |Document-RecipientResponseStatus| replace:: Возможные значения
-.. _Document-RecipientResponseStatus:
-
-==================================== ==================================================
-Значение *RecipientResponseStatus*   Описание
-==================================== ==================================================
-RecipientResponseStatusUnknown       неизвестный статус ответного действия
-RecipientResponseStatusNotAcceptable ответного действия не требуется
-WaitingForRecipientSignature         ожидается ответное действие получателя
-WithRecipientSignature               получатель подписал документ (ответный титул)
-RecipientSignatureRequestRejected    получатель отказал в подписи
-InvalidRecipientSignature            получатель подписал документ некорректной подписью
-==================================== ==================================================
-
 
 
 .. |Document-Inheritable| replace:: типов документов

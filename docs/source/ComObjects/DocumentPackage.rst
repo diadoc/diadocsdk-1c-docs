@@ -12,7 +12,7 @@ DocumentPackage
   **Булево, чтение** - признак того, что пакет является нередактируемым
 
 :LockMode:
-  **Строка, чтение** - редактируемость пакета. |DocumentPackage-LockMode|_
+  **Строка, чтение** - редактируемость пакета. :doc:`Возможные зачения <Enums/LockMode>`
 
 :Documents:
   :doc:`Коллекция <Collection>` **объектов** :doc:`Document <Document>` **, чтение** - документы, входящие в пакет
@@ -88,7 +88,7 @@ DocumentPackage
 .. _DocumentPackage-CreateReplySendTask:
 .. method:: DocumentPackage.CreateReplySendTask(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. |DocumentPackage-ReplyType|_
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask>`
 
@@ -100,7 +100,7 @@ DocumentPackage
 .. _DocumentPackage-CreateReplySendTask2:
 .. method:: DocumentPackage.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :ReplyType: ``Строка`` Тип ответа. |DocumentPackage-ReplyType|_
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask2>`
 
@@ -132,35 +132,3 @@ DocumentPackage
   :Comment: ``строка`` Комментарий, который будет добавлен при снятии документов с маршрута
 
   Снимает документы с маршрута согласования
-
-
-
-.. rubric:: Дополнительная информация
-
-
-.. |DocumentPackage-LockMode| replace:: Возможные значения
-
-.. _DocumentPackage-LockMode:
-
-=================== =======================================
-Значение *LockMode* Описание
-=================== =======================================
-None                Пакет можно редактировать
-Send                Пакет нередактируем до момента отправки
-Full                Пакет нередактируем
-=================== =======================================
-
-.. |DocumentPackage-ReplyType| replace:: Возможные значения
-
-.. _DocumentPackage-ReplyType:
-
-==================== ==================================
-Значение *ReplyType* Описание
-==================== ==================================
-AcceptDocument       подписание документов
-RejectDocument       отказ в подписи документов
-CorrectionRequest    запроc на уточнение документов
-RevocationRequest    запроc на аннулирование документов
-AcceptRevocation     принятие аннулирования документов
-RejectRevocation     отказ от аннулирования документов
-==================== ==================================
