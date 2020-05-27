@@ -2,56 +2,7 @@
 ==================
 
 .. toctree::
-  :name: EnumsList
-  :maxdepth: 1
-  :hidden:
-
-  AuthenticateType <./Enums/AuthenticateType>
-  BilateralStatus <./Enums/BilateralStatus>
-  CommentType <./Enums/CommentType>
-  CounteragentStatus <./Enums/CounteragentStatus>
-  Docflow <./Enums/Docflow>
-  DocflowSide <./Enums/DocflowSide>
-  DocumentDirection <./Enums/DocumentDirection>
-  DocumentsAccessLevel <./Enums/DocumentsAccessLevel>
-  DocumentToSend <./Enums/DocumentToSend>
-  EventType <./Enums/EventType>
-  FormalizedDocumentToSend <./Enums/FormalizedDocumentToSend>
-  InvoiceStatus <./Enums/InvoiceStatus>
-  ItemMark <./Enums/ItemMark>
-  LockMode <./Enums/LockMode>
-  MetadataSource <./Enums/MetadataSource>
-  NonfomalizedDocumentStatus <./Enums/NonfomalizedDocumentStatus>
-  NonformalizedContentType <./Enums/NonformalizedContentType>
-  OperationType <./Enums/OperationType>
-  OrganizationType <./Enums/OrganizationType>
-  ProxyMode <./Enums/ProxyMode>
-  ReceiptStatus <./Enums/ReceiptStatus>
-  RecipientResponseStatus <./Enums/RecipientResponseStatus>
-  ReplyType <./Enums/ReplyType>
-  ResolutionAction <./Enums/ResolutionAction>
-  ResolutionRequestTaskType <./Enums/ResolutionRequestTaskType>
-  ResolutionRequestType <./Enums/ResolutionRequestType>
-  ResolutionStatus <./Enums/ResolutionStatus>
-  ResolutionType <./Enums/ResolutionType>
-  RevocationStatus <./Enums/RevocationStatus>
-  RoamingNotificationStatus <./Enums/RoamingNotificationStatus>
-  SenderSignatureStatus <./Enums/SenderSignatureStatus>
-  SignerPowers <./Enums/SignerPowers>
-  SignerStatus <./Enums/SignerStatus>
-  SignerTitleType <./Enums/SignerTitleType>
-  SignerType <./Enums/SignerType>
-  TaxRate <./Enums/TaxRate>
-  TemplateRefusalType <./Enums/TemplateRefusalType>
-  UnilateralStatus <./Enums/UnilateralStatus>
-  UTDStatus <./Enums/UTDStatus>
-  ValueType <./Enums/ValueType>
-
-
-
-.. toctree::
   :name: ComObjectList
-  :maxdepth: 1
 
   AcceptanceCertificateBuyerContent <AcceptanceCertificateBuyerContent>
   AcceptanceCertificateContent <AcceptanceCertificateContent>
@@ -232,3 +183,4 @@
   XmlActToSend <XmlActToSend>
   XmlTorg12 <XmlTorg12>
   XmlTorg12ToSend <XmlTorg12ToSend>
+  Enums <./Enums/_list>
