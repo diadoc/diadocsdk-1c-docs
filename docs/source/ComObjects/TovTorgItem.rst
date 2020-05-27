@@ -70,8 +70,7 @@ TovTorgItem
 
 
 
-Методы объекта
---------------
+.. rubric:: Методы
 
 +------------------------------------------+
 | |TovTorgItem-AddStructedAdditionalInfo|_ |
