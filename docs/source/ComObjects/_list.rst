@@ -183,4 +183,3 @@
   XmlActToSend <XmlActToSend>
   XmlTorg12 <XmlTorg12>
   XmlTorg12ToSend <XmlTorg12ToSend>
-  Enums <./Enums/_list>

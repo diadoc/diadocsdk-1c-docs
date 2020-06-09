@@ -1,3 +1,5 @@
+:orphan:
+
 .. toctree::
   :hidden:
   :name: Enums
