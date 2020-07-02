@@ -336,7 +336,7 @@ Organization
   .. versionadded:: 4.1.0
 
   .. deprecated:: 5.18.0
-    Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.SendDraftAsync`
+    Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.CreateSendDraftTask`
 
 
 
