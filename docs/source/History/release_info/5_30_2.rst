@@ -1,0 +1,24 @@
+5.30.2
+======
+
+.. feed-entry::
+  :date: 2020-07-09
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`DiadocAPI.UpdateProxySettings`
+
+
+.. rubric:: Изменено
+
+* Поле **TimestampSeconds** объекта :doc:`../../ComObjects/Document` помечено устаревшим
+* Методы :meth:`PackageSendTask2.AddDocumentFromFile` и :meth:`PackageSendTask2.AddDocumentFromBase64` стали проверять корректность переданных названия, версии, функции документа
+* Метод :meth:`Connection.GetOrganizationById` теперь может принимать идентификатор организации в виде GUID'а
+
+
+.. rubric:: Исправлено
+
+* Выполнение методов :meth:`Organization.GetCounteragentListByStatusAsync`, :meth:`Organization.GetCounteragentListByInnKppAsync`, :meth:`Organization.GetCounteragentListByInnList` могло приводить к ``APPCRASH``
+* Выполнение методов :meth:`Organization.GetCounteragentListByInnKpp` и :meth:`Organization.GetCounteragentListByInnKppAsync` могло происходить неоправданно долго
+* Вызов метода :meth:`Organization.GetExtendedSignerDetails2` c вторым параметром `Torg2Buyer` приводил к ошибке ``Неверное значение перечисления``

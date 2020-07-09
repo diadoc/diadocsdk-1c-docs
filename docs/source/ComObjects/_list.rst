@@ -25,6 +25,7 @@
   Attorney <Attorney>
   BaseContent <BaseContent>
   BaseDocument <BaseDocument>
+  BoxInfo <BoxInfo>
   CertificateRegistryToSend <CertificateRegistryToSend>
   CloudCertificateInfo <CloudCertificateInfo>
   CloudSignTask <CloudSignTask>

@@ -27,7 +27,7 @@ DiadocAPI
 +--------------------------------------------+------------------------------+----------------------------------------------+
 | |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
 +--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ |                                              |
+| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ |  |DiadocApi-UpdateProxySettings|_            |
 +--------------------------------------------+------------------------------+----------------------------------------------+
 
 
@@ -39,6 +39,7 @@ DiadocAPI
 .. |DiadocAPI-TestConnection| replace:: TestConnection()
 .. |DiadocAPI-TestConnection2| replace:: TestConnection2()
 .. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
+.. |DiadocApi-UpdateProxySettings| replace:: UpdateProxySettings()
 
 
 
@@ -112,4 +113,14 @@ DiadocAPI
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
 
-  Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок.
+  Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок
+
+
+.. _DiadocAPI-UpdateProxySettings:
+.. method:: DiadocAPI.UpdateProxySettings(Connection)
+
+  :Connection: :doc:`Connection` обновляемое подключение
+
+  Метод обновляет настройки прокси у переданного объекта подключения и у всех объектов, полученных с помощью него
+
+  .. versionadded:: 5.30.2
