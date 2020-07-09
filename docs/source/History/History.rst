@@ -126,3 +126,4 @@
   release_info/5_29_14
   release_info/5_30_0
   release_info/5_30_1
+  release_info/5_30_2
