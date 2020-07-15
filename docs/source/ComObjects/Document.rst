@@ -336,7 +336,7 @@ Document
 .. _Document-GetBase64Signature:
 .. method:: Document.GetBase64Signature(DocflowSide)
 
-  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена.:doc:`Возможные значения <./Enums/DocflowSide>`
+  :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <./Enums/DocflowSide>`
 
   Возвращает подпись с меткой времени к титулу документа со стороны *DocflowSide* в виде Base64 строки
 
