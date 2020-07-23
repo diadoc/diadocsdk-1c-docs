@@ -30,3 +30,4 @@
 * В коллекцию **Errors** объекта :doc:`../../ComObjcts/ReceiptGenerationProcess` попадали не все ошибки
 * Неправильная логика вычисления превышения таймаута в методе :meth:`Document.GetPrintForm`
 * Вызов метода :meth:`Counteragent.AcquireCounteragent` заканчивался ошибкой ``Ошибка при получении ящика с сервера Диадок``
+* Вызов методов :meth:`Document.SaveAllContent` и :meth:`Document.SaveAllContentAsync` для документов с невалидной подписью заканчивался ошибкой ``##100[Ошибка сервера Диадок]code:404, HTTP error: Entity <EntityId> not found in message <MessageId>``
