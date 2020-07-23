@@ -7,27 +7,27 @@
 
 .. rubric:: Добавлено
 
-* В объекте :doc:`../../ComObjcts/DynamicContent` добавлена валидация одновременного заполнения взаимоисключающих элементов (со свойством ``CHOIСE`` в UserDataXSD)
-* В объект :doc:`../../ComObjcts/CustomDocumentToSend` добавлен метод :meth:`CustomDocumentToSend.SaveUserData`
-* В объект :doc:`../../ComObjcts/UtdRevision` добавлены поля **Revised** и **Corrected**
-* В объект :doc:`../../ComObjcts/UсdRevision` добавлены поля **Revised**, **Corrected**, **OriginalDocumentRevisionDate**, **OriginalDocumentRevisionNumber**, **OriginalDocumentCorrectionDate**, **OriginalDocumentCorrectionNumber**
-* В объект :doc:`../../ComObjcts/Document` добавлены поля **ProxySignatureStatus** и **OrganizationGuid**
-* В объект :doc:`../../ComObjcts/BoxInfo` добавлено поле **Guid**
-* В объект :doc:`../../ComObjcts/Counteragent` добавлены поля **Guid** и **OrganizationGuid**
-* В объект :doc:`../../ComObjcts/Organization` добавлены поля **Guid** и **IsLiquidated**
+* В объекте :doc:`../../ComObjects/DynamicContent` добавлена валидация одновременного заполнения взаимоисключающих элементов (со свойством ``CHOIСE`` в UserDataXSD)
+* В объект :doc:`../../ComObjects/CustomDocumentToSend` добавлен метод :meth:`CustomDocumentToSend.SaveUserData`
+* В объект :doc:`../../ComObjects/UtdRevision` добавлены поля **Revised** и **Corrected**
+* В объект :doc:`../../ComObjects/UcdRevision` добавлены поля **Revised**, **Corrected**, **OriginalDocumentRevisionDate**, **OriginalDocumentRevisionNumber**, **OriginalDocumentCorrectionDate**, **OriginalDocumentCorrectionNumber**
+* В объект :doc:`../../ComObjects/Document` добавлены поля **ProxySignatureStatus** и **OrganizationGuid**
+* В объект :doc:`../../ComObjects/BoxInfo` добавлено поле **Guid**
+* В объект :doc:`../../ComObjects/Counteragent` добавлены поля **Guid** и **OrganizationGuid**
+* В объект :doc:`../../ComObjects/Organization` добавлены поля **Guid** и **IsLiquidated**
 
 
 .. rubric:: Изменено
 
-* Поле **Id** объекта :doc:`../../ComObjcts/BoxInfo` помечено устаревшим
-* Поля **Id** и **OrganizationId** объекта :doc:`../../ComObjcts/Counteragent` помечены устаревшими
-* Поле **OrganizationId** объекта :doc:`../../ComObjcts/Document` помечено устаревшим
-* Поле **Id** объекта :doc:`../../ComObjcts/Organization` помечено устаревшим
+* Поле **Id** объекта :doc:`../../ComObjects/BoxInfo` помечено устаревшим
+* Поля **Id** и **OrganizationId** объекта :doc:`../../ComObjects/Counteragent` помечены устаревшими
+* Поле **OrganizationId** объекта :doc:`../../ComObjects/Document` помечено устаревшим
+* Поле **Id** объекта :doc:`../../ComObjects/Organization` помечено устаревшим
 
 
 .. rubric:: Исправлено
 
-* В коллекцию **Errors** объекта :doc:`../../ComObjcts/ReceiptGenerationProcess` попадали не все ошибки
+* В коллекцию **Errors** объекта :doc:`../../ComObjects/ReceiptGenerationProcess` попадали не все ошибки
 * Неправильная логика вычисления превышения таймаута в методе :meth:`Document.GetPrintForm`
 * Вызов метода :meth:`Counteragent.AcquireCounteragent` заканчивался ошибкой ``Ошибка при получении ящика с сервера Диадок``
 * Вызов методов :meth:`Document.SaveAllContent` и :meth:`Document.SaveAllContentAsync` для документов с невалидной подписью заканчивался ошибкой ``##100[Ошибка сервера Диадок]code:404, HTTP error: Entity <EntityId> not found in message <MessageId>``
