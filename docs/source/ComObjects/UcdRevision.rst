@@ -43,6 +43,35 @@ UcdRevision
 :AmendmentRequested:
   **Булево, чтение** - признак, был ли запрос на уточнение
 
+:Revised:
+  **Булево, чтение** - признак, было ли исправление данного документа
+
+  .. versionadded:: 5.31.0
+
+:Corrected:
+  **Булево, чтение** - признак, была ли корректировка данного документа
+
+  .. versionadded:: 5.31.0
+
+:OriginalDocumentRevisionDate:
+  **Дата, чтение** - дата исходного исправления УПД
+
+  .. versionadded:: 5.31.0
+
+:OriginalDocumentRevisionNumber:
+  **Строка, чтение** - номер исходного исправления УПД
+
+  .. versionadded:: 5.31.0
+
+:OriginalDocumentCorrectionDate:
+  **Дата, чтение** - дата исходного УКД
+
+  .. versionadded:: 5.31.0
+
+:OriginalDocumentCorrectionNumber:
+  **Строка, чтение** - номер исходного УКД
+
+  .. versionadded:: 5.31.0
 
 .. rubric:: Методы
 
