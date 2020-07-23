@@ -41,7 +41,9 @@ CustomDocumentToSend
   :doc:`Коллекция <Collection>` **объектов** :doc:`MetadataItem` **, чтение** - метаданные документа
 
 :Content:
-  :doc:`DynamicContent` **или** :doc:`BaseContent` **, чтение** - представление содержимого документа
+  :doc:`DynamicContent` **или** :doc:`BaseContent` **, чтение** - представление содержимого документа.
+  Если объект был создан из :doc:`PackageSendTask2`, то поле *Content* будет объектом :doc:`DynamicContent`.
+  Если объект был создан из :doc:`PackageSendTask` или :doc:`SendTask`, то поле *Content* будет объектом, производным от :doc:`BaseContent`
 
 :EditingSettingId:
   **Строка, чтение/запись** - идентификатор настройки редактирования содержимого документа.
@@ -53,11 +55,12 @@ CustomDocumentToSend
 
 .. rubric:: Методы
 
-+-------------------------------------+
-| |CustomDocumentToSend-AddMetadata|_ |
-+-------------------------------------+
++-------------------------------------+--------------------------------------+
+| |CustomDocumentToSend-AddMetadata|_ | |CustomDocumentToSend-SaveUserData|_ |
++-------------------------------------+--------------------------------------+
 
 .. |CustomDocumentToSend-AddMetadata| replace:: AddMetadata()
+.. |CustomDocumentToSend-SaveUserData| replace:: SaveUserData()
 
 .. _CustomDocumentToSend-AddMetadata:
 .. method:: CustomDocumentToSend.AddMetadata()
@@ -65,11 +68,13 @@ CustomDocumentToSend
   Добавляет :doc:`новый элемент <MetadataItem>` в коллекцию *Metadata* и возвращает его
 
 
-.. rubric:: Дополнительная информация
+.. _CustomDocumentToSend-SaveUserData:
+.. method:: CustomDocumentToSend.SaveUserData(FilePath)
 
-Если объект был создан из :doc:`PackageSendTask2`, то поле *Content* будет объектом :doc:`DynamicContent`
+  :FilePath: ``строка`` путь до файла
 
-Если объект был создан из :doc:`PackageSendTask` или :doc:`SendTask`, то поле *Content* будет объектом, производным от :doc:`BaseContent`
+  Сохраняет :doc:`упрощённое представление контента <DynamicContent>` в указанный файл. Если файл не существует, то файл будет создан. Директория должна существовать
+
 
 
 .. seealso:: :doc:`../HowTo/HowTo_post_document`

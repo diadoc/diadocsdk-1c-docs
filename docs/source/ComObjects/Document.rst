@@ -34,6 +34,14 @@ Document
 :OrganizationId:
   **Строка, чтение** - идентификатор организации, которой принадлежит документ
 
+  .. deprecated:: 5.31.0
+  Используйте поле **OrganizationGuid**
+
+:OrganizationGuid:
+  **Строка, чтение** - идентификатор организации, которой принадлежит документ
+
+  .. versionadded:: 5.31.0
+
 :Counteragent:
   :doc:`BoxInfo` **, чтение** - контрагент документа. Для внутренних документов будет пустым
 
@@ -122,7 +130,12 @@ Document
   **Строка, чтение** - статус проверки ЭЦП отправителя. :doc:`Возможные значения <./Enums/SenderSignatureStatus>`
 
 :RecipientResponseStatus:
-  **Строка, чтение** - отвечает за состояние ответного действия со стороны получателя документа. :doc:`Возможные значения <./Enums/RecipientResponseStatus>`
+  **Строка, чтение** - статус ответного действия со стороны получателя. :doc:`Возможные значения <./Enums/RecipientResponseStatus>`
+
+:ProxySignatureStatus:
+  **Строка, чтение** -  статус промежуточной подписи. :doc:`Возможные значения <./Enums/ProxySignatureStatus>`
+
+  .. versionadded:: 5.31.0
 
 :RoamingNotificationStatus:
   **Строка, чтение** - статус передачи документа через роуминг. :doc:`Возможные значения <./Enums/RoamingNotificationStatus>`
