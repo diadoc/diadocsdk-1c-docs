@@ -31,6 +31,11 @@ Counteragent
 
   .. versionadded:: 3.0.8
 
+:Status:
+  **Строка, чтение** - текущего статуса отношений с контрагентом. :doc:`Возможные значения <./Enums/CounteragentStatus>`
+
+  .. versionadded:: 5.31.1
+
 :Departments:
   :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - список подразделений первого уровня вложенности
 
@@ -99,6 +104,9 @@ Counteragent
 .. method:: Counteragent.GetStatus()
 
   Возвращает строковое представление текущего статуса отношений с контрагентом. :doc:`Возможные значения <./Enums/CounteragentStatus>`
+
+  .. deprecated:: 5.31.1
+  Используйте свойство **Status**
 
 
 
