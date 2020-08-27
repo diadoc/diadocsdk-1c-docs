@@ -234,7 +234,7 @@ Document
 .. |Document-GetBase64Content| replace:: GetBase64Content()
 .. |Document-GetBase64ContentAsync| replace:: GetBase64ContentAsync()
 .. |Document-GetBase64Signature| replace:: GetBase64Signature()
-.. |Document-GetBase64OriginalSignature| replace:: GetBaseOriginal64Signature()
+.. |Document-GetBase64OriginalSignature| replace:: GetBase64OriginalSignature()
 .. |Document-GetSenderSignature| replace:: GetSenderSignature()
 .. |Document-GetRecipientSignature| replace:: GetRecipientSignature()
 .. |Document-GetComment| replace:: GetComment()

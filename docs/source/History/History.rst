@@ -128,3 +128,4 @@
   release_info/5_30_1
   release_info/5_30_2
   release_info/5_31_0
+  release_info/5_31_1
