@@ -32,7 +32,7 @@ Counteragent
   .. versionadded:: 3.0.8
 
 :Status:
-  **Строка, чтение** - текущего статуса отношений с контрагентом. :doc:`Возможные значения <./Enums/CounteragentStatus>`
+  **Строка, чтение** - текущий статус отношений с контрагентом. :doc:`Возможные значения <./Enums/CounteragentStatus>`
 
   .. versionadded:: 5.31.1
 
