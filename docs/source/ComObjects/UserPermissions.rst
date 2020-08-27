@@ -34,6 +34,9 @@ UserPermissions
 :CanDeleteRestoreDocuments:
   **Булево, чтение** - пользователь может удалять и восстанавливать документы в ящике организации
 
+  .. versionadded:: 5.31.1
+  
+
 :DocumentsAccessLevel:
   **Строка, чтение** - уровень доступа к документам. :doc:`Возможные значения <./Enums/DocumentsAccessLevel>`
 
