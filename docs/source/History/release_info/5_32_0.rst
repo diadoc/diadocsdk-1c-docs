@@ -21,7 +21,7 @@
 
 .. rubric:: Изменено
 
-* Изменён набор :doc:` типов резолюций <../../ComObjects/Enums/ResolutionType>`:
+* Изменён набор :doc:`типов резолюций <../../ComObjects/Enums/ResolutionType>`:
 
   * добавлен тип ``ApprovementSignatureRequest``
   * добавлен тип ``ApprovementSignature``
@@ -32,7 +32,7 @@
   * добавлен тип ``RevocationAgreementDisapprove``
   * значение ``SignatureDisapprove`` теперь означает отказ в запросе любой из подписей по документу или аннулированию, а не только отказ в запросе конечной подписи по документу
 
-* Изменён набор :doc:` типов запросов резолюций <../../ComObjects/Enums/ResolutionRequestType>`:
+* Изменён набор :doc:`типов запросов резолюций <../../ComObjects/Enums/ResolutionRequestType>`:
 
   * добавлен тип ``RevocationSignatureRequest``
   * добавлен тип ``RevocationApprovementSignatureRequest``
