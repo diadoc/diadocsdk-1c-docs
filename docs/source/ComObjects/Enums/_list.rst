@@ -5,6 +5,7 @@
   :name: Enums
 
   AuthenticateType <AuthenticateType>
+  AutoLogonPolicy <AutoLogonPolicy>
   BilateralStatus <BilateralStatus>
   CommentType <CommentType>
   CounteragentStatus <CounteragentStatus>
@@ -24,6 +25,7 @@
   OperationType <OperationType>
   OrganizationType <OrganizationType>
   ProxyMode <ProxyMode>
+  ProxySignatureStatus <ProxySignatureStatus>
   ReceiptStatus <ReceiptStatus>
   RecipientResponseStatus <RecipientResponseStatus>
   ReplyType <ReplyType>
