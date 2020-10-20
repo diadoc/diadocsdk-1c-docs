@@ -25,6 +25,7 @@
   OperationType <OperationType>
   OrganizationType <OrganizationType>
   ProxyMode <ProxyMode>
+  ProxySignatureStatus <ProxySignatureStatus>
   ReceiptStatus <ReceiptStatus>
   RecipientResponseStatus <RecipientResponseStatus>
   ReplyType <ReplyType>

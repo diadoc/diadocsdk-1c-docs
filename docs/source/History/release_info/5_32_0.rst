@@ -8,18 +8,21 @@
 .. rubric:: Добавлено
 
 * Добавлена возможность просмотра внешнего статуса документооборота у документа (в том числе статус маркированной продукции ЦРПТ):
+
   * Добавлены объект :doc:`../../ComObjects/ErrorCode`, :doc:`../../ComObjects/ExternalStatusLite`, :doc:`../../ComObjects/ExternalStatus`
   * В объект :doc:`../../ComObjects/Document` добавлено поле **LastExternalStatuses**
   * В объект :doc:`../../ComObjects/Document` добавлен метод :meth:`Document.GetExternalStatuses`
 
-* В объект :doc:`../../ComObjects/DiadocApi` добавлено поле **AutoLogonPolicy** для указания `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_
-* В объект :doc:`../../ComObjects/DiadocApi` добавлено поле **VerifySslCertificate** для установки флага проверки SSL сертиифкатов при выполнении запросов
+
+* В объект :doc:`../../ComObjects/DiadocAPI` добавлено поле **AutoLogonPolicy** для указания `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_
+* В объект :doc:`../../ComObjects/DiadocAPI` добавлено поле **VerifySslCertificate** для установки флага проверки SSL сертиифкатов при выполнении запросов
 
 
 
 .. rubric:: Изменено
 
 * Изменён набор :doc:` типов резолюций <../../ComObjects/Enums/ResolutionType>`:
+
   * добавлен тип ``ApprovementSignatureRequest``
   * добавлен тип ``ApprovementSignature``
   * добавлен тип ``RevocationSignatureRequest``
@@ -30,6 +33,7 @@
   * значение ``SignatureDisapprove`` теперь означает отказ в запросе любой из подписей по документу или аннулированию, а не только отказ в запросе конечной подписи по документу
 
 * Изменён набор :doc:` типов запросов резолюций <../../ComObjects/Enums/ResolutionRequestType>`:
+
   * добавлен тип ``RevocationSignatureRequest``
   * добавлен тип ``RevocationApprovementSignatureRequest``
   * добавлен тип ``RevocationAgreementRequest``
