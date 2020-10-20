@@ -5,6 +5,7 @@
   :name: Enums
 
   AuthenticateType <AuthenticateType>
+  AutoLogonPolicy <AutoLogonPolicy>
   BilateralStatus <BilateralStatus>
   CommentType <CommentType>
   CounteragentStatus <CounteragentStatus>

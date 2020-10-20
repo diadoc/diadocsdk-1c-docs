@@ -62,6 +62,7 @@
   DynamicContent <DynamicContent>
   Employee <Employee>
   Entity <Entity>
+  ErrorCode <ErrorCode>
   EventContent <EventContent>
   ExtendedInvoiceCorrectionItem <ExtendedInvoiceCorrectionItem>
   ExtendedInvoiceItem <ExtendedInvoiceItem>
@@ -69,6 +70,8 @@
   ExtendedSigner <ExtendedSigner>
   ExtendedSignerDetails <ExtendedSignerDetails>
   ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>
+  ExternalStatus <ExternalStatus>
+  ExternalStatusLite <ExternalStatusLite>
   FormalizedRejectionContent <FormalizedRejectionContent>
   GroundInfo <GroundInfo>
   Invoice <Invoice>

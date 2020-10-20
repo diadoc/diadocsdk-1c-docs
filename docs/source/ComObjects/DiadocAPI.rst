@@ -19,6 +19,17 @@ DiadocAPI
 :ProxySettings:
   :doc:`ProxySettings` **, чтение** - настройки прокси-сервера
 
+:AutoLogonPolicy:
+  **Строка, чтение/запись** - настройка `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_ .
+  :doc:`Возможные значения <./Enums/AutoLogonPolicy>`
+
+  .. versionadded:: 5.32.0
+
+:VerifySslCertificate:
+  **Булево, чтение/запись** - флага проверки SSL сертиифкатов при выполнении запросов
+
+  .. versionadded:: 5.32.0
+
 
 .. rubric:: Методы
 
@@ -27,7 +38,7 @@ DiadocAPI
 +--------------------------------------------+------------------------------+----------------------------------------------+
 | |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
 +--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ |  |DiadocApi-UpdateProxySettings|_            |
+| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ | |DiadocApi-UpdateProxySettings|_             |
 +--------------------------------------------+------------------------------+----------------------------------------------+
 
 

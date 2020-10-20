@@ -147,6 +147,11 @@ Document
 
   .. versionadded:: 5.3.1
 
+:LastExternalStatuses:
+  :doc:`коллекция <Collection>` **объектов** :doc:`ExternalStatusLite` **, чтение** - набор последних статусов внешнего документооборота
+
+  .. versionadded:: 5.32.0
+
 :CustomData:
   :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDataItem` **, чтение** - коллекция тэгов документа
 
@@ -216,7 +221,7 @@ Document
 +----------------------------------------+---------------------------------------------+-----------------------------------------+
 | |Document-GetBase64Signature|_         | |Document-RemoveSubordinateOneSDocumentId|_ | |Document-ReSetOneSDocumentId|_         |
 +----------------------------------------+---------------------------------------------+-----------------------------------------+
-| |Document-GetBase64OriginalSignature|_ | |Document-GetPrintForm|_                    |                                         |
+| |Document-GetBase64OriginalSignature|_ | |Document-GetPrintForm|_                    | |Document-GetExternalStatuses|_         |
 +----------------------------------------+---------------------------------------------+-----------------------------------------+
 | |Document-GetSenderSignature|_         | |Document-Approve|_                         |                                         |
 +----------------------------------------+---------------------------------------------+-----------------------------------------+
@@ -260,6 +265,7 @@ Document
 .. |Document-SendRevocationRequest| replace:: SendRevocationRequest()
 .. |Document-AcceptRevocationRequest| replace:: AcceptRevocationRequest()
 .. |Document-RejectRevocationRequest| replace:: RejectRevocationRequest()
+.. |Document-GetExternalStatuses| replace:: GetExternalStatuses()
 
 .. _Document-SaveContent:
 .. method:: Document.SaveContent(FilePath)
@@ -608,6 +614,13 @@ Document
   .. deprecated:: 5.27.0
     Используйте :meth:`Document.CreateReplySendTask2`
 
+
+.. _Document-GetExternalStatuses:
+.. method:: Document.GetExternalStatuses()
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`внешних статусов <ExternalStatus>` документа
+
+  .. versionadded:: 5.32.0
 
 
 .. rubric:: Дополнительная информация
