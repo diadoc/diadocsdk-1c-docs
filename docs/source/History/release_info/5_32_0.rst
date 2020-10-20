@@ -44,3 +44,4 @@
 
 * Исправлены различные ошибки работы компоненты через прокси-сервер
 * Исправлены многичисленные ошибки в формировании коллекций **Resolutions**, **ResolutionRequests**, **ResolutionRequestDenials** объекта :doc:`../../ComObjects/Document`
+* Поле **DocumentDirection** объекта :doc:`../../ComObjects/DocumentEvent` всегда имело значение ``Inbound``
