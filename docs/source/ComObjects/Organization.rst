@@ -170,7 +170,7 @@ Organization
 .. _Organization-GetCounteragentListByStatus:
 .. method:: Organization.GetCounteragentListByStatus([CounteragentStatus])
 
-  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <Enums/CounteragentStatus>`
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/CounteragentStatus>`
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом.
   Если параметр не задан, вернётся весь список контрагентов
@@ -180,7 +180,7 @@ Organization
 .. _Organization-GetCounteragentListByStatusAsync:
 .. method:: Organization.GetCounteragentListByStatusAsync([CounteragentStatus])
 
-  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <Enums/CounteragentStatus>`
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/CounteragentStatus>`
 
   Асинхронный запрос контрагентов с указанным статусом. Если параметр не задан, вернётся весь список контрагентов.
   Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <Counteragent>` в качестве результата
@@ -272,7 +272,7 @@ Organization
 .. _Organization-CreateSendTask:
 .. method:: Organization.CreateSendTask(FormalDocumentType)
 
-  :DocumentType: ``строка`` тип документа на отправку.:doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
+  :DocumentType: ``строка`` тип документа на отправку.:doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
 
@@ -284,7 +284,7 @@ Organization
 .. _Organization-CreateSendTaskFromFile:
 .. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentToSend>`
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
   :FilePath: ``строка`` путь до файла контента документа
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
@@ -297,7 +297,7 @@ Organization
 .. _Organization-CreateSendTaskFromFileRaw:
 .. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <./Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента документа
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
