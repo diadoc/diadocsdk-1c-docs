@@ -17,4 +17,4 @@
 
 .. rubric:: Исправлено
 
-* `AppCrash` приложения при обращении к полям **Resolutions**, **ResolutionRequests**, **ResolutionRequestDenials** и методу :meth:`Document.GetExternalStatuses` объекта :doc:`../../ComObjects/Document` для некоторых документов
+* ``AppCrash`` приложения при обращении к полям **Resolutions**, **ResolutionRequests**, **ResolutionRequestDenials** и методу :meth:`Document.GetExternalStatuses` объекта :doc:`../../ComObjects/Document` для некоторых документов
