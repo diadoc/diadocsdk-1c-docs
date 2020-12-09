@@ -1,0 +1,20 @@
+5.32.0
+======
+
+.. feed-entry::
+  :date: 2020-11-09
+
+
+.. rubric:: Добавлено
+
+* Новое значение :doc:`../../ComObjects/Enums/RecipientResponseStatus` - **WithRecipientPartiallySignature**
+
+
+.. rubric:: Изменено
+
+* Поле **ToDocumentDate** объекта :doc:`../../ComObjects/DocumentsTask` теперь приводит дату к концу подписания
+
+
+.. rubric:: Исправлено
+
+* `AppCrash` приложения при обращении к полям **Resolutions**, **ResolutionRequests**, **ResolutionRequestDenials** и методу :meth:`Document.GetExternalStatuses` объекта :doc:`../../ComObjects/Document` для некоторых документов
