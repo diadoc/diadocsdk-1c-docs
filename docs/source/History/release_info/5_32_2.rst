@@ -1,0 +1,10 @@
+5.32.2
+======
+
+.. feed-entry::
+  :date: 2020-11-09
+
+
+.. rubric:: Добавлено
+
+* Новые значения :doc:`../../ComObjects/Enums/BilateralStatus`: **InboundWithRecipientPartiallySignature**, **OutboundWithRecipientPartiallySignature**, **InternalWithRecipientPartiallySignature**
