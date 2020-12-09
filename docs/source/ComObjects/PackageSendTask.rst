@@ -74,7 +74,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocument:
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
@@ -83,7 +83,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocumentFromFile:
 .. method:: PackageSendTask.AddDocumentFromFile(FormalizedDocumentType, FilePath)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.

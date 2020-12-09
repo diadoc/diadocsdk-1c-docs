@@ -18,9 +18,8 @@ UniversalCorrectionDocumentRevision                         исправлени
 UtdTorg12                                                   ТОРГ-12 в формате 155 приказа ФНС                                    :doc:`../UtdToSend`
 UtdAcceptanceCertificate                                    акт о выполнении работ в формате 155 приказа ФНС                     :doc:`../UtdToSend`
 UtdInvoice                                                  счет-фактура в формате 155 приказа ФНС                               :doc:`../UtdToSend`
-UcdInvoiceCorrection                                        корректировка счета-фактуры в формате 189 приказа ФНС                :doc:`../UtdToSend`
+UcdInvoiceCorrection                                        корректировка счета-фактуры в формате 189 приказа ФНС                :doc:`../UcdToSend`
 TovTorg                                                     Торг-12 в формате 551-го приказа ФНС                                 :doc:`../TovTorgToSend`
 XmlAcceptanceCertificate552                                 акт в формате 552-го приказа ФНС                                     :doc:`../XmlAct552ToSend`
-один из :doc:`DocumentVersion.Version <../DocumentVersion>` произвольный формализованный документ                                :doc:`../CustomDocumentToSend`
 Document (для :meth:`PackageSendTask.AddDocumentFromFile`)  произвольный формализованный документ                                :doc:`../CustomDocumentToSend`
 =========================================================== ==================================================================== =========================================
