@@ -8,3 +8,8 @@
 .. rubric:: Добавлено
 
 * Новые значения :doc:`../../ComObjects/Enums/BilateralStatus`: **InboundWithRecipientPartiallySignature**, **OutboundWithRecipientPartiallySignature**, **InternalWithRecipientPartiallySignature**
+
+
+.. rubric:: Исправлено
+
+* Исправлены используемые .proto файлы
