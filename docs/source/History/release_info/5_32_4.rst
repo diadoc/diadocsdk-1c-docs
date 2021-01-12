@@ -1,0 +1,15 @@
+5.32.4
+======
+
+.. feed-entry::
+  :date: 2021-01-12
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`Organization.GetFeatures`
+
+
+.. rubric:: Изменено
+
+* поле **EncryptedDocumentsAllowed** помечено устаревшим и спрятано в интерфейсе

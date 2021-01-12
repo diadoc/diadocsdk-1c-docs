@@ -58,6 +58,9 @@ Organization
 :EncryptedDocumentsAllowed:
   **Булево, чтение** - организации разрешена отправка зашифрованных документов
 
+  .. deprecated:: 5.32.4
+    Используйте ответ метода :meth:`Organization.GetFeatures`
+
 
 
 .. rubric:: Методы
@@ -67,7 +70,7 @@ Organization
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
 | |Organization-GetCounteragentByOrgId|_               | |Organization-GetCounteragentListByStatus|_  | |Organization-GetCounteragentListByStatusAsync|_   | |Organization-GetCounteragentListByInnKpp|_ |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
-| |Organization-GetCounteragentListByInnKppAsync|_     | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      |                                             |
+| |Organization-GetCounteragentListByInnKppAsync|_     | |Organization-GetCounteragentListByInnList|_ | |Organization-CreateAcquireCounteragentTask|_      | |Organization-GetFeatures|                  |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
 | |Organization-GetDocumentById|_                      | |Organization-GetDocumentsTask|_             | |Organization-RestoreDocument|_                    |                                             |
 +------------------------------------------------------+----------------------------------------------+----------------------------------------------------+---------------------------------------------+
@@ -132,6 +135,7 @@ Organization
 .. |Organization-SaveUserDataXSD| replace:: SaveUserDataXSD()
 .. |Organization-GetBase64UserDataXSD| replace:: GetBase64UserDataXSD()
 .. |Organization-CreateDataTask| replace:: CreateDataTask()
+.. |Organization-GetFeatures| replace:: GetFeatures()
 
 
 
@@ -566,3 +570,11 @@ Organization
   Создаёт :doc:`задание для работы с хранилищем ключей-значений Диадок <DataTask>`
 
   .. versionadded:: 5.29.9
+
+
+.. _Organization-GetFeatures:
+.. method:: Organization.GetFeatures()
+
+  Возвращает :doc:`коллекцию <Collection>` строк - включённых у организации возможностей. :doc:`Возможные значения <Enums/OrganizationFeatures>`
+
+  .. versionadded:: 5.32.4

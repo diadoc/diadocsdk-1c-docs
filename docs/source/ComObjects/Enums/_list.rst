@@ -15,7 +15,7 @@
   DocumentsAccessLevel <DocumentsAccessLevel>
   DocumentToSend <DocumentToSend>
   EventType <EventType>
-  FormalizedDocumentToSend <FormalizedDocumentToSend>
+  FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
   InvoiceStatus <InvoiceStatus>
   ItemMark <ItemMark>
   LockMode <LockMode>
@@ -23,6 +23,7 @@
   NonfomalizedDocumentStatus <NonfomalizedDocumentStatus>
   NonformalizedContentType <NonformalizedContentType>
   OperationType <OperationType>
+  OrganizationFeatures <OrganizationFeatures>
   OrganizationType <OrganizationType>
   ProxyMode <ProxyMode>
   ProxySignatureStatus <ProxySignatureStatus>
