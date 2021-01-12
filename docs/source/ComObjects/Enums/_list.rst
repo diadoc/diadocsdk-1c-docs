@@ -15,6 +15,7 @@
   DocumentsAccessLevel <DocumentsAccessLevel>
   DocumentToSend <DocumentToSend>
   EventType <EventType>
+  ExternalStatusType <ExternalStatusType>
   FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
   InvoiceStatus <InvoiceStatus>
   ItemMark <ItemMark>
