@@ -13,6 +13,7 @@
   DocflowSide <DocflowSide>
   DocumentDirection <DocumentDirection>
   DocumentsAccessLevel <DocumentsAccessLevel>
+  DocumentTitleType <DocumentTitleType>
   DocumentToSend <DocumentToSend>
   EventType <EventType>
   ExternalStatusType <ExternalStatusType>
@@ -41,7 +42,7 @@
   SenderSignatureStatus <SenderSignatureStatus>
   SignerPowers <SignerPowers>
   SignerStatus <SignerStatus>
-  SignerTitleType <SignerTitleType>
+
   SignerType <SignerType>
   TaxRate <TaxRate>
   TemplateRefusalType <TemplateRefusalType>

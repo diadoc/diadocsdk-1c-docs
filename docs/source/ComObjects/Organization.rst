@@ -212,7 +212,7 @@ Organization
   Метод удаляет черновик. Восстановить черновик невозможно.
   *MessageId* - первая половина из *DocumentId* черновика
 
-  ..versionadded:: 5.25.0
+  .. versionadded:: 5.25.0
 
 
 .. _Organization-GetDocumentEventList:
@@ -232,7 +232,7 @@ Organization
 
   Возвращает :doc:`шаблон документа <Template>` по его идентификатору
 
-  ..versionadded:: 5.24.0
+  .. versionadded:: 5.24.0
 
 
 
@@ -241,7 +241,7 @@ Organization
 
   Возвращает :doc:`объект <TemplateSendTask>`, с помощью которого можно отправить :doc:`шаблон документ <TemplateToSend>`
 
-  ..versionadded:: 5.24.0
+  .. versionadded:: 5.24.0
 
 
 
@@ -252,7 +252,7 @@ Organization
 
   Возвращает :doc:`задание для создания документов из шаблона <TransformTemplateTask>`
 
-  ..versionadded:: 5.24.0
+  .. versionadded:: 5.24.0
 
 
 

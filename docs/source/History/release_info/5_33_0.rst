@@ -21,4 +21,4 @@
 .. rubric:: Исправлено
 
 * :doc:`../../ComObjects/DynamicContent` не строил представление контента, если контент был описан во вложенных элементах групп ограничений.
-Например, в ``<xs:sequence><xs:choice>...</xs:choice></xs:sequence>``
+  Например, в ``<xs:sequence><xs:choice>...</xs:choice></xs:sequence>``
