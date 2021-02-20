@@ -1,0 +1,24 @@
+5.33.0
+======
+
+.. feed-entry::
+  :date: 2021-02-24
+
+
+.. rubric:: Добавлено
+
+* В :doc:`../../ComObjects/DocumentTitle` добавлено поле **Type**
+
+
+
+.. rubric:: Изменено
+
+* Удалён метод :meth:`Organization.GetExtendedSignerDetails`
+* Удалены поля **IsSeller** и **ForCorrection** объекта :doc:`../../ComObjects/SetExtendedSignerDetailsTask`
+
+
+
+.. rubric:: Исправлено
+
+* :doc:`../../ComObjects/DynamicContent` не строил представление контента, если контент был описан во вложенных элементах групп ограничений.
+Например, в ``<xs:sequence><xs:choice>...</xs:choice></xs:sequence>``
