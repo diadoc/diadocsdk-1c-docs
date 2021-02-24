@@ -1,7 +1,7 @@
 DocumentBase
 ============
 
-Базовый объект для всех |Document-Inheritable|_ .
+Базовый объект для всех |DocumentBase-Inheritable|_ .
 
 
 .. rubric:: Свойства
@@ -178,75 +178,75 @@ DocumentBase
 
 .. rubric:: Методы
 
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetSenderSignature|_         | |Document-SaveContent|_            | |Document-GetAnyComment|_             | |Document-CreateReplySendTask2|_        |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetRecipientSignature|_      | |Document-SaveBuyerContent|_       | |Document-GetExternalStatuses|_       | |Document-SendReceiptsAsync|_           |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetDynamicContent|_          | |Document-SaveAllContent|_         | |Document-GetDocumentPackage|_        | |Document-Approve|_                     |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetBase64Content|_           | |Document-SaveAllContentAsync|_    | |Document-Delete|_                    | |Document-Disapprove|_                  |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetBase64ContentAsync|_      | |Document-SaveAllContentZip|_      | |Document-Move|_                      | |Document-CreateOutDocumentSignTask|_   |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetBase64Signature|_         | |Document-SaveAllContentZipAsync|_ | |Document-MarkAsRead|_                | |Document-CreateResolutionRequestTask|_ |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-| |Document-GetBase64OriginalSignature|_ | |Document-GetPrintForm|_           | |Document-AssignToResolutionRoute|_   | |Document-CreateCustomDataPatchTask|_   |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
-|                                        |                                    | |Document-RemoveFromResolutionRoute|_ |                                         |
-+----------------------------------------+------------------------------------+---------------------------------------+-----------------------------------------+
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetSenderSignature|_         | |DocumentBase-SaveContent|_            | |DocumentBase-GetAnyComment|_             | |DocumentBase-CreateReplySendTask2|_        |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetRecipientSignature|_      | |DocumentBase-SaveBuyerContent|_       | |DocumentBase-GetExternalStatuses|_       | |DocumentBase-SendReceiptsAsync|_           |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_        | |DocumentBase-Approve|_                     |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-Delete|_                    | |DocumentBase-Disapprove|_                  |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Move|_                      | |DocumentBase-CreateOutDocumentSignTask|_   |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-MarkAsRead|_                | |DocumentBase-CreateResolutionRequestTask|_ |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-AssignToResolutionRoute|_   | |DocumentBase-CreateCustomDataPatchTask|_   |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_ |                                             |
++--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
 
 
-.. |Document-GetSenderSignature| replace:: GetSenderSignature()
-.. |Document-GetRecipientSignature| replace:: GetRecipientSignature()
-.. |Document-GetDynamicContent| replace:: GetDynamicContent()
-.. |Document-GetBase64Content| replace:: GetBase64Content()
-.. |Document-GetBase64ContentAsync| replace:: GetBase64ContentAsync()
-.. |Document-GetBase64Signature| replace:: GetBase64Signature()
-.. |Document-GetBase64OriginalSignature| replace:: GetBase64OriginalSignature()
+.. |DocumentBase-GetSenderSignature| replace:: GetSenderSignature()
+.. |DocumentBase-GetRecipientSignature| replace:: GetRecipientSignature()
+.. |DocumentBase-GetDynamicContent| replace:: GetDynamicContent()
+.. |DocumentBase-GetBase64Content| replace:: GetBase64Content()
+.. |DocumentBase-GetBase64ContentAsync| replace:: GetBase64ContentAsync()
+.. |DocumentBase-GetBase64Signature| replace:: GetBase64Signature()
+.. |DocumentBase-GetBase64OriginalSignature| replace:: GetBase64OriginalSignature()
 
-.. |Document-SaveContent| replace:: SaveContent()
-.. |Document-SaveBuyerContent| replace:: SaveBuyerContent()
-.. |Document-SaveAllContent| replace:: SaveAllContent()
-.. |Document-SaveAllContentAsync| replace:: SaveAllContentAsync()
-.. |Document-SaveAllContentZip| replace:: SaveAllContentZip()
-.. |Document-SaveAllContentZipAsync| replace:: SaveAllContentZipAsync()
-.. |Document-GetPrintForm| replace:: GetPrintForm()
+.. |DocumentBase-SaveContent| replace:: SaveContent()
+.. |DocumentBase-SaveBuyerContent| replace:: SaveBuyerContent()
+.. |DocumentBase-SaveAllContent| replace:: SaveAllContent()
+.. |DocumentBase-SaveAllContentAsync| replace:: SaveAllContentAsync()
+.. |DocumentBase-SaveAllContentZip| replace:: SaveAllContentZip()
+.. |DocumentBase-SaveAllContentZipAsync| replace:: SaveAllContentZipAsync()
+.. |DocumentBase-GetPrintForm| replace:: GetPrintForm()
 
-.. |Document-GetAnyComment| replace:: GetAnyComment()
-.. |Document-GetExternalStatuses| replace:: GetExternalStatuses()
-.. |Document-GetDocumentPackage| replace:: GetDocumentPackage()
-.. |Document-Delete| replace:: Delete()
-.. |Document-Move| replace:: Move()
-.. |Document-MarkAsRead| replace:: MarkAsRead()
-.. |Document-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
-.. |Document-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
+.. |DocumentBase-GetAnyComment| replace:: GetAnyComment()
+.. |DocumentBase-GetExternalStatuses| replace:: GetExternalStatuses()
+.. |DocumentBase-GetDocumentPackage| replace:: GetDocumentPackage()
+.. |DocumentBase-Delete| replace:: Delete()
+.. |DocumentBase-Move| replace:: Move()
+.. |DocumentBase-MarkAsRead| replace:: MarkAsRead()
+.. |DocumentBase-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
+.. |DocumentBase-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
 
-.. |Document-CreateReplySendTask2| replace:: CreateReplySendTask2()
-.. |Document-SendReceiptsAsync| replace:: SendReceiptsAsync()
-.. |Document-Approve| replace:: Approve()
-.. |Document-Disapprove| replace:: Disapprove()
-.. |Document-CreateOutDocumentSignTask| replace:: CreateOutDocumentSignTask()
-.. |Document-CreateResolutionRequestTask| replace:: CreateResolutionRequestTask()
-.. |Document-CreateCustomDataPatchTask| replace:: CreateCustomDataPatchTask()
+.. |DocumentBase-CreateReplySendTask2| replace:: CreateReplySendTask2()
+.. |DocumentBase-SendReceiptsAsync| replace:: SendReceiptsAsync()
+.. |DocumentBase-Approve| replace:: Approve()
+.. |DocumentBase-Disapprove| replace:: Disapprove()
+.. |DocumentBase-CreateOutDocumentSignTask| replace:: CreateOutDocumentSignTask()
+.. |DocumentBase-CreateResolutionRequestTask| replace:: CreateResolutionRequestTask()
+.. |DocumentBase-CreateCustomDataPatchTask| replace:: CreateCustomDataPatchTask()
 
 
 
-.. _Document-GetSenderSignature:
-.. method:: Document.GetSenderSignature()
+.. _DocumentBase-GetSenderSignature:
+.. method:: DocumentBase.GetSenderSignature()
 
   Возвращает :doc:`представление подписи <Signature>` титула отправителя
 
 
 
-.. _Document-GetRecipientSignature:
-.. method:: Document.GetRecipientSignature()
+.. _DocumentBase-GetRecipientSignature:
+.. method:: DocumentBase.GetRecipientSignature()
 
   Возвращает :doc:`представление подписи <Signature>` титула получателя
 
 
-.. _Document-GetDynamicContent:
-.. method:: Document.GetDynamicContent(DocflowSide)
+.. _DocumentBase-GetDynamicContent:
+.. method:: DocumentBase.GetDynamicContent(DocflowSide)
 
   :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
@@ -255,8 +255,8 @@ DocumentBase
   Если для данного документа не существует схемы, в которой можно представить контент документа, то так же результатом будет :doc:`пустым <Descriptions/Empty_Com_Object>`
 
 
-.. _Document-GetBase64Content:
-.. method:: Document.GetBase64Content(DocflowSide)
+.. _DocumentBase-GetBase64Content:
+.. method:: DocumentBase.GetBase64Content(DocflowSide)
 
   :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
@@ -264,8 +264,8 @@ DocumentBase
 
 
 
-.. _Document-GetBase64ContentAsync:
-.. method:: Document.GetBase64ContentAsync(DocflowSide)
+.. _DocumentBase-GetBase64ContentAsync:
+.. method:: DocumentBase.GetBase64ContentAsync(DocflowSide)
 
   :DocflowSide: ``Строка`` Сторона документооборота, чей титул будет представлен. :doc:`Возможные значения <Enums/DocflowSide>`
 
@@ -273,8 +273,8 @@ DocumentBase
 
 
 
-.. _Document-GetBase64Signature:
-.. method:: Document.GetBase64Signature(DocflowSide)
+.. _DocumentBase-GetBase64Signature:
+.. method:: DocumentBase.GetBase64Signature(DocflowSide)
 
   :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <Enums/DocflowSide>`
 
@@ -282,8 +282,8 @@ DocumentBase
 
 
 
-.. _Document-GetBase64OriginalSignature:
-.. method:: Document.GetBase64OriginalSignature(DocflowSide)
+.. _DocumentBase-GetBase64OriginalSignature:
+.. method:: DocumentBase.GetBase64OriginalSignature(DocflowSide)
 
   :DocflowSide: ``Строка`` Сторона документооборота, подпись титула которой будет представлена. :doc:`Возможные значения <Enums/DocflowSide>`
 
@@ -291,8 +291,8 @@ DocumentBase
 
 
 
-.. _Document-SaveContent:
-.. method:: Document.SaveContent(FilePath)
+.. _DocumentBase-SaveContent:
+.. method:: DocumentBase.SaveContent(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет записан контент
 
@@ -300,8 +300,8 @@ DocumentBase
 
 
 
-.. _Document-SaveBuyerContent:
-.. method:: Document.SaveBuyerContent(FilePath)
+.. _DocumentBase-SaveBuyerContent:
+.. method:: DocumentBase.SaveBuyerContent(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет записан контент
 
@@ -309,8 +309,8 @@ DocumentBase
 
 
 
-.. _Document-SaveAllContent:
-.. method:: Document.SaveAllContent(DirectoryPath, WithProtocol=false)
+.. _DocumentBase-SaveAllContent:
+.. method:: DocumentBase.SaveAllContent(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
   :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
@@ -319,8 +319,8 @@ DocumentBase
 
 
 
-.. _Document-SaveAllContentAsync:
-.. method:: Document.SaveAllContentAsync(DirectoryPath, WithProtocol=false)
+.. _DocumentBase-SaveAllContentAsync:
+.. method:: DocumentBase.SaveAllContentAsync(DirectoryPath, WithProtocol=false)
 
   :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
   :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
@@ -329,8 +329,8 @@ DocumentBase
 
 
 
-.. _Document-SaveAllContentZip:
-.. method:: Document.SaveAllContentZip(FilePath)
+.. _DocumentBase-SaveAllContentZip:
+.. method:: DocumentBase.SaveAllContentZip(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет сохранён архив
 
@@ -338,8 +338,8 @@ DocumentBase
 
 
 
-.. _Document-SaveAllContentZipAsync:
-.. method:: Document.SaveAllContentZipAsync(FilePath)
+.. _DocumentBase-SaveAllContentZipAsync:
+.. method:: DocumentBase.SaveAllContentZipAsync(FilePath)
 
   :FilePath: ``Строка`` Путь до файла, в который будет сохранён архив
 
@@ -347,8 +347,8 @@ DocumentBase
 
 
 
-.. _Document-GetPrintForm:
-.. method:: Document.GetPrintForm(FilePath, Timeout=30)
+.. _DocumentBase-GetPrintForm:
+.. method:: DocumentBase.GetPrintForm(FilePath, Timeout=30)
 
   :FilePath: ``Строка`` Путь до файла, в который будет сохранена печатная форма
   :Timeout:  ``Беззнаковое целое число`` Таймаут за который необходимо получить печатную форму в секундах
@@ -359,8 +359,8 @@ DocumentBase
 
 
 
-.. _Document-GetAnyComment:
-.. method:: Document.GetAnyComment(CommentType)
+.. _DocumentBase-GetAnyComment:
+.. method:: DocumentBase.GetAnyComment(CommentType)
 
   :CommentType: ``строка`` Тип комментария. :doc:`Возможные значения <Enums/CommentType>`
 
@@ -370,16 +370,16 @@ DocumentBase
 
 
 
-.. _Document-GetExternalStatuses:
-.. method:: Document.GetExternalStatuses()
+.. _DocumentBase-GetExternalStatuses:
+.. method:: DocumentBase.GetExternalStatuses()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`внешних статусов <ExternalStatus>` документа
 
   .. versionadded:: 5.32.0
 
 
-.. _Document-GetDocumentPackage:
-.. method:: Document.GetDocumentPackage()
+.. _DocumentBase-GetDocumentPackage:
+.. method:: DocumentBase.GetDocumentPackage()
 
   Возвращает :doc:`пакет документов <DocumentPackage>`, в котором находится документ
 
@@ -389,15 +389,15 @@ DocumentBase
     В данном случае в пакете будут содержаться только документы с одинаковым :doc:`MessageId <Descriptions/MessageId>`
 
 
-.. _Document-Delete:
-.. method:: Document.Delete()
+.. _DocumentBase-Delete:
+.. method:: DocumentBase.Delete()
 
   Помечает документ как удаленный
 
 
 
-.. _Document-Move:
-.. method:: Document.Move(DepartmentId)
+.. _DocumentBase-Move:
+.. method:: DocumentBase.Move(DepartmentId)
 
   :DepartmentId: ``Строка`` Идентификатор подразделения
 
@@ -405,14 +405,14 @@ DocumentBase
 
 
 
-.. _Document-MarkAsRead:
-.. method:: Document.MarkAsRead()
+.. _DocumentBase-MarkAsRead:
+.. method:: DocumentBase.MarkAsRead()
 
   Помечает, что документ как прочитанный
 
 
-.. _Document-AssignToResolutionRoute:
-.. method:: Document.AssignToResolutionRoute(RouteId[, Comment])
+.. _DocumentBase-AssignToResolutionRoute:
+.. method:: DocumentBase.AssignToResolutionRoute(RouteId[, Comment])
 
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при постановке документа на маршрут
@@ -421,8 +421,8 @@ DocumentBase
 
 
 
-.. _Document-RemoveFromResolutionRoute:
-.. method:: Document.RemoveFromResolutionRoute(RouteId[, Comment])
+.. _DocumentBase-RemoveFromResolutionRoute:
+.. method:: DocumentBase.RemoveFromResolutionRoute(RouteId[, Comment])
 
   :RouteId: ``строка`` Идентификатор маршрута
   :Comment: ``строка`` Комментарий, который будет добавлен при снятии документа с маршрута
@@ -430,8 +430,8 @@ DocumentBase
   Снимает документ с маршрута согласования
 
 
-.. _Document-CreateReplySendTask2:
-.. method:: Document.CreateReplySendTask2(ReplyType="AcceptDocument")
+.. _DocumentBase-CreateReplySendTask2:
+.. method:: DocumentBase.CreateReplySendTask2(ReplyType="AcceptDocument")
 
   :ReplyType: ``строка`` Тип ответа. :doc:`Возможные значения <Enums/ReplyType>`
 
@@ -440,15 +440,15 @@ DocumentBase
     .. versionadded:: 5.27.0
 
 
-.. _Document-SendReceiptsAsync:
-.. method:: Document.SendReceiptsAsync()
+.. _DocumentBase-SendReceiptsAsync:
+.. method:: DocumentBase.SendReceiptsAsync()
 
   Отправляет извещения о получении документа, необходимые для завершения документооборота. Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
 
 
 
-.. _Document-Approve:
-.. method:: Document.Approve([Comment])
+.. _DocumentBase-Approve:
+.. method:: DocumentBase.Approve([Comment])
 
   :Comment: ``Строка`` Комментарий, который будет указан при согласовании
 
@@ -456,8 +456,8 @@ DocumentBase
 
 
 
-.. _Document-Disapprove:
-.. method:: Document.Disapprove([Comment])
+.. _DocumentBase-Disapprove:
+.. method:: DocumentBase.Disapprove([Comment])
 
   :Comment: ``Строка`` Комментарий, который будет указан при отказе согласования
 
@@ -465,8 +465,8 @@ DocumentBase
 
 
 
-.. _Document-CreateOutDocumentSignTask:
-.. method:: Document.CreateOutDocumentSignTask()
+.. _DocumentBase-CreateOutDocumentSignTask:
+.. method:: DocumentBase.CreateOutDocumentSignTask()
 
   Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
 
@@ -474,15 +474,15 @@ DocumentBase
 
 
 
-.. _Document-CreateResolutionRequestTask:
-.. method:: Document.CreateResolutionRequestTask()
+.. _DocumentBase-CreateResolutionRequestTask:
+.. method:: DocumentBase.CreateResolutionRequestTask()
 
   Создает :doc:`задание для отправки запроса согласования <ResolutionRequestTask>`
 
 
 
-.. _Document-CreateCustomDataPatchTask:
-.. method:: Document.CreateCustomDataPatchTask()
+.. _DocumentBase-CreateCustomDataPatchTask:
+.. method:: DocumentBase.CreateCustomDataPatchTask()
 
   Создает :doc:`задание на редактирование коллекции CustomData <CustomDataPatchTask>`
 
@@ -490,8 +490,8 @@ DocumentBase
 
 .. rubric:: Дополнительная информация
 
-.. |Document-Inheritable| replace:: типов документов
-.. _Document-Inheritable:
+.. |DocumentBase-Inheritable| replace:: типов документов
+.. _DocumentBase-Inheritable:
 
 ========================================= ======================================================
 Объекты, производные от *Document*        Описание
@@ -519,7 +519,7 @@ DocumentBase
 .. rubric:: Устаревшие методы
 
 
-.. method:: Document.GetComment()
+.. method:: DocumentBase.GetComment()
 
   Возвращает строку с комментарием к документу, заданным при отправке
 
@@ -527,7 +527,7 @@ DocumentBase
     Используйте :meth:`GetAnyComment` с типом ``AttachmentComment``
 
 
-.. method:: Document.SetOneSDocumentId(ID)
+.. method:: DocumentBase.SetOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
@@ -538,7 +538,7 @@ DocumentBase
 
 
 
-.. method:: Document.ReSetOneSDocumentId()
+.. method:: DocumentBase.ReSetOneSDocumentId()
 
   Сбрасывает дополнительный идентификатор учётной системы у документа в Диадоке
 
@@ -547,7 +547,7 @@ DocumentBase
 
 
 
-.. method:: Document.AddSubordinateOneSDocumentId(ID)
+.. method:: DocumentBase.AddSubordinateOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
@@ -558,7 +558,7 @@ DocumentBase
 
 
 
-.. method:: Document.RemoveSubordinateOneSDocumentId(ID)
+.. method:: DocumentBase.RemoveSubordinateOneSDocumentId(ID)
 
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
@@ -569,18 +569,18 @@ DocumentBase
 
 
 
-.. method:: Document.CreateReplySendTask(ReplyType="AcceptDocument")
+.. method:: DocumentBase.CreateReplySendTask(ReplyType="AcceptDocument")
 
   :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
 
   .. deprecated:: 5.27.0
-    Используйте :meth:`Document.CreateReplySendTask2`
+    Используйте :meth:`DocumentBase.CreateReplySendTask2`
 
 
 
-.. method:: Document.SendRevocationRequest([Comment])
+.. method:: DocumentBase.SendRevocationRequest([Comment])
 
   :Comment: ``строка`` комментарий к запросу аннулирования
 
@@ -589,26 +589,26 @@ DocumentBase
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :meth:`Document.CreateReplySendTask2`
+    Используйте :meth:`DocumentBase.CreateReplySendTask2`
 
 
 
-.. method:: Document.AcceptRevocationRequest()
+.. method:: DocumentBase.AcceptRevocationRequest()
 
   Принимает запрос аннулирования
 
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :meth:`Document.CreateReplySendTask2`
+    Используйте :meth:`DocumentBase.CreateReplySendTask2`
 
 
 
-.. method:: Document.RejectRevocationRequest()
+.. method:: DocumentBase.RejectRevocationRequest()
 
   Отказывает в аннулировании
 
   .. versionadded:: 3.0.3
 
   .. deprecated:: 5.27.0
-    Используйте :meth:`Document.CreateReplySendTask2`
+    Используйте :meth:`DocumentBase.CreateReplySendTask2`

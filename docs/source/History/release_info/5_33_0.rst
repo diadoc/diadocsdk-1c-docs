@@ -16,12 +16,14 @@
 * Удалён метод :meth:`Organization.GetExtendedSignerDetails`
 * Удалены поля **IsSeller** и **ForCorrection** объекта :doc:`../../ComObjects/SetExtendedSignerDetailsTask`
 
+* Удалён объект :doc:`../../ComObjects/StructuredAttachment`
+
 * Прекращена работа с Контур.Сертификатами:
 
   * Удалён метод :meth:`Connection.CreateCloudSignTask`
   * Удалён метод :meth:`Connection.GetCloudCertificates`
   * Удалён объект :doc:`../../ComObjects/CloudSignTask`
-  * Удалены контенты документов, добавленные специально для работыс :doc:`../../ComObjects/CloudSignTask`:
+  * Удалены контенты документов, добавленные специально для работы с :doc:`../../ComObjects/CloudSignTask`:
 
     * Удалён объект :doc:`../../ComObjects/NonformalizedProformaContent`
     * Удалён объект :doc:`../../ComObjects/NonformalizedContent`
@@ -31,10 +33,14 @@
 
 * Из TLB удалены все coClass'ы, которые пользователь не мог создать не из компоненты
 * Изменены типы возврата для многих полей и методов. В основном это возврат VARIANT, вместо конкретного интерфейса или примитивного типа
+
 * Отправка документов теперь разбивает отправляемый контент на фреймы по 5 Мб
 * Поле **UseShelf** объекта :doc:`../../ComObjects/PackageSendTask2` устарело и скрыто
-* Удалён объект :doc:`../../ComObjects/StructuredAttachment`
-* Теперь ``AddIn`` и ``COM`` отличаются только идентификаторами интерфейсов
+* Если при добавлении документа на отправку в :doc:`../../ComObjects/PackageSendTask2` указан несуществующий тип докмента, то ошибка будет ``Неверный тип документа``, вместо ``Неверная версия вложения``
+
+* Метод :meth:`DocumentBase.GetDocumentPackage` теперь можно вызвать для документа-черновика
+
+* Объекты в ``Addin`` и ``COM`` используют одни и те же интерфейсы, отличающиеся только идентификаторами (кроме дополнительного интерфейса в ``Addin``, предназначеного для подключения компоненты к 1C). Теперь обе компоненты можно использовать как классический COM-объект
 
 
 
