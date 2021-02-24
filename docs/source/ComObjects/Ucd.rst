@@ -2,7 +2,8 @@ Ucd
 ===
 
 Универсальный корректировочный документ.
-Является производным объектом от :doc:`Document`
+
+Наследует интерфейс :doc:`DocumentBase`
 
 
 .. rubric:: Свойства
@@ -43,55 +44,6 @@ Ucd
 :Corrected:
   **Булево, чтение** - признак, была ли корректировка данного документа
 
-
-.. rubric:: Методы
-
-+-------------------------------------+------------------------+--------------------------+
-| |UCD-GetContent|_                   | |UCD-GetBuyerContent|_ | |UCD-SendReceiptsAsync|_ |
-+-------------------------------------+------------------------+--------------------------+
-| |UCD-GetAmendmentRequestedComment|_ |                        |                          |
-+-------------------------------------+------------------------+--------------------------+
-
-.. |UCD-GetContent| replace:: GetContent()
-.. |UCD-GetBuyerContent| replace:: GetBuyerContent()
-.. |UCD-SendReceiptsAsync| replace:: SendReceiptsAsync()
-.. |UCD-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
-
-
-.. _UCD-GetContent:
-.. method:: Ucd.GetContent()
-
-  Возвращает :doc:`представление контента титула продавца <UcdSellerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UCD-GetBuyerContent:
-.. method:: Ucd.GetBuyerContent()
-
-  Возвращает :doc:`представление контента титула покупателя <UtdBuyerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UCD-SendReceiptsAsync:
-.. method:: Ucd.SendReceiptsAsync()
-
-  Формирует и подписывает документы по регламентному документообороту УКД
-
-
-
-.. _UCD-GetAmendmentRequestedComment:
-.. method:: Ucd.GetAmendmentRequestedComment()
-
-  Возвращает комментарий к уведомлению об уточнении
-
-  .. deprecated:: 5.20.3
-    Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
 
 
 

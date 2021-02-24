@@ -2,7 +2,8 @@ UtdRevision
 ===========
 
 Исправление универсального передаточного документа.
-Является производным объектом от :doc:`Document`
+
+Наследует интерфейс :doc:`DocumentBase`
 
 
 .. rubric:: Свойства объекта
@@ -47,56 +48,6 @@ UtdRevision
 
   .. versionadded:: 5.31.0
 
-  
-
-.. rubric:: Методы
-
-+---------------------------------------------+--------------------------------+----------------------------------+
-| |UtdRevision-GetContent|_                   | |UtdRevision-GetBuyerContent|_ | |UtdRevision-SendReceiptsAsync|_ |
-+---------------------------------------------+--------------------------------+----------------------------------+
-| |UtdRevision-GetAmendmentRequestedComment|_ |                                |                                  |
-+---------------------------------------------+--------------------------------+----------------------------------+
-
-.. |UtdRevision-GetContent| replace:: GetContent()
-.. |UtdRevision-GetBuyerContent| replace:: GetBuyerContent()
-.. |UtdRevision-SendReceiptsAsync| replace:: SendReceiptsAsync()
-.. |UtdRevision-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
-
-
-.. _UtdRevision-GetContent:
-.. method:: UtdRevision.GetContent()
-
-  Возвращает :doc:`представление контента титула продавца <UtdSellerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UtdRevision-GetBuyerContent:
-.. method:: UtdRevision.GetBuyerContent()
-
-  Возвращает :doc:`представление контента титула покупателя <UtdBuyerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UtdRevision-SendReceiptsAsync:
-.. method:: UtdRevision.SendReceiptsAsync()
-
-  Формирует и подписывает документы по регламентному документообороту УКД
-
-
-
-.. _UtdRevision-GetAmendmentRequestedComment:
-.. method:: UtdRevision.GetAmendmentRequestedComment()
-
-  Возвращает комментарий к уведомлению об уточнении
-
-  .. deprecated:: 5.20.3
-    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
 
 
 .. rubric:: Дополнительная информация

@@ -48,6 +48,7 @@
   Department <Department>
   DiadocAPI <DiadocAPI>
   Document <Document>
+  DocumentBase <DocumentBase>
   DocumentEvent <DocumentEvent>
   DocumentFunction <DocumentFunction>
   DocumentMetadataItem <DocumentMetadataItem>

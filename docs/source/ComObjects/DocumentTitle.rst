@@ -21,6 +21,11 @@ DocumentTitle
 :EncryptedMetadataItems:
   :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentMetadataItem` **, чтение** - описания метаданных для отправки зашифрованного документа
 
+:Type:
+  **Строка, чтение** - название титула для задания или получения параметров подписанта для титула через :doc:`SetExtendedSignerDetailsTask` и метод :meth:`Organization.GetExtendedSignerDetails2`
+
+  .. versionadded:: 5.33.0
+
 
 .. rubric:: Дополнительная информация
 

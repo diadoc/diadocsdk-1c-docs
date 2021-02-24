@@ -21,16 +21,17 @@ Connection
 
 .. rubric:: Методы
 
-+-----------------------------------+-----------------------------------+------------------------------------+
-| |Connection-GetOrganizationList|_ | |Connection-GetOrganizationById|_ | |Connection-GetCloudCertificates|_ |
-+-----------------------------------+-----------------------------------+------------------------------------+
-| |Connection-CreateCloudSignTask|_ | |Connection-GetMyUser|_           |                                    |
-+-----------------------------------+-----------------------------------+------------------------------------+
++-----------------------------------+
+| |Connection-GetOrganizationList|_ |
++-----------------------------------+
+| |Connection-GetOrganizationById|_ |
++-----------------------------------+
+| |Connection-GetMyUser|_           |
++-----------------------------------+
+
 
 .. |Connection-GetOrganizationList| replace:: GetOrganizationList()
 .. |Connection-GetOrganizationById| replace:: GetOrganizationById()
-.. |Connection-CreateCloudSignTask| replace:: CreateCloudSignTask()
-.. |Connection-GetCloudCertificates| replace:: GetCloudCertificates()
 .. |Connection-GetMyUser| replace:: GetMyUser()
 
 
@@ -50,25 +51,6 @@ Connection
 
 
 
-.. _Connection-CreateCloudSignTask:
-.. method:: Connection.CreateCloudSignTask(Thumbprint)
-
-  :Thumbprint: ``строка`` отпечаток Контур.Сертификата
-
-  Возвращает :doc:`объект <CloudSignTask>`, с помощью которого можно подписать документы Контур.Сертификатом
-
-  .. versionadded:: 5.2.0
-
-
-
-.. _Connection-GetCloudCertificates:
-.. method:: Connection.GetCloudCertificates()
-
-  Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
-
-  .. versionadded:: 5.2.0
-
-
 .. _Connection-GetMyUser:
 .. method:: Connection.GetMyUser()
 
@@ -79,3 +61,28 @@ Connection
 
 
 .. seealso:: :doc:`../HowTo/HowTo_auth`
+
+
+.. rubric:: Устаревшие методы
+
+
+.. method:: Connection.CreateCloudSignTask(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток Контур.Сертификата
+
+  Возвращает :doc:`объект <CloudSignTask>`, с помощью которого можно подписать документы Контур.Сертификатом
+
+  .. versionadded:: 5.2.0
+
+  .. versionchanged:: 5.33.0
+    Метод удалён
+
+
+.. method:: Connection.GetCloudCertificates()
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
+
+  .. versionadded:: 5.2.0
+
+  .. versionchanged:: 5.33.0
+    Метод удалён

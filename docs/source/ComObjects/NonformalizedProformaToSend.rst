@@ -2,7 +2,8 @@ NonformalizedProformaToSend
 ===========================
 
 Документ на отправку *Счет на оплату*.
-Является производным объектом от :doc:`DocumentToSend`
+
+Наследует интерфейс :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 
@@ -13,12 +14,6 @@ NonformalizedProformaToSend
 
 :Type:
   **Строка, чтение** - тип документа. Константа ``NonformalizedProforma``
-
-:Comment:
-  **Строка, чтение/запись** - комментарий к документу
-
-:CustomDocumentId:
-  **Строка, чтение/запись** - внешний идентификатор документа
 
 :FileName:
   **Строка, чтение/запись** - имя файла вложения
@@ -37,3 +32,6 @@ NonformalizedProformaToSend
 
 :Grounds:
   **Строка, чтение/запись** - основание документа
+
+:Content:
+  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - представление контента. Всегда пустое
