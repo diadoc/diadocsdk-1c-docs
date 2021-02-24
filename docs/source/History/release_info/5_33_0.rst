@@ -15,16 +15,20 @@
 
 * Удалён метод :meth:`Organization.GetExtendedSignerDetails`
 * Удалены поля **IsSeller** и **ForCorrection** объекта :doc:`../../ComObjects/SetExtendedSignerDetailsTask`
+
 * Прекращена работа с Контур.Сертификатами:
+
   * Удалён метод :meth:`Connection.CreateCloudSignTask`
   * Удалён метод :meth:`Connection.GetCloudCertificates`
-  * Удалён объект :doc:`CloudSignTask`
+  * Удалён объект :doc:`../../ComObjects/CloudSignTask`
   * Удалены контенты документов, добавленные специально для работыс :doc:`../../ComObjects/CloudSignTask`:
+
     * Удалён объект :doc:`../../ComObjects/NonformalizedProformaContent`
     * Удалён объект :doc:`../../ComObjects/NonformalizedContent`
     * Удалён объект :doc:`../../ComObjects/ContractContent`
     * Удалён объект :doc:`../../ComObjects/SentPackageContent`
     * Удалён объект :doc:`../../ComObjects/OutDocumentSignTaskContent`
+
 * Из TLB удалены все coClass'ы, которые пользователь не мог создать не из компоненты
 * Изменены типы возврата для многих полей и методов. В основном это возврат VARIANT, вместо конкретного интерфейса или примитивного типа
 * Отправка документов теперь разбивает отправляемый контент на фреймы по 5 Мб
@@ -39,4 +43,4 @@
   Например, в ``<xs:sequence><xs:choice>...</xs:choice></xs:sequence>``
 * При обращении из 1С 7.7 к COM-объекту, полученному как результат вызова метода, или находящемуся внутри другого COM-объекта как поле, могла возникать ошибка ``Плохой тип переменной``, если объект отсутствовал.
   Исправлен возврщаемый из компоненты тип
-* Не всегда можно было сгенерировать обёртки для Delphi
+* Не всегда можно было сгенерировать обёртки coClass'ов для Delphi

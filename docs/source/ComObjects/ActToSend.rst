@@ -2,23 +2,19 @@
 =========
 
 Неформализованный *Акт о выполнении работ* на отправку.
-Является производным объектом от :doc:`DocumentToSend`
+
+Наследует интерфейс :doc:`DocumentToSend`
 
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
   Используйте :doc:`CustomDocumentToSend`
 
+
 .. rubric:: Свойства
 
 :Type:
   **Строка, чтение** - тип документа. Константа ``AcceptanceCertificate``
-
-:Comment:
-  **Строка, чтение/запись** - комментарий к документу
-
-:CustomDocumentId:
-  **Строка, чтение/запись** - внешний идентификатор документа
 
 :FileName:
   **Строка, чтение/запись** - имя файла вложения
@@ -38,5 +34,5 @@
 :Grounds:
   **Строка, чтение/запись** - основание документа
 
-:NeedRecipientSignature:
-  **Булево, чтение/запись** - флаг, обозначающий запрос подписи получателя под отправляемым документом
+:Content:
+  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - представление контента. Всегда пустое

@@ -21,16 +21,17 @@ Connection
 
 .. rubric:: Методы
 
-+-----------------------------------+-----------------------------------+------------------------------------+
-| |Connection-GetOrganizationList|_ | |Connection-GetOrganizationById|_ | |Connection-GetCloudCertificates|_ |
-+-----------------------------------+-----------------------------------+------------------------------------+
-| |Connection-CreateCloudSignTask|_ | |Connection-GetMyUser|_           |                                    |
-+-----------------------------------+-----------------------------------+------------------------------------+
++-----------------------------------+
+| |Connection-GetOrganizationList|_ |
++-----------------------------------+
+| |Connection-GetOrganizationById|_ |
++-----------------------------------+
+| |Connection-GetMyUser|_           |
++-----------------------------------+
+
 
 .. |Connection-GetOrganizationList| replace:: GetOrganizationList()
 .. |Connection-GetOrganizationById| replace:: GetOrganizationById()
-.. |Connection-CreateCloudSignTask| replace:: CreateCloudSignTask()
-.. |Connection-GetCloudCertificates| replace:: GetCloudCertificates()
 .. |Connection-GetMyUser| replace:: GetMyUser()
 
 
@@ -50,7 +51,21 @@ Connection
 
 
 
-.. _Connection-CreateCloudSignTask:
+.. _Connection-GetMyUser:
+.. method:: Connection.GetMyUser()
+
+  Возвращает :doc:`информацию <User>` об авторизованном пользователе
+
+  .. versionadded:: 5.6.0
+
+
+
+.. seealso:: :doc:`../HowTo/HowTo_auth`
+
+
+.. rubric:: Устаревшие методы
+
+
 .. method:: Connection.CreateCloudSignTask(Thumbprint)
 
   :Thumbprint: ``строка`` отпечаток Контур.Сертификата
@@ -63,8 +78,6 @@ Connection
     Метод удалён
 
 
-
-.. _Connection-GetCloudCertificates:
 .. method:: Connection.GetCloudCertificates()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
@@ -73,15 +86,3 @@ Connection
 
   .. versionchanged:: 5.33.0
     Метод удалён
-
-
-.. _Connection-GetMyUser:
-.. method:: Connection.GetMyUser()
-
-  Возвращает :doc:`информацию <User>` об авторизованном пользователе
-
-  .. versionadded:: 5.6.0
-
-
-
-.. seealso:: :doc:`../HowTo/HowTo_auth`

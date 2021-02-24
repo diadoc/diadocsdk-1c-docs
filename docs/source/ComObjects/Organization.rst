@@ -6,11 +6,6 @@ Organization
 
 .. rubric:: Свойства
 
-:Guid:
-  **Строка, чтение** - идентификатор ящика организации в Диадоке
-
-  .. versionadded:: 5.31.0
-
 :Name:
   **Строка, чтение** - наименование организации
 
@@ -23,20 +18,16 @@ Organization
 :Departments:
   :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - подразделения, родительским подразделением которых является "Головное" подразделение
 
-:AuthenticateType:
-  **Строка, чтение** - тип авторизации
-
-:Login:
-  **Строка, чтение** - логин, по которому произошла авторизация к данной организации
-
-:Certificate:
-  :doc:`PersonalCertificate` **, чтение** - сертификат, по которому произошла авторизация в данной организации
-
 :FnsParticipantId:
   **Строка, чтение** - идентификатор организации-участника документооборота
 
 :FnsRegistrationDate:
   **Дата, чтение** - дата подачи заявляения в ФНС на регистрацию данной организации в качестве участника документооборота ЭСФ
+
+:Guid:
+  **Строка, чтение** - идентификатор ящика организации в Диадоке
+
+  .. versionadded:: 5.31.0
 
 :IsTest:
   **Булево, чтение** - организация работает в тестовом режиме
@@ -48,6 +39,15 @@ Organization
   **Булево, чтение** - организация ликвидирована
 
   .. versionadded:: 5.31.0
+
+:AuthenticateType:
+  **Строка, чтение** - тип авторизации
+
+:Login:
+  **Строка, чтение** - логин, по которому произошла авторизация к данной организации
+
+:Certificate:
+  :doc:`PersonalCertificate` **, чтение** - сертификат, по которому произошла авторизация в данной организации
 
 
 
@@ -207,7 +207,7 @@ Organization
 .. _Organization-RecycleDraft:
 .. method:: Organization.RecycleDraft(MessageId)
 
-  :DrafMessageIdtId: ``строка`` идентификатор сообщения черновика
+  :MessageId: ``строка`` идентификатор сообщения черновика
 
   Метод удаляет черновик. Восстановить черновик невозможно.
   *MessageId* - первая половина из *DocumentId* черновика
@@ -427,6 +427,55 @@ Organization
 .. rubric:: Устаревшие методы
 
 
+.. _Organization-CreateSendTask:
+.. method:: Organization.CreateSendTask(FormalDocumentType)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
+
+  .. deprecated:: 5.5.0
+    Используйте :meth:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreateSendTaskFromFile:
+.. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
+
+  .. deprecated:: 5.5.0
+    Используйте :meth:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreateSendTaskFromFileRaw:
+.. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
+
+  .. deprecated:: 5.5.0
+    Используйте :meth:`Organization.CreatePackageSendTask2`
+
+
+
+.. _Organization-CreatePackageSendTask:
+.. method:: Organization.CreatePackageSendTask()
+
+  Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
+
+  .. versionadded:: 5.5.0
+
+  .. deprecated:: 5.27.0
+    Используйте :meth:`Organization.CreatePackageSendTask2`
+
+
 .. _Organization-SendDraftAsync:
 .. method:: Organization.SendDraftAsync(MessageId)
 
@@ -537,52 +586,3 @@ Organization
 
   .. versionchanged:: 5.33.0
     Метод удалён
-
-
-.. _Organization-CreateSendTask:
-.. method:: Organization.CreateSendTask(FormalDocumentType)
-
-  :DocumentType: ``строка`` тип документа на отправку.:doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
-.. _Organization-CreateSendTaskFromFile:
-.. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
-
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
-  :FilePath: ``строка`` путь до файла контента документа
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
-.. _Organization-CreateSendTaskFromFileRaw:
-.. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
-
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <./Enums/DocumentToSend>`
-  :FilePath: ``строка`` путь до файла контента документа
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
-.. _Organization-CreatePackageSendTask:
-.. method:: Organization.CreatePackageSendTask()
-
-  Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
-
-  .. versionadded:: 5.5.0
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
