@@ -2,7 +2,8 @@ Utd
 ===
 
 Универсальный передаточный документ.
-Является производным объектом от :doc:`Document`
+
+Наследует интерфейс :doc:`DocumentBase`
 
 
 .. rubric:: Свойства
@@ -36,56 +37,6 @@ Utd
 
 :Corrected:
   **Булево, чтение** - признак, была ли корректировка данного документа
-
-
-.. rubric:: Методы
-
-+-------------------------------------+------------------------+--------------------------+
-| |UTD-GetContent|_                   | |UTD-GetBuyerContent|_ | |UTD-SendReceiptsAsync|_ |
-+-------------------------------------+------------------------+--------------------------+
-| |UTD-GetAmendmentRequestedComment|_ |                        |                          |
-+-------------------------------------+------------------------+--------------------------+
-
-.. |UTD-GetContent| replace:: GetContent()
-.. |UTD-GetBuyerContent| replace:: GetBuyerContent()
-.. |UTD-SendReceiptsAsync| replace:: SendReceiptsAsync()
-.. |UTD-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
-
-
-.. _UTD-GetContent:
-.. method:: Utd.GetContent()
-
-  Возвращает :doc:`представление контента титула продавца <UtdSellerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UTD-GetBuyerContent:
-.. method:: Utd.GetBuyerContent()
-
-  Возвращает :doc:`представление контента титула покупателя <UtdBuyerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UTD-SendReceiptsAsync:
-.. method:: Utd.SendReceiptsAsync()
-
-  Формирует и подписывает документы по регламентному документообороту УКД
-
-
-
-.. _UTD-GetAmendmentRequestedComment:
-.. method:: Utd.GetAmendmentRequestedComment()
-
-  Возвращает комментарий к уведомлению об уточнении
-
-  .. deprecated:: 5.20.3
-    Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
 
 
 .. rubric:: Дополнительная информация

@@ -427,7 +427,6 @@ Organization
 .. rubric:: Устаревшие методы
 
 
-.. _Organization-CreateSendTask:
 .. method:: Organization.CreateSendTask(FormalDocumentType)
 
   :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
@@ -439,7 +438,6 @@ Organization
 
 
 
-.. _Organization-CreateSendTaskFromFile:
 .. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
 
   :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
@@ -452,7 +450,6 @@ Organization
 
 
 
-.. _Organization-CreateSendTaskFromFileRaw:
 .. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
 
   :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
@@ -465,7 +462,6 @@ Organization
 
 
 
-.. _Organization-CreatePackageSendTask:
 .. method:: Organization.CreatePackageSendTask()
 
   Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
@@ -476,7 +472,6 @@ Organization
     Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
-.. _Organization-SendDraftAsync:
 .. method:: Organization.SendDraftAsync(MessageId)
 
   :MessageId: ``строка`` идентификатор сообщения черновика
@@ -493,7 +488,6 @@ Organization
 
 
 
-.. _Organization-SetAndValidateAddressForCounteragent:
 .. method:: Organization.SetAndValidateAddressForCounteragent(key1S, addressTypeKey, isForeign, zipCode, regionCode, territory, city, locality, street, building, block, apartment)
 
   :key1S: ``строка`` идентификатор адресной информации
@@ -519,8 +513,6 @@ Organization
     Вовзращаемая коллекция всегда пустая. Валидации не происходит
 
 
-
-.. _Organization-GetAddressForCounteragent:
 .. method:: Organization.GetAddressForCounteragent(key1S, AddressTypeKey)
 
   :key1S: ``строка`` идентификатор адресной информации
@@ -532,8 +524,6 @@ Organization
     Используйте :meth:`Organization.GetData`
 
 
-
-.. _Organization-GetSentDocuments:
 .. method:: Organization.GetSentDocuments(OneSId, AsDiadocDocumentId=False)
 
   :OneSId: ``строка`` идентификаторы учётной системы, перечисленные через ``;``
@@ -549,7 +539,6 @@ Organization
     Используйте :meth:`Organization.CreateDataTask`
 
 
-.. _Organization-SetData:
 .. method:: Organization.SetData(Key, Value)
 
   :Key: ``строка`` уникальный ключ в хранилище
@@ -561,7 +550,6 @@ Organization
     Используйте :meth:`Organization.CreateDataTask`
 
 
-.. _Organization-GetData:
 .. method:: Organization.GetData(Key)
 
   :Key: ``строка`` уникальный ключ в хранилище
@@ -572,7 +560,6 @@ Organization
     Используйте :meth:`Organization.CreateDataTask`
 
 
-.. _Organization-GetExtendedSignerDetails:
 .. method:: Organization.GetExtendedSignerDetails(Thumbprint, IsSeller=false, forCorrection=false)
 
   :Thumbprint: ``строка`` отпечаток сертификата
