@@ -59,6 +59,9 @@ Connection
 
   .. versionadded:: 5.2.0
 
+  .. versionchanged:: 5.33.0
+    Метод удалён
+
 
 
 .. _Connection-GetCloudCertificates:
@@ -67,6 +70,9 @@ Connection
   Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
 
   .. versionadded:: 5.2.0
+
+  .. versionchanged:: 5.33.0
+    Метод удалён
 
 
 .. _Connection-GetMyUser:

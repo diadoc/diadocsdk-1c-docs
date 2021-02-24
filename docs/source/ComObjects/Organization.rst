@@ -439,6 +439,9 @@ Organization
   .. deprecated:: 5.18.0
     Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.CreateSendDraftTask`
 
+  .. versionchanged:: 5.33.0
+    Метод ничего не делает
+
 
 
 .. _Organization-SetAndValidateAddressForCounteragent:
