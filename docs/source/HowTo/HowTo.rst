@@ -5,6 +5,7 @@
    :name: Examples
    :maxdepth: 1
 
+   Как работать с DLL <HowTo_dll>
    Как авторизоваться в системе Диадок <HowTo_auth>
    Как установить партнерские отношения <HowTo_trust_counteragent>
    Как работать с документами <HowTo_document>
