@@ -1,0 +1,14 @@
+5.33.2
+======
+
+
+.. feed-entry::
+  :date: 2021-03-)1
+
+
+.. rubric:: Исправлено
+
+* ``APPCRASH`` при вызове метода :meth:`DocumentBase.CreateReplySendTask`
+* ``APPCRASH`` при добавлении :doc:`документа на отправку <../../ComObjects/DocumentToSend>` в :doc:`../../ComObjects/PackageSendTask` и :doc:`../../ComObjects/SendTask`
+* Поле **NeedRecipientSignature** объекта :doc:`../../ComObjects/DocumentToSend` влияло на запрос извещения о получении документа вместо запроса ответной подписи
+* При подписании :doc:`документов <../../ComObjects/DocumentBase>` с помощью :doc:`OutDocumentSignTask` возникала ошибка ``MessagePathToPost.Signatures[0].ParentEntityid is required fieled``
