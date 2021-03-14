@@ -242,7 +242,7 @@ DocumentBase
 .. _DocumentBase-GetRecipientSignature:
 .. method:: DocumentBase.GetRecipientSignature()
 
-  Возвращает :doc:`представление подписи <Signature>` титула получателя
+  Возвращает :doc:`представление подписи <Signature>` получателя документа
 
 
 .. _DocumentBase-GetDynamicContent:
