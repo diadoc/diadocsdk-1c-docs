@@ -440,7 +440,7 @@ Organization
 
 .. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента документа
 
   Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
