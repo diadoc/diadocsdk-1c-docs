@@ -1,0 +1,19 @@
+5.33.4
+======
+
+
+.. feed-entry::
+  :date: 2021-03-16
+
+
+.. rubric:: Изменено
+
+* Удалён объект :doc:`../../ComObjects/SendTask`
+
+
+
+.. rubric:: Исправлено
+
+* При вызове :meth:`ReplySendTask2.Send` возникала ошибка ``Could not parse editingSettingId query param``
+* Инициализация компоненты в 1С 7.7 не позволяла завершить процесс 1С
+* В редких случаях в :doc:`../../ComObjects/AsyncResult` отсутствовал результат после  завершения асинхронной задачи

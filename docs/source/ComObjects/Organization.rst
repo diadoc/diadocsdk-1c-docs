@@ -427,41 +427,6 @@ Organization
 .. rubric:: Устаревшие методы
 
 
-.. method:: Organization.CreateSendTask(FormalDocumentType)
-
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
-.. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
-
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
-  :FilePath: ``строка`` путь до файла контента документа
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет представлен в виде объектой модели, и при отправке, возможно, пропатчен недостающими данными
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
-.. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
-
-  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
-  :FilePath: ``строка`` путь до файла контента документа
-
-  Создаёт :doc:`задание на отправку отдельного документа <SendTask>`. Контент файл будет отправлен без изменений. Попытки разбора в объектную модель не будет
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
-
-
-
 .. method:: Organization.CreatePackageSendTask()
 
   Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
