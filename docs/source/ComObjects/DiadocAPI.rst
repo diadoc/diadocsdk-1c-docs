@@ -79,7 +79,7 @@ DiadocAPI
 .. _DiadocAPI-GetPersonalCertificates:
 .. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
 
-  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>_`, где будет осуществлен поиск. true - хранилище пользователя(по-умолчанию), false - хранилище компьютера.
+  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск. true - хранилище пользователя(по-умолчанию), false - хранилище компьютера.
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в подхранилище "Личное", хранилища определяемого флагом *UserStore*.
 
