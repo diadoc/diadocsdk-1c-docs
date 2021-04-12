@@ -12,7 +12,7 @@ PackageSendTask
 .. rubric:: Свойства
 
 :Content:
-  :doc:`SentPackageContent` **, чтение** - содержание пакета документов
+  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - содержание пакета документов
 
 :OperationId:
   **Строка, чтение/запись** - уникальный идентификатор операции
@@ -47,9 +47,6 @@ PackageSendTask
 :ProxyDepartmentId:
   **Строка, чтение/запись** -  идентификатор подразделения, в ящике промежуточного получателя
 
-:UseShelf:
-  **Булево, чтение/запись** - отправлять документы частями, а не за один запрос. Рекомендуется использовать для больших документов
-
 :SaveContentPath:
   **Строка, чтение/запись** - путь к папке, для сохранения сгенерированного содержимого
 
@@ -74,7 +71,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocument:
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
@@ -83,7 +80,7 @@ PackageSendTask
 .. _PackageSendTask-AddDocumentFromFile:
 .. method:: PackageSendTask.AddDocumentFromFile(FormalizedDocumentType, FilePath)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.

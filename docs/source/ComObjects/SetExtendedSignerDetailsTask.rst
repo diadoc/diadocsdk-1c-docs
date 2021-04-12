@@ -5,23 +5,14 @@ SetExtendedSignerDetailsTask
 
 .. rubric:: Свойства
 
-:IsSeller:
-  **Булево, чтение/запись** - признак того, является ли подписант подписантом титула продавца или подписантом титула покупателя
-
-  .. deprecated:: 5.19.0
-    Используйте *DocumentTitleType*
-
-:ForCorrection:
-  **Булево, чтение/запись** - признак того, является ли подписант подписантом корректировки
-
-  .. deprecated:: 5.19.0
-    Используйте *DocumentTitleType*
 
 :ExtendedSignerDetailsToPost:
   :doc:`ExtendedSignerDetailsToPost` **, чтение** - данные подписанта
 
 :DocumentTitleType:
-  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/SignerTitleType>`
+  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/DocumentTitleType>`.
+  Получить значение для *DocumentTitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
+  Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
 
 
 .. rubric:: Методы

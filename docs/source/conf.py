@@ -16,7 +16,7 @@ sys.path.append(os.path.abspath('_extensions'))
 source_suffix = '.rst'
 master_doc = 'index'
 project = u'AddIn Diadoc API'
-copyright = u'2015, Diadoc'
+copyright = u'2021, Diadoc'
 author = u'Diadoc'
 version = '1'
 release = '1'

@@ -131,3 +131,13 @@
   release_info/5_31_1
   release_info/5_31_2
   release_info/5_32_0
+  release_info/5_32_1
+  release_info/5_32_2
+  release_info/5_32_3
+  release_info/5_32_4
+  release_info/5_33_0
+  release_info/5_33_1
+  release_info/5_33_2
+  release_info/5_33_3
+  release_info/5_33_4
+  release_info/5_33_5

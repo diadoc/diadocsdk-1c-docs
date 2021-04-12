@@ -2,7 +2,8 @@ InvoiceCorrection
 =================
 
 Документ *Корректировочный счет-фактура*.
-Является производным объектом от :doc:`Document`
+
+Наследует интерфейс :doc:`DocumentBase`
 
 
 
@@ -49,41 +50,3 @@ InvoiceCorrection
 
 :Status:
   **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/InvoiceStatus>`
-
-
-.. rubric:: Методы
-
-+---------------------------------+---------------------------------------------------+----------------------------------------+
-| |InvoiceCorrection-GetContent|_ | |InvoiceCorrection-GetAmendmentRequestedComment|_ | |InvoiceCorrection-SendReceiptsAsync|_ |
-+---------------------------------+---------------------------------------------------+----------------------------------------+
-
-.. |InvoiceCorrection-GetContent| replace:: GetContent()
-.. |InvoiceCorrection-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
-.. |InvoiceCorrection-SendReceiptsAsync| replace:: SendReceiptsAsync()
-
-
-
-.. _InvoiceCorrection-GetContent:
-.. method:: InvoiceCorrection.GetContent()
-
-  Возвращает :doc:`представление контента <InvoiceCorrectionContent>` корректировочного счета-фактуры
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _InvoiceCorrection-GetAmendmentRequestedComment:
-.. method:: InvoiceCorrection.GetAmendmentRequestedComment()
-
-  Возвращает комментарий к уведомлению об уточнении
-
-  .. deprecated:: 5.20.3
-    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
-
-
-
-.. _InvoiceCorrection-SendReceiptsAsync:
-.. method:: InvoiceCorrection.SendReceiptsAsync()
-
-  Асинхронно формирует и подписывает документы по :doc:`регламентному документообороту счетов-фактур <../HowTo/HowTo_invoice_docflow>`. Возвращает :doc:`AsyncResult` с булевым типом результата

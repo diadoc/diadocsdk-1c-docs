@@ -13,9 +13,11 @@
   DocflowSide <DocflowSide>
   DocumentDirection <DocumentDirection>
   DocumentsAccessLevel <DocumentsAccessLevel>
+  DocumentTitleType <DocumentTitleType>
   DocumentToSend <DocumentToSend>
   EventType <EventType>
-  FormalizedDocumentToSend <FormalizedDocumentToSend>
+  ExternalStatusType <ExternalStatusType>
+  FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
   InvoiceStatus <InvoiceStatus>
   ItemMark <ItemMark>
   LockMode <LockMode>
@@ -23,6 +25,7 @@
   NonfomalizedDocumentStatus <NonfomalizedDocumentStatus>
   NonformalizedContentType <NonformalizedContentType>
   OperationType <OperationType>
+  OrganizationFeatures <OrganizationFeatures>
   OrganizationType <OrganizationType>
   ProxyMode <ProxyMode>
   ProxySignatureStatus <ProxySignatureStatus>
@@ -39,7 +42,7 @@
   SenderSignatureStatus <SenderSignatureStatus>
   SignerPowers <SignerPowers>
   SignerStatus <SignerStatus>
-  SignerTitleType <SignerTitleType>
+
   SignerType <SignerType>
   TaxRate <TaxRate>
   TemplateRefusalType <TemplateRefusalType>

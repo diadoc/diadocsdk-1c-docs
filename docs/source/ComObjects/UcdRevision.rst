@@ -2,7 +2,8 @@ UcdRevision
 ===========
 
 Исправление универсального корректировочного документа.
-Является производным объектом от :doc:`Document`
+
+Наследует интерфейс :doc:`DocumentBase`
 
 
 .. rubric:: Свойства
@@ -72,55 +73,6 @@ UcdRevision
   **Строка, чтение** - номер исходного УКД
 
   .. versionadded:: 5.31.0
-
-.. rubric:: Методы
-
-+---------------------------------------------+--------------------------------+----------------------------------+
-| |UcdRevision-GetContent|_                   | |UcdRevision-GetBuyerContent|_ | |UcdRevision-SendReceiptsAsync|_ |
-+---------------------------------------------+--------------------------------+----------------------------------+
-| |UcdRevision-GetAmendmentRequestedComment|_ |                                |                                  |
-+---------------------------------------------+--------------------------------+----------------------------------+
-
-.. |UcdRevision-GetContent| replace:: GetContent()
-.. |UcdRevision-GetBuyerContent| replace:: GetBuyerContent()
-.. |UcdRevision-SendReceiptsAsync| replace:: SendReceiptsAsync()
-.. |UcdRevision-GetAmendmentRequestedComment| replace:: GetAmendmentRequestedComment()
-
-
-.. _UcdRevision-GetContent:
-.. method:: UcdRevision.GetContent()
-
-  Возвращает :doc:`представление контента титула продавца <UcdSellerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UcdRevision-GetBuyerContent:
-.. method:: UcdRevision.GetBuyerContent()
-
-  Возвращает :doc:`представление контента титула покупателя <UtdBuyerContent>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Document.GetDynamicContent`
-
-
-
-.. _UcdRevision-SendReceiptsAsync:
-.. method:: UcdRevision.SendReceiptsAsync()
-
-  Формирует и подписывает документы по регламентному документообороту ИУКД
-
-
-
-.. _UcdRevision-GetAmendmentRequestedComment:
-.. method:: UcdRevision.GetAmendmentRequestedComment()
-
-  Возвращает комментарий к уведомлению об уточнении
-
-  .. deprecated:: 5.20.3
-    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``AmendmentComment``
 
 
 
