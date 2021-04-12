@@ -1,0 +1,21 @@
+5.33.5
+======
+
+
+.. feed-entry::
+  :date: 2021-04-12
+
+
+.. rubric:: Добавлено
+
+* Добавлена возможность отправлять многоразовые шаблоны: 
+    * В объект :doc:`../../ComObjects/TemplateSendTask` добавлено поле **IsReusable**;
+    * В объект :doc:`../../ComObjects/Template` добавлено поле **IsReusable**
+
+
+.. rubric:: Исправлено
+
+* объекты коллекции **Resolutions** объекта :doc:`../../ComObjects/Document` возвращались в неопределенном порядке. Теперь остортированы по отметкам времени;
+* после выполнения :meth:`DocumentBase.SendReceiptsAsync` не обновлялиь частичные статусы документа **RecipientReceiptMetadata**, **ConfirmationMetadata**, **AmendmentRequestMetadata**, **LastExternalStatuses**;
+* :meth:`DocumentBase.SendReceiptsAsync` не обрабатывал запросы корректировки;
+* при вызове метода :meth:`PackageSendTask2.AddDocumentFromFile` объекта :doc:`../../ComObjects/PackageSendTask2` и метода :meth:`PackageSendTask.AddDocumentFromFile` объекта :doc:`../../ComObjects/PackageSendTask` с запросом типа Document, возвращался объект :doc:`../../ComObjects/CustomDocumentToSend` в некорректным состоянии, что при обращении к полю **Content** приводило к appcrash.
