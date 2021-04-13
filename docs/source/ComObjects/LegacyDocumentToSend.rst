@@ -6,7 +6,7 @@ LegacyDocumentToSend
 Наследует интерфейс :doc:`DocumentToSend`
 
 .. deprecated:: 5.33.6
-    Не рекомендуется использовать
+    Используйте инфраструктуру :doc:`PackageSendTask2`
 
 .. warning::
     Не поддерживает новые типы документов
@@ -37,10 +37,8 @@ LegacyDocumentToSend
   **Строка, чтение** - тип документа. Константа ``Document``
 
 :Content:
-  :doc:`DynamicContent` **, чтение** - представление содержимого документа.
+  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ **, чтение** - представление содержимого документа.
   Если контент документа был загружен с диска, то поле будет пустым.
-  Для документов, для которых не существует упрощённого представления контента (см. :doc:`../HowTo/HowTo_post_document`), поле будет пустым
-
 
 
 
@@ -49,11 +47,8 @@ LegacyDocumentToSend
 +--------------------------------------+
 | |CustomDocumentToSend-AddMetadata|_  |
 +--------------------------------------+
-| |CustomDocumentToSend-SaveUserData|_ |
-+--------------------------------------+
 
 .. |CustomDocumentToSend-AddMetadata| replace:: AddMetadata()
-.. |CustomDocumentToSend-SaveUserData| replace:: SaveUserData()
 
 .. _CustomDocumentToSend-AddMetadata:
 .. method:: CustomDocumentToSend.AddMetadata()
