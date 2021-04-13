@@ -141,3 +141,4 @@
   release_info/5_33_3
   release_info/5_33_4
   release_info/5_33_5
+  release_info/5_33_6

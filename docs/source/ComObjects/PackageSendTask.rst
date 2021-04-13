@@ -71,33 +71,33 @@ PackageSendTask
 .. _PackageSendTask-AddDocument:
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
-
+  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
 
 .. _PackageSendTask-AddDocumentFromFile:
 .. method:: PackageSendTask.AddDocumentFromFile(FormalizedDocumentType, FilePath)
 
-  :FormalizedDocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/FormalizedDocumentTypeToSend>`
+  :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
   Контент будет разобран и получен в виде объектной модели, если это возможно. При отправке он будет перегенерирован
 
-
+  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
 
 .. _PackageSendTask-AddDocumentFromFileRaw:
 .. method:: PackageSendTask.AddDocumentFromFileRaw(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа. :doc:`Возможные значения <./Enums/DocumentToSend>`
+  :DocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
   Разбора контента и представления в виде объектной модели не происходит. При отправке перегенерации контента не произойдёт
 
-
+  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
 
 .. _PackageSendTask-Send:
 .. method:: PackageSendTask.Send()

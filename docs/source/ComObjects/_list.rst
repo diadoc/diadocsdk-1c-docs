@@ -95,6 +95,7 @@
   InvoiceTotals <InvoiceTotals>
   InvoiceTotalsDiff <InvoiceTotalsDiff>
   KeyValue <KeyValue>
+  LegacyDocumentToSend <LegacyDocumentToSend>
   MetadataItem <MetadataItem>
   MethodDesc <MethodDesc>
   Nonformalized <Nonformalized>

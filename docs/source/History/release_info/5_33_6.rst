@@ -1,0 +1,11 @@
+5.33.6
+======
+
+
+.. feed-entry::
+  :date: 2021-04-13
+
+.. rubric:: Исправлено
+
+* :meth:`PackageSendTask.AddDocument`, :meth:`PackageSendTask.AddDocumentFromFile` и :meth:`PackageSendTask.AddDocumentFromFileRaw` снова могут принимать версию документа в качестве типа;
+* appcrash при вызове :meth:`TemplateSendTask.AddTemplate`
