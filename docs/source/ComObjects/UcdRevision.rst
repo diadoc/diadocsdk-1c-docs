@@ -35,6 +35,9 @@ UcdRevision
 :Status:
   **Строка, чтение** - текущий статус документа в Диадоке. :doc:`Возможные значения <./Enums/UTDStatus>`
 
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**
+
 :OriginalDocumentDate:
   **Дата, чтение** - дата исходного УПД
 

@@ -37,3 +37,6 @@ InvoiceRevision
 
 :Status:
   **Строка, чтение** - текущий статус документа в Диадоке. :doc:`Возможные значения <./Enums/InvoiceStatus>`
+
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**
