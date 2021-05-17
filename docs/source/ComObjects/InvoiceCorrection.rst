@@ -50,3 +50,6 @@ InvoiceCorrection
 
 :Status:
   **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/InvoiceStatus>`
+
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**

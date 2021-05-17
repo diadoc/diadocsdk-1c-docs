@@ -47,6 +47,7 @@
   DataTask <DataTask>
   Department <Department>
   DiadocAPI <DiadocAPI>
+  DocflowStatus <DocflowStatus>
   Document <Document>
   DocumentBase <DocumentBase>
   DocumentEvent <DocumentEvent>
@@ -146,6 +147,7 @@
   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>
   Signature <Signature>
   Signer <Signer>
+  StatusModel <StatusModel>
   StructedAdditionalInfo <StructedAdditionalInfo>
   StructuredAttachment <StructuredAttachment>
   Template <Template>

@@ -11,6 +11,7 @@
   CounteragentStatus <CounteragentStatus>
   Docflow <Docflow>
   DocflowSide <DocflowSide>
+  DocflowStatusSeverity <DocflowStatusSeverity>
   DocumentDirection <DocumentDirection>
   DocumentsAccessLevel <DocumentsAccessLevel>
   DocumentTitleType <DocumentTitleType>

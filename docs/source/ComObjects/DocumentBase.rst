@@ -15,7 +15,6 @@ DocumentBase
 :Version:
   **Строка, чтение** - информация о версии XSD схемы, в соотвествии с которой сформирован документ
 
-
 :Organization:
   :doc:`Organization` **, чтение** - организация, которая отправила исходящий документ, либо получила входящий документ
 
@@ -30,6 +29,11 @@ DocumentBase
 :Counteragent:
   :doc:`BoxInfo` **, чтение** - контрагент документа. Для внутренних документов будет пустым
 
+:ProxyBox:
+  :doc:`BoxInfo` **, чтение** - промежуточный получатель документа
+
+  .. versionadded:: 5.34.0
+
 :FromDepartment:
   :doc:`Department` **, чтение** - подразделение организации, из которого был отправлен документ
 
@@ -39,6 +43,11 @@ DocumentBase
   :doc:`Department` **, чтение** - подразделение организации, в которое был отправлен документ
 
   .. versionadded:: 3.0.8
+
+:ProxyDepartment:
+  :doc:`Department` **, чтение** - подразделение промежуточного получателя
+
+  .. versionadded:: 5.34.0
 
 :Department:
   :doc:`Department` **, чтение** - подразделение организации, к которому привязан документ
@@ -121,8 +130,8 @@ DocumentBase
 :IsRead:
   **Булево, чтение** - флаг, показывающий, что документ был прочитан сотрудником организации
 
-:Status:
-  **Строка, чтение** - Общий статус документа в Диадоке. Возможный набор значений зависит от типа объекта-наследника
+:DocflowStatus:
+  :doc:`DocflowStatus` **, чтение** - статус документа
 
 :SenderSignatureStatus:
   **Строка, чтение** - статус проверки ЭЦП отправителя. :doc:`Возможные значения <./Enums/SenderSignatureStatus>`
@@ -151,15 +160,6 @@ DocumentBase
 :ResolutionStatus:
   :doc:`ResolutionStatus` **, чтение** - текущий статус запрошенного согласования или подписи документа
 
-:ResolutionRequests:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequest` **, чтение** - история запросов резолюций документа: запросов согласований, запросов подписаний, запросов аннулирований
-
-:Resolutions:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Resolution` **, чтение** - история резолюций документа: согласований, подписаний, аннулирований
-
-:ResolutionRequestDenials:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial` **, чтение** - коллекция объектов отказов по резолюциям
-
 :LastExternalStatuses:
   :doc:`коллекция <Collection>` **объектов** :doc:`ExternalStatusLite` **, чтение** - набор последних статусов внешнего документооборота
 
@@ -178,23 +178,29 @@ DocumentBase
 
 .. rubric:: Методы
 
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetSenderSignature|_         | |DocumentBase-SaveContent|_            | |DocumentBase-GetAnyComment|_             | |DocumentBase-CreateReplySendTask2|_        |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetRecipientSignature|_      | |DocumentBase-SaveBuyerContent|_       | |DocumentBase-GetExternalStatuses|_       | |DocumentBase-SendReceiptsAsync|_           |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_        | |DocumentBase-Approve|_                     |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-Delete|_                    | |DocumentBase-Disapprove|_                  |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Move|_                      | |DocumentBase-CreateOutDocumentSignTask|_   |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-MarkAsRead|_                | |DocumentBase-CreateResolutionRequestTask|_ |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-AssignToResolutionRoute|_   | |DocumentBase-CreateCustomDataPatchTask|_   |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_ |                                             |
-+--------------------------------------------+----------------------------------------+-------------------------------------------+---------------------------------------------+
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetSenderSignature|_         | |DocumentBase-SaveContent|_            | |DocumentBase-GetAnyComment|_               | |DocumentBase-CreateReplySendTask2|_        |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetRecipientSignature|_      | |DocumentBase-SaveBuyerContent|_       | |DocumentBase-GetExternalStatuses|_         | |DocumentBase-SendReceiptsAsync|_           |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_          | |DocumentBase-Approve|_                     |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-Delete|_                      | |DocumentBase-Disapprove|_                  |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Move|_                        | |DocumentBase-CreateOutDocumentSignTask|_   |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-MarkAsRead|_                  | |DocumentBase-CreateResolutionRequestTask|_ |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-AssignToResolutionRoute|_     | |DocumentBase-CreateCustomDataPatchTask|_   |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_   |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutions|_              |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutionRequests|_       |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutionRequestDenials|_ |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 
 
 .. |DocumentBase-GetSenderSignature| replace:: GetSenderSignature()
@@ -221,6 +227,9 @@ DocumentBase
 .. |DocumentBase-MarkAsRead| replace:: MarkAsRead()
 .. |DocumentBase-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
 .. |DocumentBase-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
+.. |DocumentBase-GetResolutions| replace:: GetResolutions()
+.. |DocumentBase-GetResolutionRequests| replace:: GetResolutionRequests()
+.. |DocumentBase-GetResolutionRequestDenials| replace:: GetResolutionRequestDenials()
 
 .. |DocumentBase-CreateReplySendTask2| replace:: CreateReplySendTask2()
 .. |DocumentBase-SendReceiptsAsync| replace:: SendReceiptsAsync()
@@ -411,6 +420,7 @@ DocumentBase
   Помечает, что документ как прочитанный
 
 
+
 .. _DocumentBase-AssignToResolutionRoute:
 .. method:: DocumentBase.AssignToResolutionRoute(RouteId[, Comment])
 
@@ -428,6 +438,27 @@ DocumentBase
   :Comment: ``строка`` Комментарий, который будет добавлен при снятии документа с маршрута
 
   Снимает документ с маршрута согласования
+
+
+.. _DocumentBase-GetResolutions:
+.. method:: DocumentBase.GetResolutions()
+
+  Метод возвращает :doc:`коллекцию <Collection>` :doc:`резолюций <Resolution>` документа: согласований, подписаний, аннулирований, их запросов и т.д.
+
+
+
+.. _DocumentBase-GetResolutionRequests:
+.. method:: DocumentBase.GetResolutionRequests()
+
+  Метод возвращает :doc:`коллекцию <Collection>` :doc:`запросов резолюций <ResolutionRequest>` документа: запросов согласований, запросов подписаний, запросов аннулирований и т.д.
+
+
+
+.. _DocumentBase-GetResolutionRequestDenials:
+.. method:: DocumentBase.GetResolutionRequestDenials()
+
+  Метод возвращает :doc:`коллекцию <Collection>` :doc:`отказов в резолюциях <ResolutionRequestDenial>` документа
+
 
 
 .. _DocumentBase-CreateReplySendTask2:

@@ -18,3 +18,6 @@ NonformalizedProforma
 
 :Status:
   **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/UnilateralStatus>`
+
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**

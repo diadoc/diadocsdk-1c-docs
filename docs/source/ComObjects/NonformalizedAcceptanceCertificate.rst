@@ -19,21 +19,5 @@ NonformalizedAcceptanceCertificate
 :Status:
   **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/BilateralStatus>`
 
-
-.. rubric:: Методы объекта
-
-+-----------------------------------------------------------+
-| |NonformalizedAcceptanceCertificate-GetRejectionComment|_ |
-+-----------------------------------------------------------+
-
-.. |NonformalizedAcceptanceCertificate-GetRejectionComment| replace:: GetRejectionComment()
-
-
-
-.. _NonformalizedAcceptanceCertificate-GetRejectionComment:
-.. method:: NonformalizedAcceptanceCertificate.GetRejectionComment()
-
-  Возвращает комментарий к отказу в подписании
-
-  .. deprecated:: 5.20.3
-    Используйте Используйте :meth:`Document.GetAnyComment` с типом ``SignatureRejectionComment``
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**

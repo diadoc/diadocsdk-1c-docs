@@ -16,3 +16,6 @@ Contract
 
 :Status:
   **Строка, чтение** - Общий стаутс документа. :doc:`Возможные значения <./Enums/BilateralStatus>`
+
+  .. deprecated:: 5.34.0
+    Используйте поле **DocflowStatus**
