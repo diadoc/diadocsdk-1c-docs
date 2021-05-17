@@ -9,15 +9,18 @@
 .. rubric:: Добавлено
 
 * В :doc:`документ <../../ComObjects/DocumentBase>` добавлена информация о прокси получателе документа
+
   * Добавлено поле **ProxyBox**
   * Добавлено поле **ProxyDepartment**
 
 * В :doc:`документ <../../ComObjects/DocumentBase>` добавлен статус документооборта:
+
   * Добавлено поле **DocflowStatus**
   * Добавлен объект :doc:`../../ComObjects/DocflowStatus`
   * Добавлен объект :doc:`../../ComObjects/StatusModel`
 
 * В :doc:`документ <../../ComObjects/DocumentBase>` добавлены методы для получения списка согласований документа:
+
   * Добавлен метод :meth:`DocumentBase.GetResolutions`
   * Добавлен метод :meth:`DocumentBase.GetResolutionRequests`
   * Добавлен метод :meth:`DocumentBase.GetResolutionRequestDenials`
@@ -29,6 +32,7 @@
 
 * В ошибку ``WinHttpSendRequest 0x2f8f`` добавлено описание ошибок SSL сертификата
 * Нерокомендуемыми к использованию помечены и скрыты:
+
   * поле **Resolutions** объекта :doc:`../../ComObjects/DocumentBase`
   * поле **ResolutionRequests** объекта :doc:`../../ComObjects/DocumentBase`
   * поле **ResolutionRequestDenials** объекта :doc:`../../ComObjects/DocumentBase`
