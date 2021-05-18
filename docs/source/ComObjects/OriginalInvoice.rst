@@ -5,6 +5,10 @@ OriginalInvoice
 
 .. versionadded:: 5.0.0
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :Date:

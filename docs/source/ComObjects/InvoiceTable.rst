@@ -3,6 +3,9 @@ InvoiceTable
 
 `Табличная часть счета-фактуры формата ММВ-7-15/155@ <https://normativ.kontur.ru/document?moduleId=1&documentId=271958&rangeId=230625>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

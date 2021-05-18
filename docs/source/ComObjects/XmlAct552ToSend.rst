@@ -6,7 +6,7 @@ Act552ToSend
 Наследует интерфейс :doc:`DocumentToSend`
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства

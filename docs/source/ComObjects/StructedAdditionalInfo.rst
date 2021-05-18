@@ -3,6 +3,9 @@ StructedAdditionalInfo
 
 Дополнительные сведения
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

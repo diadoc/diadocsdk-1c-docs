@@ -3,6 +3,11 @@ ShipperOrConsigneeInfo
 
 Информации о грузоотправителе/грузополучателе
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 

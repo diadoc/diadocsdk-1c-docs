@@ -33,24 +33,70 @@ DiadocAPI
 
 .. rubric:: Методы
 
-+--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-CreateConnectionByCertificate|_ | |DiadocAPI-GetVersion|_      | |DiadocAPI-GetFullVersion|_                  |
-+--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-CreateConnectionByLogin|_       | |DiadocAPI-TestConnection|_  | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ |
-+--------------------------------------------+------------------------------+----------------------------------------------+
-| |DiadocAPI-GetPersonalCertificates|_       | |DiadocAPI-TestConnection2|_ | |DiadocApi-UpdateProxySettings|_             |
-+--------------------------------------------+------------------------------+----------------------------------------------+
++----------------------------------+----------------------------------------------+--------------------------------------------+
+| |DiadocAPI-GetFullVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ | |DiadocAPI-CreateConnectionByCertificate|_ |
++----------------------------------+----------------------------------------------+--------------------------------------------+
+| |DiadocAPI-TestConnection2|_     | |DiadocAPI-GetPersonalCertificates|_         | |DiadocAPI-CreateConnectionByLogin|_       |
++----------------------------------+----------------------------------------------+--------------------------------------------+
+| |DiadocApi-UpdateProxySettings|_ |                                              |                                            |
++----------------------------------+----------------------------------------------+--------------------------------------------+
 
+
+.. |DiadocAPI-GetFullVersion| replace:: GetFullVersion()
+.. |DiadocAPI-TestConnection2| replace:: TestConnection2()
+.. |DiadocApi-UpdateProxySettings| replace:: UpdateProxySettings()
+
+.. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
+.. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
 
 .. |DiadocAPI-CreateConnectionByCertificate| replace:: CreateConnectionByCertificate()
 .. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
-.. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
-.. |DiadocAPI-GetVersion| replace:: GetVersion()
-.. |DiadocAPI-GetFullVersion| replace:: GetFullVersion()
-.. |DiadocAPI-TestConnection| replace:: TestConnection()
-.. |DiadocAPI-TestConnection2| replace:: TestConnection2()
-.. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
-.. |DiadocApi-UpdateProxySettings| replace:: UpdateProxySettings()
+
+
+.. _DiadocAPI-GetFullVersion:
+.. method:: DiadocAPI.GetFullVersion()
+
+    Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
+
+  .. versionadded:: 5.29.4
+
+
+
+.. _DiadocAPI-TestConnection2:
+.. method:: DiadocAPI.TestConnection2()
+
+  Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
+
+  .. versionadded:: 5.26.3
+
+
+
+.. _DiadocAPI-UpdateProxySettings:
+.. method:: DiadocAPI.UpdateProxySettings(Connection)
+
+  :Connection: :doc:`Connection` обновляемое подключение
+
+  Метод обновляет настройки прокси у переданного объекта подключения и у всех объектов, полученных с помощью него
+
+  .. versionadded:: 5.30.2
+
+
+
+.. _DiadocAPI-VerifyThatUserHasAccessToAnyBox:
+.. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
+
+  :Thumbprint: ``Строка`` Отпечаток сертификата
+
+  Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок
+
+
+
+.. _DiadocAPI-GetPersonalCertificates:
+.. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
+
+  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск. true - хранилище пользователя(по-умолчанию), false - хранилище компьютера.
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в подхранилище "Личное", хранилища определяемого флагом *UserStore*.
 
 
 
@@ -76,62 +122,25 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-GetPersonalCertificates:
-.. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
 
-  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск. true - хранилище пользователя(по-умолчанию), false - хранилище компьютера.
-
-  Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в подхранилище "Личное", хранилища определяемого флагом *UserStore*.
+.. rubric:: Устаревшие методы
 
 
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| **Метод**                                                     | **Когда устарел**                     | **Когда удалён**                   | **Рекомендуемая альтернатива**                       |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DiadocAPI.TestConnection`                              | :doc:`../History/release_info/5_26_3` |                                    | :meth:`DiadocAPI.TestConnection2`                    |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DiadocAPI.GetVersion`                                  | :doc:`../History/release_info/5_29_4` |                                    | :meth:`DiadocAPI.GetFullVersion`                     |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
 
-.. _DiadocAPI-GetVersion:
+
 .. method:: DiadocAPI.GetVersion()
 
-  Возвращает строку с версией используемой компоненты
+    Возвращает строку с версией используемой компоненты
 
 
 
-.. _DiadocAPI-GetFullVersion:
-.. method:: DiadocAPI.GetFullVersion()
-
-    Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
-
-  .. versionadded:: 5.29.4
-
-
-.. _DiadocAPI-TestConnection:
 .. method:: DiadocAPI.TestConnection()
 
-  Проверяет возможность соединения с сервером Диадока, используя установленные параметры. Возвращает булево значение
-
-  .. deprecated:: 5.26.3
-      Используйте :meth:`.TestConnection2`
-
-
-
-.. _DiadocAPI-TestConnection2:
-.. method:: DiadocAPI.TestConnection2()
-
-  Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
-
-  .. versionadded:: 5.26.3
-
-
-
-.. _DiadocAPI-VerifyThatUserHasAccessToAnyBox:
-.. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
-
-  :Thumbprint: ``Строка`` Отпечаток сертификата
-
-  Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок
-
-
-.. _DiadocAPI-UpdateProxySettings:
-.. method:: DiadocAPI.UpdateProxySettings(Connection)
-
-  :Connection: :doc:`Connection` обновляемое подключение
-
-  Метод обновляет настройки прокси у переданного объекта подключения и у всех объектов, полученных с помощью него
-
-  .. versionadded:: 5.30.2
+  Возвращает булевое значение успешности отправки запроса в Диадок, используя установленные параметры

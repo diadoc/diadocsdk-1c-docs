@@ -3,6 +3,10 @@ InvoiceCorrectionTable
 
 `Сведения таблицы корректировочного счета-фактуры (содержание события (факта хозяйственной жизни) 2 - сведения об изменении <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230593>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :Items:

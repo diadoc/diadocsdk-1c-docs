@@ -3,6 +3,9 @@ InvoiceRevisionInfo
 
 `Информация об исправлении счёта фактуры <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230624>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :RevisionDate:

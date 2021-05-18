@@ -4,6 +4,10 @@ ExtendedInvoiceItem
 `Сведения об отгруженных товарах (о выполненных работах, оказанных услугах), переданных имущественных правах <https://normativ.kontur.ru/document?moduleId=1&documentId=271958&rangeId=230537>`_
 
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :Product:

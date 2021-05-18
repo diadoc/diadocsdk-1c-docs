@@ -4,6 +4,9 @@
 `Сведения о произведённой работе <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=230056>`_ в акте выполненных работ
 
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :Name:

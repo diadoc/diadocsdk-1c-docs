@@ -15,45 +15,87 @@ DocumentPackage
   **Строка, чтение** - редактируемость пакета. :doc:`Возможные зачения <./Enums/LockMode>`
 
 :Documents:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Document` **, чтение** - документы, входящие в пакет
+  :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentBase` **, чтение** - документы, входящие в пакет
 
 
 
 .. rubric:: Методы
 
-+-------------------------------+------------------------------------------------+----------------------------------------------+
-| |DocumentPackage-Move|_       | |DocumentPackage-CreateResolutionRequestTask|_ | |DocumentPackage-AssignToResolutionRoute|_   |
-+-------------------------------+------------------------------------------------+----------------------------------------------+
-| |DocumentPackage-Delete|_     | |DocumentPackage-CreateReplySendTask|_         | |DocumentPackage-RemoveFromResolutionRoute|_ |
-+-------------------------------+------------------------------------------------+----------------------------------------------+
-| |DocumentPackage-Approve|_    | |DocumentPackage-CreateReplySendTask2|_        |                                              |
-+-------------------------------+------------------------------------------------+----------------------------------------------+
-| |DocumentPackage-Disapprove|_ | |DocumentPackage-CreateOutDocumentSignTask|_   |                                              |
-+-------------------------------+------------------------------------------------+----------------------------------------------+
++------------------------------------------------+---------------------------+
+| |DocumentPackage-CreateReplySendTask2|_        | |DocumentPackage-Move|_   |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-CreateResolutionRequestTask|_ | |DocumentPackage-Delete|_ |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-CreateOutDocumentSignTask|_   |                           |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-AssignToResolutionRoute|_     |                           |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-RemoveFromResolutionRoute|_   |                           |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-Approve|_                     |                           |
++------------------------------------------------+---------------------------+
+| |DocumentPackage-Disapprove|_                  |                           |
++------------------------------------------------+---------------------------+
 
-.. |DocumentPackage-Move| replace:: Move()
-.. |DocumentPackage-Delete| replace:: Delete()
-.. |DocumentPackage-Approve| replace:: Approve()
-.. |DocumentPackage-Disapprove| replace:: Disapprove()
-.. |DocumentPackage-CreateResolutionRequestTask| replace:: CreateResolutionRequestTask()
-.. |DocumentPackage-CreateReplySendTask| replace:: CreateReplySendTask()
+
 .. |DocumentPackage-CreateReplySendTask2| replace:: CreateReplySendTask2()
+.. |DocumentPackage-CreateResolutionRequestTask| replace:: CreateResolutionRequestTask()
 .. |DocumentPackage-CreateOutDocumentSignTask| replace:: CreateOutDocumentSignTask()
 .. |DocumentPackage-AssignToResolutionRoute| replace:: AssignToResolutionRoute()
 .. |DocumentPackage-RemoveFromResolutionRoute| replace:: RemoveFromResolutionRoute()
+.. |DocumentPackage-Approve| replace:: Approve()
+.. |DocumentPackage-Disapprove| replace:: Disapprove()
+
+.. |DocumentPackage-Move| replace:: Move()
+.. |DocumentPackage-Delete| replace:: Delete()
 
 
 
-.. _DocumentPackage-Move:
-.. method:: DocumentPackage.Move(DepartmentID)
+.. _DocumentPackage-CreateReplySendTask2:
+.. method:: DocumentPackage.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-  :DepartmentID: ``строка`` идентификатор подразделения
+  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
+
+  Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask2>`
+
+  .. versionadded:: 5.27.0
 
 
-.. _DocumentPackage-Delete:
-.. method:: DocumentPackage.Delete()
 
-  Помечает документы как удалённый
+.. _DocumentPackage-CreateResolutionRequestTask:
+.. method:: DocumentPackage.CreateResolutionRequestTask()
+
+  Создает :doc:`задание для отправки запроса согласования <ResolutionRequestTask>`
+
+
+
+
+.. _DocumentPackage-CreateOutDocumentSignTask:
+.. method:: DocumentPackage.CreateOutDocumentSignTask()
+
+  Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
+
+.. versionadded:: 5.6.0
+
+
+
+.. _DocumentPackage-AssignToResolutionRoute:
+.. method:: DocumentPackage.AssignToResolutionRoute(RouteId[, Comment])
+
+  :RouteId: ``строка`` Идентификатор маршрута
+  :Comment: ``строка`` Комментарий, который будет добавлен при постановке документов на маршрут
+
+  Ставит документы на маршрут согласования. Получить доступные маршруты согласования можно методом :meth:`Organization.GetResolutionRoutes`
+
+
+
+.. _DocumentPackage-RemoveFromResolutionRoute:
+.. method:: DocumentPackage.RemoveFromResolutionRoute(RouteId[, Comment])
+
+  :RouteId: ``строка`` Идентификатор маршрута
+  :Comment: ``строка`` Комментарий, который будет добавлен при снятии документов с маршрута
+
+  Снимает документы с маршрута согласования
 
 
 
@@ -75,57 +117,34 @@ DocumentPackage
 
 
 
-.. _DocumentPackage-CreateResolutionRequestTask:
-.. method:: DocumentPackage.CreateResolutionRequestTask()
+.. _DocumentPackage-Move:
+.. method:: DocumentPackage.Move(DepartmentID)
 
-  Создает :doc:`задание для отправки запроса согласования <ResolutionRequestTask>`
+  :DepartmentID: ``строка`` идентификатор подразделения
 
 
 
-.. _DocumentPackage-CreateReplySendTask:
+.. _DocumentPackage-Delete:
+.. method:: DocumentPackage.Delete()
+
+  Помечает документы как удалённый
+
+
+
+
+
+.. rubric:: Устаревшие методы
+
+
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| **Метод**                                                     | **Когда устарел**                     | **Когда удалён**                   | **Рекомендуемая альтернатива**                       |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentPackage.CreateReplySendTask`                   | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentPackage.CreateReplySendTask2`         |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+
+
 .. method:: DocumentPackage.CreateReplySendTask(ReplyType="AcceptDocument")
 
   :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
   Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`DocumentPackage.CreateReplySendTask2`
-
-
-
-.. _DocumentPackage-CreateReplySendTask2:
-.. method:: DocumentPackage.CreateReplySendTask2(ReplyType="AcceptDocument")
-
-  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
-
-  Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask2>`
-
-  .. versionadded:: 5.27.0
-
-
-
-.. _DocumentPackage-CreateOutDocumentSignTask:
-.. method:: DocumentPackage.CreateOutDocumentSignTask()
-
-  Создает :doc:`задание на подписание и отправку исходящего документа с отложенной отправкой <OutDocumentSignTask>`
-
-.. versionadded:: 5.6.0
-
-
-.. _DocumentPackage-AssignToResolutionRoute:
-.. method:: DocumentPackage.AssignToResolutionRoute(RouteId[, Comment])
-
-  :RouteId: ``строка`` Идентификатор маршрута
-  :Comment: ``строка`` Комментарий, который будет добавлен при постановке документов на маршрут
-
-  Ставит документы на маршрут согласования. Получить доступные маршруты согласования можно методом :meth:`Organization.GetResolutionRoutes`
-
-
-.. _DocumentPackage-RemoveFromResolutionRoute:
-.. method:: DocumentPackage.RemoveFromResolutionRoute(RouteId[, Comment])
-
-  :RouteId: ``строка`` Идентификатор маршрута
-  :Comment: ``строка`` Комментарий, который будет добавлен при снятии документов с маршрута
-
-  Снимает документы с маршрута согласования

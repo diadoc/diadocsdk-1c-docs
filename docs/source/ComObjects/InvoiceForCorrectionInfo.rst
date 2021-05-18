@@ -3,6 +3,10 @@ InvoiceForCorrectionInfo
 
 `Сведения о cчете-фактуре, к которому составлен корректировочный счет-фактура <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230596>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :InvoiceDate:

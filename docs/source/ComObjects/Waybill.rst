@@ -3,6 +3,9 @@ Waybill
 
 Информация о транспортной накладной
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

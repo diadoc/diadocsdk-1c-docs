@@ -3,6 +3,10 @@
 
 `Содержание факта хозяйственной жизни - сведения о факте согласования <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230530>`_
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :CostChangeInfo:

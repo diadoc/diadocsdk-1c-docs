@@ -3,6 +3,9 @@ Torg12Content
 
 Метаданные неформализованого документа *ТОРГ-12*
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DocumentBase`. **Metadata**
+
 .. rubric:: Свойства
 
 :Date:

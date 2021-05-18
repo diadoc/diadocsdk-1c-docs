@@ -3,6 +3,9 @@ Torg12Commons
 
 Общие сведения товарной накладной
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :TotalParcelsQuantity:

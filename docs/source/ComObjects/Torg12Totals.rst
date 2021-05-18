@@ -3,6 +3,9 @@ Torg12Totals
 
 Итоги по накладной
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 
