@@ -8,7 +8,7 @@ ReconciliationActToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
@@ -26,4 +26,4 @@ ReconciliationActToSend
   **Строка, чтение/запись** - номер документа
 
 :Content:
-  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - представление контента. Всегда пустое
+  :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента. Всегда пустое

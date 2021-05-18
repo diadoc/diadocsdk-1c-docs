@@ -5,8 +5,8 @@ LegacyDocumentToSend
 
 Наследует интерфейс :doc:`DocumentToSend`
 
-.. deprecated:: 5.33.6
-    Используйте инфраструктуру :doc:`PackageSendTask2`
+.. deprecated:: 5.27.0
+  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 .. warning::
     Не поддерживает новые типы документов
