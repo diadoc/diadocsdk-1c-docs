@@ -427,14 +427,62 @@ Organization
 .. rubric:: Устаревшие методы
 
 
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| **Метод или свойство**                                        | **Устарел**                           | **Удалён**                            | **Рекомендуется использовать**                       |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.CreateSendTask`                           | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.CreateSendTaskFromFile`                   | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.CreateSendTaskFromFileRaw`                | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.CreatePackageSendTask`                    | :doc:`../History/release_info/5_27_0` |                                       | :meth:`Organization.CreatePackageSendTask2`          |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.SendDraftAsync`                           | :doc:`../History/release_info/5_18_0` |                                       | :meth:`Organization.CreateSendDraftTask`             |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.SetAndValidateAddressForCounteragent`     | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.GetSentDocuments`                         | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.SetData`                                  | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.GetData`                                  | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.GetAddressForCounteragent`                | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+| :meth:`Organization.GetExtendedSignerDetails`                 | :doc:`../History/release_info/5_33_0` |                                       | :meth:`Organization.GetExtendedSignerDetails2`       |
++---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
+
+.. method:: Organization.CreateSendTask(FormalDocumentType)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
+
+  Возвращает :doc:`задание отправки документа <SendTask>`
+
+
+
+.. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Возвращает :doc:`задание отправки документа <SendTask>`. Контент документа берётся из файла. Происходит попытка представить его в виде объектой модели
+
+
+
+.. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
+
+  :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+  :FilePath: ``строка`` путь до файла контента документа
+
+  Возвращает :doc:`задание отправки документа <SendTask>`. Контент документа берётся из файла. Представления контента в виде объектой модели не происходит
+
+
+
 .. method:: Organization.CreatePackageSendTask()
 
-  Возвращает :doc:`объект <PackageSendTask>`, с помощью которого можно отправить пакет :doc:`документов <DocumentToSend>`
+  Возвращает :doc:`задание отправки пакета документов <PackageSendTask>`
 
-  .. versionadded:: 5.5.0
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`Organization.CreatePackageSendTask2`
 
 
 .. method:: Organization.SendDraftAsync(MessageId)
@@ -442,11 +490,6 @@ Organization
   :MessageId: ``строка`` идентификатор сообщения черновика
 
   Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
-
-  .. versionadded:: 4.1.0
-
-  .. deprecated:: 5.18.0
-    Используйте объект :doc:`SendDraftTask`, создаваемый методом :meth:`Organization.CreateSendDraftTask`
 
   .. versionchanged:: 5.33.0
     Метод ничего не делает
@@ -471,11 +514,9 @@ Organization
   Валидирует и загружает адресную информацию в хранилище. Возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
   Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
 
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.SetData`
-
   .. versionchanged:: 5.29.0
     Вовзращаемая коллекция всегда пустая. Валидации не происходит
+
 
 
 .. method:: Organization.GetAddressForCounteragent(key1S, AddressTypeKey)
@@ -485,8 +526,6 @@ Organization
 
   Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
 
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.GetData`
 
 
 .. method:: Organization.GetSentDocuments(OneSId, AsDiadocDocumentId=False)
@@ -500,9 +539,6 @@ Organization
   Если *AsDiadocDocumentId* == ``TRUE``, то будут возвращены идентификаторы документов в Диадок
 
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
-
 
 .. method:: Organization.SetData(Key, Value)
 
@@ -511,8 +547,6 @@ Organization
 
   Добавляет пару *ключ-значение* в хранилище
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
 
 
 .. method:: Organization.GetData(Key)
@@ -521,8 +555,6 @@ Organization
 
   Возвращает значение, соответствующее ключу
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
 
 
 .. method:: Organization.GetExtendedSignerDetails(Thumbprint, IsSeller=false, forCorrection=false)
@@ -532,9 +564,3 @@ Organization
   :forCorrection: ``булево`` подписант для титула корректировочного документа
 
   Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. Метод может быть запрошен самим пользователем или администратором организации
-
-  .. deprecated:: 5.19.0
-    Используйте :meth:`Organization.GetExtendedSignerDetails2`
-
-  .. versionchanged:: 5.33.0
-    Метод удалён

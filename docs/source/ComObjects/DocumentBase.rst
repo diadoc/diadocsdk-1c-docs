@@ -550,12 +550,150 @@ DocumentBase
 .. rubric:: Устаревшие методы
 
 
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| **Метод или свойство**                                        | **Устарел**                           | **Удалён**                         | **Рекомендуется использовать**                       |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetContent`                               | :doc:`../History/release_info/5_28_0` |                                    | :meth:`DocumentBase.GetDynamicContent`               |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetContentAsync`                          | :doc:`../History/release_info/5_28_0` |                                    |                                                      |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetBuyerContent`                          | :doc:`../History/release_info/5_28_0` |                                    | :meth:`DocumentBase.GetDynamicContent`               |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.CreateReplySendTask`                      | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.Accept`                                   | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.Reject`                                   | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.RejectAsync`                              | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.SendRevocationRequest`                    | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.AcceptRevocationRequest`                  | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.RejectRevocationRequest`                  | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.SendCorrectionRequest`                    | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.SendCorrectionRequestAsync`               | :doc:`../History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`            |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetComment`                               | :doc:`../History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                   |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetRejectionComment`                      | :doc:`../History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                   |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.GetAmendmentRequestedComment`             | :doc:`../History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                   |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.SetOneSDocumentId`                        | :doc:`../History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.ReSetOneSDocumentId`                      | :doc:`../History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.AddSubordinateOneSDocumentId`             | :doc:`../History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DocumentBase.RemoveSubordinateOneSDocumentId`          | :doc:`../History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                  |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+
+
+.. method:: DocumentBase.GetContent()
+
+  Возвращает объектное представление контента первого титула документа. Тип контента зависит от типа документа
+
+
+
+.. method:: DocumentBase.GetContentAsync()
+
+  Возвращает :doc:`AsyncResult` с объектным представлением контента первого титула документа в качестве результата. Тип контента зависит от типа документа
+
+
+
+.. method:: DocumentBase.GetBuyerContent()
+
+  Возвращает объектное представление контента первого титула документа. Тип контента зависит от типа документа
+
+
+
+  .. method:: DocumentBase.CreateReplySendTask(ReplyType="AcceptDocument")
+
+    :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
+
+    Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
+
+
+.. method:: DocumentBase.Accept()
+
+  Подписывает однотитульный документ
+
+
+
+.. method:: DocumentBase.Reject()
+
+  Отказывает контрагенту в подписи документа
+
+.. method:: DocumentBase.RejectAsync()
+
+  Асинхронно отказывает контрагенту в подписи документа. Возвращает :doc:`AsyncResult` с булевым значением в качестве результата
+
+
+
+.. method:: DocumentBase.SendRevocationRequest(Comment="")
+
+  :Comment: ``строка`` комментарий к запросу аннулирования
+
+  Запрашивает аннулирование документа
+
+
+
+.. method:: DocumentBase.AcceptRevocationRequest()
+
+  Принимает запрос аннулирования
+
+
+
+.. method:: DocumentBase.RejectRevocationRequest(Comment="")
+
+  :Comment: ``строка`` комментарий отказа в аннулировании
+
+  Отказывает в аннулировании
+
+
+
+.. method:: DocumentBase.SendCorrectionRequest(Comment="")
+
+  :Comment: ``строка`` комментарий запроса корректировки документа
+
+  Запрашивает корректировку документа
+
+
+
+.. method:: DocumentBase.SendCorrectionRequestAsync(Comment="")
+
+  :Comment: ``строка`` комментарий запроса корректировки документа
+
+  А синхронно запрашивает корректировку документа. Возвращает :doc:`AsyncResult` с булевым значением в качестве результата
+
+
+
+.. method:: DocumentBase.GetComment()
+
+  Возвращает комментарий к первому титулу документа
+
+
+
+.. method:: DocumentBase.GetRejectionComment()
+
+  Возвращает комментарий отказа в подписи
+
+
+
+.. method:: DocumentBase.GetAmendmentRequestedComment()
+
+  Возвращает комментарий запроса аннулирования
+
+
+
 .. method:: DocumentBase.GetComment()
 
   Возвращает строку с комментарием к документу, заданным при отправке
 
-  .. deprecated:: 5.20.3
-    Используйте :meth:`DocumentBase.GetAnyComment` с типом ``AttachmentComment``
 
 
 .. method:: DocumentBase.SetOneSDocumentId(ID)
@@ -564,17 +702,12 @@ DocumentBase
 
   Присваивает документу дополнительный идентификатор из учётной системы
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
-
 
 
 .. method:: DocumentBase.ReSetOneSDocumentId()
 
   Сбрасывает дополнительный идентификатор учётной системы у документа в Диадоке
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
 
 
 
@@ -584,8 +717,6 @@ DocumentBase
 
   Добавляет документу дополнительный идентификатор из учётной системы как подчинённый. Обычно используется чтобы обозначить связь документов друг с другом
 
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
 
 
 
@@ -594,52 +725,3 @@ DocumentBase
   :ID: ``Строка`` Любая строка, идентифицирующая документ в учётной системе
 
   Удаляет дополнительный подчинённый идентификатор
-
-  .. deprecated:: 5.29.9
-    Используйте :meth:`Organization.CreateDataTask`
-
-
-
-.. method:: DocumentBase.CreateReplySendTask(ReplyType="AcceptDocument")
-
-  :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
-
-  Создает :doc:`задание на выполнение ответного действия с документом <ReplySendTask>`
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`DocumentBase.CreateReplySendTask2`
-
-
-
-.. method:: DocumentBase.SendRevocationRequest([Comment])
-
-  :Comment: ``строка`` комментарий к запросу аннулирования
-
-  Запрашивает аннулирование документа
-
-  .. versionadded:: 3.0.3
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`DocumentBase.CreateReplySendTask2`
-
-
-
-.. method:: DocumentBase.AcceptRevocationRequest()
-
-  Принимает запрос аннулирования
-
-  .. versionadded:: 3.0.3
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`DocumentBase.CreateReplySendTask2`
-
-
-
-.. method:: DocumentBase.RejectRevocationRequest()
-
-  Отказывает в аннулировании
-
-  .. versionadded:: 3.0.3
-
-  .. deprecated:: 5.27.0
-    Используйте :meth:`DocumentBase.CreateReplySendTask2`
