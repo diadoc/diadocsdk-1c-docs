@@ -63,13 +63,13 @@ DocumentsTask
 .. _DocumentTask-GetDocuments:
 .. method:: DocumentTask.GetDocuments()
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`документов <Document>` удовлетворяющих заданному фильтру
+  Возвращает :doc:`коллекцию <Collection>` :doc:`документов <DocumentBase>` удовлетворяющих заданному фильтру
 
 
 .. _DocumentTask-GetDocumentsAsync:
 .. method:: DocumentTask.GetDocumentsAsync()
 
-  Асинхронно получает список документов, удовлетворяющих фиьлтру. Возвращает :doc:`AsyncResult` с результатом в виде :doc:`коллекции <Collection>` :doc:`документов <Document>`
+  Асинхронно получает список документов, удовлетворяющих фиьлтру. Возвращает :doc:`AsyncResult` с результатом в виде :doc:`коллекции <Collection>` :doc:`документов <DocumentBase>`
 
 
 .. rubric:: Дополнительная информация
