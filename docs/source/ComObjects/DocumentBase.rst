@@ -555,7 +555,7 @@ DocumentBase
   Возвращает строку с комментарием к документу, заданным при отправке
 
   .. deprecated:: 5.20.3
-    Используйте :meth:`GetAnyComment` с типом ``AttachmentComment``
+    Используйте :meth:`DocumentBase.GetAnyComment` с типом ``AttachmentComment``
 
 
 .. method:: DocumentBase.SetOneSDocumentId(ID)
