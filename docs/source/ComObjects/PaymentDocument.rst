@@ -3,6 +3,10 @@ PaymentDocument
 
 Информация о платежно-расчетном документе, указанном в счет-фактуре
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :Date:

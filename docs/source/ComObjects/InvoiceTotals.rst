@@ -4,6 +4,10 @@ InvoiceTotals
 Информации об общих итогах по счету-фактуре
 
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :TotalWithVatExcluded:

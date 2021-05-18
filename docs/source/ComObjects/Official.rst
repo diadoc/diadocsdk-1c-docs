@@ -3,6 +3,9 @@ Official
 
 Информация о должностном лице
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :Surname:

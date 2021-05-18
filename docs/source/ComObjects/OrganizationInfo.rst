@@ -3,6 +3,11 @@ OrganizationInfo
 
 Реквизиты организации или контрагента
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+  
+
 .. rubric:: Свойства
 
 :IsSoleProprietor:

@@ -3,6 +3,9 @@ TransferBase
 
 Информация о документе-основании отгрузки
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

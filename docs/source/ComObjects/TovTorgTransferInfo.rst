@@ -3,6 +3,9 @@ TovTorgTransferInfo
 
 Сведения о факте передачи (об отпуске груза)
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :OperationInfo:

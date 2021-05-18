@@ -3,10 +3,6 @@ ExtendedSigner
 
 Информации о лице, подписавшем документ
 
-.. deprecated:: 5.27.0
-  Используется только в "старых" контентах документов, производных от :doc:`BaseContent`.
-  Внутри :doc:`DynamicContent`  поле `ExtendedSigner` имеет тип :doc:`DynamicContent`
-
 
 .. rubric:: Свойства
 

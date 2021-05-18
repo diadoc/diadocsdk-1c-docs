@@ -3,6 +3,9 @@ TovTorgTable
 
 `Сведения об ассортименте, количестве, стоимости и другой информации о товарных позициях <https://normativ.kontur.ru/document?moduleId=1&documentId=265102&rangeId=233872>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :Items:

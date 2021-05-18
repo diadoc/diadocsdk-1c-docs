@@ -3,6 +3,10 @@ InvoiceItem
 
 `Сведения о товаре (работе, услуге) <https://normativ.kontur.ru/document?moduleId=1&documentId=249567&rangeId=230599>`_
 
+
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 

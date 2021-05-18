@@ -4,6 +4,10 @@ ExtendedInvoiceCorrectionItem
 `Сведения о товаре (работе, услуге), имущественном праве <https://normativ.kontur.ru/document?moduleId=1&documentId=273231&rangeId=230531>`_
 
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
+
 .. rubric:: Свойства
 
 :Product:

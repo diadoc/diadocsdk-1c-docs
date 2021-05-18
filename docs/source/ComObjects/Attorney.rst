@@ -3,6 +3,9 @@ Attorney
 
 Информация о доверенности
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 

@@ -3,6 +3,9 @@ InvoiceItemFields
 
 Информации о значениях "ДО" и "ПОСЛЕ" в сведениях о товаре
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :UnitCode:

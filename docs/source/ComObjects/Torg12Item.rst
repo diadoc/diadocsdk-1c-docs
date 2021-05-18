@@ -3,6 +3,9 @@ Torg12Item
 
 `Табличные сведения товарной накладной <https://normativ.kontur.ru/document?moduleId=1&documentId=261859&rangeId=233861>`_
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 .. rubric:: Свойства
 
 :Product:

@@ -3,6 +3,9 @@ CustomDeclaration
 
 Данные о таможенной декларации
 
+.. deprecated:: 5.27.0
+  Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 
