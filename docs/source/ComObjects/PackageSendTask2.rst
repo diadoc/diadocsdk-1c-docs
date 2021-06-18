@@ -67,7 +67,8 @@ PackageSendTask2
   :Function: ``строка`` функция документа
   :Version: ``строка`` версия документа
 
-  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
+  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его.
+  Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 
@@ -79,7 +80,8 @@ PackageSendTask2
   :Version: ``строка`` версия документа
   :FilePath: ``строка`` путь до файла контрагента
 
-  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его
+  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
+  Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 
@@ -91,7 +93,8 @@ PackageSendTask2
   :Version: ``строка`` версия документа
   :Base64: ``строка`` контент документа в Base64
 
-  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из Base64 строки, и возвращает его
+  Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из Base64 строки, и возвращает его.
+  Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 
