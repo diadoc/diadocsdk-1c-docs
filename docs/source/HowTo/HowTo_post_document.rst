@@ -6,6 +6,8 @@
 Отправка документов производится с помощью объекта :doc:`PackageSendTask2 <../ComObjects/PackageSendTask2>`.
 Формализованные документы поддерживают заполнение контента через :doc:`../ComObjects/DynamicContent`
 
+Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
+
 Для отправляемого документа необходимо заполнить :doc:`мета информацию <../ComObjects/DocumentMetadataItem>`, у которой источник (поле **Source**) указан ``User``
 
 
