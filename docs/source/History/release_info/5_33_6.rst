@@ -8,4 +8,4 @@
 .. rubric:: Исправлено
 
 * :meth:`PackageSendTask.AddDocument`, :meth:`PackageSendTask.AddDocumentFromFile` и :meth:`PackageSendTask.AddDocumentFromFileRaw` снова могут принимать версию документа в качестве типа;
-* appcrash при вызове :meth:`TemplateSendTask.AddTemplate`
+* ``APPCRASH`` при вызове :meth:`TemplateSendTask.AddTemplate`
