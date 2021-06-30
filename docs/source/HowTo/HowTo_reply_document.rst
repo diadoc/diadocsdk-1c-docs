@@ -45,7 +45,10 @@
         Возврат  WorkflowId = 3
              ИЛИ WorkflowId = 5
              ИЛИ WorkflowId = 8
-             ИЛИ WorkflowId = 11;
+             ИЛИ WorkflowId = 11
+             ИЛИ WorkflowId = 12
+             ИЛИ WorkflowId = 13
+             ИЛИ WorkflowId = 16;
 
     КонецФункции
 
