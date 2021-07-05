@@ -12,7 +12,7 @@
 
 .. rubric:: Изменено
 
-* Поле **ToDocumentDate** объекта :doc:`../../ComObjects/DocumentsTask` теперь приводит дату к концу подписания
+* Поле **ToDocumentDate** объекта :doc:`../../ComObjects/DocumentsTask` теперь приводит дату к концу дня
 
 
 .. rubric:: Исправлено
