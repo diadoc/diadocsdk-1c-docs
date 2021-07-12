@@ -14,4 +14,4 @@
    Как формировать и отправлять новые документы <HowTo_post_document>
    Как выполнить ответные действия по документам <HowTo_reply_document>
    Как работать с согласованием и передачей на подпись <HowTo_resolve_document>
-   Как работать с Контур.Сертиифкатом <HowTo_cloud_certificate>
+   Как работать с Контур.Сертифкатом <HowTo_cloud_certificate>
