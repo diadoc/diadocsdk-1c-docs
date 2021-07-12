@@ -12,6 +12,13 @@
 * **COM** компонента `v5.34.4.713 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_ для произвольных систем
 
 
+.. important::
+    Доступна предварительная версия следующей ревизии компоненты.
+    **Внимание!** Обратная совместимость сохранена частично.
+
+    `v6.0.0-RC1 <https://diadoccom-1c.readthedocs.io/en/latest/>`_
+
+
 .. rubric:: Устаревшие методы и свойства объектов
 
 
