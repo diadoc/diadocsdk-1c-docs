@@ -22,6 +22,9 @@ ExternalStatus
 :Details:
   :doc:`коллекция <Collection>` **объектов** :doc:`ErrorCode` **, чтение** - дополнительная информация о статусе
 
+:CreationTime:
+  **Дата, чтение** - Дата и время появления статуса
+
 
 
 .. rubric:: Методы

@@ -112,11 +112,6 @@ DocumentBase
 :IsTest:
   **Булево, чтение** - флаг, показывающий, что документ является тестовым и не имеет юридической силы
 
-:HasCustomPrintForm:
-  **Булево, чтение** - флаг, показывающий, что документ имеет нестандартную печатную форму
-
-  .. versionadded:: 3.0.10
-
 :IsLockedPackage:
   **Булево, чтение** - флаг, показывающий, что документ является частью нередактируемого пакета
 
@@ -185,13 +180,15 @@ DocumentBase
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 | |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_          | |DocumentBase-Approve|_                     |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-Delete|_                      | |DocumentBase-Disapprove|_                  |
+| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-GetPackageDocuments|_         | |DocumentBase-Disapprove|_                  |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Move|_                        | |DocumentBase-CreateOutDocumentSignTask|_   |
+| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Delete|_                      | |DocumentBase-CreateOutDocumentSignTask|_   |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-MarkAsRead|_                  | |DocumentBase-CreateResolutionRequestTask|_ |
+| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-Move|_                        | |DocumentBase-CreateResolutionRequestTask|_ |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-AssignToResolutionRoute|_     | |DocumentBase-CreateCustomDataPatchTask|_   |
+| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-MarkAsRead|_                  | |DocumentBase-CreateCustomDataPatchTask|_   |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-AssignToResolutionRoute|_     |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 |                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_   |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
@@ -200,6 +197,8 @@ DocumentBase
 |                                            |                                        | |DocumentBase-GetResolutionRequests|_       |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 |                                            |                                        | |DocumentBase-GetResolutionRequestDenials|_ |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-DetectCustomPrintForm|_       |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 
 
@@ -222,6 +221,7 @@ DocumentBase
 .. |DocumentBase-GetAnyComment| replace:: GetAnyComment()
 .. |DocumentBase-GetExternalStatuses| replace:: GetExternalStatuses()
 .. |DocumentBase-GetDocumentPackage| replace:: GetDocumentPackage()
+.. |DocumentBase-GetPackageDocuments| replace:: GetPackageDocuments()
 .. |DocumentBase-Delete| replace:: Delete()
 .. |DocumentBase-Move| replace:: Move()
 .. |DocumentBase-MarkAsRead| replace:: MarkAsRead()
@@ -230,6 +230,7 @@ DocumentBase
 .. |DocumentBase-GetResolutions| replace:: GetResolutions()
 .. |DocumentBase-GetResolutionRequests| replace:: GetResolutionRequests()
 .. |DocumentBase-GetResolutionRequestDenials| replace:: GetResolutionRequestDenials()
+.. |DocumentBase-DetectCustomPrintForm| replace:: DetectCustomPrintForm()
 
 .. |DocumentBase-CreateReplySendTask2| replace:: CreateReplySendTask2()
 .. |DocumentBase-SendReceiptsAsync| replace:: SendReceiptsAsync()
@@ -390,12 +391,23 @@ DocumentBase
 .. _DocumentBase-GetDocumentPackage:
 .. method:: DocumentBase.GetDocumentPackage()
 
-  Возвращает :doc:`пакет документов <DocumentPackage>`, в котором находится документ
+  Возвращает :doc:`документы <DocumentPackage>`, отправленные одновременно с данным.
+  У документов в результате будет совпадать :doc:`MessageId <Descriptions/MessageId>`
 
   .. versionadded:: 5.3.0
 
-  .. note:: понятие пакета в терминах компоненты и в терминах `HTTP-API <http://api-docs.diadoc.ru/ru/latest/index.html>`_ или Веб-интерфейса разные.
-    В данном случае в пакете будут содержаться только документы с одинаковым :doc:`MessageId <Descriptions/MessageId>`
+
+
+.. _DocumentBase-GetDocumentPackage:
+.. method:: DocumentBase.GetDocumentPackage(DetectCustomPrintForm=``FALSE``)
+
+  :DetectCustomPrintForm: ``Булево`` Флаг необходимости определить наличие нестандартной печатной формы (КПФ) у документов.
+
+  Возвращает :doc:`коллекцию <Collection>` :doc:`документов <DocumentBase>`, объединённых в один пакет.
+  У документов в результате будет совпадать **PackageId**.
+
+  Если решение предполагает использование признака наличия у документов КПФ, то рекомендуется устанавливать параметр **DetectCustomPrintForm** в истину -
+  определение наличия КПФ для документов из результата будет выполняться пакетно, вместо необходимости :meth:`запрашивать <DocumentBase.DetectCustomPrintForm>` этот признак для каждого документа в отдельности
 
 
 .. _DocumentBase-Delete:
@@ -458,6 +470,15 @@ DocumentBase
 .. method:: DocumentBase.GetResolutionRequestDenials()
 
   Метод возвращает :doc:`коллекцию <Collection>` :doc:`отказов в резолюциях <ResolutionRequestDenial>` документа
+
+
+
+.. _DocumentBase-DetectCustomPrintForm:
+.. method:: DocumentBase.DetectCustomPrintForm()
+
+  Метод возвращает признак наличия у документа нетиповой печатной формы (КПФ)
+
+    .. versionadded:: 5.35.0
 
 
 

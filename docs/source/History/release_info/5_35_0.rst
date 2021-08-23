@@ -1,0 +1,38 @@
+5.35.0
+======
+
+
+.. feed-entry::
+  :date: 2021-08-23
+
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`DocumentBase.DetectCustomPrintForm`
+* В объект :doc:`../../ComObjects/ExternalStatus` добавлено поле **CreationTime**
+* Поддержаны изменения в составе сертификатов, связанные с изменениями в `приказе ФСБ №795 <https://regulation.gov.ru/projects#npa=111709>`_
+* Добавлен метод :meth:`DocumentBase.GetPackageDocuments` для получения документов, связанных в пакет
+
+
+
+
+.. rubric:: Изменено
+
+* Методы :meth:`PackageSendTask.AddDocumentFromFile`, :meth:`PackageSendTask.AddDocumentFromFileRaw` с типом ``Document`` теперь возвращают :doc:`../../ComObjects/LegacyDocumentToSend` вместо :doc:`../../ComObjects/CustomDocumentToSend`
+* Тип ``Document`` для методов :meth:`PackageSendTask.AddDocumentFromFile`, :meth:`PackageSendTask.AddDocumentFromFileRaw` перенесён в неформализованные типы :doc:`../../ComObjects/Enums/DocumentToSend`,
+  а вариант с указанием версии документов - наоборот
+* Поле **HasCustomPrintForm** объекта :doc:`../../ComObjects/DocumentBase` помечено устаревшим и спрятано - используйте метод :meth:`DocumentBase.DetectCustomPrintForm`
+
+
+
+.. rubric:: Исправлено
+
+* ``APPCRASH`` при получении информации о типе документа. Могло возникать как при выполнении метода :meth:`Organization.GetDocumentTypes`, так и при любом обращении к документу или его полям
+* Исправлен порядок тэгов в UserDataXSD при генерации контента документов.
+  Даже при полностью заполненном :doc:`контенте <../../ComObjects/DynamicContent>` для документа с типом ``[ProformaInvoice; default; proformainvoice_01_01]`` при отправке возвращалась ошибка
+  ``Invalid data UserContractData:
+  Line: 9, Position: 3, /ProformaInvoiceSenderTitle[1]/ProformaInvoiceTable[1]: The element 'ProformaInvoiceSenderTitle' has invalid child element 'ProformaInvoiceTable'. List of possible elements expected: 'Recipient, Payer, Signer'.
+  ``
+* :doc:`../../ComObjects/ReplySendTask` и :doc:`../../ComObjects/ReplySendTask2` с типом ``RejectDocument`` можно было создать для односторонних документов с workflow=9
+* Различные исправления в поведении методов :meth:`PackageSendTask.AddDocument`, :meth:`PackageSendTask.AddDocumentFromFile`, :meth:`PackageSendTask.AddDocumentFromFileRaw`
