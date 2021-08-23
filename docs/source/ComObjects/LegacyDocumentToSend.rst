@@ -37,8 +37,7 @@ LegacyDocumentToSend
   **Строка, чтение** - тип документа. Константа ``Document``
 
 :Content:
-  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ **, чтение** - представление содержимого документа.
-  Если контент документа был загружен с диска, то поле будет пустым.
+  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ **, чтение** - представление содержимого документа
 
 
 

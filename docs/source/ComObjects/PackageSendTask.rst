@@ -11,9 +11,6 @@ PackageSendTask
 
 .. rubric:: Свойства
 
-:Content:
-  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - содержание пакета документов
-
 :OperationId:
   **Строка, чтение/запись** - уникальный идентификатор операции
 
@@ -25,6 +22,12 @@ PackageSendTask
 
 :ToDepartmentId:
   **Строка, чтение/запись** - идентификатор подразделения получателя
+
+:ProxyBoxId:
+  **Строка, чтение/запись** - идентификатор ящика, промежуточного получателя
+
+:ProxyDepartmentId:
+  **Строка, чтение/запись** -  идентификатор подразделения, в ящике промежуточного получателя
 
 :IsDraft:
   **Булево, чтение/запись** - признак того, что сообщение является черновиком
@@ -40,12 +43,6 @@ PackageSendTask
 
 :DocumentsToSend:
   :doc:`Коллекция <Collection>` **объектов** :doc:`DocumentToSend` **, чтение** - документы на отправку, добавленные в пакет
-
-:ProxyBoxId:
-  **Строка, чтение/запись** - идентификатор ящика, промежуточного получателя
-
-:ProxyDepartmentId:
-  **Строка, чтение/запись** -  идентификатор подразделения, в ящике промежуточного получателя
 
 :SaveContentPath:
   **Строка, чтение/запись** - путь к папке, для сохранения сгенерированного содержимого
@@ -71,33 +68,35 @@ PackageSendTask
 .. _PackageSendTask-AddDocument:
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-  :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
+  :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>`
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
   Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
 
+
+
 .. _PackageSendTask-AddDocumentFromFile:
 .. method:: PackageSendTask.AddDocumentFromFile(FormalizedDocumentType, FilePath)
 
-  :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
+  :FormalizedDocumentType: ``строка`` тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
   Контент будет разобран и получен в виде объектной модели, если это возможно. При отправке он будет перегенерирован
 
-  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
+
 
 .. _PackageSendTask-AddDocumentFromFileRaw:
 .. method:: PackageSendTask.AddDocumentFromFileRaw(DocumentType, FilePath)
 
-  :DocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или версию документа (например tovtorg_05_02_01)
+  :DocumentType: ``строка`` тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
   :FilePath: ``строка`` путь до файла контента
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
   Разбора контента и представления в виде объектной модели не происходит. При отправке перегенерации контента не произойдёт
 
-  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
+
 
 .. _PackageSendTask-Send:
 .. method:: PackageSendTask.Send()

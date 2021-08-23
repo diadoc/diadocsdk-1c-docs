@@ -20,8 +20,6 @@ UtdInvoice                                                    счет-факт�
 UcdInvoiceCorrection                                          корректировка счета-фактуры в формате 189 приказа ФНС                :doc:`../UtdToSend`
 TovTorg                                                       Торг-12 в формате 551-го приказа ФНС                                 :doc:`../TovTorgToSend`
 XmlAcceptanceCertificate552                                   акт в формате 552-го приказа ФНС                                     :doc:`../XmlAct552ToSend`
-один из :doc:`DocumentVersion.Version <../DocumentVersion>`   произвольный формализованный документ                                :doc:`../CustomDocumentToSend`
-Document                                                      произвольный формализованный документ                                :doc:`../CustomDocumentToSend`
 Contract                                                      договор                                                              :doc:`../ContractToSend`
 CertificateRegistry                                           реестр сертификатов                                                  :doc:`../CertificateRegistryToSend`
 PriceListAgreement                                            протокол согласования цены                                           :doc:`../PriceListAgreementToSend`
@@ -31,4 +29,5 @@ Nonformalized                                                 произволн
 NonformalizedProforma                                         неформализованный счёт на оплату                                     :doc:`../NonformalizedProformaToSend`
 AcceptanceCertificate                                         неформализованный акт                                                :doc:`../ActToSend`
 Torg12                                                        неформализованный Торг-12                                            :doc:`../Torg12ToSend`
+Document                                                      произвольный формализованный документ                                :doc:`../LegacyDocumentToSend`
 ============================================================= ==================================================================== =========================================

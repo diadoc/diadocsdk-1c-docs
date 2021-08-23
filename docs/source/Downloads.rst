@@ -6,21 +6,32 @@
 
 .. rubric:: Текущие версии внешней компоненты
 
-* **AddIn** компонента `v5.34.4.713 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_ для 1С
-* **AddIn** компонента `v5.34.4.713 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_ для 1С
-* **COM** компонента `v5.34.4.713 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_ для произвольных систем
-* **COM** компонента `v5.34.4.713 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_ для произвольных систем
+* **AddIn** компонента `v5.35.0.725 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_ для 1С
+* **AddIn** компонента `v5.35.0.725 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_ для 1С
+* **COM** компонента `v5.35.0.725 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_ для произвольных систем
+* **COM** компонента `v5.35.0.725 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_ для произвольных систем
 
 
 .. important::
     Доступна предварительная версия следующей ревизии компоненты.
-    
+
     **Внимание!** Обратная совместимость сохранена частично.
 
     `v6.0.0-RC1 <https://diadoccom-1c.readthedocs.io/en/latest/>`_
 
 
 .. rubric:: Устаревшие методы и свойства объектов
+
+
+.. warning:: В связи с изменениями в API Диадока после 1 октября 2021 года, методы, использующие старое представление контентов, перестанут работать и через некоторое время будут удалены из компоненты вместе с возвращаемыми ими объектами.
+  Методы, которые будут затронуты:
+
+  * :meth:`Organization.CreatePackageSendTask`
+  * :meth:`DocumentBase.GetContent`
+  * :meth:`DocumentBase.GetContentAsync`
+  * :meth:`DocumentBase.GetBuyerContent`
+  * :meth:`DocumentBase.CreateReplySendTask`
+  * :meth:`DocumentPackage.CreateReplySendTask`
 
 
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
@@ -83,6 +94,8 @@
 | :doc:`ComObjects/DocumentBase`. **ResolutionRequests**        | :doc:`History/release_info/5_34_0` |                                    | :meth:`DocumentBase.GetResolutionRequests`           |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
 | :doc:`ComObjects/DocumentBase`. **ResolutionRequestDenials**  | :doc:`History/release_info/5_34_0` |                                    | :meth:`DocumentBase.GetResolutionRequestDenials`     |
++---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
+| :doc:`ComObjects/DocumentBase`. **HasCustomPrintForm**        | :doc:`History/release_info/5_35_0` |                                    | :meth:`DocumentBase.DetectCustomPrintForm`           |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
 | :meth:`DocumentBase.GetContent`                               | :doc:`History/release_info/5_28_0` |                                    | :meth:`DocumentBase.GetDynamicContent`               |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
