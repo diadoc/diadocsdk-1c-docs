@@ -398,8 +398,8 @@ DocumentBase
 
 
 
-.. _DocumentBase-GetDocumentPackage:
-.. method:: DocumentBase.GetDocumentPackage(DetectCustomPrintForm=``FALSE``)
+.. _DocumentBase-GetPackageDocuments:
+.. method:: DocumentBase.GetPackageDocuments(DetectCustomPrintForm=``FALSE``)
 
   :DetectCustomPrintForm: ``Булево`` Флаг необходимости определить наличие нестандартной печатной формы (КПФ) у документов.
 
