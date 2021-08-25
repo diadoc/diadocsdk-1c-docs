@@ -6,6 +6,6 @@
   :date: 2021-08-25
 
 
-  .. rubric:: Исправлено
+.. rubric:: Исправлено
 
-  * ``APPCRASH`` при одновременном выполнении нескольких :meth:`DocumentsTask.GetDocumentsAsync`
+* ``APPCRASH`` при одновременном выполнении нескольких :meth:`DocumentsTask.GetDocumentsAsync`
