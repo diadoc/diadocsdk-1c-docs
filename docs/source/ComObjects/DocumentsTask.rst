@@ -19,7 +19,7 @@ DocumentsTask
   **Дата и время, чтение/запись** - дата документа, конечная дата интервала. Дата приводится к коннцу дня
 
 :Category:
-  **Строка, чтение/запись** - |DocumentTask-Category|_
+  **Строка, чтение/запись** - |DocumentsTask-Category|_
 
 :CounteragentId:
   **Строка, чтение/запись** - идентификатор контрагента, с которым шёл документооборот
@@ -51,23 +51,23 @@ DocumentsTask
 .. rubric:: Методы
 
 
-+------------------------------+-----------------------------------+
-| |DocumentTask-GetDocuments|_ | |DocumentTask-GetDocumentsAsync|_ |
-+------------------------------+-----------------------------------+
++-------------------------------+------------------------------------+
+| |DocumentsTask-GetDocuments|_ | |DocumentsTask-GetDocumentsAsync|_ |
++-------------------------------+------------------------------------+
 
-.. |DocumentTask-GetDocuments| replace:: GetDocuments()
-.. |DocumentTask-GetDocumentsAsync| replace:: GetDocumentsAsync()
+.. |DocumentsTask-GetDocuments| replace:: GetDocuments()
+.. |DocumentsTask-GetDocumentsAsync| replace:: GetDocumentsAsync()
 
 
 
-.. _DocumentTask-GetDocuments:
-.. method:: DocumentTask.GetDocuments()
+.. _DocumentsTask-GetDocuments:
+.. method:: DocumentsTask.GetDocuments()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`документов <DocumentBase>` удовлетворяющих заданному фильтру
 
 
-.. _DocumentTask-GetDocumentsAsync:
-.. method:: DocumentTask.GetDocumentsAsync()
+.. _DocumentsTask-GetDocumentsAsync:
+.. method:: DocumentsTask.GetDocumentsAsync()
 
   Асинхронно получает список документов, удовлетворяющих фиьлтру. Возвращает :doc:`AsyncResult` с результатом в виде :doc:`коллекции <Collection>` :doc:`документов <DocumentBase>`
 
@@ -78,18 +78,18 @@ DocumentsTask
 
 
 
-.. |DocumentTask-Category| replace:: категория документов
+.. |DocumentsTask-Category| replace:: категория документов
 
-.. _DocumentTask-Category:
+.. _DocumentsTask-Category:
 .. rubric:: Правила формирования *Category*
 
-Параметр *Category* имеет вид <|DocumentTask-DocumentType|_>.<|DocumentTask-DocumentClass|_><|DocumentTask-DocumentStatus|_> (без угловых скобок)
+Параметр *Category* имеет вид <|DocumentsTask-DocumentType|_>.<|DocumentsTask-DocumentClass|_><|DocumentsTask-DocumentStatus|_> (без угловых скобок)
 
-.. |DocumentTask-DocumentType| replace:: Тип
-.. |DocumentTask-DocumentClass| replace:: Класс
-.. |DocumentTask-DocumentStatus| replace:: Статус
+.. |DocumentsTask-DocumentType| replace:: Тип
+.. |DocumentsTask-DocumentClass| replace:: Класс
+.. |DocumentsTask-DocumentStatus| replace:: Статус
 
-.. _DocumentTask-DocumentType:
+.. _DocumentsTask-DocumentType:
 
 =================================== =====================================================================================================================================================================================================================================================================================================
 Значение *Типа документа*           Описание
@@ -102,7 +102,7 @@ Any                                 соответствует любому ти
 =================================== =====================================================================================================================================================================================================================================================================================================
 
 
-.. _DocumentTask-DocumentClass:
+.. _DocumentsTask-DocumentClass:
 
 =========================== ====================================================
 Значение *Класса документа* Описание
@@ -114,7 +114,7 @@ Proxy                       документ, переданный через п
 =========================== ====================================================
 
 
-.. _DocumentTask-DocumentStatus:
+.. _DocumentsTask-DocumentStatus:
 
 ================================= ====================================================================================================
 Значение *Статуса документа*      Описание
