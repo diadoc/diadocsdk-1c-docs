@@ -1,0 +1,12 @@
+5.35.3
+======
+
+
+.. feed-entry::
+  :date: 2021-08-30
+
+
+.. rubric:: Исправлено
+
+* На Windows XP/Server2003 зависала :регистрация компоненты <https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/regsvr32>:_
+* Для сертификатов, выпущенных после 3 августа мог неправильно определяться флаг **IsQualifiedElectronicSignature** в :doc:`объекте сертификата <../../ComObjects/PersonalCertificate>`
