@@ -61,11 +61,11 @@ PackageSendTask2
 
 
 .. _PackageSendtTask2-AddDocument:
-.. method:: PackageSendTask2.AddDocument(TitleName, Function, Version)
+.. method:: PackageSendTask2.AddDocument(TypeNamedId, DocumentFunction, DocumentVersion)
 
-  :TitleName: ``строка`` название типа документа
-  :Function: ``строка`` функция документа
-  :Version: ``строка`` версия документа
+  :TypeNamedId: ``строка`` название типа документа
+  :DocumentFunction: ``строка`` функция документа
+  :DocumentVersion: ``строка`` версия документа
 
   Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его.
   Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
@@ -73,11 +73,11 @@ PackageSendTask2
 
 
 .. _PackageSendtTask2-AddDocumentFromFile:
-.. method:: PackageSendTask2.AddDocumentFromFile(TitleName, Function, Version, FilePath)
+.. method:: PackageSendTask2.AddDocumentFromFile(TypeNamedId, DocumentFunction, DocumentVersion, FilePath)
 
-  :TitleName: ``строка`` название типа документа
-  :Function: ``строка`` функция документа
-  :Version: ``строка`` версия документа
+  :TypeNamedId: ``строка`` название типа документа
+  :DocumentFunction: ``строка`` функция документа
+  :DocumentVersion: ``строка`` версия документа
   :FilePath: ``строка`` путь до файла документа
 
   Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
@@ -86,11 +86,11 @@ PackageSendTask2
 
 
 .. _PackageSendtTask2-AddDocumentFromBase64:
-.. method:: PackageSendTask2.AddDocumentFromBase64(TitleName, Function, Version, Base64)
+.. method:: PackageSendTask2.AddDocumentFromBase64(TypeNamedId, DocumentFunction, DocumentVersion, Base64)
 
-  :TitleName: ``строка`` название типа документа
-  :Function: ``строка`` функция документа
-  :Version: ``строка`` версия документа
+  :TypeNamedId: ``строка`` название типа документа
+  :DocumentFunction: ``строка`` функция документа
+  :DocumentVersion: ``строка`` версия документа
   :Base64: ``строка`` контент документа в Base64
 
   Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из Base64 строки, и возвращает его.
