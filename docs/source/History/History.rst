@@ -153,3 +153,4 @@
   release_info/5_35_2
   release_info/5_35_3
   release_info/5_35_4
+  release_info/5_36_0
