@@ -4,3 +4,4 @@ compile_doc.bat
 *.bat
 docs/source/_extensions/__pycache__/
 docs/.idea/
+.idea/
