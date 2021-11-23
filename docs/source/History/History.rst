@@ -157,3 +157,4 @@
   release_info/5_36_1
   release_info/5_36_2
   release_info/5_36_3
+  release_info/5_36_4
