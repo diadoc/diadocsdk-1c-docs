@@ -24,7 +24,6 @@ DynamicContent
 
 2. объекты  IValueCollection могут содержать:
     - строки
-    - объекты интерфейса :doc:`IValueCollection <Collection>`
     - или объекты :doc:`DynamicContent`
 
 Общие правила формирования структуры :doc:`DynamicContent`'а из UserDataXSD:
@@ -38,7 +37,7 @@ DynamicContent
     - ``<xs:attribute name="SimpleElementName" type="string50">`` + ``<xs:simpleType name="string50"> <xs:restriction base="xs:string">``
     - ``<xs:attribute name="SimpleElementName"><xs:simpleType><xs:restriction base="xs:decimal">...``
 
-3. Повторяющиеся элементы (maxOccurs="unbounded", maxOccurs > 1 или повторяющиеся по умолчанию для описанного типа элемента) будут добавлены как IValueCollection
+3. Повторяющиеся элементы (maxOccurs="unbounded", maxOccurs > 1 или повторяющиеся по умолчанию для описанного типа элемента) будут добавлены как :doc:`IValueCollection <Collection>`
 
 4. Имя поля COM-объекта, соответствующее элементу XSD-схемы будет совпадать с именем элемента в XSD-схеме
 
