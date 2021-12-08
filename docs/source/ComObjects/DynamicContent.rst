@@ -10,6 +10,7 @@ DynamicContent
     * как результат выполнения метода :meth:`Document.GetDynamicContent`
 
 
+
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
@@ -18,22 +19,27 @@ DynamicContent
 Представление контента документа имеет рекурсивную структуру:
 
 - полями :doc:`DynamicContent`'а могут являться:
+
     - строки
     - объекты интерфейса :doc:`IValueCollection <Collection>`
     - объекты :doc:`DynamicContent`
 
 - объекты :doc:`IValueCollection <Collection>` могут содержать:
+
     - строки
     - объекты :doc:`DynamicContent`
+
 
 
 .. rubric:: Общие правила формирования структуры :doc:`DynamicContent`'а
 
 - Элементы сложного типа будут представлены как :doc:`DynamicContent`
+
     - ``<xs:element name="ComplexElementName"> <xs:complexType>....``
     - ``<xs:element name="ComplexElementName" type="ComlexElementType">``
 
 - Элементы простого (встроенного) типа (числа, строки, даты) будут представлены как строки
+
     - ``<xs:attribute name="SimpleElementName" type="string50">`` ( ``<xs:simpleType name="string50"> <xs:restriction base="xs:string">`` )
     - ``<xs:attribute name="SimpleElementName"><xs:simpleType><xs:restriction base="xs:decimal">...``
 
@@ -44,8 +50,8 @@ DynamicContent
 - Если у повторяющегося элемента XSD-схемы не указано имя, то будет применено имя ``items``
 
 - Если тип элемента наследуется от другого типа, то наследник будет иметь все свойства родителя
-    - ``<xs:complexType name="ChildType"><xs:extension base="ParentType">...``
 
+    - ``<xs:complexType name="ChildType"><xs:extension base="ParentType">...``
 
 
 
@@ -55,6 +61,7 @@ DynamicContent
 2. Имя метода для добавления элемента - ``"Add" + <Имя поля с коллекцией>``
 3. Если :doc:`коллекция <Collection>` хранит в себе повторяющиеся строки (а не :doc:`DynamicContent`), то метод нужно вызвать с одним параметром - добавляемой в коллекцию строкой. Возвращаемого значения у метода не будет
 4. Если коллекция хранит не строки, то метод нужно вызвать без параметров. Метод вернёт добавленный в коллекцию элемент
+
 
 
 .. rubric:: Пример работы с динамическим контентом
