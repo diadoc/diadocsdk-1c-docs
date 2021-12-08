@@ -7,6 +7,7 @@
   AuthenticateType <AuthenticateType>
   AutoLogonPolicy <AutoLogonPolicy>
   BilateralStatus <BilateralStatus>
+  CertificateOwnerType <CertificateOwnerType>
   CommentType <CommentType>
   CounteragentStatus <CounteragentStatus>
   Docflow <Docflow>
