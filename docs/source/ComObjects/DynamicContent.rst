@@ -1,7 +1,7 @@
 DynamicContent
 ==============
 
-Представление содержания документа
+Представление контента документа
 
 Используется:
 
@@ -13,71 +13,49 @@ DynamicContent
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
-Описание полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
+Набор полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
 
-Каждое поле объекта является или **строкой**, или :doc:`коллекцией <Collection>`, или :doc:`DynamicContent`'ом
+Представление контента документа имеет рекурсивную структуру:
 
+- полями :doc:`DynamicContent`'а могут являться:
+    - строки
+    - объекты интерфейса :doc:`IValueCollection <Collection>`
+    - объекты :doc:`DynamicContent`
 
-.. warning::
-  При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
-
-  Всё описание теперь находится в соответвующей XSD схеме
-
-
-.. rubric:: Методы
-
-+--------------------------------------+-------------------------------+
-| |DynamicContent-GetPropertiesNames|_ | |DynamicContent-HasProperty|_ |
-+--------------------------------------+-------------------------------+
-
-.. |DynamicContent-GetPropertiesNames| replace:: GetPropertiesNames()
-.. |DynamicContent-HasProperty| replace:: HasProperty()
+- объекты :doc:`IValueCollection <Collection>` могут содержать:
+    - строки
+    - объекты :doc:`DynamicContent`
 
 
-.. _DynamicContent-GetPropertiesNames:
-.. method:: DynamicContent.GetPropertiesNames()
+.. rubric:: Общие правила формирования структуры :doc:`DynamicContent`'а
 
-  Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
+- Элементы сложного типа будут представлены как :doc:`DynamicContent`
+    - ``<xs:element name="ComplexElementName"> <xs:complexType>....``
+    - ``<xs:element name="ComplexElementName" type="ComlexElementType">``
 
-  .. versionadded:: 5.28.3
+- Элементы простого (встроенного) типа (числа, строки, даты) будут представлены как строки
+    - ``<xs:attribute name="SimpleElementName" type="string50">`` ( ``<xs:simpleType name="string50"> <xs:restriction base="xs:string">`` )
+    - ``<xs:attribute name="SimpleElementName"><xs:simpleType><xs:restriction base="xs:decimal">...``
 
-  .. deprecated:: 5.28.7
-    Используйте :doc:`Reflector`
+- Повторяющиеся элементы (``maxOccurs= "unbounded"``, ``maxOccurs > 1`` или повторяющиеся по умолчанию для описанного типа элемента) будут добавлены как :doc:`IValueCollection <Collection>`
 
+- Имя поля COM-объекта, соответствующее элементу XSD-схемы будет совпадать с именем элемента в XSD-схеме
 
-.. _DynamicContent-HasProperty:
-.. method:: DynamicContent.HasProperty(PropertyName)
+- Если у повторяющегося элемента XSD-схемы не указано имя, то будет применено имя ``items``
 
-  :PropertyName: ``строка`` - имя свойства
+- Если тип элемента наследуется от другого типа, то наследник будет иметь все свойства родителя
+    - ``<xs:complexType name="ChildType"><xs:extension base="ParentType">...``
 
-  Возвращает булевое значение наличия у объекта свойства с заданным именем
-
-  .. versionadded:: 5.28.3
-
-  .. deprecated:: 5.28.7
-    Используйте :doc:`Reflector`
 
 
 
 .. rubric:: Как работать с коллекциями
 
-Если контент выглядит так:
+1. Чтобы добавить элемент в коллекцию, необходимо вызвать метод объекта, в котором эта коллекция лежит. Назовём этот объект ``ВладелецКоллекции``
+2. Имя метода для добавления элемента - ``"Add" + <Имя поля с коллекцией>``
+3. Если коллекция хранит в себе повторяющиеся строки (а не :doc:`DynamicContent` или :doc:`IValueCollection <Collection>`), то метод нужно вызвать с одним параметром - добавляемой в коллекцию строкой. Возвращаемого значения у метода не будет
+4. Если коллекция хранит не строки, то метод нужно вызвать без параметров. Метод вернёт добавленный в коллекцию элемент
 
-    ``DynamicContent_ВладелецКоллекции.Коллекция``
-
-Тогда для добавления элемента в коллекцию необходимо вызвать
-
-.. code-block:: c#
-
-  // Если коллекция состоит из сложных объектов
-  НовыйЭлементКоллекции = DynamicContent_ВладелецКоллекции.AddКоллекция();
-
-  // Если коллекция состоит из строк
-  DynamicContent_ВладелецКоллекции.AddКоллекция("Значение");
-
-
-Имя метода, с помощью которого можно добавить элемент зависит от названия коллекции и формируется как ``"Add" + <название коллекции>``.
-У коллекций, для которых в XSD не указано имя, используется имя ``items``
 
 .. rubric:: Пример работы с динамическим контентом
 
@@ -135,6 +113,44 @@ DynamicContent
   //     </xs:sequence>
   //   </xs:complexType>
   // </xs:element>
+
+
+.. warning::
+  При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
+
+
+.. rubric:: Устаревшие Методы
+
++--------------------------------------+-------------------------------+
+| |DynamicContent-GetPropertiesNames|_ | |DynamicContent-HasProperty|_ |
++--------------------------------------+-------------------------------+
+
+.. |DynamicContent-GetPropertiesNames| replace:: GetPropertiesNames()
+.. |DynamicContent-HasProperty| replace:: HasProperty()
+
+
+.. _DynamicContent-GetPropertiesNames:
+.. method:: DynamicContent.GetPropertiesNames()
+
+  Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
+
+  .. versionadded:: 5.28.3
+
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
+
+
+.. _DynamicContent-HasProperty:
+.. method:: DynamicContent.HasProperty(PropertyName)
+
+  :PropertyName: ``строка`` - имя свойства
+
+  Возвращает булевое значение наличия у объекта свойства с заданным именем
+
+  .. versionadded:: 5.28.3
+
+  .. deprecated:: 5.28.7
+    Используйте :doc:`Reflector`
 
 
 .. seealso:: :doc:`../HowTo/HowTo_reflect_object`
