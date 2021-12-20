@@ -9,5 +9,4 @@
 .. rubric:: Исправлено
 
 - Запрос документов, полученных от некоторых организаций или отправленных им, заканчивался ошибкой ``code:404, HTTP error: Unknown box``. Теперь такие документы получить возможно
-- Обращение к свойству **IsQualifiedElectronicSignature** объекта :doc:`../../ComObjects/PersonalCertificate` приводилдо к ошибке ``ASN1[0x00000011] an error occurred while decoding asn.1 value``,
-если формат расширений сертификата не соответствовал требованиям формату расширений квалифицированного сертификата
+- Обращение к свойству **IsQualifiedElectronicSignature** объекта :doc:`../../ComObjects/PersonalCertificate` приводило к ошибке ``ASN1[0x00000011] an error occurred while decoding asn.1 value``, если формат расширений сертификата не соответствовал требованиям формату расширений квалифицированного сертификата
