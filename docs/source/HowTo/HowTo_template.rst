@@ -22,16 +22,13 @@
 
 .. code-block:: c#
 
-    // dd_Connection - созданный объект подключения
+    // dd_Organization - объект организации, в которой идёт работа
 
-    Функция ОтправитьШаблонУПДСЧФДОП(BoxId_ОтправителяШаблона,
-                                     BoxId_ПолучателяШаблона,
+    Функция ОтправитьШаблонУПДСЧФДОП(BoxId_ПолучателяШаблона,
                                      BoxId_ОтправителяДокумента,
                                      BoxId_ПолучателяДокумента,
                                      ПутьДоФайлаТитулаПродавца,
                                      ПутьДоФайлаТитулаПокупателя)
-
-        dd_Organization = dd_Connection.GetOrganizationById(BoxId_ОтправителяШаблона);
 
         dd_TemplateSendTask = dd_Organization.CreateTemplateSendTask();
         dd_TemplateSendTask.ToBoxId          = BoxId_ПолучателяШаблона;
