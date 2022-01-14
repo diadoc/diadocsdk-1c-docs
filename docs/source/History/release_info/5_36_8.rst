@@ -1,0 +1,11 @@
+5.36.8
+======
+
+
+.. feed-entry::
+  :date: 2022-01-14
+
+
+.. rubric:: Изменено
+
+- Удалён метод :meth:`Organization.SendDraftAsync`

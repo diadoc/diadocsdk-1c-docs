@@ -22,12 +22,12 @@
 
         // Добавление документа для заполнения контента средствами компоненты
         // Предполагаем, что процедура заполнения контента уже существует
-        First_DocumentToSend = SendTask.AddDocument("UniversalTransferDocument", "СЧФДОП", "utd820_05_01_01");
+        First_DocumentToSend = SendTask.AddDocument("UniversalTransferDocument", "СЧФДОП", "utd820_05_01_02_hyphen");
         First_DocumentToSend.Comment = "Это УПД с заполнением контента средствами компоненты";
         ЗаполнитьДинамическийКонтентДокумента(First_DocumentToSend.Content);
 
         // Добавление документа УПД с контентом, взятым из файла
-        Second_DocumentToSend = SendTask.AddDocumentFromFile("UniversalTransferDocument", "СЧФДОП", "utd820_05_01_01", "С:\\Moй УПД.xml");
+        Second_DocumentToSend = SendTask.AddDocumentFromFile("UniversalTransferDocument", "СЧФДОП", "utd820_05_01_02_hyphen", "С:\\Moй УПД.xml");
         Second_DocumentToSend.Comment = "Это УПД с контентом, загруженным из файла";
 
         // Добавление неформализованного документа
