@@ -494,6 +494,9 @@ Organization
   .. versionchanged:: 5.33.0
     Метод ничего не делает
 
+  .. versionchanged:: 5.36.8
+    Метод удалён
+
 
 
 .. method:: Organization.SetAndValidateAddressForCounteragent(key1S, addressTypeKey, isForeign, zipCode, regionCode, territory, city, locality, street, building, block, apartment)

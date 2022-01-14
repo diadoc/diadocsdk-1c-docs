@@ -6,10 +6,10 @@
 
 .. rubric:: Текущие версии внешней компоненты
 
-* **AddIn** компонента `v5.36.7.772 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_ для 1С
-* **AddIn** компонента `v5.36.7.772 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_ для 1С
-* **COM** компонента `v5.36.7.772 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_ для произвольных систем
-* **COM** компонента `v5.36.7.772 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_ для произвольных систем
+* **AddIn** компонента `v5.36.8.783 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_ для 1С
+* **AddIn** компонента `v5.36.8.783 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_ для 1С
+* **COM** компонента `v5.36.8.783 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_ для произвольных систем
+* **COM** компонента `v5.36.8.783 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_ для произвольных систем
 
 
 .. important::
@@ -57,7 +57,7 @@
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
 | :meth:`Organization.CreatePackageSendTask`                    | :doc:`History/release_info/5_27_0` |                                    | :meth:`Organization.CreatePackageSendTask2`          |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
-| :meth:`Organization.SendDraftAsync`                           | :doc:`History/release_info/5_18_0` |                                    | :meth:`Organization.CreateSendDraftTask`             |
+| :meth:`Organization.SendDraftAsync`                           | :doc:`History/release_info/5_18_0` | :doc:`History/release_info/5_36_8` | :meth:`Organization.CreateSendDraftTask`             |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+
 | :meth:`Organization.SetAndValidateAddressForCounteragent`     | :doc:`History/release_info/5_5_0`  |                                    | :meth:`Organization.CreateDataTask`                  |
 +---------------------------------------------------------------+------------------------------------+------------------------------------+------------------------------------------------------+

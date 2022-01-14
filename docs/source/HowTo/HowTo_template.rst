@@ -22,26 +22,25 @@
 
 .. code-block:: c#
 
-    Функция ОтправитьШаблонУПДСЧФДОП(BoxId_ОтправителяШаблона,
-                                     BoxId_ПолучателяШаблона,
+    // dd_Organization - объект организации, в которой идёт работа
+
+    Функция ОтправитьШаблонУПДСЧФДОП(BoxId_ПолучателяШаблона,
                                      BoxId_ОтправителяДокумента,
                                      BoxId_ПолучателяДокумента,
                                      ПутьДоФайлаТитулаПродавца,
                                      ПутьДоФайлаТитулаПокупателя)
 
-        Отправитель = dd_Connection.GetOrganizationById(BoxId_ОтправителяШаблона);
+        dd_TemplateSendTask = dd_Organization.CreateTemplateSendTask();
+        dd_TemplateSendTask.ToBoxId          = BoxId_ПолучателяШаблона;
+        dd_TemplateSendTask.MessageFromBoxId = BoxId_ОтправителяДокумента;
+        dd_TemplateSendTask.MessageToBoxId   = BoxId_ПолучателяДокумента;
 
-        TemplateSendTask = Organization.CreateTemplateSendTask();
-        TemplateSendTask.ToBoxId          = BoxId_ПолучателяШаблона;
-        TemplateSendTask.MessageFromBoxId = BoxId_ОтправителяДокумента;
-        TemplateSendTask.MessageToBoxId   = BoxId_ПолучателяДокумента;
+        dd_TemplateToSend = TemplateSendTask.AddTemplate("UniversalTransferDocument");
+        dd_TemplateToSend.Function = "СЧФДОП";
+        dd_TemplateToSend.LoadSellerTitleFromFile(ПутьДоФайлаТитулаПродавца);
+        dd_TemplateToSend.LoadBuyerTitleFromFile(ПутьДоФайлаТитулаПокупателя);
 
-        TemplateToSend = dd_TemplateSendTask.AddTemplate("UniversalTransferDocument");
-        TemplateToSend.Function = "InvoiceAndBasic";
-        TemplateToSend.LoadSellerTitleFromFile(ПутьДоФайлаТитулаПродавца);
-        TemplateToSend.LoadBuyerTitleFromFile(ПутьДоФайлаТитулаПокупателя);
-
-        Возврат TemplateSendTask.Send();
+        Возврат dd_TemplateSendTask.Send();
 
     КонецФункции
 
