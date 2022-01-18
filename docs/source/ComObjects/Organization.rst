@@ -49,6 +49,11 @@ Organization
 :Certificate:
   :doc:`PersonalCertificate` **, чтение** - сертификат, по которому произошла авторизация в данной организации
 
+:NeedAttachPowerOfAttorney:
+  **Булево, чтение** - при выполнении действий, связанных с подписанием, необходимо прикладывать МЧД
+
+  .. versionadded:: 5.37.0
+
 
 
 .. rubric:: Методы
@@ -62,13 +67,13 @@ Organization
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
 | |Organization-GetReceiptGenerationProcess|_ | |Organization-GetCounteragentListByStatusAsync|_ | |Organization-GetResolutionRoutes|_        | |Organization-CreateSetExtendedSignerDetailsTask|_ |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-SaveUserDataXSD|_             | |Organization-GetCounteragentListByInnKpp|_      | |Organization-SendFnsRegistrationMessage|_ |                                                    |
+| |Organization-SaveUserDataXSD|_             | |Organization-GetCounteragentListByInnKpp|_      | |Organization-SendFnsRegistrationMessage|_ | |Organization-GetMyPowersOfAttorney|_              |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetBase64UserDataXSD|_        | |Organization-GetCounteragentListByInnKppAsync|_ | |Organization-CreateDataTask|_             |                                                    |
+| |Organization-GetBase64UserDataXSD|_        | |Organization-GetCounteragentListByInnKppAsync|_ | |Organization-CreateDataTask|_             | |Organization-SetDefaultPowerOfAttorney|_          |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-RestoreDocument|_             | |Organization-GetCounteragentListByInnList|_     |                                            |                                                    |
+| |Organization-RestoreDocument|_             | |Organization-GetCounteragentListByInnList|_     |                                            | |Organization-RegisterPowerOfAttorneyById|_        |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-CreateSendDraftTask|_         | |Organization-CreateAcquireCounteragentTask|_    |                                            |                                                    |
+| |Organization-CreateSendDraftTask|_         | |Organization-CreateAcquireCounteragentTask|_    |                                            | |Organization-RegisterPowerOfAttorneyByContent|_   |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
 | |Organization-RecycleDraft|_                |                                                  |                                            |                                                    |
 +---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
@@ -116,6 +121,10 @@ Organization
 .. |Organization-CanSendInvoice| replace:: CanSendInvoice()
 .. |Organization-GetExtendedSignerDetails2| replace:: GetExtendedSignerDetails2()
 .. |Organization-CreateSetExtendedSignerDetailsTask| replace:: CreateSetExtendedSignerDetailsTask()
+.. |Organization-GetMyPowersOfAttorney| replace:: GetMyPowersOfAttorney()
+.. |Organization-SetDefaultPowerOfAttorney| replace:: SetDefaultPowerOfAttorney()
+.. |Organization-RegisterPowerOfAttorneyById| replace:: RegisterPowerOfAttorneyById()
+.. |Organization-RegisterPowerOfAttorneyByContent| replace:: RegisterPowerOfAttorneyByContent()
 
 
 .. _Organization-GetDocumentById:
@@ -213,6 +222,7 @@ Organization
   *MessageId* - первая половина из *DocumentId* черновика
 
   .. versionadded:: 5.25.0
+
 
 
 .. _Organization-GetDocumentEventList:
@@ -421,6 +431,49 @@ Organization
 
   Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта
 
+
+
+.. _Organization-GetMyPowersOfAttorney:
+.. method:: Organization.GetMyPowersOfAttorney(OnlyActual)
+
+  :OnlyActual: ``Булево`` возврашат только действующие МЧД
+
+  Метод возвращает :doc:`коллекцию <Collection>` :doc:`МЧД, привязанных к сотруднику <EmployeePowerOfAttorney>`
+
+  .. versionadded:: 5.37.0
+
+
+
+.. _Organization.SetDefaultPowerOfAttorney:
+.. method:: Organization.SetDefaultPowerOfAttorney(PowerOfAttorney)
+
+  :PowerOfAttorney: :doc:`PowerOfAttorneyInfo` данные об МЧД
+
+  Применяет переданную МЧД как МЧД по-умолчанию для текущего сотрудника
+
+  .. versionadded:: 5.37.0
+
+
+.. _Organization.RegisterPowerOfAttorneyById:
+.. method:: Organization.RegisterPowerOfAttorneyById(RegNumber, IssuerInn)
+
+  :RegNumber: ``Строка`` регистрационный номер МЧД
+  :IssuerInn: ``Строка`` ИНН доверителя
+
+  Регистрирует МЧД, в сервисе Диадок по её регистрационному номеру и ИНН доверителя
+
+  .. versionadded:: 5.37.0
+
+
+.. _Organization.RegisterPowerOfAttorneyByContent:
+.. method:: Organization.RegisterPowerOfAttorneyByContent(XmlContent, XmlSignature)
+
+  :XmlContent: ``Строка`` контент МЧД в виде base64 строки
+  :XmlSignature: ``Строка`` контент подписи МЧД в виде base64 строки
+
+  Регистрирует МЧД, в сервисе Диадок с помощью файла МЧД и подписи, которой она была подписана
+
+  .. versionadded:: 5.37.0
 
 
 
