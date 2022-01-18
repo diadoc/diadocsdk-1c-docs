@@ -29,6 +29,7 @@
   OperationType <OperationType>
   OrganizationFeatures <OrganizationFeatures>
   OrganizationType <OrganizationType>
+  PowerOfAttorneyAffiliation <PowerOfAttorneyAffiliation>
   ProxyMode <ProxyMode>
   ProxySignatureStatus <ProxySignatureStatus>
   ReceiptStatus <ReceiptStatus>
