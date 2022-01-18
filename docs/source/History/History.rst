@@ -162,3 +162,4 @@
   release_info/5_36_6
   release_info/5_36_7
   release_info/5_36_8
+  release_info/5_36_9
