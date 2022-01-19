@@ -58,7 +58,7 @@
 
   * :doc:`../ComObjects/AcquireCounteragentTask` - для подписания документа-вложения, если он указан
   * :doc:`../ComObjects/ReceiptGenerationProcess` - для подписания ИоПов
-  * :doc:`../ComObjects/OutDocumentSignTask` - для подписания титула отправляемого документа
+  * :doc:`../ComObjects/OutDocumentSignTask` - для подписания отправляемых документов
   * :doc:`../ComObjects/PackageSendTask` - для подписания отправляемых документов
   * :doc:`../ComObjects/PackageSendTask2` - для подписания отправляемых документов
   * :doc:`../ComObjects/ReplySendTask` - для любого из ответных действий по документам
