@@ -444,7 +444,7 @@ Organization
 
 
 
-.. _Organization.SetDefaultPowerOfAttorney:
+.. _Organization-SetDefaultPowerOfAttorney:
 .. method:: Organization.SetDefaultPowerOfAttorney(PowerOfAttorney)
 
   :PowerOfAttorney: :doc:`PowerOfAttorneyInfo` данные об МЧД
@@ -454,7 +454,7 @@ Organization
   .. versionadded:: 5.37.0
 
 
-.. _Organization.RegisterPowerOfAttorneyById:
+.. _Organization-RegisterPowerOfAttorneyById:
 .. method:: Organization.RegisterPowerOfAttorneyById(RegNumber, IssuerInn)
 
   :RegNumber: ``Строка`` регистрационный номер МЧД
@@ -465,7 +465,7 @@ Organization
   .. versionadded:: 5.37.0
 
 
-.. _Organization.RegisterPowerOfAttorneyByContent:
+.. _Organization-RegisterPowerOfAttorneyByContent:
 .. method:: Organization.RegisterPowerOfAttorneyByContent(XmlContent, XmlSignature)
 
   :XmlContent: ``Строка`` контент МЧД в виде base64 строки

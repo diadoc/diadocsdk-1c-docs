@@ -126,7 +126,7 @@
   PowerOfAttorneyInfo <PowerOfAttorneyInfo>
   PowerOfAttorneyParticipant <PowerOfAttorneyParticipant>
   PowerOfAttorneyRegistrationInfo <PowerOfAttorneyRegistrationInfo>
-  PowerOfAttorneyInfoRegistrationResult <PowerOfAttorneyInfoRegistrationResult>
+  PowerOfAttorneyRegistrationResult <PowerOfAttorneyRegistrationResult>
   PowerOfAttorneyStatus <PowerOfAttorneyStatus>
   PowerOfAttorneyToAttach <PowerOfAttorneyToAttach>
   PowerOfAttorneyValidationInfo <PowerOfAttorneyValidationInfo>

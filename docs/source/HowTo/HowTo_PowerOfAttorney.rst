@@ -3,19 +3,19 @@
 
 При работе с МЧД могут потребоваться следующие данные:
 
-* поле **NeedAttachPowerOfAttorney** объекта :doc:`Organization`
-* поле **OwnerType** объекта :doc:`PersonalCertificate`
+* поле **NeedAttachPowerOfAttorney** объекта :doc:`../ComObjects/Organization`
+* поле **OwnerType** объекта :doc:`../ComObjects/PersonalCertificate`
 * объекты для представления данных об МЧД:
 
-  * :doc:`PowerOfAttorneyInfo`
-  * :doc:`PowerOfAttorenyParticipant`
-  * :doc:`PowerOfAttorneyStatus`
-  * :doc:`PowerOfAttorneyValidationInfo`
-  * :doc:`PowerOfAttorneyRegistrationInfo`
-  * :doc:`PowerOfAttorneyRegistrationResult`
-  * :doc:`EmployeePowerOfAttorney`
-  * :doc:`AttachedPowerOfAttorney`
-  * :doc:`PowerOfAttorneyToAttach`
+  * :doc:`../ComObjects/PowerOfAttorneyInfo`
+  * :doc:`../ComObjects/PowerOfAttorneyParticipant`
+  * :doc:`../ComObjects/PowerOfAttorneyStatus`
+  * :doc:`../ComObjects/PowerOfAttorneyValidationInfo`
+  * :doc:`../ComObjects/PowerOfAttorneyRegistrationInfo`
+  * :doc:`../ComObjects/PowerOfAttorneyRegistrationResult`
+  * :doc:`../ComObjects/EmployeePowerOfAttorney`
+  * :doc:`../ComObjects/AttachedPowerOfAttorney`
+  * :doc:`../ComObjects/PowerOfAttorneyToAttach`
 
 
 
@@ -56,14 +56,14 @@
 МЧД необходимо прикладывать при подписании каких-либо сущностей.
 В Task'ах, в которых может произойти подписание каких-либо сущностей добавлено поле **PowerOfAttorneyToAttach**. К таким Task'ам относятся:
 
-  * :doc:`AcquireCounteragentTask` - для подписания документа-вложения, если он указан
-  * :doc:`ReceiptGenerationProcess` - для подписания ИоПов
-  * :doc:`OutDocumentSignTask` - для подписания титула отправляемого документа
-  * :doc:`PackageSendTask` - для подписания отправляемых документов
-  * :doc:`PackageSendTask2` - для подписания отправляемых документов
-  * :doc:`ReplySendTask` - для любого из ответных действий по документам
-  * :doc:`ReplySendTask2` - для любого из ответных действий по документам
-  * :doc:`SendDraftTask` - для подписания отправляемых документов
+  * :doc:`../ComObjects/AcquireCounteragentTask` - для подписания документа-вложения, если он указан
+  * :doc:`../ComObjects/ReceiptGenerationProcess` - для подписания ИоПов
+  * :doc:`../ComObjects/OutDocumentSignTask` - для подписания титула отправляемого документа
+  * :doc:`../ComObjects/PackageSendTask` - для подписания отправляемых документов
+  * :doc:`../ComObjects/PackageSendTask2` - для подписания отправляемых документов
+  * :doc:`../ComObjects/ReplySendTask` - для любого из ответных действий по документам
+  * :doc:`../ComObjects/ReplySendTask2` - для любого из ответных действий по документам
+  * :doc:`../ComObjects/SendDraftTask` - для подписания отправляемых документов
 
 
 .. code-block:: c#
