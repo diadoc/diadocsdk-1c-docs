@@ -42,6 +42,11 @@ PackageSendTask2
 :DocumentsToSend:
   :doc:`Коллекция <Collection>` **объектов** :doc:`CustomDocumentToSend` **, чтение** - документы на отправку, добавленные в пакет
 
+:PowerOfAttorneyToAttach:
+  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+
+  .. versionadded:: 5.37.0
+
 
 
 .. rubric:: Методы

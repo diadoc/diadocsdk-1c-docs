@@ -22,6 +22,7 @@
   AmountsDiff <AmountsDiff>
   ArgPack <ArgPack>
   AsyncResult <AsyncResult>
+  AttachedPowerOfAttorney <AttachedPowerOfAttorney>
   Attorney <Attorney>
   BaseContent <BaseContent>
   BaseDocument <BaseDocument>
@@ -63,6 +64,7 @@
   DocumentWorkflow <DocumentWorkflow>
   DynamicContent <DynamicContent>
   Employee <Employee>
+  EmployeePowerOfAttorney <EmployeePowerOfAttorney>
   Entity <Entity>
   ErrorCode <ErrorCode>
   EventContent <EventContent>
@@ -121,6 +123,13 @@
   PackageSendTask2 <PackageSendTask2>
   PaymentDocument <PaymentDocument>
   PersonalCertificate <PersonalCertificate>
+  PowerOfAttorneyInfo <PowerOfAttorneyInfo>
+  PowerOfAttorneyParticipant <PowerOfAttorneyParticipant>
+  PowerOfAttorneyRegistrationInfo <PowerOfAttorneyRegistrationInfo>
+  PowerOfAttorneyInfoRegistrationResult <PowerOfAttorneyInfoRegistrationResult>
+  PowerOfAttorneyStatus <PowerOfAttorneyStatus>
+  PowerOfAttorneyToAttach <PowerOfAttorneyToAttach>
+  PowerOfAttorneyValidationInfo <PowerOfAttorneyValidationInfo>
   PriceListAgreementToSend <PriceListAgreementToSend>
   ProxySettings <ProxySettings>
   ReceiptError <ReceiptError>

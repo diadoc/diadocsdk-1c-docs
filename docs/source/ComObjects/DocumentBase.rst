@@ -198,6 +198,8 @@ DocumentBase
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 |                                            |                                        | |DocumentBase-GetResolutionRequestDenials|_ |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
+|                                            |                                        | |DocumentBase-GetPowersOfAttorney|_         |                                             |
++--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 |                                            |                                        | |DocumentBase-DetectCustomPrintForm|_       |                                             |
 +--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
 
@@ -230,6 +232,7 @@ DocumentBase
 .. |DocumentBase-GetResolutions| replace:: GetResolutions()
 .. |DocumentBase-GetResolutionRequests| replace:: GetResolutionRequests()
 .. |DocumentBase-GetResolutionRequestDenials| replace:: GetResolutionRequestDenials()
+.. |DocumentBase-GetPowersOfAttorney| replace:: GetPowersOfAttorney()
 .. |DocumentBase-DetectCustomPrintForm| replace:: DetectCustomPrintForm()
 
 .. |DocumentBase-CreateReplySendTask2| replace:: CreateReplySendTask2()
@@ -473,6 +476,13 @@ DocumentBase
 
 
 
+.. _DocumentBase-GetPowersOfAttorney:
+.. method:: DocumentBase.GetPowersOfAttorney()
+
+  Метод возвращает :doc:`коллекцию <Collection>` :doc:`МЧД <AttachedPowerOfAttorney>` , использованных для подписания сущностей документа
+
+
+
 .. _DocumentBase-DetectCustomPrintForm:
 .. method:: DocumentBase.DetectCustomPrintForm()
 
@@ -496,6 +506,15 @@ DocumentBase
 .. method:: DocumentBase.SendReceiptsAsync()
 
   Отправляет извещения о получении документа, необходимые для завершения документооборота. Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
+
+
+.. _DocumentBase-SendReceiptsWithPowerOfAttorney:
+.. method:: DocumentBase.SendReceiptsWithPowerOfAttorney(PowerOfAttorneyInfo)
+
+  :PowerOfAttorneyInfo: :doc:`PowerOfAttorneyInfo` реквизиты МЧД
+
+  Отправляет извещения о получении документа, необходимые для завершения документооборота. Для подписания извещений используется указанная МЧД.
+  Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
 
 
 

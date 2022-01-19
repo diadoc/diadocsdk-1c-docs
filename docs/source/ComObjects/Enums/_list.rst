@@ -12,7 +12,6 @@
   CounteragentStatus <CounteragentStatus>
   Docflow <Docflow>
   DocflowSide <DocflowSide>
-  DocflowStatusSeverity <DocflowStatusSeverity>
   DocumentDirection <DocumentDirection>
   DocumentsAccessLevel <DocumentsAccessLevel>
   DocumentTitleType <DocumentTitleType>
@@ -43,9 +42,9 @@
   RevocationStatus <RevocationStatus>
   RoamingNotificationStatus <RoamingNotificationStatus>
   SenderSignatureStatus <SenderSignatureStatus>
+  Severity <Severity>
   SignerPowers <SignerPowers>
   SignerStatus <SignerStatus>
-
   SignerType <SignerType>
   TaxRate <TaxRate>
   TemplateRefusalType <TemplateRefusalType>
