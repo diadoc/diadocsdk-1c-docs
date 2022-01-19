@@ -35,9 +35,9 @@
 
 .. rubric:: МЧД привязанные к сотруднику организации
 
-Для получения МЧД, привязанных к текущему авторизованному сотруднику мпредназначен метод :meth:`Organization.GetMyPowersOfAttorney`
+Для получения МЧД, привязанных к текущему авторизованному сотруднику, предназначен метод :meth:`Organization.GetMyPowersOfAttorney`
 
-Если какую-то из полученных МЧД требуется установить как МЧД по умолчанию, то можно использовать :meth:`Organization.SetDefaultPowerOfAttorney`
+Если какую-то МЧД требуется установить как МЧД по умолчанию, то можно использовать :meth:`Organization.SetDefaultPowerOfAttorney`
 
 
 .. code-block:: c#
