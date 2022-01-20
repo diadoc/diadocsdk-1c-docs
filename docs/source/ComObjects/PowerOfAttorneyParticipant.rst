@@ -1,4 +1,4 @@
-PowerOfAttorenyParticipant
+PowerOfAttorneyParticipant
 ==========================
 
 Данные об одной из доверителе или доверенном в МЧД
