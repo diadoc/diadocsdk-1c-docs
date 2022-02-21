@@ -11,6 +11,7 @@
 * Поддержка работы с машиночитаемыми доверенностями (МЧД):
 
   * Добавлены объекты:
+
     * :doc:`../../ComObjects/PowerOfAttorney`
     * :doc:`../../ComObjects/EmployeePowerOfAttorney`
     * :doc:`../../ComObjects/AttachedPowerOfAttorney`
@@ -28,6 +29,7 @@
     * :doc:`../../ComObjects/PowerOfAttorneyForeignEntity`
 
   * Добавлены поля:
+
     * :doc:`../../ComObjects/ReplySendTask`. **PowerOfAttorneyToAttach**
     * :doc:`../../ComObjects/ReplySendTask2`. **PowerOfAttorneyToAttach**
     * :doc:`../../ComObjects/OutDocumentSignTask`. **PowerOfAttorneyToAttach**
@@ -38,12 +40,14 @@
     * :doc:`../../ComObjects/PackageSendTask2`. **PowerOfAttorneyToAttach**
 
   * Добавлены методы:
+
     * :meth:`DocumentBase.SendReceiptsWithPowerOfAttorney`
     * :meth:`Organization.RegisterPowerOfAttorneyById`
     * :meth:`Organization.RegisterPowerOfAttorneyByContent`
     * :meth:`DocumentBase.GetPowersOfAttorney`
 
   * Удалены методы:
+
     * :meth:`DocumentBase.Accept`
     * :meth:`DocumentBase.Reject`
     * :meth:`DocumentBase.RejectAsync`
@@ -59,12 +63,15 @@
 * Информация об авторизационной сессии выделена в отдельный объект:
 
   * Добавлены объекты:
+
     * :doc:`../../ComObjects/SessionInfo`
 
   * Добавлены поля:
+
     * :doc:`../../ComObjects/Connection`. **SessionInfo**
 
   * Поля помечены устаревшими:
+
     * :doc:`../../ComObjects/Connection`. **AuthenticateType**
     * :doc:`../../ComObjects/Connection`. **Certificate**
     * :doc:`../../ComObjects/Connection`. **Login**
@@ -77,6 +84,7 @@
 * Обновлены примитивы для работы с сотрудниками организации:
 
   * Добавлены объекты:
+
     * :doc:`../../ComObjects/MyEmployee`
     * :doc:`../../ComObjects/AdminTools`
     * :doc:`../../ComObjects/EmployeeInfo`
@@ -84,13 +92,16 @@
     * :doc:`../../ComObjects/AuthorizationPermission`
 
   * Добавлены поля:
+
     * :doc:`../../ComObjects/Organization`. **MyEmployee**
 
   * Добавлены методы:
+
     :meth:`Organization.CreateAdminTools`
     :meth:`Organization.GetEmployees`
 
   * Методы помечены устаревшими:
+  
     * :meth:`Organization.GetUsers`
     * :meth:`Organization.SendFnsRegistrationMessage`
     * :meth:`Organization.GetUserPermissions`
