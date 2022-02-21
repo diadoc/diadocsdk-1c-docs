@@ -79,7 +79,6 @@
     * :doc:`../../ComObjects/Organization`. **AuthenticateType**
     * :doc:`../../ComObjects/Organization`. **Certificate**
     * :doc:`../../ComObjects/Organization`. **Login**
-    * :doc:`../../ComObjects/Organization`. **Token**
 
 * Обновлены примитивы для работы с сотрудниками организации:
 
