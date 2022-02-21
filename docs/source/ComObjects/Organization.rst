@@ -40,17 +40,9 @@ Organization
 
   .. versionadded:: 5.31.0
 
-:AuthenticateType:
-  **Строка, чтение** - тип авторизации
 
-:Login:
-  **Строка, чтение** - логин, по которому произошла авторизация к данной организации
-
-:Certificate:
-  :doc:`PersonalCertificate` **, чтение** - сертификат, по которому произошла авторизация в данной организации
-
-:NeedAttachPowerOfAttorney:
-  **Булево, чтение** - при выполнении действий, связанных с подписанием, необходимо прикладывать МЧД
+:MyEmployee:
+  :doc:`MyEmployee` **, чтение** - Информация о собственном сотруднике
 
   .. versionadded:: 5.37.0
 
@@ -58,33 +50,33 @@ Organization
 
 .. rubric:: Методы
 
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetDocumentById|_             | |Organization-GetCounteragentById|_              | |Organization-GetDocumentTypes|_           | |Organization-GetUserPermissions|_                 |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetDocumentsTask|_            | |Organization-GetCounteragentByOrgId|_           | |Organization-GetFeatures|_                | |Organization-CanSendInvoice|_                     |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-CreatePackageSendTask2|_      | |Organization-GetCounteragentListByStatus|_      | |Organization-GetUsers|_                   | |Organization-GetExtendedSignerDetails2|_          |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetReceiptGenerationProcess|_ | |Organization-GetCounteragentListByStatusAsync|_ | |Organization-GetResolutionRoutes|_        | |Organization-CreateSetExtendedSignerDetailsTask|_ |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-SaveUserDataXSD|_             | |Organization-GetCounteragentListByInnKpp|_      | |Organization-SendFnsRegistrationMessage|_ | |Organization-GetMyPowersOfAttorney|_              |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetBase64UserDataXSD|_        | |Organization-GetCounteragentListByInnKppAsync|_ | |Organization-CreateDataTask|_             | |Organization-SetDefaultPowerOfAttorney|_          |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-RestoreDocument|_             | |Organization-GetCounteragentListByInnList|_     |                                            | |Organization-RegisterPowerOfAttorneyById|_        |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-CreateSendDraftTask|_         | |Organization-CreateAcquireCounteragentTask|_    |                                            | |Organization-RegisterPowerOfAttorneyByContent|_   |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-RecycleDraft|_                |                                                  |                                            |                                                    |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetDocumentEventList|_        |                                                  |                                            |                                                    |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-GetTemplate|_                 |                                                  |                                            |                                                    |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-CreateTemplateSendTask|_      |                                                  |                                            |                                                    |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
-| |Organization-CreateTransformTemplateTask|_ |                                                  |                                            |                                                    |
-+---------------------------------------------+--------------------------------------------------+--------------------------------------------+----------------------------------------------------+
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetDocumentById|_             | |Organization-GetCounteragentById|_              | |Organization-CreateAdminTools|_                 |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetDocumentsTask|_            | |Organization-GetCounteragentByOrgId|_           | |Organization-GetDocumentTypes|_                 |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-CreatePackageSendTask2|_      | |Organization-GetCounteragentListByStatus|_      | |Organization-GetFeatures|_                      |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetReceiptGenerationProcess|_ | |Organization-GetCounteragentListByStatusAsync|_ | |Organization-GetEmployees|_                     |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-SaveUserDataXSD|_             | |Organization-GetCounteragentListByInnKpp|_      | |Organization-GetResolutionRoutes|_              |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetBase64UserDataXSD|_        | |Organization-GetCounteragentListByInnKppAsync|_ | |Organization-CreateDataTask|_                   |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-RestoreDocument|_             | |Organization-GetCounteragentListByInnList|_     | |Organization-RegisterPowerOfAttorneyById|_      |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-CreateSendDraftTask|_         | |Organization-CreateAcquireCounteragentTask|_    | |Organization-RegisterPowerOfAttorneyByContent|_ |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-RecycleDraft|_                |                                                  |                                                  |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetDocumentEventList|_        |                                                  |                                                  |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-GetTemplate|_                 |                                                  |                                                  |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-CreateTemplateSendTask|_      |                                                  |                                                  |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
+| |Organization-CreateTransformTemplateTask|_ |                                                  |                                                  |
++---------------------------------------------+--------------------------------------------------+--------------------------------------------------+
 
 
 .. |Organization-GetDocumentById| replace:: GetDocumentById()
@@ -110,21 +102,15 @@ Organization
 .. |Organization-GetCounteragentListByInnList| replace:: GetCounteragentListByInnList()
 .. |Organization-CreateAcquireCounteragentTask| replace:: CreateAcquireCounteragentTask()
 
+.. |Organization-CreateAdminTools| replace:: CreateAdminTools()
 .. |Organization-GetDocumentTypes| replace:: GetDocumentTypes()
 .. |Organization-GetFeatures| replace:: GetFeatures()
-.. |Organization-GetUsers| replace:: GetUsers()
+.. |Organization-GetEmployees| replace:: GetEmployees()
 .. |Organization-GetResolutionRoutes| replace:: GetResolutionRoutes()
-.. |Organization-SendFnsRegistrationMessage| replace:: SendFnsRegistrationMessage()
 .. |Organization-CreateDataTask| replace:: CreateDataTask()
-
-.. |Organization-GetUserPermissions| replace:: GetUserPermissions()
-.. |Organization-CanSendInvoice| replace:: CanSendInvoice()
-.. |Organization-GetExtendedSignerDetails2| replace:: GetExtendedSignerDetails2()
-.. |Organization-CreateSetExtendedSignerDetailsTask| replace:: CreateSetExtendedSignerDetailsTask()
-.. |Organization-GetMyPowersOfAttorney| replace:: GetMyPowersOfAttorney()
-.. |Organization-SetDefaultPowerOfAttorney| replace:: SetDefaultPowerOfAttorney()
 .. |Organization-RegisterPowerOfAttorneyById| replace:: RegisterPowerOfAttorneyById()
 .. |Organization-RegisterPowerOfAttorneyByContent| replace:: RegisterPowerOfAttorneyByContent()
+
 
 
 .. _Organization-GetDocumentById:
@@ -345,6 +331,14 @@ Organization
 
 
 
+.. _Organization-CreateAdminTools:
+.. method:: Organization.CreateAdminTools()
+
+  Создаёт :doc:`объект для администрирования организации <AdminTools>`
+
+  .. versionadded:: 5.37.0
+
+
 .. _Organization-GetDocumentTypes:
 .. method:: Organization.GetDocumentTypes()
 
@@ -362,11 +356,12 @@ Organization
   .. versionadded:: 5.32.4
 
 
+.. _Organization-GetEmployees:
+.. method:: Organization.GetEmployees()
 
-.. _Organization-GetUsers:
-.. method:: Organization.GetUsers()
+  Возвращает :doc:`коллекцию <Collection>` :doc:`сотрудников <EmployeeInfo>` организации
 
-  Возращает :doc:`коллекцию <Collection>` :doc:`сотрудников <OrganizationUser>` организации
+  .. versionadded:: 5.37.0
 
 
 
@@ -374,15 +369,6 @@ Organization
 .. method:: Organization.GetResolutionRoutes()
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`маршрутов согласования <Route>`, настроенных в ящике
-
-
-
-.. _Organization-SendFnsRegistrationMessage:
-.. method:: Organization.SendFnsRegistrationMessage(Thumbprint)
-
-  :Thumbprint: ``строка`` отпечаток сертификата
-
-  Добавление в сообщение ФНС нового сертификата
 
 
 
@@ -395,65 +381,6 @@ Organization
 
 
 
-.. _Organization-GetUserPermissions:
-.. method:: Organization.GetUserPermissions()
-
-  Возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
-
-
-
-.. _Organization-CanSendInvoice:
-.. method:: Organization.CanSendInvoice(Thumbprint)
-
-  :Thumbprint: ``строка`` отпечаток сертификата
-
-  Проверяет можно ли подписывать счёт-фактуры в текущей организации, используя сертификат с указанным отпечатком.
-  Если возможно, то вернётся пустая строка. Если подписание невозможно, то вернётся текст с причиной невозможности это сделать
-
-
-
-.. _Organization-GetExtendedSignerDetails2:
-.. method:: Organization.GetExtendedSignerDetails2(Thumbprint, TitleType)
-
-  :Thumbprint: ``строка`` отпечаток сертификата
-  :TitleType: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
-
-  Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного сертификата и указанного типа титула.
-  Получить значение для *TitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
-  Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
-  Метод может быть запрошен самим пользователем или администратором организации
-
-
-.. _Organization-CreateSetExtendedSignerDetailsTask:
-.. method:: Organization.CreateSetExtendedSignerDetailsTask(Thumbprint)
-
-  :Thumbprint: ``строка`` отпечаток сертификата
-
-  Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта
-
-
-
-.. _Organization-GetMyPowersOfAttorney:
-.. method:: Organization.GetMyPowersOfAttorney(OnlyActual)
-
-  :OnlyActual: ``Булево`` возврашат только действующие МЧД
-
-  Метод возвращает :doc:`коллекцию <Collection>` :doc:`МЧД, привязанных к сотруднику <EmployeePowerOfAttorney>`
-
-  .. versionadded:: 5.37.0
-
-
-
-.. _Organization-SetDefaultPowerOfAttorney:
-.. method:: Organization.SetDefaultPowerOfAttorney(PowerOfAttorney)
-
-  :PowerOfAttorney: :doc:`PowerOfAttorneyInfo` данные об МЧД
-
-  Применяет переданную МЧД как МЧД по-умолчанию для текущего сотрудника
-
-  .. versionadded:: 5.37.0
-
-
 .. _Organization-RegisterPowerOfAttorneyById:
 .. method:: Organization.RegisterPowerOfAttorneyById(RegNumber, IssuerInn)
 
@@ -463,6 +390,7 @@ Organization
   Регистрирует МЧД, в сервисе Диадок по её регистрационному номеру и ИНН доверителя
 
   .. versionadded:: 5.37.0
+
 
 
 .. _Organization-RegisterPowerOfAttorneyByContent:
@@ -477,34 +405,57 @@ Organization
 
 
 
-.. rubric:: Устаревшие методы
+.. rubric:: Устаревшие поля и методы
 
 
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| **Метод**                                                     | **Когда устарел**                     | **Когда удалён**                      | **Рекомендуемая альтернатива**                       |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.CreateSendTask`                           | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.CreateSendTaskFromFile`                   | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.CreateSendTaskFromFileRaw`                | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`          |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.CreatePackageSendTask`                    | :doc:`../History/release_info/5_27_0` |                                       | :meth:`Organization.CreatePackageSendTask2`          |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.SendDraftAsync`                           | :doc:`../History/release_info/5_18_0` |                                       | :meth:`Organization.CreateSendDraftTask`             |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.SetAndValidateAddressForCounteragent`     | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.GetSentDocuments`                         | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.SetData`                                  | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                  |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.GetData`                                  | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                  |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.GetAddressForCounteragent`                | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                  |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
-| :meth:`Organization.GetExtendedSignerDetails`                 | :doc:`../History/release_info/5_33_0` |                                       | :meth:`Organization.GetExtendedSignerDetails2`       |
-+---------------------------------------------------------------+---------------------------------------+---------------------------------------+------------------------------------------------------+
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Поле или метод**                                        | **Когда устарел**                     | **Когда удалён**                      | **Рекомендуемая альтернатива**                                                                                  |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Organization.Id**                                       | :doc:`../History/release_info/5_31_0` |                                       | **Organization.Guid**                                                                                           |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Organization.EncryptedDocumentsAllowed**                | :doc:`../History/release_info/5_32_4` |                                       | :meth:`Organization.GetFeatures`                                                                                |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Organization.AuthenticateType**                         | :doc:`../History/release_info/5_37_0` |                                       | **Organization.MyEmployee.SessionInfo.AuthenticationType**                                                                                    |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Organization.Login**                                    | :doc:`../History/release_info/5_37_0` |                                       | **Organization.MyEmployee.SessionInfo.Login**                                                                                    |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| **Organization.Certificate**                              | :doc:`../History/release_info/5_37_0` |                                       | **Organization.MyEmployee.SessionInfo.Certificate**                                                                                    |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CreateSendTask`                       | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CreateSendTaskFromFile`               | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CreateSendTaskFromFileRaw`            | :doc:`../History/release_info/5_5_0`  | :doc:`../History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CreatePackageSendTask`                | :doc:`../History/release_info/5_27_0` |                                       | :meth:`Organization.CreatePackageSendTask2`                                                                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.SendDraftAsync`                       | :doc:`../History/release_info/5_18_0` |                                       | :meth:`Organization.CreateSendDraftTask`                                                                        |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.SetAndValidateAddressForCounteragent` | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                                                                             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetSentDocuments`                     | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                                                                             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.SetData`                              | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                                                                             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetData`                              | :doc:`../History/release_info/5_29_9` |                                       | :meth:`Organization.CreateDataTask`                                                                             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetAddressForCounteragent`            | :doc:`../History/release_info/5_5_0`  |                                       | :meth:`Organization.CreateDataTask`                                                                             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetExtendedSignerDetails`             | :doc:`../History/release_info/5_33_0` |                                       | :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetExtendedSignerDetails2`            | :doc:`../History/release_info/5_37_0` |                                       | :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`                     |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.SendFnsRegistrationMessage`           | :doc:`../History/release_info/5_37_0` |                                       | :meth:`MyEmployee.UpdateCertificateFNSRegistration` или :meth:`AdminTools.RegisterCertificateInFNS`             |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetUsers`                             | :doc:`../History/release_info/5_37_0` |                                       | :meth:`Organization.GetEmployees`                                                                               |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.GetUserPermissions`                   | :doc:`../History/release_info/5_37_0` |                                       | **MyEmployee.EmployeeInfo.Permissions**                                                                         |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CanSendInvoice`                       | :doc:`../History/release_info/5_37_0` |                                       | :meth:`MyEmployee.CanSendInvoice` или :meth:`AdminTools.CanSendInvoice`                                         |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+| :meth:`Organization.CreateSetExtendedSignerDetailsTask`   | :doc:`../History/release_info/5_37_0` |                                       | :meth:`MyEmployee.CreateSetExtendedSignerDetailsTask` или :meth:`AdminTools.CreateSetExtendedSignerDetailsTask` |
++-----------------------------------------------------------+---------------------------------------+---------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+
 
 .. method:: Organization.CreateSendTask(FormalDocumentType)
 
@@ -620,3 +571,52 @@ Organization
   :forCorrection: ``булево`` подписант для титула корректировочного документа
 
   Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. Метод может быть запрошен самим пользователем или администратором организации
+
+
+
+.. method:: Organization.GetExtendedSignerDetails2(Thumbprint, TitleType)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+  :TitleType: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
+
+  Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного сертификата и указанного типа титула.
+  Получить значение для *TitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
+  Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
+  Метод может быть запрошен самим пользователем или администратором организации
+
+
+
+.. method:: Organization.CreateSetExtendedSignerDetailsTask(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта
+
+
+
+.. method:: Organization.GetUsers()
+
+  Возращает :doc:`коллекцию <Collection>` :doc:`сотрудников <OrganizationUser>` организации
+
+
+
+.. method:: Organization.GetUserPermissions()
+
+  Возвращает :doc:`описание прав пользователя <UserPermissions>`, в контексте которого произошла авторизация, для данной организации
+
+
+
+.. method:: Organization.CanSendInvoice(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Проверяет можно ли подписывать счёт-фактуры в текущей организации, используя сертификат с указанным отпечатком.
+  Если возможно, то вернётся пустая строка. Если подписание невозможно, то вернётся текст с причиной невозможности это сделать
+
+
+
+.. method:: Organization.SendFnsRegistrationMessage(Thumbprint)
+
+  :Thumbprint: ``строка`` отпечаток сертификата
+
+  Добавление в сообщение ФНС нового сертификата

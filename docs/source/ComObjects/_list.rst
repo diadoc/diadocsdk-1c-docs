@@ -18,12 +18,14 @@
   ActToSend <ActToSend>
   AdditionalInfoId <AdditionalInfoId>
   AddressInfo <AddressInfo>
+  AdminTools <AdminTools>
   AmendmentRequestMetadata <AmendmentRequestMetadata>
   AmountsDiff <AmountsDiff>
   ArgPack <ArgPack>
   AsyncResult <AsyncResult>
   AttachedPowerOfAttorney <AttachedPowerOfAttorney>
   Attorney <Attorney>
+  AuthorizationPermission <AuthorizationPermission>
   BaseContent <BaseContent>
   BaseDocument <BaseDocument>
   BoxInfo <BoxInfo>
@@ -64,6 +66,8 @@
   DocumentWorkflow <DocumentWorkflow>
   DynamicContent <DynamicContent>
   Employee <Employee>
+  EmployeeInfo <EmployeeInfo>
+  EmployeePermissions <EmployeePermissions>
   EmployeePowerOfAttorney <EmployeePowerOfAttorney>
   Entity <Entity>
   ErrorCode <ErrorCode>
@@ -101,6 +105,7 @@
   LegacyDocumentToSend <LegacyDocumentToSend>
   MetadataItem <MetadataItem>
   MethodDesc <MethodDesc>
+  MyEmployee <MyEmployee>
   Nonformalized <Nonformalized>
   NonformalizedAcceptanceCertificate <NonformalizedAcceptanceCertificate>
   NonformalizedDocumentToSend <NonformalizedDocumentToSend>
@@ -123,9 +128,16 @@
   PackageSendTask2 <PackageSendTask2>
   PaymentDocument <PaymentDocument>
   PersonalCertificate <PersonalCertificate>
-  PowerOfAttorneyInfo <PowerOfAttorneyInfo>
-  PowerOfAttorneyParticipant <PowerOfAttorneyParticipant>
-  PowerOfAttorneyRegistrationInfo <PowerOfAttorneyRegistrationInfo>
+  PowerOfAttorney <PowerOfAttorney>
+  PowerOfAttorneyConfidant <PowerOfAttorneyConfidant>
+  PowerOfAttorneyConfidantOrganization <PowerOfAttorneyConfidantOrganization>
+  PowerOfAttorneyForeignEntity <PowerOfAttorneyForeignEntity>
+  PowerOfAttorneyId <PowerOfAttorneyId>
+  PowerOfAttorneyIndividualEntity <PowerOfAttorneyIndividualEntity>
+  PowerOfAttorneyIssuerBase <PowerOfAttorneyIssuerBase>
+  PowerOfAttorneyLegalEntity <PowerOfAttorneyLegalEntity>
+  PowerOfAttorneyPhysicalEntity <PowerOfAttorneyPhysicalEntity>
+  PowerOfAttorneyPrevalidation <PowerOfAttorneyPrevalidation>
   PowerOfAttorneyRegistrationResult <PowerOfAttorneyRegistrationResult>
   PowerOfAttorneyStatus <PowerOfAttorneyStatus>
   PowerOfAttorneyToAttach <PowerOfAttorneyToAttach>
@@ -151,6 +163,7 @@
   SendTask <SendTask>
   SentPackageContent <SentPackageContent>
   ServiceDetailsToSend <ServiceDetailsToSend>
+  SessionInfo <SessionInfo>
   SetExtendedSignerDetailsTask <SetExtendedSignerDetailsTask>
   Shipper <Shipper>
   ShipperOrConsigneeInfo <ShipperOrConsigneeInfo>

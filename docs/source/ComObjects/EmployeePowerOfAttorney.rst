@@ -11,9 +11,9 @@ EmployeePowerOfAttorney
 :IsDefault:
   **Булево, чтение** - МЧД установлена для сотрудника как МЧД по-умолчанию
 
-:PowerOfAttorneyInfo:
-  :doc:`PowerOfAttorneyInfo` **, чтение** - реквизиты МЧД
+:PowerOfAttorney:
+  :doc:`PowerOfAttorney` **, чтение** - реквизиты МЧД
 
-:ApplicabilityForCurrentCertificate:
-  :doc:`PowerOfAttorneyStatus` **, чтение** - статус применимости МЧД для сертификата, по которому авторизовался пользователь.
-  Если пользователь авторизовался по логину, то поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
+:Prevalidation:
+  :doc:`PowerOfAttorneyPrevalidation` **, чтение** - Предварительные проверки возможности применения МЧД для сертификата, по которому произошла авторизация.
+  Будет :doc:`пустым <Descriptions/Empty_Com_Object>`, если авторизация произошла не по сертификату или МЧД не относится к текущему пользователю

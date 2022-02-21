@@ -20,6 +20,7 @@
   ExternalStatusType <ExternalStatusType>
   FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
   InvoiceStatus <InvoiceStatus>
+  IssuerType <IssuerType>
   ItemMark <ItemMark>
   LockMode <LockMode>
   MetadataSource <MetadataSource>
@@ -43,6 +44,7 @@
   RoamingNotificationStatus <RoamingNotificationStatus>
   SenderSignatureStatus <SenderSignatureStatus>
   Severity <Severity>
+  SignatureType <SignatureType>
   SignerPowers <SignerPowers>
   SignerStatus <SignerStatus>
   SignerType <SignerType>
