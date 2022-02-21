@@ -4,7 +4,7 @@
   :hidden:
   :name: Enums
 
-  AuthenticateType <AuthenticateType>
+  AuthenticationType <AuthenticationType>
   AutoLogonPolicy <AutoLogonPolicy>
   BilateralStatus <BilateralStatus>
   CertificateOwnerType <CertificateOwnerType>

@@ -13,7 +13,7 @@ PowerOfAttorneyIssuerBase
 .. rubric:: Производные объекты
 
 .. |PowerOfAttorneyIssuerBase-Inheritable| replace:: видов доверителей
-.. PowerOfAttorneyIssuerBase-Inheritable:
+.. _PowerOfAttorneyIssuerBase-Inheritable:
 
 ======================================
 Наследники

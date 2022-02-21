@@ -8,8 +8,8 @@ AttachedPowerOfAttorney
 
 .. rubric:: Свойства
 
-:PowerOfAttorneyInfo:
-  :doc:`PowerOfAttorneyInfo` **, чтение** - реквизиты МЧД
+:PowerOfAttorney:
+  :doc:`PowerOfAttorney` **, чтение** - реквизиты МЧД
 
 :Date:
   **Дата, чтение** - дата и время в локальном часовом поясе появления МЧД в документе

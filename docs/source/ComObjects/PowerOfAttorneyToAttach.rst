@@ -7,7 +7,7 @@ PowerOfAttorneyToAttach
 
 
 :PowerOfAttorney:
-  :doc:`PowerOfAttorneyInfo` **, чтение/запись** - реквизиты МЧД. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`.
+  :doc:`PowerOfAttorney` **, чтение/запись** - реквизиты МЧД. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`.
   Если задано, то **UseDefault** присваивается ``FALSE``
 
 :UseDefault:

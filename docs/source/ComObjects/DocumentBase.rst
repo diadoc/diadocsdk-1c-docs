@@ -175,35 +175,35 @@ DocumentBase
 
 .. rubric:: Методы
 
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetSenderSignature|_         | |DocumentBase-SaveContent|_            | |DocumentBase-GetAnyComment|_               | |DocumentBase-CreateReplySendTask2|_        |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetRecipientSignature|_      | |DocumentBase-SaveBuyerContent|_       | |DocumentBase-GetExternalStatuses|_         | |DocumentBase-SendReceiptsAsync|_           |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_          | |DocumentBase-Approve|_                     |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-GetPackageDocuments|_         | |DocumentBase-Disapprove|_                  |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Delete|_                      | |DocumentBase-CreateOutDocumentSignTask|_   |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-Move|_                        | |DocumentBase-CreateResolutionRequestTask|_ |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-MarkAsRead|_                  | |DocumentBase-CreateCustomDataPatchTask|_   |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-AssignToResolutionRoute|_     |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_   |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-GetResolutions|_              |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-GetResolutionRequests|_       |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-GetResolutionRequestDenials|_ |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-GetPowersOfAttorney|_         |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
-|                                            |                                        | |DocumentBase-DetectCustomPrintForm|_       |                                             |
-+--------------------------------------------+----------------------------------------+---------------------------------------------+---------------------------------------------+
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetSenderSignature|_         | |DocumentBase-SaveContent|_            | |DocumentBase-GetAnyComment|_               | |DocumentBase-CreateReplySendTask2|_            |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetRecipientSignature|_      | |DocumentBase-SaveBuyerContent|_       | |DocumentBase-GetExternalStatuses|_         | |DocumentBase-SendReceiptsAsync|_               |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetDynamicContent|_          | |DocumentBase-SaveAllContent|_         | |DocumentBase-GetDocumentPackage|_          | |DocumentBase-SendReceiptsWithPowerOfAttorney|_ |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetBase64Content|_           | |DocumentBase-SaveAllContentAsync|_    | |DocumentBase-GetPackageDocuments|_         | |DocumentBase-Approve|_                         |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetBase64ContentAsync|_      | |DocumentBase-SaveAllContentZip|_      | |DocumentBase-Delete|_                      | |DocumentBase-Disapprove|_                      |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetBase64Signature|_         | |DocumentBase-SaveAllContentZipAsync|_ | |DocumentBase-Move|_                        | |DocumentBase-CreateOutDocumentSignTask|_       |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+| |DocumentBase-GetBase64OriginalSignature|_ | |DocumentBase-GetPrintForm|_           | |DocumentBase-MarkAsRead|_                  | |DocumentBase-CreateResolutionRequestTask|_     |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-AssignToResolutionRoute|_     | |DocumentBase-CreateCustomDataPatchTask|_       |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-RemoveFromResolutionRoute|_   |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutions|_              |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutionRequests|_       |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-GetResolutionRequestDenials|_ |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-GetPowersOfAttorney|_         |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
+|                                            |                                        | |DocumentBase-DetectCustomPrintForm|_       |                                                 |
++--------------------------------------------+----------------------------------------+---------------------------------------------+-------------------------------------------------+
 
 
 .. |DocumentBase-GetSenderSignature| replace:: GetSenderSignature()
@@ -239,6 +239,7 @@ DocumentBase
 
 .. |DocumentBase-CreateReplySendTask2| replace:: CreateReplySendTask2()
 .. |DocumentBase-SendReceiptsAsync| replace:: SendReceiptsAsync()
+.. |DocumentBase-SendReceiptsWithPowerOfAttorney| replace:: SendReceiptsWithPowerOfAttorney()
 .. |DocumentBase-Approve| replace:: Approve()
 .. |DocumentBase-Disapprove| replace:: Disapprove()
 .. |DocumentBase-CreateOutDocumentSignTask| replace:: CreateOutDocumentSignTask()
@@ -415,6 +416,7 @@ DocumentBase
   определение наличия КПФ для документов из результата будет выполняться пакетно, вместо необходимости :meth:`запрашивать <DocumentBase.DetectCustomPrintForm>` этот признак для каждого документа в отдельности
 
 
+
 .. _DocumentBase-Delete:
 .. method:: DocumentBase.Delete()
 
@@ -507,15 +509,16 @@ DocumentBase
 .. _DocumentBase-SendReceiptsAsync:
 .. method:: DocumentBase.SendReceiptsAsync()
 
-  Отправляет извещения о получении документа, необходимые для завершения документооборота. Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
+  Отправляет извещения о получении документа, необходимые для завершения документооборота.
+  Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
 
 
 .. _DocumentBase-SendReceiptsWithPowerOfAttorney:
-.. method:: DocumentBase.SendReceiptsWithPowerOfAttorney(PowerOfAttorneyInfo)
+.. method:: DocumentBase.SendReceiptsWithPowerOfAttorney(PowerOfAttorney)
 
-  :PowerOfAttorneyInfo: :doc:`PowerOfAttorneyInfo` реквизиты МЧД
+  :PowerOfAttorney: :doc:`PowerOfAttorney` объект МЧД
 
-  Отправляет извещения о получении документа, необходимые для завершения документооборота. Для подписания извещений используется указанная МЧД.
+  Отправляет извещения о получении документа, необходимые для завершения документооборота. При подписании извещений будет прикладываться указанная МЧД.
   Возвращает объект :doc:`AsyncResult` с типом результата ``Булево``
 
 

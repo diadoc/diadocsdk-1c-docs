@@ -75,7 +75,7 @@ AdminTools
 
 
 
-.. _AdminTools-GetPowersOfAttorney:
+.. _AdminTools-GetEmployeePowersOfAttorney:
 .. method:: AdminTools.GetPowersOfAttorney(Employee, OnlyActual=``True``)
 
   :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция
@@ -97,7 +97,7 @@ AdminTools
 
 
 
-.. _AdminTools-AddPowerOfAttorney:
+.. _AdminTools-AddPowerOfAttorneyToEmployee:
 .. method:: AdminTools.AddPowerOfAttorney(Employee, PowerOfAttorney)
 
   :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция

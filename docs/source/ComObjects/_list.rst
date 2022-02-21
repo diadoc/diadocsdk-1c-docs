@@ -80,6 +80,7 @@
   ExtendedSignerDetailsToPost <ExtendedSignerDetailsToPost>
   ExternalStatus <ExternalStatus>
   ExternalStatusLite <ExternalStatusLite>
+  Flag <Flag>
   FormalizedRejectionContent <FormalizedRejectionContent>
   GroundInfo <GroundInfo>
   Invoice <Invoice>
