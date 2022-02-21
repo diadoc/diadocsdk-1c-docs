@@ -1,21 +1,11 @@
 Работа с машиночитаемыми доверенностями (МЧД)
 =============================================
 
-При работе с МЧД могут потребоваться следующие данные:
+Основные объекты для работы с МЧД:
 
-* поле **NeedAttachPowerOfAttorney** объекта :doc:`../ComObjects/Organization`
-* поле **OwnerType** объекта :doc:`../ComObjects/PersonalCertificate`
-* объекты для представления данных об МЧД:
-
-  * :doc:`../ComObjects/PowerOfAttorneyInfo`
-  * :doc:`../ComObjects/PowerOfAttorneyParticipant`
-  * :doc:`../ComObjects/PowerOfAttorneyStatus`
-  * :doc:`../ComObjects/PowerOfAttorneyValidationInfo`
-  * :doc:`../ComObjects/PowerOfAttorneyRegistrationInfo`
-  * :doc:`../ComObjects/PowerOfAttorneyRegistrationResult`
-  * :doc:`../ComObjects/EmployeePowerOfAttorney`
-  * :doc:`../ComObjects/AttachedPowerOfAttorney`
-  * :doc:`../ComObjects/PowerOfAttorneyToAttach`
+* :doc:`../../ComObjects/PowerOfAttorney`
+* :doc:`../../ComObjects/EmployeePowerOfAttorney`
+* :doc:`../../ComObjects/AttachedPowerOfAttorney`
 
 
 
@@ -35,19 +25,20 @@
 
 .. rubric:: МЧД привязанные к сотруднику организации
 
-Для получения МЧД, привязанных к текущему авторизованному сотруднику, предназначен метод :meth:`Organization.GetMyPowersOfAttorney`
+Для получения МЧД, привязанных к текущему авторизованному сотруднику, предназначен метод :meth:`MyEmployee.GetPowersOfAttorney`
 
-Если какую-то МЧД требуется установить как МЧД по умолчанию, то можно использовать :meth:`Organization.SetDefaultPowerOfAttorney`
+Если какую-то МЧД требуется установить как МЧД по умолчанию, то можно использовать :meth:`MyEmployee.SetDefaultPowerOfAttorney`
 
 
 .. code-block:: c#
 
   Процедура УстановитьМЧДПоУмолчанию()
-    dd_EmployeePowerOfAttorney_Collection = dd_Organization.GetMyPowersOfAttorney(Истина);
+    dd_MyEmployee = dd_Organization.MyEmployee;
+    dd_EmployeePowerOfAttorney_Collection = MyEmployee.GetMyPowersOfAttorney(Истина);
     dd_EmployeePowerOfAttorney = dd_EmployeePowerOfAttorney_Collection.getItem(0);
     dd_PowerOfAttorneyInfo = dd_EmployeePowerOfAttorney.PowerOfAttorneyInfo;
 
-    dd_Organization.SetDefaultPowerOfAttorney(dd_PowerOfAttorneyInfo);
+    dd_MyEmployee.SetDefaultPowerOfAttorney(dd_PowerOfAttorneyInfo);
   КонецПроцедуры
 
 
@@ -70,15 +61,16 @@
 
   Процедура УказаниеМЧД_НаПримере_PackageSendTask2()
     dd_PST2 = dd_Organization.CreatePackageSendTask2();
+    dd_MyEmployee = dd_Organization.MyEmployee;
 
-    Если dd_Organization.NeedAttachPowerOfAttorney Тогда
+    Если dd_MyEmployee.NeedAttachPowerOfAttorney Тогда
       dd_PowerOfAttorneyToAttach = dd_PST2.PowerOfAttorneyToAttach;
 
       Если ХочуИспользоватьМЧДПоУмолчанию Тогда
         dd_PowerOfAttorneyToAttach.UseDefault = Истина;
 
       Иначе
-        dd_EmployeePowerOfAttorney_Collection = dd_Organization.GetMyPowersOfAttorney(Истина);
+        dd_EmployeePowerOfAttorney_Collection = dd_MyEmployee.GetMyPowersOfAttorney(Истина);
         dd_EmployeePowerOfAttorney = dd_EmployeePowerOfAttorney_Collection.getItem(0);
         dd_PowerOfAttorneyInfo = dd_EmployeePowerOfAttorney.PowerOfAttorneyInfo;
 
@@ -98,13 +90,14 @@
 
   Процедура ПодписатьИоПыИспользуяМЧД(ИдентификаторДокумента)
     dd_DocumentBase = dd_Organization.GetDocumentById(ИдентификаторДокумента);
+    dd_MyEmployee = dd_Organization.MyEmployee;
 
-    Если dd_Organization.NeedAttachPowerOfAttorney Тогда
+    Если dd_MyEmployee.NeedAttachPowerOfAttorney Тогда
       Если ХочуИспользоватьМЧДПоУмолчанию Тогда
         dd_AsyncResult = dd_DocumentBase.SendReceiptsWithPowerOfAttorney();
 
       Иначе
-        dd_EmployeePowerOfAttorney_Collection = dd_Organization.GetMyPowersOfAttorney(Истина);
+        dd_EmployeePowerOfAttorney_Collection = dd_MyEmployee.GetMyPowersOfAttorney(Истина);
         dd_EmployeePowerOfAttorney = dd_EmployeePowerOfAttorney_Collection.getItem(0);
         dd_PowerOfAttorneyInfo = dd_EmployeePowerOfAttorney.PowerOfAttorneyInfo;
 
@@ -124,4 +117,4 @@
 
 .. rubric:: Получение данных об МЧД
 
-Для получения данных об МЧД, которые использовались для подписания сущностей документа, был добавлен метод :meth:`DocumentBase.GetPowersOfAttorney`
+Для получения данных об :doc:`МЧД, которые использовались для подписания сущностей документа <../../ComObjects/AttachedPowerOfAttorney>`, используется метод :meth:`DocumentBase.GetPowersOfAttorney`
