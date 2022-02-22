@@ -38,6 +38,7 @@
     * :doc:`../../ComObjects/AcquireCounteragentTask`. **PowerOfAttorneyToAttach**
     * :doc:`../../ComObjects/PackageSendTask`. **PowerOfAttorneyToAttach**
     * :doc:`../../ComObjects/PackageSendTask2`. **PowerOfAttorneyToAttach**
+    * :doc:`../../ComObjects/DocflowStatus`. **PowerOfAttorneyStatus**
 
   * Добавлены методы:
 
