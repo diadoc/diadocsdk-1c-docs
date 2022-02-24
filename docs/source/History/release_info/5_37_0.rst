@@ -42,10 +42,10 @@
 
   * Добавлены методы:
 
-    * :meth:`DocumentBase.SendReceiptsWithPowerOfAttorney`
     * :meth:`Organization.RegisterPowerOfAttorneyById`
     * :meth:`Organization.RegisterPowerOfAttorneyByContent`
     * :meth:`DocumentBase.GetPowersOfAttorney`
+    * :meth:`DocumentBase.SendReceiptsWithPowerOfAttorney`
 
   * Удалены методы:
 
@@ -97,11 +97,14 @@
 
   * Добавлены методы:
 
+    * :meth:`PersonalCertificate.SetPin`
+    * :meth:`DiadocApi.CreateConnectionByCertificate2`
     * :meth:`Organization.CreateAdminTools`
     * :meth:`Organization.GetEmployees`
 
   * Методы помечены устаревшими:
 
+    * :meth:`DiadocApi.CreateConnectionByCertificate`
     * :meth:`Organization.GetUsers`
     * :meth:`Organization.SendFnsRegistrationMessage`
     * :meth:`Organization.GetUserPermissions`

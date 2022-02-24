@@ -33,13 +33,13 @@ DiadocAPI
 
 .. rubric:: Методы
 
-+----------------------------------+----------------------------------------------+--------------------------------------------+
-| |DiadocAPI-GetFullVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ | |DiadocAPI-CreateConnectionByCertificate|_ |
-+----------------------------------+----------------------------------------------+--------------------------------------------+
-| |DiadocAPI-TestConnection2|_     | |DiadocAPI-GetPersonalCertificates|_         | |DiadocAPI-CreateConnectionByLogin|_       |
-+----------------------------------+----------------------------------------------+--------------------------------------------+
-| |DiadocApi-UpdateProxySettings|_ |                                              |                                            |
-+----------------------------------+----------------------------------------------+--------------------------------------------+
++----------------------------------+----------------------------------------------+---------------------------------------------+
+| |DiadocAPI-GetFullVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ | |DiadocAPI-CreateConnectionByCertificate2|_ |
++----------------------------------+----------------------------------------------+---------------------------------------------+
+| |DiadocAPI-TestConnection2|_     | |DiadocAPI-GetPersonalCertificates|_         | |DiadocAPI-CreateConnectionByLogin|_        |
++----------------------------------+----------------------------------------------+---------------------------------------------+
+| |DiadocApi-UpdateProxySettings|_ | |DiadocAPI-GetPersonalCertificate|_          |                                             |
++----------------------------------+----------------------------------------------+---------------------------------------------+
 
 
 .. |DiadocAPI-GetFullVersion| replace:: GetFullVersion()
@@ -49,7 +49,7 @@ DiadocAPI
 .. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
 .. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
 
-.. |DiadocAPI-CreateConnectionByCertificate| replace:: CreateConnectionByCertificate()
+.. |DiadocAPI-CreateConnectionByCertificate2| replace:: CreateConnectionByCertificate2()
 .. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
 
 
@@ -94,21 +94,20 @@ DiadocAPI
 .. _DiadocAPI-GetPersonalCertificates:
 .. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
 
-  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск. true - хранилище пользователя(по-умолчанию), false - хранилище компьютера.
+  :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в подхранилище "Личное", хранилища определяемого флагом *UserStore*.
+  Если флаг ``True`` - хранилище пользователя(по-умолчанию), ``False`` - хранилище компьютера.
 
 
 
-.. _DiadocAPI-CreateConnectionByCertificate:
-.. method:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
+.. _DiadocAPI-GetPersonalCertificate:
+.. method:: DiadocAPI.GetPersonalCertificate(Thumbprint)
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
-  :Pin:        ``Строка`` Пин-код или пароль от контейнера сертификата
 
-  Возвращает :doc:`объект логического соединения <Connection>`, созданного по сертификату с указанным отпечатком.
-  Поиск сертификата происходит в хранилище `Личное` пользователя и, если там сертиифкат не найден - в хранилище `Личное` машины.
-  Если *Pin* не задан, то будет использоваться пин-код/пароль, запомненный в крипто-провайдере или пустая строка
+  Возвращает :doc:`сертификат <PersonalCertificate>` с указанным отпечатком.
+  Поиск происходит сначала в `хранилище <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_ "Личные" пользователя, затем - машины
 
 
 
@@ -122,6 +121,16 @@ DiadocAPI
 
 
 
+.. _DiadocAPI-CreateConnectionByCertificate2:
+.. method:: DiadocAPI.CreateConnectionByCertificate2(Certificate)
+
+  :Certificate: :doc:`PersonalCertificate` объект сертификата
+
+  Возвращает :doc:`объект логического соединения <Connection>`, созданного при помощи указанного сертификата
+
+  .. versionadded:: 5.37.0
+
+
 
 .. rubric:: Устаревшие методы
 
@@ -132,6 +141,8 @@ DiadocAPI
 | :meth:`DiadocAPI.TestConnection`                              | :doc:`../History/release_info/5_26_3` |                                    | :meth:`DiadocAPI.TestConnection2`                    |
 +---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
 | :meth:`DiadocAPI.GetVersion`                                  | :doc:`../History/release_info/5_29_4` |                                    | :meth:`DiadocAPI.GetFullVersion`                     |
++---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
+| :meth:`DiadocAPI.CreateConnectionByCertificate`               | :doc:`../History/release_info/5_37_0` |                                    | :meth:`DiadocAPI.CreateConnectionByCertificate2`     |
 +---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
 
 
@@ -144,3 +155,14 @@ DiadocAPI
 .. method:: DiadocAPI.TestConnection()
 
   Возвращает булевое значение успешности отправки запроса в Диадок, используя установленные параметры
+
+
+
+.. method:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
+
+  :Thumbprint: ``Строка`` Отпечаток сертификата
+  :Pin:        ``Строка`` Пин-код или пароль от контейнера сертификата
+
+  Возвращает :doc:`объект логического соединения <Connection>`, созданного по сертификату с указанным отпечатком.
+  Поиск сертификата происходит в хранилище `Личное` пользователя и, если там сертиифкат не найден - в хранилище `Личное` машины.
+  Если *Pin* не задан, то будет использоваться пин-код/пароль, запомненный в крипто-провайдере или пустая строка

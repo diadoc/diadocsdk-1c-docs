@@ -32,46 +32,42 @@ AdminTools
 
 
 .. _AdminTools-CanSendInvoice:
-.. method:: AdminTools.CanSendInvoice(Thumbprint)
+.. method:: AdminTools.CanSendInvoice(Certificate)
 
-  :Thumbprint: ``Строка`` отпечаток сертификата
+  :Certificate: :doc:`PersonalCertificate` объект сертификата
 
-  Проверяет можно ли подписывать счета-фактуры, используя сертфикат, чей отпечаток указан. Если невозможно, то вернёт текст с причиной, иначе - пустую строку.
-  Открытый ключ сертификата должна быть установлена в хранилище ``Личные``
+  Проверяет можно ли подписывать счета-фактуры, используя указанный сертфикат. Если невозможно, то вернёт текст с причиной, иначе - пустую строку.
 
 
 
 .. _AdminTools-GetExtendedSignerDetails:
-.. method:: AdminTools.GetExtendedSignerDetails(Thumbprint, DocumentTitleName=``UNKNOWN``)
+.. method:: AdminTools.GetExtendedSignerDetails(Certificate, DocumentTitleName=``UNKNOWN``)
 
-  :Thumbprint: ``Строка`` отпечаток сертификата
+  :Certificate: :doc:`PersonalCertificate` объект сертификата
 
   :DocumentTitleName: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
 
-  Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата, чей отпечаток указан.
-  Открытый ключ сертификата должна быть установлена в хранилище ``Личные``.
+  Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата.
   Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
   Для *DocumentTitleName* == ``Absent`` и *DocumentTitleName* == ``UNKNOWN`` вызов невозможен.
 
 
 
 .. _AdminTools-CreateSetExtendedSignerDetailsTask:
-.. method:: AdminTools.CreateSetExtendedSignerDetailsTask(Thumbprint)
+.. method:: AdminTools.CreateSetExtendedSignerDetailsTask(Certificate)
 
-  :Thumbprint: ``Строка`` отпечаток сертификата
+  :Certificate: :doc:`PersonalCertificate` объект сертификата
 
-  Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для сертификата, чей отпечаток указан.
-  Открытый ключ сертификата должна быть установлена в хранилище ``Личные``
+  Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для указанного сертификата.
 
 
 
 .. _AdminTools-RegisterCertificateInFNS:
-.. method:: AdminTools.RegisterCertificateInFNS(Thumbprint)
+.. method:: AdminTools.RegisterCertificateInFNS(Certificate)
 
-  :Thumbprint: ``Строка`` отпечаток сертификата
+  :Certificate: :doc:`PersonalCertificate` объект сертификата
 
-  Добавляет в сообщение для ФНС сертификат, чей отпечаток указан.
-  Открытый ключ сертификата должна быть установлена в хранилище ``Личные``
+  Добавляет в сообщение для ФНС указанный сертификат.
 
 
 
