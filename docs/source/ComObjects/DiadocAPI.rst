@@ -48,6 +48,7 @@ DiadocAPI
 
 .. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
 .. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
+.. |DiadocAPI-GetPersonalCertificate| replace:: GetPersonalCertificate()
 
 .. |DiadocAPI-CreateConnectionByCertificate2| replace:: CreateConnectionByCertificate2()
 .. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
