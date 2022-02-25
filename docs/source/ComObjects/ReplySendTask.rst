@@ -12,6 +12,11 @@ ReplySendTask
 :Content:
   :doc:`BaseContent` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
 
+:PowerOfAttorneyToAttach:
+  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+
+  .. versionadded:: 5.37.0
+
 
 .. rubric:: Методы
 
