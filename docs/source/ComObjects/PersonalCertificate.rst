@@ -59,3 +59,27 @@ PersonalCertificate
   **Строка, чтение** - OID алгоритма шифрования открытого ключа сертификата
 
   .. versionadded:: 5.29.3
+
+
+
+
+.. rubric:: Методы
+
+
++-------------------------------+
+| |PersonalCertificate-SetPin|_ |
++-------------------------------+
+
+
+.. |PersonalCertificate-SetPin| replace:: SetPin()
+
+
+
+.. _PersonalCertificate-SetPin:
+.. method:: PersonalCertificate.SetPin(Pin)
+
+  :Pin: ``Строка`` пин-код или пароль контейнера закрытого ключа
+
+  Задаёт для сертфиката пин-код/пароль, который будет использован при обращении к контейнеру закрытого ключа сертификата
+
+  .. versionadded:: 5.37.0

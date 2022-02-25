@@ -9,6 +9,11 @@ ReplySendTask2
 :ContentItems:
   :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem` **, чтение** - коллекция пар *документ-контент*, для которых создаётся ответное действие
 
+:PowerOfAttorneyToAttach:
+  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+
+  .. versionadded:: 5.37.0
+
 
 .. rubric:: Методы
 

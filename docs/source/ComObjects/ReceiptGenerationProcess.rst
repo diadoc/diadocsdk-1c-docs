@@ -11,6 +11,11 @@ ReceiptGenerationProcess
 :Errors:
   :doc:`Коллекция <Collection>` **объектов** :doc:`ReceiptError` - информация об ошибках, возникших во время работы процесса
 
+:PowerOfAttorneyToAttach:
+  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+
+  .. versionadded:: 5.37.0
+
 
 .. rubric:: Методы
 

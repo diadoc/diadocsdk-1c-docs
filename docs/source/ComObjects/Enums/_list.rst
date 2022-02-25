@@ -4,7 +4,7 @@
   :hidden:
   :name: Enums
 
-  AuthenticateType <AuthenticateType>
+  AuthenticationType <AuthenticationType>
   AutoLogonPolicy <AutoLogonPolicy>
   BilateralStatus <BilateralStatus>
   CertificateOwnerType <CertificateOwnerType>
@@ -12,7 +12,6 @@
   CounteragentStatus <CounteragentStatus>
   Docflow <Docflow>
   DocflowSide <DocflowSide>
-  DocflowStatusSeverity <DocflowStatusSeverity>
   DocumentDirection <DocumentDirection>
   DocumentsAccessLevel <DocumentsAccessLevel>
   DocumentTitleType <DocumentTitleType>
@@ -21,6 +20,7 @@
   ExternalStatusType <ExternalStatusType>
   FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
   InvoiceStatus <InvoiceStatus>
+  IssuerType <IssuerType>
   ItemMark <ItemMark>
   LockMode <LockMode>
   MetadataSource <MetadataSource>
@@ -29,6 +29,7 @@
   OperationType <OperationType>
   OrganizationFeatures <OrganizationFeatures>
   OrganizationType <OrganizationType>
+  PowerOfAttorneyAffiliation <PowerOfAttorneyAffiliation>
   ProxyMode <ProxyMode>
   ProxySignatureStatus <ProxySignatureStatus>
   ReceiptStatus <ReceiptStatus>
@@ -42,9 +43,10 @@
   RevocationStatus <RevocationStatus>
   RoamingNotificationStatus <RoamingNotificationStatus>
   SenderSignatureStatus <SenderSignatureStatus>
+  Severity <Severity>
+  SignatureType <SignatureType>
   SignerPowers <SignerPowers>
   SignerStatus <SignerStatus>
-
   SignerType <SignerType>
   TaxRate <TaxRate>
   TemplateRefusalType <TemplateRefusalType>
