@@ -165,3 +165,4 @@
   release_info/5_36_9
   release_info/5_37_0
   release_info/5_37_1
+  release_info/5_37_2
