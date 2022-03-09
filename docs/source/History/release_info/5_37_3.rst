@@ -1,0 +1,12 @@
+5.37.3
+======
+
+
+.. feed-entry::
+  :date: 2022-03-09
+
+
+.. rubric:: Иcправлено
+
+* ``APPCRASH`` при вызове метода :meth:`InvoiceContent.AddItem`
+* В :doc:`../../ComObjects/InvoiceContent`. **StructedAdditionalInfos** отправленного документа лежала коллекция **Items**
