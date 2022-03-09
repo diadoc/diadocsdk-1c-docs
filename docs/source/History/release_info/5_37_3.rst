@@ -9,4 +9,4 @@
 .. rubric:: Иcправлено
 
 * ``APPCRASH`` при вызове метода :meth:`InvoiceContent.AddItem`
-* В :doc:`../../ComObjects/InvoiceContent`. **StructedAdditionalInfos** лежала коллекция **Items**
+* В :doc:`../../ComObjects/InvoiceContent`. **StructedAdditionalInfos** отправленного документа лежала коллекция **Items**
