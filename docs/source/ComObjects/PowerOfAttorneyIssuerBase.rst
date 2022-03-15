@@ -15,11 +15,12 @@ PowerOfAttorneyIssuerBase
 .. |PowerOfAttorneyIssuerBase-Inheritable| replace:: видов доверителей
 .. _PowerOfAttorneyIssuerBase-Inheritable:
 
-======================================
-Наследники
-======================================
-:doc:`PowerOfAttorneyForeignEntity`
-:doc:`PowerOfAttorneyIndividualEntity`
-:doc:`PowerOfAttorneyLegalEntity`
-:doc:`PowerOfAttorneyPhysicalEntity`
-======================================
+
+====================================== ===========================================
+Наследники                             Описание
+====================================== ===========================================
+:doc:`PowerOfAttorneyForeignEntity`    Доверитель - иностранная организация
+:doc:`PowerOfAttorneyIndividualEntity` Доверитель - индивидуальный предприниматель
+:doc:`PowerOfAttorneyLegalEntity`      Доверитель - юридическое лицо
+:doc:`PowerOfAttorneyPhysicalEntity`   Доверитель - физическое лицо
+====================================== ===========================================
