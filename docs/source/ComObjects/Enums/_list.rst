@@ -19,6 +19,7 @@
   EventType <EventType>
   ExternalStatusType <ExternalStatusType>
   FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
+  GetCounteragentsByStatus_param <GetCounteragentsByStatus_param>
   InvoiceStatus <InvoiceStatus>
   IssuerType <IssuerType>
   ItemMark <ItemMark>

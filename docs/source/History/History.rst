@@ -167,3 +167,4 @@
   release_info/5_37_1
   release_info/5_37_2
   release_info/5_37_3
+  release_info/5_37_4
