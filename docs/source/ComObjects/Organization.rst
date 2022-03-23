@@ -274,7 +274,7 @@ Organization
 .. _Organization-GetCounteragentListByStatus:
 .. method:: Organization.GetCounteragentListByStatus([CounteragentStatus])
 
-  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/CounteragentStatus>`
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
 
   Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом.
   Если *CounteragentStatus* не задан или пустой, вернётся весь список контрагентов
@@ -284,7 +284,7 @@ Organization
 .. _Organization-GetCounteragentListByStatusAsync:
 .. method:: Organization.GetCounteragentListByStatusAsync([CounteragentStatus])
 
-  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/CounteragentStatus>`
+  :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
 
   Асинхронный запрос контрагентов с указанным статусом.
   Если *CounteragentStatus* не задан или пустой, вернётся весь список контрагентов.
