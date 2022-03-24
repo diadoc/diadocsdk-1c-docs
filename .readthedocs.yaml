@@ -16,8 +16,7 @@ build:
 
 python:
     install:
-        - requirements: docs/requirements.txt
-        - method: pip
+        - requirements: requirements.txt
 
 
 sphinx:
