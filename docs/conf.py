@@ -14,7 +14,7 @@ extensions = [
 
 
 source_suffix = '.rst'
-master_doc = 'index'
+master_doc = 'source/index'
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
 author = u'Diadoc'
@@ -30,7 +30,7 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_show_sphinx = False
 html_search_language = 'en'
-htmlhelp_basename = '1CAddin, COM Диадок'
+htmlhelp_basename = '1CAddin, COM Диадок API'
 primary_domain = 'com-object'
 
 
