@@ -4,7 +4,7 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath('source/_extensions'))
+sys.path.append(os.path.abspath('_extensions'))
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
@@ -36,24 +36,24 @@ primary_domain = 'com-object'
 
 # -- Options for LaTeX output ---------------------------------------------
 
-latex_elements = {}
-latex_documents = [
-  (master_doc, '{}.tex'.format(htmlhelp_basename), project, author, 'manual'),
-]
+# latex_elements = {}
+# latex_documents = [
+#   (master_doc, '{}.tex'.format(htmlhelp_basename), project, author, 'manual'),
+# ]
 
-man_pages = [
-    (master_doc, htmlhelp_basename, project, [author], 1)
-]
+# man_pages = [
+#     (master_doc, htmlhelp_basename, project, [author], 1)
+# ]
 
-texinfo_documents = [
-  (master_doc, htmlhelp_basename, project, author, htmlhelp_basename, 'Документация {}'.format(project), 'Miscellaneous'),
-]
+# texinfo_documents = [
+#   (master_doc, htmlhelp_basename, project, author, htmlhelp_basename, 'Документация {}'.format(project), 'Miscellaneous'),
+# ]
 
-epub_title = project
-epub_author = author
-epub_publisher = author
-epub_copyright = copyright
+# epub_title = project
+# epub_author = author
+# epub_publisher = author
+# epub_copyright = copyright
 
-epub_exclude_files = ['search.html']
+# epub_exclude_files = ['search.html']
 
 intersphinx_mapping = {'https://docs.python.org/': None}
