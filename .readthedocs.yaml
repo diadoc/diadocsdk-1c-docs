@@ -1,6 +1,6 @@
 # https://docs.readthedocs.io/en/stable/config-file/v2.html
 
-version: 5.37.4
+version: 2
 
 
 formats:
