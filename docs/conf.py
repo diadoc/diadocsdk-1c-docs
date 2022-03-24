@@ -4,6 +4,7 @@
 import sys
 import os
 
+sys.path.append(os.path.abspath('_extensions'))
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
@@ -11,7 +12,6 @@ extensions = [
     'CComDomain'
 ]
 
-sys.path.append(os.path.abspath('_extensions'))
 
 source_suffix = '.rst'
 master_doc = 'index'
