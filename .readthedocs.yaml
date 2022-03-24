@@ -13,13 +13,14 @@ build:
         python:
             version: 3
 
+
 python:
     install:
-        - requirements: requirements.txt
+        - requirements: docs/requirements.txt
         - method: pip
 
 
 sphinx:
     builder: html
-    configuration: docs/source/conf.py
+    configuration: docs/conf.py
     fail_on_warning: false
