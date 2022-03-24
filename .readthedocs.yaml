@@ -10,7 +10,7 @@ formats:
 
 build:
     tools:
-        python: "3"
+        python: 3.10
 
 
 python:
