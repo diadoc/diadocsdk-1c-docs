@@ -15,22 +15,22 @@ sys.path.append(os.path.abspath('_extensions'))
 
 source_suffix = '.rst'
 master_doc = 'index'
-project = u'AddIn Diadoc API'
-copyright = u'2021, Diadoc'
+project = u'1C Addin/COM Диадок API'
+copyright = u'2022, Diadoc'
 author = u'Diadoc'
-version = '1'
-release = '1'
+version = '5'
+release = '37'
 language = 'ru'
 exclude_patterns = []
-highlight_language = 'c#'
+highlight_language = 'cpp'
 pygments_style = 'vs'
 todo_include_todos = False
 html_theme_path = ['_themes']
-html_theme = 'custom_sphinx_rtd_theme'
+html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 html_show_sphinx = False
 html_search_language = 'en'
-htmlhelp_basename = '1CDiadocdoc'
+htmlhelp_basename = '1CAddin, COM Диадок'
 primary_domain = 'com-object'
 
 
@@ -38,15 +38,15 @@ primary_domain = 'com-object'
 
 latex_elements = {}
 latex_documents = [
-  (master_doc, '1CDiadoc.tex', u'1C Diadoc Documentation', author, 'manual'),
+  (master_doc, '{}.tex'.format(htmlhelp_basename), project, author, 'manual'),
 ]
 
 man_pages = [
-    (master_doc, '1cdiadoc', u'1C Diadoc Documentation', [author], 1)
+    (master_doc, htmlhelp_basename, project, [author], 1)
 ]
 
 texinfo_documents = [
-  (master_doc, '1CDiadoc', u'1C Diadoc Documentation', author, '1CDiadoc', 'One line description of project.', 'Miscellaneous'),
+  (master_doc, htmlhelp_basename, project, author, htmlhelp_basename, 'Документация {}'.format(project), 'Miscellaneous'),
 ]
 
 epub_title = project
