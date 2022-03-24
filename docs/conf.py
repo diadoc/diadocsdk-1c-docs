@@ -33,27 +33,4 @@ html_search_language = 'en'
 htmlhelp_basename = '1CAddin, COM Диадок API'
 primary_domain = 'com-object'
 
-
-# -- Options for LaTeX output ---------------------------------------------
-
-# latex_elements = {}
-# latex_documents = [
-#   (master_doc, '{}.tex'.format(htmlhelp_basename), project, author, 'manual'),
-# ]
-
-# man_pages = [
-#     (master_doc, htmlhelp_basename, project, [author], 1)
-# ]
-
-# texinfo_documents = [
-#   (master_doc, htmlhelp_basename, project, author, htmlhelp_basename, 'Документация {}'.format(project), 'Miscellaneous'),
-# ]
-
-# epub_title = project
-# epub_author = author
-# epub_publisher = author
-# epub_copyright = copyright
-
-# epub_exclude_files = ['search.html']
-
 intersphinx_mapping = {'https://docs.python.org/': None}
