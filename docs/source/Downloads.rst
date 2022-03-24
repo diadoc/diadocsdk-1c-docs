@@ -4,12 +4,12 @@
 `Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
 
 
-.. rubric:: Текущие версии внешней компоненты
+.. rubric:: Последняя версия компоненты **v5.37.4.831**
 
-* `1С AddIn v5.37.4.831 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_
-* `1С AddIn v5.37.4.831 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_
-* `COM v5.37.4.831 x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_
-* `COM v5.37.4.831 x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_
+* `1С AddIn x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest.zip>`_
+* `1С AddIn x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/Diadoc_latest_x64.zip>`_
+* `COM x86 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest.zip>`_
+* `COM x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_
 
 
 .. important::
