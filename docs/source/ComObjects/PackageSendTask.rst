@@ -77,7 +77,7 @@ PackageSendTask
 
   Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
 
-  Если в качестве типа передана версия документа, возвращает объект :doc:`../../ComObjects/LegacyDocumentToSend`
+  Если в качестве типа передана версия документа, возвращает объект :doc:`LegacyDocumentToSend`
 
 
 

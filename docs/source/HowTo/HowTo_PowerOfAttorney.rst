@@ -3,9 +3,9 @@
 
 Основные объекты для работы с МЧД:
 
-* :doc:`../../ComObjects/PowerOfAttorney`
-* :doc:`../../ComObjects/EmployeePowerOfAttorney`
-* :doc:`../../ComObjects/AttachedPowerOfAttorney`
+* :doc:`../ComObjects/PowerOfAttorney`
+* :doc:`../ComObjects/EmployeePowerOfAttorney`
+* :doc:`../ComObjects/AttachedPowerOfAttorney`
 
 
 
@@ -117,4 +117,4 @@
 
 .. rubric:: Получение данных об МЧД
 
-Для получения данных об :doc:`МЧД, которые использовались для подписания сущностей документа <../../ComObjects/AttachedPowerOfAttorney>`, используется метод :meth:`DocumentBase.GetPowersOfAttorney`
+Для получения данных об :doc:`МЧД, которые использовались для подписания сущностей документа <../ComObjects/AttachedPowerOfAttorney>`, используется метод :meth:`DocumentBase.GetPowersOfAttorney`
