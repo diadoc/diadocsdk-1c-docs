@@ -27,7 +27,6 @@
   Attorney <Attorney>
   AuthorizationPermission <AuthorizationPermission>
   BaseContent <BaseContent>
-  BaseDocument <BaseDocument>
   BoxInfo <BoxInfo>
   CertificateRegistryToSend <CertificateRegistryToSend>
   CloudCertificateInfo <CloudCertificateInfo>
