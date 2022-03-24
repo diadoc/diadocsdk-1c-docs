@@ -6,8 +6,6 @@ import os
 
 sys.path.append(os.path.abspath('_extensions'))
 extensions = [
-#    'sphinx.ext.autodoc',
-    'sphinx.ext.intersphinx',
     'custom_newsfeed',
     'CComDomain'
 ]
@@ -32,5 +30,3 @@ html_show_sphinx = False
 html_search_language = 'en'
 htmlhelp_basename = '1CAddin, COM Диадок API'
 primary_domain = 'com-object'
-
-intersphinx_mapping = {'https://docs.python.org/': None}
