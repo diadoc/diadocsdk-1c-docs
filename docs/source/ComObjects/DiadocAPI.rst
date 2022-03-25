@@ -70,11 +70,11 @@ DiadocAPI
     .. tab:: Устаревшие методы
 
         .. csv-table::
-            :header: "Метод", "Когда устарел", "Когда удалён", "Рекомендуемая альтернатива"
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 
 
-            :meth:`TestConnection() <DiadocAPI.TestConnection>`, :doc:`../History/release_info/5_26_3`,, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
-            :meth:`GetVersion() <DiadocAPI.GetVersion>`, :doc:`../History/release_info/5_29_4`,, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`
-            :meth:`CreateConnectionByCertificate() <DiadocAPI.CreateConnectionByCertificate>`, :doc:`../History/release_info/5_37_0`,, :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`
+            :meth:`TestConnection() <DiadocAPI.TestConnection>`, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`, :doc:`../History/release_info/5_26_3`,
+            :meth:`GetVersion() <DiadocAPI.GetVersion>`, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`, :doc:`../History/release_info/5_29_4`,
+            :meth:`CreateConnectionByCertificate() <DiadocAPI.CreateConnectionByCertificate>`, :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`, :doc:`../History/release_info/5_37_0`,
 
 
         .. method:: DiadocAPI.GetVersion()
