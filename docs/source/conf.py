@@ -4,7 +4,7 @@
 import sys
 import os
 
-sys.path.append(os.path.abspath('_extensions'))
+sys.path.append(os.path.abspath('../_extensions'))
 extensions = [
     'sphinx_tabs.tabs',
     'custom_newsfeed',
