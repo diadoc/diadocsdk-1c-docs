@@ -9,16 +9,16 @@ AttachedPowerOfAttorney
 .. rubric:: Свойства
 
 :PowerOfAttorney:
-  :doc:`PowerOfAttorney` **, чтение** - реквизиты МЧД
+    :doc:`PowerOfAttorney` **, чтение** - реквизиты МЧД
 
 :Date:
-  **Дата, чтение** - дата и время в локальном часовом поясе появления МЧД в документе
+    **Дата, чтение** - дата и время в локальном часовом поясе появления МЧД в документе
 
 :Affiliation:
-  **Строка, чтение** - информация о том, к какой сущности относится МЧД. :doc:`Возможные значения <./Enums/PowerOfAttorneyAffiliation>`
+    **Строка, чтение** - информация о том, к какой сущности относится МЧД. :doc:`Возможные значения <./Enums/PowerOfAttorneyAffiliation>`
 
 :Status:
-  :doc:`PowerOfAttorneyStatus` **, чтение** - результат проверки МЧД. Если проверка ещё не завершилась, поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
+    :doc:`PowerOfAttorneyStatus` **, чтение** - результат проверки МЧД. Если проверка ещё не завершилась, поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
 
 :SignatureType:
-  **Строка, чтение** - тип подписи, к которой относится МЧД. :doc:`Возможные значения <./Enums/SignatureType>`
+    **Строка, чтение** - тип подписи, к которой относится МЧД. :doc:`Возможные значения <./Enums/SignatureType>`

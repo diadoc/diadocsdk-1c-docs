@@ -67,7 +67,7 @@ DiadocAPI
 
         * :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
 
-    .. tab:: Устаревшие методы
+    .. tab:: Устаревшие
 
         .. csv-table::
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 

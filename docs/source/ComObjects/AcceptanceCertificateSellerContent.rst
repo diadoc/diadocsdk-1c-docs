@@ -5,69 +5,64 @@ AcceptanceCertificateSellerContent
 Является производным объектом от :doc:`BaseContent`
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`DynamicContent`
+    Используйте :doc:`DynamicContent`
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificateContent``
+    **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificateContent``
 
 :Date:
-  **Дата, чтение/запись** - дата акта
+    **Дата, чтение/запись** - дата акта
 
 :Number:
-  **Строка, чтение/запись** - номер акта
+    **Строка, чтение/запись** - номер акта
 
 :Title:
-  **Строка, чтение/запись** - заголовок акта
+    **Строка, чтение/запись** - заголовок акта
 
 :SignatureDate:
-  **Дата, чтение/запись** - дата подписи акта исполнителем
+    **Дата, чтение/запись** - дата подписи акта исполнителем
 
 :Seller:
-  :doc:`OrganizationInfo` **, чтение** - исполнитель (организация, выполнившая работы либо оказавшая услуги)
+    :doc:`OrganizationInfo` **, чтение** - исполнитель (организация, выполнившая работы либо оказавшая услуги)
 
 :Items:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem` **, чтение** - табличная часть акта выполненных работ
+    :doc:`Коллекция <Collection>` **объектов** :doc:`AcceptanceCertificateItem` **, чтение** - табличная часть акта выполненных работ
 
 :Official:
-  :doc:`Official` **, чтение** - лицо, подписывающее со стороны исполнителя
+    :doc:`Official` **, чтение** - лицо, подписывающее со стороны исполнителя
 
 :Attorney:
-  :doc:`Attorney` **, чтение** - сведения о доверенности подписывающего со стороны исполнителя
+    :doc:`Attorney` **, чтение** - сведения о доверенности подписывающего со стороны исполнителя
 
 :Signer:
-  :doc:`Signer` **, чтение** - подписант
+    :doc:`Signer` **, чтение** - подписант
 
 :AdditionalInfo:
-  **Строка, чтение/запись** - дополнительные сведения
+    **Строка, чтение/запись** - дополнительные сведения
 
 
 .. rubric:: Методы
 
-+-----------------------------------------------+---------------------------------------------------------+
-| |AcceptanceCertificateSellerContent-AddItem|_ | |AcceptanceCertificateSellerContent-SaveExternalCodes|_ |
-+-----------------------------------------------+---------------------------------------------------------+
+.. tabs::
 
-.. |AcceptanceCertificateSellerContent-AddItem| replace:: AddItem()
-.. |AcceptanceCertificateSellerContent-SaveExternalCodes| replace:: SaveExternalCodes()
+    .. tabs:: Все актуальные
+
+        * :meth:`AddItem() <AcceptanceCertificateSellerContent.AddItem>`
+
+    .. tabs:: Устаревшие
+
+        .. csv-table::
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 
+
+            :meth:`SaveExternalCodes() <AcceptanceCertificateSellerContent.SaveExternalCodes>`, :meth:`DataTask.SetData`, :doc:`../History/release_info/5_5_0`,
+
+        .. method:: AcceptanceCertificateSellerContent.SaveExternalCodes()
+
+            Сохраняет на сервере Диадока список внешних идентификаторов акта выполненных работ
 
 
-
-.. _AcceptanceCertificateSellerContent-AddItem:
 .. method:: AcceptanceCertificateSellerContent.AddItem()
 
-  Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его
-
-
-
-.. _AcceptanceCertificateSellerContent-SaveExternalCodes:
-.. method:: AcceptanceCertificateSellerContent.SaveExternalCodes()
-
-  Сохраняет на сервере Диадока список внешних идентификаторов акта выполненных работ
-
-  .. deprecated:: 5.5.0
-    Используйте :meth:`Organization.SetData`
-
-  .. versionchanged:: 5.29.7
-    Метод перестал что-либо делать. Оставлен для совместимости
+    Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его

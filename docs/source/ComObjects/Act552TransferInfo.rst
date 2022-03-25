@@ -5,38 +5,37 @@ Act552TransferInfo
 
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`DynamicContent`
-  
+    Используйте :doc:`DynamicContent`
+
 
 .. rubric:: Свойства
 
 :OperationInfo:
-  **Строка, чтение/запись** - содержание операции
+    **Строка, чтение/запись** - содержание операции
 
 :TransferDate:
-  **Дата, чтение/запись** - дата передачи результатов работ
+    **Дата, чтение/запись** - дата передачи результатов работ
 
 :CreatedThingTransferDate:
-  **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору подряда
+    **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору подряда
 
 :CreatedThingInfo:
-  **Строка, чтение/запись** - сведения о передаче
+    **Строка, чтение/запись** - сведения о передаче
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - информационное поле документа
+    :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - информационное поле документа
 
 
 
 .. rubric:: Методы
 
-+-------------------------------------------------+
-| |Act552TransferInfo-AddStructedAdditionalInfo|_ |
-+-------------------------------------------------+
+.. tabs::
 
-.. |Act552TransferInfo-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
+    .. tab:: Все актуальные
+
+        * :meth:`AddStructedAdditionalInfo() <Act552TransferInfo.AddStructedAdditionalInfo>`
 
 
-.. _Act552TransferInfo-AddStructedAdditionalInfo:
 .. method:: Act552TransferInfo.AddStructedAdditionalInfo()
 
   Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`
