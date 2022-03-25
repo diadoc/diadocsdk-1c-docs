@@ -33,28 +33,15 @@ DiadocAPI
 
 .. rubric:: Методы
 
-+----------------------------------+----------------------------------------------+---------------------------------------------+
-| |DiadocAPI-GetFullVersion|_      | |DiadocAPI-VerifyThatUserHasAccessToAnyBox|_ | |DiadocAPI-CreateConnectionByCertificate2|_ |
-+----------------------------------+----------------------------------------------+---------------------------------------------+
-| |DiadocAPI-TestConnection2|_     | |DiadocAPI-GetPersonalCertificates|_         | |DiadocAPI-CreateConnectionByLogin|_        |
-+----------------------------------+----------------------------------------------+---------------------------------------------+
-| |DiadocApi-UpdateProxySettings|_ | |DiadocAPI-GetPersonalCertificate|_          |                                             |
-+----------------------------------+----------------------------------------------+---------------------------------------------+
++-------------------------------------------------------------+-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| :meth:`GetFullVersion <DiadocAPI.GetFullVersion>`           | :meth:`VerifyThatUserHasAccessToAnyBox <DiadocAPI.VerifyThatUserHasAccessToAnyBox>` | :meth:`CreateConnectionByCertificate2 <DiadocAPI.CreateConnectionByCertificate2>` |
++-------------------------------------------------------------+-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| :meth:`TestConnection2 <DiadocAPI.TestConnection2>`         | :meth:`GetPersonalCertificates <DiadocAPI.GetPersonalCertificates>`                 | :meth:`CreateConnectionByLogin <DiadocAPI.CreateConnectionByLogin>`               |
++-------------------------------------------------------------+-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| :meth:`UpdateProxySettings <DiadocAPI.UpdateProxySettings>` | :meth:`GetPersonalCertificate <DiadocAPI.GetPersonalCertificate>`                   |                                                                                   |
++-------------------------------------------------------------+-------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
 
-.. |DiadocAPI-GetFullVersion| replace:: GetFullVersion()
-.. |DiadocAPI-TestConnection2| replace:: TestConnection2()
-.. |DiadocApi-UpdateProxySettings| replace:: UpdateProxySettings()
-
-.. |DiadocAPI-VerifyThatUserHasAccessToAnyBox| replace:: VerifyThatUserHasAccessToAnyBox()
-.. |DiadocAPI-GetPersonalCertificates| replace:: GetPersonalCertificates()
-.. |DiadocAPI-GetPersonalCertificate| replace:: GetPersonalCertificate()
-
-.. |DiadocAPI-CreateConnectionByCertificate2| replace:: CreateConnectionByCertificate2()
-.. |DiadocAPI-CreateConnectionByLogin| replace:: CreateConnectionByLogin()
-
-
-.. _DiadocAPI-GetFullVersion:
 .. method:: DiadocAPI.GetFullVersion()
 
     Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
@@ -63,7 +50,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-TestConnection2:
 .. method:: DiadocAPI.TestConnection2()
 
   Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
@@ -72,7 +58,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-UpdateProxySettings:
 .. method:: DiadocAPI.UpdateProxySettings(Connection)
 
   :Connection: :doc:`Connection` обновляемое подключение
@@ -83,7 +68,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-VerifyThatUserHasAccessToAnyBox:
 .. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
@@ -92,7 +76,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-GetPersonalCertificates:
 .. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
 
   :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск
@@ -102,7 +85,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-GetPersonalCertificate:
 .. method:: DiadocAPI.GetPersonalCertificate(Thumbprint)
 
   :Thumbprint: ``Строка`` Отпечаток сертификата
@@ -112,7 +94,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-CreateConnectionByLogin:
 .. method:: DiadocAPI.CreateConnectionByLogin(Login, Password)
 
   :Login:    ``Строка`` Логин пользователя
@@ -122,7 +103,6 @@ DiadocAPI
 
 
 
-.. _DiadocAPI-CreateConnectionByCertificate2:
 .. method:: DiadocAPI.CreateConnectionByCertificate2(Certificate)
 
   :Certificate: :doc:`PersonalCertificate` объект сертификата
@@ -136,15 +116,15 @@ DiadocAPI
 .. rubric:: Устаревшие методы
 
 
-+---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
-| **Метод**                                                     | **Когда устарел**                     | **Когда удалён**                   | **Рекомендуемая альтернатива**                       |
-+---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
-| :meth:`DiadocAPI.TestConnection`                              | :doc:`../History/release_info/5_26_3` |                                    | :meth:`DiadocAPI.TestConnection2`                    |
-+---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
-| :meth:`DiadocAPI.GetVersion`                                  | :doc:`../History/release_info/5_29_4` |                                    | :meth:`DiadocAPI.GetFullVersion`                     |
-+---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
-| :meth:`DiadocAPI.CreateConnectionByCertificate`               | :doc:`../History/release_info/5_37_0` |                                    | :meth:`DiadocAPI.CreateConnectionByCertificate2`     |
-+---------------------------------------------------------------+---------------------------------------+------------------------------------+------------------------------------------------------+
++---------------------------------------------------------------------------------+---------------------------------------+ -----------------+-----------------------------------------------------------------------------------+
+| **Метод**                                                                       | **Когда устарел**                     | **Когда удалён** | **Рекомендуемая альтернатива**                                                    |
++---------------------------------------------------------------------------------+---------------------------------------+ -----------------+-----------------------------------------------------------------------------------+
+| :meth:`TestConnection <DiadocAPI.TestConnection>`                               | :doc:`../History/release_info/5_26_3` |                  | :meth:`TestConnection2 <DiadocAPI.TestConnection2>`                               |
++---------------------------------------------------------------------------------+---------------------------------------+ -----------------+-----------------------------------------------------------------------------------+
+| :meth:`GetVersion <DiadocAPI.GetVersion>`                                       | :doc:`../History/release_info/5_29_4` |                  | :meth:`GetFullVersion <DiadocAPI.GetFullVersion>`                                 |
++---------------------------------------------------------------------------------+---------------------------------------+ -----------------+-----------------------------------------------------------------------------------+
+| :meth:`CreateConnectionByCertificate <DiadocAPI.CreateConnectionByCertificate>` | :doc:`../History/release_info/5_37_0` |                  | :meth:`CreateConnectionByCertificate2 <DiadocAPI.CreateConnectionByCertificate2>` |
++---------------------------------------------------------------------------------+---------------------------------------+ -----------------+-----------------------------------------------------------------------------------+
 
 
 .. method:: DiadocAPI.GetVersion()
