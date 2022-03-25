@@ -16,14 +16,14 @@ AdminTools
     .. tab:: Все актуальные
 
         .. csv-table::
-            :header: "Машиночитаемые доверенности", "Данные сертификатов"
+            :header: "Управление Машиночитаемыми довереностями", "Управление данными, привязанными к сертификатам"
 
             :meth:`GetEmployeePowersOfAttorney() <AdminTools.GetEmployeePowersOfAttorney>`, :meth:`CanSendInvoice() <AdminTools.CanSendInvoice>`
             :meth:`SetDefaultPowerOfAttorney() <AdminTools.SetDefaultPowerOfAttorney>`, :meth:`GetExtendedSignerDetails() <AdminTools.GetExtendedSignerDetails>`
             :meth:`AddPowerOfAttorneyToEmployee() <AdminTools.AddPowerOfAttorneyToEmployee>`, :meth:`CreateSetExtendedSignerDetailsTask() <AdminTools.CreateSetExtendedSignerDetailsTask>`
             :meth:`RemovePowerOfAttorney() <AdminTools.RemovePowerOfAttorney>`, :meth:`RegisterCertificateInFNS() <AdminTools.RegisterCertificateInFNS>`
 
-    .. tab:: Машиночитаемые доверенности
+    .. tab:: Управление Машиночитаемыми довереностями
 
         * :meth:`GetEmployeePowersOfAttorney() <AdminTools.GetEmployeePowersOfAttorney>`
 
@@ -33,7 +33,7 @@ AdminTools
 
         * :meth:`RemovePowerOfAttorney() <AdminTools.RemovePowerOfAttorney>`
 
-    .. tab:: Данные сертификатов
+    .. tab:: Управление данными, привязанными к сертификатам
 
         * :meth:`CanSendInvoice() <AdminTools.CanSendInvoice>`
 

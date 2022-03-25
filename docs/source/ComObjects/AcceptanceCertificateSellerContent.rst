@@ -47,11 +47,11 @@ AcceptanceCertificateSellerContent
 
 .. tabs::
 
-    .. tabs:: Все актуальные
+    .. tab:: Все актуальные
 
         * :meth:`AddItem() <AcceptanceCertificateSellerContent.AddItem>`
 
-    .. tabs:: Устаревшие
+    .. tab:: Устаревшие
 
         .. csv-table::
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 

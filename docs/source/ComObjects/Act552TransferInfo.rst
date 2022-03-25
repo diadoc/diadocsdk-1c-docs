@@ -38,4 +38,4 @@ Act552TransferInfo
 
 .. method:: Act552TransferInfo.AddStructedAdditionalInfo()
 
-  Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию `StructedAdditionalInfos`

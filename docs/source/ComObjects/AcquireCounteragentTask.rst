@@ -31,7 +31,7 @@ AcquireCounteragentTask
 
 .. tabs::
 
-    .. tabs:: Все актуальные
+    .. tab:: Все актуальные
 
         * :meth:`Send() <AcquireCounteragentTask.Send>`
 
