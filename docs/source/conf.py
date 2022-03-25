@@ -13,7 +13,7 @@ extensions = [
 
 
 source_suffix = '.rst'
-master_doc = 'source/index'
+master_doc = 'index'
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
 author = u'Diadoc'
