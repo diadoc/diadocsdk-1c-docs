@@ -36,7 +36,8 @@ DiadocAPI
 .. tabs::
 
     .. tab:: Создание подключения
-        * :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>
+
+        * :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`
 
         * :meth:`CreateConnectionByLogin() <DiadocAPI.CreateConnectionByLogin>`
 
@@ -55,6 +56,30 @@ DiadocAPI
         * :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
 
         * :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
+        
+        .. method:: DiadocAPI.GetFullVersion()
+
+                Возвращает строку с версией используемой компоненты в формате ``[AddIn|COM] [x86|x64] <номер сборки>``
+
+              .. versionadded:: 5.29.4
+
+
+        .. method:: DiadocAPI.TestConnection2()
+
+              Возвращает :doc:`объект с результатами проверки соединения <TestConnectionResult>` с сервером Диадока, используя установленные параметры
+
+              .. versionadded:: 5.26.3
+
+
+        .. method:: DiadocAPI.UpdateProxySettings(Connection)
+
+              :Connection: :doc:`Connection` обновляемое подключение
+
+              Метод обновляет настройки прокси у переданного объекта подключения и у всех объектов, полученных с помощью него
+
+              .. versionadded:: 5.30.2
+
+
 
     .. tab:: Устаревшие методы
 
