@@ -33,36 +33,53 @@ DiadocAPI
 
 .. rubric:: Методы
 
+
 .. tabs::
 
     .. tab:: Создание подключения
 
         :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>
+
         :meth:`CreateConnectionByLogin() <DiadocAPI.CreateConnectionByLogin>`
 
     .. tab:: Информация о сертификатах
 
         :meth:`VerifyThatUserHasAccessToAnyBox() <DiadocAPI.VerifyThatUserHasAccessToAnyBox>`
+
         :meth:`GetPersonalCertificates() <DiadocAPI.GetPersonalCertificates>`
+
         :meth:`GetPersonalCertificate() <DiadocAPI.GetPersonalCertificate>`
 
     .. tab:: Утилиты
 
         :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`
+
         :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
+
         :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
 
     .. tab:: Устаревшие методы
+    
+        .. list-table::
+            :header-rows: 1
 
-        +-----------------------------------------------------------------------------------+---------------------------------------+ -----------------+-------------------------------------------------------------------------------------+
-        | **Метод**                                                                         | **Когда устарел**                     | **Когда удалён** | **Рекомендуемая альтернатива**                                                      |
-        +-----------------------------------------------------------------------------------+---------------------------------------+ -----------------+-------------------------------------------------------------------------------------+
-        | :meth:`TestConnection() <DiadocAPI.TestConnection>`                               | :doc:`../History/release_info/5_26_3` |                  | :meth:`TestConnection2() <DiadocAPI.TestConnection2>`                               |
-        +-----------------------------------------------------------------------------------+---------------------------------------+ -----------------+-------------------------------------------------------------------------------------+
-        | :meth:`GetVersion() <DiadocAPI.GetVersion>`                                       | :doc:`../History/release_info/5_29_4` |                  | :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`                                 |
-        +-----------------------------------------------------------------------------------+---------------------------------------+ -----------------+-------------------------------------------------------------------------------------+
-        | :meth:`CreateConnectionByCertificate() <DiadocAPI.CreateConnectionByCertificate>` | :doc:`../History/release_info/5_37_0` |                  | :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>` |
-        +-----------------------------------------------------------------------------------+---------------------------------------+ -----------------+-------------------------------------------------------------------------------------+
+            * - **Метод**
+              - **Когда устарел**
+              - **Когда удалён**
+              - **Рекомендуемая альтернатива**
+            * - :meth:`TestConnection() <DiadocAPI.TestConnection>`
+              - :doc:`../History/release_info/5_26_3`
+              - 
+              - :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
+            * - :meth:`GetVersion() <DiadocAPI.GetVersion>`
+              - :doc:`../History/release_info/5_29_4`
+              - 
+              - :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`
+            * - :meth:`CreateConnectionByCertificate() <DiadocAPI.CreateConnectionByCertificate>`
+              - :doc:`../History/release_info/5_37_0`
+              - 
+              - :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`
+
 
 
 
