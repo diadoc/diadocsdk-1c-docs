@@ -33,33 +33,31 @@ DiadocAPI
 
 .. rubric:: Методы
 
-
 .. tabs::
 
     .. tab:: Создание подключения
+        * :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>
 
-        :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>
-
-        :meth:`CreateConnectionByLogin() <DiadocAPI.CreateConnectionByLogin>`
+        * :meth:`CreateConnectionByLogin() <DiadocAPI.CreateConnectionByLogin>`
 
     .. tab:: Информация о сертификатах
 
-        :meth:`VerifyThatUserHasAccessToAnyBox() <DiadocAPI.VerifyThatUserHasAccessToAnyBox>`
+        * :meth:`VerifyThatUserHasAccessToAnyBox() <DiadocAPI.VerifyThatUserHasAccessToAnyBox>`
 
-        :meth:`GetPersonalCertificates() <DiadocAPI.GetPersonalCertificates>`
+        * :meth:`GetPersonalCertificates() <DiadocAPI.GetPersonalCertificates>`
 
-        :meth:`GetPersonalCertificate() <DiadocAPI.GetPersonalCertificate>`
+        * :meth:`GetPersonalCertificate() <DiadocAPI.GetPersonalCertificate>`
 
     .. tab:: Утилиты
 
-        :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`
+        * :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`
 
-        :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
+        * :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
 
-        :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
+        * :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
 
     .. tab:: Устаревшие методы
-    
+
         .. list-table::
             :header-rows: 1
 
