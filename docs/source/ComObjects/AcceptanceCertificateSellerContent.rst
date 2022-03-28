@@ -54,7 +54,7 @@ AcceptanceCertificateSellerContent
     .. tab:: Устаревшие
 
         .. csv-table::
-            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
             :meth:`SaveExternalCodes() <AcceptanceCertificateSellerContent.SaveExternalCodes>`, :meth:`DataTask.SetData`, :doc:`../History/release_info/5_5_0`,
 

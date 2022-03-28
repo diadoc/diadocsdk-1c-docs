@@ -69,7 +69,7 @@ DiadocAPI
     .. tab:: Устаревшие
 
         .. csv-table::
-            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён",
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
             :meth:`TestConnection() <DiadocAPI.TestConnection>`, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`, :doc:`../History/release_info/5_26_3`,
             :meth:`GetVersion() <DiadocAPI.GetVersion>`, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`, :doc:`../History/release_info/5_29_4`,
