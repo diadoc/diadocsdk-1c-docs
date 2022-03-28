@@ -44,7 +44,6 @@ DiadocAPI
             :meth:`CreateConnectionByLogin() <DiadocAPI.CreateConnectionByLogin>`, :meth:`GetPersonalCertificates() <DiadocAPI.GetPersonalCertificates>`, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`
             , :meth:`GetPersonalCertificate() <DiadocAPI.GetPersonalCertificate>`, :meth:`UpdateProxySettings() <DiadocAPI.UpdateProxySettings>`
 
-
     .. tab:: Создание подключения
 
         * :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`
@@ -70,7 +69,7 @@ DiadocAPI
     .. tab:: Устаревшие
 
         .. csv-table::
-            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён", 
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён",
 
             :meth:`TestConnection() <DiadocAPI.TestConnection>`, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`, :doc:`../History/release_info/5_26_3`,
             :meth:`GetVersion() <DiadocAPI.GetVersion>`, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`, :doc:`../History/release_info/5_29_4`,
@@ -97,7 +96,6 @@ DiadocAPI
             Если *Pin* не задан, то будет использоваться пин-код/пароль, запомненный в крипто-провайдере или пустая строка
 
 
-
 .. method:: DiadocAPI.CreateConnectionByLogin(Login, Password)
 
     :Login:    ``Строка`` Логин пользователя
@@ -114,6 +112,7 @@ DiadocAPI
 
     .. versionadded:: 5.37.0
 
+
 .. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
 
     :Thumbprint: ``Строка`` Отпечаток сертификата
@@ -121,7 +120,7 @@ DiadocAPI
     Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок
 
 
-.. method:: DiadocAPI.GetPersonalCertificates(UserStore=true)
+.. method:: DiadocAPI.GetPersonalCertificates(UserStore=``True``)
 
     :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск
 
@@ -135,6 +134,7 @@ DiadocAPI
 
     Возвращает :doc:`сертификат <PersonalCertificate>` с указанным отпечатком.
     Поиск происходит сначала в `хранилище <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_ "Личные" пользователя, затем - машины
+
 
 .. method:: DiadocAPI.GetFullVersion()
 
