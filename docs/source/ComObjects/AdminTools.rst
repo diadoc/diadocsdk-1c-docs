@@ -16,7 +16,7 @@ AdminTools
     .. tab:: Все актуальные
 
         .. csv-table::
-            :header: "Управление Машиночитаемыми довереностями", "Управление данными, привязанными к сертификатам"
+            :header: Управление машиночитаемыми довереностями, "Управление данными, привязанными к сертификатам"
 
             :meth:`GetEmployeePowersOfAttorney() <AdminTools.GetEmployeePowersOfAttorney>`, :meth:`CanSendInvoice() <AdminTools.CanSendInvoice>`
             :meth:`SetDefaultPowerOfAttorney() <AdminTools.SetDefaultPowerOfAttorney>`, :meth:`GetExtendedSignerDetails() <AdminTools.GetExtendedSignerDetails>`

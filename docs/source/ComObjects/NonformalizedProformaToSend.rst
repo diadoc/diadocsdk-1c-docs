@@ -8,30 +8,30 @@ NonformalizedProformaToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+    Используйте :doc:`CustomDocumentToSend`
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``NonformalizedProforma``
+    **Строка, чтение** - тип документа. Константа ``NonformalizedProforma``
 
 :FileName:
-  **Строка, чтение/запись** - имя файла вложения
+    **Строка, чтение/запись** - имя файла вложения
 
 :DocumentDate:
-  **Дата, чтение/запись** - дата документа
+    **Дата, чтение/запись** - дата документа
 
 :DocumentNumber:
-  **Строка, чтение/запись** - номер документа
+    **Строка, чтение/запись** - номер документа
 
 :Total:
-  **Число, чтение/запись** - сумма с учетом НДС
+    **Число, чтение/запись** - сумма с учетом НДС
 
 :Vat:
-  **Число, чтение/запись** - сумма НДС
+    **Число, чтение/запись** - сумма НДС
 
 :Grounds:
-  **Строка, чтение/запись** - основание документа
+    **Строка, чтение/запись** - основание документа
 
 :Content:
-  `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ : `VT_EMPTY <https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oaut/3fe7db9f-5803-4dc4-9d14-5425d3f5461f>`_ **, чтение** - представление контента. Всегда пустое
+    :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента. Всегда пустое

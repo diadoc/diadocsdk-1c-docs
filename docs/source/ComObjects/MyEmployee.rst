@@ -4,114 +4,99 @@ MyEmployee
 
 Информация о своём пользователе как сотруднике организации
 
-  .. versionadded:: 5.37.0
-
+.. versionadded:: 5.37.0
 
 
 .. rubric:: Свойства
 
 :EmployeeInfo:
-  :doc:`EmployeeInfo` **, чтение** - информация о сотруднике
-
+    :doc:`EmployeeInfo` **, чтение** - информация о сотруднике
 
 :SessionInfo:
-  :doc:`SessionInfo` **, чтение** - Информация об авторизационной сессии
-
+    :doc:`SessionInfo` **, чтение** - Информация об авторизационной сессии
 
 :NeedToAttachPowerOfAttorney:
-  **Булево, чтение** - флаг необходимости использовать МЧД
-
+    **Булево, чтение** - флаг необходимости использовать МЧД
 
 
 .. rubric:: Методы
 
+.. tabs::
 
-+--------------------------------------------------+-----------------------------------------+
-| |MyEmployee-CanSendInvoice|_                     | |MyEmployee-GetPowersOfAttorney|_       |
-+--------------------------------------------------+-----------------------------------------+
-| |MyEmployee-GetExtendedSignerDetails|_           | |MyEmployee-SetDefaultPowerOfAttorney|_ |
-+--------------------------------------------------+-----------------------------------------+
-| |MyEmployee-CreateSetExtendedSignerDetailsTask|_ | |MyEmployee-AddPowerOfAttorney|_        |
-+--------------------------------------------------+-----------------------------------------+
-| |MyEmployee-UpdateCertificateFNSRegistration|_   | |MyEmployee-RemovePowerOfAttorney|_     |
-+--------------------------------------------------+-----------------------------------------+
+    .. tab:: Все актуальные
 
+        .. csv-table::
+            :header: Управление машиночитаемыми довереностями, "Управление данными, привязанными к сертификатам"
 
-.. |MyEmployee-CanSendInvoice| replace:: CanSendInvoice()
-.. |MyEmployee-GetExtendedSignerDetails| replace:: GetExtendedSignerDetails()
-.. |MyEmployee-CreateSetExtendedSignerDetailsTask| replace:: CreateSetExtendedSignerDetailsTask()
-.. |MyEmployee-UpdateCertificateFNSRegistration| replace:: UpdateCertificateFNSRegistration()
-.. |MyEmployee-GetPowersOfAttorney| replace:: GetPowersOfAttorney()
-.. |MyEmployee-SetDefaultPowerOfAttorney| replace:: SetDefaultPowerOfAttorney()
-.. |MyEmployee-AddPowerOfAttorney| replace:: AddPowerOfAttorney()
-.. |MyEmployee-RemovePowerOfAttorney| replace:: RemovePowerOfAttorney()
+            :meth:`GetPowersOfAttorney() <MyEmployee.GetPowersOfAttorney>`,             :meth:`CanSendInvoice() <MyEmployee.CanSendInvoice>`
+            :meth:`SetDefaultPowerOfAttorney() <MyEmployee.SetDefaultPowerOfAttorney>`, :meth:`GetExtendedSignerDetails() <MyEmployee.GetExtendedSignerDetails>`
+            :meth:`AddPowerOfAttorney() <MyEmployee.AddPowerOfAttorney>`,               :meth:`CreateSetExtendedSignerDetailsTask() <MyEmployee.CreateSetExtendedSignerDetailsTask>`
+            :meth:`RemovePowerOfAttorney() <MyEmployee.RemovePowerOfAttorney>`,         :meth:`UpdateCertificateFNSRegistration() <MyEmployee.UpdateCertificateFNSRegistration>`
 
+    .. tab:: Управление машиночитаемыми довереностями
 
-.. _MyEmployee-CanSendInvoice:
-.. method:: MyEmployee.CanSendInvoice()
+        * :meth:`GetPowersOfAttorney() <MyEmployee.GetPowersOfAttorney>`
+        * :meth:`SetDefaultPowerOfAttorney() <MyEmployee.SetDefaultPowerOfAttorney>`
+        * :meth:`AddPowerOfAttorney() <MyEmployee.AddPowerOfAttorney>`
+        * :meth:`RemovePowerOfAttorney() <MyEmployee.RemovePowerOfAttorney>`
 
-  Проверяет можно ли подписывать счета-фактуры, используя сертфиикат, с которым произошла авторизация. Если невозможно, то вернёт текст с причиной, иначе - пустую строку
+    .. tab:: Управление данными, привязанными к сертификатам
 
+        * :meth:`CanSendInvoice() <MyEmployee.CanSendInvoice>`
+        * :meth:`GetExtendedSignerDetails() <MyEmployee.GetExtendedSignerDetails>`
+        * :meth:`CreateSetExtendedSignerDetailsTask() <MyEmployee.CreateSetExtendedSignerDetailsTask>`
+        * :meth:`UpdateCertificateFNSRegistration() <MyEmployee.UpdateCertificateFNSRegistration>`
 
 
-.. _MyEmployee-GetExtendedSignerDetails:
-.. method:: MyEmployee.GetExtendedSignerDetails(DocumentTitleName=``UNKNOWN``)
-
-  :DocumentTitleName: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
-
-  Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата, использованного в авторизации (можно найти в **SessionInfo**).
-  Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
-  Для *DocumentTitleName* == ``Absent`` и *DocumentTitleName* == ``UNKNOWN`` вызов невозможен.
-
-
-
-.. _MyEmployee-CreateSetExtendedSignerDetailsTask:
-.. method:: MyEmployee.CreateSetExtendedSignerDetailsTask()
-
-  Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для сертификата, использованного в авторизации (можно найти в **SessionInfo**)
-
-
-
-.. _MyEmployee-UpdateCertificateFNSRegistration:
-.. method:: MyEmployee.UpdateCertificateFNSRegistration()
-
-  Добавляет в сообщение для ФНС сертификат, использованный в авторизации (можно найти в **SessionInfo**)
-
-
-
-.. _MyEmployee-GetPowersOfAttorney:
 .. method:: MyEmployee.GetPowersOfAttorney(OnlyActual=``True``)
 
-  :OnlyActual: ``булево`` признак того, что нужно возвращать только действующие доверенности
+    :OnlyActual: ``булево`` признак того, что нужно возвращать только действующие доверенности
 
-  Возвращает :doc:`коллекцию <Collection>` :doc:`доверенностей текущего сотрудника <EmployeePowerOfAttorney>`.
-  Если флаг ``OnlyActual`` истинен, то вернутся только действующие доверенности
+    Возвращает :doc:`коллекцию <Collection>` :doc:`доверенностей текущего сотрудника <EmployeePowerOfAttorney>`.
+    Если флаг ``OnlyActual`` истинен, то вернутся только действующие доверенности
 
 
-
-.. _MyEmployee-SetDefaultPowerOfAttorney:
 .. method:: MyEmployee.SetDefaultPowerOfAttorney(PowerOfAttorney)
 
-  :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
 
-  Устанавливает для текущего пользователя переданную доверенность как доверенность по умолчанию.
-  Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
+    Устанавливает для текущего пользователя переданную доверенность как доверенность по умолчанию.
+    Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
 
 
-
-.. _MyEmployee-AddPowerOfAttorney:
 .. method:: MyEmployee.AddPowerOfAttorney(PowerOfAttorney)
 
-  :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
 
-  Привязывает доверенность к текущему сотруднику.
-  Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
+    Привязывает доверенность к текущему сотруднику.
+    Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
 
 
-
-.. _MyEmployee-RemovePowerOfAttorney:
 .. method:: MyEmployee.RemovePowerOfAttorney(PowerOfAttorney)
 
-  :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
 
-  Отвязывает довереность от текущего сотрудника
+    Отвязывает довереность от текущего сотрудника
+
+.. method:: MyEmployee.CanSendInvoice()
+
+    Проверяет можно ли подписывать счета-фактуры, используя сертфиикат, с которым произошла авторизация. Если невозможно, то вернёт текст с причиной, иначе - пустую строку
+
+
+.. method:: MyEmployee.GetExtendedSignerDetails(DocumentTitleName=``UNKNOWN``)
+
+    :DocumentTitleName: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
+
+    Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата, использованного в авторизации (можно найти в **SessionInfo**).
+    Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
+    Для *DocumentTitleName* == ``Absent`` и *DocumentTitleName* == ``UNKNOWN`` вызов невозможен.
+
+
+.. method:: MyEmployee.CreateSetExtendedSignerDetailsTask()
+
+    Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для сертификата, использованного в авторизации (можно найти в **SessionInfo**)
+
+
+.. method:: MyEmployee.UpdateCertificateFNSRegistration()
+
+    Добавляет в сообщение для ФНС сертификат, использованный в авторизации (можно найти в **SessionInfo**)

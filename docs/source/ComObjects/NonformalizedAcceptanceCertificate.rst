@@ -17,7 +17,7 @@ NonformalizedAcceptanceCertificate
   **Строка, чтение** - основание документа
 
 :Status:
-  **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/BilateralStatus>`
+    **Строка, чтение** - статус документа. :doc:`Возможные значения <./Enums/BilateralStatus>`
 
-  .. deprecated:: 5.34.0
-    Используйте поле **DocflowStatus**
+    .. deprecated:: 5.34.0
+        Используйте поле **DocflowStatus**
