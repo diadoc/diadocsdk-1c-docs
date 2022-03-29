@@ -8,14 +8,14 @@
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
+    Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``Invoice``
+    **Строка, чтение** - тип документа. Константа ``Invoice``
 
 
 :Content:
-  :doc:`InvoiceContent` **, чтение** - содержимое документа
+    :doc:`InvoiceContent` **, чтение** - содержимое документа

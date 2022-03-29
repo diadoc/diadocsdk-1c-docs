@@ -8,14 +8,14 @@ InvoiceRevisionToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+    Используйте :doc:`CustomDocumentToSend`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``InvoiceRevision``
+    **Строка, чтение** - тип документа. Константа ``InvoiceRevision``
 
 
 :Content:
-  :doc:`InvoiceContent` **, чтение** - содержимое документа
+    :doc:`InvoiceContent` **, чтение** - содержимое документа

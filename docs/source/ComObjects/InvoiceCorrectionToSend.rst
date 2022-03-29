@@ -8,14 +8,14 @@ InvoiceCorrectionToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
+    Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``InvoiceCorrection``
+    **Строка, чтение** - тип документа. Константа ``InvoiceCorrection``
 
 
 :Content:
-  :doc:`InvoiceCorrectionContent` **, чтение** - содержимое документа
+    :doc:`InvoiceCorrectionContent` **, чтение** - содержимое документа
