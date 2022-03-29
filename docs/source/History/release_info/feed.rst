@@ -1,5 +1,8 @@
 :orphan:
 
+История релизов
+===============
+
 .. do not move this file, pls
 
 .. feed::
