@@ -9,12 +9,13 @@ DynamicContent
     * в :doc:`PackageContentItem.Content <PackageContentItem>`, полученным через объект  :doc:`ReplySendTask2` с типом ``AcceptDocument``
     * как результат выполнения метода :meth:`Document.GetDynamicContent`
 
-
+.. warning::
+    При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
 
 .. rubric:: Свойства
 
 Не имеет фиксированного набора свойств.
-Набор полей можно понять или из XSD, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
+Набор полей :ref:`можно понять или из XSD <DynamicContent-Builder>`, получаемой методами :meth:`Organization.SaveUserDataXSD`, :meth:`Organization.GetBase64UserDataXSD`, или, используя объект :doc:`Reflector`
 
 Представление контента документа имеет рекурсивную структуру:
 
@@ -30,7 +31,46 @@ DynamicContent
     - объекты :doc:`DynamicContent`
 
 
+.. rubric:: Методы
 
+.. tabs::
+
+    .. tab:: Все актуальные
+
+        Не имеет фиксированного набора методов.
+        :ref:`Наличие методов, их имена и интерфейс <DynamicContent-Collections>` определяется наличием коллекций значений в текущем экземпляре объекта.
+
+    .. tab:: Устаревшие
+
+        .. csv-table::
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
+
+            :meth:`GetPropertiesNames() <DynamicContent.GetPropertiesNames>`, :doc:`Reflector`, :doc:`../History/release_info/5_28_7`,
+            :meth:`HasProperty() <DynamicContent.HasProperty>`, :doc:`Reflector`, :doc:`../History/release_info/5_28_7`,
+
+        .. method:: DynamicContent.GetPropertiesNames()
+
+          Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
+
+          .. versionadded:: 5.28.3
+
+          .. deprecated:: 5.28.7
+            Используйте :doc:`Reflector`
+
+
+        .. method:: DynamicContent.HasProperty(PropertyName)
+
+          :PropertyName: ``строка`` - имя свойства
+
+          Возвращает булевое значение наличия у объекта свойства с заданным именем
+
+          .. versionadded:: 5.28.3
+
+          .. deprecated:: 5.28.7
+            Используйте :doc:`Reflector`
+
+
+.. _DynamicContent-Builder:
 .. rubric:: Общие правила формирования структуры :doc:`DynamicContent`'а
 
 - Элементы сложного типа будут представлены как :doc:`DynamicContent`
@@ -54,14 +94,13 @@ DynamicContent
     - ``<xs:complexType name="ChildType"><xs:extension base="ParentType">...``
 
 
-
+.. _DynamicContent-Collections:
 .. rubric:: Как работать с коллекциями
 
 1. Чтобы добавить элемент в :doc:`коллекцию <Collection>`, необходимо вызвать метод объекта, в котором эта :doc:`коллекция <Collection>` лежит. Назовём этот объект ``ВладелецКоллекции``
 2. Имя метода для добавления элемента - ``"Add" + <Имя поля с коллекцией>``
 3. Если :doc:`коллекция <Collection>` хранит в себе повторяющиеся строки (а не :doc:`DynamicContent`), то метод нужно вызвать с одним параметром - добавляемой в коллекцию строкой. Возвращаемого значения у метода не будет
 4. Если коллекция хранит не строки, то метод нужно вызвать без параметров. Метод вернёт добавленный в коллекцию элемент
-
 
 
 .. rubric:: Пример работы с динамическим контентом
@@ -120,44 +159,6 @@ DynamicContent
   //     </xs:sequence>
   //   </xs:complexType>
   // </xs:element>
-
-
-.. warning::
-  При использовании динамического контента ориентироваться на описание **старых версий контента** (например, :doc:`UtdSellerContent`) **нельзя** - отличается как набор полей, так и допустимые для них значения.
-
-
-.. rubric:: Устаревшие Методы
-
-+--------------------------------------+-------------------------------+
-| |DynamicContent-GetPropertiesNames|_ | |DynamicContent-HasProperty|_ |
-+--------------------------------------+-------------------------------+
-
-.. |DynamicContent-GetPropertiesNames| replace:: GetPropertiesNames()
-.. |DynamicContent-HasProperty| replace:: HasProperty()
-
-
-.. _DynamicContent-GetPropertiesNames:
-.. method:: DynamicContent.GetPropertiesNames()
-
-  Возвращает :doc:`коллекцию <Collection>` строк - имён свойств контента
-
-  .. versionadded:: 5.28.3
-
-  .. deprecated:: 5.28.7
-    Используйте :doc:`Reflector`
-
-
-.. _DynamicContent-HasProperty:
-.. method:: DynamicContent.HasProperty(PropertyName)
-
-  :PropertyName: ``строка`` - имя свойства
-
-  Возвращает булевое значение наличия у объекта свойства с заданным именем
-
-  .. versionadded:: 5.28.3
-
-  .. deprecated:: 5.28.7
-    Используйте :doc:`Reflector`
 
 
 .. seealso:: :doc:`../HowTo/HowTo_reflect_object`

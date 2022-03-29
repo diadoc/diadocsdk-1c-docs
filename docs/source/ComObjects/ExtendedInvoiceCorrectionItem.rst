@@ -5,48 +5,44 @@ ExtendedInvoiceCorrectionItem
 
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`DynamicContent`
+    Используйте :doc:`DynamicContent`
 
 
 .. rubric:: Свойства
 
 :Product:
-  **Строка, чтение/запись** - наименование товара
+    **Строка, чтение/запись** - наименование товара
 
 :OriginalValues:
-  :doc:`InvoiceItemFields` **, чтение** - значения до корректировки
+    :doc:`InvoiceItemFields` **, чтение** - значения до корректировки
 
 :CorrectedValues:
-  :doc:`InvoiceItemFields` **, чтение** - значения после корректировки
+    :doc:`InvoiceItemFields` **, чтение** - значения после корректировки
 
 :AmountsInc:
-  :doc:`AmountsDiff` **, чтение** - суммы к увеличению
+    :doc:`AmountsDiff` **, чтение** - суммы к увеличению
 
 :AmountsDec:
-  :doc:`AmountsDiff` **, чтение** - суммы к уменьшению
+    :doc:`AmountsDiff` **, чтение** - суммы к уменьшению
 
 :ItemAccountDebit:
-  **Строка, чтение/запись** - корреспондирующие счета: дебет
+    **Строка, чтение/запись** - корреспондирующие счета: дебет
 
 :ItemAccountCredit:
-  **Строка, чтение/запись** - корреспондирующие счета: кредит
+    **Строка, чтение/запись** - корреспондирующие счета: кредит
 
 :StructedAdditionalInfos:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
-
+    :doc:`Коллекция <Collection>` **объектов** :doc:`StructedAdditionalInfo` **, чтение** - дополнительные сведения
 
 
 .. rubric:: Методы
 
-+------------------------------------------------------------+
-| |ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo|_ |
-+------------------------------------------------------------+
+.. tabs::
 
-.. |ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo| replace:: AddStructedAdditionalInfo()
+    .. tab:: Все актуальные
 
+        * :meth:`AddStructedAdditionalInfo() <ExtendedInvoiceCorrectionItem.AddStructedAdditionalInfo>`
 
-
-.. _ExtendedInvoiceCorrectionItem-AddStructedAdditionalInfo:
 .. method:: ExtendedInvoiceCorrectionItem.AddStructedAdditionalInfo()
 
     Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos*

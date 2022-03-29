@@ -5,37 +5,35 @@
 
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`DynamicContent`
+    Используйте :doc:`DynamicContent`
 
 .. rubric:: Свойства
 
 :CostChangeInfo:
-  **Строка, чтение/запись** - иные сведения об изменении стоимости
+    **Строка, чтение/запись** - иные сведения об изменении стоимости
 
 :TransferDocDetails:
-  **Строка, чтение/запись** - реквизиты передаточных документов, к которым относится корректировка
+    **Строка, чтение/запись** - реквизиты передаточных документов, к которым относится корректировка
 
 :OperationContent:
-  **Строка, чтение/запись** - содержание операции
+    **Строка, чтение/запись** - содержание операции
 
 :NotificationDate:
-  **Дата, чтение/запись** - дата направления на согласование
+    **Дата, чтение/запись** - дата направления на согласование
 
 :CorrectionBases:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase` **, чтение** - основание корректировки
+    :doc:`Коллекция <Collection>` **объектов** :doc:`CorrectionBase` **, чтение** - основание корректировки
 
 
 .. rubric:: Методы
 
-+-----------------------------------+
-| |EventContent-AddCorrectionBase|_ |
-+-----------------------------------+
+.. tabs::
 
-.. |EventContent-AddCorrectionBase| replace:: AddCorrectionBase()
+    .. tab:: Все актуальные
+
+        * :meth:`AddCorrectionBase() <EventContent.AddCorrectionBase>`
 
 
-
-.. _EventContent-AddCorrectionBase:
 .. method:: ﻿EventContent.AddCorrectionBase()
 
-  Добавляет :doc:`новый элемент <CorrectionBase>` в коллекцию *CorrectionBases* и возвращает его
+    Добавляет :doc:`новый элемент <CorrectionBase>` в коллекцию *CorrectionBases* и возвращает его

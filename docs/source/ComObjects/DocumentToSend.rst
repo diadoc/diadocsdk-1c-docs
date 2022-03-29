@@ -1,7 +1,8 @@
 DocumentToSend
 ==============
 
-Базовый объект для всех документов на отправку
+Базовый объект для :ref:`всех документов на отправку <DocumentToSendBase-Inheritable>`
+
 
 .. versionadded:: 5.5.0
 
@@ -21,81 +22,79 @@ DocumentToSend
     `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ **, чтение** - представление содержимого документа. Тип контента для каждого наследника этого интерфейса свой
 
 :Comment:
-  **Строка, чтение/запись** - комментарий, добавляемый к документу при отправке
+    **Строка, чтение/запись** - комментарий, добавляемый к документу при отправке
 
 :CustomDocumentId:
-  **Строка, чтение/запись** - дополнительный идентификатор документа
+    **Строка, чтение/запись** - дополнительный идентификатор документа
 
 
 .. rubric:: Методы
 
-+-----------------------------------------------------+-------------------------------+
-| |DocumentToSend-AddInitialDocument|_                | |DocumentToSend-SaveContent|_ |
-+-----------------------------------------------------+-------------------------------+
-| |DocumentToSend-AddSubordinateDocument|_            |                               |
-+-----------------------------------------------------+-------------------------------+
-| |DocumentToSend-AddInitialDocumentFromPackage|_     |                               |
-+-----------------------------------------------------+-------------------------------+
-| |DocumentToSend-AddSubordinateDocumentFromPackage|_ |                               |
-+-----------------------------------------------------+-------------------------------+
+.. tabs::
 
-.. |DocumentToSend-AddInitialDocument| replace:: AddInitialDocument()
-.. |DocumentToSend-AddSubordinateDocument| replace:: AddSubordinateDocument()
-.. |DocumentToSend-AddInitialDocumentFromPackage| replace:: AddInitialDocumentFromPackage()
-.. |DocumentToSend-AddSubordinateDocumentFromPackage| replace:: AddSubordinateDocumentFromPackage()
+    .. tab:: Все актуальные
 
-.. |DocumentToSend-SaveContent| replace:: SaveContent()
+        .. csv-table::
+            :header: Добавление связанных документов, Служебные
+            
+            :meth:`AddInitialDocument() <DocumentToSend.AddInitialDocument>`,                               :meth:`SaveContent() <DocumentToSend.SaveContent>`
+            :meth:`AddSubordinateDocument() <DocumentToSend.AddSubordinateDocument>`,
+            :meth:`AddInitialDocumentFromPackage() <DocumentToSend.AddInitialDocumentFromPackage>`,
+            :meth:`AddSubordinateDocumentFromPackage() <DocumentToSend.AddSubordinateDocumentFromPackage>`,
+
+    .. tab:: Добавление связанных документов
+
+        * :meth:`AddInitialDocument() <DocumentToSend.AddInitialDocument>`
+        * :meth:`AddSubordinateDocument() <DocumentToSend.AddSubordinateDocument>`
+        * :meth:`AddInitialDocumentFromPackage() <DocumentToSend.AddInitialDocumentFromPackage>`
+        * :meth:`AddSubordinateDocumentFromPackage() <DocumentToSend.AddSubordinateDocumentFromPackage>`
+
+    .. tab:: Служебные
+
+        * :meth:`SaveContent() <DocumentToSend.SaveContent>`
 
 
-
-.. _DocumentToSend-AddInitialDocument:
 .. method:: DocumentToSend.AddInitialDocument(DocumentID)
 
-  :DocumentID: ``строка`` идентификатор документа в Диадок
+    :DocumentID: ``строка`` идентификатор документа в Диадок
 
-  Добавляет идентификатор документа в коллекцию "родительских" документов
+    Добавляет идентификатор документа в коллекцию "родительских" документов
 
 
-
-.. _DocumentToSend-AddSubordinateDocument:
 .. method:: DocumentToSend.AddSubordinateDocument(DocumentID)
 
-  :DocumentID: ``строка`` идентификатор документа в Диадок
+    :DocumentID: ``строка`` идентификатор документа в Диадок
 
-  Добавляет идентификатор документа в коллекцию подчиненных документов
+    Добавляет идентификатор документа в коллекцию подчиненных документов
 
 
-
-.. _DocumentToSend-AddInitialDocumentFromPackage:
 .. method:: DocumentToSend.AddInitialDocumentFromPackage(CustomDocumentID)
 
-  :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
+    :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
 
-  Добавляет идентификатор документа из пакета на отправку в коллекцию "родительских" документов
+    Добавляет идентификатор документа из пакета на отправку в коллекцию "родительских" документов
 
 
-
-.. _DocumentToSend-AddSubordinateDocumentFromPackage:
 .. method:: DocumentToSend.AddSubordinateDocumentFromPackage(CustomDocumentID)
 
-  :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
+    :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
 
-  Добавляет идентификатор документа из пакета на отправку в коллекцию подчиненных документов
+    Добавляет идентификатор документа из пакета на отправку в коллекцию подчиненных документов
 
 
-.. _DocumentToSend-SaveContent:
 .. method:: DocumentToSend.SaveContent(BoxId, FileName)
 
-  :BoxId: ``строка`` идентификатор ящика контрагента, которому должен быть отправлен документ
-  :FileName: ``строка`` полной имя файла, в который необходимо сохранить содержание документа
+    :BoxId: ``строка`` идентификатор ящика контрагента, которому должен быть отправлен документ
+    :FileName: ``строка`` полной имя файла, в который необходимо сохранить содержание документа
 
-  Генерирует содержание отправляемого документа и сохраняет его на диск
+    Генерирует содержание отправляемого документа и сохраняет его на диск
 
-  .. versionadded:: 5.29.9
-
+    .. versionadded:: 5.29.9
 
 
 .. rubric:: Дополнительная информация
+
+.. _DocumentToSendBase-Inheritable:
 
 ================================================ =======================================================
 Объекты, наследующие интерфейс DocumentToSend    Описание

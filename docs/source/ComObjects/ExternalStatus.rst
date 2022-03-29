@@ -29,7 +29,13 @@ ExternalStatus
 
 .. rubric:: Методы
 
-.. _ExternalStatus-GetBase64Content:
+.. tabs::
+
+    .. tab:: Все актуальные
+
+        * :meth:`GetBase64Content() <ExternalStatus.GetBase64Content>`
+
+
 .. method:: ExternalStatus.GetBase64Content()
 
   Возвращает Base64-строку содержимого статуса. Может быть использован для получения детализации по статусу
