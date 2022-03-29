@@ -10,7 +10,7 @@ PackageContent
 .. rubric:: Свойства
 
 :ContentItems:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem` **, чтение** - коллекция пар *документ-контент*, хранящихся в пакете
+    :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem` **, чтение** - коллекция пар *документ-контент*, хранящихся в пакете
 
 :Type:
-  **Строка, чтение** - тип контента. Константа ``PackageContent``
+    **Строка, чтение** - тип контента. Константа ``PackageContent``

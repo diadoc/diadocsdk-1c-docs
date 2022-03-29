@@ -7,4 +7,4 @@ PowerOfAttorneyPrevalidation
 .. rubric:: Свойства
 
 :Status:
-  :doc:`PowerOfAttorneyStatus` **, чтение** - Статус МЧД
+    :doc:`PowerOfAttorneyStatus` **, чтение** - Статус МЧД

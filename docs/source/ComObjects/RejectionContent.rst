@@ -8,7 +8,7 @@ RejectionContent
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип контента. Константа ``SignatureRequestRejection``
+    **Строка, чтение** - тип контента. Константа ``SignatureRequestRejection``
 
 :Comment:
-  **Строка, чтение** - комментарий
+    **Строка, чтение** - комментарий
