@@ -4,67 +4,63 @@ TransferInfo
 Сведения о передаче
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`DynamicContent`
+    Используйте :doc:`DynamicContent`
 
 
 .. rubric:: Свойства
 
 :OperationInfo:
-  **Строка, чтение/запись** - содержание операции
+    **Строка, чтение/запись** - содержание операции
 
 :OperationType:
-  **Строка, чтение/запись** - вид операции
+    **Строка, чтение/запись** - вид операции
 
 :TransferDate:
-  **Дата, чтение/запись** - дата отгрузки
+    **Дата, чтение/запись** - дата отгрузки
 
 :TransferTextInfo:
-  **Строка, чтение/запись** - сведения о транспортировке и грузе
+    **Строка, чтение/запись** - сведения о транспортировке и грузе
 
 :Carrier:
-  :doc:`ExtendedOrganizationInfo` **, чтение** - перевозчик
+    :doc:`ExtendedOrganizationInfo` **, чтение** - перевозчик
 
 :Employee:
-  :doc:`Employee` **, чтение** - работник организации продавца
+    :doc:`Employee` **, чтение** - работник организации продавца
 
 :OtherIssuer:
-  :doc:`OtherIssuer` **, чтение** - иное лицо
+    :doc:`OtherIssuer` **, чтение** - иное лицо
 
 :CreatedThingTransferDate:
-  **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору
+    **Дата, чтение/запись** - дата передачи вещи, изготовленной по договору
 
 :CreatedThingInfo:
-  **Строка, чтение/запись** - сведения о передаче вещи, изготовленной по договору
+    **Строка, чтение/запись** - сведения о передаче вещи, изготовленной по договору
 
 :AdditionalInfoId:
-  :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
+    :doc:`AdditionalInfoId` **, чтение** - информационное поле документа
 
 :TransferBases:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`TransferBase` **, чтение** - основание отгрузки
+    :doc:`Коллекция <Collection>` **объектов** :doc:`TransferBase` **, чтение** - основание отгрузки
 
 :Waybills:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill` **, чтение** - транспортная накладная
+    :doc:`Коллекция <Collection>` **объектов** :doc:`Waybill` **, чтение** - транспортная накладная
 
 
 .. rubric:: Методы
 
-+---------------------------------+----------------------------+
-| |TransferInfo-AddTransferBase|_ | |TransferInfo-AddWaybill|_ |
-+---------------------------------+----------------------------+
+.. tabs::
 
-.. |TransferInfo-AddTransferBase| replace:: AddTransferBase()
-.. |TransferInfo-AddWaybill| replace:: AddWaybill()
+    .. tab:: Все актуальные
+
+        * :meth:`AddTransferBase() <TransferInfo.AddTransferBase>`
+        * :meth:`AddWaybill() <TransferInfo.AddWaybill>`
 
 
-
-.. _TransferInfo-AddTransferBase:
 .. method:: TransferInfo.AddTransferBase()
 
-  Добавляет :doc:`новый элемент <TransferBase>` в коллекцию *TransferBases* и возвращает его
+    Добавляет :doc:`новый элемент <TransferBase>` в коллекцию *TransferBases* и возвращает его
 
 
-
-.. _TransferInfo-AddWaybill:
 .. method:: TransferInfo.AddWaybill()
 
-  Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его
+    Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его

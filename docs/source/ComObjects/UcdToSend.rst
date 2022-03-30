@@ -6,12 +6,12 @@ UcdToSend
 Наследует интерфейс :doc:`DocumentToSend`
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
+    Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``UniversalCorrectionDocument``
+    **Строка, чтение** - тип документа. Константа ``UniversalCorrectionDocument``
 
 :Content:
-  :doc:`UcdSellerContent` **, чтение** - содержимое документа
+    :doc:`UcdSellerContent` **, чтение** - содержимое документа

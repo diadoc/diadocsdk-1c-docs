@@ -10,59 +10,58 @@ ReplySendTask
 .. rubric:: Свойства
 
 :Content:
-  :doc:`BaseContent` **, чтение** - содержимое ответного действия. |ReplySendTask-CreationContext|_
+    :doc:`BaseContent` **, чтение** - содержимое ответного действия. :ref:`Возможные типы <ReplySendTask-Content>`
 
 :PowerOfAttorneyToAttach:
-  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+    :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
 
   .. versionadded:: 5.37.0
 
 
 .. rubric:: Методы
 
-+-----------------------+----------------------------+----------------------------------+
-| |ReplySendTask-Send|_ | |ReplySendTask-SendAsync|_ | |ReplySendTask-ValidateContent|_ |
-+-----------------------+----------------------------+----------------------------------+
+.. tabs::
 
+    .. tab:: Все актуальные
 
-.. |ReplySendTask-Send| replace:: Send()
-.. |ReplySendTask-SendAsync| replace:: SendAsync()
-.. |ReplySendTask-ValidateContent| replace:: ValidateContent()
+        * :meth:`Send() <ReplySendTask.Send>`
+        * :meth:`SendAsync() <ReplySendTask.SendAsync>`
 
-.. _ReplySendTask-Send:
+    .. tab:: Устаревшие
+
+        .. csv-table::
+            :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
+
+            :meth:`ValidateContent() <ReplySendTask.ValidateContent>`, , :doc:`../History/release_info/5_18_0`,
+            
+            .. method:: ReplySendTask.ValidateContent()
+
+                Валидирует ответные действия и возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
+
+                .. deprecated:: 5.18.0
+                    Проверку контента рекомендуется проводить самостоятельно
+
+                .. versionchanged:: 5.26.0
+                    Возвращаемая коллекция всегда содержит элемент, говорящий, что метод устарел
+
+                .. versionchanged:: 5.29.0
+                    Коллекция всегда пустая. Валидации не происходит. Метод оставлен для совместимости
+            
+            
+            
 .. method:: ReplySendTask.Send()
 
   Применяет ответные действия
 
 
-
-.. _ReplySendTask-SendAsync:
 .. method:: ReplySendTask.SendAsync()
 
   Применяет ответные действия асинхронно. Возвращает :doc:`AsyncResult` с булевым типом результата
 
 
-
-.. _ReplySendTask-ValidateContent:
-.. method:: ReplySendTask.ValidateContent()
-
-  Валидирует ответные действия и возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
-
-  .. deprecated:: 5.18.0
-    Проверку контента рекомендуется проводить самостоятельно
-
-  .. versionchanged:: 5.26.0
-    Возвращаемая коллекция всегда содержит элемент, говорящий, что метод устарел
-
-  .. versionchanged:: 5.29.0
-    Коллекция всегда пустая. Валидации не происходит. Метод оставлен для совместимости
-
-
-
 .. rubric:: Дополнительная информация
 
-.. |ReplySendTask-CreationContext| replace:: Возможные типы
-.. _ReplySendTask-CreationContext:
+.. _ReplySendTask-Content:
 
 +------------------------------------------------------------------+----------------------------------------+
 |Контекст создания ReplySendTask'а                                 |Тип контента                            |

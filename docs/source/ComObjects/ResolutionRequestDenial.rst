@@ -10,15 +10,13 @@ ResolutionRequestDenial
 
 .. rubric:: Методы
 
-+-----------------------------------+
-| |ResolutionRequestDenial-Cancel|_ |
-+-----------------------------------+
+.. tabs::
 
-.. |ResolutionRequestDenial-Cancel| replace:: Cancel()
+    .. tab:: Все актуальные
+
+        * :meth:`Cancel() <ResolutionRequestDenial.Cancel>`
 
 
-
-.. _ResolutionRequestDenial-Cancel:
 .. method:: ResolutionRequestDenial.Cancel()
 
-  Отменяет отказ запрошенной резолюции
+    Отменяет отказ запрошенной резолюции

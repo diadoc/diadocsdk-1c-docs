@@ -7,33 +7,29 @@ ReplySendTask2
 .. rubric:: Свойства
 
 :ContentItems:
-  :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem` **, чтение** - коллекция пар *документ-контент*, для которых создаётся ответное действие
+    :doc:`Коллекция <Collection>` **объектов** :doc:`PackageContentItem` **, чтение** - коллекция пар *документ-контент*, для которых создаётся ответное действие
 
 :PowerOfAttorneyToAttach:
-  :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
+    :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании
 
-  .. versionadded:: 5.37.0
+    .. versionadded:: 5.37.0
 
 
 .. rubric:: Методы
 
-+------------------------+-----------------------------+
-| |ReplySendTask2-Send|_ | |ReplySendTask2-SendAsync|_ |
-+------------------------+-----------------------------+
+.. tabs::
+
+    .. tab:: Все актуальные
+    
+        * :meth:`Send() <ReplySendTask2.Send>`
+        * :meth:`SendAsync() <ReplySendTask2.SendAsync>`
 
 
-.. |ReplySendTask2-Send| replace:: Send()
-.. |ReplySendTask2-SendAsync| replace:: SendAsync()
-
-
-.. _ReplySendTask2-Send:
 .. method:: ReplySendTask2.Send()
 
-  Применяет ответные действия
+    Применяет ответные действия
 
 
-
-.. _ReplySendTask2-SendAsync:
 .. method:: ReplySendTask2.SendAsync()
 
-  Применяет ответные действия асинхронно. Возвращает :doc:`AsyncResult` с булевым типом результата
+    Применяет ответные действия асинхронно. Возвращает :doc:`AsyncResult` с булевым типом результата

@@ -7,25 +7,23 @@ SetExtendedSignerDetailsTask
 
 
 :ExtendedSignerDetailsToPost:
-  :doc:`ExtendedSignerDetailsToPost` **, чтение** - данные подписанта
+    :doc:`ExtendedSignerDetailsToPost` **, чтение** - данные подписанта
 
 :DocumentTitleType:
-  **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/DocumentTitleType>`.
-  Получить значение для *DocumentTitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
-  Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
+    **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/DocumentTitleType>`.
+    Получить значение для *DocumentTitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
+    Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
 
 
 .. rubric:: Методы
 
-+--------------------------------------+
-| |SetExtendedSignerDetailsTask-Send|_ |
-+--------------------------------------+
+.. tabs::
 
-.. |SetExtendedSignerDetailsTask-Send| replace:: Send()
+    .. tab:: Все актуальные
+
+        * :meth:`Send() <SetExtendedSignerDetailsTask.Send>`
 
 
-
-.. _SetExtendedSignerDetailsTask-Send:
 .. method:: SetExtendedSignerDetailsTask.Send()
 
-  Отправляет данные подписанта на сервер Диадок
+    Отправляет данные подписанта на сервер Диадок
