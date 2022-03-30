@@ -6,14 +6,14 @@ UtdRevisionToSend
 Наследует интерфейс :doc:`DocumentToSend`
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+    Используйте :doc:`CustomDocumentToSend`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``UniversalTrasnferDocumentRevision``
+    **Строка, чтение** - тип документа. Константа ``UniversalTrasnferDocumentRevision``
 
 
 :Content:
-  :doc:`UtdSellerContent` **, чтение** - содержимое документа
+    :doc:`UtdSellerContent` **, чтение** - содержимое документа

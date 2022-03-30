@@ -8,14 +8,13 @@ XmlTorg12ToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
+    Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``XmlTorg12``
-
+    **Строка, чтение** - тип документа. Константа ``XmlTorg12``
 
 :Content:
-  :doc:`Torg12SellerContent` **, чтение** - содержимое документа
+    :doc:`Torg12SellerContent` **, чтение** - содержимое документа

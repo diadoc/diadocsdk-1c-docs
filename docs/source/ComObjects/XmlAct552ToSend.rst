@@ -6,14 +6,14 @@ Act552ToSend
 Наследует интерфейс :doc:`DocumentToSend`
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
+    Используйте :doc:`CustomDocumentToSend`, создаваемый в :doc:`PackageSendTask2`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate552``
+    **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate552``
 
 
 :Content:
-  :doc:`Act552SellerContent` **, чтение** - содержимое документа
+    :doc:`Act552SellerContent` **, чтение** - содержимое документа

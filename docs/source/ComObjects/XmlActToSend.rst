@@ -8,14 +8,14 @@ XmlActToSend
 .. versionadded:: 5.5.0
 
 .. deprecated:: 5.27.0
-  Используйте :doc:`CustomDocumentToSend`
+    Используйте :doc:`CustomDocumentToSend`
 
 
 .. rubric:: Свойства
 
 :Type:
-  **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate``
+    **Строка, чтение** - тип документа. Константа ``XmlAcceptanceCertificate``
 
 
 :Content:
-  :doc:`AcceptanceCertificateSellerContent` **, чтение** - содержимое документа
+    :doc:`AcceptanceCertificateSellerContent` **, чтение** - содержимое документа
