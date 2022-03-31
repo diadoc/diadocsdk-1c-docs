@@ -6,6 +6,8 @@ PowerOfAttorneyToAttach
 .. versionadded:: 5.37.0
 
 
+.. rubric:: Свойства
+
 :PowerOfAttorney:
     :doc:`PowerOfAttorney` **, чтение/запись** - реквизиты МЧД. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`.
     Если задано, то **UseDefault** присваивается ``FALSE``

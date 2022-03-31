@@ -187,6 +187,34 @@ DocumentBase
         Resolutions,              :meth:`GetResolutions() <DocumentBase.GetResolutions>`,                           :doc:`../History/release_info/5_34_0`,
         ResolutionRequestDenials, :meth:`GetResolutionRequestDenials() <DocumentBase.GetResolutionRequestDenials>`, :doc:`../History/release_info/5_34_0`,
 
+    :AttachmentVersion:
+        **Строка, чтение** - версия документа
+
+    :Type:
+        **Строка, чтение** - тип документа
+
+    :OrganizationId:
+        **Строка, чтение** - идентификатор ящика собственной организации в Диадок в формате ``...@diadoc.ru``
+
+    :TimestampSeconds:
+        **Вещественное число, чтение** - количество секунд, прошедших с начала дня до отправки документа
+
+    :Status:
+        **Строка, чтение** - общий статус документа. Возможные значения зависят от типа документа
+
+    :HasCustomPrintForm:
+        **Булево, чтение** - признак того, что документ имеет печатную форму, отличную от стандартной
+
+    :ResolutionRequests:
+        :doc:`коллекция <Collection>` **объектов** :doc:`ResolutionRequest` - коллекция запросов согласований, подписаний, аннулирований
+
+    :Resolutions:
+        :doc:`коллекция <Collection>` **объектов** :doc:`Resolution` - коллекция согласований, подписаний, аннулирований, их запросов и т.д.
+
+    :ResolutionRequestDenials:
+        :doc:`коллекция <Collection>` **объектов** :doc:`ResolutionRequestDenial` - коллекция отказов в запросах согласований, подписаний, аннулирований
+
+
 .. rubric:: Методы
 
 .. tabs::

@@ -55,7 +55,6 @@ DocumentsTask
     .. tab:: Все актуальные
 
         * :meth:`GetDocuments() <DocumentsTask.GetDocuments>`
-
         * :meth:`GetDocumentsAsync() <DocumentsTask.GetDocumentsAsync>`
 
 

@@ -58,6 +58,21 @@ Organization
         Login,                     MyEmployee.SessionInfo.Login,                     :doc:`../History/release_info/5_37_0`,
         Certificate,               MyEmployee.SessionInfo.Certificate,               :doc:`../History/release_info/5_37_0`,
 
+    :Id:
+        **Строка, чтение** - идентификатор ящика организации в Диадоке в форме ``...@diadoc.ru``
+
+    :EncryptedDocumentsAllowed:
+        **Булево, чтение** - для организации включена возможность отправки зашифрованных документов
+
+    :AuthenticateType:
+        **Строка, чтение** - тип авторизации. :doc:`Возможные значения <./Enums/AuthenticationType>`
+
+    :Login:
+        **Строка, чтение** - логин, по которому произошла авторизация
+
+    :Certificate:
+        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+
 
 .. rubric:: Методы
 

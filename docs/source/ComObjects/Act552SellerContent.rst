@@ -78,9 +78,7 @@ Act552SellerContent
     .. tab:: Все актуальные
 
         * :meth:`AddSigner() <Act552SellerContent.AddSigner>`
-
         * :meth:`AddGround() <Act552SellerContent.AddGround>`
-
         * :meth:`AddWork() <Act552SellerContent.AddWork>`
 
 

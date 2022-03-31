@@ -6,6 +6,8 @@ PowerOfAttorneyRegistrationResult
 .. versionadded:: 5.37.0
 
 
+.. rubric:: Свойства
+
 :Status:
     **Строка, чтение** - Статус регистрации
 

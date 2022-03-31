@@ -3,6 +3,7 @@ PersonalCertificate
 
 Свойства сертификата КЭП
 
+
 .. rubric:: Свойства
 
 :Name:
@@ -58,7 +59,7 @@ PersonalCertificate
 :AlgorithmOID:
     **Строка, чтение** - OID алгоритма шифрования открытого ключа сертификата
 
-  .. versionadded:: 5.29.3
+    .. versionadded:: 5.29.3
 
 
 .. rubric:: Методы

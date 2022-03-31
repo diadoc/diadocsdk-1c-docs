@@ -82,6 +82,13 @@ Counteragent
         Id,             Guid,             :doc:`../History/release_info/5_31_0`,
         OrganizationId, OrganizationGuid, :doc:`../History/release_info/5_31_0`,
 
+    :Id:
+        **Строка, чтение** - Идентификатор ящика контрагента в системе Диадокd в формате ``...@diadoc.ru``
+
+    :OrganizationId:
+        **Строка, чтение** - Идентификатор ящика cобственной организации в системе Диадокd в формате ``...@diadoc.ru``
+
+
 .. rubric:: Методы
 
 .. tabs::
@@ -103,9 +110,6 @@ Counteragent
         .. method:: Counteragent.GetStatus()
 
             Возвращает строковое представление текущего статуса отношений с контрагентом. :doc:`Возможные значения <./Enums/CounteragentStatus>`
-
-            .. deprecated:: 5.31.1
-              Используйте свойство **Status**
 
 
 .. method:: Counteragent.AcquireCounteragent([Comment])

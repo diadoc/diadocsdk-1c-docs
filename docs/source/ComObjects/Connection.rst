@@ -20,6 +20,18 @@ Connection
         Certificate,      :doc:`SessionInfo`.Certificate,        :doc:`../History/release_info/5_37_0`,
         Token,            :doc:`SessionInfo`.Token,              :doc:`../History/release_info/5_37_0`,
 
+    :Login:
+        **Строка, чтение** - логин, использованный для авторизации
+
+    :AuthenticateType:
+        **Строка, чтение** - тип авторизации. :doc:`Возможные значения <./Enums/AuthenticationType>`
+
+    :Certificate:
+        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+
+    :Token:
+        **Строка, чтение** - полученный авторизационный токен
+
 
 .. rubric:: Методы
 
@@ -47,20 +59,10 @@ Connection
 
             Возвращает :doc:`объект <CloudSignTask>`, с помощью которого можно подписать документы Контур.Сертификатом
 
-            .. versionadded:: 5.2.0
-
-            .. versionchanged:: 5.33.0
-                Метод удалён
-
 
         .. method:: Connection.GetCloudCertificates()
 
             Возвращает :doc:`коллекцию <Collection>` :doc:`Контур.Сертификатов <CloudCertificateInfo>`, доступных текущему пользователю
-
-            .. versionadded:: 5.2.0
-
-            .. versionchanged:: 5.33.0
-                Метод удалён
 
 
 .. method:: Connection.GetOrganizationList()

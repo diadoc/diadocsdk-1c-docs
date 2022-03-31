@@ -33,22 +33,13 @@ ReplySendTask
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
             :meth:`ValidateContent() <ReplySendTask.ValidateContent>`, , :doc:`../History/release_info/5_18_0`,
-            
-            .. method:: ReplySendTask.ValidateContent()
 
-                Валидирует ответные действия и возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
 
-                .. deprecated:: 5.18.0
-                    Проверку контента рекомендуется проводить самостоятельно
+        .. method:: ReplySendTask.ValidateContent()
 
-                .. versionchanged:: 5.26.0
-                    Возвращаемая коллекция всегда содержит элемент, говорящий, что метод устарел
+            Валидирует ответные действия и возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
 
-                .. versionchanged:: 5.29.0
-                    Коллекция всегда пустая. Валидации не происходит. Метод оставлен для совместимости
-            
-            
-            
+
 .. method:: ReplySendTask.Send()
 
   Применяет ответные действия

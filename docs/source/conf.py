@@ -5,7 +5,6 @@ import sys
 import os
 
 sys.path.append(os.path.abspath('../_extensions'))
-html_static_path = ['../_static']
 extensions = [
     'sphinx_tabs.tabs',
     'custom_newsfeed',

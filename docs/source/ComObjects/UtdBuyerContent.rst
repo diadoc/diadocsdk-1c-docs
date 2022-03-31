@@ -45,6 +45,13 @@ UtdBuyerContent
 
 .. rubric:: Методы
 
+.. tabs::
+
+    .. tab:: Все актуальные
+
+        * :meth:`AddSigner() <UtdBuyerContent.AddSigner>`
+
+
 .. method:: UtdBuyerContent.AddSigner()
 
     Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его

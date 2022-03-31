@@ -20,7 +20,7 @@ ReplySendTask2
 .. tabs::
 
     .. tab:: Все актуальные
-    
+
         * :meth:`Send() <ReplySendTask2.Send>`
         * :meth:`SendAsync() <ReplySendTask2.SendAsync>`
 

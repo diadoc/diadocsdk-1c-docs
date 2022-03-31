@@ -6,6 +6,8 @@ PowerOfAttorneyStatus
 .. versionadded:: 5.37.0
 
 
+.. rubric:: Свойства
+
 :Severity:
     **Строка, чтение** - критичность статуса. :doc:`Возможные значения <./Enums/Severity>`
 

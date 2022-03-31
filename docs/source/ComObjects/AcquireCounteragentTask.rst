@@ -34,7 +34,6 @@ AcquireCounteragentTask
     .. tab:: Все актуальные
 
         * :meth:`Send() <AcquireCounteragentTask.Send>`
-
         * :meth:`SendAsync() <AcquireCounteragentTask.SendAsync>`
 
 

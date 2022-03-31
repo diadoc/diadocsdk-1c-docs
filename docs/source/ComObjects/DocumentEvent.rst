@@ -28,7 +28,6 @@ DocumentEvent
     **Дата и время, чтение** - дата и время события в текущем часовом поясе
 
 
-
 .. rubric:: Методы
 
 .. tabs::
@@ -36,9 +35,7 @@ DocumentEvent
     .. tab:: Все актуальные
 
         * :meth:`GetDocument() <DocumentEvent.GetDocument>`
-
         * :meth:`GetFileContent() <DocumentEvent.GetFileContent>`
-
         * :meth:`GetSignatureContent() <DocumentEvent.GetSignatureContent>`
 
 

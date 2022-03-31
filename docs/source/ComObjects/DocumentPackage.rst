@@ -39,7 +39,7 @@ DocumentPackage
 
         .. csv-table::
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
-            
+
             :meth:`CreateReplySendTask() <DocumentPackage.CreateReplySendTask>`, :meth:`CreateReplySendTask2() <DocumentPackage.CreateReplySendTask2>`, :doc:`../History/release_info/5_27_0`,
 
         .. method:: DocumentPackage.CreateReplySendTask(ReplyType="AcceptDocument")

@@ -18,8 +18,13 @@ XmlAcceptanceCertificate
 :Grounds:
     **Строка, чтение** - основание документа
 
-:Status:
-    **Строка, чтение** - текущий статус документа в Диадоке. :doc:`Возможные значения <./Enums/BilateralStatus>`
 
-    .. deprecated:: 5.34.0
-        Используйте поле **DocflowStatus**
+.. warning:: Поля устарели
+
+    .. csv-table::
+        :header: "Поле", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
+        
+        Status, :doc:`DocumentBase`.DocflowStatus или статусы отдельных сущностей документа, :doc:`../History/release_info/5_34_0`,
+
+    :Status:
+        **Строка, чтение** - текущий статус документа в Диадоке. :doc:`Возможные значения <./Enums/BilateralStatus>`

@@ -103,7 +103,7 @@ Torg12SellerContent
 
         .. method:: Torg12SellerContent.SaveExternalCodes()
 
-            Сохраняет на сервере Диадока список внешних идентификаторов акта выполненных работ
+            Сохраняет на сервере Диадока список внешних идентификаторов накладной
 
 
 .. method:: Torg12SellerContent.AddItem()

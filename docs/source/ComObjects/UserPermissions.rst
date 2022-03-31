@@ -5,6 +5,7 @@ UserPermissions
 
 .. versionadded:: 5.6.0
 
+
 .. rubric:: Свойства
 
 :IsBlocked:
@@ -34,7 +35,7 @@ UserPermissions
 :CanDeleteRestoreDocuments:
     **Булево, чтение** - пользователь может удалять и восстанавливать документы в ящике организации
 
-    .. versionadded:: 5.31.1
+    .. versionadded:: :doc:`../History/release_info/5_31_1`
 
 :DocumentsAccessLevel:
     **Строка, чтение** - уровень доступа к документам. :doc:`Возможные значения <./Enums/DocumentsAccessLevel>`

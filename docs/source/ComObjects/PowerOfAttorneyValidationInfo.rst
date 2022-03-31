@@ -6,6 +6,8 @@ PowerOfAttorneyValidationInfo
 .. versionadded:: 5.37.0
 
 
+.. rubric:: Свойства
+
 :Status:
     **Строка, чтение** - статус МЧД
 

@@ -8,27 +8,27 @@ DiadocAPI
 .. rubric:: Свойства
 
 :ApiClientId:
-  **Строка, чтение/запись** - ключ разработчика
+    **Строка, чтение/запись** - ключ разработчика
 
 :ServerUrl:
-  **Строка, чтение/запись** - URL сервера Диадок
+    **Строка, чтение/запись** - URL сервера Диадок
 
 :ProxyMode:
-  **Строка, чтение/запись** - режим использования прокси-сервера. :doc:`Возможные значения <./Enums/ProxyMode>`
+    **Строка, чтение/запись** - режим использования прокси-сервера. :doc:`Возможные значения <./Enums/ProxyMode>`
 
 :ProxySettings:
-  :doc:`ProxySettings` **, чтение** - настройки прокси-сервера
+    :doc:`ProxySettings` **, чтение** - настройки прокси-сервера
 
 :AutoLogonPolicy:
-  **Строка, чтение/запись** - настройка `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_ .
-  :doc:`Возможные значения <./Enums/AutoLogonPolicy>`
+    **Строка, чтение/запись** - настройка `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_ .
+    :doc:`Возможные значения <./Enums/AutoLogonPolicy>`
 
-  .. versionadded:: 5.32.0
+    .. versionadded:: 5.32.0
 
 :VerifySslCertificate:
-  **Булево, чтение/запись** - флага проверки SSL сертиифкатов при выполнении запросов
+    **Булево, чтение/запись** - флага проверки SSL сертиифкатов при выполнении запросов
 
-  .. versionadded:: 5.32.0
+    .. versionadded:: 5.32.0
 
 
 .. rubric:: Методы
