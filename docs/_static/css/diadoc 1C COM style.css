@@ -1,0 +1,62 @@
+@import 'theme.css';
+
+
+/* Ширина центрального окна */
+.wy-nav-content {
+   max-width: 80%;
+}
+
+
+/* ссылки на объекты документации (роль :doc:) */
+span.doc {
+    font-weight: bold;
+}
+
+
+/* директива .. rubric:: */
+.rst-content p.rubric {
+    font-size: 120%;
+    color: #2980B9;
+    border-top: solid 3px #6ab0de;
+    background-color: #e7f2fa;
+    margin-bottom: 5px;
+}
+
+
+/* список свойств объекта */
+
+.rst-content dl{
+    font-size: 90%;
+}
+
+.rst-content dl p, .rst-content dl table{
+    font-size: inherit;
+    margin: 0;
+    padding: 2px 0 5px 24px;
+}
+
+.rst-content dl dd{
+    margin: 0;
+    padding: 0;
+}
+
+.rst-content dl dt{
+    margin: 0;
+    padding: 5px 0 0 0;
+}
+
+.rst-content dl dt.field-odd, .rst-content dl dd.field-odd {
+    background: #edf0f2;
+}
+
+
+/* Сигнатура метода */
+
+html.writer-html4 .rst-content dl:not(.docutils)>dt:first-child, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt:first-child {
+    background: transparent;
+    font-size: normal;
+    border-top: 0;
+    text-decoration: underline;
+    padding: 0;
+    margin-bottom: 0;
+}

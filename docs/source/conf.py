@@ -1,10 +1,13 @@
 # -*- coding: utf-8 -*-
 
 
-import sys
-import os
+from sys import path as PATH_variable
+from os import path
 
-sys.path.append(os.path.abspath('../_extensions'))
+html_static_path = ['../_static']
+html_style = 'css/diadoc 1C COM style.css'
+
+PATH_variable.append(path.abspath('../_extensions'))
 extensions = [
     'sphinx_tabs.tabs',
     'custom_newsfeed',

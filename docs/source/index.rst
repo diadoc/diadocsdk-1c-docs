@@ -23,10 +23,9 @@
 
 .. toctree::
    :name: main
-   :maxdepth: 1
    :caption: Оглавление
 
-   Примеры использования <HowTo/HowTo>
-   История изменений <History/History>
-   Ссылки для скачивания <Downloads>
-   Объекты компоненты <ComObjects/_list>
+   HowTo/HowTo
+   History/History
+   Downloads
+   ComObjects/_alphabetic_list
