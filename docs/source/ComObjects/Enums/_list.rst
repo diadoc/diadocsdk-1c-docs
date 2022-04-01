@@ -4,53 +4,53 @@
     :hidden:
     :name: Enums
 
-    AuthenticationType <AuthenticationType>
-    AutoLogonPolicy <AutoLogonPolicy>
-    BilateralStatus <BilateralStatus>
-    CertificateOwnerType <CertificateOwnerType>
-    CommentType <CommentType>
-    CounteragentStatus <CounteragentStatus>
-    Docflow <Docflow>
-    DocflowSide <DocflowSide>
-    DocumentDirection <DocumentDirection>
-    DocumentsAccessLevel <DocumentsAccessLevel>
-    DocumentTitleType <DocumentTitleType>
-    DocumentToSend <DocumentToSend>
-    EventType <EventType>
-    ExternalStatusType <ExternalStatusType>
-    FormalizedDocumentTypeToSend <FormalizedDocumentTypeToSend>
-    GetCounteragentsByStatus_param <GetCounteragentsByStatus_param>
-    InvoiceStatus <InvoiceStatus>
-    IssuerType <IssuerType>
-    ItemMark <ItemMark>
-    LockMode <LockMode>
-    MetadataSource <MetadataSource>
-    NonfomalizedDocumentStatus <NonfomalizedDocumentStatus>
-    NonformalizedContentType <NonformalizedContentType>
-    OperationType <OperationType>
-    OrganizationFeatures <OrganizationFeatures>
-    OrganizationType <OrganizationType>
-    PowerOfAttorneyAffiliation <PowerOfAttorneyAffiliation>
-    ProxyMode <ProxyMode>
-    ProxySignatureStatus <ProxySignatureStatus>
-    ReceiptStatus <ReceiptStatus>
-    RecipientResponseStatus <RecipientResponseStatus>
-    ReplyType <ReplyType>
-    ResolutionAction <ResolutionAction>
-    ResolutionRequestTaskType <ResolutionRequestTaskType>
-    ResolutionRequestType <ResolutionRequestType>
-    ResolutionStatus <ResolutionStatus>
-    ResolutionType <ResolutionType>
-    RevocationStatus <RevocationStatus>
-    RoamingNotificationStatus <RoamingNotificationStatus>
-    SenderSignatureStatus <SenderSignatureStatus>
-    Severity <Severity>
-    SignatureType <SignatureType>
-    SignerPowers <SignerPowers>
-    SignerStatus <SignerStatus>
-    SignerType <SignerType>
-    TaxRate <TaxRate>
-    TemplateRefusalType <TemplateRefusalType>
-    UnilateralStatus <UnilateralStatus>
-    UTDStatus <UTDStatus>
-    ValueType <ValueType>
+    AuthenticationType
+    AutoLogonPolicy
+    BilateralStatus
+    CertificateOwnerType
+    CommentType
+    CounteragentStatus
+    Docflow
+    DocflowSide
+    DocumentDirection
+    DocumentsAccessLevel
+    DocumentTitleType
+    DocumentToSend
+    EventType
+    ExternalStatusType
+    FormalizedDocumentTypeToSend
+    GetCounteragentsByStatus_param
+    InvoiceStatus
+    IssuerType
+    ItemMark
+    LockMode
+    MetadataSource
+    NonfomalizedDocumentStatus
+    NonformalizedContentType
+    OperationType
+    OrganizationFeatures
+    OrganizationType
+    PowerOfAttorneyAffiliation
+    ProxyMode
+    ProxySignatureStatus
+    ReceiptStatus
+    RecipientResponseStatus
+    ReplyType
+    ResolutionAction
+    ResolutionRequestTaskType
+    ResolutionRequestType
+    ResolutionStatus
+    ResolutionType
+    RevocationStatus
+    RoamingNotificationStatus
+    SenderSignatureStatus
+    Severity
+    SignatureType
+    SignerPowers
+    SignerStatus
+    SignerType
+    TaxRate
+    TemplateRefusalType
+    UnilateralStatus
+    UTDStatus
+    ValueType
