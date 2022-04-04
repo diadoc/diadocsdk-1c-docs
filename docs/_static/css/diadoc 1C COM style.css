@@ -57,12 +57,13 @@ span.doc {
 
 html.writer-html4 .rst-content dl:not(.docutils)>dt,
 html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt {
-    background: transparent;
+    background: #f3f5f7;
     font-size: medium;
     text-decoration: underline;
     margin: 0;
     border: 0;
     padding: 0;
+    width: 100%;
 }
 
 /* описание параметров метода */
@@ -75,10 +76,14 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 .rst-content .field-list.simple dl dd {
     line-height: normal;
+    margin-left:0;
+}
+
+.rst-content dl.com-object.method dd{
+    margin-left: 0;
 }
 
 .rst-content dl.com-object.method dd>p {
-    margin: 0;
     padding: 5px 0 0 5px;
     font-size: inherit;
 }
@@ -89,6 +94,7 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content .admonition.warning:not(admonition-title):not(wy-table-responsive)>p{
     font-size: medium;
     font-weight: bold;
+    
 }
 
 /* список полей в warning'ах */
