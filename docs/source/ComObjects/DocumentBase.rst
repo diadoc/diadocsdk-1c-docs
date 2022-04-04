@@ -489,7 +489,7 @@ DocumentBase
     Сохраняет титул получателя документа в указанный файл. Если файла не существует, то он будет создан, иначе перезаписан. Если титул отсутсвует, то ничего не произойдёт
 
 
-.. method:: DocumentBase.SaveAllContent(DirectoryPath, WithProtocol=false)
+.. method:: DocumentBase.SaveAllContent(DirectoryPath, WithProtocol=False)
 
     :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
     :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
@@ -497,7 +497,7 @@ DocumentBase
     Сохраняет все файлы, относящиеся к документу (в т.ч. электронные подписи), в указанную директорию
 
 
-.. method:: DocumentBase.SaveAllContentAsync(DirectoryPath, WithProtocol=false)
+.. method:: DocumentBase.SaveAllContentAsync(DirectoryPath, WithProtocol=False)
 
     :DirectoryPath: ``Строка`` Путь до директории, в которой будут сохранены файлы
     :WithProtocol:  ``Булево`` Признак необходимости сохранения протокола передачи документа
