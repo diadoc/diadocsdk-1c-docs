@@ -47,8 +47,8 @@ span.doc {
     padding: 5px 0 0 0;
 }
 
-.rst-content .field-list:not(.simple) dt.field-even,
-.rst-content .field-list:not(.simple) dd.field-even {
+.rst-content .field-list dt.field-even,
+.rst-content .field-list dd.field-even {
     background: #f3f5f7;
 }
 
