@@ -102,3 +102,10 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content .warning dl dd.field-odd {
     background: #f5e5c5;
 }
+
+
+/* Шапка таблиц */
+
+.rst-content thead {
+    border: groove;
+}
