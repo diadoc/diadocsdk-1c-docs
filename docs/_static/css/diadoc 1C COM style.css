@@ -62,6 +62,12 @@ html.writer-html4 .rst-content dl:not(.docutils)>dt:first-child, html.writer-htm
     margin-bottom: 0;
 }
 
+/* Первый текст в варнинге (.. warning:: Этот текст) */
+
+.rst-content .admonition.warning:not(admonition-title):not(wy-table-responsive)>p{
+    font-size: medium;
+    font-weight: bold;
+}
 
 /* список полей в warning'ах */
 
