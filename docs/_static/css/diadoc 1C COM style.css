@@ -3,7 +3,7 @@
 
 /* Ширина центрального окна */
 .wy-nav-content {
-   max-width: 100%;
+   max-width: 80%;
 }
 
 
@@ -53,6 +53,37 @@ span.doc {
 }
 
 
+/* Сигнатура метода */
+
+html.writer-html4 .rst-content dl:not(.docutils)>dt,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt {
+    background: transparent;
+    font-size: medium;
+    text-decoration: underline;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+/* описание параметров метода */
+
+.rst-content .com-object.method .field-list.simple {
+    margin: 0;
+    padding-left:24px;
+    background-color: #f3f5f7;
+}
+
+.rst-content .field-list.simple dl dd {
+    line-height: normal;
+}
+
+.rst-content dl.com-object.method dd>p {
+    margin: 0;
+    padding: 5px 0 0 5px;
+    font-size: inherit;
+}
+
+
 /* Первый текст в варнинге (.. warning:: Этот текст) */
 
 .rst-content .admonition.warning:not(admonition-title):not(wy-table-responsive)>p{
@@ -70,17 +101,4 @@ span.doc {
 .rst-content .warning dl dt.field-odd,
 .rst-content .warning dl dd.field-odd {
     background: #f5e5c5;
-}
-
-
-/* Сигнатура метода */
-
-html.writer-html4 .rst-content dl:not(.docutils)>dt,
-html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt {
-    background: transparent;
-    font-size: medium;
-    text-decoration: underline;
-    margin: 0;
-    border: 0;
-    padding: 0;
 }
