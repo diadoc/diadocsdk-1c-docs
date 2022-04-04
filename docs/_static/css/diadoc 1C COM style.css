@@ -30,37 +30,28 @@ span.doc {
     font-size: 90%; /* small - слишком мелко, medium/normal - слишком крупно */
 }
 
-.rst-content dl p, .rst-content dl table{
+.rst-content .field-list p,
+.rst-content .field-list table{
     font-size: inherit;
     margin: 0;
     padding: 2px 0 5px 24px;
 }
 
-.rst-content dl dd{
+.rst-content .field-list dd{
     margin: 0;
     padding: 0;
 }
 
-.rst-content dl dt{
+.rst-content .field-list dt{
     margin: 0;
     padding: 5px 0 0 0;
 }
 
-.rst-content dl dt.field-even, .rst-content dl dd.field-even {
+.rst-content .field-list:not(.simple) dt.field-even,
+.rst-content .field-list:not(.simple) dd.field-even {
     background: #f3f5f7;
 }
 
-
-/* Сигнатура метода */
-
-html.writer-html4 .rst-content dl:not(.docutils)>dt:first-child, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt:first-child {
-    background: transparent;
-    font-size: medium;
-    border-top: 0;
-    text-decoration: underline;
-    padding: 0;
-    margin-bottom: 0;
-}
 
 /* Первый текст в варнинге (.. warning:: Этот текст) */
 
@@ -71,10 +62,25 @@ html.writer-html4 .rst-content dl:not(.docutils)>dt:first-child, html.writer-htm
 
 /* список полей в warning'ах */
 
-.rst-content .warning dl dt.field-even, .rst-content .warning dl dd.field-even {
+.rst-content .warning dl dt.field-even,
+.rst-content .warning dl dd.field-even {
     background: transparent;
 }
 
-.rst-content .warning dl dt.field-odd, .rst-content .warning dl dd.field-odd {
+.rst-content .warning dl dt.field-odd,
+.rst-content .warning dl dd.field-odd {
     background: #f5e5c5;
+}
+
+
+/* Сигнатура метода */
+
+html.writer-html4 .rst-content dl:not(.docutils)>dt,
+html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt {
+    background: transparent;
+    font-size: medium;
+    text-decoration: underline;
+    margin: 0;
+    border: 0;
+    padding: 0;
 }
