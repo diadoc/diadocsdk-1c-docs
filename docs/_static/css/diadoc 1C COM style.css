@@ -3,7 +3,7 @@
 
 /* Ширина центрального окна */
 .wy-nav-content {
-   max-width: 80%;
+   max-width: 100%;
 }
 
 
@@ -15,18 +15,19 @@ span.doc {
 
 /* директива .. rubric:: */
 .rst-content p.rubric {
-    font-size: 120%;
+    font-size: x-large;
     color: #2980B9;
     border-top: solid 3px #6ab0de;
     background-color: #e7f2fa;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 5px 0 5px 12px;
 }
 
 
 /* список свойств объекта */
 
 .rst-content dl{
-    font-size: 90%;
+    font-size: 90%; /* small - слишком мелко, medium/normal - слишком крупно */
 }
 
 .rst-content dl p, .rst-content dl table{
@@ -45,8 +46,8 @@ span.doc {
     padding: 5px 0 0 0;
 }
 
-.rst-content dl dt.field-odd, .rst-content dl dd.field-odd {
-    background: #edf0f2;
+.rst-content dl dt.field-even, .rst-content dl dd.field-even {
+    background: #f3f5f7;
 }
 
 
@@ -54,9 +55,20 @@ span.doc {
 
 html.writer-html4 .rst-content dl:not(.docutils)>dt:first-child, html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(.footnote):not(.glossary):not(.simple)>dt:first-child {
     background: transparent;
-    font-size: normal;
+    font-size: medium;
     border-top: 0;
     text-decoration: underline;
     padding: 0;
     margin-bottom: 0;
+}
+
+
+/* список полей в warning'ах */
+
+.rst-content .warning dl dt.field-even, .rst-content .warning dl dd.field-even {
+    background: transparent;
+}
+
+.rst-content .warning dl dt.field-odd, .rst-content .warning dl dd.field-odd {
+    background: #f5e5c5;
 }
