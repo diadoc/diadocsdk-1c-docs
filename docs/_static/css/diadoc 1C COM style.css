@@ -53,6 +53,13 @@ span.doc {
 }
 
 
+/* таблица со списком методов должна занимать всю доступную ширину */
+.rst-content table.docutils,
+.wy-table-bordered-all {
+    width: 100%;
+}
+
+
 /* Сигнатура метода */
 
 html.writer-html4 .rst-content dl:not(.docutils)>dt,
