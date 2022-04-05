@@ -1,5 +1,4 @@
 @import 'theme.css';
-/*
 
 /* Ширина центрального окна */
 .wy-nav-content {
@@ -98,8 +97,8 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 /* Первый текст в варнинге (.. warning:: Этот текст) */
 
-.rst-content .admonition.warning:not(admonition-title):not(wy-table-responsive)>p{
-    font-size: medium;
+.rst-content .admonition.warning:not(admonition-title)>p:nth-child(2){
+    font-size: normal;
     font-weight: bold;
     
 }
@@ -126,5 +125,3 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content thead {
     border: groove;
 }
-
-*/
