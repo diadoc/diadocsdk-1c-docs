@@ -97,10 +97,14 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 /* Первый текст в варнинге (.. warning:: Этот текст) */
 
-.rst-content .admonition.warning:not(admonition-title)>p:nth-child(2){
-    font-size: normal;
+.rst-content .admonition.warning p{
+    font-size: 90%
+}
+
+.rst-content .admonition.warning>p:nth-child(1), /* Первый потомок - надпись "Предупреждение" */
+.rst-content .admonition.warning>p:nth-child(2){ /* второй потомок - основная мысль варнинга */
+    font-size: medium;
     font-weight: bold;
-    
 }
 
 /* список полей в warning'ах */
