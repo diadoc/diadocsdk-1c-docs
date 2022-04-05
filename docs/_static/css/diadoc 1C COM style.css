@@ -1,5 +1,5 @@
 @import 'theme.css';
-
+/*
 
 /* Ширина центрального окна */
 .wy-nav-content {
@@ -99,6 +99,10 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 /* список полей в warning'ах */
 
+.rst-content dl.field-list {
+    overflow: auto;
+}
+
 .rst-content .warning dl dt.field-even,
 .rst-content .warning dl dd.field-even {
     background: transparent;
@@ -115,3 +119,5 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content thead {
     border: groove;
 }
+
+*/
