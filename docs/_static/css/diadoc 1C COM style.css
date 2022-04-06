@@ -33,7 +33,7 @@ span.doc {
 .rst-content .field-list table{
     font-size: inherit;
     margin: 0;
-    padding: 2px 0 5px 24px;
+    padding: 2px 0 5px 12px;
 }
 
 .rst-content .field-list dd{
@@ -111,6 +111,11 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 
 .rst-content dl.field-list {
     overflow: auto;
+}
+
+.rst-content .warning dl dt,
+.rst-content .warning dl dd {
+    padding: inherit;
 }
 
 .rst-content .warning dl dt.field-even,
