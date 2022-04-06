@@ -39,4 +39,4 @@ Act552WorkDescription
 
 .. method:: Act552WorkDescription.AddItem()
 
-    Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <Act552WorkItem>` в коллекцию **Items** и возвращает его

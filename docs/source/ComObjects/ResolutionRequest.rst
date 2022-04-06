@@ -42,7 +42,7 @@ ResolutionRequest
 
 .. method:: ResolutionRequest.Deny([Comment])
 
-    :Comment: ``строка`` комментарий к отказу в резолюции
+    :Comment: **Строка** - комментарий к отказу в резолюции
 
     Выполняет отказ в запрошенной резолюции
 

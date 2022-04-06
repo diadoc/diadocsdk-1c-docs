@@ -31,13 +31,13 @@ PackageContentItem
 
 .. method:: PackageContentItem.LoadContentFromFile(FilePath)
 
-    :FilePath: ``строка`` путь до файла контента
+    :FilePath: **Строка** - путь до файла контента
 
     Загружает контент ответа из файла. Этот контент будет подписан
 
 
 .. method:: PackageContentItem.LoadContentFromBase64(Base64)
 
-    :Base64: ``строка`` base64 представление контента
+    :Base64: **Строка** - Base64 представление контента
 
     Загружает контент ответа из Base64 строки. Этот контент будет подписан

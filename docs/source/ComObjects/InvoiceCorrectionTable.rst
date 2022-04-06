@@ -30,4 +30,4 @@ InvoiceCorrectionTable
 
 .. method:: InvoiceCorrectionTable.AddItem()
 
-    Добавляет :doc:`новый элементе <ExtendedInvoiceCorrectionItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элементе <ExtendedInvoiceCorrectionItem>` в коллекцию **Items** и возвращает его

@@ -88,9 +88,9 @@ UcdSellerContent
 
 .. method:: UcdSellerContent.AddSigner()
 
-    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию **Signers** и возвращает его
 
 
 .. method:: UcdSellerContent.AddInvoice()
 
-    Добавляет :doc:`новый элемент <InvoiceForCorrectionInfo>` в коллекцию *Invoices* и возвращает его
+    Добавляет :doc:`новый элемент <InvoiceForCorrectionInfo>` в коллекцию **Invoices** и возвращает его

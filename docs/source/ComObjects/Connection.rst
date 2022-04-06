@@ -27,7 +27,7 @@ Connection
         **Строка, чтение** - тип авторизации. :doc:`Возможные значения <./Enums/AuthenticationType>`
 
     :Certificate:
-        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Если авторизация произошла не по сертификату, то содержит :doc:`./Descriptions/EmptyVariant`
 
     :Token:
         **Строка, чтение** - полученный авторизационный токен
@@ -55,7 +55,7 @@ Connection
 
         .. method:: Connection.CreateCloudSignTask(Thumbprint)
 
-            :Thumbprint: ``Строка`` отпечаток Контур.Сертификата
+            :Thumbprint: **Строка** - отпечаток Контур.Сертификата
 
             Возвращает :doc:`объект <CloudSignTask>`, с помощью которого можно подписать документы Контур.Сертификатом
 
@@ -72,7 +72,7 @@ Connection
 
 .. method:: Connection.GetOrganizationById(BoxID)
 
-    :BoxID: ``строка`` идентификатор ящика организации
+    :BoxID: **Строка** - идентификатор ящика организации
 
     Возвращает :doc:`организацию <Organization>`, к которой текущий пользователь имеет доступ
 

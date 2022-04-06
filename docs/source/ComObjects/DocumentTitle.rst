@@ -29,8 +29,11 @@ DocumentTitle
 
 .. rubric:: Дополнительная информация
 
-* Только для титулов с *HaveUserDataXSD* == ``TRUE``, доступен метод :meth:`PackageSendTask2.AddDocument`.
-    В противном случае, для добавления :doc:`документа на отправку <CustomDocumentToSend>` необходимо воспользоваться методом :meth:`PackageSendTask2.AddDocumentFromFile` или :meth:`PackageSendTask2.AddDocumentFromBase64`
+Только для титулов с ``HaveUserDataXSD == True``:
+    * доступен метод :meth:`PackageSendTask2.AddDocument`.
+      В противном случае, для добавления :doc:`документа на отправку <CustomDocumentToSend>` необходимо воспользоваться методом :meth:`PackageSendTask2.AddDocumentFromFile` или :meth:`PackageSendTask2.AddDocumentFromBase64`
+
+    * доступно получение контента методом :meth:`DocumentBase.GetDynamicContent`
 
 
 .. seealso:: :doc:`../HowTo/HowTo_post_document`

@@ -23,7 +23,7 @@ AdminTools
             :meth:`AddPowerOfAttorneyToEmployee() <AdminTools.AddPowerOfAttorneyToEmployee>`, :meth:`CreateSetExtendedSignerDetailsTask() <AdminTools.CreateSetExtendedSignerDetailsTask>`
             :meth:`RemovePowerOfAttorney() <AdminTools.RemovePowerOfAttorney>`, :meth:`RegisterCertificateInFNS() <AdminTools.RegisterCertificateInFNS>`
 
-    .. tab:: Управление Машиночитаемыми довереностями
+    .. tab:: Управление машиночитаемыми довереностями
 
         * :meth:`GetEmployeePowersOfAttorney() <AdminTools.GetEmployeePowersOfAttorney>`
 
@@ -45,19 +45,19 @@ AdminTools
 
 
 
-.. method:: AdminTools.GetPowersOfAttorney(Employee, OnlyActual=``True``)
+.. method:: AdminTools.GetPowersOfAttorney(Employee, OnlyActual=True)
 
-    :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция
-    :OnlyActual: ``булево`` признак того, что нужно возвращать только действующие доверенности
+    :Employee: :doc:`EmployeeInfo` - сотрудник, для которого выполняется операция
+    :OnlyActual: **Булево** - признак того, что нужно возвращать только действующие доверенности
 
     Возвращает :doc:`коллекцию <Collection>` :doc:`доверенностей текущего сотрудника <EmployeePowerOfAttorney>`.
-    Если флаг ``OnlyActual`` истинен, то вернутся только действующие доверенности
+    Если ``OnlyActual == True``, то вернутся только действующие доверенности
 
 
 .. method:: AdminTools.SetDefaultPowerOfAttorney(Employee, PowerOfAttorney)
 
-    :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция
-    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :Employee: :doc:`EmployeeInfo` - сотрудник, для которого выполняется операция
+    :PowerOfAttorney: :doc:`PowerOfAttorney` - доверенность
 
     Устанавливает переданную доверенность как доверенность по умолчанию для указанного сотрудника.
     Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
@@ -65,8 +65,8 @@ AdminTools
 
 .. method:: AdminTools.AddPowerOfAttorney(Employee, PowerOfAttorney)
 
-    :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция
-    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :Employee: :doc:`EmployeeInfo` - сотрудник, для которого выполняется операция
+    :PowerOfAttorney: :doc:`PowerOfAttorney` - доверенность
 
     Привязывает доверенность к указанному сотруднику.
     Возвращает :doc:`доверенность сотрудника <EmployeePowerOfAttorney>`
@@ -74,38 +74,38 @@ AdminTools
 
 .. method:: AdminTools.RemovePowerOfAttorney(Employee, PowerOfAttorney)
 
-    :Employee: :doc:`EmployeeInfo` сотрудник, для которого выполняется операция
-    :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
+    :Employee: :doc:`EmployeeInfo` - сотрудник, для которого выполняется операция
+    :PowerOfAttorney: :doc:`PowerOfAttorney` - доверенность
 
     Отвязывает довереность от указанного сотрудника
 
 
 .. method:: AdminTools.CanSendInvoice(Certificate)
 
-    :Certificate: :doc:`PersonalCertificate` объект сертификата
+    :Certificate: :doc:`PersonalCertificate` - объект сертификата
 
-    Проверяет можно ли подписывать счета-фактуры, используя указанный сертфикат. Если невозможно, то вернёт текст с причиной, иначе - пустую строку.
+    Проверяет можно ли подписывать счета-фактуры, используя указанный сертфикат. Если невозможно, то вернёт текст с причиной, иначе - пустую строку
 
 
-.. method:: AdminTools.GetExtendedSignerDetails(Certificate, DocumentTitleName=``UNKNOWN``)
+.. method:: AdminTools.GetExtendedSignerDetails(Certificate, DocumentTitleName="UNKNOWN")
 
-    :Certificate: :doc:`PersonalCertificate` объект сертификата
-    :DocumentTitleName: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
+    :Certificate: :doc:`PersonalCertificate` - сертификат
+    :DocumentTitleName: **Строка** - тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
 
     Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата.
-    Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
-    Для *DocumentTitleName* == ``Absent`` и *DocumentTitleName* == ``UNKNOWN`` вызов невозможен.
+    Получить значение для **DocumentTitleName** можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
+    Для ``DocumentTitleName == "Absent"`` или ``DocumentTitleName == "UNKNOWN"`` вызов невозможен
 
 
 .. method:: AdminTools.CreateSetExtendedSignerDetailsTask(Certificate)
 
-    :Certificate: :doc:`PersonalCertificate` объект сертификата
+    :Certificate: :doc:`PersonalCertificate` - объект сертификата
 
-    Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для указанного сертификата.
+    Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта для указанного сертификата
 
 
 .. method:: AdminTools.RegisterCertificateInFNS(Certificate)
 
-    :Certificate: :doc:`PersonalCertificate` объект сертификата
+    :Certificate: :doc:`PersonalCertificate` - объект сертификата
 
-    Добавляет в сообщение для ФНС указанный сертификат.
+    Добавляет в сообщение для ФНС указанный сертификат

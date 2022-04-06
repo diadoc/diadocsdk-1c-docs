@@ -42,6 +42,6 @@ Entity
     :doc:`Коллекция <Collection>` **строк, чтение** - коллекция идентификаторов документов, созданных из сущности
 
 :TemplateRefusalInfo:
-    :doc:`TemplateRefusal` **, чтение** - для сущности с **AttachmentType** == ``TemplateRefusal`` содержит информацию об отклонении шаблона
+    :doc:`TemplateRefusal` **, чтение** - для сущности с ``AttachmentType == TemplateRefusal`` содержит информацию об отклонении шаблона
 
     .. versionadded:: 5.29.9

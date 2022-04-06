@@ -15,7 +15,7 @@ PowerOfAttorney
     :doc:`PowerOfAttorneyIssuerBase` **, чтение** - информация о доверителе
 
 :Confidant:
-    :doc:`PowerOfAttorneyConfidant` **, чтение** - информация о доверенном лице. Поле может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+    :doc:`PowerOfAttorneyConfidant` **, чтение** - информация о доверенном лице. Поле может быть :doc:`пустым <./Descriptions/EmptyVariant>`
 
 :BeginDate:
     **Дата, чтение** - дата и время начала действия доверенности

@@ -88,8 +88,8 @@ DiadocAPI
 
         .. method:: DiadocAPI.CreateConnectionByCertificate(Thumbprint[, Pin])
 
-            :Thumbprint: ``Строка`` Отпечаток сертификата
-            :Pin:        ``Строка`` Пин-код или пароль от контейнера сертификата
+            :Thumbprint: **Строка** - отпечаток сертификата
+            :Pin:        **Строка** - пин-код или пароль от контейнера сертификата
 
             Возвращает :doc:`объект логического соединения <Connection>`, созданного по сертификату с указанным отпечатком.
             Поиск сертификата происходит в хранилище `Личное` пользователя и, если там сертиифкат не найден - в хранилище `Личное` машины.
@@ -98,15 +98,15 @@ DiadocAPI
 
 .. method:: DiadocAPI.CreateConnectionByLogin(Login, Password)
 
-    :Login:    ``Строка`` Логин пользователя
-    :Password: ``Строка`` Пароль пользователя
+    :Login:    **Строка** - логин пользователя
+    :Password: **Строка** - пароль пользователя
 
     Возвращает :doc:`объект логического соединения <Connection>`, созданного по логину и паролю
 
 
 .. method:: DiadocAPI.CreateConnectionByCertificate2(Certificate)
 
-    :Certificate: :doc:`PersonalCertificate` объект сертификата
+    :Certificate: :doc:`PersonalCertificate` - сертификат
 
     Возвращает :doc:`объект логического соединения <Connection>`, созданного при помощи указанного сертификата
 
@@ -115,14 +115,14 @@ DiadocAPI
 
 .. method:: DiadocAPI.VerifyThatUserHasAccessToAnyBox(Thumbprint)
 
-    :Thumbprint: ``Строка`` Отпечаток сертификата
+    :Thumbprint: **Строка** - отпечаток сертификата
 
     Возвращает булевый признак, означающий есть ли у пользователя с указанным сертификатом доступ к какой-либо организации в Диадок
 
 
-.. method:: DiadocAPI.GetPersonalCertificates(UserStore=``True``)
+.. method:: DiadocAPI.GetPersonalCertificates(UserStore=True)
 
-    :UserStore: ``Булево`` Флаг определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск
+    :UserStore: **Булево** - флаг, определяющий `хранилище сертификатов <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_, где будет осуществлен поиск
 
     Возвращает :doc:`коллекцию <Collection>` :doc:`сертификатов <PersonalCertificate>`, установленных в подхранилище "Личное", хранилища определяемого флагом *UserStore*.
     Если флаг ``True`` - хранилище пользователя(по-умолчанию), ``False`` - хранилище компьютера.
@@ -130,7 +130,7 @@ DiadocAPI
 
 .. method:: DiadocAPI.GetPersonalCertificate(Thumbprint)
 
-    :Thumbprint: ``Строка`` Отпечаток сертификата
+    :Thumbprint: **Строка** - oтпечаток сертификата
 
     Возвращает :doc:`сертификат <PersonalCertificate>` с указанным отпечатком.
     Поиск происходит сначала в `хранилище <https://docs.microsoft.com/en-us/windows-hardware/drivers/install/local-machine-and-current-user-certificate-stores>`_ "Личные" пользователя, затем - машины
@@ -152,7 +152,7 @@ DiadocAPI
 
 .. method:: DiadocAPI.UpdateProxySettings(Connection)
 
-        :Connection: :doc:`Connection` обновляемое подключение
+        :Connection: :doc:`Connection` - объект созданного подключения
 
         Метод обновляет настройки прокси у переданного объекта подключения и у всех объектов, полученных с помощью него
 

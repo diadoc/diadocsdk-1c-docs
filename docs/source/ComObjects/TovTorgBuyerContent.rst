@@ -52,4 +52,4 @@ TovTorgBuyerContent
 
 .. method:: TovTorgBuyerContent.AddSigner()
 
-    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию **Signers** и возвращает его

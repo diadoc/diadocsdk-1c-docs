@@ -84,14 +84,14 @@ Act552SellerContent
 
 .. method:: Act552SellerContent.AddSigner()
 
-    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию **Signers** и возвращает его
 
 
 .. method:: Act552SellerContent.AddGround()
 
-    Добавляет :doc:`новый элемент <GroundInfo>` в коллекцию *Grounds* и возвращает его
+    Добавляет :doc:`новый элемент <GroundInfo>` в коллекцию **Grounds** и возвращает его
 
 
 .. method:: Act552SellerContent.AddWork()
 
-    Добавляет :doc:`новый элемент <Act552WorkDescription>` в коллекцию *Works* и возвращает его
+    Добавляет :doc:`новый элемент <Act552WorkDescription>` в коллекцию **Works** и возвращает его

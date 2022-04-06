@@ -108,4 +108,4 @@ Torg12SellerContent
 
 .. method:: Torg12SellerContent.AddItem()
 
-    Добавляет :doc:`новый элемент <Torg12Item>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <Torg12Item>` в коллекцию **Items** и возвращает его

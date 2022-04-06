@@ -12,7 +12,7 @@ SetExtendedSignerDetailsTask
 :DocumentTitleType:
     **Строка, чтение/запись** - тип титула документа. :doc:`Возможные значения <./Enums/DocumentTitleType>`.
     Получить значение для *DocumentTitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
-    Для типов титула ``Absent`` и ``UNKNOWN`` вызов невозможен
+    Для типов титула ``"Absent"`` и ``"UNKNOWN"`` вызов невозможен
 
 
 .. rubric:: Методы

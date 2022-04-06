@@ -43,9 +43,10 @@ TemplateSendTask
 
 .. method:: TemplateSendTask.AddTemplate(DocumentType)
 
-    :DocumentType: ``строка`` идентификатор типа документа
+    :DocumentType: **Строка** - идентификатор типа документа
 
-    Добавляет новый элемент в коллекцию и возвращает его. Параметр *DocumentType* - значение *DocumentTypeDescription.Name*, полученное методом :meth:`Organization.GetDocumentTypes`
+    Добавляет :doc:`новый элемент <TemplateToSend>` в коллекцию **Templates** и возвращает его.
+    В качестве значения параметра **DocumentType** можно использовать значения из :doc:`DocumentTypeDescription`.Name, полученных методом :meth:`Organization.GetDocumentTypes`
 
 
 .. method:: TemplateSendTask.Send()

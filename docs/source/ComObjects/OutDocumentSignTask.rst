@@ -11,7 +11,7 @@ OutDocumentSignTask
     :doc:`Signer` **, чтение/запись** - данные подписанта документа
 
 :Content:
-    :doc:`Descriptions/Empty_Com_Object` **, чтение** - содержимое запроса
+    :doc:`Descriptions/EmptyVariant` **, чтение** - содержимое запроса
 
 :PowerOfAttorneyToAttach:
     :doc:`PowerOfAttorneyToAttach` **, чтение** - данные об МЧД, которая будет использоваться при подписании

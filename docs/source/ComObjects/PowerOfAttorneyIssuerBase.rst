@@ -10,7 +10,7 @@ PowerOfAttorneyIssuerBase
     **Строка, чтение** - тип доверителя. :doc:`Возможные значения <./Enums/IssuerType>`
 
 
-.. rubric:: Производные объекты
+.. rubric:: Объекты, наследующие текущий интерфейс
 
 .. _PowerOfAttorneyIssuerBase-Inheritable:
 

@@ -12,4 +12,4 @@ PowerOfAttorneyRegistrationResult
     **Строка, чтение** - Статус регистрации
 
 :PowerOfAttorneyInfo:
-    :doc:`PowerOfAttorney` **, чтение** - реквизиты зарегитрированной МЧД. Если регитсрация не удалась, то поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
+    :doc:`PowerOfAttorney` **, чтение** - реквизиты зарегитрированной МЧД. Если регистрация не удалась, то поле будет содержать :doc:`./Descriptions/EmptyVariant`

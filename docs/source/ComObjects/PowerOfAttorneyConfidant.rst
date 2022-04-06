@@ -13,4 +13,4 @@ PowerOfAttorneyConfidant
     **Строка, чтение** - ИНН доверенного
 
 :Organization:
-    :doc:`PowerOfAttorneyConfidantOrganization` **, чтение** - информация об организации доверенного. Поле может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+    :doc:`PowerOfAttorneyConfidantOrganization` **, чтение** - информация об организации доверенного. Поле может быть :doc:`пустым <Descriptions/EmptyVariant>`

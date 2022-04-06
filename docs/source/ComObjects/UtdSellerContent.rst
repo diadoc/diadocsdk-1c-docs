@@ -94,9 +94,9 @@ UtdSellerContent
 
 .. method:: UtdSellerContent.AddSigner()
 
-    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *Signers* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию **Signers** и возвращает его
 
 
 .. method:: UtdSellerContent.AddPaymentDocument()
 
-    Добавляет :doc:`новый элемент <PaymentDocument>` в коллекцию *PaymentDocuments* и возвращает его
+    Добавляет :doc:`новый элемент <PaymentDocument>` в коллекцию **PaymentDocuments** и возвращает его

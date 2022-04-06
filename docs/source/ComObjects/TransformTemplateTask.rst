@@ -27,7 +27,7 @@ TransformTemplateTask
 
     :EntityId: ``строка`` идентификтаор сущности документа в шаблоне, который будет превращён в документ
 
-    Добавляет :doc:`новый элемент <DocumentTransformation>` в коллекцию *DocumentTransformations* и возвращает его
+    Добавляет :doc:`новый элемент <DocumentTransformation>` в коллекцию **DocumentTransformations** и возвращает его
 
 
 .. method:: TransformTemplateTask.Send()

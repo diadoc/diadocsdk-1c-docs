@@ -41,4 +41,4 @@ TovTorgTable
 
 .. method:: TovTorgTable.AddItem()
 
-    Добавляет :doc:`новый элемент <TovTorgItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <TovTorgItem>` в коллекцию **Items** и возвращает его

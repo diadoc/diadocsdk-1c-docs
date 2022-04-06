@@ -29,7 +29,7 @@ TypeDesc
         * :meth:`TypeDesc.GetMethodsNames`
         * :meth:`TypeDesc.GetMethodDesc`
 
-    . tab:: Взаимодействие с полями и метода объекта
+    .. tab:: Взаимодействие с полями и метода объекта
 
         * :meth:`TypeDesc.SetProperty`
         * :meth:`TypeDesc.GetProperty`
@@ -49,14 +49,14 @@ TypeDesc
 
 .. method:: TypeDesc.HasProperty(PropertyName)
 
-    :PropertyName: ``Регистрозависимая строка`` Имя свойства
+    :PropertyName: **Строка** - имя свойства
 
     Возвращает булевой значение, говорящее, что у Com-объекта есть поле с указанным именем
 
 
 .. method:: TypeDesc.GetPropertyType(PropertyName)
 
-    :PropertyName: ``Регистрозависимая строка`` Имя свойства
+    :PropertyName: **Строка** - имя свойства
 
     Возвращает имя типа, который имеет указанное свойство.
     Возможные типы перечислены `здесь <https://docs.microsoft.com/en-us/windows/win32/api/wtypes/ne-wtypes-varenum>`_ .
@@ -65,8 +65,8 @@ TypeDesc
 
 .. method:: TypeDesc.SetProperty(PropertyName, Object)
 
-    :PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
-    :Object:       ``Произвольный объект`` устанавливаемое значение
+    :PropertyName: **Строка** - название поля COM-объекта
+    :Object:       :doc:`./Descriptions/AnyVariant` - устанавливаемое значение
 
     Задаёт новое значение полю COM-объекта
 
@@ -75,7 +75,7 @@ TypeDesc
 
 .. method:: TypeDesc.GetProperty(PropertyName)
 
-    :PropertyName: ``Регистрозависимая строка`` название поля COM-объекта
+    :PropertyName: **Строка** - название поля COM-объекта
 
     Получает значение значение поля COM-объекта
 
@@ -91,7 +91,7 @@ TypeDesc
 
 .. method:: TypeDesc.GetMethodDesc(MethodName)
 
-    :MethodName: ``Регистрозависимая строка`` Имя метода
+    :MethodName: **Строка** - имя метода
 
     Возвращает :doc:`описание интерфейса метода <MethodDesc>` по имени метода
 
@@ -107,8 +107,8 @@ TypeDesc
 
 .. method:: TypeDesc.InvokeMethod(MethodName, Args)
 
-    :MethodName: ``Регистрозависимая строка`` имя вызываемого метода
-    :Args:       ``ArgPack`` набор аргументов, представленный объектом :doc:`ArgPack`
+    :MethodName: **Строка** - имя вызываемого метода
+    :Args:       :doc:`ArgPack` - набор аргументов
 
     Вызывает метод по его имени с переданными параметрами и возвращает результат его выполнения, если он есть. Неявного преобразования типов аргументов не происходит
 

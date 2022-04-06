@@ -76,14 +76,14 @@ InvoiceCorrectionContent
 
 .. method:: InvoiceCorrectionContent.AddItem()
 
-    Добавляет :doc:`новый элемент <InvoiceItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <InvoiceItem>` в коллекцию **Items** и возвращает его
 
 
 .. method:: InvoiceCorrectionContent.AddOriginalInvoice()
 
-    Добавляет :doc:`новый элемент <OriginalInvoice>` в коллекцию *OriginalInvoices* и возвращает его
+    Добавляет :doc:`новый элемент <OriginalInvoice>` в коллекцию **OriginalInvoices** и возвращает его
 
 
 .. method:: InvoiceCorrectionContent.AddStructedAdditionalInfo()
 
-    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию **StructedAdditionalInfos** и возвращает его

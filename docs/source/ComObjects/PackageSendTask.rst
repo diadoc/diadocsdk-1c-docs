@@ -69,41 +69,41 @@ PackageSendTask
 
 .. method:: PackageSendTask.AddDocument(FormalizedDocumentType)
 
-    :FormalizedDocumentType: ``строка`` тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>`
+    :FormalizedDocumentType: **Строка** - тип документа. Может принимать одно из значений :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>`
 
-    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его
+    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию **DocumentsToSend** и возвращает его
 
     Если в качестве типа передана версия документа, возвращает объект :doc:`LegacyDocumentToSend`
 
 
 .. method:: PackageSendTask.AddDocumentFromFile(DocumentType, FilePath)
 
-    :DocumentType: ``строка`` тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
-    :FilePath: ``строка`` путь до файла контента
+    :DocumentType: **Строка** - тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
+    :FilePath: **Строка** - путь до файла контента
 
-    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
+    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию **DocumentsToSend**, загружая контент из файла, и возвращает его.
     Контент будет разобран и получен в виде объектной модели, если это возможно. При отправке он будет перегенерирован
 
 
 .. method:: PackageSendTask.AddDocumentFromFileRaw(DocumentType, FilePath)
 
-    :DocumentType: ``строка`` тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
-    :FilePath: ``строка`` путь до файла контента
+    :DocumentType: **Строка** - тип документа. Принимает значение из :doc:`перечисления <./Enums/FormalizedDocumentTypeToSend>` или :doc:`перечисления <./Enums/DocumentToSend>`
+    :FilePath: **Строка** - путь до файла контента
 
-    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
+    Добавляет :doc:`новый элемент <DocumentToSend>` в коллекцию **DocumentsToSend**, загружая контент из файла, и возвращает его.
     Разбора контента и представления в виде объектной модели не происходит. При отправке перегенерации контента не произойдёт
 
 
 .. method:: PackageSendTask.Send()
 
     Отправляет пакет документов в Диадок и возвращает :doc:`отправленные документы <DocumentPackage>`.
-    Если отправка пакета с заполненным *OperationId* завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
+    Если отправка пакета с заполненным **OperationId** завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
 
 
 .. method:: PackageSendTask.SendAsync()
 
     Асинхронно отправляет пакет документов в Диадок и возвращает :doc:`AsyncResult` с :doc:`отправленными документами <DocumentPackage>` в качестве результата.
-    Если отправка пакета с заполненным *OperationId* завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
+    Если отправка пакета с заполненным **OperationId** завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
 
 
 .. method:: PackageSendTask.AddEncryptCertificate(Certificate)

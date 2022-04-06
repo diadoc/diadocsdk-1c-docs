@@ -43,9 +43,9 @@ TovTorgTransferInfo
 
 .. method:: TovTorgTransferInfo.AddWaybill()
 
-  Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его
+  Добавляет :doc:`новый элемент <Waybill>` в коллекцию **Waybills** и возвращает его
 
 
 .. method:: TovTorgTransferInfo.AddStructedAdditionalInfo()
 
-    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию **StructedAdditionalInfos** и возвращает его

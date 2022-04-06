@@ -62,46 +62,46 @@ PackageSendTask2
 
 .. method:: PackageSendTask2.AddDocument(TypeNamedId, DocumentFunction, DocumentVersion)
 
-    :TypeNamedId: ``строка`` название типа документа
-    :DocumentFunction: ``строка`` функция документа
-    :DocumentVersion: ``строка`` версия документа
+    :TypeNamedId: **Строка** - название типа документа
+    :DocumentFunction: **Строка** - функция документа
+    :DocumentVersion: **Строка** - версия документа
 
-    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend* и возвращает его.
+    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию **DocumentsToSend** и возвращает его.
     Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 .. method:: PackageSendTask2.AddDocumentFromFile(TypeNamedId, DocumentFunction, DocumentVersion, FilePath)
 
-    :TypeNamedId: ``строка`` название типа документа
-    :DocumentFunction: ``строка`` функция документа
-    :DocumentVersion: ``строка`` версия документа
-    :FilePath: ``строка`` путь до файла документа
+    :TypeNamedId: **Строка** - название типа документа
+    :DocumentFunction: **Строка** - функция документа
+    :DocumentVersion: **Строка** - версия документа
+    :FilePath: **Строка** - путь до файла документа
 
-    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из файла, и возвращает его.
+    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию **DocumentsToSend**, загружая контент из файла, и возвращает его.
     Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 .. method:: PackageSendTask2.AddDocumentFromBase64(TypeNamedId, DocumentFunction, DocumentVersion, Base64)
 
-    :TypeNamedId: ``строка`` название типа документа
-    :DocumentFunction: ``строка`` функция документа
-    :DocumentVersion: ``строка`` версия документа
-    :Base64: ``строка`` контент документа в Base64
+    :TypeNamedId: **Строка** - название типа документа
+    :DocumentFunction: **Строка** - функция документа
+    :DocumentVersion: **Строка** - версия документа
+    :Base64: **Строка** - контент документа в Base64
 
-    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию *DocumentsToSend*, загружая контент из Base64 строки, и возвращает его.
+    Добавляет :doc:`новый элемент <CustomDocumentToSend>` в коллекцию **DocumentsToSend**, загружая контент из Base64 строки, и возвращает его.
     Тип, функция и версия документа берутся из ответа :meth:`Organization.GetDocumentTypes`
 
 
 .. method:: PackageSendtTask2.Send()
 
     Производит отправку документов и возвращает :doc:`отправленные документы <DocumentPackage>`.
-    Если отправка пакета с заполненным *OperationId* завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
+    Если отправка пакета с заполненным **OperationId** завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
 
 
 .. method:: PackageSendtTask2.SendAsync()
 
     Асинхронно отправляет пакет документов в Диадок и возвращает :doc:`AsyncResult` с :doc:`отправленными документами <DocumentPackage>` в качестве результата.
-    Если отправка пакета с заполненным *OperationId* завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
+    Если отправка пакета с заполненным **OperationId** завершилась успехом, то все остальные попытки отправки с тем же идентификатором не будут приводить к отправке нового пакета, а в результате выполнения метода вернется ранее отправленный пакет
 
 
 .. seealso:: :doc:`../HowTo/HowTo_post_document`

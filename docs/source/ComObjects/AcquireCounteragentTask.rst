@@ -44,4 +44,4 @@ AcquireCounteragentTask
 
 .. method:: AcquireCounteragentTask.SendAsync()
 
-    Асинхронно отправляет приглашение контрагента к партнерству. Возвращает :doc:`AsyncResult`
+    Асинхронно отправляет приглашение контрагента к партнерству. Возвращает :doc:`AsyncResult` с булевым результатом

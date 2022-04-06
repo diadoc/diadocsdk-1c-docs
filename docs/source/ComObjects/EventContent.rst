@@ -36,4 +36,4 @@
 
 .. method:: ﻿EventContent.AddCorrectionBase()
 
-    Добавляет :doc:`новый элемент <CorrectionBase>` в коллекцию *CorrectionBases* и возвращает его
+    Добавляет :doc:`новый элемент <CorrectionBase>` в коллекцию **CorrectionBases** и возвращает его

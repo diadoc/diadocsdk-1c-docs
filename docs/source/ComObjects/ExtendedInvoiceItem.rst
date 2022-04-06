@@ -77,9 +77,9 @@ ExtendedInvoiceItem
 
 .. method:: ExtendedInvoiceItem.AddCustomDeclaration()
 
-    Добавляет :doc:`новый элемент <CustomDeclaration>` в коллекцию *CustomDeclarations* и возвращает его
+    Добавляет :doc:`новый элемент <CustomDeclaration>` в коллекцию **CustomDeclarations** и возвращает его
 
 
 .. method:: ExtendedInvoiceItem.AddStructedAdditionalInfo()
 
-    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию **StructedAdditionalInfos** и возвращает его

@@ -38,4 +38,4 @@ InvoiceTable
 
 .. method:: InvoiceTable.AddItem()
 
-    Добавляет :doc:`новый элемент <ExtendedInvoiceItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedInvoiceItem>` в коллекцию **Items** и возвращает его

@@ -65,4 +65,4 @@ AcceptanceCertificateSellerContent
 
 .. method:: AcceptanceCertificateSellerContent.AddItem()
 
-    Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию *Items* и возвращает его
+    Добавляет :doc:`новый элемент <AcceptanceCertificateItem>` в коллекцию **Items** и возвращает его

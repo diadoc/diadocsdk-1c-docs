@@ -26,4 +26,4 @@ ServiceDetailsToSend
     **Строка, чтение/запись** - номер документа
 
 :Content:
-    :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента. Всегда пустое
+    :doc:`./Descriptions/EmptyVariant` **, чтение** - представление контента

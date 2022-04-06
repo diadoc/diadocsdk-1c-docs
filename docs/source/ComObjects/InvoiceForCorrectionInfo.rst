@@ -28,6 +28,7 @@ InvoiceForCorrectionInfo
 
         * :meth:`AddInvoiceRevision() <InvoiceForCorrectionInfo.AddInvoiceRevision>`
 
+
 .. method:: InvoiceForCorrectionInfo.AddInvoiceRevision()
 
-    Добавляет :doc:`новый элемент <InvoiceRevisionInfo>` в коллекцию *InvoiceRevisions* и возвращает его
+    Добавляет :doc:`новый элемент <InvoiceRevisionInfo>` в коллекцию **InvoiceRevisions** и возвращает его

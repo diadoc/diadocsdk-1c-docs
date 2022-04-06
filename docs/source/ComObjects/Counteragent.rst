@@ -114,14 +114,14 @@ Counteragent
 
 .. method:: Counteragent.AcquireCounteragent([Comment])
 
-    :Comment: ``строка`` Комментарий к приглашению
+    :Comment: **Строка** - комментарий к приглашению
 
     Отправляет контрагенту "приглашение" на обмен документами
 
 
 .. method:: Counteragent.BreakWithCounteragent([Comment])
 
-    :Comment: ``строка`` Комментарий к разрыву дружбы
+    :Comment: **Строка** - комментарий к разрыву дружбы
 
     Разрывает действующее "приглашение" об обмене документами
 

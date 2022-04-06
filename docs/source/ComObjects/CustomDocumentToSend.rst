@@ -35,8 +35,7 @@ CustomDocumentToSend
 
 :Content:
     :doc:`DynamicContent` **, чтение** - представление содержимого документа.
-    Если контент документа был загружен с диска, то поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`.
-    Для документов, для которых не существует упрощённого представления контента (см. :doc:`../HowTo/HowTo_post_document`), поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
+    Если контент документа был загружен с диска или для первого титула документа не существует упрощённого описания контента (см. :doc:`DocumentTitle`.HaveUserDataXSD), то в поле лежит :doc:`./Descriptions/EmptyVariant`
 
 
 .. rubric:: Методы
@@ -55,7 +54,7 @@ CustomDocumentToSend
 
 .. method:: CustomDocumentToSend.SaveUserData(FilePath)
 
-    :FilePath: ``строка`` путь до файла
+    :FilePath: **Строка** - путь до файла
 
     Сохраняет :doc:`упрощённое представление контента <DynamicContent>` в указанный файл.
     Если файл не существует, то файл будет создан.

@@ -19,7 +19,7 @@ DocumentToSend
     **Булево, чтение/запись** - запросить у контрагента подпись по документу. Настройка сработает, если документооборот документа позволяет это сделать
 
 :Content:
-    `VARIANT <https://docs.microsoft.com/en-us/windows/win32/winauto/variant-structure>`_ **, чтение** - представление содержимого документа. Тип контента для каждого наследника этого интерфейса свой
+    :doc:`./Descriptions/AnyVariant` **, чтение** - представление содержимого документа. Тип контента для каждого :ref:`наследника <DocumentToSendBase-Inheritable>` этого интерфейса свой
 
 :Comment:
     **Строка, чтение/запись** - комментарий, добавляемый к документу при отправке
@@ -37,7 +37,7 @@ DocumentToSend
         .. csv-table::
             :header: Добавление связанных документов, Служебные
             
-            :meth:`AddInitialDocument() <DocumentToSend.AddInitialDocument>`,                               :meth:`SaveContent() <DocumentToSend.SaveContent>`
+            :meth:`AddInitialDocument() <DocumentToSend.AddInitialDocument>`, :meth:`SaveContent() <DocumentToSend.SaveContent>`
             :meth:`AddSubordinateDocument() <DocumentToSend.AddSubordinateDocument>`,
             :meth:`AddInitialDocumentFromPackage() <DocumentToSend.AddInitialDocumentFromPackage>`,
             :meth:`AddSubordinateDocumentFromPackage() <DocumentToSend.AddSubordinateDocumentFromPackage>`,
@@ -56,38 +56,39 @@ DocumentToSend
 
 .. method:: DocumentToSend.AddInitialDocument(DocumentID)
 
-    :DocumentID: ``строка`` идентификатор документа в Диадок
+    :DocumentID: **Строка** - идентификатор документа в Диадок
 
     Добавляет идентификатор документа в коллекцию "родительских" документов
 
 
 .. method:: DocumentToSend.AddSubordinateDocument(DocumentID)
 
-    :DocumentID: ``строка`` идентификатор документа в Диадок
+    :DocumentID: **Строка** - идентификатор документа в Диадок
 
     Добавляет идентификатор документа в коллекцию подчиненных документов
 
 
 .. method:: DocumentToSend.AddInitialDocumentFromPackage(CustomDocumentID)
 
-    :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
+    :CustomDocumentID: **Строка** - идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
 
     Добавляет идентификатор документа из пакета на отправку в коллекцию "родительских" документов
 
 
 .. method:: DocumentToSend.AddSubordinateDocumentFromPackage(CustomDocumentID)
 
-    :CustomDocumentID: ``строка`` идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
+    :CustomDocumentID: **Строка** - идентификатор документа, определяемый внешней системой. Может быть взят у любого документа отправляемого пакета
 
     Добавляет идентификатор документа из пакета на отправку в коллекцию подчиненных документов
 
 
-.. method:: DocumentToSend.SaveContent(BoxId, FileName)
+.. method:: DocumentToSend.SaveContent(BoxId, FilePath)
 
-    :BoxId: ``строка`` идентификатор ящика контрагента, которому должен быть отправлен документ
-    :FileName: ``строка`` полной имя файла, в который необходимо сохранить содержание документа
+    :BoxId: **Строка** - идентификатор ящика контрагента, которому должен быть отправлен документ
+    :FilePath: **Строка** - путь до файла
 
-    Генерирует содержание отправляемого документа и сохраняет его на диск
+    Если контент документа загружался из файла или Base64, то сохранит их контент в указанный файл.
+    Если контент заполнялся через заполнение представление контента контента, то сначала произойдёт попытка генерации контента по данным в этом представлении.
 
     .. versionadded:: 5.29.9
 

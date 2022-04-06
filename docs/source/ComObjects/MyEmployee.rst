@@ -48,9 +48,9 @@ MyEmployee
         * :meth:`UpdateCertificateFNSRegistration() <MyEmployee.UpdateCertificateFNSRegistration>`
 
 
-.. method:: MyEmployee.GetPowersOfAttorney(OnlyActual=``True``)
+.. method:: MyEmployee.GetPowersOfAttorney(OnlyActual=True)
 
-    :OnlyActual: ``булево`` признак того, что нужно возвращать только действующие доверенности
+    :OnlyActual: **Булево** - признак того, что нужно возвращать только действующие доверенности
 
     Возвращает :doc:`коллекцию <Collection>` :doc:`доверенностей текущего сотрудника <EmployeePowerOfAttorney>`.
     Если флаг ``OnlyActual`` истинен, то вернутся только действующие доверенности
@@ -78,18 +78,19 @@ MyEmployee
 
     Отвязывает довереность от текущего сотрудника
 
+
 .. method:: MyEmployee.CanSendInvoice()
 
-    Проверяет можно ли подписывать счета-фактуры, используя сертфиикат, с которым произошла авторизация. Если невозможно, то вернёт текст с причиной, иначе - пустую строку
+    Проверяет можно ли подписывать счета-фактуры, используя сертификат, с которым произошла авторизация. Если невозможно, то вернёт текст с причиной, иначе - пустую строку
 
 
-.. method:: MyEmployee.GetExtendedSignerDetails(DocumentTitleName=``UNKNOWN``)
+.. method:: MyEmployee.GetExtendedSignerDetails(DocumentTitleName="UNKNOWN")
 
-    :DocumentTitleName: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
+    :DocumentTitleName: **Строка** - тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
 
     Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного типа титула и сертификата, использованного в авторизации (можно найти в **SessionInfo**).
-    Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
-    Для *DocumentTitleName* == ``Absent`` и *DocumentTitleName* == ``UNKNOWN`` вызов невозможен.
+    Получить значение для *DocumentTitleName* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
+    Для ``DocumentTitleName == "Absent"`` и ``DocumentTitleName == "UNKNOWN"`` вызов невозможен
 
 
 .. method:: MyEmployee.CreateSetExtendedSignerDetailsTask()

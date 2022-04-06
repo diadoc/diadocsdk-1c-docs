@@ -12,14 +12,12 @@ SessionInfo
 :AuthenticationType:
     **Строка, чтение** - тип авторизации. :doc:`Возможные значения <./Enums/AuthenticationType>`
 
-
 :Certificate:
-    :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
-
+    :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации.
+    Если авторизация произошла не по сертификату, то в поле лежит :doc:`./Descriptions/EmptyVariant`
 
 :Login:
     **Строка, чтение** - логин, использованный для авторизации
-
 
 :Token:
     **Строка, чтение** - полученный авторизационный токен

@@ -34,4 +34,4 @@ NonformalizedProformaToSend
     **Строка, чтение/запись** - основание документа
 
 :Content:
-    :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента. Всегда пустое
+    :doc:`./Descriptions/EmptyVariant` **, чтение** - представление контента

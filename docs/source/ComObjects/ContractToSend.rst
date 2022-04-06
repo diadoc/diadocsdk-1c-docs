@@ -34,4 +34,4 @@ ContractToSend
     **Строка, чтение/запись** - тип договора
 
 :Content:
-    :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента
+    :doc:`Descriptions/EmptyVariant` **, чтение** - представление контента

@@ -65,7 +65,7 @@ DocumentsTask
 
 .. method:: DocumentsTask.GetDocumentsAsync()
 
-    Асинхронно получает список документов, удовлетворяющих фиьлтру. Возвращает :doc:`AsyncResult` с результатом в виде :doc:`коллекции <Collection>` :doc:`документов <DocumentBase>`
+    Асинхронно получает список документов, удовлетворяющих фильтру. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`документов <DocumentBase>` в результате
 
 
 .. rubric:: Дополнительная информация

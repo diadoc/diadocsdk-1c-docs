@@ -76,14 +76,14 @@ InvoiceContent
 
 .. method:: InvoiceContent.AddItem()
 
-  Добавляет :doc:`новый элемент <InvoiceItem>` в коллекцию *Items* и возвращает его
+  Добавляет :doc:`новый элемент <InvoiceItem>` в коллекцию **Items** и возвращает его
 
 
 .. method:: InvoiceContent.AddPaymentDocument()
 
-    Добавляет :doc:`новый элемент <PaymentDocument>` в коллекцию *PaymentDocuments* и возвращает его
+    Добавляет :doc:`новый элемент <PaymentDocument>` в коллекцию **PaymentDocuments** и возвращает его
 
 
 .. method:: InvoiceContent.AddStructedAdditionalInfo()
 
-    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos* и возвращает его
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию **StructedAdditionalInfos** и возвращает его

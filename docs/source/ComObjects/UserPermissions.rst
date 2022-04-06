@@ -35,7 +35,7 @@ UserPermissions
 :CanDeleteRestoreDocuments:
     **Булево, чтение** - пользователь может удалять и восстанавливать документы в ящике организации
 
-    .. versionadded:: :doc:`../History/release_info/5_31_1`
+    .. versionadded:: 5.31.1
 
 :DocumentsAccessLevel:
     **Строка, чтение** - уровень доступа к документам. :doc:`Возможные значения <./Enums/DocumentsAccessLevel>`
@@ -44,7 +44,7 @@ UserPermissions
     :doc:`Department <Department>` **, чтение** - подразделение организации, в котором состоит пользователь
 
 :SelectedDepartments:
-    :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - список подразделений, к которым имеет доступ пользователь. Заполнено в случае *DocumentsAccessLevel* == ``SelectedDepartments``
+    :doc:`Коллекция <Collection>` **объектов** :doc:`Department` **, чтение** - список подразделений, к которым имеет доступ пользователь. Заполнено в случае ``DocumentsAccessLevel == "SelectedDepartments"``
 
 :JobTitle:
     **Строка, чтение** - должность сотрудника

@@ -45,4 +45,4 @@ ExtendedInvoiceCorrectionItem
 
 .. method:: ExtendedInvoiceCorrectionItem.AddStructedAdditionalInfo()
 
-    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию *StructedAdditionalInfos*
+    Добавляет :doc:`новый элемент <StructedAdditionalInfo>` в коллекцию **StructedAdditionalInfos**

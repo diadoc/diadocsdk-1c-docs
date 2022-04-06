@@ -71,7 +71,8 @@ Organization
         **Строка, чтение** - логин, по которому произошла авторизация
 
     :Certificate:
-        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации. Может быть :doc:`пустым <Descriptions/Empty_Com_Object>`
+        :doc:`PersonalCertificate` **, чтение** - информация о сертификате, использованном для авторизации.
+        Если авторизация произошла не по сертификату, то будет содержать :doc:`./Descriptions/EmptyVariant`
 
 
 .. rubric:: Методы
@@ -144,7 +145,7 @@ Organization
             :meth:`Organization.CreateSendTaskFromFile`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_5_0`, :doc:`../History/release_info/5_33_4`
             :meth:`Organization.CreateSendTaskFromFileRaw`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_5_0`, :doc:`../History/release_info/5_33_4`
             :meth:`Organization.CreatePackageSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_27_0`,
-            :meth:`Organization.SendDraftAsync`, :meth:`Organization.CreateSendDraftTask`, :doc:`../History/release_info/5_18_0`,
+            :meth:`Organization.SendDraftAsync`, :meth:`Organization.CreateSendDraftTask`, :doc:`../History/release_info/5_18_0`, :doc:`../History/release_info/5_36_8`
             :meth:`Organization.SetAndValidateAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_5_0`,
             :meth:`Organization.GetSentDocuments`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_5_0`,
             :meth:`Organization.SetData`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_29_9`,
@@ -160,23 +161,23 @@ Organization
 
         .. method:: Organization.CreateSendTask(FormalDocumentType)
 
-            :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
+            :DocumentType: **Строка** - тип документа на отправку. :doc:`Возможные значения <Enums/FormalizedDocumentTypeToSend>`
 
             Возвращает :doc:`задание отправки документа <SendTask>`
 
 
         .. method:: Organization.CreateSendTaskFromFile(DocumentType, FilePath)
 
-            :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
-            :FilePath: ``строка`` путь до файла контента документа
+            :DocumentType: **Строка** - тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+            :FilePath: **Строка** - путь до файла контента документа
 
             Возвращает :doc:`задание отправки документа <SendTask>`. Контент документа берётся из файла. Происходит попытка представить его в виде объектой модели
 
 
         .. method:: Organization.CreateSendTaskFromFileRaw(DocumentType, FilePath)
 
-            :DocumentType: ``строка`` тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
-            :FilePath: ``строка`` путь до файла контента документа
+            :DocumentType: **Строка** - тип документа на отправку. :doc:`Возможные значения <Enums/DocumentToSend>`
+            :FilePath: **Строка** - путь до файла контента документа
 
             Возвращает :doc:`задание отправки документа <SendTask>`. Контент документа берётся из файла. Представления контента в виде объектой модели не происходит
 
@@ -188,31 +189,28 @@ Organization
 
         .. method:: Organization.SendDraftAsync(MessageId)
 
-            :MessageId: ``строка`` идентификатор сообщения черновика
+            :MessageId: **Строка** - идентификатор сообщения черновика
 
             Асинхронно отправляет черновики. Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` объектов, производных от :doc:`Document` в качестве результата
 
             .. versionchanged:: 5.33.0
                 Метод ничего не делает
 
-            .. versionchanged:: 5.36.8
-             Метод удалён
-
 
         .. method:: Organization.SetAndValidateAddressForCounteragent(key1S, addressTypeKey, isForeign, zipCode, regionCode, territory, city, locality, street, building, block, apartment)
 
-            :key1S: ``строка`` идентификатор адресной информации
-            :addressTypeKey: ``строка`` тип адресной информации
-            :isForeign: ``строка`` признак того, что адрес является иностранным (за пределами РФ)
-            :zipCode: ``строка`` индекс
-            :regionCode: ``строка`` код региона РФ
-            :territory: ``строка`` район
-            :city: ``строка`` город
-            :locality: ``строка`` населенный пункт
-            :street: ``строка`` улица
-            :building: ``строка`` дом
-            :block: ``строка`` корпус
-            :apartment: ``строка`` квартира
+            :key1S: **Строка** - идентификатор адресной информации
+            :addressTypeKey: **Строка** - тип адресной информации
+            :isForeign: **Строка** - признак того, что адрес является иностранным (за пределами РФ)
+            :zipCode: **Строка** - индекс
+            :regionCode: **Строка** - код региона РФ
+            :territory: **Строка** - район
+            :city: **Строка** - город
+            :locality: **Строка** - населенный пункт
+            :street: **Строка** - улица
+            :building: **Строка** - дом
+            :block: **Строка** - корпус
+            :apartment: **Строка** - квартира
 
             Валидирует и загружает адресную информацию в хранилище. Возвращает :doc:`коллекцию <Collection>` :doc:`ошибок <ValidationError>`.
             Параметр **isForeign** ни на что не влияет, адрес можно задать только как российский
@@ -223,60 +221,61 @@ Organization
 
         .. method:: Organization.GetAddressForCounteragent(key1S, AddressTypeKey)
 
-            :key1S: ``строка`` идентификатор адресной информации
-            :addressTypeKey: ``строка`` тип адресной информации
+            :key1S: **Строка** - идентификатор адресной информации
+            :addressTypeKey: **Строка** - тип адресной информации
 
             Возвращает :doc:`адресную информацию <AddressInfo>` из хранилища
 
 
         .. method:: Organization.GetSentDocuments(OneSId, AsDiadocDocumentId=False)
 
-            :OneSId: ``строка`` идентификаторы учётной системы, перечисленные через ``;``
-            :AsDiadocDocumentId: ``булево`` возвращать идентификаторы документов в Диадок
+            :OneSId: **Строка** - идентификаторы учётной системы, перечисленные через ``;``
+            :AsDiadocDocumentId: **Булево** - возвращать идентификаторы документов в Диадок
 
-            Возвращает :doc:`коллекцию <Collection>` строк - идентификаторов отправленных документов для запрашиваемых идентификаторов *OneSId*. Тип возвращаемых идентификаторов определяется параметром *AsDiadocDocumentId*:
-            Если *AsDiadocDocumentId* == ``FALSE``, то будут возвращены идентификаторы учётной системы;
-            Если *AsDiadocDocumentId* == ``TRUE``, то будут возвращены идентификаторы документов в Диадок
+            Возвращает :doc:`коллекцию <Collection>` строк - идентификаторов отправленных документов для запрашиваемых идентификаторов **OneSId**.
+            Тип возвращаемых идентификаторов определяется параметром **AsDiadocDocumentId**:
+            * Если ``AsDiadocDocumentId == False``, то будут возвращены идентификаторы учётной системы;
+            * Если ``AsDiadocDocumentId == True``, то будут возвращены идентификаторы документов в Диадок
 
 
         .. method:: Organization.SetData(Key, Value)
 
-            :Key: ``строка`` уникальный ключ в хранилище
-            :Value: ``строка`` значение, соответствующее ключу
+            :Key: **Строка** - уникальный ключ в хранилище
+            :Value: **Строка** - значение, соответствующее ключу
 
             Добавляет пару *ключ-значение* в хранилище
 
 
         .. method:: Organization.GetData(Key)
 
-            :Key: ``строка`` уникальный ключ в хранилище
+            :Key: **Строка** - уникальный ключ в хранилище
 
             Возвращает значение, соответствующее ключу
 
 
-        .. method:: Organization.GetExtendedSignerDetails(Thumbprint, IsSeller=false, forCorrection=false)
+        .. method:: Organization.GetExtendedSignerDetails(Thumbprint, IsSeller=False, forCorrection=False)
 
-            :Thumbprint: ``строка`` отпечаток сертификата
-            :IsSeller: ``булево`` подписант для титула продавца
-            :forCorrection: ``булево`` подписант для титула корректировочного документа
+            :Thumbprint: **Строка** - отпечаток сертификата
+            :IsSeller: **Булево** - подписант для титула продавца
+            :forCorrection: **Булево** - подписант для титула корректировочного документа
 
             Возвращает :doc:`данные подписанта <ExtendedSignerDetails>` из базы Диадок. Метод может быть запрошен самим пользователем или администратором организации
 
 
         .. method:: Organization.GetExtendedSignerDetails2(Thumbprint, TitleType)
 
-            :Thumbprint: ``строка`` отпечаток сертификата
-            :TitleType: ``строка`` тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
+            :Thumbprint: **Строка** - отпечаток сертификата
+            :TitleType: **Строка** - тип титула документа. :doc:`Возможные значения <Enums/DocumentTitleType>`
 
             Возвращает :doc:`параметры подписанта <ExtendedSignerDetails>` в текущей организации для указанного сертификата и указанного типа титула.
-            Получить значение для *TitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`
-            Для *TitleType* == ``Absent`` и *TitleType* == ``UNKNOWN`` вызов невозможен.
+            Получить значение для *TitleType* можно из объекта :doc:`DocumentTitle` в ответе метода :meth:`Organization.GetDocumentTypes`.
+            Для ``TitleType == "Absent"`` и ``TitleType == "UNKNOWN"`` вызов невозможен.
             Метод может быть запрошен самим пользователем или администратором организации
 
 
         .. method:: Organization.CreateSetExtendedSignerDetailsTask(Thumbprint)
 
-            :Thumbprint: ``строка`` отпечаток сертификата
+            :Thumbprint: **Строка** - отпечаток сертификата
 
             Возвращает :doc:`объект <SetExtendedSignerDetailsTask>`, с помощью которого можно установить параметры подписанта
 
@@ -293,7 +292,7 @@ Organization
 
         .. method:: Organization.CanSendInvoice(Thumbprint)
 
-            :Thumbprint: ``строка`` отпечаток сертификата
+            :Thumbprint: **Строка** - отпечаток сертификата
 
             Проверяет можно ли подписывать счёт-фактуры в текущей организации, используя сертификат с указанным отпечатком.
             Если возможно, то вернётся пустая строка. Если подписание невозможно, то вернётся текст с причиной невозможности это сделать
@@ -301,19 +300,20 @@ Organization
 
         .. method:: Organization.SendFnsRegistrationMessage(Thumbprint)
 
-            :Thumbprint: ``строка`` отпечаток сертификата
+            :Thumbprint: **Строка** - отпечаток сертификата
 
             Добавление в сообщение ФНС нового сертификата
 
 
 
-.. method:: Organization.GetDocumentById(DocumentId, WithExternalId=FALSE)
+.. method:: Organization.GetDocumentById(DocumentId, WithExternalId=False)
 
-    :DocumentId: ``строка`` идентифкатор документа
-    :WithExternalId: ``булево`` нужно ли запрашивать дополнительный идентификатор учётной системы
+    :DocumentId: **Строка** - идентифкатор документа
+    :WithExternalId: **Булево** - нужно ли запрашивать дополнительный идентификатор учётной системы
 
     Возвращает :doc:`документ <DocumentBase>` в ящике по его идентификатору.
-    При *WithExternalId* == ``TRUE`` у документа будет заполнено поле *OneSDocumentId*, если оно установлено для него, но сам метод отработает медленнее
+    При ``WithExternalId == True`` у :doc:`документа <DocumentBase>` будет заполнено поле **OneSDocumentId**, если оно установлено для него, но сам метод отработает медленнее.
+    Получить этот идентификатор также можно с помощью :doc:`DataTask`
 
 
 .. method:: Organization.GetDocumentsTask()
@@ -335,61 +335,59 @@ Organization
 
 .. method:: Organization.SaveUserDataXSD(TitleName, Function, Version, DocflowSide, FilePath)
 
-    :TitleName: ``строка`` название типа документа
-    :Function: ``строка`` функция документа
-    :Version: ``строка`` версия документа
-    :DocflowSide: ``строка`` сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
-    :FilePath: ``строка`` полное имя файла, в который нужно сохранить описание контента
+    :TitleName: **Строка** - название типа документа
+    :Function: **Строка** - функция документа
+    :Version: **Строка** - версия документа
+    :DocflowSide: **Строка** - сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
+    :FilePath: **Строка** - полное имя файла, в который нужно сохранить описание контента
 
     Сохраняет описание представления контента документа на диск.
-    Значения для *TitleName*, *Function*, *Version* можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
+    Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
     .. versionadded:: 5.27.0
 
 
 .. method:: Organization.GetBase64UserDataXSD(TitleName, Function, Version, DocflowSide)
 
-    :TitleName: ``строка`` название типа документа
-    :Function: ``строка`` функция документа
-    :Version: ``строка`` версия документа
-    :DocflowSide: ``строка`` сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
+    :TitleName: **Строка** - название типа документа
+    :Function: **Строка** - функция документа
+    :Version: **Строка** - версия документа
+    :DocflowSide: **Строка** - сторона документооборота. :doc:`Возможные значения <Enums/DocflowSide>`
 
-    Возвращает ``Base64-строку`` описания представления контента документа.
-    Значения для *TitleName*, *Function*, *Version* можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
+    Возвращает Base64 строку описания представления контента документа.
+    Значения для **TitleName**, **Function**, **Version** можно получить в ответе метода :meth:`Organization.GetDocumentTypes`
 
     .. versionadded:: 5.28.3
 
 
 .. method:: Organization.RestoreDocument(DocumentId)
 
-    :DocumentId: ``строка`` идентификатор документа
+    :DocumentId: **Строка** - идентификатор документа
 
     Восстанавливает удалённый документ
 
 
 .. method:: Organization.CreateSendDraftTask(MessageId)
 
-    :MessageId: ``строка`` идентификатор сообщения черновика
+    :MessageId: :doc:`Строка <./Descriptions/MessageId>` - идентификатор сообщения черновика
 
     Создаёт :doc:`объект <SendDraftTask>`, с помощью которого можно отправить черновик.
-    *MessageId* - первая половина из *DocumentId* черновика
 
     .. versionadded:: 5.18.0
 
 
 .. method:: Organization.RecycleDraft(MessageId)
 
-    :MessageId: ``строка`` идентификатор сообщения черновика
+    :MessageId: :doc:`Строка <./Descriptions/MessageId>` - идентификатор сообщения черновика
 
-    Метод удаляет черновик. Восстановить черновик невозможно.
-    *MessageId* - первая половина из *DocumentId* черновика
+    Метод удаляет черновик. Восстановить черновик невозможно
 
     .. versionadded:: 5.25.0
 
 
 .. method:: Organization.GetDocumentEventList([AfterEventId])
 
-    :AfterEventId: ``строка`` Идентификатор события, после которого будет вычитываться лента событий
+    :AfterEventId: **Строка** - идентификатор события, после которого будет вычитываться лента событий
 
     Возвращает :doc:`список <Collection>` :doc:`событий <DocumentEvent>`, произошедших с документами в текущем ящике.
     Если *AfterEventId* не задан или пустой, то события начнут вычитываться с момента создания ящика Диадок
@@ -397,7 +395,7 @@ Organization
 
 .. method:: Organization.GetTemplate(TemplateId)
 
-    :TemplateId: ``строка`` идентификатор шаблона
+    :TemplateId: **Строка** - идентификатор шаблона
 
     Возвращает :doc:`шаблон документа <Template>` по его идентификатору
 
@@ -413,7 +411,7 @@ Organization
 
 .. method:: Organization.CreateTransformTemplateTask(TemplateId)
 
-    :TemplateId: ``строка`` идентификатор шаблона
+    :TemplateId: **Строка** - идентификатор шаблона
 
     Возвращает :doc:`задание для создания документов из шаблона <TransformTemplateTask>`
 
@@ -422,7 +420,7 @@ Organization
 
 .. method:: Organization.GetCounteragentById(BoxId)
 
-    :BoxId: ``строка`` идентификатор ящика
+    :BoxId: **Строка** - идентификатор ящика
 
     Возвращает :doc:`контрагента <Counteragent>` по идентификатору ящика.
     Идентификатор может быть как в виде GUID, так и в виде ``...@diadoc.ru``
@@ -430,47 +428,47 @@ Organization
 
 .. method:: Organization.GetCounteragentByOrgId(OrganizationId)
 
-    :OrganizationId: ``строка`` идентификатор организации в Диадок
+    :OrganizationId: **Строка** - идентификатор организации в Диадок
 
     Возвращает :doc:`контрагента <Counteragent>` по идентификатору организации
 
 
-.. method:: Organization.GetCounteragentListByStatus([CounteragentStatus])
+.. method:: Organization.GetCounteragentListByStatus(CounteragentStatus)
 
-    :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
+    :CounteragentStatus: **Строка** - статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
 
     Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>`, с указанным в запросе статусом.
-    Если *CounteragentStatus* не задан или пустой, вернётся весь список контрагентов
+    Если **CounteragentStatus** пустой, вернётся весь список контрагентов
 
 
-.. method:: Organization.GetCounteragentListByStatusAsync([CounteragentStatus])
+.. method:: Organization.GetCounteragentListByStatusAsync(CounteragentStatus)
 
-    :CounteragentStatus: ``строка`` статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
+    :CounteragentStatus: **Строка** - статус, по которому производится выборка контрагентов. :doc:`Возможные значения <./Enums/GetCounteragentsByStatus_param>`
 
     Асинхронный запрос контрагентов с указанным статусом.
-    Если *CounteragentStatus* не задан или пустой, вернётся весь список контрагентов.
+    Если *CounteragentStatus* пустой, вернётся весь список контрагентов.
     Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <Counteragent>` в качестве результата
 
 
 .. method:: Organization.GetCounteragentListByInnKpp(Inn[, Kpp])
 
-    :Inn: ``строка`` ИНН для поиска
-    :Kpp: ``строка`` КПП для поиска
+    :Inn: **Строка** - ИНН для поиска
+    :Kpp: **Строка** - КПП для поиска
 
     Возвращает :doc:`коллекцию <Collection>` :doc:`контрагентов <Counteragent>` с указанными ИНН-КПП
 
 
 .. method:: Organization.GetCounteragentListByInnKppAsync(Inn[, Kpp])
 
-    :Inn: ``строка`` ИНН для поиска
-    :Kpp: ``строка`` КПП для поиска
+    :Inn: **Строка** - ИНН для поиска
+    :Kpp: **Строка** - КПП для поиска
 
     Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <Counteragent>` с указанными ИНН-КПП в качестве результата
 
 
 .. method:: Organization.GetCounteragentListByInnList(INNs)
 
-    :INNs: ``строка`` ИНН, перечисленные через запятую без пробелов
+    :INNs: **Строка** - ИНН, перечисленные через запятую без пробелов
 
     Aсинхронный запрос контрагентов с перечисленными ИНН.
     Возвращает :doc:`AsyncResult` с :doc:`коллекцией <Collection>` :doc:`контрагентов <CounteragentItem>` в качестве результата
@@ -478,10 +476,10 @@ Organization
 
 .. method:: Organization.CreateAcquireCounteragentTask([FilePath])
 
-    :FilePath: ``строка`` путь до файла-вложения
+    :FilePath: **Строка** - путь до файла-вложения
 
     Создает :doc:`запрос на приглашение контрагента к сотрудничеству <AcquireCounteragentTask>`.
-    Если *FilePath* задан, то вместе с приглашением будет отправлен и этот файл
+    Если **FilePath** задан, то вместе с приглашением будет отправлен и этот файл
 
 
 .. method:: Organization.CreateAdminTools()
@@ -526,20 +524,20 @@ Organization
 
 .. method:: Organization.RegisterPowerOfAttorneyById(RegNumber, IssuerInn)
 
-    :RegNumber: ``Строка`` регистрационный номер МЧД
-    :IssuerInn: ``Строка`` ИНН доверителя
+    :RegNumber: **Строка** - регистрационный номер МЧД
+    :IssuerInn: **Строка** - ИНН доверителя
 
     Регистрирует МЧД, в сервисе Диадок по её регистрационному номеру и ИНН доверителя
 
     .. versionadded:: 5.37.0
 
 
-.. _Organization-RegisterPowerOfAttorneyByContent:
 .. method:: Organization.RegisterPowerOfAttorneyByContent(XmlContent, XmlSignature)
 
-    :XmlContent: ``Строка`` контент МЧД в виде base64 строки
-    :XmlSignature: ``Строка`` контент подписи МЧД в виде base64 строки
+    :XmlContent: **Строка** - контент МЧД в виде base64 строки
+    :XmlSignature: **Строка** - контент подписи МЧД в виде base64 строки
 
-    Регистрирует МЧД, в сервисе Диадок с помощью файла МЧД и подписи, которой она была подписана
+    Регистрирует МЧД, в сервисе Диадок с помощью файла МЧД и подписи, которой она была подписана.
+    Для **XmlSignature** используется контент файла подписи (``*.sgn``, ``*.sig``), сформированного в момент выпуска доверенности
 
     .. versionadded:: 5.37.0

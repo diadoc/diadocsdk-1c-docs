@@ -44,14 +44,14 @@ DocumentPackage
 
         .. method:: DocumentPackage.CreateReplySendTask(ReplyType="AcceptDocument")
 
-            :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
+            :ReplyType: **Строка** - тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
             Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask>`
 
 
 .. method:: DocumentPackage.CreateReplySendTask2(ReplyType="AcceptDocument")
 
-    :ReplyType: ``Строка`` Тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
+    :ReplyType: **Строка** - тип ответа. :doc:`Возможные значения <./Enums/ReplyType>`
 
     Создает :doc:`задание на выполнение ответного действия с пакетом документов <ReplySendTask2>`
 
@@ -72,37 +72,37 @@ DocumentPackage
 
 .. method:: DocumentPackage.AssignToResolutionRoute(RouteId[, Comment])
 
-    :RouteId: ``строка`` Идентификатор маршрута
-    :Comment: ``строка`` Комментарий, который будет добавлен при постановке документов на маршрут
+    :RouteId: **Строка** - идентификатор маршрута
+    :Comment: **Строка** - комментарий, который будет добавлен при постановке документов на маршрут
 
     Ставит документы на маршрут согласования. Получить доступные маршруты согласования можно методом :meth:`Organization.GetResolutionRoutes`
 
 
 .. method:: DocumentPackage.RemoveFromResolutionRoute(RouteId[, Comment])
 
-    :RouteId: ``строка`` Идентификатор маршрута
-    :Comment: ``строка`` Комментарий, который будет добавлен при снятии документов с маршрута
+    :RouteId: **Строка** - идентификатор маршрута
+    :Comment: **Строка** - комментарий, который будет добавлен при снятии документов с маршрута
 
     Снимает документы с маршрута согласования
 
 
 .. method:: DocumentPackage.Approve([Comment])
 
-    :Comment: ``строка`` комментарий, который будет добавлен при согласовании документов пакета
+    :Comment: **Строка** - комментарий, который будет добавлен при согласовании документов пакета
 
     Согласует документы пакета
 
 
 .. method:: DocumentPackage.Disapprove([Comment])
 
-    :Comment: ``строка`` комментарий, который будет добавлен при отказе согласования документов пакета
+    :Comment: **Строка** - комментарий, который будет добавлен при отказе согласования документов пакета
 
     Отказывает в согласовании документов пакета
 
 
 .. method:: DocumentPackage.Move(DepartmentID)
 
-    :DepartmentID: ``строка`` идентификатор подразделения
+    :DepartmentID: **Строка** - идентификатор подразделения
 
 
 .. method:: DocumentPackage.Delete()

@@ -18,7 +18,7 @@ AttachedPowerOfAttorney
     **Строка, чтение** - информация о том, к какой сущности относится МЧД. :doc:`Возможные значения <./Enums/PowerOfAttorneyAffiliation>`
 
 :Status:
-    :doc:`PowerOfAttorneyStatus` **, чтение** - результат проверки МЧД. Если проверка ещё не завершилась, поле будет :doc:`пустым <Descriptions/Empty_Com_Object>`
+    :doc:`PowerOfAttorneyStatus` **, чтение** - результат проверки МЧД. Если проверка ещё не завершилась, поле будет содержать :doc:`./Descriptions/EmptyVariant`
 
 :SignatureType:
     **Строка, чтение** - тип подписи, к которой относится МЧД. :doc:`Возможные значения <./Enums/SignatureType>`

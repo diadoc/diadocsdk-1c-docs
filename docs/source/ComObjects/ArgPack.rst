@@ -9,7 +9,7 @@ ArgPack
 .. rubric:: Свойства
 
 :Args:
-    :doc:`Коллекция <Collection>` **произвольных объектов, чтение** - набор аргументов
+    :doc:`Коллекция <Collection>` **объектов** :doc:`произвольного типа, <Descriptions/AnyVariant>` **чтение** - набор аргументов
 
 
 .. rubric:: Методы
@@ -24,13 +24,13 @@ ArgPack
 
 .. method:: ArgPack.Add(Object)
 
-    :Object: ``Произвольный объект`` аргумент функции
+    :Object: :doc:`Descriptions/AnyVariant` - аргумент функции
 
     Добавляет новый аргумент в коллекцию аргументов
 
 
 .. method:: ArgPack.Set(Object)
 
-    :Object: ``Произвольный объект`` аргумент функции
+    :Object: :doc:`Descriptions/AnyVariant` - аргумент функции
 
     Добавляет новый аргумент в коллекцию аргументов и возвращает обновлённый объект :doc:`ArgPack`

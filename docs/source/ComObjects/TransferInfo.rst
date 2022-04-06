@@ -58,9 +58,9 @@ TransferInfo
 
 .. method:: TransferInfo.AddTransferBase()
 
-    Добавляет :doc:`новый элемент <TransferBase>` в коллекцию *TransferBases* и возвращает его
+    Добавляет :doc:`новый элемент <TransferBase>` в коллекцию **TransferBases** и возвращает его
 
 
 .. method:: TransferInfo.AddWaybill()
 
-    Добавляет :doc:`новый элемент <Waybill>` в коллекцию *Waybills* и возвращает его
+    Добавляет :doc:`новый элемент <Waybill>` в коллекцию **Waybills** и возвращает его

@@ -34,4 +34,4 @@ SendDraftTask
 
 .. method:: SendDraftTask.AddExtendedSigner()
 
-    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию *ExtendedSigners* и возвращает его
+    Добавляет :doc:`новый элемент <ExtendedSigner>` в коллекцию **ExtendedSigners** и возвращает его

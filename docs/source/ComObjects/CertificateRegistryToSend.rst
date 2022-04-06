@@ -26,4 +26,4 @@ CertificateRegistryToSend
   **Строка, чтение/запись** - номер документа
 
 :Content:
-    :doc:`Descriptions/Empty_Com_Object` **, чтение** - представление контента
+    :doc:`./Descriptions/EmptyVariant` **, чтение** - представление контента
