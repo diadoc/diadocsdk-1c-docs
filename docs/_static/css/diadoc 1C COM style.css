@@ -136,7 +136,8 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 }
 
 
-/* Прячем вкладку "On Read the Docs" и "On GitHub"*/
+/* Прячем секции "On Read the Docs" и "On GitHub" в меню версий*/
+/* https://docs.readthedocs.io/en/stable/guides/remove-edit-buttons.html */
 
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3),
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
