@@ -1,0 +1,16 @@
+5.22.1
+------
+
+.. feed-entry::
+  :date: 2018-08-09
+
+.. rubric:: Добавлено
+
+* Добавлено свойтсво **CanCreateDocuments** в объект :doc:`../../ComObjects/UserPermissions`
+
+
+.. rubric:: Исправлено
+
+* Метод :meth:`Document.SaveAllContent` не сохранял печатную форму для документа *дополнительное соглашение*/``SupplementaryAdreement``
+* Неправильно сериализовалось поле **Total** объекта :doc:`../../ComObjects/InvoiceTotalsDiff`
+* При десериализации :doc:`../../ComObjects/Act552WorkItem` значение **TaxRate** учитывает значение свойства **Vat**

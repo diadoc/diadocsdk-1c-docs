@@ -1,0 +1,9 @@
+5.10.1
+------
+
+.. feed-entry::
+  :date: 2016-12-07
+
+.. rubric:: Исправлено
+
+* Не работал метод :meth:`Document.GetRecipientSignature` для *УПД*

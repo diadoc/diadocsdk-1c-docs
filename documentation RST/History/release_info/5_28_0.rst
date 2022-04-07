@@ -1,0 +1,42 @@
+5.28.0
+------
+
+.. feed-entry::
+  :date: 2019-07-24
+
+
+.. rubric:: Добавлено
+
+* Поддержка приказа `ФНС от 8 апреля 2019 г. N ММВ-7-15/176@ <https://normativ.kontur.ru/document?moduleId=1&documentId=339376>`_ :
+
+  * Обновлены версии документов отправляемые объектами :doc:`../../ComObjects/PackageSendTask` и :doc:`../../ComObjects/SendTask`
+  * Обновлены методы:
+
+    * :meth:`Invoice.GetContent`
+    * :meth:`InvoiceRevision.GetContent`
+    * :meth:`InvoiceCorrection.GetContent`
+    * :meth:`InvoiceCorrectionRevision.GetContent`
+    * :meth:`XmlAcceptanceCertificate.GetContent`
+    * :meth:`XmlAcceptanceCertificate.GetBuyerContent`
+    * :meth:`XmlTorg12.GetContent`
+    * :meth:`XmlTorg12.GetBuyerContent`
+    * :meth:`Utd.GetContent`
+    * :meth:`Utd.GetBuyerContent`
+    * :meth:`UtdRevision.GetContent`
+    * :meth:`UtdRevision.GetBuyerContent`
+    * :meth:`Ucd.GetContent`
+    * :meth:`Ucd.GetBuyerContent`
+    * :meth:`UcdRevision.GetContent`
+    * :meth:`UcdRevision.GetBuyerContent`
+
+
+.. rubric:: Изменено
+
+* Поиск полей и методов в :doc:`../../ComObjects/DynamicContent` стал регистронезависимым
+* Доступ к свойству **HasCustomPrintForm** объекта :doc:`../../ComObjects/Document` стал ленивым
+
+
+.. rubric:: Исправлено
+
+* Метод :meth:`Document.GetAnyComment` с параметром ``RecipientAttachmentComment`` возвращал комментарий к титулу отправителя, а не получателя
+* Подпись для входящего двухтитульного документа, созданного из шаблона с предзаполненным титулом получателя, формировалась на основе титула отправителя, а не получателя

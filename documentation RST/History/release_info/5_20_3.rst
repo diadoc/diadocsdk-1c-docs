@@ -1,0 +1,42 @@
+5.20.3
+------
+
+.. feed-entry::
+  :date: 2018-02-06
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`Document.GetAnyComment`
+* Добавлено свойство **Revised** в объекты :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/Ucd`
+* Добавлено свойство **Corrected** в объекты :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/Ucd`
+
+.. rubric:: Изменено
+
+* Методы :meth:`Organization.GetCounteragentById` и :meth:`Organization.GetCounteragentListByInnKpp` используют `/V2/GetCounteragent <http://api-docs.diadoc.ru/ru/latest/http/GetCounteragent.html#v2>`_
+* Метод :meth:`Counteragnet.AcquireCounteragent` стал блокирующим - теперь ожидается зхавершение асинххронного вызова со стороны Api Diadoc и выбрасывает исключение в случае получение кода ошибки со стороны ядра Диадок
+* Поле **AddressText** объекта :doc:`../../ComObjects/AddressInfo` теперь может использоваться для задания иностранного адреса или неструктурированого российского адреса
+* Улучшена совместимость COM-компоненты с *Microsoft VB6* и *Microsoft VBA*
+
+
+* Помечены устаревшими:
+
+  * :meth:`InvoiceCorrectionRevision.GetAmendmentRequestedComment`
+  * :meth:`InvoiceCorrection.GetAmendmentRequestedComment`
+  * :meth:`InvoiceRevision.GetAmendmentRequestedComment`
+  * :meth:`Invoice.GetAmendmentRequestedComment`
+  * :meth:`UtdRevision.GetAmendmentRequestedComment`
+  * :meth:`Utd.GetAmendmentRequestedComment`
+  * :meth:`UcdRevision.GetAmendmentRequestedComment`
+  * :meth:`Ucd.GetAmendmentRequestedComment`
+  * :meth:`Document.GetComment`
+  * :meth:`XmlAcceptanceCertificate.GetRejectionComment`
+  * :meth:`NonformalizedTorg12.GetRejectionComment`
+  * :meth:`NonformalizedAcceptanceCertificate.GetRejectionComment`
+  * :meth:`XmlTorg12.GetRejectionComment`
+  * :meth:`Contract.GetRejectionComment`
+  * :meth:`Nonformalized.GetRejectionComment`
+
+
+.. rubric:: Исправлено
+
+* У :doc:`../../ComObjects/ContractToSend` не заполнялось свойство **FileName** и *Договор* было невозможно отправить

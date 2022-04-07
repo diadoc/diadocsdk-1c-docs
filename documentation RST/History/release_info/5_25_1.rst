@@ -1,0 +1,14 @@
+5.25.1
+------
+
+.. feed-entry::
+  :date: 2018-12-07
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`Organization.RestoreDocument`
+
+.. rubric:: Исправлено
+
+* Метод :meth:`Document.CreateReplySendTask` вызвал ошибку ``Access to Box is denied``
+* Исправлена совместимость с Windows XP

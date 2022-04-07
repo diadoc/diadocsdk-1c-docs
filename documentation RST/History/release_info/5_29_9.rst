@@ -1,0 +1,39 @@
+5.29.9
+------
+
+.. feed-entry::
+  :date: 2020-02-05
+
+
+.. rubric:: Добавлено
+
+* Добавлен метод получения контента документа до его отправки :meth:`DocumentToSend.SaveContent`
+
+
+* Добавлена информация об отклонении шаблона:
+
+  * В объект :doc:`../../ComObjects/Entity` доабвлено поле **TemplateRefusalInfo**
+  * Добавлен объект :doc:`../../ComObjects/TemplateRefusal`
+
+
+* Добавлена работа с полями и методами COM-объектов через :doc:`../../ComObjects/Reflector`:
+
+  * Добавлен объект :doc:`../../ComObjects/MethodDesc`
+  * Добавлен объект :doc:`../../ComObjects/ArgPack`
+  * Добавлен метод :meth:`TypeDesc.GetMethodsNames`
+  * Добавлен метод :meth:`TypeDesc.GetMethodDesc`
+  * Добавлен метод :meth:`TypeDesc.CreateArgs`
+  * Добавлен метод :meth:`TypeDesc.InvokeMethod`
+  * Добавлен метод :meth:`TypeDesc.SetProperty`
+  * Добавлен метод :meth:`TypeDesc.GetProperty`
+
+
+
+.. rubric:: Изменено
+
+* Более гибкая и быстрая работа с внутренним хранилищем ключей-значений:
+
+  * Добавлен объект :doc:`../../ComObjects/KeyValue`
+  * Добавлен объект :doc:`../../ComObjects/DataTask`
+  * Добавлен метод :meth:`Organization.CreateDataTask`
+  * Методы :meth:`Organization.GetData` и :meth:`Organization.SetData` помечены устаревшими

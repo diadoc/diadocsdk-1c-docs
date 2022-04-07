@@ -1,0 +1,48 @@
+5.32.0
+======
+
+.. feed-entry::
+  :date: 2020-10-20
+
+
+.. rubric:: Добавлено
+
+* Добавлена возможность просмотра внешнего статуса документооборота у документа (в том числе статус маркированной продукции ЦРПТ):
+
+  * Добавлены объект :doc:`../../ComObjects/ErrorCode`, :doc:`../../ComObjects/ExternalStatusLite`, :doc:`../../ComObjects/ExternalStatus`
+  * В объект :doc:`../../ComObjects/Document` добавлено поле **LastExternalStatuses**
+  * В объект :doc:`../../ComObjects/Document` добавлен метод :meth:`Document.GetExternalStatuses`
+
+
+* В объект :doc:`../../ComObjects/DiadocAPI` добавлено поле **AutoLogonPolicy** для указания `политики передачи авторизационных данных в запросах <https://docs.microsoft.com/en-us/windows/win32/winhttp/authentication-in-winhttp#automatic-logon-policy>`_
+* В объект :doc:`../../ComObjects/DiadocAPI` добавлено поле **VerifySslCertificate** для установки флага проверки SSL сертиифкатов при выполнении запросов
+
+
+
+.. rubric:: Изменено
+
+* Изменён набор :doc:`типов резолюций <../../ComObjects/Enums/ResolutionType>`:
+
+  * добавлен тип ``ApprovementSignatureRequest``
+  * добавлен тип ``ApprovementSignature``
+  * добавлен тип ``RevocationSignatureRequest``
+  * добавлен тип ``RevocationApprovementSignatureRequest``
+  * добавлен тип ``RevocationAgreementRequest``
+  * добавлен тип ``RevocationAgreementApprove``
+  * добавлен тип ``RevocationAgreementDisapprove``
+  * добавлен тип ``Custom``
+  * значение ``SignatureDisapprove`` теперь означает отказ в запросе любой из подписей по документу или аннулированию, а не только отказ в запросе конечной подписи по документу
+
+* Изменён набор :doc:`типов запросов резолюций <../../ComObjects/Enums/ResolutionRequestType>`:
+
+  * добавлен тип ``RevocationSignatureRequest``
+  * добавлен тип ``RevocationApprovementSignatureRequest``
+  * добавлен тип ``RevocationAgreementRequest``
+
+
+
+.. rubric:: Исправлено
+
+* Исправлены различные ошибки работы компоненты через прокси-сервер
+* Исправлены многичисленные ошибки в формировании коллекций **Resolutions**, **ResolutionRequests**, **ResolutionRequestDenials** объекта :doc:`../../ComObjects/Document`
+* Поле **DocumentDirection** объекта :doc:`../../ComObjects/DocumentEvent` всегда имело значение ``Inbound``

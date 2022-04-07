@@ -1,0 +1,31 @@
+5.16.0
+------
+
+.. feed-entry::
+  :date: 2017-04-10
+
+.. rubric:: Добавлено
+
+* Поддержка *УКД*:
+
+  * Добавлен объект :doc:`../../ComObjects/Ucd`
+  * Добавлен объект :doc:`../../ComObjects/UcdRevision`
+  * Добавлен объект :doc:`../../ComObjects/UcdToSend`
+  * Добавлен объект :doc:`../../ComObjects/UcdSellerContent`
+
+
+.. rubric:: Изменено
+
+* В методе :meth:`Organization.GetExtendedSignerDetails` появился параметр **ForCorrection**
+* В объект :meth:`../../ComObjects/SetExtendedSignerDetailsTask` добавлен реквизит **ForCorrection**
+* Методы :meth:`AcquireCounteragentTask.Send` и :meth:`AcquireCounteragentTask.SendAsync` возвращают идентификатор организации
+* В объектах :doc:`../../ComObjects/SendTask` и :doc:`../../ComObjects/PackageSendTask` добавлен реквизит **UseShelf** - признак отправки документов по частям
+* Изменена сигнатура метода :meth:`Organization.CanSendInvoice`
+
+
+.. rubric:: Исправлено
+
+* В COM-компоненте объект :doc:`../../ComObjects/DocumentsTask` не находил в ящике *ИУПД*
+* У объектов :doc:`../../ComObjects/Utd` и :doc:`../../ComObjects/UtdRevision` свойство **Type** было пустым
+* В объекте :doc:`../../ComObjects/InvoiceContent` указание значений по умолчанию в **InvoiceRevisionDate** или **InvoiceRevisionNumber** изменяло тип документа на *ИСФ*
+* Исправлены значения свойства **Type** объекта :doc:`../../ComObjects/DocumentEvent` для событий документов *УПД* и *УКД*
