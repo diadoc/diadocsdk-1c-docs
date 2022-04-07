@@ -134,3 +134,11 @@ html.writer-html5 .rst-content dl[class]:not(.option-list):not(.field-list):not(
 .rst-content thead {
     border: groove;
 }
+
+
+/* Прячем вкладку "On Read the Docs" и "On GitHub"*/
+
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3),
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
+    display: none;
+}

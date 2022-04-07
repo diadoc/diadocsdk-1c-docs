@@ -76,7 +76,7 @@ MyEmployee
 
     :PowerOfAttorney: :doc:`PowerOfAttorney` объект доверенности
 
-    Отвязывает довереность от текущего сотрудника
+    Отвязывает доверенность от текущего сотрудника
 
 
 .. method:: MyEmployee.CanSendInvoice()
