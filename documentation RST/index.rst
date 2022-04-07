@@ -24,6 +24,7 @@
 .. toctree::
    :name: main
    :caption: Оглавление
+   :maxdepth: 1
 
    HowTo/HowTo
    History/History
