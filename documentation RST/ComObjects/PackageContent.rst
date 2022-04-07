@@ -6,6 +6,8 @@ PackageContent
 
 .. versionadded:: 5.3.0
 
+.. deprecated:: 5.27.0
+
 
 .. rubric:: Свойства
 
