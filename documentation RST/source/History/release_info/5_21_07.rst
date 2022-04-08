@@ -1,0 +1,15 @@
+5.21.7
+------
+
+.. feed-entry::
+  :date: 2018-05-29
+
+.. rubric:: Добавлено
+
+* Логирование ошибок, возникающих в ходе работы :doc:`../../ComObjects/ReceiptGenerationProcess`
+* Добавлен объект :doc:`../../ComObjects/ReceiptError`
+
+.. rubric:: Изменено
+
+* Метод :meth:`Organization.GetDocumentEventList` стал быстрее и стал возвращать события, не изменяющие статус документа
+* Добавлено новое значение свойства **EventType** объекта :doc:`../../ComObjects/DocumentEvent` - ``MetaModify``

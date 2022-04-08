@@ -1,0 +1,20 @@
+5.29.7
+------
+
+.. feed-entry::
+  :date: 2019-12-18
+
+.. rubric:: Изменено
+
+* Методы :meth:`Torg12SellerContent.SaveExternalCodes` и :meth:`AcceptanceCertificateSellerContent.SaveExternalCodes` больше не выполняют никаких действий
+
+
+.. rubric:: Исправлено
+
+* Утечка памяти в методе :meth:`Reflector.Describe`
+* Утечка памяти при получении строковых полей :doc:`../../ComObjects/DynamicContent`'а
+* 1С 8.x использовала под кэш :doc:`../../ComObjects/DynamicContent`'ов всю доступную память
+* В ``AddIn``-компоненте поле :doc:`../../ComObjects/Department`. :doc:`Address <../../ComObjects/AddressInfo>` всегда было пустым
+* Вызов асинхронных методов в нескольких потоках мог приводить к ``AppCrash``
+* При подписании больших файлов из черновиков, формировалась некорректная подпись
+* В ``COM``-компоненте результат асинхронной операции методов :meth:`Organization.GetCounteragentListByInnList`, :meth:`Organization.GetCounteragentListByStatusAsync` всегда был пустой :doc:`коллекцией <../../ComObjects/Collection>`
