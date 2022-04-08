@@ -5,10 +5,10 @@ from sys import path as PATH_variable
 from os import path
 import pathlib as pl
 
-html_static_path = ['_static']
+html_static_path = ['../conf/_static']
 html_style = 'css/diadoc 1C COM style.css'
 
-PATH_variable.append(path.abspath('_extensions'))
+PATH_variable.append(path.abspath('../conf/_extensions'))
 extensions = [
     'sphinxcontrib.newsfeed',
     'sphinx_tabs.tabs',

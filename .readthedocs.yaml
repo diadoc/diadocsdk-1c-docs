@@ -20,5 +20,5 @@ python:
 
 sphinx:
     builder: html
-    configuration: "documentation RST/conf/conf.py"
+    configuration: "documentation RST/source/conf.py"
     fail_on_warning: true
