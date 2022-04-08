@@ -18,12 +18,7 @@ primary_domain = 'com-object'
 source_suffix = '.rst'
 exclude_patterns = []
 
-root_path = pl.Path(__file__).parents[1]
-source_path = root_path / 'source'
-print('source_path: ', source_path)
-master_doc_path = source_path / 'index'
-print('master_path: ', master_doc_path)
-master_doc = str(master_doc_path)
+master_doc = 'index'
 
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
