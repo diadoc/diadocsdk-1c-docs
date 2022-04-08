@@ -1,0 +1,9 @@
+5.26.2
+------
+
+.. feed-entry::
+  :date: 2019-03-12
+
+.. rubric:: Изменено
+
+* Утечка памяти в методе :meth:`Organization.GetCounteragentListByInnList`, приводящая к AppCrash

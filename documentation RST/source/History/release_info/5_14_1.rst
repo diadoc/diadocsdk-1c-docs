@@ -1,0 +1,9 @@
+5.14.1
+------
+
+.. feed-entry::
+  :date: 2017-02-21
+
+.. rubric:: Исправлено
+
+* В COM-компоненте: При создании :doc:`../../ComObjects/SendTask` методами :meth:`Organization.CreateSendTaskFromFile` и :meth:`Organization.CreateSendTaskFromFileRaw` невозможно отправить документы - ошибка ``Message has no attachments``

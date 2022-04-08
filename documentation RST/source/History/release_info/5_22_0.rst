@@ -1,0 +1,22 @@
+5.22.0
+------
+
+.. feed-entry::
+  :date: 2018-07-31
+
+.. rubric:: Добавлено
+
+* Добавлен метод :meth:`Document.SaveBuyerContent`
+
+.. rubric:: Изменено
+
+* В COM-компоненте пустая дата изменена на ``01.01.0001 00:00:00``, как в AddIn-компоненте
+* **Type** объекта :doc:`../../ComObjects/DocumentEvent` для события с появлением ИоП изменено на ``Accept`` вместо ``Confirmation``
+
+.. rubric:: Исправлено
+
+* Метод :meth:`PackageSendTask.Send` не возвращал в результате документы, отпрвленные с типом ``SupplementaryAgreement``
+* Поле **TaxRat** объекта :doc:`../../ComObjects/Act552WorkItem` десериализовалось как ``18%`` вместо ``без НДС``
+* Метод :meth:`Organization.GetDocumentEventList` не возвращал события ``New`` для документов, пришелших внутри патча к другому документу
+* Метод :meth:`Organization.GetDocumentEventList` неправильно определял **DocumentId** объекта :doc:`../../ComObjects/DocumentEvent`
+* Некоторые методы игнорировали настройки прокси

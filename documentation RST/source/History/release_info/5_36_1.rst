@@ -1,0 +1,11 @@
+5.36.1
+======
+
+
+.. feed-entry::
+  :date: 2021-10-27
+
+
+.. rubric:: Исправлено
+
+* Поля **InitialDocumentIds** и **SubordinateDocumentIds** объекта :doc:`../../ComObjects/DocumentBase` были :doc:`коллекцией <../../ComObjects/Collection>` булевых значений, а не строк

@@ -1,0 +1,21 @@
+5.18.5
+------
+
+.. feed-entry::
+  :date: 2017-08-14
+
+
+.. rubric:: Изменено
+
+* Обновлены протобуферы
+* Поле **TotalWithVatExcluded** объекта :doc:`../../ComObjects/InvoiceItemFields` стало необязательным для заполнения
+* Свойство **Type** объекта :doc:`../../ComObjects/BaseContent` при отправке *Акта*, *Торг-12*, *Счёта-фактуры* с УПД-контентом имеет значение ``UniversalTransferDocument``, вместо ``UtdAcceptanceCertificate``, ``UtdTorg12`` и ``UtdInvoice`` соответственно
+
+
+.. rubric:: Исправлено
+
+* Метод :meth:`Organization.GetExtendedSignerDetails` и объект :doc:`../../ComObjects/SetExtendedSignerDetailsTask` не поддерживали работу с данными подписанта *УКД*
+* Исправлена ганерация контента формализованных отказов в подписи
+* В COM-компоненте некооректное обращение к памяти в методе :meth:`OutDocumentSignTask.AddExtendedSigner`
+* Зависание компоненты, если заданы неверные реквизиты прокси
+* Метод :meth:`Document.GetRecipientSignature` не возвращал подпись для неформализованных документов

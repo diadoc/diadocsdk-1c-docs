@@ -1,0 +1,12 @@
+5.8.0
+-----
+
+.. feed-entry::
+  :date: 2016-10-26
+
+
+.. rubric:: Добавлено
+
+* AddIn x64 компонента
+* Добавлен метод :meth:`Document.SaveAllContentZip`
+* Добавлен метод :meth:`Document.SaveAllContentZipAsync`

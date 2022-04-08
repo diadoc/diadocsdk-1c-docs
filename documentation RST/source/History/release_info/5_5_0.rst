@@ -1,0 +1,31 @@
+5.5.0
+-----
+
+.. feed-entry::
+  :date: 2016-02-15
+
+.. rubric:: Добавлено
+
+* Отправка пакета документов:
+
+  * Добавлен объект :doc:`../../ComObjects/PackageSendTask`
+  * Добавлен объект :doc:`../../ComObjects/DocumentToSend` и его наследники
+  * Добавлен объект :doc:`../../ComObjects/SentPackageContent`
+  * Добавлен метод :meth:`Organization.CreatePackageSendTask`
+
+* Добавлен метод :meth:`Organization.SetData`
+* Добавлен метод :meth:`Organization.GetData`
+
+
+.. rubric:: Изменено
+
+* Добавлен параметр **UsePersonalStore** в метод :meth:`DiadocAPI.GetPersonalCertificates`
+
+* Устаревшими считаются:
+
+  * :doc:`../../ComObjects/SendTask`
+  * :meth:`Organization.CreateSendTask`
+  * :meth:`Organization.SetAndValidateAddressForCounteragent`
+  * :meth:`Organization.GetAddressForCounteragent`
+  * :meth:`Organization.GetSentDocuments`
+  * :meth:`Torg12SellerContent.SaveExternalCodes`
