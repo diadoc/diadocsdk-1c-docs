@@ -1,0 +1,9 @@
+5.1.1
+-----
+
+.. feed-entry::
+  :date: 2015-08-11
+
+.. rubric:: Исправлено
+
+* Исправлена валидация :doc:`адреса <../../ComObjects/AddressInfo>` в счёте-фактуре согласно приказу `ММВ-7-6/93@ <https://normativ.kontur.ru/document?moduleId=1&documentId=249567>`_ - поставлено ограничение ``20`` вместо ``8`` на длину полей **Building**, **Block**, **Appartment**

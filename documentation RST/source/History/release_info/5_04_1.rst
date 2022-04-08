@@ -1,0 +1,9 @@
+5.4.1
+-----
+
+.. feed-entry::
+  :date: 2016-03-15
+
+.. rubric:: Исправлено
+
+* При отправке КСФ возникала ошибка ``[Ошибка сервера Диадок]code:400, HTTP error: Could not parse InvoiceCorrectionInfo.Items[0].OriginalValues.Excise: без акциза``

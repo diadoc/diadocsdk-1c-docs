@@ -1,0 +1,9 @@
+5.4.0
+-----
+
+.. feed-entry::
+  :date: 2016-01-22
+
+.. rubric:: Добавлено
+
+* Реквизит **IsRoaming** объекта :doc:`../../ComObjects/Counteragent`
