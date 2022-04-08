@@ -1,8 +1,3 @@
-1C/
-Docs/Build/
 compile_doc.bat
 *.bat
-docs/source/_extensions/__pycache__/
-docs/.idea/
-.idea/
-/docs/_extensions/__pycache__
+*.pyc

@@ -5,7 +5,6 @@ version: 2
 
 formats:
     - pdf
-#    - htmlzip
 
 
 build:
@@ -21,5 +20,5 @@ python:
 
 sphinx:
     builder: html
-    configuration: "documentation RST/conf.py"
+    configuration: "documentation RST/conf/conf.py"
     fail_on_warning: true

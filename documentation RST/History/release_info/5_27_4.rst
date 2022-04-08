@@ -1,9 +1,0 @@
-5.27.4
-------
-
-.. feed-entry::
-  :date: 2019-07-02
-
-.. rubric:: Исправлено
-
-* В COM-компоненте отсутствовало свойство **Content** объекта :doc:`../../ComObjects/CustomDocumentToSend`

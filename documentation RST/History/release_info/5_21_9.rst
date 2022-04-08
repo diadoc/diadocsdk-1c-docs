@@ -1,9 +1,0 @@
-5.21.9
-------
-
-.. feed-entry::
-  :date: 2018-06-20
-
-.. rubric:: Исправлено
-
-* Метод :meth:`Organization.GetDocumentEventList` не возвращал события, связанные с патчингом документов
