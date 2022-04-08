@@ -141,16 +141,16 @@ Organization
         .. csv-table::
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
-            :meth:`Organization.CreateSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_5_0`, :doc:`../History/release_info/5_33_4`
-            :meth:`Organization.CreateSendTaskFromFile`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_5_0`, :doc:`../History/release_info/5_33_4`
-            :meth:`Organization.CreateSendTaskFromFileRaw`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_5_0`, :doc:`../History/release_info/5_33_4`
+            :meth:`Organization.CreateSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_05_0`, :doc:`../History/release_info/5_33_4`
+            :meth:`Organization.CreateSendTaskFromFile`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_05_0`, :doc:`../History/release_info/5_33_4`
+            :meth:`Organization.CreateSendTaskFromFileRaw`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_05_0`, :doc:`../History/release_info/5_33_4`
             :meth:`Organization.CreatePackageSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`../History/release_info/5_27_0`,
             :meth:`Organization.SendDraftAsync`, :meth:`Organization.CreateSendDraftTask`, :doc:`../History/release_info/5_18_0`, :doc:`../History/release_info/5_36_8`
-            :meth:`Organization.SetAndValidateAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_5_0`,
-            :meth:`Organization.GetSentDocuments`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_5_0`,
-            :meth:`Organization.SetData`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_29_9`,
-            :meth:`Organization.GetData`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_29_9`,
-            :meth:`Organization.GetAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_5_0`,
+            :meth:`Organization.SetAndValidateAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_05_0`,
+            :meth:`Organization.GetSentDocuments`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_05_0`,
+            :meth:`Organization.SetData`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_29_09`,
+            :meth:`Organization.GetData`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_29_09`,
+            :meth:`Organization.GetAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`../History/release_info/5_05_0`,
             :meth:`Organization.GetExtendedSignerDetails`, :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`, :doc:`../History/release_info/5_33_0`,
             :meth:`Organization.GetExtendedSignerDetails2`, :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`, :doc:`../History/release_info/5_37_0`,
             :meth:`Organization.SendFnsRegistrationMessage`, :meth:`MyEmployee.UpdateCertificateFNSRegistration` или :meth:`AdminTools.RegisterCertificateInFNS`, :doc:`../History/release_info/5_37_0`,

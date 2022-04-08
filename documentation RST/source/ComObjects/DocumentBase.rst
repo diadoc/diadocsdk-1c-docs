@@ -177,11 +177,11 @@ DocumentBase
     .. csv-table::
         :header: "Поле", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
-        AttachmentVersion,        **Version**,                                                                      :doc:`../History/release_info/5_21_0`,
-        Type,                     **TypeNamedId**,                                                                  :doc:`../History/release_info/5_21_0`,
+        AttachmentVersion,        **Version**,                                                                      :doc:`../History/release_info/5_21_00`,
+        Type,                     **TypeNamedId**,                                                                  :doc:`../History/release_info/5_21_00`,
         OrganizationId,           **OrganizationGuid**,                                                             :doc:`../History/release_info/5_31_0`,
         TimestampSeconds,         **Timestamp**,                                                                    :doc:`../History/release_info/5_30_2`,
-        Status,                   **DocflowStatus** или поля со статусами отдельных сущностей ,                     :doc:`../History/release_info/5_34_0`,
+        Status,                   **DocflowStatus** или поля со статусами отдельных сущностей,                      :doc:`../History/release_info/5_34_0`,
         HasCustomPrintForm,       :meth:`DetectCustomPrintForm() <DocumentBase.DetectCustomPrintForm>`,             :doc:`../History/release_info/5_35_0`,
         ResolutionRequests,       :meth:`GetResolutionRequests() <DocumentBase.GetResolutionRequests>`,             :doc:`../History/release_info/5_34_0`,
         Resolutions,              :meth:`GetResolutions() <DocumentBase.GetResolutions>`,                           :doc:`../History/release_info/5_34_0`,
@@ -306,10 +306,10 @@ DocumentBase
             :meth:`GetComment() <DocumentBase.GetComment>`,                                           :meth:`DocumentBase.GetAnyComment`,        :doc:`../History/release_info/5_20_3`, 
             :meth:`GetRejectionComment() <DocumentBase.GetRejectionComment>`,                         :meth:`DocumentBase.GetAnyComment`,        :doc:`../History/release_info/5_20_3`, 
             :meth:`GetAmendmentRequestedComment() <DocumentBase.GetAmendmentRequestedComment>`,       :meth:`DocumentBase.GetAnyComment`,        :doc:`../History/release_info/5_20_3`, 
-            :meth:`SetOneSDocumentId() <DocumentBase.SetOneSDocumentId>`,                             :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_9`, 
-            :meth:`ReSetOneSDocumentId() <DocumentBase.ReSetOneSDocumentId>`,                         :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_9`, 
-            :meth:`AddSubordinateOneSDocumentId() <DocumentBase.AddSubordinateOneSDocumentId>`,       :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_9`, 
-            :meth:`RemoveSubordinateOneSDocumentId() <DocumentBase.RemoveSubordinateOneSDocumentId>`, :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_9`, 
+            :meth:`SetOneSDocumentId() <DocumentBase.SetOneSDocumentId>`,                             :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_09`, 
+            :meth:`ReSetOneSDocumentId() <DocumentBase.ReSetOneSDocumentId>`,                         :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_09`, 
+            :meth:`AddSubordinateOneSDocumentId() <DocumentBase.AddSubordinateOneSDocumentId>`,       :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_09`, 
+            :meth:`RemoveSubordinateOneSDocumentId() <DocumentBase.RemoveSubordinateOneSDocumentId>`, :meth:`DocumentBase.CreateDataTask`,       :doc:`../History/release_info/5_29_09`, 
 
 
         .. method:: DocumentBase.GetContent()

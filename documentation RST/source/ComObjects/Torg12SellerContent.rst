@@ -99,7 +99,7 @@ Torg12SellerContent
         .. csv-table::
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
-            :meth:`SaveExternalCodes() <Torg12SellerContent.SaveExternalCodes>`, :meth:`DataTask.SetData`, :doc:`../History/release_info/5_5_0`,
+            :meth:`SaveExternalCodes() <Torg12SellerContent.SaveExternalCodes>`, :meth:`DataTask.SetData`, :doc:`../History/release_info/5_05_0`,
 
         .. method:: Torg12SellerContent.SaveExternalCodes()
 

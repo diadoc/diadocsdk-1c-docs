@@ -10,8 +10,8 @@ html_style = 'css/diadoc 1C COM style.css'
 
 PATH_variable.append(path.abspath('../conf/_extensions'))
 extensions = [
-    'sphinxcontrib.newsfeed',
     'sphinx_tabs.tabs',
+    'custom_newsfeed',
     'CComDomain'
 ]
 primary_domain = 'com-object'

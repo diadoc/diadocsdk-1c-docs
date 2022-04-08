@@ -72,7 +72,7 @@ DiadocAPI
             :header: "Метод", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
             :meth:`TestConnection() <DiadocAPI.TestConnection>`, :meth:`TestConnection2() <DiadocAPI.TestConnection2>`, :doc:`../History/release_info/5_26_3`,
-            :meth:`GetVersion() <DiadocAPI.GetVersion>`, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`, :doc:`../History/release_info/5_29_4`,
+            :meth:`GetVersion() <DiadocAPI.GetVersion>`, :meth:`GetFullVersion() <DiadocAPI.GetFullVersion>`, :doc:`../History/release_info/5_29_04`,
             :meth:`CreateConnectionByCertificate() <DiadocAPI.CreateConnectionByCertificate>`, :meth:`CreateConnectionByCertificate2() <DiadocAPI.CreateConnectionByCertificate2>`, :doc:`../History/release_info/5_37_0`,
 
 

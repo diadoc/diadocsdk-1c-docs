@@ -12,14 +12,6 @@
 * `COM x64 <https://diadoc-api.kontur.ru/1c-addin/for_integrators/DiadocCom_latest_x64.zip>`_
 
 
-.. important::
-    Доступна предварительная версия следующей ревизии компоненты.
-
-    **Внимание!** Обратная совместимость сохранена частично.
-
-    `v6.0.0-RC1 <https://diadoccom-1c.readthedocs.io/en/latest/>`_
-
-
 .. rubric:: Устаревшие методы и свойства объектов
 
 
@@ -34,136 +26,71 @@
   * :meth:`DocumentPackage.CreateReplySendTask`
 
 
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| **Метод или свойство**                                        | **Когда устарел**                  | **Когда удалён**                   | **Рекомендуемая альтернатива**                                                                                  |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DiadocAPI.TestConnection`                              | :doc:`History/release_info/5_26_3` |                                    | :meth:`DiadocAPI.TestConnection2`                                                                               |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DiadocAPI.GetVersion`                                  | :doc:`History/release_info/5_29_4` |                                    | :meth:`DiadocAPI.GetFullVersion`                                                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DiadocAPI.CreateConnectionByCertificate`               | :doc:`History/release_info/5_37_0` |                                    | :meth:`DiadocAPI.CreateConnectionByCertificate2`                                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Connection`. **Login**                       | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Connection`. **SessionInfo.Login**                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Connection`. **AuthenticateType**            | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Connection`. **SessionInfo.AuthenticationType**                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Connection`. **Certificate**                 | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Connection`. **SessionInfo.Certificate**                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Connection`. **Token**                       | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Connection`. **SessionInfo.Token**                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Connection.CreateCloudSignTask`                        | :doc:`History/release_info/5_26_0` | :doc:`History/release_info/5_33_0` |                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Connection.GetCloudCertificates`                       | :doc:`History/release_info/5_26_0` | :doc:`History/release_info/5_33_0` |                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Organization`. **Id**                        | :doc:`History/release_info/5_31_0` |                                    | :doc:`ComObjects/Organization`. **Guid**                                                                        |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Organization`. **EncryptedDocumentsAllowed** | :doc:`History/release_info/5_32_4` |                                    | :meth:`Organization.GetFeatures`                                                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Organization`. **AuthenticateType**          | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Organization`. **MyEmployee.SessionInfo.AuthenticationType**                                   |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Organization`. **Login**                     | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Organization`. **MyEmployee.SessionInfo.Login**                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Organization`. **Certificate**               | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Organization`. **MyEmployee.SessionInfo.Certificate**                                          |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CreateSendTask`                           | :doc:`History/release_info/5_5_0`  | :doc:`History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CreateSendTaskFromFile`                   | :doc:`History/release_info/5_5_0`  | :doc:`History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CreateSendTaskFromFileRaw`                | :doc:`History/release_info/5_5_0`  | :doc:`History/release_info/5_33_4` | :meth:`Organization.CreatePackageSendTask2`                                                                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CreatePackageSendTask`                    | :doc:`History/release_info/5_27_0` |                                    | :meth:`Organization.CreatePackageSendTask2`                                                                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.SendDraftAsync`                           | :doc:`History/release_info/5_18_0` | :doc:`History/release_info/5_36_8` | :meth:`Organization.CreateSendDraftTask`                                                                        |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.SetAndValidateAddressForCounteragent`     | :doc:`History/release_info/5_5_0`  |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetSentDocuments`                         | :doc:`History/release_info/5_5_0`  |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.SetData`                                  | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetData`                                  | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetAddressForCounteragent`                | :doc:`History/release_info/5_5_0`  |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetExtendedSignerDetails`                 | :doc:`History/release_info/5_33_0` |                                    | :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetExtendedSignerDetails2`                | :doc:`History/release_info/5_37_0` |                                    | :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.SendFnsRegistrationMessage`               | :doc:`History/release_info/5_37_0` |                                    | :meth:`MyEmployee.UpdateCertificateFNSRegistration` или :meth:`AdminTools.RegisterCertificateInFNS`             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetUsers`                                 | :doc:`History/release_info/5_37_0` |                                    | :meth:`Organization.GetEmployees`                                                                               |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.GetUserPermissions`                       | :doc:`History/release_info/5_37_0` |                                    | :doc:`ComObjects/Organization`. **MyEmployee.EmployeeInfo.Permissions**                                         |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CanSendInvoice`                           | :doc:`History/release_info/5_37_0` |                                    | :meth:`MyEmployee.CanSendInvoice` или :meth:`AdminTools.CanSendInvoice`                                         |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`Organization.CreateSetExtendedSignerDetailsTask`       | :doc:`History/release_info/5_37_0` |                                    | :meth:`MyEmployee.CreateSetExtendedSignerDetailsTask` или :meth:`AdminTools.CreateSetExtendedSignerDetailsTask` |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/BoxInfo`. **Id**                             | :doc:`History/release_info/5_31_0` |                                    | :doc:`ComObjects/BoxInfo`. **Guid**                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Counteragent`. **Id**                        | :doc:`History/release_info/5_31_0` |                                    | :doc:`ComObjects/Counteragent`. **Guid**                                                                        |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Counteragent`. **OrganizationId**            | :doc:`History/release_info/5_31_0` |                                    | :doc:`ComObjects/Counteragent`. **OrganizationGuid**                                                            |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/CustomDocumentToSend`. **IsEncrypted**       | :doc:`History/release_info/5_27_0` |                                    |                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **AttachmentVersion**         | :doc:`History/release_info/5_25_2` |                                    | :doc:`ComObjects/DocumentBase`. **Version**                                                                     |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **Type**                      | :doc:`History/release_info/5_25_2` |                                    | :doc:`ComObjects/DocumentBase`. **TypeNamedId**                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **OrganizationId**            | :doc:`History/release_info/5_31_0` |                                    | :doc:`ComObjects/DocumentBase`. **OrganizationGuid**                                                            |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **TimestampSeconds**          | :doc:`History/release_info/5_30_2` |                                    | :doc:`ComObjects/DocumentBase`. **Timestamp**                                                                   |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **Status**                    | :doc:`History/release_info/5_34_0` |                                    | Поля статусов из :doc:`ComObjects/DocumentBase`                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **Resolutions**               | :doc:`History/release_info/5_34_0` |                                    | :meth:`DocumentBase.GetResolutions`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **ResolutionRequests**        | :doc:`History/release_info/5_34_0` |                                    | :meth:`DocumentBase.GetResolutionRequests`                                                                      |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **ResolutionRequestDenials**  | :doc:`History/release_info/5_34_0` |                                    | :meth:`DocumentBase.GetResolutionRequestDenials`                                                                |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/DocumentBase`. **HasCustomPrintForm**        | :doc:`History/release_info/5_35_0` |                                    | :meth:`DocumentBase.DetectCustomPrintForm`                                                                      |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetContent`                               | :doc:`History/release_info/5_28_0` |                                    | :meth:`DocumentBase.GetDynamicContent`                                                                          |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetContentAsync`                          | :doc:`History/release_info/5_28_0` |                                    |                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetBuyerContent`                          | :doc:`History/release_info/5_28_0` |                                    | :meth:`DocumentBase.GetDynamicContent`                                                                          |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.CreateReplySendTask`                      | :doc:`History/release_info/5_27_0` |                                    | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.Accept`                                   | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.Reject`                                   | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.RejectAsync`                              | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.SendRevocationRequest`                    | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.AcceptRevocationRequest`                  | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.RejectRevocationRequest`                  | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.SendCorrectionRequest`                    | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.SendCorrectionRequestAsync`               | :doc:`History/release_info/5_27_0` | :doc:`History/release_info/5_37_0` | :meth:`DocumentBase.CreateReplySendTask2`                                                                       |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetComment`                               | :doc:`History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                                                                              |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetRejectionComment`                      | :doc:`History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                                                                              |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.GetAmendmentRequestedComment`             | :doc:`History/release_info/5_20_3` |                                    | :meth:`DocumentBase.GetAnyComment`                                                                              |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.SetOneSDocumentId`                        | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.ReSetOneSDocumentId`                      | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.AddSubordinateOneSDocumentId`             | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentBase.RemoveSubordinateOneSDocumentId`          | :doc:`History/release_info/5_29_9` |                                    | :meth:`Organization.CreateDataTask`                                                                             |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :meth:`DocumentPackage.CreateReplySendTask`                   | :doc:`History/release_info/5_27_0` |                                    | :meth:`DocumentPackage.CreateReplySendTask2`                                                                    |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
-| :doc:`ComObjects/Entity`. **AttachmentVersion**               | :doc:`History/release_info/5_25_2` |                                    |                                                                                                                 |
-+---------------------------------------------------------------+------------------------------------+------------------------------------+-----------------------------------------------------------------------------------------------------------------+
+.. csv-table::
+    :header: Метод или свойство,Рекомендуемая альтернатива, Когда устарел, Когда удалён
+
+    :meth:`DiadocAPI.TestConnection`, :meth:`DiadocAPI.TestConnection2`, :doc:`History/release_info/5_26_3`,
+    :meth:`DiadocAPI.GetVersion`, :meth:`DiadocAPI.GetFullVersion`, :doc:`History/release_info/5_29_04`,
+    :meth:`DiadocAPI.CreateConnectionByCertificate`, :meth:`DiadocAPI.CreateConnectionByCertificate2`, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Connection`.Login, :doc:`ComObjects/Connection`.SessionInfo.Login, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Connection`.AuthenticateType, :doc:`ComObjects/Connection`.SessionInfo.AuthenticationType, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Connection`.Certificate, :doc:`ComObjects/Connection`.SessionInfo.Certificate, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Connection`.Token, :doc:`ComObjects/Connection`.SessionInfo.Token, :doc:`History/release_info/5_37_0`,
+    :meth:`Connection.CreateCloudSignTask`, , :doc:`History/release_info/5_26_0`, :doc:`History/release_info/5_33_0`
+    :meth:`Connection.GetCloudCertificates`, , :doc:`History/release_info/5_26_0`, :doc:`History/release_info/5_33_0`
+    :doc:`ComObjects/Organization`.Id, :doc:`ComObjects/Organization`.Guid, :doc:`History/release_info/5_31_0`,
+    :doc:`ComObjects/Organization`.EncryptedDocumentsAllowed, :meth:`Organization.GetFeatures`, :doc:`History/release_info/5_32_4`,
+    :doc:`ComObjects/Organization`.AuthenticateType, :doc:`ComObjects/Organization`.MyEmployee.SessionInfo.AuthenticationType, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Organization`.Login, :doc:`ComObjects/Organization`.MyEmployee.SessionInfo.Login, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/Organization`.Certificate, :doc:`ComObjects/Organization`.MyEmployee.SessionInfo.Certificate, :doc:`History/release_info/5_37_0`,
+    :meth:`Organization.CreateSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`History/release_info/5_05_0`, :doc:`History/release_info/5_33_4`
+    :meth:`Organization.CreateSendTaskFromFile`, :meth:`Organization.CreatePackageSendTask2`, :doc:`History/release_info/5_05_0`, :doc:`History/release_info/5_33_4`
+    :meth:`Organization.CreateSendTaskFromFileRaw`, :meth:`Organization.CreatePackageSendTask2`, :doc:`History/release_info/5_05_0`, :doc:`History/release_info/5_33_4`
+    :meth:`Organization.CreatePackageSendTask`, :meth:`Organization.CreatePackageSendTask2`, :doc:`History/release_info/5_27_0`,
+    :meth:`Organization.SendDraftAsync`, :meth:`Organization.CreateSendDraftTask`, :doc:`History/release_info/5_18_0`, :doc:`History/release_info/5_36_8`
+    :meth:`Organization.SetAndValidateAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_05_0`,
+    :meth:`Organization.GetSentDocuments`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_05_0`,
+    :meth:`Organization.SetData`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_05_0`,
+    :meth:`Organization.GetData`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_05_0`,
+    :meth:`Organization.GetAddressForCounteragent`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_05_0`,
+    :meth:`Organization.GetExtendedSignerDetails`, :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`, :doc:`History/release_info/5_33_0`,
+    :meth:`Organization.GetExtendedSignerDetails2`, :meth:`MyEmployee.GetExtendedSignerDetails` или :meth:`AdminTools.GetExtendedSignerDetails`, :doc:`History/release_info/5_33_0`,
+    :meth:`Organization.SendFnsRegistrationMessage`, :meth:`MyEmployee.UpdateCertificateFNSRegistration` или :meth:`AdminTools.RegisterCertificateInFNS`, :doc:`History/release_info/5_37_0`,
+    :meth:`Organization.GetUsers`, :meth:`Organization.GetEmployees`, :doc:`History/release_info/5_37_0`,
+    :meth:`Organization.GetUserPermissions`, :doc:`ComObjects/Organization`.MyEmployee.EmployeeInfo.Permissions, :doc:`History/release_info/5_37_0`,
+    :meth:`Organization.CanSendInvoice`, :meth:`MyEmployee.CanSendInvoice` или :meth:`AdminTools.CanSendInvoice`, :doc:`History/release_info/5_37_0`,
+    :meth:`Organization.CreateSetExtendedSignerDetailsTask`, :meth:`MyEmployee.CreateSetExtendedSignerDetailsTask` или :meth:`AdminTools.CreateSetExtendedSignerDetailsTask`, :doc:`History/release_info/5_37_0`,
+    :doc:`ComObjects/BoxInfo`.Id, :doc:`ComObjects/BoxInfo`.Guid, :doc:`History/release_info/5_31_0`,
+    :doc:`ComObjects/Counteragent`.Id, :doc:`ComObjects/Counteragent`.Guid, :doc:`History/release_info/5_31_0`,
+    :doc:`ComObjects/Counteragent`.OrganizationId, :doc:`ComObjects/Counteragent`.OrganizationGuid, :doc:`History/release_info/5_31_0`,
+    :doc:`ComObjects/CustomDocumentToSend`.IsEncrypted, , :doc:`History/release_info/5_27_0`,
+    :doc:`ComObjects/DocumentBase`.AttachmentVersion, :doc:`ComObjects/DocumentBase`.Version, :doc:`History/release_info/5_25_2`,
+    :doc:`ComObjects/DocumentBase`.Type, :doc:`ComObjects/DocumentBase`.TypeNamedId, :doc:`History/release_info/5_25_2`,
+    :doc:`ComObjects/DocumentBase`.OrganizationId, :doc:`ComObjects/DocumentBase`.OrganizationGuid, :doc:`History/release_info/5_31_0`,
+    :doc:`ComObjects/DocumentBase`.TimestampSeconds, :doc:`ComObjects/DocumentBase`.Timestamp, :doc:`History/release_info/5_30_2`,
+    :doc:`ComObjects/DocumentBase`.Status, :doc:`ComObjects/DocumentBase`.DocflowStatus или поля со статусами отдельных сущностей, :doc:`History/release_info/5_34_0`,
+    :doc:`ComObjects/DocumentBase`.Resolutions, :meth:`DocumentBase.GetResolutions`, :doc:`History/release_info/5_34_0`,
+    :doc:`ComObjects/DocumentBase`.ResolutionRequests, :meth:`DocumentBase.GetResolutionRequests`, :doc:`History/release_info/5_34_0`,
+    :doc:`ComObjects/DocumentBase`.ResolutionRequestDenials, :meth:`DocumentBase.GetResolutionRequestDenials`, :doc:`History/release_info/5_34_0`,
+    :doc:`ComObjects/DocumentBase`.HasCustomPrintForm, :meth:`DocumentBase.DetectCustomPrintForm`, :doc:`History/release_info/5_35_0`
+    :meth:`DocumentBase.GetContent`, :meth:`DocumentBase.GetDynamicContent`, :doc:`History/release_info/5_28_0`,
+    :meth:`DocumentBase.GetContentAsync`, , :doc:`History/release_info/5_28_0`,
+    :meth:`DocumentBase.GetBuyerContent`, :meth:`DocumentBase.GetDynamicContent`, :doc:`History/release_info/5_28_0`,
+    :meth:`DocumentBase.CreateReplySendTask`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`,
+    :meth:`DocumentBase.Accept`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.Reject`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.RejectAsync`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.SendRevocationRequest`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.AcceptRevocationRequest`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.RejectRevocationRequest`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.SendCorrectionRequest`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.SendCorrectionRequestAsync`, :meth:`DocumentBase.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`, :doc:`History/release_info/5_37_0`
+    :meth:`DocumentBase.GetComment`, :meth:`DocumentBase.GetAnyComment`, :doc:`History/release_info/5_20_3`,
+    :meth:`DocumentBase.GetRejectionComment`, :meth:`DocumentBase.GetAnyComment`, :doc:`History/release_info/5_20_3`,
+    :meth:`DocumentBase.GetAmendmentRequestedComment`, :meth:`DocumentBase.GetAnyComment`, :doc:`History/release_info/5_20_3`,
+    :meth:`DocumentBase.SetOneSDocumentId`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_29_09`,
+    :meth:`DocumentBase.ReSetOneSDocumentId`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_29_09`,
+    :meth:`DocumentBase.AddSubordinateOneSDocumentId`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_29_09`,
+    :meth:`DocumentBase.RemoveSubordinateOneSDocumentId`, :meth:`Organization.CreateDataTask`, :doc:`History/release_info/5_29_09`,
+    :meth:`DocumentPackage.CreateReplySendTask`, :meth:`DocumentPackage.CreateReplySendTask2`, :doc:`History/release_info/5_27_0`,
+    :doc:`ComObjects/Entity`.AttachmentVersion, , :doc:`History/release_info/5_25_2`,

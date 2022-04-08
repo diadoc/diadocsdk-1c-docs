@@ -73,7 +73,7 @@ UcdRevision
     .. csv-table::
         :header: "Поле", "Рекомендуемая альтернатива", "Когда устарел", "Когда удалён"
 
-        Function, :doc:`DocumentBase`.DocumentFunction, :doc:`../History/release_info/5_21_0`,
+        Function, :doc:`DocumentBase`.DocumentFunction, :doc:`../History/release_info/5_21_00`,
         Status, :doc:`DocumentBase`.DocflowStatus или статусы отдельных сущностей документа, :doc:`../History/release_info/5_34_0`,
 
     :Function:
