@@ -2,7 +2,7 @@
 =================
 
 
-`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/dev/index.rss>`_
+`Новости RSS <http://diadocsdk-1c.readthedocs.io/ru/latest/index.rss>`_
 
 .. toctree::
     :reversed:
