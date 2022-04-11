@@ -22,11 +22,11 @@
 ``AddIn`` компонента работает на платформах **1С** версий **7.7**, **8.0**, **8.1**, **8.2** и **8.3**
 
 .. toctree::
-   :name: main
-   :caption: Оглавление
-   :maxdepth: 1
+    :name: main
+    :caption: Оглавление
+    :maxdepth: 1
 
-   HowTo/HowTo
-   History/History
-   Downloads
-   ComObjects/_alphabetic_list
+    HowTo/HowTo
+    History/History
+    Downloads
+    ComObjects/_alphabetic_list
