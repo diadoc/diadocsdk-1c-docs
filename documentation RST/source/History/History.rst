@@ -8,6 +8,7 @@
 .. feed::
     :rss:   index.rss
     :title: Новости AddIn Diadoc API
+    :link: http://diadocsdk-1c.readthedocs.io/ru/dev/
 
     release_info/5_37_4
     release_info/5_37_3

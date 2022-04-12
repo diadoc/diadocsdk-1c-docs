@@ -116,15 +116,11 @@ def print_info(obj):
 
 
 def process_feed(sphinx_app, sphinx_doc, source_filename):
-    #print_info(sphinx_app)
     # sphinx_app.outdir - корень папки, куда будет сложена скомпиленная дока
-    # sphinx_app - то же, что app в setup(app)
 
     sphinx_builder = sphinx_app.builder
     out_format, environment = sphinx_builder.format, sphinx_builder.env
     rss_date = datetime.datetime.utcnow()
-    print_info(environment)
-
 
     for feed in sphinx_doc.traverse(feeds):
         # print_info(releases)
@@ -136,7 +132,7 @@ def process_feed(sphinx_app, sphinx_doc, source_filename):
 
         # print_info(rss_filename)    # 'index.rss'
         # print_info(rss_title)       # 'Новости AddIn Diadoc API'
-        # print_info(rss_link)        # ''
+        # print_info(rss_link)        # 'http://diadocsdk-1c.readthedocs.io/ru/dev/'
         # print_info(rss_description) # ''
 
         for release_filename in feed['entries']:
@@ -234,6 +230,7 @@ def write_rss(rss_feed, stream):
 
 
 def setup(app):
+    # print_info(app.env)
     app.add_directive('feed', FeedDirective)
     app.add_directive('feed-entry', FeedEntryDirective)
     app.add_node(feeds)
