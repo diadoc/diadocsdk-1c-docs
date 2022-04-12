@@ -16,7 +16,6 @@ RSSFeed = collections.namedtuple('RSSFeed', ['title', 'link', 'description', 'da
 RSSItem = collections.namedtuple('RSSItem', ['title', 'link', 'description', 'date'])
 
 class FeedDirective(Directive):
-
     has_content = True
     option_spec = {
             'rss': directives.unchanged,
@@ -25,42 +24,48 @@ class FeedDirective(Directive):
             'description': directives.unchanged,
     }
 
+    def create_toctree(self, env, entries, includes):
+        feed_toctree = addnodes.toctree()
+        feed_toctree['parent'] = env.docname
+        feed_toctree['entries'] = entries
+        feed_toctree['includefiles'] = includes
+        feed_toctree['maxdepth'] = 1
+        feed_toctree['glob'] = False
+        feed_toctree['hidden'] = False
+        feed_toctree['numbered'] = False
+        feed_toctree['titlesonly'] = True
+        return feed_toctree
+
+    def create_feeds(self, includes):
+        tocs = feeds()
+        tocs['entries'] = includes
+        tocs['rss'] = self.options.get('rss')
+        tocs['title'] = self.options.get('title', '')
+        tocs['link'] = self.options.get('link', '')
+        tocs['description'] = self.options.get('description', '')
+        return tocs
+
     def run(self):
         env = self.state.document.settings.env
         output = []
         entries = []
         includefiles = []
         for entry in self.content:
-            if not entry:
-                continue
-            docname = docname_join(env.docname, entry)
-            if docname not in env.found_docs:
-                output.append(self.state.document.reporter.warning(
-                    'feed contains a reference to nonexisting '
-                    'document %r' % docname, line=self.lineno))
-                env.note_reread()
-            else:
-                entries.append((None, docname))
-                includefiles.append(docname)
-        subnode = addnodes.toctree()
-        subnode['parent'] = env.docname
-        subnode['entries'] = entries
-        subnode['includefiles'] = includefiles
-        subnode['maxdepth'] = 1
-        subnode['glob'] = False
-        subnode['hidden'] = True
-        subnode['numbered'] = False
-        subnode['titlesonly'] = False
+            if entry:
+                docname = docname_join(env.docname, entry)
+                if docname in env.found_docs:
+                    entries.append((None, docname))
+                    includefiles.append(docname)
+                else:
+                    warn_text = 'feed contains a reference to nonexisting document {}}'.format(docname)
+                    warn = self.state.document.reporter.warning(warn_text, line=self.lineno)
+                    output.append(warn)
+                    env.note_reread()
+
         wrappernode = nodes.compound(classes=['toctree-wrapper'])
-        wrappernode.append(subnode)
+        wrappernode.append(self.create_toctree(env, entries, includefiles))
         output.append(wrappernode)
-        subnode = feeds()
-        subnode['entries'] = includefiles
-        subnode['rss'] = self.options.get('rss')
-        subnode['title'] = self.options.get('title', '')
-        subnode['link'] = self.options.get('link', '')
-        subnode['description'] = self.options.get('description', '')
-        output.append(subnode)
+        output.append(self.create_feeds(includefiles))
         return output
 
 
@@ -71,7 +76,6 @@ class FeedEntryDirective(Directive):
     }
 
     def run(self):
-        author = self.options.get('author')
         date = self.options.get('date')
         for format in ["%Y-%m-%d"]:
             try:
@@ -85,17 +89,11 @@ class FeedEntryDirective(Directive):
                                        lineno=self.lineno)]
         meta_node = entrymeta(classes=['feed-meta'])
         meta_node += nodes.Text('Выпущено')
-        if author:
-            meta_node += nodes.Text(' by ')
-            author_node = nodes.emphasis(classes=['feed-author'])
-            author_node += nodes.Text(author)
-            meta_node += author_node
         if date:
             meta_node += nodes.Text(' ')
             date_node = nodes.emphasis(classes=['feed-date'])
             date_node += nodes.Text(date.date())
             meta_node += date_node
-        meta_node['author'] = author
         meta_node['date'] = date
         return [meta_node]
 
@@ -116,15 +114,11 @@ def print_info(obj):
 
 
 def process_feed(sphinx_app, sphinx_doc, source_filename):
-    # sphinx_app.outdir - корень папки, куда будет сложена скомпиленная дока
-
     sphinx_builder = sphinx_app.builder
     out_format, environment = sphinx_builder.format, sphinx_builder.env
     rss_date = datetime.datetime.utcnow()
 
     for feed in sphinx_doc.traverse(feeds):
-        # print_info(releases)
-
         rss_items = []
         replacement = []
 
@@ -159,8 +153,6 @@ def process_feed(sphinx_app, sphinx_doc, source_filename):
                         release_info_node += title_node
                         rss_item_title = "%s" % title[0]
                         rss_item_link = rss_link + sphinx_builder.get_target_uri(release_filename)
-                        #environment.resolve_references(section_node, source_filename, sphinx_builder)
-                        #replacement.append(section_node)
                         environment.resolve_references(release_info_node, release_filename, sphinx_builder)
                         if out_format == 'html':
                             # print_info(release_section)
