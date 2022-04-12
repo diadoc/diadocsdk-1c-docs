@@ -9,7 +9,11 @@ from docutils.parsers.rst import Directive, directives
 from sphinx import addnodes
 from sphinx.util import docname_join
 import sys, os.path, datetime, collections
+from pprint import pprint
 
+
+RSSFeed = collections.namedtuple('RSSFeed', ['title', 'link', 'description', 'date', 'items'])
+RSSItem = collections.namedtuple('RSSItem', ['title', 'link', 'description', 'date'])
 
 class FeedDirective(Directive):
 
@@ -61,7 +65,6 @@ class FeedDirective(Directive):
 
 
 class FeedEntryDirective(Directive):
-
     option_spec = {
             'author': directives.unchanged,
             'date': directives.unchanged_required,
@@ -97,196 +100,77 @@ class FeedEntryDirective(Directive):
         return [meta_node]
 
 
-class CutDirective(Directive):
-
-    def run(self):
-        return [entrycut()]
-
-
-class DisqusDirective(Directive):
-
-    option_spec = {
-            'shortname': directives.unchanged,
-            'identifier': directives.unchanged,
-            'title': directives.unchanged,
-    }
-
-    def run(self):
-        doc = self.state.document
-        env = doc.settings.env
-        node = disqus(classes=['feed-disqus'])
-        if 'shortname' in self.options:
-            node['shortname'] = self.options['shortname']
-        else:
-            if not env.config.disqus_shortname:
-                return [doc.reporter.error("config option `disqus_shortname`"
-                                           " is not set", lineno=self.lineno)]
-            node['shortname'] = env.config.disqus_shortname
-        if 'identifier' in self.options:
-            node['identifier'] = self.options['identifier']
-        else:
-            node['identifier'] = "/%s" % env.docname
-        node['title'] = self.options.get('title')
-        node['developer'] = env.config.disqus_developer
-        return [node]
-
-
 class feed(nodes.General, nodes.Element):
     pass
-
 
 class entrymeta(nodes.paragraph):
     pass
 
 
-class entrycut(nodes.General, nodes.Element):
-    pass
+def print_info(obj):
+    print('=' * 50)
+    print('Type: ', type(obj))
+    if (not isinstance(obj, str)):
+        pprint(obj.__dict__)
+    pprint(obj)
 
 
-class disqus(nodes.General, nodes.Element):
-    pass
+def process_feed(sphinx_app, sphinx_doc, source_filename):
+    # sphinx_app.outdir - корень папки, куда будет сложена скомпиленная дока
+    # sphinx_app - то же, что app в setup(app)
 
+    sphinx_builder = sphinx_app.builder
+    out_format, environment = sphinx_builder.format, sphinx_builder.env
 
-def visit_entrymeta(self, node):
-    self.visit_paragraph(node)
-
-
-def depart_entrymeta(self, node):
-    self.depart_paragraph(node)
-
-
-def visit_entrycut(self, node):
-    raise nodes.SkipNode
-
-
-DISQUS_TEMPLATE = """\
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-%(config)s
-(function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-"""
-
-
-def visit_disqus(self, node):
-    shortname = node['shortname']
-    identifier = node['identifier']
-    title = node['title']
-    developer = node['developer']
-    config = []
-    if shortname:
-        config.append(('disqus_shortname', shortname))
-    if identifier:
-        config.append(('disqus_identifier', identifier))
-    if title:
-        config.append(('disqus_title', title))
-    if developer:
-        config.append(('disqus_developer', '1'))
-    config = "".join("var %s = \"%s\";\n"
-                     % (name, value.replace('\\', '\\\\')
-                                   .replace('\"', '\\"'))
-                     for name, value in config)
-    html = DISQUS_TEMPLATE % vars()
-    self.body.append(self.starttag(node, 'div'))
-    self.body.append(html)
-    self.body.append("</div>")
-    raise nodes.SkipNode
-
-
-def visit_skip(self, node):
-    raise nodes.SkipNode
-
-
-def process_feed(app, doctree, fromdocname):
-    env = app.builder.env
-    if env.config.disqus_shortname and doctree.traverse(entrymeta):
-        node = disqus(classes=['feed-disqus'])
-        node['shortname'] = env.config.disqus_shortname
-        node['identifier'] = "/%s" % fromdocname
-        node['title'] = env.titles[fromdocname][0]
-        node['developer'] = env.config.disqus_developer
-        doctree += node
-    for node in doctree.traverse(feed):
-        rss_filename = node['rss']
-        rss_title = node['title']
-        rss_link = node['link']
-        rss_description = node['description']
+    for releases in sphinx_doc.traverse(feed):
+        # print_info(releases)
+        rss_filename = releases['rss']
+        rss_title = releases['title']
+        rss_link = releases['link']
+        rss_description = releases['description']
         rss_date = datetime.datetime.utcnow()
         rss_items = []
         replacement = []
-        for docname in node['entries']:
-            entry = env.get_doctree(docname)
-            for meta in entry.traverse(entrymeta):
+        for release_filename in releases['entries']:
+            release_info = environment.get_doctree(release_filename)
+            # print_info(release_info)
+            for meta in release_info.traverse(entrymeta):
+                # print_info(meta)
                 section_node = nodes.section()
-                title = env.titles[docname]
-                section_node['ids'] = entry[0]['ids']
+                title = environment.titles[release_filename]
+                release_section = release_info[0]
+                # print_info(release_section)
+                section_node['ids'] = release_section['ids']
                 title_node = nodes.title()
                 ref_node = nodes.reference(classes=['feed-ref'])
                 ref_node['internal'] = True
-                ref_node['refdocname'] = docname
-                ref_node['refuri'] = \
-                        app.builder.get_relative_uri(fromdocname, docname)
+                ref_node['refdocname'] = release_filename
+                ref_node['refuri'] = sphinx_builder.get_relative_uri(source_filename, release_filename)
                 ref_node['refuri'] += '#' + section_node['ids'][0]
                 ref_node += title[0]
                 title_node += ref_node
                 section_node += title_node
                 rss_item_title = "%s" % title[0]
-                rss_item_link = rss_link+app.builder.get_target_uri(docname)
-                rss_item_description = nodes.compound()
-                for subnode in entry[0]:
-                    if isinstance(subnode, (nodes.title, disqus)):
-                        continue
-                    if isinstance(subnode, entrycut):
-                        para_node = nodes.paragraph()
-                        ref_node = nodes.reference(classes=['feed-more'])
-                        ref_node['internal'] = True
-                        ref_node['refdocname'] = docname
-                        ref_node['refuri'] = \
-                                app.builder.get_relative_uri(fromdocname, docname)
-                        ref_node['refuri'] += '#' + section_node['ids'][0]
-                        ref_node += nodes.Text('Read more\u2026')
-                        para_node += ref_node
-                        section_node += para_node
-                        break
-                    section_node += subnode.deepcopy()
-                    if isinstance(subnode, entrymeta):
-                        continue
-                    rss_item_description += subnode.deepcopy()
-                env.resolve_references(section_node, fromdocname, app.builder)
+                rss_item_link = rss_link + sphinx_builder.get_target_uri(release_filename)
+                environment.resolve_references(section_node, source_filename, sphinx_builder)
                 replacement.append(section_node)
-                env.resolve_references(rss_item_description, docname, app.builder)
-                if app.builder.format == 'html':
-                    rss_item_description = app.builder.render_partial(
-                                                    rss_item_description)['body']
+                environment.resolve_references(release_section, release_filename, sphinx_builder)
+                if out_format == 'html':
+                    # print_info(release_section)
+                    rss_item_description = sphinx_builder.render_partial(release_section)['body']
                     rss_item_date = meta['date']
-                    rss_item = RSSItem(rss_item_title, rss_item_link,
-                                       rss_item_description, rss_item_date)
+                    rss_item = RSSItem(rss_item_title, rss_item_link, rss_item_description, rss_item_date)
                     rss_items.append(rss_item)
-        node.replace_self(replacement)
-        if app.builder.format == 'html':
-            rss_feed = RSSFeed(rss_title, rss_link, rss_description,
-                               rss_date, rss_items)
-            if rss_filename:
-                rss_path = os.path.join(app.builder.outdir, rss_filename)
-                rss_stream = open(rss_path, 'wb')
-                write_rss(rss_feed, rss_stream)
-                rss_stream.close()
-
-
-RSSFeed = collections.namedtuple('RSSFeed',
-        ['title', 'link', 'description', 'date', 'items'])
-RSSItem = collections.namedtuple('RSSItem',
-        ['title', 'link', 'description', 'date'])
+        releases.replace_self(replacement)
+        if out_format == 'html' and rss_filename:
+            rss_path = os.path.join(sphinx_builder.outdir, rss_filename)
+            with open(rss_path, 'wb') as rss_xml:
+                rss_feed = RSSFeed(rss_title, rss_link, rss_description, rss_date, rss_items)
+                write_rss(rss_feed, rss_xml)
 
 
 def format_text(text):
-    return text.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')
+    return '<![CDATA[{}]]>'.format(text) if text else ''
 
 
 def format_date(date):
@@ -298,57 +182,48 @@ def format_date(date):
                                 date.year, date.hour, date.minute, date.second)
 
 
+def get_rss_xml_prolog(rss_feed):
+    return '<?xml version="1.0" encoding="utf-8"?>\n' \
+           '<rss version="2.0">\n' \
+           '  <channel>\n' \
+           '    <title>{title}</title>\n' \
+           '    <link>{link}</link>\n' \
+           '    <description>{desc}</description>\n' \
+           '    <lastBuildDate>{date}</lastBuildDate>\n' \
+           ''.format(title=rss_feed.title,
+                     link=rss_feed.link,
+                     desc=format_text(rss_feed.description),
+                     date=rss_feed.date)
+
+def get_rss_xml_item(item):
+    return '    <item>\n' \
+           '      <title>{title}</title>\n' \
+           '      <link>{link}</link>\n' \
+           '      <description>{desc}</description>\n' \
+           '      <guid isPermaLink="true">{guid}</guid>\n' \
+           '      <pubDate>{date}</pubDate>\n' \
+           '    </item>\n' \
+           ''.format(title=format_text(item.title),
+                     link=item.link,
+                     desc=format_text(item.description),
+                     guid=item.link,
+                     date=item.date)
+
+def ret_rss_xml_epilog():
+    return '  </channel>\n' \
+           '</rss>\n'
+
+
 def write_rss(rss_feed, stream):
-    lines = []
-    lines.append('''<?xml version="1.0" encoding="utf-8"?>\n''')
-    lines.append('''<rss version="2.0">\n''')
-    lines.append('''  <channel>\n''')
-    lines.append('''    <title>%s</title>\n'''
-            % format_text(rss_feed.title))
-    lines.append('''    <link>%s</link>\n'''
-            % format_text(rss_feed.link))
-    lines.append('''    <description>%s</description>\n'''
-            % format_text(rss_feed.description))
-    lines.append('''    <lastBuildDate>%s</lastBuildDate>\n'''
-            % format_date(rss_feed.date))
-    lines.append('''    <generator>sphinxcontrib-newsfeed</generator>\n''')
-    for item in rss_feed.items:
-        lines.append('''    <item>\n''')
-        lines.append('''      <title>%s</title>\n'''
-                % format_text(item.title))
-        lines.append('''      <link>%s</link>\n'''
-                % format_text(item.link))
-        lines.append('''      <description>%s</description>\n'''
-                % format_text(item.description))
-        lines.append('''      <guid>%s</guid>\n'''
-                % format_text(item.link))
-        lines.append('''      <pubDate>%s</pubDate>\n'''
-                % format_date(item.date))
-        lines.append('''    </item>\n''')
-    lines.append('''  </channel>\n''')
-    lines.append('''</rss>\n''')
-    for line in lines:
-        stream.write(line.encode('utf-8'))
+    rss_prolog = get_rss_xml_prolog(rss_feed)
+    rss_items = (get_rss_xml_item(item) for item in rss_feed.items)
+    rss_epilog = ret_rss_xml_epilog()
+
+    stream.write(''.join((rss_prolog, *rss_items, rss_epilog)).encode())
 
 
 def setup(app):
-    app.add_config_value('disqus_shortname', None, 'env')
-    app.add_config_value('disqus_developer', False, 'env')
     app.add_directive('feed', FeedDirective)
     app.add_directive('feed-entry', FeedEntryDirective)
-    app.add_directive('cut', CutDirective)
-    app.add_directive('disqus', DisqusDirective)
     app.add_node(feed)
-    app.add_node(entrymeta,
-                 html=(visit_entrymeta, depart_entrymeta),
-                 latex=(visit_entrymeta, depart_entrymeta),
-                 text=(visit_entrymeta, depart_entrymeta))
-    app.add_node(entrycut,
-                 html=(visit_entrycut, None),
-                 latex=(visit_entrycut, None),
-                 text=(visit_entrycut, None))
-    app.add_node(disqus,
-                 html=(visit_disqus, None),
-                 latex=(visit_skip, None),
-                 text=(visit_skip, None))
-    app.connect(str('doctree-resolved'), process_feed)
+    app.connect('doctree-resolved', process_feed)
