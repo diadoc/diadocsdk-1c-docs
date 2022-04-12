@@ -55,9 +55,9 @@ class FeedDirective(Directive):
                 docname = docname_join(env.docname, entry)
                 if docname in env.found_docs:
                     entries.append((None, docname))
-                    includefiles.append(docname)
+                    includefiles.insert(0, docname)
                 else:
-                    warn_text = 'feed contains a reference to nonexisting document {}}'.format(docname)
+                    warn_text = 'feed contains a reference to nonexisting document {}'.format(docname)
                     warn = self.state.document.reporter.warning(warn_text, line=self.lineno)
                     output.append(warn)
                     env.note_reread()
