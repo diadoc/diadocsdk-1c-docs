@@ -54,7 +54,7 @@ class FeedDirective(Directive):
         wrappernode = nodes.compound(classes=['toctree-wrapper'])
         wrappernode.append(subnode)
         output.append(wrappernode)
-        subnode = feed()
+        subnode = feeds()
         subnode['entries'] = includefiles
         subnode['rss'] = self.options.get('rss')
         subnode['title'] = self.options.get('title', '')
@@ -100,7 +100,7 @@ class FeedEntryDirective(Directive):
         return [meta_node]
 
 
-class feed(nodes.General, nodes.Element):
+class feeds(nodes.General, nodes.Element):
     pass
 
 class entrymeta(nodes.paragraph):
@@ -121,47 +121,55 @@ def process_feed(sphinx_app, sphinx_doc, source_filename):
 
     sphinx_builder = sphinx_app.builder
     out_format, environment = sphinx_builder.format, sphinx_builder.env
+    rss_date = datetime.datetime.utcnow()
 
-    for releases in sphinx_doc.traverse(feed):
+    for feed in sphinx_doc.traverse(feeds):
         # print_info(releases)
-        rss_filename = releases['rss']
-        rss_title = releases['title']
-        rss_link = releases['link']
-        rss_description = releases['description']
-        rss_date = datetime.datetime.utcnow()
+
         rss_items = []
         replacement = []
-        for release_filename in releases['entries']:
+
+        rss_filename, rss_title, rss_link, rss_description = feed['rss'], feed['title'], feed['link'], feed['description']
+
+        # print_info(rss_filename)    # 'index.rss'
+        # print_info(rss_title)       # 'Новости AddIn Diadoc API'
+        # print_info(rss_link)        # ''
+        # print_info(rss_description) # ''
+
+        for release_filename in feed['entries']:
             release_info = environment.get_doctree(release_filename)
             # print_info(release_info)
             for meta in release_info.traverse(entrymeta):
                 # print_info(meta)
-                section_node = nodes.section()
+                #section_node = nodes.section()
                 title = environment.titles[release_filename]
-                release_section = release_info[0]
-                # print_info(release_section)
-                section_node['ids'] = release_section['ids']
-                title_node = nodes.title()
-                ref_node = nodes.reference(classes=['feed-ref'])
-                ref_node['internal'] = True
-                ref_node['refdocname'] = release_filename
-                ref_node['refuri'] = sphinx_builder.get_relative_uri(source_filename, release_filename)
-                ref_node['refuri'] += '#' + section_node['ids'][0]
-                ref_node += title[0]
-                title_node += ref_node
-                section_node += title_node
-                rss_item_title = "%s" % title[0]
-                rss_item_link = rss_link + sphinx_builder.get_target_uri(release_filename)
-                environment.resolve_references(section_node, source_filename, sphinx_builder)
-                replacement.append(section_node)
-                environment.resolve_references(release_section, release_filename, sphinx_builder)
-                if out_format == 'html':
-                    # print_info(release_section)
-                    rss_item_description = sphinx_builder.render_partial(release_section)['body']
-                    rss_item_date = meta['date']
-                    rss_item = RSSItem(rss_item_title, rss_item_link, rss_item_description, rss_item_date)
-                    rss_items.append(rss_item)
-        releases.replace_self(replacement)
+                for release_info_node in release_info:
+                    if isinstance(release_info_node, nodes.section):
+                        #print_info(release_info_node)
+                        #section_node['ids'] = release_section['ids']
+                        title_node = nodes.title()
+                        ref_node = nodes.reference(classes=['feed-ref'])
+                        ref_node['internal'] = True
+                        ref_node['refdocname'] = release_filename
+                        ref_node['refuri'] = sphinx_builder.get_relative_uri(source_filename, release_filename)
+                        refs = release_info_node['ids']
+                        if (len(refs) > 0) :
+                            ref_node['refuri'] += '#' + refs[0]
+                        ref_node += title[0]
+                        title_node += ref_node
+                        release_info_node += title_node
+                        rss_item_title = "%s" % title[0]
+                        rss_item_link = rss_link + sphinx_builder.get_target_uri(release_filename)
+                        #environment.resolve_references(section_node, source_filename, sphinx_builder)
+                        #replacement.append(section_node)
+                        environment.resolve_references(release_info_node, release_filename, sphinx_builder)
+                        if out_format == 'html':
+                            # print_info(release_section)
+                            rss_item_description = sphinx_builder.render_partial(release_info_node)['body']
+                            rss_item_date = meta['date']
+                            rss_item = RSSItem(rss_item_title, rss_item_link, rss_item_description, rss_item_date)
+                            rss_items.append(rss_item)
+        feed.replace_self(replacement)
         if out_format == 'html' and rss_filename:
             rss_path = os.path.join(sphinx_builder.outdir, rss_filename)
             with open(rss_path, 'wb') as rss_xml:
@@ -225,5 +233,5 @@ def write_rss(rss_feed, stream):
 def setup(app):
     app.add_directive('feed', FeedDirective)
     app.add_directive('feed-entry', FeedEntryDirective)
-    app.add_node(feed)
+    app.add_node(feeds)
     app.connect('doctree-resolved', process_feed)

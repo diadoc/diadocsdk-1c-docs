@@ -38,6 +38,6 @@ html_search_language = 'en'
 html_copy_source = False
 
 
-# rst_prolog = rst_epilog = '''
-# `Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
-# '''
+rst_prolog = rst_epilog = '''
+`Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
+'''
