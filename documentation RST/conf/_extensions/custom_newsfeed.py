@@ -116,6 +116,7 @@ def print_info(obj):
 
 
 def process_feed(sphinx_app, sphinx_doc, source_filename):
+    print_info(sphinx_app)
     # sphinx_app.outdir - корень папки, куда будет сложена скомпиленная дока
     # sphinx_app - то же, что app в setup(app)
 
