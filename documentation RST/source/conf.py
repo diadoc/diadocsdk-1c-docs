@@ -20,6 +20,10 @@ exclude_patterns = []
 
 master_doc = 'index'
 
+html_context = {
+    "display_github": False
+}
+
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
 author = u'Diadoc'
@@ -36,7 +40,6 @@ pygments_style = 'vs'
 html_search_language = 'en'
 
 html_copy_source = False
-html_show_sourcelink = False
 
 rst_prolog = '''
 `Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
