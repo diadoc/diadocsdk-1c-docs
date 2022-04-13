@@ -14,6 +14,9 @@ extensions = [
     'RSS_plugin',
     'CComDomain'
 ]
+
+templates_path = ['../conf/_templates']
+
 primary_domain = 'com-object'
 source_suffix = '.rst'
 exclude_patterns = []
@@ -36,8 +39,3 @@ pygments_style = 'vs'
 html_search_language = 'en'
 
 html_copy_source = False
-
-
-rst_prolog = rst_epilog = '''
-`Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
-'''
