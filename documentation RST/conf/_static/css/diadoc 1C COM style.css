@@ -143,3 +143,13 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(3),
 div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
+
+
+/* Ссылка на GitHub (rst_prolog) */
+.rst-content .document>div>p:first-child{
+    margin: 0;
+    text-align: right;
+    box-sizing: content-box;
+    text-decoration: underline;
+    block-size: min-content;
+}
