@@ -39,7 +39,3 @@ pygments_style = 'vs'
 html_search_language = 'en'
 
 html_copy_source = False
-
-rst_prolog = '''
-`Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
-'''
