@@ -1,9 +1,0 @@
-5.20.2
-------
-
-.. feed-entry::
-  :date: 2018-01-29
-
-.. rubric:: Исправлено
-
-* неправильно сериализовалось свойство **CreatedThingInfo** объекта :doc:`../../ComObjects/Act552BuyerContent`

@@ -10,15 +10,15 @@ html_style = 'css/diadoc 1C COM style.css'
 
 PATH_variable.append(path.abspath('../conf/_extensions'))
 extensions = [
-    'sphinx_tabs.tabs',
-    'RSS_plugin',
-    'CComDomain'
+    'RSS_plugin'
 ]
-primary_domain = 'com-object'
+
+templates_path = ['../conf/_templates']
+
 source_suffix = '.rst'
 exclude_patterns = []
 
-master_doc = 'index'
+master_doc = 'RSS Holder'
 
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
@@ -33,11 +33,6 @@ html_show_sphinx = False
 html_theme = 'sphinx_rtd_theme'
 highlight_language = 'cpp'
 pygments_style = 'vs'
-html_search_language = 'en'
+html_search_language = 'ru'
 
 html_copy_source = False
-
-
-# rst_prolog = rst_epilog = '''
-# `Задать вопрос или сообщить об ошибке <https://github.com/diadoc/diadocsdk-1c-docs/issues>`_
-# '''

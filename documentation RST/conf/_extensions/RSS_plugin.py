@@ -71,7 +71,6 @@ class FeedDirective(Directive):
 
 class FeedEntryDirective(Directive):
     option_spec = {
-            'author': directives.unchanged,
             'date': directives.unchanged_required,
     }
 
@@ -105,10 +104,14 @@ class entrymeta(nodes.paragraph):
     pass
 
 
-def print_info(obj):
+def print_info(obj, indent=0):
+    indent_txt = '  ' * indent
     print('=' * 50)
-    print('Type: ', type(obj))
-    if (not isinstance(obj, str)):
+    print(indent_txt, 'Type: ', type(obj))
+    if hasattr(obj, '__dict__'):
+        # for k, v in obj.__dict__.items():
+            # print(indent_txt, k, ': ', print_info(v, indent + 1))
+            #print('{}: {}')
         pprint(obj.__dict__)
     pprint(obj)
 
@@ -124,22 +127,14 @@ def process_feed(sphinx_app, sphinx_doc, source_filename):
 
         rss_filename, rss_title, rss_link, rss_description = feed['rss'], feed['title'], feed['link'], feed['description']
 
-        # print_info(rss_filename)    # 'index.rss'
-        # print_info(rss_title)       # 'Новости AddIn Diadoc API'
-        # print_info(rss_link)        # 'http://diadocsdk-1c.readthedocs.io/ru/dev/'
-        # print_info(rss_description) # ''
-
         for release_filename in feed['entries']:
             release_info = environment.get_doctree(release_filename)
             # print_info(release_info)
+            # 1/0
             for meta in release_info.traverse(entrymeta):
-                # print_info(meta)
-                #section_node = nodes.section()
                 title = environment.titles[release_filename]
                 for release_info_node in release_info:
                     if isinstance(release_info_node, nodes.section):
-                        #print_info(release_info_node)
-                        #section_node['ids'] = release_section['ids']
                         title_node = nodes.title()
                         ref_node = nodes.reference(classes=['feed-ref'])
                         ref_node['internal'] = True
@@ -151,15 +146,15 @@ def process_feed(sphinx_app, sphinx_doc, source_filename):
                         ref_node += title[0]
                         title_node += ref_node
                         release_info_node += title_node
-                        rss_item_title = "%s" % title[0]
+                        rss_item_title = title[0]
                         rss_item_link = rss_link + sphinx_builder.get_target_uri(release_filename)
                         environment.resolve_references(release_info_node, release_filename, sphinx_builder)
                         if out_format == 'html':
-                            # print_info(release_section)
                             rss_item_description = sphinx_builder.render_partial(release_info_node)['body']
                             rss_item_date = meta['date']
                             rss_item = RSSItem(rss_item_title, rss_item_link, rss_item_description, rss_item_date)
                             rss_items.append(rss_item)
+            # replacement.insert(0, release_info)
         feed.replace_self(replacement)
         if out_format == 'html' and rss_filename:
             rss_path = os.path.join(sphinx_builder.outdir, rss_filename)

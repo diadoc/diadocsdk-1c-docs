@@ -1,6 +1,5 @@
 # DiadocSDK-1C
 
-[![Documentation Status](https://readthedocs.org/projects/diadocsdk-1c/badge/?version=latest)](https://readthedocs.org/projects/diadocsdk-1c/?badge=latest)
 
 **COM Diadoc API** - внешняя компонента, предназначенная для интеграции с учётными системами посредством COM-интерфейса
 
@@ -19,4 +18,4 @@
     * Отправлять шаблоны документов
     * Просматривать настройки пользователя и организации в системе Диадок
 
-[Ознакомиться с документацией](http://1c-docs.diadoc.ru/)
+[Ознакомиться с документацией](https://developer.kontur.ru/Docs/Diadoc/COM/)
