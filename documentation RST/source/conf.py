@@ -18,7 +18,8 @@ templates_path = ['../conf/_templates']
 source_suffix = '.rst'
 exclude_patterns = []
 
-master_doc = 'RSS Holder'
+#master_doc = 'RSS Holder'
+master_doc = 'index'
 
 project = u'1C Addin/COM Диадок API'
 copyright = u'2022, Diadoc'
